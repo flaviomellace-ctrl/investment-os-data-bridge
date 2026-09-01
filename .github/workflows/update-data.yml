@@ -1,0 +1,65 @@
+name: Update Investment OS Data Bridge
+
+on:
+  workflow_dispatch:
+    inputs:
+      force_sec:
+        description: "Forza il rebuild dei fondamentali SEC"
+        required: false
+        type: boolean
+        default: false
+  schedule:
+    # Ogni lunedi' alle 05:17 UTC (~07:17 in estate italiana, ~06:17 in inverno).
+    # L'universo SPY viene aggiornato ogni settimana; il bulk SEC viene riscaricato
+    # solo quando compare un nuovo trimestre, salvo esecuzione manuale forzata.
+    - cron: "17 5 * * 1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: investment-os-data-bridge
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Syntax check
+        run: python -m compileall -q src
+
+      - name: Refresh data
+        env:
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force_sec }}" = "true" ]; then
+            python src/bridge.py --mode auto --force-sec
+          else
+            python src/bridge.py --mode auto
+          fi
+
+      - name: Commit changed public data
+        run: |
+          git config user.name "investment-os-data-bridge[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/current data/archive
+          if git diff --cached --quiet; then
+            echo "Nessuna modifica da committare."
+            exit 0
+          fi
+          git commit -m "data: automated refresh $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          git push
