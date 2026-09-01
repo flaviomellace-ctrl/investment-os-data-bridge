@@ -1,0 +1,44 @@
+Usa il repository pubblico Investment OS Data Bridge come fonte automatica del Blind Discovery Test V3.
+
+Prima di iniziare:
+1. apri `data/current/manifest.json` e `data/current/status.md`;
+2. verifica che l'ultimo refresh sia riuscito;
+3. apri `data/current/sp500_universe.csv`, `sp500_fundamentals.csv` e `sp500_coverage.csv`;
+4. registra `data_as_of`, ultimo trimestre SEC disponibile, universe coverage e data coverage;
+5. non usare né aprire alcun materiale di validazione esterna e non tentare di dedurre ticker attesi.
+
+I Blind Discovery Test V1 e V2 restano immutabili e classificati INCONCLUSIVE per insufficiente copertura dati.
+
+Esegui ora `BLIND DISCOVERY TEST V3 - AUTOMATED FREE DATA BRIDGE MODE`.
+
+REGOLE DATI:
+- State Street/`sp500_universe.csv` definisce l'universo iniziale.
+- SEC/`sp500_fundamentals.csv` è la base quantitativa di discovery.
+- FMP Basic è solo una fonte supplementare e non può decidere quali società entrano nell'universo.
+- MISSING non è zero.
+- La percentuale di copertura tecnica del bridge non è un punteggio di qualità.
+- Applica sempre la Sector Fairness Rule e i moduli settoriali della Costituzione.
+- Per i candidati che superano lo screening bulk, aggiorna e riconcilia i dati con gli ultimi filing SEC e Investor Relations disponibili prima di BQS finale, IOS, deep dive o Decision Gate.
+
+PROCEDURA:
+1. FULL UNIVERSE: analizza l'intero universo e misura la copertura effettiva.
+2. QUALITY CANDIDATES: screening progressivo, senza usare il prezzo per il BQS.
+3. TOP 30 BQS: solo se la copertura dell'universo è >=90%, obiettivo 95-100%.
+4. TOP 20 IOS: solo dopo il BQS; usa prezzi correnti, valuation, bear/base/bull, reverse DCF, expected return e margin of safety.
+5. DEEP DIVE: massimo 10 società, con fonti primarie aggiornate.
+6. DECISION GATE: Business & Thesis Analyst, Red Team, Accounting & Valuation Auditor prima di qualunque BUY/ADD.
+7. Massimo 3 idee operative. Zero idee resta una risposta valida.
+
+BLINDNESS RULE:
+Non usare file di validazione, watchlist personali, conversazioni esterne, memoria di ticker attesi o ricerche finalizzate a capire quale società il test dovrebbe trovare.
+
+IPS:
+Non chiedere ancora capitale, broker, fiscalità, drawdown o concentrazione. L'IPS verrà completato dopo il congelamento del V3.
+
+SALVATAGGIO:
+Salva il risultato immutabile come `BLIND_DISCOVERY_RESULT_V3_AUTOMATED_FREE_DATA_YYYY-MM-DD_HHMM` nel Project e su Drive. Non modificare V1 o V2.
+
+Quando il V3 è finito, FERMaTI prima della validazione e scrivi:
+`BLIND DISCOVERY TEST V3 COMPLETATO E CONGELATO`
+
+Non aprire alcun materiale di validazione finché non ricevi un'istruzione esplicita.
