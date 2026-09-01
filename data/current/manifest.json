@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "updated_at_utc": "2026-09-01T20:23:38+00:00",
+  "mode": "auto",
+  "fundamentals_rebuilt_this_run": true,
+  "state_street": {
+    "header_row_zero_based": 4,
+    "raw_rows_after_header": 593,
+    "equity_like_rows": 504,
+    "excluded_cash_or_obvious_non_equity_rows": 1,
+    "data_as_of": null,
+    "source": "State Street SPY daily holdings",
+    "product_url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-500-etf-trust-spy",
+    "download_url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-spy.xlsx",
+    "downloaded_at": "2026-09-01T20:22:59+00:00",
+    "sha256": "7c80b57a3180a0d3f96844950e1688f0082785f3eb9594486a7baddd1fa56680",
+    "bytes": 54437
+  },
+  "sec_ticker_map": {
+    "source": "SEC company_tickers.json",
+    "url": "https://www.sec.gov/files/company_tickers.json",
+    "downloaded_at": "2026-09-01T20:22:59+00:00",
+    "sha256": "5c44b7caddfdc08a2dacebcffef78249538c77bdc05ffebb2dd75101e5d465e3",
+    "rows": 10391
+  },
+  "sec": {
+    "index": {
+      "source": "SEC Financial Statement Data Sets index",
+      "url": "https://www.sec.gov/data-research/sec-markets-data/financial-statement-data-sets",
+      "downloaded_at": "2026-09-01T20:23:00+00:00",
+      "latest_available": "2026Q2",
+      "quarters_found": 70
+    },
+    "latest_available_quarter": "2026Q2",
+    "quarters_used": [
+      "2025Q3",
+      "2025Q4",
+      "2026Q1",
+      "2026Q2"
+    ],
+    "quarter_downloads": [
+      {
+        "quarter": "2025Q3",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q3.zip",
+        "sha256": "ebe25fa74c3655f4738ed9eb144af3953c3981c80f57d74829fb9ad68b114710",
+        "bytes": 127842298
+      },
+      {
+        "quarter": "2025Q4",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q4.zip",
+        "sha256": "2b36ac3850c022cf19edd882e31c3c453c7666677b9fdd2e1f7748fdb5768c6e",
+        "bytes": 65830170
+      },
+      {
+        "quarter": "2026Q1",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q1.zip",
+        "sha256": "d18c01c615da8f5cd46273b0dacaeee5b1163f4089171da0f84153a5f3c362f6",
+        "bytes": 85259424
+      },
+      {
+        "quarter": "2026Q2",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q2.zip",
+        "sha256": "d7c815395cd420cfbe09b29dbae73a45406c5d0652d5ae1859ae11ea2e22df77",
+        "bytes": 60419016
+      }
+    ],
+    "fair_access_note": "Declared User-Agent; scripted downloads intentionally kept far below 10 requests/second."
+  },
+  "universe": {
+    "rows": 504,
+    "cik_mapped": 503,
+    "cik_mapping_pct": 99.8
+  },
+  "archive_created": null,
+  "outputs": {
+    "sp500_universe.csv": {
+      "sha256": "6c47bfd07088f94f4fbe6a45dbda866254e95979bd821ba674aab79ab75aaf3c",
+      "bytes": 44990
+    },
+    "sp500_fundamentals.csv": {
+      "sha256": "b125b7c70fae2dad1285950639c1b423a0f1a8e82ff0021dffb859e6f3f000d3",
+      "bytes": 456784
+    },
+    "sp500_coverage.csv": {
+      "sha256": "fe23db2f19aa15d92e7178fa719570847f8dc738e4f3ae235be9e34dc143ef99",
+      "bytes": 42696
+    },
+    "claude_sources.md": {
+      "sha256": "2789aca4cdb4e925a054c7bc28ee950155354061ff68e11783808e0382dea81d",
+      "bytes": 1116
+    },
+    "status.md": {
+      "sha256": "ca042adf76af0d8922c3212fc3fe4687be2110ebb6e73cb8a78822e2dacf1167",
+      "bytes": 681
+    }
+  },
+  "methodology_notes": [
+    "The bridge prepares data only; it does not compute BQS/IOS or recommendations.",
+    "SEC Financial Statement Data Sets are as-filed primary-statement data and are quarterly; final candidates require reconciliation to latest filings.",
+    "Coverage percentages are technical availability measures, not investment-quality scores.",
+    "Missing data must not be converted to zero; sector-specific metrics may be NOT_APPLICABLE downstream."
+  ]
+}
