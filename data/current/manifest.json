@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-09-01T20:23:38+00:00",
+  "updated_at_utc": "2026-09-01T20:49:08+00:00",
   "mode": "auto",
-  "fundamentals_rebuilt_this_run": true,
+  "fundamentals_rebuilt_this_run": false,
   "state_street": {
     "header_row_zero_based": 4,
     "raw_rows_after_header": 593,
@@ -12,14 +12,14 @@
     "source": "State Street SPY daily holdings",
     "product_url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-500-etf-trust-spy",
     "download_url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-spy.xlsx",
-    "downloaded_at": "2026-09-01T20:22:59+00:00",
+    "downloaded_at": "2026-09-01T20:49:06+00:00",
     "sha256": "7c80b57a3180a0d3f96844950e1688f0082785f3eb9594486a7baddd1fa56680",
     "bytes": 54437
   },
   "sec_ticker_map": {
     "source": "SEC company_tickers.json",
     "url": "https://www.sec.gov/files/company_tickers.json",
-    "downloaded_at": "2026-09-01T20:22:59+00:00",
+    "downloaded_at": "2026-09-01T20:49:06+00:00",
     "sha256": "5c44b7caddfdc08a2dacebcffef78249538c77bdc05ffebb2dd75101e5d465e3",
     "rows": 10391
   },
@@ -27,7 +27,7 @@
     "index": {
       "source": "SEC Financial Statement Data Sets index",
       "url": "https://www.sec.gov/data-research/sec-markets-data/financial-statement-data-sets",
-      "downloaded_at": "2026-09-01T20:23:00+00:00",
+      "downloaded_at": "2026-09-01T20:49:08+00:00",
       "latest_available": "2026Q2",
       "quarters_found": 70
     },
@@ -90,8 +90,8 @@
       "bytes": 1116
     },
     "status.md": {
-      "sha256": "ca042adf76af0d8922c3212fc3fe4687be2110ebb6e73cb8a78822e2dacf1167",
-      "bytes": 681
+      "sha256": "925b28c0971a55bfce4058593e0630631f7769c43964d5a058198a028dbbd9ff",
+      "bytes": 682
     }
   },
   "methodology_notes": [

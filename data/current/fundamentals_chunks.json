@@ -1,0 +1,104 @@
+{
+  "source": "sp500_fundamentals.csv",
+  "total_rows": 504,
+  "rows_per_chunk": 55,
+  "total_parts": 10,
+  "parts": [
+    {
+      "part": 1,
+      "filename": "sp500_fundamentals_part_01.csv",
+      "row_start_1_based": 1,
+      "row_end_1_based": 55,
+      "rows": 55,
+      "bytes": 54002,
+      "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_01.csv"
+    },
+    {
+      "part": 2,
+      "filename": "sp500_fundamentals_part_02.csv",
+      "row_start_1_based": 56,
+      "row_end_1_based": 110,
+      "rows": 55,
+      "bytes": 52799,
+      "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_02.csv"
+    },
+    {
+      "part": 3,
+      "filename": "sp500_fundamentals_part_03.csv",
+      "row_start_1_based": 111,
+      "row_end_1_based": 165,
+      "rows": 55,
+      "bytes": 53619,
+      "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_03.csv"
+    },
+    {
+      "part": 4,
+      "filename": "sp500_fundamentals_part_04.csv",
+      "row_start_1_based": 166,
+      "row_end_1_based": 220,
+      "rows": 55,
+      "bytes": 52778,
+      "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_04.csv"
+    },
+    {
+      "part": 5,
+      "filename": "sp500_fundamentals_part_05.csv",
+      "row_start_1_based": 221,
+      "row_end_1_based": 275,
+      "rows": 55,
+      "bytes": 51850,
+      "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_05.csv"
+    },
+    {
+      "part": 6,
+      "filename": "sp500_fundamentals_part_06.csv",
+      "row_start_1_based": 276,
+      "row_end_1_based": 330,
+      "rows": 55,
+      "bytes": 52776,
+      "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_06.csv"
+    },
+    {
+      "part": 7,
+      "filename": "sp500_fundamentals_part_07.csv",
+      "row_start_1_based": 331,
+      "row_end_1_based": 385,
+      "rows": 55,
+      "bytes": 51712,
+      "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_07.csv"
+    },
+    {
+      "part": 8,
+      "filename": "sp500_fundamentals_part_08.csv",
+      "row_start_1_based": 386,
+      "row_end_1_based": 440,
+      "rows": 55,
+      "bytes": 50267,
+      "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_08.csv"
+    },
+    {
+      "part": 9,
+      "filename": "sp500_fundamentals_part_09.csv",
+      "row_start_1_based": 441,
+      "row_end_1_based": 495,
+      "rows": 55,
+      "bytes": 53110,
+      "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_09.csv"
+    },
+    {
+      "part": 10,
+      "filename": "sp500_fundamentals_part_10.csv",
+      "row_start_1_based": 496,
+      "row_end_1_based": 504,
+      "rows": 9,
+      "bytes": 9124,
+      "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_10.csv"
+    }
+  ],
+  "rules": [
+    "Read every part before full-universe ranking.",
+    "MISSING is not zero.",
+    "Chunks are transport files only and do not change methodology.",
+    "Finalists must still be reconciled with latest primary filings."
+  ]
+}
