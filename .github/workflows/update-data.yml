@@ -9,9 +9,6 @@ on:
         type: boolean
         default: false
   schedule:
-    # Ogni lunedi' alle 05:17 UTC (~07:17 in estate italiana, ~06:17 in inverno).
-    # L'universo SPY viene aggiornato ogni settimana; il bulk SEC viene riscaricato
-    # solo quando compare un nuovo trimestre, salvo esecuzione manuale forzata.
     - cron: "17 5 * * 1"
 
 permissions:
@@ -52,13 +49,14 @@ jobs:
             python src/bridge.py --mode auto
           fi
 
-          - name: Enrich BR-01 and BR-02
+      - name: Enrich BR-01 and BR-02
         env:
           SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
         run: python src/enrich_br01_br02.py
 
       - name: Create Claude-friendly chunks
         run: python src/split_for_claude.py
+
       - name: Commit changed public data
         run: |
           git config user.name "investment-os-data-bridge[bot]"
