@@ -70,11 +70,25 @@ RELEVANT_TAGS = sorted(
     )
 )
 
-ENRICHMENT_SCHEMA = "br01_br02_v1.0"
+ENRICHMENT_SCHEMA = "br01_br02_v1.1"
 
 
 def now_iso() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+
+
+def normalize_cik(value) -> str:
+    """Normalize CIK values read by pandas (e.g. 320193.0) to SEC 10-digit strings."""
+    if value is None or pd.isna(value):
+        return ""
+    text = str(value).strip()
+    if not text:
+        return ""
+    try:
+        return str(int(float(text))).zfill(10)
+    except (TypeError, ValueError, OverflowError):
+        digits = "".join(ch for ch in text if ch.isdigit())
+        return digits.zfill(10) if digits else ""
 
 
 def sha256_file(path: Path) -> str:
@@ -247,7 +261,7 @@ def enrich_dataframe(
     # Build a per-CIK map of the last four annual filings.
     history_map: dict[str, dict[int, pd.Series]] = {}
     for _, r in history.iterrows():
-        cik = bridge.norm_text(r.get("cik", ""))
+        cik = normalize_cik(r.get("cik", ""))
         rank = int(r["history_rank"])
         history_map.setdefault(cik, {})[rank] = r
 
@@ -264,7 +278,7 @@ def enrich_dataframe(
     records = []
     for _, base_row in out.iterrows():
         row = base_row.to_dict()
-        cik = bridge.norm_text(row.get("cik", ""))
+        cik = normalize_cik(row.get("cik", ""))
         filings = history_map.get(cik, {})
 
         # Explicit FY-1/FY-2/FY-3 history. Keep original annual_* fields untouched.
@@ -467,12 +481,11 @@ def main() -> int:
             })
 
         subs = bridge.load_submissions_from_zips(zip_infos)
-        universe_ciks = set(
-            fundamentals["cik"]
-            .dropna()
-            .astype(str)
-            .map(lambda x: x.zfill(10))
-        )
+        universe_ciks = {
+            normalize_cik(x)
+            for x in fundamentals["cik"].dropna()
+            if normalize_cik(x)
+        }
 
         history = choose_annual_history(subs, universe_ciks)
         adsh_set = set(history["adsh"].dropna().astype(str))
