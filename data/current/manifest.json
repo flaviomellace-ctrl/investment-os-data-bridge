@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.0",
-  "updated_at_utc": "2026-09-01T20:49:08+00:00",
+  "schema_version": "1.1",
+  "updated_at_utc": "2026-09-02T23:17:13+00:00",
   "mode": "auto",
   "fundamentals_rebuilt_this_run": false,
   "state_street": {
@@ -12,14 +12,14 @@
     "source": "State Street SPY daily holdings",
     "product_url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-500-etf-trust-spy",
     "download_url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-spy.xlsx",
-    "downloaded_at": "2026-09-01T20:49:06+00:00",
-    "sha256": "7c80b57a3180a0d3f96844950e1688f0082785f3eb9594486a7baddd1fa56680",
-    "bytes": 54437
+    "downloaded_at": "2026-09-02T23:17:13+00:00",
+    "sha256": "4bb81bd8be85452970f34e3ef8a8db62f5c75586c75c1d7658e3e2f8a2997110",
+    "bytes": 54439
   },
   "sec_ticker_map": {
     "source": "SEC company_tickers.json",
     "url": "https://www.sec.gov/files/company_tickers.json",
-    "downloaded_at": "2026-09-01T20:49:06+00:00",
+    "downloaded_at": "2026-09-02T23:17:13+00:00",
     "sha256": "5c44b7caddfdc08a2dacebcffef78249538c77bdc05ffebb2dd75101e5d465e3",
     "rows": 10391
   },
@@ -27,7 +27,7 @@
     "index": {
       "source": "SEC Financial Statement Data Sets index",
       "url": "https://www.sec.gov/data-research/sec-markets-data/financial-statement-data-sets",
-      "downloaded_at": "2026-09-01T20:49:08+00:00",
+      "downloaded_at": "2026-09-02T23:17:13+00:00",
       "latest_available": "2026Q2",
       "quarters_found": 70
     },
@@ -74,24 +74,24 @@
   "archive_created": null,
   "outputs": {
     "sp500_universe.csv": {
-      "sha256": "6c47bfd07088f94f4fbe6a45dbda866254e95979bd821ba674aab79ab75aaf3c",
-      "bytes": 44990
+      "sha256": "626e17e7e84fbbc694d0418e2636b9b16d2af1d34c99eee4ef4b07d794326e88",
+      "bytes": 44999
     },
     "sp500_fundamentals.csv": {
-      "sha256": "b125b7c70fae2dad1285950639c1b423a0f1a8e82ff0021dffb859e6f3f000d3",
-      "bytes": 456784
+      "sha256": "204130b00c30f10623e9ffdff2e0be819043857f05b5fa5b7adb3ab0b7569ade",
+      "bytes": 524611
     },
     "sp500_coverage.csv": {
-      "sha256": "fe23db2f19aa15d92e7178fa719570847f8dc738e4f3ae235be9e34dc143ef99",
-      "bytes": 42696
+      "sha256": "f4414948c2d855d3a9b2c4d633fe51c7e4963035a56aee179f4eff7809750330",
+      "bytes": 71191
     },
     "claude_sources.md": {
       "sha256": "2789aca4cdb4e925a054c7bc28ee950155354061ff68e11783808e0382dea81d",
       "bytes": 1116
     },
     "status.md": {
-      "sha256": "925b28c0971a55bfce4058593e0630631f7769c43964d5a058198a028dbbd9ff",
-      "bytes": 682
+      "sha256": "7a4180200e09ab80cb9f1e26a9d2dd78257164ea77d64591cecc20733dca3968",
+      "bytes": 1236
     }
   },
   "methodology_notes": [
@@ -99,5 +99,151 @@
     "SEC Financial Statement Data Sets are as-filed primary-statement data and are quarterly; final candidates require reconciliation to latest filings.",
     "Coverage percentages are technical availability measures, not investment-quality scores.",
     "Missing data must not be converted to zero; sector-specific metrics may be NOT_APPLICABLE downstream."
-  ]
+  ],
+  "br01_br02_enrichment": {
+    "schema": "br01_br02_v1.0",
+    "updated_at_utc": "2026-09-02T23:19:07+00:00",
+    "latest_available_quarter": "2026Q2",
+    "quarters_used": [
+      "2022Q3",
+      "2022Q4",
+      "2023Q1",
+      "2023Q2",
+      "2023Q3",
+      "2023Q4",
+      "2024Q1",
+      "2024Q2",
+      "2024Q3",
+      "2024Q4",
+      "2025Q1",
+      "2025Q2",
+      "2025Q3",
+      "2025Q4",
+      "2026Q1",
+      "2026Q2"
+    ],
+    "annual_history_years_target": 4,
+    "sec_index": {
+      "source": "SEC Financial Statement Data Sets index",
+      "url": "https://www.sec.gov/data-research/sec-markets-data/financial-statement-data-sets",
+      "downloaded_at": "2026-09-02T23:17:14+00:00",
+      "latest_available": "2026Q2",
+      "quarters_found": 70
+    },
+    "quarter_downloads": [
+      {
+        "quarter": "2022Q3",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2022q3.zip",
+        "sha256": "4bbfdc953177acf1a430a9f0a624dd8244bc81292d42872107d0446d06167c26",
+        "bytes": 97589396
+      },
+      {
+        "quarter": "2022Q4",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2022q4.zip",
+        "sha256": "83bdc7a9545479eb64d118688c888ba8e7554ebc774f3ab8a8b0cc1decb87f28",
+        "bytes": 111091525
+      },
+      {
+        "quarter": "2023Q1",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2023q1.zip",
+        "sha256": "479638c1be4088fa2ae42d2947468913eaff5ad0f093c412ba4340af8a8f791e",
+        "bytes": 113974946
+      },
+      {
+        "quarter": "2023Q2",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2023q2.zip",
+        "sha256": "f028f1e8d24313e7619aa87c7c683a459452e7e81a8e5ba72d7ce39ddf62bda9",
+        "bytes": 116914392
+      },
+      {
+        "quarter": "2023Q3",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2023q3.zip",
+        "sha256": "f075d721dde4393dabd49c1746578294ada4665ec29c85c2b3184f44f6f09187",
+        "bytes": 117776944
+      },
+      {
+        "quarter": "2023Q4",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2023q4.zip",
+        "sha256": "ad23c5505e59b7305e16bfebb8bb839476689330b85a3e1ce216f809b18d1521",
+        "bytes": 120272357
+      },
+      {
+        "quarter": "2024Q1",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q1.zip",
+        "sha256": "94c7894b00903f8ff7186c4250ba1c1daa1bde8b3a0b26fae68f72608b2ffc9b",
+        "bytes": 124336804
+      },
+      {
+        "quarter": "2024Q2",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q2.zip",
+        "sha256": "698796e9f0946501d3dc74e7696a6c8c71cf32b66026e053722a784236b37761",
+        "bytes": 119119954
+      },
+      {
+        "quarter": "2024Q3",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q3.zip",
+        "sha256": "b1823f2d65189f0d5ecbb1968d683c59df762129ae1b23bda0394093a69e0da9",
+        "bytes": 118280418
+      },
+      {
+        "quarter": "2024Q4",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2024q4.zip",
+        "sha256": "9a2cbbaf39c94aa642b33d512f4def92b198d3bfd12d2267bcd27abe55b9902d",
+        "bytes": 122932548
+      },
+      {
+        "quarter": "2025Q1",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q1.zip",
+        "sha256": "4386e7057cc216b6fc729d8f957998acb831d29be7b16f6d8ed0f6b1ab74eba5",
+        "bytes": 127765057
+      },
+      {
+        "quarter": "2025Q2",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q2.zip",
+        "sha256": "81bf19bdb5606d5ee0164a8de8b7e96d5546170e42e59bcbf95b652ca83ac5d7",
+        "bytes": 78973768
+      },
+      {
+        "quarter": "2025Q3",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q3.zip",
+        "sha256": "ebe25fa74c3655f4738ed9eb144af3953c3981c80f57d74829fb9ad68b114710",
+        "bytes": 127842298
+      },
+      {
+        "quarter": "2025Q4",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q4.zip",
+        "sha256": "2b36ac3850c022cf19edd882e31c3c453c7666677b9fdd2e1f7748fdb5768c6e",
+        "bytes": 65830170
+      },
+      {
+        "quarter": "2026Q1",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q1.zip",
+        "sha256": "d18c01c615da8f5cd46273b0dacaeee5b1163f4089171da0f84153a5f3c362f6",
+        "bytes": 85259424
+      },
+      {
+        "quarter": "2026Q2",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q2.zip",
+        "sha256": "d7c815395cd420cfbe09b29dbae73a45406c5d0652d5ae1859ae11ea2e22df77",
+        "bytes": 60419016
+      }
+    ],
+    "coverage": {
+      "revenue_4y_pct": 0.0,
+      "operating_income_4y_pct": 0.0,
+      "fcf_4y_pct": 0.0,
+      "diluted_shares_4y_pct": 0.0,
+      "sbc_current_pct": 0.0,
+      "revenue_cagr3_pct": 0.0,
+      "opinc_cagr3_pct": 0.0,
+      "fcf_cagr3_pct": 0.0,
+      "fcf_per_share_cagr3_pct": 0.0
+    },
+    "rules": [
+      "Missing values are never converted to zero.",
+      "3-year CAGR is calculated only when both endpoints are positive.",
+      "SBC prefers ShareBasedCompensation; missing SBC remains MISSING.",
+      "This enrichment does not compute BQS, IOS, rankings, or recommendations."
+    ]
+  }
 }
