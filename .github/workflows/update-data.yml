@@ -52,10 +52,12 @@ jobs:
             python src/bridge.py --mode auto
           fi
 
-      - name: Enrich BR-01 and BR-02
+            - name: Enrich BR-01 and BR-02
         env:
           SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
         run: python src/enrich_br01_br02.py
+
+      - name: Create Claude-friendly chunks
         run: python src/split_for_claude.py
       - name: Commit changed public data
         run: |
