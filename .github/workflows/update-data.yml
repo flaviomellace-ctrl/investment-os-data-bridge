@@ -43,10 +43,6 @@ jobs:
         run: python -m compileall -q src
 
       - name: Refresh data
-
-      - name: Enrich BR-01 and BR-02
-        run: python src/enrich_br01_br02.py
-
         env:
           SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
         run: |
@@ -55,7 +51,11 @@ jobs:
           else
             python src/bridge.py --mode auto
           fi
-      - name: Create Claude-friendly chunks
+
+      - name: Enrich BR-01 and BR-02
+        env:
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+        run: python src/enrich_br01_br02.py
         run: python src/split_for_claude.py
       - name: Commit changed public data
         run: |
