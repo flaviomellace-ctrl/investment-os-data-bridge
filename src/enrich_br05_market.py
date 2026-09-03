@@ -2,14 +2,17 @@
 """
 Investment OS Data Bridge — BR-05 market data enrichment.
 
-Adds current market price and market capitalization from the FMP stable
-single-symbol quote endpoint.
+Primary source:
+- Nasdaq public stock screener (bulk, one request).
+
+Fallback:
+- Financial Modeling Prep stable single-symbol quote only for Nasdaq rows
+  that are missing or incomplete.
 
 Integrity rules:
-- FMP_API_KEY is read only from the environment.
-- The API key is never printed or written to disk.
-- Market cap is accepted only when returned directly by FMP.
+- Market cap is accepted only when returned directly by Nasdaq or FMP.
 - Market cap is NEVER reconstructed from bridge share counts.
+- FMP_API_KEY is read only from the environment and is never printed/written.
 - MISSING is never converted to zero.
 - No BQS, IOS, ranking, deep dive, or recommendation is computed here.
 """
@@ -38,13 +41,25 @@ COVERAGE_PATH = DATA_DIR / "sp500_coverage.csv"
 STATUS_PATH = DATA_DIR / "status.md"
 MANIFEST_PATH = DATA_DIR / "manifest.json"
 
+NASDAQ_URL = "https://api.nasdaq.com/api/screener/stocks"
 FMP_QUOTE_URL = "https://financialmodelingprep.com/stable/quote"
 
-SCHEMA = "br05_market_v1.0"
-REQUEST_DELAY_SECONDS = 0.26
-TIMEOUT_SECONDS = 30
-MAX_RETRIES = 4
-MIN_WRITE_COVERAGE_PCT = 90.0
+NASDAQ_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/120.0 Safari/537.36"
+    ),
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Referer": "https://www.nasdaq.com/",
+}
+
+SCHEMA = "br05_market_v2.0"
+TIMEOUT_SECONDS = 45
+FMP_REQUEST_DELAY_SECONDS = 0.35
+MAX_FMP_RETRIES = 3
+MIN_WRITE_COVERAGE_PCT = 98.0
 
 
 def now_iso() -> str:
@@ -71,14 +86,86 @@ def clean_symbol(value) -> str:
     return str(value).strip().upper().replace("/", ".")
 
 
+def symbol_variants(symbol: str) -> list[str]:
+    variants = [symbol]
+    if "." in symbol:
+        variants.append(symbol.replace(".", "-"))
+    if "-" in symbol:
+        variants.append(symbol.replace("-", "."))
+    return list(dict.fromkeys(variants))
+
+
 def finite_positive(value):
+    if value is None or pd.isna(value):
+        return None
+
+    text = str(value).strip().replace("$", "").replace(",", "")
+    if not text:
+        return None
+
     try:
-        x = float(value)
+        x = float(text)
     except (TypeError, ValueError):
         return None
+
     if not math.isfinite(x) or x <= 0:
         return None
     return x
+
+
+def fetch_nasdaq_bulk(
+    session: requests.Session,
+    retrieved_at: str,
+) -> tuple[dict[str, dict], dict]:
+    response = session.get(
+        NASDAQ_URL,
+        headers=NASDAQ_HEADERS,
+        params={
+            "tableonly": "true",
+            "limit": "10000",
+            "offset": "0",
+            "download": "true",
+        },
+        timeout=TIMEOUT_SECONDS,
+    )
+
+    meta = {
+        "http_status": response.status_code,
+        "rows_returned": 0,
+        "retrieved_at_utc": retrieved_at,
+    }
+
+    if response.status_code != 200:
+        return {}, meta
+
+    try:
+        payload = response.json()
+    except ValueError:
+        return {}, meta
+
+    rows = ((payload or {}).get("data") or {}).get("rows") or []
+    meta["rows_returned"] = len(rows)
+
+    market: dict[str, dict] = {}
+
+    for row in rows:
+        symbol = clean_symbol(row.get("symbol"))
+        if not symbol:
+            continue
+
+        price = finite_positive(
+            row.get("lastsale")
+            if row.get("lastsale") is not None
+            else row.get("lastSalePrice")
+        )
+        market_cap = finite_positive(row.get("marketCap"))
+
+        market[symbol] = {
+            "price": price,
+            "market_cap": market_cap,
+        }
+
+    return market, meta
 
 
 def candidate_fmp_symbols(symbol: str) -> list[str]:
@@ -90,123 +177,167 @@ def candidate_fmp_symbols(symbol: str) -> list[str]:
     return out
 
 
-def safe_get_json(
+def fetch_fmp_quote(
     session: requests.Session,
     api_key: str,
-    symbol: str,
-) -> tuple[int, object | None]:
-    delay = 1.0
-
-    for attempt in range(MAX_RETRIES):
-        try:
-            response = session.get(
-                FMP_QUOTE_URL,
-                params={"symbol": symbol, "apikey": api_key},
-                timeout=TIMEOUT_SECONDS,
-            )
-        except requests.RequestException:
-            if attempt == MAX_RETRIES - 1:
-                return 0, None
-            time.sleep(delay)
-            delay *= 2
-            continue
-
-        if response.status_code == 200:
-            try:
-                return 200, response.json()
-            except ValueError:
-                return 200, None
-
-        if response.status_code == 429 or 500 <= response.status_code < 600:
-            if attempt == MAX_RETRIES - 1:
-                return response.status_code, None
-            time.sleep(delay)
-            delay *= 2
-            continue
-
-        return response.status_code, None
-
-    return 0, None
-
-
-def parse_quote_row(
     requested_ticker: str,
-    fmp_symbol: str,
-    payload,
-    retrieved_at: str,
-) -> dict | None:
-    if not isinstance(payload, list) or not payload:
-        return None
-
-    row = payload[0]
-    if not isinstance(row, dict):
-        return None
-
-    price = finite_positive(row.get("price"))
-    market_cap = finite_positive(
-        row.get("marketCap")
-        if row.get("marketCap") is not None
-        else row.get("mktCap")
-    )
-
-    raw_ts = row.get("timestamp")
-    as_of = ""
-    if raw_ts not in (None, ""):
-        try:
-            ts = float(raw_ts)
-            if ts > 1_000_000_000:
-                as_of = datetime.fromtimestamp(
-                    ts, tz=timezone.utc
-                ).replace(microsecond=0).isoformat()
-        except (TypeError, ValueError, OverflowError):
-            pass
-
-    if price is None or market_cap is None:
-        return None
-
-    return {
-        "ticker": requested_ticker,
-        "market_price": price,
-        "market_cap": market_cap,
-        "market_data_as_of": as_of,
-        "market_data_retrieved_at_utc": retrieved_at,
-        "market_data_source": "FMP_STABLE_QUOTE_SINGLE",
-        "market_data_source_symbol": fmp_symbol,
-        "market_data_status": "PRESENT",
-    }
-
-
-def fetch_one(
-    session: requests.Session,
-    api_key: str,
-    ticker: str,
     retrieved_at: str,
 ) -> tuple[dict | None, int]:
     last_status = 0
 
-    for fmp_symbol in candidate_fmp_symbols(ticker):
-        status, payload = safe_get_json(
-            session=session,
-            api_key=api_key,
-            symbol=fmp_symbol,
-        )
-        last_status = status
+    for fmp_symbol in candidate_fmp_symbols(requested_ticker):
+        backoff = 1.0
 
-        if status in (401, 402, 403):
-            return None, status
+        for attempt in range(MAX_FMP_RETRIES):
+            try:
+                response = session.get(
+                    FMP_QUOTE_URL,
+                    params={"symbol": fmp_symbol, "apikey": api_key},
+                    timeout=30,
+                )
+            except requests.RequestException:
+                if attempt == MAX_FMP_RETRIES - 1:
+                    break
+                time.sleep(backoff)
+                backoff *= 2
+                continue
 
-        record = parse_quote_row(
-            requested_ticker=ticker,
-            fmp_symbol=fmp_symbol,
-            payload=payload,
-            retrieved_at=retrieved_at,
-        )
-        if record is not None:
-            return record, status
+            last_status = response.status_code
 
-        time.sleep(REQUEST_DELAY_SECONDS)
+            if response.status_code == 200:
+                try:
+                    payload = response.json()
+                except ValueError:
+                    payload = None
+
+                if isinstance(payload, list) and payload:
+                    row = payload[0]
+                    price = finite_positive(row.get("price"))
+                    market_cap = finite_positive(
+                        row.get("marketCap")
+                        if row.get("marketCap") is not None
+                        else row.get("mktCap")
+                    )
+
+                    as_of = ""
+                    raw_ts = row.get("timestamp")
+                    if raw_ts not in (None, ""):
+                        try:
+                            ts = float(raw_ts)
+                            if ts > 1_000_000_000:
+                                as_of = datetime.fromtimestamp(
+                                    ts, tz=timezone.utc
+                                ).replace(microsecond=0).isoformat()
+                        except (TypeError, ValueError, OverflowError):
+                            pass
+
+                    if price is not None and market_cap is not None:
+                        return {
+                            "ticker": requested_ticker,
+                            "market_price": price,
+                            "market_cap": market_cap,
+                            "market_data_as_of": as_of,
+                            "market_data_retrieved_at_utc": retrieved_at,
+                            "market_data_source": "FMP_STABLE_QUOTE_SINGLE",
+                            "market_data_source_symbol": fmp_symbol,
+                            "market_data_as_of_status": (
+                                "SOURCE_TIMESTAMP"
+                                if as_of
+                                else "RETRIEVAL_TIME_ONLY"
+                            ),
+                            "market_data_status": "PRESENT",
+                        }, response.status_code
+
+                break
+
+            if response.status_code == 429 or 500 <= response.status_code < 600:
+                if attempt == MAX_FMP_RETRIES - 1:
+                    break
+                time.sleep(backoff)
+                backoff *= 2
+                continue
+
+            break
+
+        time.sleep(FMP_REQUEST_DELAY_SECONDS)
 
     return None, last_status
+
+
+def build_market_frame(
+    fundamentals: pd.DataFrame,
+    nasdaq_market: dict[str, dict],
+    api_key: str,
+    retrieved_at: str,
+) -> tuple[pd.DataFrame, dict]:
+    records: list[dict] = []
+    fallback_needed: list[str] = []
+
+    for ticker in fundamentals["ticker"].tolist():
+        nasdaq_record = None
+        matched_symbol = ""
+
+        for candidate in symbol_variants(ticker):
+            candidate_row = nasdaq_market.get(candidate)
+            if candidate_row is not None:
+                nasdaq_record = candidate_row
+                matched_symbol = candidate
+                break
+
+        if (
+            nasdaq_record is not None
+            and nasdaq_record.get("price") is not None
+            and nasdaq_record.get("market_cap") is not None
+        ):
+            records.append(
+                {
+                    "ticker": ticker,
+                    "market_price": nasdaq_record["price"],
+                    "market_cap": nasdaq_record["market_cap"],
+                    "market_data_as_of": "",
+                    "market_data_retrieved_at_utc": retrieved_at,
+                    "market_data_source": "NASDAQ_PUBLIC_SCREENER",
+                    "market_data_source_symbol": matched_symbol,
+                    "market_data_as_of_status": "RETRIEVAL_TIME_ONLY",
+                    "market_data_status": "PRESENT",
+                }
+            )
+        else:
+            fallback_needed.append(ticker)
+
+    fallback_meta = {
+        "requested": len(fallback_needed),
+        "completed": 0,
+        "http_statuses": {},
+    }
+
+    if fallback_needed and api_key:
+        fmp_session = requests.Session()
+        fmp_session.headers.update(
+            {
+                "User-Agent": "InvestmentOSDataBridge/1.0",
+                "Accept": "application/json",
+            }
+        )
+
+        for ticker in fallback_needed:
+            record, status = fetch_fmp_quote(
+                session=fmp_session,
+                api_key=api_key,
+                requested_ticker=ticker,
+                retrieved_at=retrieved_at,
+            )
+
+            key = str(status)
+            fallback_meta["http_statuses"][key] = (
+                fallback_meta["http_statuses"].get(key, 0) + 1
+            )
+
+            if record is not None:
+                records.append(record)
+                fallback_meta["completed"] += 1
+
+    return pd.DataFrame(records), fallback_meta
 
 
 def coverage_pct(df: pd.DataFrame) -> float:
@@ -231,6 +362,7 @@ def merge_market_data(
         "market_data_retrieved_at_utc",
         "market_data_source",
         "market_data_source_symbol",
+        "market_data_as_of_status",
         "market_data_status",
     ]
 
@@ -245,6 +377,7 @@ def merge_market_data(
         base["market_data_status"] = "MISSING"
         return base
 
+    market = market.drop_duplicates("ticker", keep="last")
     merged = base.merge(market, on="ticker", how="left")
     merged["market_data_status"] = (
         merged["market_data_status"].fillna("MISSING")
@@ -287,18 +420,22 @@ def update_status(df: pd.DataFrame) -> float:
     if marker in base:
         base = base.split(marker, 1)[0].rstrip() + "\n"
 
-    as_of_present = round(
-        float(df["market_data_as_of"].fillna("").ne("").mean() * 100), 1
+    counts = (
+        df["market_data_source"]
+        .fillna("MISSING")
+        .value_counts()
+        .to_dict()
     )
 
     section = f"""
 ## V4.1 enrichment BR-05
 
-- Fonte market data: **FMP stable single-symbol quote**
+- Fonte primaria market data: **Nasdaq public stock screener**
+- Fallback: **FMP stable single-symbol quote, solo per righe mancanti/incomplete**
 - Prezzo + market cap direttamente disponibili: **{pct:.1f}%**
-- Source timestamp disponibile: **{as_of_present:.1f}%**
 - Market cap ricostruita da bridge shares: **NO**
 - `MISSING` resta `MISSING`: nessuna assenza è convertita in zero.
+- Source counts: **{json.dumps(counts, sort_keys=True)}**
 """
 
     STATUS_PATH.write_text(
@@ -312,10 +449,6 @@ def main() -> int:
     if not FUNDAMENTALS_PATH.exists():
         raise SystemExit("sp500_fundamentals.csv non trovato")
 
-    api_key = os.getenv("FMP_API_KEY", "").strip()
-    if not api_key:
-        raise SystemExit("FMP_API_KEY non configurata nell'ambiente")
-
     fundamentals = pd.read_csv(FUNDAMENTALS_PATH, low_memory=False)
     fundamentals["ticker"] = fundamentals["ticker"].map(clean_symbol)
 
@@ -324,60 +457,34 @@ def main() -> int:
 
     retrieved_at = now_iso()
 
-    session = requests.Session()
-    session.headers.update(
-        {
-            "User-Agent": "InvestmentOSDataBridge/1.0",
-            "Accept": "application/json",
-        }
+    nasdaq_session = requests.Session()
+    nasdaq_market, nasdaq_meta = fetch_nasdaq_bulk(
+        session=nasdaq_session,
+        retrieved_at=retrieved_at,
     )
 
-    records: list[dict] = []
-    hard_error_status = None
-
-    total = len(fundamentals)
-    for i, ticker in enumerate(fundamentals["ticker"].tolist(), start=1):
-        if not ticker:
-            continue
-
-        record, status = fetch_one(
-            session=session,
-            api_key=api_key,
-            ticker=ticker,
-            retrieved_at=retrieved_at,
+    if nasdaq_meta["http_status"] != 200 or not nasdaq_market:
+        raise SystemExit(
+            "BR-05 NON scritto: Nasdaq bulk non disponibile. "
+            "Nessun file data/current modificato."
         )
 
-        if status in (401, 402, 403):
-            hard_error_status = status
-            print(
-                f"FMP accesso/piano ha restituito HTTP {status} "
-                f"alla richiesta {i}/{total}; stop sicuro."
-            )
-            break
+    api_key = os.getenv("FMP_API_KEY", "").strip()
 
-        if record is not None:
-            records.append(record)
-
-        if i % 50 == 0 or i == total:
-            print(
-                f"BR-05 progress: {i}/{total}; "
-                f"quote complete={len(records)}"
-            )
-
-        time.sleep(REQUEST_DELAY_SECONDS)
-
-    market = pd.DataFrame(records)
-
-    if not market.empty:
-        market = market.drop_duplicates("ticker", keep="last")
+    market, fallback_meta = build_market_frame(
+        fundamentals=fundamentals,
+        nasdaq_market=nasdaq_market,
+        api_key=api_key,
+        retrieved_at=retrieved_at,
+    )
 
     enriched = merge_market_data(fundamentals, market)
     pct = coverage_pct(enriched)
 
-    if hard_error_status is not None or pct < MIN_WRITE_COVERAGE_PCT:
+    if pct < MIN_WRITE_COVERAGE_PCT:
         raise SystemExit(
-            f"BR-05 NON scritto. Copertura={pct:.1f}%. "
-            f"HTTP hard error={hard_error_status}. "
+            f"BR-05 NON scritto. Copertura={pct:.1f}% "
+            f"< {MIN_WRITE_COVERAGE_PCT:.1f}%. "
             "Nessun file data/current modificato."
         )
 
@@ -391,13 +498,17 @@ def main() -> int:
         "schema": SCHEMA,
         "updated_at_utc": now_iso(),
         "coverage_price_and_market_cap_pct": pct,
-        "endpoint": FMP_QUOTE_URL,
-        "source": "FMP_STABLE_QUOTE_SINGLE",
-        "request_delay_seconds": REQUEST_DELAY_SECONDS,
+        "primary_source": "NASDAQ_PUBLIC_SCREENER",
+        "primary_endpoint": NASDAQ_URL,
+        "nasdaq": nasdaq_meta,
+        "fallback_source": "FMP_STABLE_QUOTE_SINGLE",
+        "fallback_endpoint": FMP_QUOTE_URL,
+        "fallback": fallback_meta,
         "rules": [
-            "Market cap is accepted only when returned directly by FMP.",
+            "Market cap is accepted only when returned directly by Nasdaq or FMP.",
             "Market cap is never reconstructed from bridge share count.",
             "Missing price/market cap remains MISSING, never zero.",
+            "FMP is used only as fallback for Nasdaq missing/incomplete rows.",
             "The API key is never written to repository files.",
             "This enrichment does not compute BQS, IOS, rankings, or recommendations.",
         ],
@@ -421,6 +532,14 @@ def main() -> int:
     print(
         f"OK — BR-05 completato. "
         f"Prezzo+market cap: {pct:.1f}% dell'universo."
+    )
+    print(
+        "Nasdaq rows:",
+        nasdaq_meta["rows_returned"],
+        "| FMP fallback requested:",
+        fallback_meta["requested"],
+        "| completed:",
+        fallback_meta["completed"],
     )
     return 0
 
