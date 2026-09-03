@@ -1,6 +1,6 @@
 # Investment OS Data Bridge — stato
 
-Aggiornato: **2026-09-02T23:25:44+00:00**
+Aggiornato: **2026-09-03T21:15:05+00:00**
 
 - Righe universo equity-like: **504**
 - Ticker con CIK SEC mappato: **99.8%**
@@ -26,3 +26,11 @@ La copertura qui è una misura tecnica, non un BQS. Metriche non appropriate a u
 - FCF/share CAGR 3y calcolabile: **47.4%**
 
 `MISSING` resta `MISSING`: nessuna assenza è convertita in zero.
+## V4.1 enrichment BR-05
+
+- Fonte primaria market data: **Nasdaq public stock screener**
+- Fallback: **FMP stable single-symbol quote, solo per righe mancanti/incomplete**
+- Prezzo + market cap direttamente disponibili: **99.6%**
+- Market cap ricostruita da bridge shares: **NO**
+- `MISSING` resta `MISSING`: nessuna assenza è convertita in zero.
+- Source counts: **{"MISSING": 2, "NASDAQ_PUBLIC_SCREENER": 502}**
