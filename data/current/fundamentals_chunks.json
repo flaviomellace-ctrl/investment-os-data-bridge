@@ -1,6 +1,6 @@
 {
   "source": "sp500_fundamentals.csv",
-  "source_sha256": "d2a88f57d79afbaf2d2e08771db4c25157ca2a955aea117758d22d14a60a6148",
+  "source_sha256": "4f8b91303b43152fc2200fd2714c29a7bc209681f46ee82a002aa7d3656ca92a",
   "total_rows": 504,
   "total_columns": 166,
   "target_max_bytes": 48000,
@@ -19,8 +19,8 @@
       "row_start_1_based": 1,
       "row_end_1_based": 18,
       "rows": 18,
-      "bytes": 47698,
-      "sha256": "738d446cbae86c1849d67633a06d89639a0aefccbfd5eb042bfc972a0cf89253",
+      "bytes": 47700,
+      "sha256": "2b35308d230b56a7c440aa79c2aac4e63df3ee976045e5f55e543c5d71bd3790",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_01.csv"
     },
     {
@@ -29,8 +29,8 @@
       "row_start_1_based": 19,
       "row_end_1_based": 35,
       "rows": 17,
-      "bytes": 46696,
-      "sha256": "75ff5979e05c2f19c3898446ca3e2169b4498dc891aae9bba6e5105c561c2eed",
+      "bytes": 46693,
+      "sha256": "596469500de2ed02ca2466ece1275d9f3f4e1f2dc4b2535270d9352f58395d05",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_02.csv"
     },
     {
@@ -39,8 +39,8 @@
       "row_start_1_based": 36,
       "row_end_1_based": 53,
       "rows": 18,
-      "bytes": 45360,
-      "sha256": "3d9901be2d5b95b69609a9438bc8abad49cca3ad46ed4bb922a6742fee1b6de3",
+      "bytes": 45357,
+      "sha256": "b24441e596ff89baab82d54b482e0e2ae37fb80f3fdbc3cd9987740f9d3a8ed8",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_03.csv"
     },
     {
@@ -49,8 +49,8 @@
       "row_start_1_based": 54,
       "row_end_1_based": 70,
       "rows": 17,
-      "bytes": 47587,
-      "sha256": "dbec6596d6ee4ed15b4b17523e7f7abd2cc1f35713479093da87c722f9c03289",
+      "bytes": 47589,
+      "sha256": "5296fe2e10a2e811118c754232e01968046a82da958305800c0ef2cc29fd471b",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_04.csv"
     },
     {
@@ -59,8 +59,8 @@
       "row_start_1_based": 71,
       "row_end_1_based": 89,
       "rows": 19,
-      "bytes": 47023,
-      "sha256": "b1e320f254a0552b3db8d57e1c914a72cab4b8219f9a901a7c9a76ace97d56c6",
+      "bytes": 47022,
+      "sha256": "3d949e4f0c950263ab8752d2e6b24897f35fb33687e414fb310da5b31d660535",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_05.csv"
     },
     {
@@ -69,8 +69,8 @@
       "row_start_1_based": 90,
       "row_end_1_based": 107,
       "rows": 18,
-      "bytes": 46118,
-      "sha256": "7dcb15bd0b645e9c3a296606da95686e44b2897c0bbeb9c474aa0cb3dc7d2e76",
+      "bytes": 46121,
+      "sha256": "aae3ebe07ce30cd41ccc12ebced97930eb2794a90f4b2b9b3444d3593f7b1543",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_06.csv"
     },
     {
@@ -79,8 +79,8 @@
       "row_start_1_based": 108,
       "row_end_1_based": 125,
       "rows": 18,
-      "bytes": 46441,
-      "sha256": "e55dfe30558e61b2cdd4bcaf838038dc51bcf0d12c6bc7005a7726efbab53211",
+      "bytes": 46438,
+      "sha256": "bab56bfdfc425d922ad86bb6e7133c0fd73f8f53f15312ab617dffca61e69e80",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_07.csv"
     },
     {
@@ -89,8 +89,8 @@
       "row_start_1_based": 126,
       "row_end_1_based": 142,
       "rows": 17,
-      "bytes": 47038,
-      "sha256": "f266c50ce1ed0007766d628df01964121d6c1a836f8f7f31a190019ae09fffa5",
+      "bytes": 47037,
+      "sha256": "d1e09376cec7c8d45aa5aad0b6ea85954e490e6fa8a3db3dd3df4bd4d6b74843",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_08.csv"
     },
     {
@@ -99,8 +99,8 @@
       "row_start_1_based": 143,
       "row_end_1_based": 160,
       "rows": 18,
-      "bytes": 46766,
-      "sha256": "ecdd3b1969136e44cbfcf47831398b063a36733f04fcd335e9fe2fe3d1c0a26c",
+      "bytes": 46769,
+      "sha256": "2b1cf4e2fc40d659a7b6a056a0027828e87766b928bdb0ea11c7c94895efc559",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_09.csv"
     },
     {
@@ -110,7 +110,7 @@
       "row_end_1_based": 177,
       "rows": 17,
       "bytes": 46717,
-      "sha256": "6bb4bb81b4447e61c1a2dbdf2ba67abb247c90fe226a6e54fbd8e7787615a615",
+      "sha256": "276fd3b2b57768607dd9edb73fd553b88f7a512d63c7ce308a75286ab124ae40",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_10.csv"
     },
     {
@@ -119,8 +119,8 @@
       "row_start_1_based": 178,
       "row_end_1_based": 196,
       "rows": 19,
-      "bytes": 47852,
-      "sha256": "94030425f30ac42d45eb561b441d53f38c90f1a69b8bd5cf27b65a87bc69ec7e",
+      "bytes": 47850,
+      "sha256": "5ec58fe2ed26af68e253e98722de60d1be41228213d62f6512c30764e43efca6",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_11.csv"
     },
     {
@@ -129,8 +129,8 @@
       "row_start_1_based": 197,
       "row_end_1_based": 214,
       "rows": 18,
-      "bytes": 46950,
-      "sha256": "3e284b9840840b5e0f978ccd1d136a4934f1336b3952844a34907b4e321669ef",
+      "bytes": 46949,
+      "sha256": "99e3ca7f4fa0fef3fd53347310d52edae020461cdf1cccd9b9a40959a1f83076",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_12.csv"
     },
     {
@@ -139,8 +139,8 @@
       "row_start_1_based": 215,
       "row_end_1_based": 234,
       "rows": 20,
-      "bytes": 47534,
-      "sha256": "280a4be62686666f2e63c171c9a3a5b0da7b42904a5bd86a362bd92f803409d5",
+      "bytes": 47533,
+      "sha256": "422f11b1f7884dc258fcf06ecccd4ad0833c4dba2769a17c99e4176b9959813c",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_13.csv"
     },
     {
@@ -149,8 +149,8 @@
       "row_start_1_based": 235,
       "row_end_1_based": 252,
       "rows": 18,
-      "bytes": 47373,
-      "sha256": "e1a5c946548c70965b7620e463942af220e17ea3ab060ae624abb1f035d84e3e",
+      "bytes": 47372,
+      "sha256": "d8df32098294baab09114323c7612385ff52f8ac813754a9d04c1031cef2e97b",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_14.csv"
     },
     {
@@ -159,8 +159,8 @@
       "row_start_1_based": 253,
       "row_end_1_based": 270,
       "rows": 18,
-      "bytes": 46839,
-      "sha256": "a4f8069fe26fdc0b1ab65f502fd5fbf1497306ab690640a67a8f14c7a8acde94",
+      "bytes": 46840,
+      "sha256": "43a95e3b2df7c8d80b9369068f82acaf2336d811794eb6158a6546fc67bb3dca",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_15.csv"
     },
     {
@@ -170,7 +170,7 @@
       "row_end_1_based": 288,
       "rows": 18,
       "bytes": 47768,
-      "sha256": "1cd20de6d7812517ce1269f048187e02b954c123ee0387c1e6a8bd6fd610d68f",
+      "sha256": "261665c05fca2fe69f1ece77182dc476983489b230bf375d58eba1f0a6fe7ec2",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_16.csv"
     },
     {
@@ -180,7 +180,7 @@
       "row_end_1_based": 306,
       "rows": 18,
       "bytes": 46095,
-      "sha256": "7b32cd51a0f27788e72c776226dce2dd733b2dfbaa91b76e499c619c4b5706ac",
+      "sha256": "2c01b1c5e9638431921a231b6cb5907714611cfa7312fcf50822147d00ca9455",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_17.csv"
     },
     {
@@ -189,8 +189,8 @@
       "row_start_1_based": 307,
       "row_end_1_based": 325,
       "rows": 19,
-      "bytes": 47949,
-      "sha256": "13cf561202aeddc4764b9cdd7a1909dc27feed67974552a7e4f0b4b4a642cc08",
+      "bytes": 47946,
+      "sha256": "02c206a7abe8a2b58937d17074e2629725bf492bc9a8df1ce4738878b5335b14",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_18.csv"
     },
     {
@@ -200,7 +200,7 @@
       "row_end_1_based": 343,
       "rows": 18,
       "bytes": 47403,
-      "sha256": "c63939d2f77b306187ac2f50a29624b7581d49566bb5339063f083a56137af9e",
+      "sha256": "4a60ffcbc9ddd40c99cd4a10e1cdb156ecb98f2563b530ba53c1df4a6c7478e2",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_19.csv"
     },
     {
@@ -209,8 +209,8 @@
       "row_start_1_based": 344,
       "row_end_1_based": 362,
       "rows": 19,
-      "bytes": 47837,
-      "sha256": "9bc5501e747c78747c51f784c891300782803f2792de1d77cf2d0dae46ba0e30",
+      "bytes": 47838,
+      "sha256": "03ae091b94efe3e78fd1c2c966e024962b64a4c6fb2210ae8a362368c6807014",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_20.csv"
     },
     {
@@ -219,8 +219,8 @@
       "row_start_1_based": 363,
       "row_end_1_based": 380,
       "rows": 18,
-      "bytes": 45887,
-      "sha256": "a908b21d3ebf07c274dbb239dae9eda4cb13be69b95ee01e208020fff8f8e0f0",
+      "bytes": 45888,
+      "sha256": "00568b304c36cb163a764d56d14554ef44645120f0bec66fda7490f197e2f440",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_21.csv"
     },
     {
@@ -229,8 +229,8 @@
       "row_start_1_based": 381,
       "row_end_1_based": 398,
       "rows": 18,
-      "bytes": 46023,
-      "sha256": "d17a39b665ac8d53d3dee925e7a8ca629e2e629f26d92d35a2383c01da8c33c0",
+      "bytes": 46025,
+      "sha256": "547c7361b52fc067a40d449dcc488be08e6ef4508d922193f09c9e70647f22fa",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_22.csv"
     },
     {
@@ -240,7 +240,7 @@
       "row_end_1_based": 416,
       "rows": 18,
       "bytes": 47058,
-      "sha256": "c353d443235dcf5d3729149b4b85ade8d2d743e814fe7f86899a93b08d440c26",
+      "sha256": "736934158e9f3d91448d07b8321486874c0d46a39f638f93152483496741e36d",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_23.csv"
     },
     {
@@ -249,8 +249,8 @@
       "row_start_1_based": 417,
       "row_end_1_based": 437,
       "rows": 21,
-      "bytes": 47369,
-      "sha256": "d4b17dab7e4f668992ca67d2d0e21c60e7f8ace92b881a9ea2839bb33e4cbf50",
+      "bytes": 47371,
+      "sha256": "9ac4ea3ab6a14a773cf379083a5598e41efdbee2a7e0aee56d70a95d6390e7ff",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_24.csv"
     },
     {
@@ -260,7 +260,7 @@
       "row_end_1_based": 456,
       "rows": 19,
       "bytes": 47950,
-      "sha256": "135737de092ced4ccbe5c32c5cb05ed935b164e2126f3a56c7c4f7fdea45a96a",
+      "sha256": "93269d3dc75de29c918c802040701a358483ec387a7c2fc50e5da05a8f54e5dd",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_25.csv"
     },
     {
@@ -269,8 +269,8 @@
       "row_start_1_based": 457,
       "row_end_1_based": 473,
       "rows": 17,
-      "bytes": 46013,
-      "sha256": "306229c3a85032b493e21789e24dfd95e9ac2bc48957c6b3d08b0789affe50d2",
+      "bytes": 46014,
+      "sha256": "608062d65bd86c24c33468c60488b7c20594e022b8ffa3dd494b035f84f9f97b",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_26.csv"
     },
     {
@@ -279,8 +279,8 @@
       "row_start_1_based": 474,
       "row_end_1_based": 491,
       "rows": 18,
-      "bytes": 47137,
-      "sha256": "fb4a0237cb49dd1175bc326159937d3a5e344690bd5ac7b538ab623566d0bc85",
+      "bytes": 47139,
+      "sha256": "c72296f7dcfa5fe70113f50b83ffce6eef78834d34ef9bbd968a66517d07b9f3",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_27.csv"
     },
     {
@@ -289,8 +289,8 @@
       "row_start_1_based": 492,
       "row_end_1_based": 504,
       "rows": 13,
-      "bytes": 31640,
-      "sha256": "80d1f7d4d6a8aa6a427e345789e3daeeaa8b4b68bbaa4c31a223d5ac1653a62e",
+      "bytes": 31637,
+      "sha256": "fab2e98196f3e83acad1104c1cfe686657cdd59de38c065ec3a9a5ee70da30a8",
       "url": "https://raw.githubusercontent.com/flaviomellace-ctrl/investment-os-data-bridge/main/data/current/sp500_fundamentals_part_28.csv"
     }
   ],
