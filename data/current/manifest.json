@@ -1,6 +1,6 @@
 {
   "schema_version": "1.2",
-  "updated_at_utc": "2026-09-07T10:16:49+00:00",
+  "updated_at_utc": "2026-09-14T10:37:35+00:00",
   "mode": "auto",
   "fundamentals_rebuilt_this_run": false,
   "state_street": {
@@ -12,22 +12,22 @@
     "source": "State Street SPY daily holdings",
     "product_url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-500-etf-trust-spy",
     "download_url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-spy.xlsx",
-    "downloaded_at": "2026-09-07T10:16:48+00:00",
-    "sha256": "b054eec1d502fe551ed17b9d3a4c4b00fd35f4a450290a0d721cef68eeee36fb",
-    "bytes": 54422
+    "downloaded_at": "2026-09-14T10:37:34+00:00",
+    "sha256": "7b8a57a90959bf41fd06e4d819c1967e38e176fca87df66e9ec9ecbc4a9d560d",
+    "bytes": 54456
   },
   "sec_ticker_map": {
     "source": "SEC company_tickers.json",
     "url": "https://www.sec.gov/files/company_tickers.json",
-    "downloaded_at": "2026-09-07T10:16:48+00:00",
-    "sha256": "f987a9fba01e1c1858ddcf0c032d77be301843860d7a0571efaa92ec3f938926",
-    "rows": 10412
+    "downloaded_at": "2026-09-14T10:37:34+00:00",
+    "sha256": "26602b2fd871aa1815bdc33fa234308f9c82f0ee6b939d16b2e2b9b1b4bfdaef",
+    "rows": 10426
   },
   "sec": {
     "index": {
       "source": "SEC Financial Statement Data Sets index",
       "url": "https://www.sec.gov/data-research/sec-markets-data/financial-statement-data-sets",
-      "downloaded_at": "2026-09-07T10:16:49+00:00",
+      "downloaded_at": "2026-09-14T10:37:35+00:00",
       "latest_available": "2026Q2",
       "quarters_found": 70
     },
@@ -74,12 +74,12 @@
   "archive_created": null,
   "outputs": {
     "sp500_universe.csv": {
-      "sha256": "00acae99681abac556d2dc8163583bbcf9d5f5c86a89e94e5fd14bb516379f24",
-      "bytes": 44999
+      "sha256": "30c7b11fd89bb6ad94cc9c3b8c3629b34f21f7f6367752f6bcee501f88688e3b",
+      "bytes": 44996
     },
     "sp500_fundamentals.csv": {
-      "sha256": "4f8b91303b43152fc2200fd2714c29a7bc209681f46ee82a002aa7d3656ca92a",
-      "bytes": 1205403
+      "sha256": "47f3478b5cc94ebd3c50123ec476aebd405c9eb96a7c315d8de2e14d6e2a8e05",
+      "bytes": 1205373
     },
     "sp500_coverage.csv": {
       "sha256": "cc7048e426f2eda9654bb6abc858a97717651f26ef2dc220aab46969706c90c2",
@@ -90,7 +90,7 @@
       "bytes": 1116
     },
     "status.md": {
-      "sha256": "2c7313d0f7ca3390fcdbb1c29dd5d11bf17b8b7c5fd1d93ca0216f1bbfe9ebdb",
+      "sha256": "4184957eada42f2cde230a8ca98d5209f1b0e8f49d317234c59600649319b48f",
       "bytes": 1660
     }
   },
@@ -102,7 +102,7 @@
   ],
   "br01_br02_enrichment": {
     "schema": "br01_br02_v1.1",
-    "updated_at_utc": "2026-09-07T10:20:31+00:00",
+    "updated_at_utc": "2026-09-14T10:40:40+00:00",
     "latest_available_quarter": "2026Q2",
     "quarters_used": [
       "2022Q3",
@@ -126,7 +126,7 @@
     "sec_index": {
       "source": "SEC Financial Statement Data Sets index",
       "url": "https://www.sec.gov/data-research/sec-markets-data/financial-statement-data-sets",
-      "downloaded_at": "2026-09-07T10:16:49+00:00",
+      "downloaded_at": "2026-09-14T10:37:35+00:00",
       "latest_available": "2026Q2",
       "quarters_found": 70
     },
@@ -248,14 +248,14 @@
   },
   "br05_market_enrichment": {
     "schema": "br05_market_v2.0",
-    "updated_at_utc": "2026-09-07T10:20:35+00:00",
+    "updated_at_utc": "2026-09-14T10:40:43+00:00",
     "coverage_price_and_market_cap_pct": 99.6,
     "primary_source": "NASDAQ_PUBLIC_SCREENER",
     "primary_endpoint": "https://api.nasdaq.com/api/screener/stocks",
     "nasdaq": {
       "http_status": 200,
-      "rows_returned": 7133,
-      "retrieved_at_utc": "2026-09-07T10:20:32+00:00"
+      "rows_returned": 7163,
+      "retrieved_at_utc": "2026-09-14T10:40:41+00:00"
     },
     "fallback_source": "FMP_STABLE_QUOTE_SINGLE",
     "fallback_endpoint": "https://financialmodelingprep.com/stable/quote",
