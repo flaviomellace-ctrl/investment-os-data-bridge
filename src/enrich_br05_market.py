@@ -80,6 +80,30 @@ def read_manifest() -> dict:
     return json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
 
 
+def parse_schema_version(value) -> tuple[int, ...]:
+    """
+    Convert a dotted numeric schema version such as "1.3" to (1, 3).
+
+    Unknown/non-numeric versions fall back to (0,) so BR-05 can safely
+    establish its minimum schema without ever downgrading a newer version.
+    """
+    try:
+        parts = tuple(int(part) for part in str(value).split("."))
+        return parts if parts else (0,)
+    except (TypeError, ValueError):
+        return (0,)
+
+
+def preserve_manifest_schema(manifest: dict) -> None:
+    """
+    BR-05 requires at least schema 1.2, but must never downgrade a newer
+    schema written by upstream enrichments such as BR-03 (schema 1.3).
+    """
+    current = parse_schema_version(manifest.get("schema_version", "0"))
+    if current < (1, 2):
+        manifest["schema_version"] = "1.2"
+
+
 def clean_symbol(value) -> str:
     if value is None or pd.isna(value):
         return ""
@@ -493,7 +517,11 @@ def main() -> int:
     pct = update_status(enriched)
 
     manifest = read_manifest()
-    manifest["schema_version"] = "1.2"
+
+    # BR-05 requires at least schema 1.2, but must never downgrade a newer
+    # schema already written by upstream enrichments (for example BR-03 = 1.3).
+    preserve_manifest_schema(manifest)
+
     manifest["br05_market_enrichment"] = {
         "schema": SCHEMA,
         "updated_at_utc": now_iso(),
@@ -511,6 +539,7 @@ def main() -> int:
             "FMP is used only as fallback for Nasdaq missing/incomplete rows.",
             "The API key is never written to repository files.",
             "This enrichment does not compute BQS, IOS, rankings, or recommendations.",
+            "BR-05 never downgrades a newer manifest schema version.",
         ],
     }
 
