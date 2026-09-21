@@ -52,7 +52,7 @@ MANIFEST_PATH = DATA_DIR / "manifest.json"
 REGRESSION_PATH = DATA_DIR / "br03_regression.json"
 
 SEC_QUARTERS = 16
-SCHEMA = "br03_capital_return_v1.0"
+SCHEMA = "br03_capital_return_v1.1"
 
 BUYBACK_PRIMARY = "PaymentsForRepurchaseOfCommonStock"
 BUYBACK_BROAD = "PaymentsForRepurchaseOfEquity"
@@ -81,6 +81,33 @@ RELEVANT_TAGS = sorted(
         *OCF_TAGS,
     }
 )
+
+
+BR03_OWNED_EXACT = {
+    "buyback_accretion",
+    "payout_ratio",
+    "share_change",
+    "br03_flags",
+    "br03_status",
+}
+
+BR03_OWNED_PREFIXES = (
+    "annual_buyback",
+    "annual_dividends",
+    "fy_minus_1_buyback",
+    "fy_minus_2_buyback",
+    "fy_minus_3_buyback",
+    "fy_minus_1_dividends",
+    "fy_minus_2_dividends",
+    "fy_minus_3_dividends",
+    "br03_",
+)
+
+
+def is_br03_owned_column(name: str) -> bool:
+    if name in BR03_OWNED_EXACT:
+        return True
+    return any(name.startswith(prefix) for prefix in BR03_OWNED_PREFIXES)
 
 
 def now_iso() -> str:
@@ -243,7 +270,10 @@ def scan_nums(
     out = pd.concat(frames, ignore_index=True, sort=False)
     out["value_num"] = pd.to_numeric(out.get("value"), errors="coerce")
     out["qtrs_num"] = pd.to_numeric(out.get("qtrs"), errors="coerce")
-    out["ddate_norm"] = out.get("ddate", pd.Series(index=out.index, dtype=str)).map(norm_date)
+    out["ddate_norm"] = out.get(
+        "ddate",
+        pd.Series(index=out.index, dtype=str),
+    ).map(norm_date)
     return out
 
 
@@ -356,7 +386,7 @@ def pick_buyback(
         tag = BUYBACK_TAX
         date = dtax
         flags.append("BUYBACK_TAX_WITHHOLDING_ONLY")
-        tax = None  # already used as base; do not double count.
+        tax = None
     elif p4 is not None:
         base = abs(p4)
         tag = BUYBACK_EQUITY
@@ -366,7 +396,6 @@ def pick_buyback(
     if base is None:
         return None, "", "", flags, provenance
 
-    # Frozen contract: add employee-tax withholding to level 1/2 when present.
     if tax is not None:
         base += abs(tax)
         tag = f"{tag}+{BUYBACK_TAX}"
@@ -527,12 +556,27 @@ def enrich_dataframe(
     fundamentals: pd.DataFrame,
     nums: pd.DataFrame,
 ) -> tuple[pd.DataFrame, dict]:
-    base_columns = list(fundamentals.columns)
+    # T16 must protect columns owned by upstream/downstream modules, but BR-03
+    # is allowed to refresh its own previously-generated columns on a rerun.
+    # Otherwise an idempotent rerun would incorrectly look like a regression.
+    base_columns = [
+        col
+        for col in fundamentals.columns
+        if not is_br03_owned_column(col)
+    ]
+    ignored_existing_br03_columns = [
+        col
+        for col in fundamentals.columns
+        if is_br03_owned_column(col)
+    ]
+
     records = []
     diagnostics = {
         "buyback_tag_levels": {},
         "dividend_tag_levels": {},
         "flags": {},
+        "protected_existing_columns": len(base_columns),
+        "ignored_existing_br03_columns": len(ignored_existing_br03_columns),
     }
 
     for _, base_row in fundamentals.iterrows():
@@ -565,7 +609,6 @@ def enrich_dataframe(
         if dividends is None and cf_exists:
             flags.append("DIVIDENDS_TAG_ABSENT_CF_PRESENT")
 
-        # Provenance and raw current-FY values.
         row["annual_buyback"] = buyback
         row["annual_buyback_tag"] = buyback_tag
         row["annual_buyback_date"] = buyback_date
@@ -574,22 +617,24 @@ def enrich_dataframe(
         row["annual_dividends_paid"] = dividends
         row["annual_dividends_paid_tag"] = div_tag
         row["annual_dividends_paid_date"] = div_date
-        row["annual_dividends_paid_adsh"] = annual_adsh if dividends is not None else ""
+        row["annual_dividends_paid_adsh"] = (
+            annual_adsh if dividends is not None else ""
+        )
 
         row["annual_dividends_preferred"] = div_pref
         row["annual_dividends_minority_interest"] = div_nci
 
-        # Preserve expanded provenance values for auditability.
         row["annual_buyback_level1_value"] = buy_prov.get("level1")
         row["annual_buyback_level2_value"] = buy_prov.get("level2")
-        row["annual_buyback_tax_withholding_value"] = buy_prov.get("tax_withholding")
+        row["annual_buyback_tax_withholding_value"] = buy_prov.get(
+            "tax_withholding"
+        )
         row["annual_buyback_level4_value"] = buy_prov.get("level4")
 
         row["annual_dividends_common_value"] = div_prov.get("level1_common")
         row["annual_dividends_total_value"] = div_prov.get("level2_total")
         row["annual_dividends_variant_value"] = div_prov.get("level3_variant")
 
-        # Same-period safety checks before derived ratios.
         sbc_date = norm_date(row.get("annual_sbc_date"))
         ni_date = norm_date(row.get("annual_net_income_date"))
 
@@ -629,7 +674,6 @@ def enrich_dataframe(
         row["buyback_accretion"] = buyback_acc
         row["payout_ratio"] = payout
 
-        # Do not recalculate the existing field; expose an exact alias only.
         share_change = finite_number(row.get("diluted_shares_yoy"))
         row["share_change"] = share_change
 
@@ -639,7 +683,6 @@ def enrich_dataframe(
             if abs(share_change) > 0.50:
                 flags.append("SHARE_COUNT_DISCONTINUITY")
 
-        # Historical diagnostics FY(t-1) ... FY(t-3), not consumed by V4.1.
         for idx in (1, 2, 3):
             pfx = f"fy_minus_{idx}"
             adsh = norm_text(row.get(f"{pfx}_adsh"))
@@ -665,9 +708,10 @@ def enrich_dataframe(
             row[f"{pfx}_dividends_paid"] = h_div
             row[f"{pfx}_dividends_paid_tag"] = h_div_tag
             row[f"{pfx}_dividends_paid_date"] = h_div_date
-            row[f"{pfx}_dividends_paid_adsh"] = adsh if h_div is not None else ""
+            row[f"{pfx}_dividends_paid_adsh"] = (
+                adsh if h_div is not None else ""
+            )
 
-        # Stable, de-duplicated flag order.
         flags = list(dict.fromkeys(flags))
         row["br03_flags"] = ";".join(flags)
         row["br03_status"] = row_status(
@@ -686,14 +730,17 @@ def enrich_dataframe(
                 diagnostics["dividend_tag_levels"].get(div_tag, 0) + 1
             )
         for flag in flags:
-            diagnostics["flags"][flag] = diagnostics["flags"].get(flag, 0) + 1
+            diagnostics["flags"][flag] = (
+                diagnostics["flags"].get(flag, 0) + 1
+            )
 
         records.append(row)
 
     enriched = pd.DataFrame(records)
 
-    # BR03-T16: all pre-existing columns must remain byte/value equivalent at
-    # dataframe level. New columns may be added, old ones may not change.
+    # BR03-T16: all non-BR03 pre-existing columns must remain value-equivalent
+    # at dataframe level. BR-03-owned columns are intentionally excluded so a
+    # legitimate refresh of BR-03 is idempotent across repeated workflow runs.
     unchanged = fundamentals[base_columns].equals(enriched[base_columns])
     diagnostics["existing_fields_unchanged"] = bool(unchanged)
 
@@ -737,28 +784,42 @@ def run_regression_checks(
             "detail": detail,
         }
 
-    # T01 — no absent tag masquerading as explicit zero.
-    mask = after["annual_buyback"].eq(0) & after["annual_buyback_tag"].fillna("").eq("")
-    record("BR03-T01", not bool(mask.any()), f"violations={int(mask.sum())}")
+    mask = (
+        after["annual_buyback"].eq(0)
+        & after["annual_buyback_tag"].fillna("").eq("")
+    )
+    record(
+        "BR03-T01",
+        not bool(mask.any()),
+        f"violations={int(mask.sum())}",
+    )
 
-    # T02 — explicit buyback zero with SBC > 0 -> accretion 0.
     mask = (
         after["annual_buyback"].eq(0)
         & pd.to_numeric(after["annual_sbc"], errors="coerce").gt(0)
     )
-    bad = mask & pd.to_numeric(after["buyback_accretion"], errors="coerce").ne(0)
-    record("BR03-T02", not bool(bad.any()), f"checked={int(mask.sum())}; violations={int(bad.sum())}")
+    bad = (
+        mask
+        & pd.to_numeric(
+            after["buyback_accretion"],
+            errors="coerce",
+        ).ne(0)
+    )
+    record(
+        "BR03-T02",
+        not bool(bad.any()),
+        f"checked={int(mask.sum())}; violations={int(bad.sum())}",
+    )
 
-    # T03 — forbidden sentinels on arithmetic fields.
     payout_bad = after["payout_ratio"].astype(str).eq("NOT_APPLICABLE")
     share_bad = after["share_change"].astype(str).eq("NOT_APPLICABLE")
     record(
         "BR03-T03",
         not bool(payout_bad.any() or share_bad.any()),
-        f"payout={int(payout_bad.sum())}; share_change={int(share_bad.sum())}",
+        f"payout={int(payout_bad.sum())}; "
+        f"share_change={int(share_bad.sum())}",
     )
 
-    # T04 — payout never negative.
     payout_num = pd.to_numeric(after["payout_ratio"], errors="coerce")
     record(
         "BR03-T04",
@@ -766,29 +827,49 @@ def run_regression_checks(
         f"min={payout_num.min(skipna=True)}",
     )
 
-    # T05 — NI <= 0 => payout blank.
     ni = pd.to_numeric(after["annual_net_income"], errors="coerce")
     bad = ni.le(0) & payout_num.notna()
-    record("BR03-T05", not bool(bad.any()), f"violations={int(bad.sum())}")
+    record(
+        "BR03-T05",
+        not bool(bad.any()),
+        f"violations={int(bad.sum())}",
+    )
 
-    # T06 — current-period alignment. A mismatch is allowed only when it is
-    # explicitly flagged and the affected derived ratio is left blank.
-    buy_raw = after["annual_buyback"].notna() & after["annual_sbc"].notna()
+    buy_raw = (
+        after["annual_buyback"].notna()
+        & after["annual_sbc"].notna()
+    )
     buy_mismatch = buy_raw & (
         after["annual_buyback_date"].map(norm_date)
         != after["annual_sbc_date"].map(norm_date)
     )
-    div_raw = after["annual_dividends_paid"].notna() & after["annual_net_income"].notna()
+
+    div_raw = (
+        after["annual_dividends_paid"].notna()
+        & after["annual_net_income"].notna()
+    )
     div_mismatch = div_raw & (
         after["annual_dividends_paid_date"].map(norm_date)
         != after["annual_net_income_date"].map(norm_date)
     )
-    period_flag = after["br03_flags"].fillna("").str.contains("PERIOD_MISMATCH")
-    buy_ratio_present = pd.to_numeric(after["buyback_accretion"], errors="coerce").notna()
-    div_ratio_present = pd.to_numeric(after["payout_ratio"], errors="coerce").notna()
+
+    period_flag = after["br03_flags"].fillna("").str.contains(
+        "PERIOD_MISMATCH"
+    )
+    buy_ratio_present = pd.to_numeric(
+        after["buyback_accretion"],
+        errors="coerce",
+    ).notna()
+    div_ratio_present = pd.to_numeric(
+        after["payout_ratio"],
+        errors="coerce",
+    ).notna()
 
     unflagged = (buy_mismatch | div_mismatch) & ~period_flag
-    mismatch_with_ratio = (buy_mismatch & buy_ratio_present) | (div_mismatch & div_ratio_present)
+    mismatch_with_ratio = (
+        (buy_mismatch & buy_ratio_present)
+        | (div_mismatch & div_ratio_present)
+    )
 
     record(
         "BR03-T06",
@@ -797,20 +878,35 @@ def run_regression_checks(
             f"buyback_mismatch={int(buy_mismatch.sum())}; "
             f"dividends_mismatch={int(div_mismatch.sum())}; "
             f"unflagged={int(unflagged.sum())}; "
-            f"ratio_written_despite_mismatch={int(mismatch_with_ratio.sum())}"
+            "ratio_written_despite_mismatch="
+            f"{int(mismatch_with_ratio.sum())}"
         ),
     )
 
-    # T07 — sign convention.
-    current_sh = pd.to_numeric(after["annual_diluted_shares"], errors="coerce")
-    prior_sh = pd.to_numeric(after["prior_diluted_shares"], errors="coerce")
-    share_chg = pd.to_numeric(after["share_change"], errors="coerce")
-    mask = current_sh.notna() & prior_sh.gt(0) & current_sh.lt(prior_sh)
+    current_sh = pd.to_numeric(
+        after["annual_diluted_shares"],
+        errors="coerce",
+    )
+    prior_sh = pd.to_numeric(
+        after["prior_diluted_shares"],
+        errors="coerce",
+    )
+    share_chg = pd.to_numeric(
+        after["share_change"],
+        errors="coerce",
+    )
+    mask = (
+        current_sh.notna()
+        & prior_sh.gt(0)
+        & current_sh.lt(prior_sh)
+    )
     bad = mask & ~(share_chg < 0)
-    record("BR03-T07", not bool(bad.any()), f"checked={int(mask.sum())}; violations={int(bad.sum())}")
+    record(
+        "BR03-T07",
+        not bool(bad.any()),
+        f"checked={int(mask.sum())}; violations={int(bad.sum())}",
+    )
 
-    # T08 — recalculability on rows where the derived ratio is actually
-    # present. Period-mismatch rows are intentionally left blank by contract.
     bb = pd.to_numeric(after["annual_buyback"], errors="coerce")
     sbc = pd.to_numeric(after["annual_sbc"], errors="coerce")
     acc = pd.to_numeric(after["buyback_accretion"], errors="coerce")
@@ -818,60 +914,89 @@ def run_regression_checks(
     expected_acc = bb / sbc
     bad_acc = normal & ((acc - expected_acc).abs() >= 1e-9)
 
-    div = pd.to_numeric(after["annual_dividends_paid"], errors="coerce")
+    div = pd.to_numeric(
+        after["annual_dividends_paid"],
+        errors="coerce",
+    )
     normal_payout = div.notna() & ni.gt(0) & payout_num.notna()
     expected_payout = div / ni
-    bad_payout = normal_payout & ((payout_num - expected_payout).abs() >= 1e-9)
+    bad_payout = (
+        normal_payout
+        & ((payout_num - expected_payout).abs() >= 1e-9)
+    )
 
     record(
         "BR03-T08",
         not bool(bad_acc.any() or bad_payout.any()),
-        f"buyback_violations={int(bad_acc.sum())}; payout_violations={int(bad_payout.sum())}",
+        f"buyback_violations={int(bad_acc.sum())}; "
+        f"payout_violations={int(bad_payout.sum())}",
     )
 
-    # T09 — forbidden reconstruction tags.
     bad_tags = {
         "TreasuryStockSharesAcquired",
         "CommonStockDividendsPerShareDeclared",
         "CommonStockDividendsPerShareCashPaid",
     }
-    bad = after["annual_buyback_tag"].isin(bad_tags) | after["annual_dividends_paid_tag"].isin(bad_tags)
-    record("BR03-T09", not bool(bad.any()), f"violations={int(bad.sum())}")
+    bad = (
+        after["annual_buyback_tag"].isin(bad_tags)
+        | after["annual_dividends_paid_tag"].isin(bad_tags)
+    )
+    record(
+        "BR03-T09",
+        not bool(bad.any()),
+        f"violations={int(bad.sum())}",
+    )
 
-    # T10 — SBC zero + buyback positive => 2.0.
     mask = sbc.eq(0) & bb.gt(0)
     bad = mask & acc.ne(2.0)
-    record("BR03-T10", not bool(bad.any()), f"checked={int(mask.sum())}; violations={int(bad.sum())}")
+    record(
+        "BR03-T10",
+        not bool(bad.any()),
+        f"checked={int(mask.sum())}; violations={int(bad.sum())}",
+    )
 
-    # T11 — both explicit zero => NOT_APPLICABLE.
     mask = sbc.eq(0) & bb.eq(0)
     actual = after["buyback_accretion"].astype(str)
     bad = mask & ~actual.eq("NOT_APPLICABLE")
-    record("BR03-T11", not bool(bad.any()), f"checked={int(mask.sum())}; violations={int(bad.sum())}")
-
-    # T12 — raw values non-negative.
-    bad = (bb.dropna() < 0).any() or (div.dropna() < 0).any()
-    record("BR03-T12", not bool(bad), "raw buyback/dividends are absolute non-negative values")
-
-    # T13 — provenance complete for current raw values.
-    bb_bad = after["annual_buyback"].notna() & (
-        after["annual_buyback_tag"].fillna("").eq("")
-        | after["annual_buyback_date"].fillna("").eq("")
-        | after["annual_buyback_adsh"].fillna("").eq("")
+    record(
+        "BR03-T11",
+        not bool(bad.any()),
+        f"checked={int(mask.sum())}; violations={int(bad.sum())}",
     )
-    div_bad = after["annual_dividends_paid"].notna() & (
-        after["annual_dividends_paid_tag"].fillna("").eq("")
-        | after["annual_dividends_paid_date"].fillna("").eq("")
-        | after["annual_dividends_paid_adsh"].fillna("").eq("")
+
+    bad = (
+        (bb.dropna() < 0).any()
+        or (div.dropna() < 0).any()
+    )
+    record(
+        "BR03-T12",
+        not bool(bad),
+        "raw buyback/dividends are absolute non-negative values",
+    )
+
+    bb_bad = (
+        after["annual_buyback"].notna()
+        & (
+            after["annual_buyback_tag"].fillna("").eq("")
+            | after["annual_buyback_date"].fillna("").eq("")
+            | after["annual_buyback_adsh"].fillna("").eq("")
+        )
+    )
+    div_bad = (
+        after["annual_dividends_paid"].notna()
+        & (
+            after["annual_dividends_paid_tag"].fillna("").eq("")
+            | after["annual_dividends_paid_date"].fillna("").eq("")
+            | after["annual_dividends_paid_adsh"].fillna("").eq("")
+        )
     )
     record(
         "BR03-T13",
         not bool(bb_bad.any() or div_bad.any()),
-        f"buyback={int(bb_bad.sum())}; dividends={int(div_bad.sum())}",
+        f"buyback={int(bb_bad.sum())}; "
+        f"dividends={int(div_bad.sum())}",
     )
 
-    # T14 — data-contract type safety proxy. Full V4.1 engine execution remains
-    # a separate Claude preflight because v4_scoring.py is not in this repo.
     payout_type_bad = after["payout_ratio"].apply(
         lambda x: is_present(x) and finite_number(x) is None
     )
@@ -881,24 +1006,35 @@ def run_regression_checks(
     record(
         "BR03-T14",
         not bool(payout_type_bad.any() or share_type_bad.any()),
-        "type-safety proxy passed; full engine execution deferred to V4.1 preflight",
+        "type-safety proxy passed; full engine execution "
+        "deferred to V4.1 preflight",
     )
 
-    # T15 is transport validation after split_for_claude.py, therefore deferred.
     record(
         "BR03-T15",
         True,
-        "DEFERRED_TO_SPLITTER: verify rows_match_source/ranges_contiguous/all_parts_under_hard_max after chunk regeneration",
+        "DEFERRED_TO_SPLITTER: verify rows_match_source/"
+        "ranges_contiguous/all_parts_under_hard_max "
+        "after chunk regeneration",
     )
 
-    # T16 — no regression of existing fields.
     record(
         "BR03-T16",
         bool(diagnostics.get("existing_fields_unchanged")),
-        "all pre-BR03 columns unchanged",
+        (
+            "all non-BR03 pre-existing columns unchanged; "
+            f"protected="
+            f"{diagnostics.get('protected_existing_columns', 0)}; "
+            f"ignored_existing_br03="
+            f"{diagnostics.get('ignored_existing_br03_columns', 0)}"
+        ),
     )
 
-    passed = sum(1 for x in tests.values() if x["passed"])
+    passed = sum(
+        1
+        for x in tests.values()
+        if x["passed"]
+    )
     total = len(tests)
 
     return {
@@ -908,7 +1044,11 @@ def run_regression_checks(
         "tests_total": total,
         "all_passed": passed == total,
         "tests": tests,
-        "note": "BR03-T14 is a data-contract type-safety proxy; full V4.1 engine run occurs in the post-BR03 preflight. BR03-T15 is finalized by split_for_claude.py.",
+        "note": (
+            "BR03-T14 is a data-contract type-safety proxy; "
+            "full V4.1 engine run occurs in the post-BR03 preflight. "
+            "BR03-T15 is finalized by split_for_claude.py."
+        ),
     }
 
 
@@ -922,20 +1062,46 @@ def update_status(
 
     stats = {
         "annual_buyback_pct": pct_present(df["annual_buyback"]),
-        "annual_dividends_paid_pct": pct_present(df["annual_dividends_paid"]),
-        "buyback_accretion_pct": pct_present(df["buyback_accretion"]),
+        "annual_dividends_paid_pct": pct_present(
+            df["annual_dividends_paid"]
+        ),
+        "buyback_accretion_pct": pct_present(
+            df["buyback_accretion"]
+        ),
         "payout_ratio_pct": pct_present(df["payout_ratio"]),
         "buyback_tag_absent_cf_present_pct": round(
-            float(df["br03_flags"].fillna("").str.contains("BUYBACK_TAG_ABSENT_CF_PRESENT").mean() * 100),
+            float(
+                df["br03_flags"]
+                .fillna("")
+                .str.contains(
+                    "BUYBACK_TAG_ABSENT_CF_PRESENT"
+                )
+                .mean()
+                * 100
+            ),
             1,
         ),
         "dividends_tag_absent_cf_present_pct": round(
-            float(df["br03_flags"].fillna("").str.contains("DIVIDENDS_TAG_ABSENT_CF_PRESENT").mean() * 100),
+            float(
+                df["br03_flags"]
+                .fillna("")
+                .str.contains(
+                    "DIVIDENDS_TAG_ABSENT_CF_PRESENT"
+                )
+                .mean()
+                * 100
+            ),
             1,
         ),
-        "no_buyback_no_sbc_count": int(flags.get("NO_BUYBACK_NO_SBC", 0)),
-        "payout_negative_earnings_count": int(flags.get("PAYOUT_NEGATIVE_EARNINGS", 0)),
-        "share_count_discontinuity_count": int(flags.get("SHARE_COUNT_DISCONTINUITY", 0)),
+        "no_buyback_no_sbc_count": int(
+            flags.get("NO_BUYBACK_NO_SBC", 0)
+        ),
+        "payout_negative_earnings_count": int(
+            flags.get("PAYOUT_NEGATIVE_EARNINGS", 0)
+        ),
+        "share_count_discontinuity_count": int(
+            flags.get("SHARE_COUNT_DISCONTINUITY", 0)
+        ),
     }
 
     marker = "\n## V4.1 enrichment BR-03\n"
@@ -945,7 +1111,10 @@ def update_status(
         else "# Investment OS Data Bridge — stato\n"
     )
     if marker in base:
-        base = base.split(marker, 1)[0].rstrip() + "\n"
+        base = (
+            base.split(marker, 1)[0].rstrip()
+            + "\n"
+        )
 
     section = f"""
 ## V4.1 enrichment BR-03
@@ -967,7 +1136,9 @@ def update_status(
 """
 
     STATUS_PATH.write_text(
-        base.rstrip() + "\n" + section.lstrip(),
+        base.rstrip()
+        + "\n"
+        + section.lstrip(),
         encoding="utf-8",
     )
 
@@ -977,10 +1148,14 @@ def update_status(
 def main() -> int:
     if not FUNDAMENTALS_PATH.exists():
         raise SystemExit(
-            "sp500_fundamentals.csv non trovato: eseguire prima bridge + BR-01/BR-02"
+            "sp500_fundamentals.csv non trovato: "
+            "eseguire prima bridge + BR-01/BR-02"
         )
 
-    fundamentals = pd.read_csv(FUNDAMENTALS_PATH, low_memory=False)
+    fundamentals = pd.read_csv(
+        FUNDAMENTALS_PATH,
+        low_memory=False,
+    )
 
     required_inputs = {
         "annual_adsh",
@@ -991,19 +1166,31 @@ def main() -> int:
         "annual_sbc_date",
         "diluted_shares_yoy",
     }
-    missing_inputs = required_inputs - set(fundamentals.columns)
+    missing_inputs = (
+        required_inputs
+        - set(fundamentals.columns)
+    )
     if missing_inputs:
         raise SystemExit(
-            "BR-03 input mancanti: " + ", ".join(sorted(missing_inputs))
+            "BR-03 input mancanti: "
+            + ", ".join(sorted(missing_inputs))
         )
 
     downloader = bridge.Downloader()
-    quarters, sec_index_meta = bridge.discover_sec_quarters(downloader)
+    quarters, sec_index_meta = (
+        bridge.discover_sec_quarters(
+            downloader
+        )
+    )
     selected_quarters = quarters[-SEC_QUARTERS:]
     latest_key = quarters[-1].key
 
     manifest = read_manifest()
-    if not needs_enrichment(fundamentals, manifest, latest_key):
+    if not needs_enrichment(
+        fundamentals,
+        manifest,
+        latest_key,
+    ):
         print(
             f"BR-03 già applicato per {latest_key}; "
             "nessun download SEC necessario."
@@ -1017,11 +1204,17 @@ def main() -> int:
 
     adsh_set = collect_adshs(fundamentals)
     if not adsh_set:
-        raise SystemExit("BR-03: nessun ADSH disponibile nel fundamentals")
+        raise SystemExit(
+            "BR-03: nessun ADSH disponibile nel fundamentals"
+        )
 
-    with tempfile.TemporaryDirectory(prefix="investment_os_br03_") as td:
+    with tempfile.TemporaryDirectory(
+        prefix="investment_os_br03_"
+    ) as td:
         td_path = Path(td)
-        zip_infos: list[tuple[bridge.QuarterLink, Path]] = []
+        zip_infos: list[
+            tuple[bridge.QuarterLink, Path]
+        ] = []
         downloads = []
 
         for q in selected_quarters:
@@ -1032,7 +1225,9 @@ def main() -> int:
                 q.url,
                 path,
             )
-            zip_infos.append((q, path))
+            zip_infos.append(
+                (q, path)
+            )
             downloads.append(
                 {
                     "quarter": q.key,
@@ -1046,7 +1241,10 @@ def main() -> int:
             f"  ADSH da verificare: {len(adsh_set)}; "
             "scansione NUM per buyback/dividendi..."
         )
-        nums = scan_nums(zip_infos, adsh_set)
+        nums = scan_nums(
+            zip_infos,
+            adsh_set,
+        )
 
         enriched, diagnostics = enrich_dataframe(
             fundamentals,
@@ -1071,9 +1269,13 @@ def main() -> int:
             + ". Nessun file canonicale scritto."
         )
 
-    # Write only after every local integrity check passes.
-    bridge.write_csv_atomic(FUNDAMENTALS_PATH, enriched)
-    update_coverage_file(enriched)
+    bridge.write_csv_atomic(
+        FUNDAMENTALS_PATH,
+        enriched,
+    )
+    update_coverage_file(
+        enriched
+    )
 
     stats = update_status(
         enriched,
@@ -1082,7 +1284,10 @@ def main() -> int:
         regression,
     )
 
-    bridge.write_json_atomic(REGRESSION_PATH, regression)
+    bridge.write_json_atomic(
+        REGRESSION_PATH,
+        regression,
+    )
 
     manifest = read_manifest()
     manifest["schema_version"] = "1.3"
@@ -1090,7 +1295,10 @@ def main() -> int:
         "schema": SCHEMA,
         "updated_at_utc": now_iso(),
         "latest_available_quarter": latest_key,
-        "quarters_used": [q.key for q in selected_quarters],
+        "quarters_used": [
+            q.key
+            for q in selected_quarters
+        ],
         "sec_index": sec_index_meta,
         "quarter_downloads": downloads,
         "coverage": stats,
@@ -1113,13 +1321,19 @@ def main() -> int:
             "Absent tag is MISSING, never inferred as zero.",
             "Explicit reported zero remains economic zero.",
             "buyback_accretion = annual_buyback / annual_sbc.",
-            "If annual_buyback > 0 and annual_sbc = 0, buyback_accretion = 2.0 per frozen V4.1 hi anchor.",
-            "If annual_buyback = 0 and annual_sbc = 0, buyback_accretion = NOT_APPLICABLE.",
-            "payout_ratio = annual_dividends_paid / annual_net_income only when annual_net_income > 0.",
-            "payout_ratio is never negative and never NOT_APPLICABLE.",
-            "share_change is an exact alias of existing diluted_shares_yoy; existing values are not modified.",
+            "If annual_buyback > 0 and annual_sbc = 0, "
+            "buyback_accretion = 2.0 per frozen V4.1 hi anchor.",
+            "If annual_buyback = 0 and annual_sbc = 0, "
+            "buyback_accretion = NOT_APPLICABLE.",
+            "payout_ratio = annual_dividends_paid / "
+            "annual_net_income only when annual_net_income > 0.",
+            "payout_ratio is never negative and never "
+            "NOT_APPLICABLE.",
+            "share_change is an exact alias of existing "
+            "diluted_shares_yoy; existing values are not modified.",
             "No price×shares or per-share reconstruction is used.",
-            "This enrichment does not compute BQS, IOS, rankings, or recommendations.",
+            "This enrichment does not compute BQS, IOS, "
+            "rankings, or recommendations.",
         ],
         "diagnostics": diagnostics,
         "regression": {
@@ -1129,7 +1343,11 @@ def main() -> int:
         },
     }
 
-    outputs = manifest.setdefault("outputs", {})
+    outputs = manifest.setdefault(
+        "outputs",
+        {},
+    )
+
     for name in [
         "sp500_fundamentals.csv",
         "sp500_coverage.csv",
@@ -1137,23 +1355,43 @@ def main() -> int:
         "br03_regression.json",
     ]:
         path = DATA_DIR / name
+
         if path.exists():
             outputs[name] = {
                 "sha256": sha256_file(path),
                 "bytes": path.stat().st_size,
             }
 
-    bridge.write_json_atomic(MANIFEST_PATH, manifest)
+    bridge.write_json_atomic(
+        MANIFEST_PATH,
+        manifest,
+    )
 
-    print("OK — BR-03 completato.")
-    print(f"annual_buyback: {stats['annual_buyback_pct']:.1f}%")
-    print(f"annual_dividends_paid: {stats['annual_dividends_paid_pct']:.1f}%")
-    print(f"buyback_accretion: {stats['buyback_accretion_pct']:.1f}%")
-    print(f"payout_ratio: {stats['payout_ratio_pct']:.1f}%")
     print(
-        f"regression: {regression['tests_passed']}/"
+        "OK — BR-03 completato."
+    )
+    print(
+        f"annual_buyback: "
+        f"{stats['annual_buyback_pct']:.1f}%"
+    )
+    print(
+        f"annual_dividends_paid: "
+        f"{stats['annual_dividends_paid_pct']:.1f}%"
+    )
+    print(
+        f"buyback_accretion: "
+        f"{stats['buyback_accretion_pct']:.1f}%"
+    )
+    print(
+        f"payout_ratio: "
+        f"{stats['payout_ratio_pct']:.1f}%"
+    )
+    print(
+        f"regression: "
+        f"{regression['tests_passed']}/"
         f"{regression['tests_total']} passed"
     )
+
     return 0
 
 
