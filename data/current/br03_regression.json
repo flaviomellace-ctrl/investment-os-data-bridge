@@ -1,6 +1,6 @@
 {
-  "schema": "br03_capital_return_v1.0",
-  "generated_at_utc": "2026-09-21T16:47:27+00:00",
+  "schema": "br03_capital_return_v1.1",
+  "generated_at_utc": "2026-09-21T18:46:09+00:00",
   "tests_passed": 16,
   "tests_total": 16,
   "all_passed": true,
@@ -67,7 +67,7 @@
     },
     "BR03-T16": {
       "passed": true,
-      "detail": "all pre-BR03 columns unchanged"
+      "detail": "all non-BR03 pre-existing columns unchanged; protected=166; ignored_existing_br03=46"
     }
   },
   "note": "BR03-T14 is a data-contract type-safety proxy; full V4.1 engine run occurs in the post-BR03 preflight. BR03-T15 is finalized by split_for_claude.py."

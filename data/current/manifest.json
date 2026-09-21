@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.2",
-  "updated_at_utc": "2026-09-21T16:42:12+00:00",
+  "schema_version": "1.3",
+  "updated_at_utc": "2026-09-21T18:39:41+00:00",
   "mode": "auto",
   "fundamentals_rebuilt_this_run": false,
   "state_street": {
@@ -12,14 +12,14 @@
     "source": "State Street SPY daily holdings",
     "product_url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-500-etf-trust-spy",
     "download_url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-spy.xlsx",
-    "downloaded_at": "2026-09-21T16:42:11+00:00",
+    "downloaded_at": "2026-09-21T18:39:40+00:00",
     "sha256": "1bcbc81465e9d9300069badf235fd086b0a8673b511214298811a8db26072991",
     "bytes": 54420
   },
   "sec_ticker_map": {
     "source": "SEC company_tickers.json",
     "url": "https://www.sec.gov/files/company_tickers.json",
-    "downloaded_at": "2026-09-21T16:42:11+00:00",
+    "downloaded_at": "2026-09-21T18:39:40+00:00",
     "sha256": "23e6c511f3fc1a41413803dc77c50cf080f82ed79ab13a049127a8dccb1dd7de",
     "rows": 10438
   },
@@ -27,7 +27,7 @@
     "index": {
       "source": "SEC Financial Statement Data Sets index",
       "url": "https://www.sec.gov/data-research/sec-markets-data/financial-statement-data-sets",
-      "downloaded_at": "2026-09-21T16:42:12+00:00",
+      "downloaded_at": "2026-09-21T18:39:41+00:00",
       "latest_available": "2026Q2",
       "quarters_found": 70
     },
@@ -78,8 +78,8 @@
       "bytes": 44925
     },
     "sp500_fundamentals.csv": {
-      "sha256": "8149e51ec1e833f56a05678e9feb6771443bf0e5b0144b08aaa60df189ad9840",
-      "bytes": 1502235
+      "sha256": "bbd49504bb2c91932284f108e2c2c02cf133b71c9abf5cd2ac8c075801d6efed",
+      "bytes": 1502247
     },
     "sp500_coverage.csv": {
       "sha256": "111b673cfdce33acccfd2fd1b4355d1ba30083450e4f26de700443b83f69e6ab",
@@ -90,12 +90,12 @@
       "bytes": 1116
     },
     "status.md": {
-      "sha256": "0cab4d6b26a056ff5d2740056398b762481c022d0d11a9a49f0a05ba554022af",
+      "sha256": "f5fc31da3b0dd02e368d2e9b03dffcab6c788201f58b29601b9612cfb21fc0d4",
       "bytes": 2512
     },
     "br03_regression.json": {
-      "sha256": "72a5ac08f7d133df31c023f955c506ad688d551b31674af161c230e56f0d513a",
-      "bytes": 1978
+      "sha256": "923c87e580d07ac76d49c836c680f9a215058884f45beb5c56a6f88161c0bae4",
+      "bytes": 2032
     }
   },
   "methodology_notes": [
@@ -106,7 +106,7 @@
   ],
   "br01_br02_enrichment": {
     "schema": "br01_br02_v1.2",
-    "updated_at_utc": "2026-09-21T16:45:18+00:00",
+    "updated_at_utc": "2026-09-21T18:43:25+00:00",
     "latest_available_quarter": "2026Q2",
     "quarters_used": [
       "2022Q3",
@@ -130,7 +130,7 @@
     "sec_index": {
       "source": "SEC Financial Statement Data Sets index",
       "url": "https://www.sec.gov/data-research/sec-markets-data/financial-statement-data-sets",
-      "downloaded_at": "2026-09-21T16:42:12+00:00",
+      "downloaded_at": "2026-09-21T18:39:41+00:00",
       "latest_available": "2026Q2",
       "quarters_found": 70
     },
@@ -252,8 +252,8 @@
     ]
   },
   "br03_capital_return": {
-    "schema": "br03_capital_return_v1.0",
-    "updated_at_utc": "2026-09-21T16:47:27+00:00",
+    "schema": "br03_capital_return_v1.1",
+    "updated_at_utc": "2026-09-21T18:46:09+00:00",
     "latest_available_quarter": "2026Q2",
     "quarters_used": [
       "2022Q3",
@@ -276,7 +276,7 @@
     "sec_index": {
       "source": "SEC Financial Statement Data Sets index",
       "url": "https://www.sec.gov/data-research/sec-markets-data/financial-statement-data-sets",
-      "downloaded_at": "2026-09-21T16:45:19+00:00",
+      "downloaded_at": "2026-09-21T18:43:26+00:00",
       "latest_available": "2026Q2",
       "quarters_found": 70
     },
@@ -442,6 +442,8 @@
         "BUYBACK_TAG_BROAD": 7,
         "PERIOD_MISMATCH": 1
       },
+      "protected_existing_columns": 166,
+      "ignored_existing_br03_columns": 46,
       "existing_fields_unchanged": true
     },
     "regression": {
@@ -452,14 +454,14 @@
   },
   "br05_market_enrichment": {
     "schema": "br05_market_v2.0",
-    "updated_at_utc": "2026-09-21T16:47:32+00:00",
+    "updated_at_utc": "2026-09-21T18:46:12+00:00",
     "coverage_price_and_market_cap_pct": 99.6,
     "primary_source": "NASDAQ_PUBLIC_SCREENER",
     "primary_endpoint": "https://api.nasdaq.com/api/screener/stocks",
     "nasdaq": {
       "http_status": 200,
-      "rows_returned": 7106,
-      "retrieved_at_utc": "2026-09-21T16:47:27+00:00"
+      "rows_returned": 7119,
+      "retrieved_at_utc": "2026-09-21T18:46:09+00:00"
     },
     "fallback_source": "FMP_STABLE_QUOTE_SINGLE",
     "fallback_endpoint": "https://financialmodelingprep.com/stable/quote",
@@ -476,7 +478,8 @@
       "Missing price/market cap remains MISSING, never zero.",
       "FMP is used only as fallback for Nasdaq missing/incomplete rows.",
       "The API key is never written to repository files.",
-      "This enrichment does not compute BQS, IOS, rankings, or recommendations."
+      "This enrichment does not compute BQS, IOS, rankings, or recommendations.",
+      "BR-05 never downgrades a newer manifest schema version."
     ]
   }
 }
