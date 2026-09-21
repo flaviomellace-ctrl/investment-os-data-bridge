@@ -1,0 +1,658 @@
+{
+  "schema": "br04_t00_probe_v1.0",
+  "generated_at_utc": "2026-09-21T19:50:52+00:00",
+  "purpose": "BR04-T00 census only; no canonical dataset modification",
+  "universe_rows": 504,
+  "companies_with_annual_adsh": 496,
+  "companies_without_annual_adsh": 8,
+  "quarters_used": [
+    "2022Q3",
+    "2022Q4",
+    "2023Q1",
+    "2023Q2",
+    "2023Q3",
+    "2023Q4",
+    "2024Q1",
+    "2024Q2",
+    "2024Q3",
+    "2024Q4",
+    "2025Q1",
+    "2025Q2",
+    "2025Q3",
+    "2025Q4",
+    "2026Q1",
+    "2026Q2"
+  ],
+  "groups": {
+    "current_debt": {
+      "face_statement_companies_any_tag": 369,
+      "num_companies_any_tag": 367,
+      "num_only_companies_any_tag": 1
+    },
+    "noncurrent_debt": {
+      "face_statement_companies_any_tag": 402,
+      "num_companies_any_tag": 396,
+      "num_only_companies_any_tag": 2
+    },
+    "debt_aggregates": {
+      "face_statement_companies_any_tag": 56,
+      "num_companies_any_tag": 52,
+      "num_only_companies_any_tag": 1
+    },
+    "interest": {
+      "face_statement_companies_any_tag": 462,
+      "num_companies_any_tag": 459,
+      "num_only_companies_any_tag": 0
+    },
+    "cash_sti_leases_controls": {
+      "face_statement_companies_any_tag": 495,
+      "num_companies_any_tag": 495,
+      "num_only_companies_any_tag": 0
+    },
+    "legacy_bridge_debt_diagnostic": {
+      "face_statement_companies_any_tag": 0,
+      "num_companies_any_tag": 0,
+      "num_only_companies_any_tag": 0
+    }
+  },
+  "tags": {
+    "AvailableForSaleSecuritiesDebtSecuritiesCurrent": {
+      "group": "cash_sti_leases_controls",
+      "face_statement_companies": 21,
+      "num_companies": 21,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 21,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "Cash": {
+      "group": "cash_sti_leases_controls",
+      "face_statement_companies": 11,
+      "num_companies": 11,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 11,
+        "IS": 0,
+        "CF": 1
+      }
+    },
+    "CashAndCashEquivalentsAtCarryingValue": {
+      "group": "cash_sti_leases_controls",
+      "face_statement_companies": 418,
+      "num_companies": 409,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 416,
+        "IS": 0,
+        "CF": 80
+      }
+    },
+    "CommercialPaper": {
+      "group": "current_debt",
+      "face_statement_companies": 15,
+      "num_companies": 15,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 15,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "ConvertibleLongTermNotesPayable": {
+      "group": "noncurrent_debt",
+      "face_statement_companies": 6,
+      "num_companies": 6,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 6,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "ConvertibleNotesPayableCurrent": {
+      "group": "current_debt",
+      "face_statement_companies": 3,
+      "num_companies": 3,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 3,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "DebtAndCapitalLeaseObligations": {
+      "group": "debt_aggregates",
+      "face_statement_companies": 4,
+      "num_companies": 3,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 4,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "DebtCurrent": {
+      "group": "current_debt",
+      "face_statement_companies": 90,
+      "num_companies": 88,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 90,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "DebtLongtermAndShorttermCombinedAmount": {
+      "group": "debt_aggregates",
+      "face_statement_companies": 3,
+      "num_companies": 3,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 3,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "FinanceLeaseLiability": {
+      "group": "debt_aggregates",
+      "face_statement_companies": 2,
+      "num_companies": 2,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 2,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "FinanceLeaseLiabilityCurrent": {
+      "group": "current_debt",
+      "face_statement_companies": 11,
+      "num_companies": 11,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 11,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "FinanceLeaseLiabilityNoncurrent": {
+      "group": "noncurrent_debt",
+      "face_statement_companies": 18,
+      "num_companies": 19,
+      "num_only_companies": 1,
+      "face_stmt_breakdown": {
+        "BS": 18,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "InterestAndDebtExpense": {
+      "group": "interest",
+      "face_statement_companies": 21,
+      "num_companies": 21,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 0,
+        "IS": 21,
+        "CF": 0
+      }
+    },
+    "InterestExpense": {
+      "group": "interest",
+      "face_statement_companies": 96,
+      "num_companies": 95,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 0,
+        "IS": 96,
+        "CF": 0
+      }
+    },
+    "InterestExpenseDebt": {
+      "group": "interest",
+      "face_statement_companies": 15,
+      "num_companies": 15,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 0,
+        "IS": 15,
+        "CF": 0
+      }
+    },
+    "InterestExpenseNonoperating": {
+      "group": "interest",
+      "face_statement_companies": 190,
+      "num_companies": 187,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 0,
+        "IS": 190,
+        "CF": 0
+      }
+    },
+    "InterestIncomeExpenseNet": {
+      "group": "interest",
+      "face_statement_companies": 41,
+      "num_companies": 40,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 0,
+        "IS": 41,
+        "CF": 0
+      }
+    },
+    "InterestIncomeExpenseNonoperatingNet": {
+      "group": "interest",
+      "face_statement_companies": 63,
+      "num_companies": 63,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 0,
+        "IS": 63,
+        "CF": 0
+      }
+    },
+    "InterestPaidNet": {
+      "group": "interest",
+      "face_statement_companies": 282,
+      "num_companies": 284,
+      "num_only_companies": 3,
+      "face_stmt_breakdown": {
+        "BS": 0,
+        "IS": 0,
+        "CF": 282
+      }
+    },
+    "InterestRevenueExpenseNet": {
+      "group": "interest",
+      "face_statement_companies": 2,
+      "num_companies": 2,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 0,
+        "IS": 2,
+        "CF": 0
+      }
+    },
+    "InvestmentIncomeInterest": {
+      "group": "interest",
+      "face_statement_companies": 83,
+      "num_companies": 86,
+      "num_only_companies": 3,
+      "face_stmt_breakdown": {
+        "BS": 0,
+        "IS": 83,
+        "CF": 0
+      }
+    },
+    "Liabilities": {
+      "group": "cash_sti_leases_controls",
+      "face_statement_companies": 358,
+      "num_companies": 357,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 358,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "LiabilitiesAndStockholdersEquity": {
+      "group": "cash_sti_leases_controls",
+      "face_statement_companies": 495,
+      "num_companies": 495,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 495,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "LinesOfCreditCurrent": {
+      "group": "current_debt",
+      "face_statement_companies": 6,
+      "num_companies": 6,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 6,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "LongTermDebt": {
+      "group": "debt_aggregates",
+      "face_statement_companies": 43,
+      "num_companies": 40,
+      "num_only_companies": 1,
+      "face_stmt_breakdown": {
+        "BS": 43,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "LongTermDebtAndCapitalLeaseObligations": {
+      "group": "noncurrent_debt",
+      "face_statement_companies": 128,
+      "num_companies": 123,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 128,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "LongTermDebtAndCapitalLeaseObligationsCurrent": {
+      "group": "current_debt",
+      "face_statement_companies": 79,
+      "num_companies": 77,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 79,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities": {
+      "group": "debt_aggregates",
+      "face_statement_companies": 5,
+      "num_companies": 5,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 5,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "LongTermDebtAndFinanceLeaseObligations": {
+      "group": "legacy_bridge_debt_diagnostic",
+      "face_statement_companies": 0,
+      "num_companies": 0,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 0,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "LongTermDebtAndFinanceLeaseObligationsCurrent": {
+      "group": "legacy_bridge_debt_diagnostic",
+      "face_statement_companies": 0,
+      "num_companies": 0,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 0,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "LongTermDebtAndFinanceLeaseObligationsNoncurrent": {
+      "group": "legacy_bridge_debt_diagnostic",
+      "face_statement_companies": 0,
+      "num_companies": 0,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 0,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "LongTermDebtCurrent": {
+      "group": "current_debt",
+      "face_statement_companies": 130,
+      "num_companies": 134,
+      "num_only_companies": 4,
+      "face_stmt_breakdown": {
+        "BS": 130,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "LongTermDebtNoncurrent": {
+      "group": "noncurrent_debt",
+      "face_statement_companies": 229,
+      "num_companies": 228,
+      "num_only_companies": 1,
+      "face_stmt_breakdown": {
+        "BS": 229,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "LongTermLineOfCredit": {
+      "group": "noncurrent_debt",
+      "face_statement_companies": 4,
+      "num_companies": 4,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 4,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "LongTermNotesPayable": {
+      "group": "noncurrent_debt",
+      "face_statement_companies": 5,
+      "num_companies": 4,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 5,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "MarketableSecuritiesCurrent": {
+      "group": "cash_sti_leases_controls",
+      "face_statement_companies": 34,
+      "num_companies": 33,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 34,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "NotesPayable": {
+      "group": "noncurrent_debt",
+      "face_statement_companies": 11,
+      "num_companies": 9,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 11,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "NotesPayableCurrent": {
+      "group": "current_debt",
+      "face_statement_companies": 12,
+      "num_companies": 10,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 12,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "OperatingLeaseLiability": {
+      "group": "cash_sti_leases_controls",
+      "face_statement_companies": 18,
+      "num_companies": 18,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 18,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "OperatingLeaseLiabilityCurrent": {
+      "group": "cash_sti_leases_controls",
+      "face_statement_companies": 122,
+      "num_companies": 122,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 122,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "OperatingLeaseLiabilityNoncurrent": {
+      "group": "cash_sti_leases_controls",
+      "face_statement_companies": 209,
+      "num_companies": 209,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 209,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "OtherLongTermDebtNoncurrent": {
+      "group": "noncurrent_debt",
+      "face_statement_companies": 5,
+      "num_companies": 5,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 5,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "OtherShortTermBorrowings": {
+      "group": "current_debt",
+      "face_statement_companies": 7,
+      "num_companies": 7,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 7,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "SecuredDebt": {
+      "group": "noncurrent_debt",
+      "face_statement_companies": 17,
+      "num_companies": 16,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 17,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "SecuredDebtCurrent": {
+      "group": "current_debt",
+      "face_statement_companies": 2,
+      "num_companies": 2,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 2,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "SecuredLongTermDebt": {
+      "group": "noncurrent_debt",
+      "face_statement_companies": 0,
+      "num_companies": 0,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 0,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "SeniorLongTermNotes": {
+      "group": "noncurrent_debt",
+      "face_statement_companies": 4,
+      "num_companies": 4,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 4,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "ShortTermBorrowings": {
+      "group": "current_debt",
+      "face_statement_companies": 97,
+      "num_companies": 97,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 97,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "ShortTermInvestments": {
+      "group": "cash_sti_leases_controls",
+      "face_statement_companies": 75,
+      "num_companies": 75,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 75,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "StockholdersEquity": {
+      "group": "cash_sti_leases_controls",
+      "face_statement_companies": 461,
+      "num_companies": 462,
+      "num_only_companies": 2,
+      "face_stmt_breakdown": {
+        "BS": 461,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "UnsecuredDebt": {
+      "group": "noncurrent_debt",
+      "face_statement_companies": 13,
+      "num_companies": 13,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 13,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "UnsecuredDebtCurrent": {
+      "group": "current_debt",
+      "face_statement_companies": 0,
+      "num_companies": 0,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 0,
+        "IS": 0,
+        "CF": 0
+      }
+    },
+    "UnsecuredLongTermDebt": {
+      "group": "noncurrent_debt",
+      "face_statement_companies": 3,
+      "num_companies": 3,
+      "num_only_companies": 0,
+      "face_stmt_breakdown": {
+        "BS": 3,
+        "IS": 0,
+        "CF": 0
+      }
+    }
+  },
+  "custom_face_statement_lines": {
+    "custom_bs_face_rows": 695,
+    "custom_bs_companies": 274,
+    "custom_liability_face_rows": 256,
+    "custom_liability_companies": 152,
+    "custom_debt_face_rows": 99,
+    "custom_debt_companies": 62
+  },
+  "rules": [
+    "Face statement = pre.txt stmt BS/IS/CF and inpth=0.",
+    "NUM counts use consolidated/unsegmented facts when columns are available.",
+    "num_only = annual filing fact in NUM but not on face statement.",
+    "No ticker is written.",
+    "No canonical fundamentals/coverage/status/manifest/chunks are modified."
+  ]
+}
