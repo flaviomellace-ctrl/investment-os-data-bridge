@@ -70,7 +70,7 @@ RELEVANT_TAGS = sorted(
     )
 )
 
-ENRICHMENT_SCHEMA = "br01_br02_v1.1"
+ENRICHMENT_SCHEMA = "br01_br02_v1.2"
 
 
 def now_iso() -> str:
@@ -154,14 +154,19 @@ def choose_annual_history(sub: pd.DataFrame, universe_ciks: set[str]) -> pd.Data
     return work[work["history_rank"] < HISTORY_YEARS].copy()
 
 
-def scan_nums(zip_infos: list[tuple[bridge.QuarterLink, Path]], adsh_set: set[str]) -> pd.DataFrame:
+def scan_nums(
+    zip_infos: list[tuple[bridge.QuarterLink, Path]],
+    adsh_set: set[str],
+) -> pd.DataFrame:
     frames: list[pd.DataFrame] = []
+
     for q, path in zip_infos:
         with zipfile.ZipFile(path) as zf:
             names = {n.lower(): n for n in zf.namelist()}
             actual = names.get("num.txt")
             if not actual:
                 raise bridge.BridgeError(f"num.txt non presente in {q.key}")
+
             with zf.open(actual) as f:
                 reader = pd.read_csv(
                     f,
@@ -170,14 +175,23 @@ def scan_nums(zip_infos: list[tuple[bridge.QuarterLink, Path]], adsh_set: set[st
                     low_memory=False,
                     chunksize=250_000,
                 )
+
                 for chunk in reader:
                     if "adsh" not in chunk.columns or "tag" not in chunk.columns:
-                        raise bridge.BridgeError(f"NUM SEC {q.key}: colonne adsh/tag assenti")
-                    mask = chunk["adsh"].isin(adsh_set) & chunk["tag"].isin(RELEVANT_TAGS)
+                        raise bridge.BridgeError(
+                            f"NUM SEC {q.key}: colonne adsh/tag assenti"
+                        )
+
+                    mask = (
+                        chunk["adsh"].isin(adsh_set)
+                        & chunk["tag"].isin(RELEVANT_TAGS)
+                    )
+
                     if "coreg" in chunk.columns:
                         mask &= chunk["coreg"].fillna("").eq("")
                     if "segments" in chunk.columns:
                         mask &= chunk["segments"].fillna("").eq("")
+
                     part = chunk.loc[mask].copy()
                     if len(part):
                         part["sec_source_quarter"] = q.key
@@ -185,7 +199,17 @@ def scan_nums(zip_infos: list[tuple[bridge.QuarterLink, Path]], adsh_set: set[st
 
     if not frames:
         return pd.DataFrame(
-            columns=["adsh", "tag", "ddate", "qtrs", "uom", "value", "value_num", "ddate_num", "qtrs_num"]
+            columns=[
+                "adsh",
+                "tag",
+                "ddate",
+                "qtrs",
+                "uom",
+                "value",
+                "value_num",
+                "ddate_num",
+                "qtrs_num",
+            ]
         )
 
     out = pd.concat(frames, ignore_index=True, sort=False)
@@ -201,12 +225,27 @@ def pick_flow_current(
     tags: list[str],
     uom: str,
 ) -> tuple[float | None, str, str]:
-    cur, tag, ddate, _, _ = bridge._pick_tag_values(nums, adsh, tags, 4, uom)
+    cur, tag, ddate, _, _ = bridge._pick_tag_values(
+        nums,
+        adsh,
+        tags,
+        4,
+        uom,
+    )
     return cur, tag, ddate
 
 
-def pick_sbc_current(nums: pd.DataFrame, adsh: str) -> tuple[float | None, str, str]:
-    cur, tag, ddate, _, _ = bridge._pick_tag_values(nums, adsh, SBC_TAGS, 4, "USD")
+def pick_sbc_current(
+    nums: pd.DataFrame,
+    adsh: str,
+) -> tuple[float | None, str, str]:
+    cur, tag, ddate, _, _ = bridge._pick_tag_values(
+        nums,
+        adsh,
+        SBC_TAGS,
+        4,
+        "USD",
+    )
     return cur, tag, ddate
 
 
@@ -240,14 +279,28 @@ def history_value(
 ) -> tuple[float | None, str, str]:
     if filing is None:
         return None, "", ""
+
     adsh = bridge.norm_text(filing.get("adsh", ""))
     if not adsh:
         return None, "", ""
+
     if metric in FLOW_METRICS:
         uom = "shares" if metric == "diluted_shares" else "USD"
-        return pick_flow_current(nums, adsh, FLOW_METRICS[metric], uom)
+        return pick_flow_current(
+            nums,
+            adsh,
+            FLOW_METRICS[metric],
+            uom,
+        )
+
     if metric in HISTORY_INSTANT_METRICS:
-        return bridge._pick_instant(nums, adsh, HISTORY_INSTANT_METRICS[metric], "USD")
+        return bridge._pick_instant(
+            nums,
+            adsh,
+            HISTORY_INSTANT_METRICS[metric],
+            "USD",
+        )
+
     raise KeyError(metric)
 
 
@@ -260,6 +313,7 @@ def enrich_dataframe(
 
     # Build a per-CIK map of the last four annual filings.
     history_map: dict[str, dict[int, pd.Series]] = {}
+
     for _, r in history.iterrows():
         cik = normalize_cik(r.get("cik", ""))
         rank = int(r["history_rank"])
@@ -276,20 +330,42 @@ def enrich_dataframe(
     ]
 
     records = []
+
     for _, base_row in out.iterrows():
         row = base_row.to_dict()
         cik = normalize_cik(row.get("cik", ""))
         filings = history_map.get(cik, {})
 
         # Explicit FY-1/FY-2/FY-3 history. Keep original annual_* fields untouched.
-        for rank, prefix in [(1, "fy_minus_1"), (2, "fy_minus_2"), (3, "fy_minus_3")]:
+        for rank, prefix in [
+            (1, "fy_minus_1"),
+            (2, "fy_minus_2"),
+            (3, "fy_minus_3"),
+        ]:
             filing = filings.get(rank)
-            row[f"{prefix}_period"] = bridge.norm_text(filing.get("period", "")) if filing is not None else ""
-            row[f"{prefix}_filed"] = bridge.norm_text(filing.get("filed", "")) if filing is not None else ""
-            row[f"{prefix}_adsh"] = bridge.norm_text(filing.get("adsh", "")) if filing is not None else ""
+
+            row[f"{prefix}_period"] = (
+                bridge.norm_text(filing.get("period", ""))
+                if filing is not None
+                else ""
+            )
+            row[f"{prefix}_filed"] = (
+                bridge.norm_text(filing.get("filed", ""))
+                if filing is not None
+                else ""
+            )
+            row[f"{prefix}_adsh"] = (
+                bridge.norm_text(filing.get("adsh", ""))
+                if filing is not None
+                else ""
+            )
 
             for metric in metrics:
-                val, tag, ddate = history_value(nums, filing, metric)
+                val, tag, ddate = history_value(
+                    nums,
+                    filing,
+                    metric,
+                )
                 row[f"{prefix}_{metric}"] = val
                 row[f"{prefix}_{metric}_tag"] = tag
                 row[f"{prefix}_{metric}_date"] = ddate
@@ -300,60 +376,144 @@ def enrich_dataframe(
             explicit = row.get(f"fy_minus_1_{metric}")
             if pd.notna(explicit):
                 row[f"prior_{metric}"] = explicit
-                row[f"prior_{metric}_date"] = row.get(f"fy_minus_1_{metric}_date", "")
+                row[f"prior_{metric}_date"] = row.get(
+                    f"fy_minus_1_{metric}_date",
+                    "",
+                )
+
+        # IMPORTANT v1.2 FIX:
+        # bridge.py calculates these YoY fields before BR-01 replaces prior_*
+        # with the explicit FY-1 annual filing. Recalculate them only after the
+        # final prior values are known, otherwise share_change can have a sign
+        # inconsistent with annual_diluted_shares vs prior_diluted_shares.
+        row["revenue_yoy"] = bridge.pct_change(
+            row.get("annual_revenue"),
+            row.get("prior_revenue"),
+        )
+        row["net_income_yoy"] = bridge.pct_change(
+            row.get("annual_net_income"),
+            row.get("prior_net_income"),
+        )
+        row["diluted_shares_yoy"] = bridge.pct_change(
+            row.get("annual_diluted_shares"),
+            row.get("prior_diluted_shares"),
+        )
 
         # BR-02: SBC current and prior.
         current_filing = filings.get(0)
         prior_filing = filings.get(1)
 
         if current_filing is not None:
-            current_adsh = bridge.norm_text(current_filing.get("adsh", ""))
-            sbc, sbc_tag, sbc_date = pick_sbc_current(nums, current_adsh)
+            current_adsh = bridge.norm_text(
+                current_filing.get("adsh", "")
+            )
+            sbc, sbc_tag, sbc_date = pick_sbc_current(
+                nums,
+                current_adsh,
+            )
         else:
             sbc, sbc_tag, sbc_date = None, "", ""
 
         if prior_filing is not None:
-            prior_adsh = bridge.norm_text(prior_filing.get("adsh", ""))
-            prior_sbc, prior_sbc_tag, prior_sbc_date = pick_sbc_current(nums, prior_adsh)
+            prior_adsh = bridge.norm_text(
+                prior_filing.get("adsh", "")
+            )
+            prior_sbc, prior_sbc_tag, prior_sbc_date = pick_sbc_current(
+                nums,
+                prior_adsh,
+            )
         else:
             prior_sbc, prior_sbc_tag, prior_sbc_date = None, "", ""
 
         row["annual_sbc"] = sbc
         row["annual_sbc_tag"] = sbc_tag
         row["annual_sbc_date"] = sbc_date
+
         row["prior_sbc"] = prior_sbc
         row["prior_sbc_tag"] = prior_sbc_tag
         row["prior_sbc_date"] = prior_sbc_date
+
         row["sbc_to_revenue"] = (
             sbc / row["annual_revenue"]
-            if sbc is not None and pd.notna(row.get("annual_revenue")) and row.get("annual_revenue") not in (0, None)
+            if (
+                sbc is not None
+                and pd.notna(row.get("annual_revenue"))
+                and row.get("annual_revenue") not in (0, None)
+            )
             else None
         )
 
         # Deterministic derived growth fields used by V4.1.
-        current_fcf = fcf(row.get("annual_operating_cash_flow"), row.get("annual_capex"))
-        old_fcf = fcf(row.get("fy_minus_3_operating_cash_flow"), row.get("fy_minus_3_capex"))
-        current_fcf_ps = per_share(current_fcf, row.get("annual_diluted_shares"))
-        old_fcf_ps = per_share(old_fcf, row.get("fy_minus_3_diluted_shares"))
+        current_fcf = fcf(
+            row.get("annual_operating_cash_flow"),
+            row.get("annual_capex"),
+        )
+        old_fcf = fcf(
+            row.get("fy_minus_3_operating_cash_flow"),
+            row.get("fy_minus_3_capex"),
+        )
 
-        row["revenue_cagr3"] = cagr3(row.get("annual_revenue"), row.get("fy_minus_3_revenue"))
-        row["opinc_cagr3"] = cagr3(row.get("annual_operating_income"), row.get("fy_minus_3_operating_income"))
-        row["fcf_cagr3"] = cagr3(current_fcf, old_fcf)
-        row["fcf_per_share_cagr3"] = cagr3(current_fcf_ps, old_fcf_ps)
+        current_fcf_ps = per_share(
+            current_fcf,
+            row.get("annual_diluted_shares"),
+        )
+        old_fcf_ps = per_share(
+            old_fcf,
+            row.get("fy_minus_3_diluted_shares"),
+        )
+
+        row["revenue_cagr3"] = cagr3(
+            row.get("annual_revenue"),
+            row.get("fy_minus_3_revenue"),
+        )
+        row["opinc_cagr3"] = cagr3(
+            row.get("annual_operating_income"),
+            row.get("fy_minus_3_operating_income"),
+        )
+        row["fcf_cagr3"] = cagr3(
+            current_fcf,
+            old_fcf,
+        )
+        row["fcf_per_share_cagr3"] = cagr3(
+            current_fcf_ps,
+            old_fcf_ps,
+        )
 
         # Raw four-year operating margins for downstream stability logic.
         margins = []
-        for pfx in ["annual", "fy_minus_1", "fy_minus_2", "fy_minus_3"]:
+
+        for pfx in [
+            "annual",
+            "fy_minus_1",
+            "fy_minus_2",
+            "fy_minus_3",
+        ]:
             op = row.get(f"{pfx}_operating_income")
             rev = row.get(f"{pfx}_revenue")
-            margin = op / rev if op is not None and rev not in (None, 0) and pd.notna(op) and pd.notna(rev) else None
+
+            margin = (
+                op / rev
+                if (
+                    op is not None
+                    and rev not in (None, 0)
+                    and pd.notna(op)
+                    and pd.notna(rev)
+                )
+                else None
+            )
+
             row[f"{pfx}_operating_margin_history"] = margin
+
             if margin is not None and math.isfinite(float(margin)):
                 margins.append(float(margin))
 
         if len(margins) >= 3:
-            row["operating_margin_std_4y"] = float(pd.Series(margins).std(ddof=0))
-            row["operating_margin_range_4y"] = max(margins) - min(margins)
+            row["operating_margin_std_4y"] = float(
+                pd.Series(margins).std(ddof=0)
+            )
+            row["operating_margin_range_4y"] = (
+                max(margins) - min(margins)
+            )
         else:
             row["operating_margin_std_4y"] = None
             row["operating_margin_range_4y"] = None
@@ -364,7 +524,11 @@ def enrich_dataframe(
 
 
 def pct_present(series: pd.Series) -> float:
-    return round(float(series.notna().mean() * 100), 1) if len(series) else 0.0
+    return (
+        round(float(series.notna().mean() * 100), 1)
+        if len(series)
+        else 0.0
+    )
 
 
 def update_coverage_file(df: pd.DataFrame) -> None:
@@ -374,48 +538,100 @@ def update_coverage_file(df: pd.DataFrame) -> None:
         cov = df[["ticker", "name", "cik"]].copy()
 
     key = "ticker"
-    extra = pd.DataFrame({
-        key: df[key],
-        "history_revenue_4y": df["fy_minus_3_revenue"].notna(),
-        "history_opinc_4y": df["fy_minus_3_operating_income"].notna(),
-        "history_fcf_4y": (
-            df["fy_minus_3_operating_cash_flow"].notna()
-            & df["fy_minus_3_capex"].notna()
-        ),
-        "history_diluted_shares_4y": df["fy_minus_3_diluted_shares"].notna(),
-        "sbc_current_present": df["annual_sbc"].notna(),
-        "revenue_cagr3_present": df["revenue_cagr3"].notna(),
-        "opinc_cagr3_present": df["opinc_cagr3"].notna(),
-        "fcf_cagr3_present": df["fcf_cagr3"].notna(),
-        "fcf_per_share_cagr3_present": df["fcf_per_share_cagr3"].notna(),
-    })
+
+    extra = pd.DataFrame(
+        {
+            key: df[key],
+            "history_revenue_4y": df["fy_minus_3_revenue"].notna(),
+            "history_opinc_4y": df[
+                "fy_minus_3_operating_income"
+            ].notna(),
+            "history_fcf_4y": (
+                df["fy_minus_3_operating_cash_flow"].notna()
+                & df["fy_minus_3_capex"].notna()
+            ),
+            "history_diluted_shares_4y": df[
+                "fy_minus_3_diluted_shares"
+            ].notna(),
+            "sbc_current_present": df["annual_sbc"].notna(),
+            "revenue_cagr3_present": df["revenue_cagr3"].notna(),
+            "opinc_cagr3_present": df["opinc_cagr3"].notna(),
+            "fcf_cagr3_present": df["fcf_cagr3"].notna(),
+            "fcf_per_share_cagr3_present": df[
+                "fcf_per_share_cagr3"
+            ].notna(),
+        }
+    )
 
     for c in extra.columns:
         if c != key and c in cov.columns:
             cov = cov.drop(columns=[c])
 
-    cov = cov.merge(extra, on=key, how="left")
-    bridge.write_csv_atomic(COVERAGE_PATH, cov)
+    cov = cov.merge(
+        extra,
+        on=key,
+        how="left",
+    )
+
+    bridge.write_csv_atomic(
+        COVERAGE_PATH,
+        cov,
+    )
 
 
-def update_status(df: pd.DataFrame, quarters: list[str]) -> dict:
+def update_status(
+    df: pd.DataFrame,
+    quarters: list[str],
+) -> dict:
     stats = {
-        "revenue_4y_pct": pct_present(df["fy_minus_3_revenue"]),
-        "operating_income_4y_pct": pct_present(df["fy_minus_3_operating_income"]),
-        "fcf_4y_pct": round(float((
-            df["fy_minus_3_operating_cash_flow"].notna()
-            & df["fy_minus_3_capex"].notna()
-        ).mean() * 100), 1),
-        "diluted_shares_4y_pct": pct_present(df["fy_minus_3_diluted_shares"]),
-        "sbc_current_pct": pct_present(df["annual_sbc"]),
-        "revenue_cagr3_pct": pct_present(df["revenue_cagr3"]),
-        "opinc_cagr3_pct": pct_present(df["opinc_cagr3"]),
-        "fcf_cagr3_pct": pct_present(df["fcf_cagr3"]),
-        "fcf_per_share_cagr3_pct": pct_present(df["fcf_per_share_cagr3"]),
+        "revenue_4y_pct": pct_present(
+            df["fy_minus_3_revenue"]
+        ),
+        "operating_income_4y_pct": pct_present(
+            df["fy_minus_3_operating_income"]
+        ),
+        "fcf_4y_pct": round(
+            float(
+                (
+                    df[
+                        "fy_minus_3_operating_cash_flow"
+                    ].notna()
+                    & df[
+                        "fy_minus_3_capex"
+                    ].notna()
+                ).mean()
+                * 100
+            ),
+            1,
+        ),
+        "diluted_shares_4y_pct": pct_present(
+            df["fy_minus_3_diluted_shares"]
+        ),
+        "sbc_current_pct": pct_present(
+            df["annual_sbc"]
+        ),
+        "revenue_cagr3_pct": pct_present(
+            df["revenue_cagr3"]
+        ),
+        "opinc_cagr3_pct": pct_present(
+            df["opinc_cagr3"]
+        ),
+        "fcf_cagr3_pct": pct_present(
+            df["fcf_cagr3"]
+        ),
+        "fcf_per_share_cagr3_pct": pct_present(
+            df["fcf_per_share_cagr3"]
+        ),
     }
 
     marker = "\n## V4.1 enrichment BR-01 / BR-02\n"
-    base = STATUS_PATH.read_text(encoding="utf-8") if STATUS_PATH.exists() else "# Investment OS Data Bridge — stato\n"
+
+    base = (
+        STATUS_PATH.read_text(encoding="utf-8")
+        if STATUS_PATH.exists()
+        else "# Investment OS Data Bridge — stato\n"
+    )
+
     if marker in base:
         base = base.split(marker, 1)[0].rstrip() + "\n"
 
@@ -435,23 +651,41 @@ def update_status(df: pd.DataFrame, quarters: list[str]) -> dict:
 
 `MISSING` resta `MISSING`: nessuna assenza è convertita in zero.
 """
-    STATUS_PATH.write_text(base.rstrip() + "\n" + section.lstrip(), encoding="utf-8")
+
+    STATUS_PATH.write_text(
+        base.rstrip() + "\n" + section.lstrip(),
+        encoding="utf-8",
+    )
+
     return stats
 
 
 def main() -> int:
     if not FUNDAMENTALS_PATH.exists():
-        raise SystemExit("sp500_fundamentals.csv non trovato: eseguire prima src/bridge.py")
+        raise SystemExit(
+            "sp500_fundamentals.csv non trovato: "
+            "eseguire prima src/bridge.py"
+        )
 
-    fundamentals = pd.read_csv(FUNDAMENTALS_PATH, low_memory=False)
+    fundamentals = pd.read_csv(
+        FUNDAMENTALS_PATH,
+        low_memory=False,
+    )
+
     manifest = read_manifest()
     downloader = bridge.Downloader()
 
-    quarters, sec_index_meta = bridge.discover_sec_quarters(downloader)
+    quarters, sec_index_meta = bridge.discover_sec_quarters(
+        downloader
+    )
     selected_quarters = quarters[-SEC_QUARTERS:]
     latest_key = quarters[-1].key
 
-    if not needs_enrichment(fundamentals, manifest, latest_key):
+    if not needs_enrichment(
+        fundamentals,
+        manifest,
+        latest_key,
+    ):
         print(
             f"BR-01/BR-02 già applicati per {latest_key}; "
             "nessun download SEC storico necessario."
@@ -463,51 +697,98 @@ def main() -> int:
         f"({selected_quarters[0].key} → {selected_quarters[-1].key})..."
     )
 
-    with tempfile.TemporaryDirectory(prefix="investment_os_br01_br02_") as td:
+    with tempfile.TemporaryDirectory(
+        prefix="investment_os_br01_br02_"
+    ) as td:
         td_path = Path(td)
-        zip_infos: list[tuple[bridge.QuarterLink, Path]] = []
+        zip_infos: list[
+            tuple[bridge.QuarterLink, Path]
+        ] = []
         downloads = []
 
         for q in selected_quarters:
             path = td_path / f"{q.key}.zip"
             print(f"  Scarico {q.label} ...")
-            sha, nbytes = bridge.download_to_file(downloader, q.url, path)
-            zip_infos.append((q, path))
-            downloads.append({
-                "quarter": q.key,
-                "url": q.url,
-                "sha256": sha,
-                "bytes": nbytes,
-            })
 
-        subs = bridge.load_submissions_from_zips(zip_infos)
+            sha, nbytes = bridge.download_to_file(
+                downloader,
+                q.url,
+                path,
+            )
+
+            zip_infos.append(
+                (q, path)
+            )
+
+            downloads.append(
+                {
+                    "quarter": q.key,
+                    "url": q.url,
+                    "sha256": sha,
+                    "bytes": nbytes,
+                }
+            )
+
+        subs = bridge.load_submissions_from_zips(
+            zip_infos
+        )
+
         universe_ciks = {
             normalize_cik(x)
             for x in fundamentals["cik"].dropna()
             if normalize_cik(x)
         }
 
-        history = choose_annual_history(subs, universe_ciks)
-        adsh_set = set(history["adsh"].dropna().astype(str))
+        history = choose_annual_history(
+            subs,
+            universe_ciks,
+        )
+
+        adsh_set = set(
+            history["adsh"].dropna().astype(str)
+        )
+
         print(
             f"  Filing annuali storici selezionati: {len(history)}; "
             "scansione NUM per BR-01/BR-02..."
         )
 
-        nums = scan_nums(zip_infos, adsh_set)
-        enriched = enrich_dataframe(fundamentals, history, nums)
+        nums = scan_nums(
+            zip_infos,
+            adsh_set,
+        )
 
-    bridge.write_csv_atomic(FUNDAMENTALS_PATH, enriched)
-    update_coverage_file(enriched)
-    stats = update_status(enriched, [q.key for q in selected_quarters])
+        enriched = enrich_dataframe(
+            fundamentals,
+            history,
+            nums,
+        )
+
+    bridge.write_csv_atomic(
+        FUNDAMENTALS_PATH,
+        enriched,
+    )
+
+    update_coverage_file(
+        enriched
+    )
+
+    stats = update_status(
+        enriched,
+        [q.key for q in selected_quarters],
+    )
 
     manifest = read_manifest()
-    manifest["schema_version"] = "1.1"
+    manifest["schema_version"] = "1.2"
+
     manifest["br01_br02_enrichment"] = {
         "schema": ENRICHMENT_SCHEMA,
         "updated_at_utc": now_iso(),
         "latest_available_quarter": latest_key,
-        "quarters_used": [q.key for q in selected_quarters],
+        "quarters_used": [
+            q.key
+            for q in selected_quarters
+        ],
         "annual_history_years_target": HISTORY_YEARS,
         "sec_index": sec_index_meta,
         "quarter_downloads": downloads,
@@ -516,28 +797,42 @@ def main() -> int:
             "Missing values are never converted to zero.",
             "3-year CAGR is calculated only when both endpoints are positive.",
             "SBC prefers ShareBasedCompensation; missing SBC remains MISSING.",
+            "YoY revenue, net income and diluted shares are recalculated after the explicit FY-1 prior-value reconciliation.",
             "This enrichment does not compute BQS, IOS, rankings, or recommendations.",
         ],
     }
 
-    outputs = manifest.setdefault("outputs", {})
+    outputs = manifest.setdefault(
+        "outputs",
+        {},
+    )
+
     for name in [
         "sp500_fundamentals.csv",
         "sp500_coverage.csv",
         "status.md",
     ]:
         path = DATA_DIR / name
+
         if path.exists():
             outputs[name] = {
                 "sha256": sha256_file(path),
                 "bytes": path.stat().st_size,
             }
 
-    write_manifest(manifest)
+    write_manifest(
+        manifest
+    )
 
-    print("OK — BR-01 + BR-02 completati.")
+    print(
+        "OK — BR-01 + BR-02 completati."
+    )
+
     for k, v in stats.items():
-        print(f"{k}: {v:.1f}%")
+        print(
+            f"{k}: {v:.1f}%"
+        )
+
     return 0
 
 
