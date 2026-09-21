@@ -1,6 +1,6 @@
 # Investment OS Data Bridge — stato
 
-Aggiornato: **2026-09-21T10:42:39+00:00**
+Aggiornato: **2026-09-21T16:42:12+00:00**
 
 - Righe universo equity-like: **504**
 - Ticker con CIK SEC mappato: **99.8%**
@@ -26,6 +26,22 @@ La copertura qui è una misura tecnica, non un BQS. Metriche non appropriate a u
 - FCF/share CAGR 3y calcolabile: **47.4%**
 
 `MISSING` resta `MISSING`: nessuna assenza è convertita in zero.
+## V4.1 enrichment BR-03
+
+- SEC quarterly datasets usati: **16** (2022Q3 → 2026Q2)
+- `annual_buyback` disponibile: **81.2%**
+- `annual_dividends_paid` disponibile: **78.2%**
+- `buyback_accretion` disponibile/N.A.: **67.5%**
+- `payout_ratio` disponibile: **74.2%**
+- `BUYBACK_TAG_ABSENT_CF_PRESENT`: **17.5%**
+- `DIVIDENDS_TAG_ABSENT_CF_PRESENT`: **20.4%**
+- `NO_BUYBACK_NO_SBC`: **0**
+- `PAYOUT_NEGATIVE_EARNINGS`: **27**
+- `SHARE_COUNT_DISCONTINUITY`: **10**
+- Buyback tag usage: **{"PaymentsForRepurchaseOfCommonStock": 395, "PaymentsForRepurchaseOfEquity": 7, "TreasuryStockValueAcquiredCostMethod": 7}**
+- Dividend tag usage: **{"PaymentsOfDividends": 138, "PaymentsOfDividendsCommonStock": 236, "PaymentsOfOrdinaryDividends": 20}**
+- Bridge regression checks: **16/16 passed**
+- `MISSING` resta `MISSING`: nessuna assenza è convertita in zero.
 ## V4.1 enrichment BR-05
 
 - Fonte primaria market data: **Nasdaq public stock screener**
