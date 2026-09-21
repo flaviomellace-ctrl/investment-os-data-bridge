@@ -54,6 +54,11 @@ jobs:
           SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
         run: python src/enrich_br01_br02.py
 
+      - name: Enrich BR-03 capital return
+        env:
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+        run: python src/enrich_br03_capital_return.py
+
       - name: Enrich BR-05 market data
         env:
           FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
