@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Investment OS Data Bridge — BR-04 T00-bis census probe.
+Investment OS Data Bridge — BR-04 T00-bis census probe (v1.1).
 
 Pre-candidate census required by BR04_DATA_CONTRACT_V4_1_POST_T00_R3.
 
@@ -10,12 +10,20 @@ Safety:
 - never writes data/current/;
 - never creates a BR-04 candidate;
 - never computes BQS, IOS, rankings, recommendations or Blind Test results.
+
+v1.1 correction:
+- every face-statement census is scoped to the statement required by the
+  frozen contract:
+    debt/cash/LSE -> BS
+    gross/net interest and interest income -> IS
+    InterestPaidNet -> CF
+- a "usable annual" fact counts only when the same tag is also present on the
+  required face statement for that filing.
 """
 
 from __future__ import annotations
 
 import hashlib
-import json
 import os
 import re
 import tempfile
@@ -34,7 +42,7 @@ CURRENT_DIR = ROOT / "data" / "current"
 FUNDAMENTALS_PATH = CURRENT_DIR / "sp500_fundamentals.csv"
 
 SEC_QUARTERS = 16
-SCHEMA = "br04_t00bis_probe_v1.0"
+SCHEMA = "br04_t00bis_probe_v1.1"
 
 RUN_ID = (
     os.getenv("GITHUB_RUN_ID", "").strip()
@@ -287,6 +295,29 @@ def union_for(mapping: dict[str, set[str]], tags: set[str]) -> set[str]:
     return out
 
 
+def face_union(
+    face_by_stmt: dict[str, dict[str, set[str]]],
+    tags: set[str],
+    stmt: str,
+) -> set[str]:
+    out: set[str] = set()
+    for tag in tags:
+        out |= face_by_stmt[tag][stmt]
+    return out
+
+
+def usable_on_required_face(
+    usable_num_tags: dict[str, set[str]],
+    face_by_stmt: dict[str, dict[str, set[str]]],
+    tags: set[str],
+    stmt: str,
+) -> set[str]:
+    out: set[str] = set()
+    for tag in tags:
+        out |= usable_num_tags[tag] & face_by_stmt[tag][stmt]
+    return out
+
+
 def main() -> int:
     fundamentals, adsh_to_period = load_universe()
     annual_adshs = set(adsh_to_period)
@@ -298,8 +329,13 @@ def main() -> int:
     quarters, sec_index_meta = bridge.discover_sec_quarters(downloader)
     selected = quarters[-SEC_QUARTERS:]
 
-    face_tags: dict[str, set[str]] = defaultdict(set)
-    usable_tags: dict[str, set[str]] = defaultdict(set)
+    # tag -> stmt -> annual ADSHs where the tag is on the required face statement.
+    face_by_stmt: dict[str, dict[str, set[str]]] = defaultdict(
+        lambda: defaultdict(set)
+    )
+
+    # tag -> annual ADSHs with a consolidated, unsegmented, same-period NUM fact.
+    usable_num_tags: dict[str, set[str]] = defaultdict(set)
 
     custom_counts = defaultdict(int)
     custom_company_sets: dict[str, set[str]] = defaultdict(set)
@@ -310,7 +346,7 @@ def main() -> int:
     legacy_observed: set[str] = set()
 
     print(
-        f"BR04-T00-bis: universe={len(fundamentals)}, "
+        f"BR04-T00-bis v1.1: universe={len(fundamentals)}, "
         f"annual_adsh={len(annual_adshs)}, base_sha256={base_sha}"
     )
 
@@ -347,8 +383,10 @@ def main() -> int:
                 ].copy()
 
                 relevant = face[face["tag"].isin(ALL_SCAN_TAGS)]
-                for tag, grp in relevant.groupby("tag"):
-                    face_tags[tag].update(grp["adsh"].dropna().astype(str))
+                for (tag, stmt), grp in relevant.groupby(["tag", "stmt"]):
+                    face_by_stmt[tag][stmt].update(
+                        grp["adsh"].dropna().astype(str)
+                    )
 
                 lse_face.update(
                     face.loc[
@@ -360,7 +398,8 @@ def main() -> int:
 
                 legacy_observed.update(
                     face.loc[
-                        face["tag"].isin(LEGACY_FORBIDDEN_TAGS),
+                        (face["stmt"].eq("BS"))
+                        & face["tag"].isin(LEGACY_FORBIDDEN_TAGS),
                         "adsh",
                     ].dropna().astype(str)
                 )
@@ -455,34 +494,60 @@ def main() -> int:
                                 grp,
                                 flow=(tag in flow_tags),
                             ):
-                                usable_tags[tag].add(str(adsh))
+                                usable_num_tags[tag].add(str(adsh))
 
     gross_tags = GROSS_INTEREST_L1_TAGS | GROSS_INTEREST_L2_TAGS
 
-    gross_face = union_for(face_tags, gross_tags)
-    gross_usable = union_for(usable_tags, gross_tags)
-    net_face = union_for(face_tags, NET_INTEREST_TAGS)
-    net_usable = union_for(usable_tags, NET_INTEREST_TAGS)
-    paid_face = face_tags[INTEREST_PAID_TAG]
-    paid_usable = usable_tags[INTEREST_PAID_TAG]
-    income_face = face_tags[INTEREST_INCOME_TAG]
-    income_usable = usable_tags[INTEREST_INCOME_TAG]
+    # Frozen statement scope:
+    # debt/cash/LSE = BS, gross/net/income interest = IS, paid interest = CF.
+    gross_face = face_union(face_by_stmt, gross_tags, "IS")
+    gross_usable = usable_on_required_face(
+        usable_num_tags, face_by_stmt, gross_tags, "IS"
+    )
 
-    exact_cash_face = union_for(face_tags, EXACT_CASH_TAGS)
-    exact_cash_usable = union_for(usable_tags, EXACT_CASH_TAGS)
+    net_face = face_union(face_by_stmt, NET_INTEREST_TAGS, "IS")
+    net_usable = usable_on_required_face(
+        usable_num_tags, face_by_stmt, NET_INTEREST_TAGS, "IS"
+    )
 
-    current_face = union_for(face_tags, CURRENT_DEBT_TAGS)
-    current_usable = union_for(usable_tags, CURRENT_DEBT_TAGS)
-    noncurrent_face = union_for(face_tags, NONCURRENT_DEBT_TAGS)
-    noncurrent_usable = union_for(usable_tags, NONCURRENT_DEBT_TAGS)
-    aggregate_face = union_for(face_tags, DEBT_AGGREGATE_TAGS)
-    aggregate_usable = union_for(usable_tags, DEBT_AGGREGATE_TAGS)
+    paid_face = face_by_stmt[INTEREST_PAID_TAG]["CF"]
+    paid_usable = (
+        usable_num_tags[INTEREST_PAID_TAG]
+        & face_by_stmt[INTEREST_PAID_TAG]["CF"]
+    )
+
+    income_face = face_by_stmt[INTEREST_INCOME_TAG]["IS"]
+    income_usable = (
+        usable_num_tags[INTEREST_INCOME_TAG]
+        & face_by_stmt[INTEREST_INCOME_TAG]["IS"]
+    )
+
+    exact_cash_face = face_union(face_by_stmt, EXACT_CASH_TAGS, "BS")
+    exact_cash_usable = usable_on_required_face(
+        usable_num_tags, face_by_stmt, EXACT_CASH_TAGS, "BS"
+    )
+
+    current_face = face_union(face_by_stmt, CURRENT_DEBT_TAGS, "BS")
+    current_usable = usable_on_required_face(
+        usable_num_tags, face_by_stmt, CURRENT_DEBT_TAGS, "BS"
+    )
+
+    noncurrent_face = face_union(face_by_stmt, NONCURRENT_DEBT_TAGS, "BS")
+    noncurrent_usable = usable_on_required_face(
+        usable_num_tags, face_by_stmt, NONCURRENT_DEBT_TAGS, "BS"
+    )
+
+    aggregate_face = face_union(face_by_stmt, DEBT_AGGREGATE_TAGS, "BS")
+    aggregate_usable = usable_on_required_face(
+        usable_num_tags, face_by_stmt, DEBT_AGGREGATE_TAGS, "BS"
+    )
 
     all_debt_face = current_face | noncurrent_face | aggregate_face
     all_debt_usable = current_usable | noncurrent_usable | aggregate_usable
 
     only_net_face = net_face - gross_face - paid_face
     only_net_usable = net_usable - gross_usable - paid_usable
+
     only_paid_face = paid_face - gross_face - net_face
     only_paid_usable = paid_usable - gross_usable - net_usable
 
@@ -491,14 +556,14 @@ def main() -> int:
     net_plus_income_no_gross_face = net_plus_income_face - gross_face
     net_plus_income_no_gross_usable = net_plus_income_usable - gross_usable
 
-    lse_usable = usable_tags["LiabilitiesAndStockholdersEquity"]
+    lse_usable = (
+        usable_num_tags["LiabilitiesAndStockholdersEquity"]
+        & face_by_stmt["LiabilitiesAndStockholdersEquity"]["BS"]
+    )
 
-    # R3 §7.2 asks for proof that the sum of all leaf liabilities/equity
-    # reconstructs LiabilitiesAndStockholdersEquity. The compact SEC FSDS PRE
-    # table exposes statement/report/line ordering but not the parent-child
-    # presentation/calculation tree needed to distinguish every leaf from every
-    # subtotal without inference. T00-bis must report this as a blocker rather
-    # than manufacture a closure count.
+    # R3 §7.2 requires proof that the sum of all leaf liabilities/equity
+    # reconstructs LSE. SEC FSDS PRE exposes statement/report/line ordering but
+    # not a parent-child presentation/calculation tree. Do not fabricate leaves.
     closure = {
         "strict_closure_demonstration_supported_by_current_fsds": False,
         "closure_demonstrated_companies": None,
@@ -526,6 +591,15 @@ def main() -> int:
         "companies_without_annual_adsh": len(fundamentals) - len(annual_adshs),
         "quarters_used": [q.key for q in selected],
         "sec_index": sec_index_meta,
+        "statement_scope": {
+            "debt": "BS",
+            "cash": "BS",
+            "liabilities_and_equity_control": "BS",
+            "gross_interest": "IS",
+            "net_interest": "IS",
+            "interest_income": "IS",
+            "interest_paid": "CF",
+        },
         "interest_unions": {
             "gross_l1_or_l2_face": len(gross_face),
             "gross_l1_or_l2_usable_annual": len(gross_usable),
@@ -543,18 +617,18 @@ def main() -> int:
             ),
         },
         "cash_union": {
-            "exact_cash_face": len(exact_cash_face),
-            "exact_cash_usable_annual": len(exact_cash_usable),
+            "exact_cash_face_BS": len(exact_cash_face),
+            "exact_cash_usable_annual_BS": len(exact_cash_usable),
         },
         "debt_class_unions": {
-            "current_face": len(current_face),
-            "current_usable_annual": len(current_usable),
-            "noncurrent_face": len(noncurrent_face),
-            "noncurrent_usable_annual": len(noncurrent_usable),
-            "aggregate_face": len(aggregate_face),
-            "aggregate_usable_annual": len(aggregate_usable),
-            "any_debt_face": len(all_debt_face),
-            "any_debt_usable_annual": len(all_debt_usable),
+            "current_face_BS": len(current_face),
+            "current_usable_annual_BS": len(current_usable),
+            "noncurrent_face_BS": len(noncurrent_face),
+            "noncurrent_usable_annual_BS": len(noncurrent_usable),
+            "aggregate_face_BS": len(aggregate_face),
+            "aggregate_usable_annual_BS": len(aggregate_usable),
+            "any_debt_face_BS": len(all_debt_face),
+            "any_debt_usable_annual_BS": len(all_debt_usable),
         },
         "custom_label_census": {
             "custom_debt_rows": custom_counts["CUSTOM_DEBT_rows"],
@@ -567,21 +641,22 @@ def main() -> int:
             "custom_equity_hint_companies": len(
                 custom_company_sets["CUSTOM_EQUITY_HINT"]
             ),
-            "custom_unclassified_rows_all_bs": custom_counts["UNCLASSIFIED_rows"],
-            "custom_unclassified_companies_all_bs": len(custom_any_unclassified),
+            "custom_unclassified_rows_all_BS": custom_counts["UNCLASSIFIED_rows"],
+            "custom_unclassified_companies_all_BS": len(custom_any_unclassified),
             "custom_unclassified_companies_passive_hint": len(
                 custom_passive_unclassified
             ),
         },
         "closure": closure,
         "legacy_forbidden_tags": {
-            "companies_observed_on_face": len(legacy_observed),
+            "companies_observed_on_BS_face": len(legacy_observed),
             "must_be_zero_under_R3": True,
         },
         "rules": [
             "No canonical file is modified.",
             "T00-bis records base_canonical_sha256 and is exempt from candidate_sha256.",
-            "Face statement means PRE stmt BS/IS/CF and inpth=0.",
+            "Face statement means PRE inpth=0 on the statement required by the frozen contract.",
+            "Usable annual fact must also be present on that required face statement.",
             "Usable annual fact means same annual_adsh, same annual_period, consolidated and unsegmented; flow tags require qtrs=4.",
             "Net interest is never counted as gross interest.",
             "Custom label collision between debt and non-debt dictionaries resolves to debt conservatively.",
@@ -595,7 +670,7 @@ def main() -> int:
     bridge.write_json_atomic(JSON_PATH, report)
 
     md = [
-        "# BR-04 T00-bis — pre-candidate census",
+        "# BR-04 T00-bis — pre-candidate census v1.1",
         "",
         f"- Run ID: **{RUN_ID}**",
         f"- Base canonical SHA-256: `{base_sha}`",
@@ -605,25 +680,25 @@ def main() -> int:
         f"- SEC quarters: **{len(selected)}** "
         f"({selected[0].key} → {selected[-1].key})",
         "",
-        "## Interest unions",
+        "## Interest unions — statement scoped",
         "",
-        f"- Gross L1/L2 on face: **{len(gross_face)}**",
-        f"- Gross L1/L2 usable annual: **{len(gross_usable)}**",
-        f"- Only net on face: **{len(only_net_face)}**",
-        f"- Only net usable annual: **{len(only_net_usable)}**",
-        f"- Only InterestPaidNet on face: **{len(only_paid_face)}**",
-        f"- Only InterestPaidNet usable annual: **{len(only_paid_usable)}**",
-        f"- Net + InvestmentIncomeInterest on face: **{len(net_plus_income_face)}**",
-        f"- Net + InvestmentIncomeInterest usable annual: **{len(net_plus_income_usable)}**",
-        f"- Net + income, no gross, on face: **{len(net_plus_income_no_gross_face)}**",
-        f"- Net + income, no gross, usable annual: **{len(net_plus_income_no_gross_usable)}**",
+        f"- Gross L1/L2 on IS face: **{len(gross_face)}**",
+        f"- Gross L1/L2 usable annual + IS face: **{len(gross_usable)}**",
+        f"- Only net on IS face: **{len(only_net_face)}**",
+        f"- Only net usable annual + IS face: **{len(only_net_usable)}**",
+        f"- Only InterestPaidNet on CF face: **{len(only_paid_face)}**",
+        f"- Only InterestPaidNet usable annual + CF face: **{len(only_paid_usable)}**",
+        f"- Net + InvestmentIncomeInterest on IS face: **{len(net_plus_income_face)}**",
+        f"- Net + InvestmentIncomeInterest usable annual + IS face: **{len(net_plus_income_usable)}**",
+        f"- Net + income, no gross, on IS face: **{len(net_plus_income_no_gross_face)}**",
+        f"- Net + income, no gross, usable annual + IS face: **{len(net_plus_income_no_gross_usable)}**",
         "",
-        "## Exact cash",
+        "## Exact cash — BS only",
         "",
-        f"- Exact cash on face: **{len(exact_cash_face)}**",
-        f"- Exact cash usable annual: **{len(exact_cash_usable)}**",
+        f"- Exact cash on BS face: **{len(exact_cash_face)}**",
+        f"- Exact cash usable annual + BS face: **{len(exact_cash_usable)}**",
         "",
-        "## Debt classes",
+        "## Debt classes — BS only",
         "",
         f"- Current debt face / usable: **{len(current_face)} / {len(current_usable)}**",
         f"- Noncurrent debt face / usable: **{len(noncurrent_face)} / {len(noncurrent_usable)}**",
@@ -644,8 +719,8 @@ def main() -> int:
         "",
         "## Closure feasibility",
         "",
-        f"- LSE on face: **{len(lse_face)}**",
-        f"- LSE usable annual: **{len(lse_usable)}**",
+        f"- LSE on BS face: **{len(lse_face)}**",
+        f"- LSE usable annual + BS face: **{len(lse_usable)}**",
         "- Strict §7.2 closure demonstrated: **NOT COMPUTED**",
         "- Blocker: **PRE_HAS_ORDER_BUT_NO_PARENT_CHILD_OR_CALCULATION_HIERARCHY**",
         "",
@@ -663,7 +738,7 @@ def main() -> int:
             "evidenza non valida, rieseguire."
         )
 
-    print("OK — BR04-T00-bis completato.")
+    print("OK — BR04-T00-bis v1.1 completato.")
     print(f"base_canonical_sha256={base_sha}")
     print(f"evidence={JSON_PATH.relative_to(ROOT)}")
     print("data/current modified: NO")
