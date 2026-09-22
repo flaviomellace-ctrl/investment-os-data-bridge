@@ -1,0 +1,55 @@
+name: Probe BR-04 T00-bis
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: br04-t00bis
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Syntax check
+        run: python -m compileall -q src
+
+      - name: Run BR-04 T00-bis census
+        env:
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+        run: python src/probe_br04_t00bis.py
+
+      - name: Verify evidence exists
+        run: |
+          test -f "data/staging/br04/${GITHUB_RUN_ID}/evidence/br04_t00bis_report.json"
+          test -f "data/staging/br04/${GITHUB_RUN_ID}/evidence/br04_t00bis_report.md"
+
+      - name: Commit T00-bis evidence only
+        run: |
+          git config user.name "investment-os-data-bridge[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "data/staging/br04/${GITHUB_RUN_ID}/evidence/br04_t00bis_report.json"
+          git add "data/staging/br04/${GITHUB_RUN_ID}/evidence/br04_t00bis_report.md"
+          if git diff --cached --quiet; then
+            echo "Nessuna nuova evidenza T00-bis da committare."
+            exit 0
+          fi
+          git commit -m "data: BR-04 T00-bis census ${GITHUB_RUN_ID}"
+          git push
