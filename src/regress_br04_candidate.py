@@ -3,7 +3,7 @@
 Investment OS Data Bridge — BR-04 S2 regression suite.
 
 Implements S2 of BR04_DATA_CONTRACT_V4_1_POST_T00_R3:
-T01-T17, T19, T21, T22 and T23-T30 on the exact S1 candidate.
+T01-T17, T19, T21, T22, T23-T30 and T32 on the exact S1 candidate.
 
 Safety / custody:
 - reads one immutable S1 candidate under data/staging/br04/<s1_run_id>/;
@@ -1601,6 +1601,129 @@ def main() -> int:
     )
 
     # ------------------------------------------------------------------
+    # T32 — R3 §7.4 / ERRATA 2: prudential leverage for CONFLICTING debt.
+    #
+    # Applicable real-universe rows:
+    # - total_debt_status = CONFLICTING;
+    # - non-BANK module;
+    # - exact cash available;
+    # - numeric OCF (positive or non-positive);
+    # - at least one published total_debt candidate.
+    #
+    # Sector precedence from ERRATA 2:
+    # - INSURANCE keeps roic = NOT_APPLICABLE;
+    # - other applicable non-BANK modules keep roic = CONFLICTING.
+    # ------------------------------------------------------------------
+    t32_checked = 0
+    t32_failures = 0
+    t32_positive_ocf = 0
+    t32_nonpositive_ocf = 0
+    t32_insurance = 0
+    t32_other_modules = 0
+
+    for r in candidate_rows:
+        if norm(r.get("total_debt_status")) != "CONFLICTING":
+            continue
+
+        module = norm(r.get("br04_module"))
+        if module == "BANK":
+            continue
+
+        cash = finite(r.get("cash_and_equivalents"))
+        ocf = finite(r.get("annual_operating_cash_flow"))
+        candidates = parse_candidate_values(r.get("total_debt_candidates"))
+
+        if cash is None or ocf is None or not candidates:
+            continue
+
+        t32_checked += 1
+        if module == "INSURANCE":
+            t32_insurance += 1
+        else:
+            t32_other_modules += 1
+
+        row_failed = False
+        flags = flags_of(r)
+        published = finite(r.get("net_debt_to_ocf"))
+        total_debt = finite(r.get("total_debt"))
+        max_debt = max(candidates.values())
+        min_debt = min(candidates.values())
+
+        # §7.4 keeps the published total_debt blank and preserves provenance.
+        if total_debt is not None:
+            row_failed = True
+
+        # A prudential numeric leverage value must be published whenever the
+        # required inputs are available.
+        if published is None:
+            row_failed = True
+        elif ocf > 0:
+            t32_positive_ocf += 1
+            expected = (max_debt - cash) / ocf
+            minimum_candidate_ratio = (min_debt - cash) / ocf
+            lb = finite(r.get("net_debt_to_ocf_lb"))
+
+            if not close(published, expected):
+                row_failed = True
+            if published + CALC_TOL * max(1.0, abs(published), abs(minimum_candidate_ratio)) < minimum_candidate_ratio:
+                row_failed = True
+            if lb is not None and published + CALC_TOL * max(1.0, abs(published), abs(lb)) < lb:
+                row_failed = True
+        else:
+            t32_nonpositive_ocf += 1
+            prudential_net_debt = max_debt - cash
+            expected = 99.0 if prudential_net_debt > 0 else 0.0
+            if not close(published, expected):
+                row_failed = True
+            if prudential_net_debt > 0:
+                if "NET_DEBT_NOT_SERVICEABLE_FROM_OCF" not in flags:
+                    row_failed = True
+            else:
+                if "NET_CASH_NEGATIVE_OCF" not in flags:
+                    row_failed = True
+
+        # The prudential publication must be explicit and must not remain
+        # classified as leverage-indeterminate.
+        if "DEBT_CONFLICTING_PRUDENTIAL_VALUE" not in flags:
+            row_failed = True
+        if "LEVERAGE_THRESHOLD_INDETERMINATE" in flags:
+            row_failed = True
+        if norm(r.get("ios_leverage_indeterminate")).lower() in {
+            "true", "1", "yes"
+        }:
+            row_failed = True
+
+        # ERRATA 2 freezes sector precedence for ROIC.
+        roic_state = norm(r.get("roic"))
+        if module == "INSURANCE":
+            if roic_state != "NOT_APPLICABLE":
+                row_failed = True
+        elif roic_state != "CONFLICTING":
+            row_failed = True
+
+        if row_failed:
+            t32_failures += 1
+
+    tests["BR04-T32"] = test_result(
+        passed=t32_failures == 0,
+        checked=t32_checked,
+        failures=t32_failures,
+        no_case_reason=(
+            "No non-BANK CONFLICTING-debt row with exact cash, numeric OCF "
+            "and debt candidates exists in this candidate."
+            if t32_checked == 0
+            else None
+        ),
+        details={
+            "positive_ocf_rows": t32_positive_ocf,
+            "nonpositive_ocf_rows": t32_nonpositive_ocf,
+            "insurance_rows": t32_insurance,
+            "other_module_rows": t32_other_modules,
+            "rule": "R3 §7.4 + ERRATA 2 sector precedence",
+        },
+    )
+
+    # ------------------------------------------------------------------
     # T21 — no vacuous T01-T17.
     # ------------------------------------------------------------------
     failures = 0
@@ -1720,6 +1843,7 @@ def main() -> int:
         [f"BR04-T{n:02d}" for n in range(1, 18)]
         + ["BR04-T19", "BR04-T21", "BR04-T22"]
         + [f"BR04-T{n:02d}" for n in range(23, 31)]
+        + ["BR04-T32"]
     )
 
     failed_tests = [
@@ -1736,7 +1860,7 @@ def main() -> int:
         "schema": REPORT_SCHEMA,
         "generated_at_utc": now_iso(),
         "phase": "S2",
-        "implementation_revision": "br04_s2_regression_r3",
+        "implementation_revision": "br04_s2_regression_r4_t32",
         "s2_run_id": norm(__import__("os").environ.get("GITHUB_RUN_ID")),
         "s1_run_id": s1_run_id,
         "base_canonical_sha256": base_sha,
