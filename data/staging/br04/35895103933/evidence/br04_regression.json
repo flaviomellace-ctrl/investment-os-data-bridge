@@ -1,9 +1,9 @@
 {
   "schema": "br04_regression_v1.0",
-  "generated_at_utc": "2026-09-23T17:34:45+00:00",
+  "generated_at_utc": "2026-09-23T18:00:16+00:00",
   "phase": "S2",
-  "implementation_revision": "br04_s2_regression_r2",
-  "s2_run_id": "35896223328",
+  "implementation_revision": "br04_s2_regression_r3",
+  "s2_run_id": "35899120162",
   "s1_run_id": "35895103933",
   "base_canonical_sha256": "c95e356632182dddd85b002a552eefa83da27264838617d8661af895fbb69594",
   "candidate_sha256": "56e61f56231dc2b6eda742874847aa4210407ab76a6f6cbfbfcadc2e7fdaeead",
@@ -58,9 +58,9 @@
       }
     },
     "BR04-T03": {
-      "status": "FAIL",
+      "status": "PASS",
       "checked": 2408,
-      "failures": 2,
+      "failures": 0,
       "no_case_reason": null,
       "details": {}
     },
@@ -304,11 +304,9 @@
       "failures": 0
     }
   },
-  "failed_tests": [
-    "BR04-T03"
-  ],
+  "failed_tests": [],
   "failed_gates": [],
-  "overall_passed": false,
+  "overall_passed": true,
   "deferred_by_contract": {
     "BR04-T18": "S4 engine preflight on exact candidate chunks",
     "BR04-T20": "S3 transport/chunk byte-identity",
