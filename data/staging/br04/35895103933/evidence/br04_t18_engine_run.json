@@ -1,0 +1,157 @@
+{
+  "schema": "br04_t18_engine_run_v1.0",
+  "phase": "S4",
+  "test_id": "BR04-T18",
+  "generated_at_utc": "2026-09-23T18:29:34Z",
+  "engine_md5": "68f626974592915d6c2a8e6583d6c77b",
+  "expected_engine_md5": "68f626974592915d6c2a8e6583d6c77b",
+  "engine_md5_verified": true,
+  "candidate_sha256": "56e61f56231dc2b6eda742874847aa4210407ab76a6f6cbfbfcadc2e7fdaeead",
+  "expected_candidate_sha256": "56e61f56231dc2b6eda742874847aa4210407ab76a6f6cbfbfcadc2e7fdaeead",
+  "candidate_sha256_verified": true,
+  "base_canonical_sha256": "c95e356632182dddd85b002a552eefa83da27264838617d8661af895fbb69594",
+  "s1_run_id": "35895103933",
+  "source": "data/staging/br04/35895103933/candidate (chunks)",
+  "read_from_data_current": false,
+  "chunks_declared": 50,
+  "chunks_read": 50,
+  "rows_declared": 504,
+  "rows_read": 504,
+  "columns": 285,
+  "transport_validation": {
+    "rows_from_parts": 504,
+    "rows_match_source": true,
+    "ranges_contiguous": true,
+    "all_parts_under_hard_max": true,
+    "reassembled_byte_identical": true,
+    "reassembled_sha256": "56e61f56231dc2b6eda742874847aa4210407ab76a6f6cbfbfcadc2e7fdaeead"
+  },
+  "transport_independently_verified": {
+    "part_sha256_failures": 0,
+    "ranges_contiguous": true,
+    "all_parts_under_hard_max": true,
+    "reassembled_sha256_matches_source": true
+  },
+  "exceptions": 0,
+  "exception_details": [],
+  "aggregate_preflight_statistics": {
+    "rows_evaluated": 504,
+    "bqs_confidence_distribution": {
+      "PROVISIONAL": 502,
+      "HIGH": 2
+    },
+    "bqs_non_provisional": 2,
+    "bqs_provisional": 502,
+    "bqs_band_distribution_counts_only": {
+      "70-79": 121,
+      "80-89": 97,
+      ">=90": 18,
+      "<60": 147,
+      "non_calcolabile": 6,
+      "60-69": 115
+    },
+    "gate_bqs60_coverage70": 347,
+    "ios_computable_total": 309,
+    "ios_computable_by_variant": {
+      "IOS_BANK": {
+        "at_gate": 22,
+        "computable": 20
+      },
+      "IOS_GENERAL": {
+        "at_gate": 292,
+        "computable": 289
+      },
+      "IOS_INSURANCE": {
+        "at_gate": 16,
+        "computable": 0
+      },
+      "IOS_REIT": {
+        "at_gate": 17,
+        "computable": 0
+      }
+    },
+    "ios_blocked_reasons_counts": {
+      "IOS_REIT :: AFFO MISSING: FFO e capex di manutenzione non separati": 17,
+      "IOS_INSURANCE :: combined ratio MISSING: sottoscrizione non valutabile": 15,
+      "IOS_BANK :: book value / ROE / crescita sostenibile MISSING": 2,
+      "IOS_INSURANCE :: book value / ROE / crescita sostenibile MISSING": 1,
+      "IOS_GENERAL :: cassa operativa MISSING": 2,
+      "IOS_GENERAL :: market cap MISSING": 1
+    },
+    "provisional_components_counts": {
+      "moat": 484,
+      "balance": 315,
+      "mgmt": 224,
+      "runway": 127,
+      "economics": 166,
+      "governance": 12
+    },
+    "br04_field_states": {
+      "net_debt_to_ocf": {
+        "MISSING": 321,
+        "NOT_APPLICABLE": 20,
+        "NUMERIC": 163
+      },
+      "interest_coverage": {
+        "NUMERIC": 317,
+        "MISSING": 167,
+        "NOT_APPLICABLE": 20
+      },
+      "roic": {
+        "MISSING": 454,
+        "NOT_APPLICABLE": 49,
+        "CONFLICTING": 1
+      }
+    },
+    "br04_total_debt_status": {
+      "PARTIAL": 457,
+      "CONFLICTING": 5,
+      "MISSING": 42
+    },
+    "br04_interest_status": {
+      "PRESENT": 313,
+      "MISSING": 84,
+      "PARTIAL": 107
+    },
+    "br04_status": {
+      "PARTIAL": 476,
+      "CONFLICTING": 5,
+      "MISSING": 23
+    },
+    "br04_flag_counts": {
+      "BS_CLOSURE_FAILED": 499,
+      "FSDS_FACE_ONLY": 499,
+      "ROIC_DEBT_PARTIAL": 415,
+      "LEVERAGE_THRESHOLD_INDETERMINATE": 194,
+      "LEVERAGE_ABOVE_THRESHOLD_BY_LOWER_BOUND": 163,
+      "LEVERAGE_BELOW_THRESHOLD_BY_UPPER_BOUND": 110,
+      "INTEREST_CASH_BASIS": 107,
+      "CASH_MISSING": 80,
+      "INTEREST_MISSING_WITH_DEBT": 57,
+      "STI_NOT_NETTED": 56,
+      "CUSTOM_TAG_DEBT_BY_LABEL": 45,
+      "INTEREST_NET_ONLY": 38,
+      "REIT_BOOK_ROIC_DEPRECIATION_DISTORTED": 30,
+      "INSURER_OCF_INCLUDES_FLOAT": 29,
+      "EBIT_NON_POSITIVE": 21,
+      "BANK_INTEREST_IS_FUNDING_COST": 20,
+      "BANK_LEVERAGE_VIA_EQUITY_TO_ASSETS": 20,
+      "FACE_LINE_VALUE_NOT_FOUND": 18,
+      "INTEREST_DEBT_ONLY": 12,
+      "OCF_MISSING": 12,
+      "DEBT_CONFLICTING_PRUDENTIAL_VALUE": 5,
+      "NO_ANNUAL_ADSH": 5,
+      "NET_DEBT_NOT_SERVICEABLE_FROM_OCF": 3,
+      "UTILITY_SECURITIZATION_INCLUDED": 3,
+      "TOTAL_DEBT_BELOW_LEGACY": 2
+    },
+    "ios_leverage_indeterminate_rows": 194
+  },
+  "individual_data_emitted": false,
+  "ranking_emitted": false,
+  "tickers_emitted": false,
+  "blind_test_executed": false,
+  "data_current_modified": false,
+  "candidate_promoted": false,
+  "overall_passed": true
+}
