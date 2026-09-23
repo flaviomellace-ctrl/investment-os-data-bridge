@@ -1578,6 +1578,17 @@ def main() -> int:
             if total_debt_status == "PRESENT" and cash is not None:
                 exact_ratio = (total_debt - cash) / ocf
                 values["net_debt_to_ocf"] = fmt_num(exact_ratio)
+            elif (
+                total_debt_status == "CONFLICTING"
+                and cash is not None
+                and total_candidates
+            ):
+                # R3 §7.4 / ERRATA 2: publish the prudential leverage
+                # ratio from the HIGHEST debt candidate regardless of the
+                # 3.0x threshold. Sector-specific ROIC rules remain separate.
+                values["net_debt_to_ocf"] = fmt_num(
+                    (prudential_debt - cash) / ocf
+                )
             else:
                 if lb is not None and lb > LEVERAGE_THRESHOLD:
                     values["net_debt_to_ocf"] = fmt_num(lb)
@@ -1603,6 +1614,19 @@ def main() -> int:
             ):
                 exact_net = total_debt - cash
                 if exact_net > 0:
+                    values["net_debt_to_ocf"] = "99"
+                    flags.add("NET_DEBT_NOT_SERVICEABLE_FROM_OCF")
+                else:
+                    values["net_debt_to_ocf"] = "0"
+                    flags.add("NET_CASH_NEGATIVE_OCF")
+            elif (
+                total_debt_status == "CONFLICTING"
+                and cash is not None
+                and total_candidates
+            ):
+                # R3 §7.4 / ERRATA 2: for non-positive OCF, preserve the
+                # same prudential highest-candidate convention.
+                if prudential_debt - cash > 0:
                     values["net_debt_to_ocf"] = "99"
                     flags.add("NET_DEBT_NOT_SERVICEABLE_FROM_OCF")
                 else:
@@ -1847,7 +1871,7 @@ def main() -> int:
         "generated_at_utc": now_iso(),
         "run_id": RUN_ID,
         "phase": "S1",
-        "implementation_revision": "br04_s1_builder_r2",
+        "implementation_revision": "br04_s1_builder_r3",
         "base_canonical_sha256": base_sha,
         "candidate_sha256": candidate_sha,
         "source_t00bis_run_id": source_t00_run_id,
