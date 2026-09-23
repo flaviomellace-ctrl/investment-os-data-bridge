@@ -1,95 +1,4 @@
-#!/usr/bin/env python3
-"""
-Investment OS Data Bridge — BR-04 T00-bis census probe (v1.1).
 
-Pre-candidate census required by BR04_DATA_CONTRACT_V4_1_POST_T00_R3.
-
-Safety:
-- pins data/current/sp500_fundamentals.csv by SHA-256;
-- writes only data/staging/br04/<run_id>/evidence/;
-- never writes data/current/;
-- never creates a BR-04 candidate;
-- never computes BQS, IOS, rankings, recommendations or Blind Test results.
-
-v1.1 correction:
-- every face-statement census is scoped to the statement required by the
-  frozen contract:
-    debt/cash/LSE -> BS
-    gross/net interest and interest income -> IS
-    InterestPaidNet -> CF
-- a "usable annual" fact counts only when the same tag is also present on the
-  required face statement for that filing.
-"""
-
-from __future__ import annotations
-
-import hashlib
-import os
-import re
-import tempfile
-import zipfile
-from collections import defaultdict
-from datetime import datetime, timezone
-from pathlib import Path
-
-import pandas as pd
-
-import bridge
-
-
-ROOT = Path(__file__).resolve().parents[1]
-CURRENT_DIR = ROOT / "data" / "current"
-FUNDAMENTALS_PATH = CURRENT_DIR / "sp500_fundamentals.csv"
-
-SEC_QUARTERS = 16
-SCHEMA = "br04_t00bis_probe_v1.1"
-
-RUN_ID = (
-    os.getenv("GITHUB_RUN_ID", "").strip()
-    or datetime.now(timezone.utc).strftime("local_%Y%m%dT%H%M%SZ")
-)
-EVIDENCE_DIR = ROOT / "data" / "staging" / "br04" / RUN_ID / "evidence"
-JSON_PATH = EVIDENCE_DIR / "br04_t00bis_report.json"
-MD_PATH = EVIDENCE_DIR / "br04_t00bis_report.md"
-
-
-CURRENT_DEBT_TAGS = {
-    "LongTermDebtCurrent",
-    "ShortTermBorrowings",
-    "CommercialPaper",
-    "LinesOfCreditCurrent",
-    "NotesPayableCurrent",
-    "SecuredDebtCurrent",
-    "UnsecuredDebtCurrent",
-    "ConvertibleNotesPayableCurrent",
-    "OtherShortTermBorrowings",
-    "FinanceLeaseLiabilityCurrent",
-    "LongTermDebtAndCapitalLeaseObligationsCurrent",
-    "DebtCurrent",
-}
-
-NONCURRENT_DEBT_TAGS = {
-    "LongTermDebtNoncurrent",
-    "LongTermDebtAndCapitalLeaseObligations",
-    "LongTermNotesPayable",
-    "SeniorLongTermNotes",
-    "ConvertibleLongTermNotesPayable",
-    "LongTermLineOfCredit",
-    "OtherLongTermDebtNoncurrent",
-    "SecuredLongTermDebt",
-    "UnsecuredLongTermDebt",
-    "SecuredDebt",
-    "UnsecuredDebt",
-    "NotesPayable",
-    "FinanceLeaseLiabilityNoncurrent",
-}
-
-DEBT_AGGREGATE_TAGS = {
-    "LongTermDebt",
-    "LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities",
-    "DebtAndCapitalLeaseObligations",
-    "DebtLongtermAndShorttermCombinedAmount",
-    "FinanceLeaseLiability",
 }
 
 GROSS_INTEREST_L1_TAGS = {
@@ -321,6 +230,15 @@ def usable_on_required_face(
 def main() -> int:
     fundamentals, adsh_to_period = load_universe()
     annual_adshs = set(adsh_to_period)
+
+    # Company counts must be row-based. Multiple share classes can legitimately
+    # point to the same annual ADSH, so len(unique ADSH) is NOT the number of
+    # companies with an annual filing.
+    annual_adsh_row_count = int(
+        fundamentals["annual_adsh"].map(norm_text).ne("").sum()
+    )
+    missing_annual_adsh_row_count = len(fundamentals) - annual_adsh_row_count
+    unique_annual_adsh_count = len(annual_adshs)
 
     base_sha = sha256_file(FUNDAMENTALS_PATH)
     base_git_sha = os.getenv("GITHUB_SHA", "").strip()
@@ -587,8 +505,10 @@ def main() -> int:
             "T00-bis is pre-candidate under R3 §17.6"
         ),
         "universe_rows": len(fundamentals),
-        "companies_with_annual_adsh": len(annual_adshs),
-        "companies_without_annual_adsh": len(fundamentals) - len(annual_adshs),
+        "companies_with_annual_adsh": annual_adsh_row_count,
+        "companies_without_annual_adsh": missing_annual_adsh_row_count,
+        "unique_annual_adsh_filings": unique_annual_adsh_count,
+        "annual_adsh_counting_rule": "company rows, not unique ADSH values",
         "quarters_used": [q.key for q in selected],
         "sec_index": sec_index_meta,
         "statement_scope": {
@@ -676,7 +596,10 @@ def main() -> int:
         f"- Base canonical SHA-256: `{base_sha}`",
         "- Candidate SHA-256: **N/A — pre-candidate exemption (R3 §17.6)**",
         f"- Universe: **{len(fundamentals)}**",
-        f"- Annual ADSH: **{len(annual_adshs)}**",
+        f"- Company rows with annual ADSH: **{annual_adsh_row_count}**",
+        f"- Company rows without annual ADSH: **{missing_annual_adsh_row_count}**",
+        f"- Unique annual ADSH filings: **{unique_annual_adsh_count}**",
+        "- Counting rule: **company rows, not unique ADSH values**",
         f"- SEC quarters: **{len(selected)}** "
         f"({selected[0].key} → {selected[-1].key})",
         "",
@@ -738,7 +661,7 @@ def main() -> int:
             "evidenza non valida, rieseguire."
         )
 
-    print("OK — BR04-T00-bis v1.1 completato.")
+    print("OK — BR04-T00-bis v1.2 completato.")
     print(f"base_canonical_sha256={base_sha}")
     print(f"evidence={JSON_PATH.relative_to(ROOT)}")
     print("data/current modified: NO")
