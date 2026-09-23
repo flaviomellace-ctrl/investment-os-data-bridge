@@ -1,0 +1,61 @@
+name: Build BR-04 S1 Candidate
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: br04-s1-candidate
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Syntax check
+        run: python -m compileall -q src
+
+      - name: Build BR-04 S1 candidate
+        env:
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+        run: python src/build_br04_candidate.py
+
+      - name: Verify staging only
+        run: |
+          RUN_ROOT="data/staging/br04/${GITHUB_RUN_ID}"
+          test -f "${RUN_ROOT}/candidate/sp500_fundamentals.csv"
+          test -f "${RUN_ROOT}/candidate/manifest_candidate.json"
+          test -f "${RUN_ROOT}/candidate/status_candidate.md"
+          test -f "${RUN_ROOT}/evidence/br04_s1_build.json"
+          test -f "${RUN_ROOT}/evidence/br04_diff_vs_current.json"
+          test -f "${RUN_ROOT}/evidence/br04_components.csv"
+          test -f "${RUN_ROOT}/audit/br04_custom_lines_audit.csv"
+          test -f "${RUN_ROOT}/audit/br04_indeterminate_rows.csv"
+
+      - name: Commit S1 staging only
+        run: |
+          git config user.name "investment-os-data-bridge[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "data/staging/br04/${GITHUB_RUN_ID}"
+          if git diff --cached --quiet; then
+            echo "Nessun nuovo output S1 da committare."
+            exit 0
+          fi
+          git commit -m "data: BR-04 S1 candidate ${GITHUB_RUN_ID}"
+          git push
