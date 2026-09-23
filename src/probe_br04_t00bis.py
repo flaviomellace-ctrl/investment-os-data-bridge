@@ -681,7 +681,7 @@ def main() -> int:
     bridge.write_json_atomic(JSON_PATH, report)
 
     md = [
-        "# BR-04 T00-bis — pre-candidate census v1.1",
+        "# BR-04 T00-bis — pre-candidate census v1.2",
         "",
         f"- Run ID: **{RUN_ID}**",
         f"- Base canonical SHA-256: `{base_sha}`",
