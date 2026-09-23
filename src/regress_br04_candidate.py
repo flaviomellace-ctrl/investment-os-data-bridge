@@ -793,6 +793,18 @@ def main() -> int:
             if not comps:
                 continue
             checked += 1
+
+            # §7.4 requires total_debt to be blank when debt is CONFLICTING;
+            # the components/candidates remain provenance. Blank is therefore
+            # the expected value, not a reconstruction failure.
+            if (
+                value_col == "total_debt"
+                and norm(row.get("total_debt_status")) == "CONFLICTING"
+            ):
+                if value is not None or not parsed:
+                    failures += 1
+                continue
+
             if not parsed or value is None:
                 failures += 1
                 continue
@@ -812,8 +824,12 @@ def main() -> int:
                 not reconcile_close(component_value, agg)
                 for agg in aggregate_values
             )
-            if mismatch and norm(row.get("total_debt_status")) != "CONFLICTING":
-                failures += 1
+            if mismatch:
+                if (
+                    norm(row.get("total_debt_status")) != "CONFLICTING"
+                    or finite(row.get("total_debt")) is not None
+                ):
+                    failures += 1
 
     tests["BR04-T03"] = test_result(
         passed=failures == 0,
@@ -1649,9 +1665,11 @@ def main() -> int:
         "LEVERAGE_THRESHOLD_INDETERMINATE" in flags_of(r)
         for r in candidate_rows
     )
+    normalized_status_text = status_text.replace("**", "")
     status_measure_ok = (
         str(actual_indeterminate) in status_text
-        and "MISSING resta `MISSING`" in status_text
+        and "`MISSING` resta `MISSING`: nessuna assenza è convertita in zero"
+        in normalized_status_text
     )
     gates["status_indeterminate_measured"] = {
         "status": "PASS" if status_measure_ok else "FAIL",
@@ -1693,6 +1711,7 @@ def main() -> int:
         "schema": REPORT_SCHEMA,
         "generated_at_utc": now_iso(),
         "phase": "S2",
+        "implementation_revision": "br04_s2_regression_r2",
         "s2_run_id": norm(__import__("os").environ.get("GITHUB_RUN_ID")),
         "s1_run_id": s1_run_id,
         "base_canonical_sha256": base_sha,
