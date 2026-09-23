@@ -477,7 +477,7 @@ def latest_valid_t00bis(base_sha: str) -> tuple[Path, dict]:
         except Exception:
             continue
 
-        if payload.get("schema") != "br04_t00bis_probe_v1.1":
+        if payload.get("schema") != "br04_t00bis_probe_v1.2":
             continue
         if payload.get("base_canonical_sha256") != base_sha:
             continue
@@ -1293,6 +1293,34 @@ def main() -> int:
             total_debt = chosen[1]
             total_used = chosen[2]
 
+        # BR04-T03: when a full-debt aggregate and the independently assembled
+        # current+noncurrent amount coexist, disagreement beyond 0.5% is
+        # CONFLICTING. Keep all candidates in provenance and never publish the
+        # lower/favorable amount as exact debt.
+        component_candidate = next(
+            (
+                value
+                for name, value, _ in total_candidates
+                if name == "CURRENT_PLUS_NONCURRENT"
+            ),
+            None,
+        )
+        full_aggregate_candidates = [
+            value
+            for name, value, _ in total_candidates
+            if name in FULL_DEBT_AGGREGATE_TAGS
+        ]
+        if (
+            component_candidate is not None
+            and full_aggregate_candidates
+            and any(
+                not approx_equal(component_candidate, aggregate_value)
+                for aggregate_value in full_aggregate_candidates
+            )
+        ):
+            conflicting_fact = True
+            flags.add("BS_CLOSURE_FAILED")
+
         # Strict closure is unavailable with current FSDS, so found debt cannot
         # be certified exact. Missing debt never becomes zero.
         if conflicting_fact or "LEGACY_TAG_OBSERVED" in flags:
@@ -1331,7 +1359,15 @@ def main() -> int:
                 finance_items
             )
 
-        if total_debt is not None and total_debt_status != "CONFLICTING":
+        # BR04-T01: without demonstrated §7.2 closure, an observed zero-valued
+        # debt line is NOT evidence that enterprise debt is economically zero.
+        # Preserve the zero candidate in provenance, but keep the motor-facing
+        # total_debt cell blank.
+        if (
+            total_debt is not None
+            and total_debt > 0
+            and total_debt_status != "CONFLICTING"
+        ):
             values["total_debt"] = fmt_num(total_debt)
         values["total_debt_components"] = make_component_string(total_used)
         values["total_debt_candidates"] = ";".join(
@@ -1607,6 +1643,9 @@ def main() -> int:
         # ---------------------------------------------------------------
         if module in {"BANK", "INSURANCE"}:
             values["roic"] = "NOT_APPLICABLE"
+        elif total_debt_status == "CONFLICTING":
+            # Safe in lin(); required by §7.4.
+            values["roic"] = "CONFLICTING"
         elif total_debt_status == "PARTIAL":
             flags.add("ROIC_DEBT_PARTIAL")
         elif (
@@ -1808,6 +1847,7 @@ def main() -> int:
         "generated_at_utc": now_iso(),
         "run_id": RUN_ID,
         "phase": "S1",
+        "implementation_revision": "br04_s1_builder_r2",
         "base_canonical_sha256": base_sha,
         "candidate_sha256": candidate_sha,
         "source_t00bis_run_id": source_t00_run_id,
@@ -1855,7 +1895,7 @@ def main() -> int:
         "closure_supported_by_current_fsds": False,
         "candidate_path": str(CANDIDATE_PATH.relative_to(ROOT)),
         "canonical_modified": False,
-        "invariant": "MISSING resta MISSING: nessuna assenza è convertita in zero",
+        "invariant": "`MISSING` resta `MISSING`: nessuna assenza è convertita in zero",
     }
     bridge.write_json_atomic(MANIFEST_CANDIDATE_PATH, manifest)
 
@@ -1883,7 +1923,7 @@ def main() -> int:
 - S4 engine test: **NOT YET EXECUTED**
 - Blind Test: **NOT EXECUTED**
 
-**MISSING resta MISSING: nessuna assenza è convertita in zero.**
+**`MISSING` resta `MISSING`: nessuna assenza è convertita in zero.**
 
 This file is staging evidence only and must not be treated as canonical until
 S2, S3, S4, human approval, T31 and atomic promotion have all succeeded.
