@@ -1,4 +1,95 @@
+#!/usr/bin/env python3
+"""
+Investment OS Data Bridge — BR-04 T00-bis census probe (v1.1).
 
+Pre-candidate census required by BR04_DATA_CONTRACT_V4_1_POST_T00_R3.
+
+Safety:
+- pins data/current/sp500_fundamentals.csv by SHA-256;
+- writes only data/staging/br04/<run_id>/evidence/;
+- never writes data/current/;
+- never creates a BR-04 candidate;
+- never computes BQS, IOS, rankings, recommendations or Blind Test results.
+
+v1.1 correction:
+- every face-statement census is scoped to the statement required by the
+  frozen contract:
+    debt/cash/LSE -> BS
+    gross/net interest and interest income -> IS
+    InterestPaidNet -> CF
+- a "usable annual" fact counts only when the same tag is also present on the
+  required face statement for that filing.
+"""
+
+from __future__ import annotations
+
+import hashlib
+import os
+import re
+import tempfile
+import zipfile
+from collections import defaultdict
+from datetime import datetime, timezone
+from pathlib import Path
+
+import pandas as pd
+
+import bridge
+
+
+ROOT = Path(__file__).resolve().parents[1]
+CURRENT_DIR = ROOT / "data" / "current"
+FUNDAMENTALS_PATH = CURRENT_DIR / "sp500_fundamentals.csv"
+
+SEC_QUARTERS = 16
+SCHEMA = "br04_t00bis_probe_v1.2"
+
+RUN_ID = (
+    os.getenv("GITHUB_RUN_ID", "").strip()
+    or datetime.now(timezone.utc).strftime("local_%Y%m%dT%H%M%SZ")
+)
+EVIDENCE_DIR = ROOT / "data" / "staging" / "br04" / RUN_ID / "evidence"
+JSON_PATH = EVIDENCE_DIR / "br04_t00bis_report.json"
+MD_PATH = EVIDENCE_DIR / "br04_t00bis_report.md"
+
+
+CURRENT_DEBT_TAGS = {
+    "LongTermDebtCurrent",
+    "ShortTermBorrowings",
+    "CommercialPaper",
+    "LinesOfCreditCurrent",
+    "NotesPayableCurrent",
+    "SecuredDebtCurrent",
+    "UnsecuredDebtCurrent",
+    "ConvertibleNotesPayableCurrent",
+    "OtherShortTermBorrowings",
+    "FinanceLeaseLiabilityCurrent",
+    "LongTermDebtAndCapitalLeaseObligationsCurrent",
+    "DebtCurrent",
+}
+
+NONCURRENT_DEBT_TAGS = {
+    "LongTermDebtNoncurrent",
+    "LongTermDebtAndCapitalLeaseObligations",
+    "LongTermNotesPayable",
+    "SeniorLongTermNotes",
+    "ConvertibleLongTermNotesPayable",
+    "LongTermLineOfCredit",
+    "OtherLongTermDebtNoncurrent",
+    "SecuredLongTermDebt",
+    "UnsecuredLongTermDebt",
+    "SecuredDebt",
+    "UnsecuredDebt",
+    "NotesPayable",
+    "FinanceLeaseLiabilityNoncurrent",
+}
+
+DEBT_AGGREGATE_TAGS = {
+    "LongTermDebt",
+    "LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities",
+    "DebtAndCapitalLeaseObligations",
+    "DebtLongtermAndShorttermCombinedAmount",
+    "FinanceLeaseLiability",
 }
 
 GROSS_INTEREST_L1_TAGS = {
