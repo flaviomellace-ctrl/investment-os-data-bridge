@@ -1,0 +1,100 @@
+name: BR-04 S2 Regression
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: br04-s2-regression
+  cancel-in-progress: false
+
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Syntax check
+        run: python -m compileall -q src
+
+      - name: Resolve latest S1 candidate
+        shell: bash
+        run: |
+          S1_RUN_ID="$(
+            python - <<'PY'
+          import json
+          from pathlib import Path
+
+          base = Path("data/staging/br04")
+          found = []
+          for p in base.glob("*/evidence/br04_s1_build.json"):
+              try:
+                  j = json.loads(p.read_text(encoding="utf-8"))
+              except Exception:
+                  continue
+              if j.get("schema") != "br04_s1_build_v1.0":
+                  continue
+              candidate = p.parents[1] / "candidate" / "sp500_fundamentals.csv"
+              if candidate.exists():
+                  found.append((p.stat().st_mtime, p.parents[1].name))
+          if not found:
+              raise SystemExit("No valid S1 candidate found")
+          print(max(found)[1])
+          PY
+          )"
+          echo "S1_RUN_ID=${S1_RUN_ID}" >> "$GITHUB_ENV"
+          echo "Using S1 candidate run ${S1_RUN_ID}"
+
+      - name: Run BR-04 S2 regression
+        env:
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+        run: python src/regress_br04_candidate.py --s1-run-id "${S1_RUN_ID}"
+
+      - name: Verify S2 evidence exists
+        run: |
+          test -f "data/staging/br04/${S1_RUN_ID}/evidence/br04_regression.json"
+
+      - name: Commit S2 evidence only
+        run: |
+          git config user.name "investment-os-data-bridge[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "data/staging/br04/${S1_RUN_ID}/evidence/br04_regression.json"
+          if git diff --cached --quiet; then
+            echo "Nessuna nuova evidenza S2 da committare."
+          else
+            git commit -m "data: BR-04 S2 regression ${S1_RUN_ID}"
+            git push
+          fi
+
+      - name: Enforce S2 gate
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          run_id = os.environ["S1_RUN_ID"]
+          p = Path("data/staging/br04") / run_id / "evidence" / "br04_regression.json"
+          j = json.loads(p.read_text(encoding="utf-8"))
+          print("overall_passed =", j.get("overall_passed"))
+          print("failed_tests =", j.get("failed_tests"))
+          print("failed_gates =", j.get("failed_gates"))
+          if not j.get("overall_passed"):
+              raise SystemExit(
+                  "S2 regression failed. Evidence was committed; do not proceed to S3."
+              )
+          PY
