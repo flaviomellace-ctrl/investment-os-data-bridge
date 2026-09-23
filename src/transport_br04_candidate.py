@@ -25,6 +25,7 @@ from pathlib import Path
 import split_for_claude as splitter
 
 ROOT = Path(__file__).resolve().parents[1]
+CURRENT = ROOT / "data" / "current" / "sp500_fundamentals.csv"
 
 SCHEMA = "br04_transport_v1.0"
 
@@ -86,6 +87,16 @@ def main() -> int:
             "Catena di custodia incompleta in br04_regression.json"
         )
 
+    if not CURRENT.exists():
+        raise SystemExit(f"Canonico non trovato: {CURRENT}")
+
+    current_before_sha = sha256_file(CURRENT)
+    if current_before_sha != base_sha:
+        raise SystemExit(
+            "S3_BLOCK_BASE_CHANGED: data/current non coincide più con la "
+            "base approvata da S2. Rieseguire la catena sulla nuova base."
+        )
+
     before_sha = sha256_file(candidate)
     if before_sha != expected_candidate_sha:
         raise SystemExit(
@@ -103,6 +114,12 @@ def main() -> int:
     if after_sha != before_sha:
         raise SystemExit(
             "ERRORE CRITICO: il candidato è cambiato durante S3"
+        )
+
+    current_after_sha = sha256_file(CURRENT)
+    if current_after_sha != current_before_sha:
+        raise SystemExit(
+            "ERRORE CRITICO: data/current è cambiato durante S3"
         )
 
     index_path = candidate_dir / "fundamentals_chunks.json"
@@ -141,9 +158,12 @@ def main() -> int:
         ),
         "all_part_sha256_verified": part_hash_failures == 0,
         "candidate_unchanged_by_s3": after_sha == before_sha,
+        "canonical_unchanged_by_s3": (
+            current_after_sha == current_before_sha == base_sha
+        ),
         "s2_chain_of_custody_match": (
             regression.get("candidate_sha256") == before_sha
-            and bool(base_sha)
+            and regression.get("base_canonical_sha256") == current_before_sha
         ),
     }
 
@@ -153,10 +173,12 @@ def main() -> int:
         "schema": SCHEMA,
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "phase": "S3",
-        "implementation_revision": "br04_s3_transport_r1",
+        "implementation_revision": "br04_s3_transport_r2",
         "s3_run_id": os.getenv("GITHUB_RUN_ID"),
         "s1_run_id": s1_run_id,
         "base_canonical_sha256": base_sha,
+        "canonical_sha256_before_s3": current_before_sha,
+        "canonical_sha256_after_s3": current_after_sha,
         "candidate_sha256": before_sha,
         "candidate_rows": stored_index.get("total_rows"),
         "candidate_columns": stored_index.get("total_columns"),
