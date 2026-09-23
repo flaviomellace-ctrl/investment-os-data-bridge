@@ -805,6 +805,31 @@ def main() -> int:
                     failures += 1
                 continue
 
+            # BR04-T01 has priority over reconstruction when the only observed
+            # debt components sum to zero but §7.2 balance-sheet closure is not
+            # demonstrated. In that case total_debt MUST remain blank: a
+            # zero-valued debt line is not proof that enterprise debt is zero.
+            #
+            # BR04-T03 itself concerns anti-double-counting when aggregate and
+            # components coexist. A components-only zero candidate is therefore
+            # not a T03 failure; its safety is tested by T01/T02.
+            if value_col == "total_debt" and parsed and value is None:
+                component_sum = sum(v for _, v in comps)
+                candidates = parse_candidate_values(
+                    row.get("total_debt_candidates")
+                )
+                full_aggregate_present = any(
+                    name in candidates
+                    for name in builder.FULL_DEBT_AGGREGATE_TAGS
+                )
+                zero_without_closure = (
+                    close(component_sum, 0.0)
+                    and not full_aggregate_present
+                    and "DEBT_ZERO_BY_BS_CLOSURE" not in flags_of(row)
+                )
+                if zero_without_closure:
+                    continue
+
             if not parsed or value is None:
                 failures += 1
                 continue
@@ -1711,7 +1736,7 @@ def main() -> int:
         "schema": REPORT_SCHEMA,
         "generated_at_utc": now_iso(),
         "phase": "S2",
-        "implementation_revision": "br04_s2_regression_r2",
+        "implementation_revision": "br04_s2_regression_r3",
         "s2_run_id": norm(__import__("os").environ.get("GITHUB_RUN_ID")),
         "s1_run_id": s1_run_id,
         "base_canonical_sha256": base_sha,
