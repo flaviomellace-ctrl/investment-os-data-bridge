@@ -1,0 +1,452 @@
+name: BR-04 S6 T31 + Atomic Promotion
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: br04-s6-promotion
+  cancel-in-progress: false
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    env:
+      S1_RUN_ID: "35977079536"
+      APPROVED_CANDIDATE_SHA256: "d2207e92bbe6cc0ef883db6a54d93ac965b08da487741b4de8e2459ed6282f45"
+      APPROVED_BASE_SHA256: "c95e356632182dddd85b002a552eefa83da27264838617d8661af895fbb69594"
+      APPROVED_AT_UTC: "2026-09-24T10:31:00Z"
+      APPROVAL_TEXT: "Approvo la promozione BR-04 del candidato d2207e92bbe6cc0ef883db6a54d93ac965b08da487741b4de8e2459ed6282f45 sulla base canonica c95e356632182dddd85b002a552eefa83da27264838617d8661af895fbb69594."
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: T31 preflight and stage atomic promotion
+        shell: bash
+        run: |
+          python - <<'PY'
+          from __future__ import annotations
+
+          import hashlib
+          import json
+          import os
+          import re
+          import shutil
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          ROOT = Path.cwd()
+          S1_RUN_ID = os.environ["S1_RUN_ID"]
+          APPROVED_CANDIDATE = os.environ["APPROVED_CANDIDATE_SHA256"].strip()
+          APPROVED_BASE = os.environ["APPROVED_BASE_SHA256"].strip()
+          APPROVED_AT = os.environ["APPROVED_AT_UTC"].strip()
+          APPROVAL_TEXT = os.environ["APPROVAL_TEXT"].strip()
+          T31_RUN_ID = os.environ.get("GITHUB_RUN_ID", "").strip()
+
+          STAGING = ROOT / "data" / "staging" / "br04" / S1_RUN_ID
+          CANDIDATE_DIR = STAGING / "candidate"
+          EVIDENCE_DIR = STAGING / "evidence"
+          CURRENT_DIR = ROOT / "data" / "current"
+
+          CANDIDATE = CANDIDATE_DIR / "sp500_fundamentals.csv"
+          CURRENT = CURRENT_DIR / "sp500_fundamentals.csv"
+
+          def sha256_file(path: Path) -> str:
+              h = hashlib.sha256()
+              with path.open("rb") as f:
+                  for block in iter(lambda: f.read(1024 * 1024), b""):
+                      h.update(block)
+              return h.hexdigest()
+
+          def load_json(path: Path) -> dict:
+              if not path.exists():
+                  raise SystemExit(f"Required file missing: {path}")
+              return json.loads(path.read_text(encoding="utf-8"))
+
+          def now_iso() -> str:
+              return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+          # ------------------------------------------------------------------
+          # READ-ONLY T31 CHECKS.
+          # No file is written before every T31 condition below has passed.
+          # ------------------------------------------------------------------
+          s1 = load_json(EVIDENCE_DIR / "br04_s1_build.json")
+          diff = load_json(EVIDENCE_DIR / "br04_diff_vs_current.json")
+          s2 = load_json(EVIDENCE_DIR / "br04_regression.json")
+          s3 = load_json(EVIDENCE_DIR / "br04_transport.json")
+          s4 = load_json(EVIDENCE_DIR / "br04_t18_engine_run.json")
+          candidate_manifest = load_json(CANDIDATE_DIR / "manifest_candidate.json")
+
+          source_t00_run = str(s1.get("source_t00bis_run_id", "")).strip()
+          if not source_t00_run:
+              raise SystemExit("T31 FAIL: S1 does not identify source T00-bis run")
+
+          t00_path = (
+              ROOT / "data" / "staging" / "br04" / source_t00_run
+              / "evidence" / "br04_t00bis_report.json"
+          )
+          t00 = load_json(t00_path)
+
+          if not CURRENT.exists() or not CANDIDATE.exists():
+              raise SystemExit("T31 FAIL: current or candidate fundamentals missing")
+
+          current_before = sha256_file(CURRENT)
+          candidate_before = sha256_file(CANDIDATE)
+
+          evidence_pairs = {
+              "S1_BUILD": (
+                  str(s1.get("base_canonical_sha256", "")).strip(),
+                  str(s1.get("candidate_sha256", "")).strip(),
+              ),
+              "S1_DIFF": (
+                  str(diff.get("base_canonical_sha256", "")).strip(),
+                  str(diff.get("candidate_sha256", "")).strip(),
+              ),
+              "S2": (
+                  str(s2.get("base_canonical_sha256", "")).strip(),
+                  str(s2.get("candidate_sha256", "")).strip(),
+              ),
+              "S3": (
+                  str(s3.get("base_canonical_sha256", "")).strip(),
+                  str(s3.get("candidate_sha256", "")).strip(),
+              ),
+              "S4": (
+                  str(s4.get("base_canonical_sha256", "")).strip(),
+                  str(s4.get("candidate_sha256", "")).strip(),
+              ),
+              "CANDIDATE_MANIFEST": (
+                  str(candidate_manifest.get("br04_debt_interest", {}).get("base_canonical_sha256", "")).strip(),
+                  str(candidate_manifest.get("br04_debt_interest", {}).get("candidate_sha256", "")).strip(),
+              ),
+          }
+
+          checks = {}
+          checks["t00bis_base_matches_approved_base"] = (
+              str(t00.get("base_canonical_sha256", "")).strip() == APPROVED_BASE
+          )
+          checks["t00bis_candidate_exempt"] = t00.get("candidate_sha256") in (None, "")
+          checks["candidate_file_matches_approved_sha"] = candidate_before == APPROVED_CANDIDATE
+          checks["current_matches_pinned_base_before_any_write"] = current_before == APPROVED_BASE
+          checks["s2_passed"] = s2.get("overall_passed") is True and not s2.get("failed_tests") and not s2.get("failed_gates")
+          checks["s3_t20_passed"] = (
+              s3.get("overall_passed") is True
+              and s3.get("test", {}).get("id") == "BR04-T20"
+              and s3.get("test", {}).get("status") == "PASS"
+          )
+          checks["s4_t18_passed"] = (
+              s4.get("overall_passed") is True
+              and s4.get("test_id") == "BR04-T18"
+              and int(s4.get("exceptions", -1)) == 0
+              and s4.get("engine_md5_verified") is True
+              and s4.get("candidate_sha256_verified") is True
+          )
+          checks["approval_matches_candidate"] = APPROVED_CANDIDATE == candidate_before
+          checks["approval_matches_base"] = APPROVED_BASE == current_before
+
+          for label, (base_sha, candidate_sha) in evidence_pairs.items():
+              checks[f"{label.lower()}_base_matches"] = base_sha == APPROVED_BASE
+              checks[f"{label.lower()}_candidate_matches"] = candidate_sha == APPROVED_CANDIDATE
+
+          failed = [name for name, ok in checks.items() if not ok]
+          if failed:
+              print("BR04-T31 FAIL")
+              print("current_before =", current_before)
+              print("approved_base =", APPROVED_BASE)
+              print("candidate_before =", candidate_before)
+              print("approved_candidate =", APPROVED_CANDIDATE)
+              print("failed_checks =", failed)
+              raise SystemExit(
+                  "T31 failed BEFORE any repository file was written. "
+                  "Do not promote; rebase from S0 if the canonical base changed."
+              )
+
+          print("BR04-T31 PRE-WRITE CHECKS PASS")
+          print("current_before =", current_before)
+          print("candidate_before =", candidate_before)
+
+          # ------------------------------------------------------------------
+          # T31 has passed. From this point changes are staged only in the
+          # ephemeral runner workspace; nothing reaches the repository until
+          # the single final git commit + push succeeds.
+          # ------------------------------------------------------------------
+          generated_at = now_iso()
+
+          approval_evidence = {
+              "schema": "br04_human_approval_v1.0",
+              "phase": "S5",
+              "decision": "APPROVE_PROMOTION",
+              "approved_at_utc": APPROVED_AT,
+              "recorded_at_utc": generated_at,
+              "base_canonical_sha256": APPROVED_BASE,
+              "candidate_sha256": APPROVED_CANDIDATE,
+              "approval_text": APPROVAL_TEXT,
+              "approval_scope": "BR-04 S6 promotion only",
+              "blind_test_authorized": False,
+          }
+
+          t31_evidence = {
+              "schema": "br04_t31_base_check_v1.0",
+              "phase": "S6",
+              "test_id": "BR04-T31",
+              "generated_at_utc": generated_at,
+              "t31_run_id": T31_RUN_ID,
+              "s1_run_id": S1_RUN_ID,
+              "source_t00bis_run_id": source_t00_run,
+              "base_canonical_sha256": APPROVED_BASE,
+              "candidate_sha256": APPROVED_CANDIDATE,
+              "approved_base_canonical_sha256": APPROVED_BASE,
+              "approved_candidate_sha256": APPROVED_CANDIDATE,
+              "approved_at_utc": APPROVED_AT,
+              "current_sha256_before_promotion": current_before,
+              "candidate_sha256_before_promotion": candidate_before,
+              "checks": checks,
+              "overall_passed": True,
+              "write_started_only_after_t31_passed": True,
+          }
+
+          EVIDENCE_DIR.mkdir(parents=True, exist_ok=True)
+          (EVIDENCE_DIR / "br04_human_approval.json").write_text(
+              json.dumps(approval_evidence, indent=2, ensure_ascii=False) + "\n",
+              encoding="utf-8",
+          )
+          (EVIDENCE_DIR / "br04_t31_base_check.json").write_text(
+              json.dumps(t31_evidence, indent=2, ensure_ascii=False) + "\n",
+              encoding="utf-8",
+          )
+
+          # Archive the complete pre-promotion canonical directory.
+          archive_stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+          archive_dir = ROOT / "data" / "archive" / archive_stamp
+          if archive_dir.exists():
+              raise SystemExit(f"Archive path already exists: {archive_dir}")
+          shutil.copytree(CURRENT_DIR, archive_dir)
+
+          if sha256_file(archive_dir / "sp500_fundamentals.csv") != APPROVED_BASE:
+              raise SystemExit("Archive verification failed: pre-promotion fundamentals hash mismatch")
+
+          # Replace all production transport chunks with the candidate chunks.
+          for old in CURRENT_DIR.glob("sp500_fundamentals_part_*.csv"):
+              old.unlink()
+
+          promote_files = [
+              "sp500_fundamentals.csv",
+              "fundamentals_chunks.json",
+              "fundamentals_chunks.md",
+          ]
+          for name in promote_files:
+              src = CANDIDATE_DIR / name
+              if not src.exists():
+                  raise SystemExit(f"Candidate promotion file missing: {src}")
+              shutil.copy2(src, CURRENT_DIR / name)
+
+          candidate_parts = sorted(CANDIDATE_DIR.glob("sp500_fundamentals_part_*.csv"))
+          if not candidate_parts:
+              raise SystemExit("No candidate transport chunks found")
+          for src in candidate_parts:
+              shutil.copy2(src, CURRENT_DIR / src.name)
+
+          # Build canonical status.md from the candidate status, replacing the
+          # staging-only BR-04 section with a promoted canonical section.
+          candidate_status_path = CANDIDATE_DIR / "status_candidate.md"
+          if not candidate_status_path.exists():
+              raise SystemExit("status_candidate.md missing")
+          status = candidate_status_path.read_text(encoding="utf-8")
+          marker = "## V4.1 enrichment BR-04 — S1 CANDIDATE ONLY"
+          if marker not in status:
+              raise SystemExit("Expected BR-04 candidate status section not found")
+          status = status.split(marker, 1)[0].rstrip()
+          status = re.sub(
+              r"Aggiornato:\s+\*\*[^*]+\*\*",
+              f"Aggiornato: **{generated_at}**",
+              status,
+              count=1,
+          )
+
+          s2_run = str(s2.get("s2_run_id", "")).strip()
+          s3_run = str(s3.get("s3_run_id", "")).strip()
+          s4_run = str(s4.get("s4_run_id", "")).strip()
+          flag_counts = s4.get("aggregate_preflight_statistics", {}).get("br04_flag_counts", {})
+          indeterminate = int(flag_counts.get("LEVERAGE_THRESHOLD_INDETERMINATE", 0))
+          custom_debt = int(flag_counts.get("CUSTOM_TAG_DEBT_BY_LABEL", 0))
+          below_legacy = int(flag_counts.get("TOTAL_DEBT_BELOW_LEGACY", 0))
+
+          promoted_section = f"""
+
+          ## V4.1 enrichment BR-04 — PROMOTED
+
+          - Base canonical SHA-256: `{APPROVED_BASE}`
+          - Promoted candidate SHA-256: `{APPROVED_CANDIDATE}`
+          - S1 candidate run: **{S1_RUN_ID}**
+          - S2 regression run: **{s2_run}** — PASS
+          - S3 transport run: **{s3_run}** — BR04-T20 PASS
+          - S4 engine preflight run: **{s4_run}** — BR04-T18 PASS
+          - S6 / BR04-T31 run: **{T31_RUN_ID}** — PASS
+          - Human approval recorded: **{APPROVED_AT}**
+          - Frozen V4.1 engine MD5: `{s4.get("engine_md5")}`
+          - Candidate rows: **{s4.get("rows_read")}**
+          - Candidate columns: **{s4.get("columns")}**
+          - Transport chunks: **{s4.get("chunks_read")}**
+          - `LEVERAGE_THRESHOLD_INDETERMINATE`: **{indeterminate}**
+          - `CUSTOM_TAG_DEBT_BY_LABEL`: **{custom_debt}**
+          - `TOTAL_DEBT_BELOW_LEGACY`: **{below_legacy}**
+          - Previous canonical archived at: `{archive_dir.relative_to(ROOT).as_posix()}`
+          - `data/current/sp500_fundamentals.csv` promoted: **YES**
+          - Blind Test: **NOT EXECUTED**
+
+          **`MISSING` resta `MISSING`: nessuna assenza è convertita in zero.**
+
+          S7 post-promotion verification is still required before BR-04 is considered fully closed.
+          """
+          status = status + "\n" + "\n".join(line.strip() for line in promoted_section.splitlines()) + "\n"
+          (CURRENT_DIR / "status.md").write_text(status, encoding="utf-8")
+
+          # Promote the candidate manifest as canonical and finalize BR-04 fields.
+          manifest = candidate_manifest
+          manifest["schema_version"] = "1.4"
+          manifest["updated_at_utc"] = generated_at
+          br04 = manifest.setdefault("br04_debt_interest", {})
+          br04.update({
+              "schema": br04.get("schema", "br04_debt_interest_v1.0"),
+              "phase": "S6_PROMOTED",
+              "promoted_at_utc": generated_at,
+              "approved_at_utc": APPROVED_AT,
+              "base_canonical_sha256": APPROVED_BASE,
+              "candidate_sha256": APPROVED_CANDIDATE,
+              "s1_run_id": S1_RUN_ID,
+              "s2_run_id": s2_run,
+              "s3_run_id": s3_run,
+              "t18_run_id": s4_run,
+              "t31_run_id": T31_RUN_ID,
+              "source_t00bis_run_id": source_t00_run,
+              "archive_path": archive_dir.relative_to(ROOT).as_posix(),
+              "human_approval_evidence": (
+                  EVIDENCE_DIR / "br04_human_approval.json"
+              ).relative_to(ROOT).as_posix(),
+              "t31_evidence": (
+                  EVIDENCE_DIR / "br04_t31_base_check.json"
+              ).relative_to(ROOT).as_posix(),
+              "candidate_path": (
+                  CANDIDATE_DIR / "sp500_fundamentals.csv"
+              ).relative_to(ROOT).as_posix(),
+              "canonical_modified": True,
+              "blind_test_executed": False,
+              "s7_post_promotion_verified": False,
+              "invariant": "MISSING resta MISSING: nessuna assenza è convertita in zero",
+          })
+
+          outputs = manifest.setdefault("outputs", {})
+          outputs["sp500_fundamentals.csv"] = {
+              "sha256": sha256_file(CURRENT_DIR / "sp500_fundamentals.csv"),
+              "bytes": (CURRENT_DIR / "sp500_fundamentals.csv").stat().st_size,
+          }
+          outputs["fundamentals_chunks.json"] = {
+              "sha256": sha256_file(CURRENT_DIR / "fundamentals_chunks.json"),
+              "bytes": (CURRENT_DIR / "fundamentals_chunks.json").stat().st_size,
+          }
+          outputs["fundamentals_chunks.md"] = {
+              "sha256": sha256_file(CURRENT_DIR / "fundamentals_chunks.md"),
+              "bytes": (CURRENT_DIR / "fundamentals_chunks.md").stat().st_size,
+          }
+          outputs["status.md"] = {
+              "sha256": sha256_file(CURRENT_DIR / "status.md"),
+              "bytes": (CURRENT_DIR / "status.md").stat().st_size,
+          }
+
+          (CURRENT_DIR / "manifest.json").write_text(
+              json.dumps(manifest, indent=2, ensure_ascii=False) + "\n",
+              encoding="utf-8",
+          )
+
+          # ------------------------------------------------------------------
+          # PRE-COMMIT TRANSACTION VERIFICATION.
+          # If anything fails here, the job exits before git commit/push.
+          # ------------------------------------------------------------------
+          promoted_sha = sha256_file(CURRENT_DIR / "sp500_fundamentals.csv")
+          if promoted_sha != APPROVED_CANDIDATE:
+              raise SystemExit("Promotion verification failed: current fundamentals != approved candidate")
+
+          index = load_json(CURRENT_DIR / "fundamentals_chunks.json")
+          if index.get("source_sha256") != APPROVED_CANDIDATE:
+              raise SystemExit("Promotion verification failed: chunk manifest source_sha256 mismatch")
+          if int(index.get("total_parts", 0)) != len(candidate_parts):
+              raise SystemExit("Promotion verification failed: chunk count mismatch")
+          if index.get("transport_validation", {}).get("reassembled_byte_identical") is not True:
+              raise SystemExit("Promotion verification failed: transport manifest is not byte-identical")
+
+          promoted_manifest = load_json(CURRENT_DIR / "manifest.json")
+          mbr04 = promoted_manifest.get("br04_debt_interest", {})
+          required_manifest_pairs = {
+              "base_canonical_sha256": APPROVED_BASE,
+              "candidate_sha256": APPROVED_CANDIDATE,
+              "t18_run_id": s4_run,
+              "t31_run_id": T31_RUN_ID,
+              "approved_at_utc": APPROVED_AT,
+          }
+          for key, expected in required_manifest_pairs.items():
+              if str(mbr04.get(key, "")).strip() != expected:
+                  raise SystemExit(f"Promotion verification failed: manifest {key} mismatch")
+
+          promoted_status = (CURRENT_DIR / "status.md").read_text(encoding="utf-8")
+          if str(indeterminate) not in promoted_status:
+              raise SystemExit("Promotion verification failed: status does not measure indeterminate leverage")
+          if "Blind Test: **NOT EXECUTED**" not in promoted_status:
+              raise SystemExit("Promotion verification failed: Blind Test status missing")
+
+          if not (EVIDENCE_DIR / "br04_t31_base_check.json").exists():
+              raise SystemExit("Promotion verification failed: T31 evidence missing")
+          if not (EVIDENCE_DIR / "br04_human_approval.json").exists():
+              raise SystemExit("Promotion verification failed: human approval evidence missing")
+
+          print("BR-04 S6 transaction staged successfully.")
+          print("archive =", archive_dir.relative_to(ROOT))
+          print("promoted_sha256 =", promoted_sha)
+          print("T31 =", "PASS")
+          print("Blind Test =", "NOT EXECUTED")
+          PY
+
+      - name: Review staged transaction
+        run: |
+          echo "Changes prepared for the single S6 commit:"
+          git status --short
+          echo
+          echo "Current fundamentals SHA-256:"
+          sha256sum data/current/sp500_fundamentals.csv
+
+      - name: Commit and push S6 atomically
+        run: |
+          git config user.name "investment-os-data-bridge[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            "data/current" \
+            "data/archive" \
+            "data/staging/br04/${S1_RUN_ID}/evidence/br04_human_approval.json" \
+            "data/staging/br04/${S1_RUN_ID}/evidence/br04_t31_base_check.json"
+
+          if git diff --cached --quiet; then
+            echo "No S6 changes to commit."
+            exit 1
+          fi
+
+          git commit -m "data: promote BR-04 candidate after T31"
+          git push
+
+      - name: Post-push summary
+        run: |
+          echo "BR-04 S6 completed."
+          echo "Candidate promoted: ${APPROVED_CANDIDATE}"
+          echo "Pinned base: ${APPROVED_BASE}"
+          echo "S7 post-promotion verification is still required."
+          echo "Blind Test was NOT executed."
