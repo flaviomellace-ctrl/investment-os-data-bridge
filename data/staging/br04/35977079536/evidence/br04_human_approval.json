@@ -1,0 +1,12 @@
+{
+  "schema": "br04_human_approval_v1.0",
+  "phase": "S5",
+  "decision": "APPROVE_PROMOTION",
+  "approved_at_utc": "2026-09-24T10:31:00Z",
+  "recorded_at_utc": "2026-09-24T10:45:50Z",
+  "base_canonical_sha256": "c95e356632182dddd85b002a552eefa83da27264838617d8661af895fbb69594",
+  "candidate_sha256": "d2207e92bbe6cc0ef883db6a54d93ac965b08da487741b4de8e2459ed6282f45",
+  "approval_text": "Approvo la promozione BR-04 del candidato d2207e92bbe6cc0ef883db6a54d93ac965b08da487741b4de8e2459ed6282f45 sulla base canonica c95e356632182dddd85b002a552eefa83da27264838617d8661af895fbb69594.",
+  "approval_scope": "BR-04 S6 promotion only",
+  "blind_test_authorized": false
+}

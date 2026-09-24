@@ -1,6 +1,6 @@
 # Investment OS Data Bridge — stato
 
-Aggiornato: **2026-09-21T19:41:10+00:00**
+Aggiornato: **2026-09-24T10:45:50Z**
 
 - Righe universo equity-like: **504**
 - Ticker con CIK SEC mappato: **99.8%**
@@ -50,3 +50,29 @@ La copertura qui è una misura tecnica, non un BQS. Metriche non appropriate a u
 - Market cap ricostruita da bridge shares: **NO**
 - `MISSING` resta `MISSING`: nessuna assenza è convertita in zero.
 - Source counts: **{"MISSING": 2, "NASDAQ_PUBLIC_SCREENER": 502}**
+
+
+## V4.1 enrichment BR-04 — PROMOTED
+
+- Base canonical SHA-256: `c95e356632182dddd85b002a552eefa83da27264838617d8661af895fbb69594`
+- Promoted candidate SHA-256: `d2207e92bbe6cc0ef883db6a54d93ac965b08da487741b4de8e2459ed6282f45`
+- S1 candidate run: **35977079536**
+- S2 regression run: **35980033396** — PASS
+- S3 transport run: **35981763317** — BR04-T20 PASS
+- S4 engine preflight run: **35985072617** — BR04-T18 PASS
+- S6 / BR04-T31 run: **35989098494** — PASS
+- Human approval recorded: **2026-09-24T10:31:00Z**
+- Frozen V4.1 engine MD5: `68f626974592915d6c2a8e6583d6c77b`
+- Candidate rows: **504**
+- Candidate columns: **285**
+- Transport chunks: **50**
+- `LEVERAGE_THRESHOLD_INDETERMINATE`: **193**
+- `CUSTOM_TAG_DEBT_BY_LABEL`: **45**
+- `TOTAL_DEBT_BELOW_LEGACY`: **2**
+- Previous canonical archived at: `data/archive/20260924T104550Z`
+- `data/current/sp500_fundamentals.csv` promoted: **YES**
+- Blind Test: **NOT EXECUTED**
+
+**`MISSING` resta `MISSING`: nessuna assenza è convertita in zero.**
+
+S7 post-promotion verification is still required before BR-04 is considered fully closed.

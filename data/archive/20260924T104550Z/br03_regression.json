@@ -1,0 +1,74 @@
+{
+  "schema": "br03_capital_return_v1.1",
+  "generated_at_utc": "2026-09-21T19:45:27+00:00",
+  "tests_passed": 16,
+  "tests_total": 16,
+  "all_passed": true,
+  "tests": {
+    "BR03-T01": {
+      "passed": true,
+      "detail": "violations=0"
+    },
+    "BR03-T02": {
+      "passed": true,
+      "detail": "checked=25; violations=0"
+    },
+    "BR03-T03": {
+      "passed": true,
+      "detail": "payout=0; share_change=0"
+    },
+    "BR03-T04": {
+      "passed": true,
+      "detail": "min=0.0"
+    },
+    "BR03-T05": {
+      "passed": true,
+      "detail": "violations=0"
+    },
+    "BR03-T06": {
+      "passed": true,
+      "detail": "buyback_mismatch=0; dividends_mismatch=1; unflagged=0; ratio_written_despite_mismatch=0"
+    },
+    "BR03-T07": {
+      "passed": true,
+      "detail": "checked=237; violations=0"
+    },
+    "BR03-T08": {
+      "passed": true,
+      "detail": "buyback_violations=0; payout_violations=0"
+    },
+    "BR03-T09": {
+      "passed": true,
+      "detail": "violations=0"
+    },
+    "BR03-T10": {
+      "passed": true,
+      "detail": "checked=0; violations=0"
+    },
+    "BR03-T11": {
+      "passed": true,
+      "detail": "checked=0; violations=0"
+    },
+    "BR03-T12": {
+      "passed": true,
+      "detail": "raw buyback/dividends are absolute non-negative values"
+    },
+    "BR03-T13": {
+      "passed": true,
+      "detail": "buyback=0; dividends=0"
+    },
+    "BR03-T14": {
+      "passed": true,
+      "detail": "type-safety proxy passed; full engine execution deferred to V4.1 preflight"
+    },
+    "BR03-T15": {
+      "passed": true,
+      "detail": "DEFERRED_TO_SPLITTER: verify rows_match_source/ranges_contiguous/all_parts_under_hard_max after chunk regeneration"
+    },
+    "BR03-T16": {
+      "passed": true,
+      "detail": "all non-BR03 pre-existing columns unchanged; protected=166; ignored_existing_br03=46"
+    }
+  },
+  "note": "BR03-T14 is a data-contract type-safety proxy; full V4.1 engine run occurs in the post-BR03 preflight. BR03-T15 is finalized by split_for_claude.py."
+}
