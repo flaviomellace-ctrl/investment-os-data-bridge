@@ -41,21 +41,36 @@ jobs:
 
           base = Path("data/staging/br04")
           found = []
+
           for p in base.glob("*/evidence/br04_s1_build.json"):
               try:
                   j = json.loads(p.read_text(encoding="utf-8"))
               except Exception:
                   continue
+
               if j.get("schema") != "br04_s1_build_v1.0":
                   continue
-              candidate = p.parents[1] / "candidate" / "sp500_fundamentals.csv"
-              if candidate.exists():
-                  found.append((p.stat().st_mtime, p.parents[1].name))
+
+              run_dir = p.parents[1]
+              candidate = run_dir / "candidate" / "sp500_fundamentals.csv"
+
+              if not candidate.exists():
+                  continue
+
+              run_id = run_dir.name
+
+              if not run_id.isdigit():
+                  continue
+
+              found.append(int(run_id))
+
           if not found:
               raise SystemExit("No valid S1 candidate found")
-          print(max(found)[1])
+
+          print(max(found))
           PY
           )"
+
           echo "S1_RUN_ID=${S1_RUN_ID}" >> "$GITHUB_ENV"
           echo "Using S1 candidate run ${S1_RUN_ID}"
 
@@ -72,7 +87,9 @@ jobs:
         run: |
           git config user.name "investment-os-data-bridge[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add "data/staging/br04/${S1_RUN_ID}/evidence/br04_regression.json"
+
           if git diff --cached --quiet; then
             echo "Nessuna nuova evidenza S2 da committare."
           else
@@ -88,13 +105,26 @@ jobs:
           from pathlib import Path
 
           run_id = os.environ["S1_RUN_ID"]
-          p = Path("data/staging/br04") / run_id / "evidence" / "br04_regression.json"
+
+          p = (
+              Path("data/staging/br04")
+              / run_id
+              / "evidence"
+              / "br04_regression.json"
+          )
+
           j = json.loads(p.read_text(encoding="utf-8"))
+
+          print("S1_RUN_ID =", run_id)
           print("overall_passed =", j.get("overall_passed"))
           print("failed_tests =", j.get("failed_tests"))
           print("failed_gates =", j.get("failed_gates"))
+
           if not j.get("overall_passed"):
               raise SystemExit(
-                  "S2 regression failed. Evidence was committed; do not proceed to S3."
+                  "S2 regression failed. Evidence was committed; "
+                  "do not proceed to S3."
               )
+
+          print("BR-04 S2 gate PASS")
           PY
