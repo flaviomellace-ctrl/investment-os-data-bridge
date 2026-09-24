@@ -600,9 +600,20 @@ def fact_with_face(
 
 
 def make_component_string(items: list[dict]) -> str:
+    # Deterministic serialization: component provenance must not depend on
+    # Python set/dict iteration order or source-row ordering across runs.
+    ordered = sorted(
+        items,
+        key=lambda item: (
+            str(item.get("tag", "")),
+            float(item.get("value", 0.0)),
+            str(item.get("line", "")),
+            str(item.get("version", "")),
+        ),
+    )
     return ";".join(
         f"{item['tag']}={fmt_num(item['value'])}"
-        for item in items
+        for item in ordered
     )
 
 
