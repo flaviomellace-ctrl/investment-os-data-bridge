@@ -1,0 +1,143 @@
+ticker,adsh,line,plabel,tag,version,assigned_class,value,ddate,uom
+GOOGL,0001652044-26-000018,21,Accrued revenue share,AccruedRevenueShare,0001652044-26-000018,CUSTOM_NON_DEBT,10864000000,20251231,USD
+GOOG,0001652044-26-000018,21,Accrued revenue share,AccruedRevenueShare,0001652044-26-000018,CUSTOM_NON_DEBT,10864000000,20251231,USD
+TSLA,0001628280-26-003952,26,Accrued liabilities and other,AccruedAndOtherCurrentLiabilities,0001628280-26-003952,CUSTOM_NON_DEBT,13279000000,20251231,USD
+TSLA,0001628280-26-003952,28,Current portion of debt and finance leases,LongTermDebtAndFinanceLeasesCurrent,0001628280-26-003952,CUSTOM_DEBT,1640000000,20251231,USD
+TSLA,0001628280-26-003952,30,"Debt and finance leases, net of current portion",LongTermDebtAndFinanceLeasesNoncurrent,0001628280-26-003952,CUSTOM_DEBT,6736000000,20251231,USD
+JPM,0001628280-26-008131,15,"Loans (included $70,684 and $41,350 at fair value)",FinancingReceivableExcludingAccruedInterestBeforeAllowanceForCreditLossesNetOfDeferredIncome,0001628280-26-008131,CUSTOM_DEBT,1493429000000,20251231,USD
+JPM,0001628280-26-008131,18,Accrued interest and accounts receivable,AccruedInterestAndAccountsReceivable,0001628280-26-008131,CUSTOM_NON_DEBT,111599000000,20251231,USD
+JNJ,0000200406-26-000016,20,"Accrued rebates, returns and promotions",AccruedRebatesReturnsAndPromotions,0000200406-26-000016,CUSTOM_NON_DEBT,19124000000,20251231,USD
+BAC,0000070858-26-000157,23,"Loans held-for-sale (includes $2,271 and $2,214 measured at fair value)",FinancingReceivableHeldForSaleExcludingAccruedInterestNotPartOfDisposalGroupAfterValuationAllowance,0000070858-26-000157,CUSTOM_DEBT,5165000000,20251231,USD
+BAC,0000070858-26-000157,45,"Preferred stock, $0.01 par value; authorized  100,000,000 shares; issued and outstanding  3,991,164 and 3,877,917 shares",PreferredStockRedeemableAndNonRedeemableValue,0000070858-26-000157,CUSTOM_EQUITY_HINT,25992000000,20251231,USD
+PG,0000080424-25-000076,37,Reserve for ESOP debt retirement,ReserveForEsopDebtRetirement,0000080424-25-000076,CUSTOM_DEBT,672000000,20250630,USD
+GS,0000886982-26-000091,23,Unsecured short-term borrowings,UnsecuredShortTermBorrowingsIncludingCurrentPortionOfUnsecuredLongTermBorrowings,0000886982-26-000091,CUSTOM_DEBT,70459000000,20251231,USD
+GS,0000886982-26-000091,32,Nonvoting common stock; no shares issued and outstanding,NonvotingCommonStock,0000886982-26-000091,CUSTOM_EQUITY_HINT,0,20251231,USD
+WFC,0000072971-26-000133,9,Total loans,FinancingReceivableAndNetInvestmentInLeaseExcludingAccruedInterestBeforeAllowanceForCreditLoss,0000072971-26-000133,CUSTOM_DEBT,986167000000,20251231,USD
+WFC,0000072971-26-000133,10,Allowance for loan losses,FinancingReceivableAndNetInvestmentInLeaseAllowanceForLoanLossesExcludingAccruedInterest,0000072971-26-000133,CUSTOM_DEBT,13797000000,20251231,USD
+WFC,0000072971-26-000133,11,Net loans,FinancingReceivableAndNetInvestmentInLeaseExcludingAccruedInterestAfterAllowanceForCreditLoss,0000072971-26-000133,CUSTOM_DEBT,972370000000,20251231,USD
+MS,0000895421-26-000086,29,Preferred stock,PreferredStockCarryingValue,0000895421-26-000086,CUSTOM_EQUITY_HINT,9750000000,20251231,USD
+IBM,0000051143-26-000010,35,Other accrued expenses and liabilities,AccruedLiabilitiesAndOtherLiabilitiesCurrent,0000051143-26-000010,CUSTOM_NON_DEBT,4116000000,20251231,USD
+VZ,0000732712-26-000007,41,Deferred compensation  employee stock ownership plans (ESOPs) and other,DeferredCompensationEmployeeStockOwnershipPlansAndOther,0000732712-26-000007,CUSTOM_NON_DEBT,897000000,20251231,USD
+MCD,0000063908-26-000035,28,Accrued payroll and other liabilities,AccruedExpensesAndOtherCurrentLiabilities,0000063908-26-000035,CUSTOM_NON_DEBT,1488000000,20251231,USD
+GILD,0000882095-26-000006,19,Accrued rebates,AccruedRebates,0000882095-26-000006,CUSTOM_NON_DEBT,4337000000,20251231,USD
+NEE,0000753308-26-000015,33,Accrued interest and taxes,AccruedInterestAndTaxes,0000753308-26-000015,CUSTOM_NON_DEBT,1185000000,20251231,USD
+DE,0001104659-25-122321,30,Long-term borrowings,LongTermDebtAndFinanceLeasesNoncurrent,0001104659-25-122321,CUSTOM_DEBT,43544000000,20251031,USD
+BA,0001628280-26-004357,15,"Financing receivables and operating lease equipment, net",FinancingReceivablesAndOperatingLeaseEquipmentNet,0001628280-26-004357,CUSTOM_NON_DEBT,241000000,20251231,USD
+PFE,0000078003-26-000026,13,Noncurrent deferred tax assets and other noncurrent tax assets,DeferredTaxAssetsNetAndOtherTaxAssetsNoncurrent,0000078003-26-000026,CUSTOM_NON_DEBT,9699000000,20251231,USD
+COP,0001163165-26-000009,21,Asset retirement obligations and accrued environmental costs,AssetRetirementObligationsAndAccruedEnvironmentalCostNonCurrent,0001163165-26-000009,CUSTOM_NON_DEBT,8214000000,20251231,USD
+UBER,0001543151-26-000015,23,Accrued and other current liabilities,AccruedLiabilitiesAndOtherLiabilitiesCurrent,0001543151-26-000015,CUSTOM_NON_DEBT,7751000000,20251231,USD
+COF,0000927628-26-000024,36,Total other debt,DebtExcludingSecuredDebt,0000927628-26-000024,CUSTOM_DEBT,38147000000,20251231,USD
+FCX,0000831259-26-000012,23,Current portion of environmental and asset retirement obligations,EnvironmentalAndAssetRetirementObligationsCurrent,0000831259-26-000012,CUSTOM_NON_DEBT,313000000,20251231,USD
+FCX,0000831259-26-000012,27,"Environmental and asset retirement obligations, less current portion",EnvironmentalAndAssetRetirementObligationsNoncurrent,0000831259-26-000012,CUSTOM_NON_DEBT,5541000000,20251231,USD
+CME,0001156375-26-000009,25,Performance bonds and guaranty fund contributions,MarginDepositsAndGuarantyFundsLiabilitiesCurrent,0001156375-26-000009,CUSTOM_DEBT,159656100000,20251231,USD
+EQIX,0001101239-26-000032,17,"Accrued property, plant and equipment",AccruedPropertyPlantAndEquipment,0001101239-26-000032,CUSTOM_NON_DEBT,564000000,20251231,USD
+SO,0000092122-26-000006,15,Regulatory assets  asset retirement obligations,RegulatoryAssetAssetRetirementObligationCurrent,0000092122-26-000006,CUSTOM_NON_DEBT,353000000,20251231,USD
+SO,0000092122-26-000006,37,Prepaid pension and other postretirement benefit costs,PrepaidPensionCosts,0000092122-26-000006,CUSTOM_NON_DEBT,3257000000,20251231,USD
+SO,0000092122-26-000006,40,"Regulatory assets  asset retirement obligations, deferred",RegulatoryAssetAssetRetirementObligation,0000092122-26-000006,CUSTOM_NON_DEBT,5129000000,20251231,USD
+PSX,0001534701-26-000006,27,Asset retirement obligations and accrued environmental costs,AssetRetirementObligationsAndAccruedEnvironmentalCost,0001534701-26-000006,CUSTOM_NON_DEBT,1022000000,20251231,USD
+DUK,0001326160-26-000014,51,Operating lease liabilities,OtherOperatingLeaseLiabilityNoncurrent,0001326160-26-000014,CUSTOM_NON_DEBT,1033000000,20251231,USD
+MRSH,0000062709-26-000022,44,Stockholders equity subtotal before treasury stock,StockholdersEquitySubtotalBeforeTreasuryStock,0000062709-26-000022,CUSTOM_EQUITY_HINT,24661000000,20251231,USD
+SLB,0001193125-26-021017,19,Short-term borrowings and current portion of long-term debt,ShortTermBorrowingsAndLongTermDebtCurrent,0001193125-26-021017,CUSTOM_DEBT,1894000000,20251231,USD
+CEG,0001868275-26-000032,31,Asset retirement obligations,AssetRetirementObligationsExcludingSpentNuclearFuelNoncurrent,0001868275-26-000032,CUSTOM_NON_DEBT,13193000000,20251231,USD
+UPS,0001628280-26-008432,27,Accrued group welfare and retirement plan contributions,AccruedGroupWelfareAndRetirementPlanContributions,0001628280-26-008432,CUSTOM_NON_DEBT,1389000000,20251231,USD
+KKR,0001404912-26-000007,24,Accrued Expenses and Other Liabilities,AccountsPayableAccruedExpensesAndOtherLiabilities,0001404912-26-000007,CUSTOM_NON_DEBT,17690030000,20251231,USD
+ORLY,0000898173-26-000009,19,Accrued benefits and withholdings,AccruedBenefitsAndWithholdings,0000898173-26-000009,CUSTOM_NON_DEBT,240072000,20251231,USD
+CI,0001739940-26-000006,21,Accrued expenses and other liabilities,AccruedExpensesAndOtherLiabilities,0001739940-26-000006,CUSTOM_NON_DEBT,9048000000,20251231,USD
+ECL,0001104659-26-018357,25,Operating lease liabilities,OperatingLeaseLiabilityNoncurrentExcludedFromLongTermDebt,0001104659-26-018357,CUSTOM_NON_DEBT,596500000,20251231,USD
+SPG,0001104659-26-019419,27,"Accounts payable, accrued expenses, intangibles, and deferred revenues",AccountsPayableAccruedExpensesIntangiblesAndDeferredRevenues,0001104659-26-019419,CUSTOM_NON_DEBT,1954402000,20251231,USD
+AJG,0001628280-26-008662,14,Accrued compensation and other current liabilities,AccruedCompensationAndOtherCurrentLiabilities,0001628280-26-008662,CUSTOM_NON_DEBT,4017000000,20251231,USD
+AJG,0001628280-26-008662,16,Premium financing debt,PremiumFinancingBorrowings,0001628280-26-008662,CUSTOM_DEBT,226000000,20251231,USD
+AEP,0000004904-26-000013,58,Employee Benefits and Pension Obligations,EmployeeBenefitsAndPensionObligationsNoncurrent,0000004904-26-000013,CUSTOM_NON_DEBT,232000000,20251231,USD
+ALL,0000899051-26-000031,26,Other liabilities and accrued expenses,OtherLiabilitiesAndAccruedExpenses,0000899051-26-000031,CUSTOM_NON_DEBT,9874000000,20251231,USD
+MNST,0001104659-26-020831,21,Accrued promotional allowances,AccruedPromotionalAllowancesLiabilitiesCurrent,0001104659-26-020831,CUSTOM_NON_DEBT,384070000,20251231,USD
+KMI,0001506307-26-000011,30,Debt fair value adjustments,DebtFairValueAdjustments,0001506307-26-000011,CUSTOM_DEBT,180000000,20251231,USD
+TRGP,0001193125-26-059296,23,Current debt obligations,DebtCurrentNetOfIssuanceCost,0001193125-26-059296,CUSTOM_DEBT,770100000,20251231,USD
+D,0001193125-26-063120,57,Long-term debt,LongTermDebtOtherThanJuniorSubordinatedNotes,0001193125-26-063120,CUSTOM_DEBT,36778000000,20251231,USD
+D,0001193125-26-063120,59,Securitization bonds,SecuritizationBonds,0001193125-26-063120,CUSTOM_DEBT,883000000,20251231,USD
+O,0000726728-26-000011,21,Revolving credit facilities and commercial paper,RevolvingCreditFacilityAndCommercialPaper,0000726728-26-000011,CUSTOM_DEBT,2023414000,20251231,USD
+TER,0001193125-26-059002,24,Deferred revenue and customer advances,DeferredRevenueAndCustomerAdvancesCurrent,0001193125-26-059002,CUSTOM_NON_DEBT,153124000,20251231,USD
+COHR,0000820318-25-000014,37,Shareholders' equity excluding treasury stock,ShareholdersEquityExcludingTreasuryStock,0000820318-25-000014,CUSTOM_EQUITY_HINT,6012579000,20250630,USD
+EW,0001099800-26-000009,24,Accrued and other liabilities (Note 6),AccruedAndOtherLiabilitiesCurrent,0001099800-26-000009,CUSTOM_NON_DEBT,1561700000,20251231,USD
+BDX,0000010795-25-000099,33,Deferred compensation,CommonStockSharesHeldInEmployeeTrust1,0000010795-25-000099,CUSTOM_NON_DEBT,25000000,20250930,USD
+ETR,0000065984-26-000174,96,Subsidiaries Preferred Stock Value and Equity Attributable to Noncontrolling Interests,SubsidiariesPreferredStockValueAndEquityAttributableToNoncontrollingInterests,0000065984-26-000174,CUSTOM_EQUITY_HINT,91091000,20251231,USD
+VMRK,0001193125-26-051433,19,Line of credit and commercial paper,LineOfCreditAndCommercialPaper,0001193125-26-051433,CUSTOM_DEBT,586648000,20251231,USD
+VMRK,0001193125-26-051433,20,Accounts payable and accrued expenses,AccountsPayableAndAccruedLiabilitiesCurrentAndNoncurrentOtherThanInterestAndDividendPayable,0001193125-26-051433,CUSTOM_NON_DEBT,109165000,20251231,USD
+XEL,0000072903-26-000009,5,Accrued unbilled revenues,AccruedUnbilledRevenues,0000072903-26-000009,CUSTOM_NON_DEBT,880000000,20251231,USD
+VTR,0000740260-26-000006,11,"Secured loans receivable and investments, net",SecuredNotesAndLoansReceivableNet,0000740260-26-000006,CUSTOM_DEBT,143913000,20251231,USD
+VTR,0000740260-26-000006,23,Senior notes payable and other debt,Longtermdebtandshorttermborrowings,0000740260-26-000006,CUSTOM_DEBT,13011016000,20251231,USD
+XYZ,0001628280-26-012254,14,"Loans held for investment, net",FinancingReceivableHeldForInvestmentNet,0001628280-26-012254,CUSTOM_DEBT,3382957000,20251231,USD
+IQV,0001628280-26-008322,11,"Investments in debt, equity and other securities",LongTermInvestmentsExcludingEquityMethodInvestments,0001628280-26-008322,CUSTOM_DEBT,108000000,20251231,USD
+CBRE,0001138118-26-000005,33,Other short-term borrowings,CommercialPaperAndOtherShortTermBorrowings,0001138118-26-000005,CUSTOM_DEBT,856000000,20251231,USD
+PAYX,0000950170-25-095300,24,Accrued worksite employee compensation and related items,AccruedWorksiteEmployeeCompensationAndRelatedItems,0000950170-25-095300,CUSTOM_NON_DEBT,735800000,20250531,USD
+PRU,0001137774-26-000048,30,Short-term debt,DebtCurrentExcludingSecuritiesSold,0001137774-26-000048,CUSTOM_DEBT,1443000000,20251231,USD
+AIG,0000005272-26-000023,40,Current and deferred income tax liabilities,IncomeTaxesPayableCurrentAndDeferredIncomeTaxLiabilitiesNet,0000005272-26-000023,CUSTOM_NON_DEBT,661000000,20251231,USD
+FLEX,0000866374-26-000012,20,Deferred revenue and customer working capital advances,DeferredRevenueAndCustomerWorkingCapitalAdvances,0000866374-26-000012,CUSTOM_NON_DEBT,2156000000,20260331,USD
+FANG,0001539838-26-000010,22,Accounts payable and accrued capital expenditures,AccountsPayableAndAccruedCapitalExpenditures,0001539838-26-000010,CUSTOM_NON_DEBT,1168000000,20251231,USD
+EXPE,0001324424-26-000008,24,"Accounts payable, merchant",AccountsPayableMerchant,0001324424-26-000008,CUSTOM_NON_DEBT,2188000000,20251231,USD
+KVUE,0001944048-26-000030,20,"Accrued rebates, returns, and promotions",AccruedRebatesReturnsAndPromotionsCurrent,0001944048-26-000030,CUSTOM_NON_DEBT,755000000,20251231,USD
+KVUE,0001944048-26-000030,23,Long-term debt,LongTermDebtAndLeaseObligationExcludingCurrentMaturities,0001944048-26-000030,CUSTOM_DEBT,7071000000,20251231,USD
+UAL,0000100517-26-000023,19,Frequent flyer deferred revenue,ContractWithCustomerLiabilityCurrentFrequentFlyer,0000100517-26-000023,CUSTOM_NON_DEBT,3721000000,20251231,USD
+UAL,0000100517-26-000023,26,Frequent flyer deferred revenue,ContractWithCustomerLiabilityNoncurrentFrequentFlyer,0000100517-26-000023,CUSTOM_NON_DEBT,4056000000,20251231,USD
+NTRS,0000073124-26-000016,39,Long-Term Debt,SubordinatedDebtAndLongTermFederalHomeLoanBankAdvances,0000073124-26-000016,CUSTOM_DEBT,3484400000,20251231,USD
+EQT,0000033213-26-000018,28,Asset retirement obligations and other liabilities,AssetRetirementObligationsAndOtherLiabilitiesNoncurrent,0000033213-26-000018,CUSTOM_NON_DEBT,1182666000,20251231,USD
+HBAN,0000049196-26-000015,13,Accrued income and other receivables,InterestAndOtherReceivables,0000049196-26-000015,CUSTOM_NON_DEBT,2621000000,20251231,USD
+KR,0001104659-26-037723,18,Current portion of long-term debt including obligations under finance leases,LongTermDebtAndFinanceLeaseCurrent,0001104659-26-037723,CUSTOM_DEBT,1802000000,20260131,USD
+KR,0001104659-26-037723,24,Long-term debt including obligations under finance leases,LongTermDebtAndFinanceLease,0001104659-26-037723,CUSTOM_DEBT,15764000000,20260131,USD
+WTW,0001193125-26-069307,17,Deferred revenue and accrued expenses,DeferredRevenueAndAccruedLiabilitiesCurrent,0001193125-26-069307,CUSTOM_NON_DEBT,2087000000,20251231,USD
+MLM,0001193125-26-059193,19,Accrued other taxes,AccruedOtherTaxesCurrent,0001193125-26-059193,CUSTOM_NON_DEBT,46000000,20251231,USD
+EXR,0001289490-26-000011,5,Investments in debt securities and notes receivable,DebtSecuritiesHeldToMaturityAndFinancingReceivableAfterAllowanceForCreditLossAndInterestReceivable,0001289490-26-000011,CUSTOM_DEBT,1806526000,20251231,USD
+CPRT,0001628280-25-042946,22,Current portion of operating and finance lease liabilities,OperatingAndFinanceLeaseLiabilityCurrent,0001628280-25-042946,CUSTOM_DEBT,19869000,20250731,USD
+CPRT,0001628280-25-042946,26,"Operating and finance lease liabilities, net of current portion",OperatingAndFinanceLeaseLiabilityNoncurrent,0001628280-25-042946,CUSTOM_DEBT,83870000,20250731,USD
+PCG,0001004980-26-000009,7,Accrued unbilled revenue (includes $1.3 billion related to VIEs at respective dates),AccruedUnbilledRevenueEnergy,0001004980-26-000009,CUSTOM_NON_DEBT,1463000000,20251231,USD
+PCG,0001004980-26-000009,15,Wildfire self-insurance asset,SelfInsuranceAssetCurrent,0001004980-26-000009,CUSTOM_NON_DEBT,1043000000,20251231,USD
+LYV,0001335258-26-000009,25,"Accounts payable, client accounts",AccountsPayableClientAccounts,0001335258-26-000009,CUSTOM_NON_DEBT,1941389000,20251231,USD
+MTD,0001037646-26-000011,23,Short-term borrowings and current maturities of long-term debt,ShortTermDebtAndLongTermDebtCurrentMaturities,0001037646-26-000011,CUSTOM_DEBT,63931000,20251231,USD
+DTE,0000936340-26-000054,31,Prepaid postretirement costs,PrepaidPostretirementCosts,0000936340-26-000054,CUSTOM_NON_DEBT,761000000,20251231,USD
+DTE,0000936340-26-000054,50,Securitization bonds,SecuritizationBondsNoncurrent,0000936340-26-000054,CUSTOM_DEBT,561000000,20251231,USD
+ATO,0000731802-25-000056,27,Securitized long-term debt (See Note 10),SecuritizedLongTermDebtExcludingCurrentMaturities,0000731802-25-000056,CUSTOM_DEBT,68236000,20250930,USD
+ATO,0000731802-25-000056,34,Current maturities of securitized long-term debt (See Note 10),SecuritizedLongTermDebtCurrentMaturities,0000731802-25-000056,CUSTOM_DEBT,8767000,20250930,USD
+LH,0000920148-26-000111,31,Noncontrolling interest,NoncontrollingInterestMezzanineEquity,0000920148-26-000111,CUSTOM_EQUITY_HINT,16900000,20251231,USD
+AWK,0001410636-26-000034,33,Total long-term debt,LongTermDebtIncludesRedeemablePreferredStockAtRedemptionValue,0001410636-26-000034,CUSTOM_DEBT,12780000000,20251231,USD
+ES,0001628280-26-008461,15,Prepaid Pension and PBOP,PensionAndOtherPostretirementDefinedBenefitPlansAssetsNoncurrent,0001628280-26-008461,CUSTOM_NON_DEBT,1511169000,20251231,USD
+ES,0001628280-26-008461,25,Rate Reduction Bonds  Current Portion,RateReductionBondsCurrent,0001628280-26-008461,CUSTOM_DEBT,43210000,20251231,USD
+ES,0001628280-26-008461,45,Rate Reduction Bonds,RateReductionBonds,0001628280-26-008461,CUSTOM_DEBT,280862000,20251231,USD
+XYL,0001524472-26-000012,18,Short-term borrowings and current maturities of long-term debt,ShortTermDebtAndLongTermDebtCurrentMaturities,0001524472-26-000012,CUSTOM_DEBT,534000000,20251231,USD
+CNP,0001130310-26-000008,27,Current portion of VIE Securitization Bonds long-term debt,TransitionAndSystemRestorationBondsLongTermDebtCurrent,0001130310-26-000008,CUSTOM_DEBT,41000000,20251231,USD
+CNP,0001130310-26-000008,28,"Indexed debt, net",IndexedDebtCurrent,0001130310-26-000008,CUSTOM_DEBT,0,20251231,USD
+CNP,0001130310-26-000008,30,Indexed debt securities derivative,IndexedDebtSecuritiesDerivative,0001130310-26-000008,CUSTOM_DEBT,564000000,20251231,USD
+CNP,0001130310-26-000008,46,"VIE Securitization Bonds, net",TransitionAndSystemRestorationBondsLongTermDebtNonCurrent,0001130310-26-000008,CUSTOM_DEBT,664000000,20251231,USD
+WST,0000105770-26-000010,21,"Accrued salaries, wages and benefits",AccruedSalariesWagesAndBenefitsCurrent,0000105770-26-000010,CUSTOM_NON_DEBT,135900000,20251231,USD
+PHM,0000822416-26-000007,19,Financial Services debt,FinancialServicesDebt,0000822416-26-000007,CUSTOM_DEBT,532338000,20251231,USD
+FSLR,0001274494-26-000021,32,Accrued solar module collection and recycling liability,SolarModuleCollectionAndRecyclingLiability,0001274494-26-000021,CUSTOM_NON_DEBT,146017000,20251231,USD
+SMCI,0001375365-25-000027,17,Lines of credit and current portion of term loans,ShortTermDebtAndLongTermDebtCurrentMaturities,0001375365-25-000027,CUSTOM_DEBT,75060000,20250630,USD
+SMCI,0001375365-25-000027,21,"Term loans, non-current",LongTermDebtExcludingConvertibleNotesAndCurrentMaturities,0001375365-25-000027,CUSTOM_DEBT,37415000,20250630,USD
+CMS,0000811156-26-000004,37,Current portion of long-term debt and finance leases,LongTermDebtAndLeaseObligationCurrentExcludingNotesPayable,0000811156-26-000004,CUSTOM_DEBT,956000000,20251231,USD
+CMS,0000811156-26-000004,40,Accrued rate refunds,AccruedRateRefunds,0000811156-26-000004,CUSTOM_NON_DEBT,28000000,20251231,USD
+CMS,0000811156-26-000004,63,Total common stockholders equity,CommonStockholdersEquity,0000811156-26-000004,CUSTOM_EQUITY_HINT,8920000000,20251231,USD
+WRB,0000011544-26-000005,31,Senior notes and other debt,SeniorNotesAndOtherDebt,0000011544-26-000005,CUSTOM_DEBT,1829198000,20251231,USD
+CDW,0001402057-26-000011,19,Accounts payable-inventory financing,AccountsPayableInventoryFinancing,0001402057-26-000011,CUSTOM_NON_DEBT,352600000,20251231,USD
+VTRS,0001792044-26-000013,32,Stockholders Equity Parent Before Treasury Stock,StockholdersEquityParentBeforeTreasuryStock,0001792044-26-000013,CUSTOM_EQUITY_HINT,15718500000,20251231,USD
+ESS,0000920522-26-000003,22,Lines of credit and commercial paper,LinesOfCreditAndCommercialPaper,0000920522-26-000003,CUSTOM_DEBT,0,20251231,USD
+PTC,0001193125-25-291326,16,Accrued expenses and other current liabilities,AccruedExpensesAndOtherLiabilityCurrent,0001193125-25-291326,CUSTOM_NON_DEBT,136140000,20250930,USD
+J,0001628280-25-053316,19,Current maturities of long-term debt,LongTermDebtIncludingOverdraftsCurrentMaturities,0001628280-25-053316,CUSTOM_DEBT,0,20250930,USD
+WY,0001193125-26-051422,19,Current maturities of long-term debt (Notes 11 and 12),LongTermDebtExcludingLinesOfCreditCurrent,0001193125-26-051422,CUSTOM_DEBT,522000000,20251231,USD
+MAA,0001193125-26-041208,40,Total Companys shareholders equity,ParentLPStockholdersEquityIncludingPortionAttributableToNoncontrollingInterest,0001193125-26-041208,CUSTOM_EQUITY_HINT,5804354000,20251231,USD
+MAS,0000062996-26-000005,34,Noncontrolling interest,EquityAttributableToNoncontrollingInterestNet,0000062996-26-000005,CUSTOM_EQUITY_HINT,261000000,20251231,USD
+IVZ,0000914208-26-000079,16,Debt and other liabilities of CIP,LongTermDebtOfConsolidatedInvestmentProducts,0000914208-26-000079,CUSTOM_DEBT,8967600000,20251231,USD
+DOC,0001628280-26-005044,21,Bank line of credit and commercial paper,BankLineOfCreditAndCommercialPaper,0001628280-26-005044,CUSTOM_DEBT,1078850000,20251231,USD
+BAX,0001628280-26-007733,24,"Long-term debt and finance lease obligations, less current portion",LongTermDebtAndLeaseObligationExcludingCurrentMaturities,0001628280-26-007733,CUSTOM_DEBT,9473000000,20251231,USD
+AVY,0000008818-26-000015,19,Accrued trade rebates,AccruedTradeRebates,0000008818-26-000015,CUSTOM_NON_DEBT,169800000,20251231,USD
+AVY,0000008818-26-000015,25,Deferred tax liabilities and income taxes payable,DeferredAndPayableIncomeTaxes,0000008818-26-000015,CUSTOM_NON_DEBT,264000000,20251231,USD
+CSGP,0001057352-26-000020,23,Accrued expenses,AccruedLiabilitiesAndOtherLiabilitiesCurrent,0001057352-26-000020,CUSTOM_NON_DEBT,203000000,20251231,USD
+PNW,0000764622-26-000011,70,Total common stock,CommonStockValueCommonAndTreasury,0000764622-26-000011,CUSTOM_EQUITY_HINT,3228049000,20251231,USD
+ECHO,0001104659-26-021817,31,Accrued programming,AccruedProgrammingCurrent,0001104659-26-021817,CUSTOM_NON_DEBT,1224222000,20251231,USD
+GNRC,0001437749-26-004568,16,"Operating Lease, Right-of-Use Asset and Other Assets, Noncurrent",OperatingLeaseRightOfUseAssetAndOtherAssestNoncurrent,0001437749-26-004568,CUSTOM_NON_DEBT,113287000,20251231,USD
+GNRC,0001437749-26-004568,29,"Operating Lease, Liability, Noncurrent And Other Long-term Liabilities",OperatingLeaseLiabilityNoncurrentAndOtherLongTermLiabilities,0001437749-26-004568,CUSTOM_NON_DEBT,165197000,20251231,USD
+AES,0000874761-26-000063,24,Debt service reserves and other deposits,DebtServiceReservesAndOtherDeposits,0000874761-26-000063,CUSTOM_DEBT,89000000,20251231,USD
+AES,0000874761-26-000063,41,Non-recourse debt,NonRecourseDebtCurrent,0000874761-26-000063,CUSTOM_DEBT,2232000000,20251231,USD
+AES,0000874761-26-000063,45,Recourse debt,RecourseDebtNonCurrent,0000874761-26-000063,CUSTOM_DEBT,5105000000,20251231,USD
+AES,0000874761-26-000063,46,Non-recourse debt,NonRecourseDebtNonCurrent,0000874761-26-000063,CUSTOM_DEBT,21681000000,20251231,USD
+PODD,0001145197-26-000028,37,Deferred compensation,DeferredCompensation,0001145197-26-000028,CUSTOM_NON_DEBT,800000,20251231,USD
+ARE,0001035443-26-000013,15,Unsecured senior line of credit and commercial paper,LongTermLineOfCreditAndCommercialPaper,0001035443-26-000013,CUSTOM_DEBT,353161000,20251231,USD
+NCLH,0001104659-26-022067,17,Accrued expenses and other liabilities,AccruedLiabilitiesAndOtherLiabilitiesCurrent,0001104659-26-022067,CUSTOM_NON_DEBT,1206430000,20251231,USD
+ERIE,0001628280-26-010666,47,Deferred compensation,CommonStockIssuedStockTrust,0001628280-26-010666,CUSTOM_NON_DEBT,24924000,20251231,USD
