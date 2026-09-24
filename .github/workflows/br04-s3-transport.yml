@@ -58,26 +58,43 @@ jobs:
 
               if j.get("phase") != "S2":
                   continue
+
               if j.get("overall_passed") is not True:
                   continue
 
               run_dir = p.parents[1]
-              candidate = run_dir / "candidate" / "sp500_fundamentals.csv"
+              candidate = (
+                  run_dir
+                  / "candidate"
+                  / "sp500_fundamentals.csv"
+              )
+
               if not candidate.exists():
                   continue
 
-              expected_sha = str(j.get("candidate_sha256", "")).strip()
+              expected_sha = str(
+                  j.get("candidate_sha256", "")
+              ).strip()
+
               if not expected_sha:
                   continue
+
               if sha256_file(candidate) != expected_sha:
                   continue
 
-              found.append((p.stat().st_mtime, run_dir.name))
+              run_id = run_dir.name
+
+              if not run_id.isdigit():
+                  continue
+
+              found.append(int(run_id))
 
           if not found:
-              raise SystemExit("No S2-approved BR-04 candidate found")
+              raise SystemExit(
+                  "No S2-approved BR-04 candidate found"
+              )
 
-          print(max(found)[1])
+          print(max(found))
           PY
           )"
 
@@ -107,39 +124,56 @@ jobs:
           root = Path("data/staging/br04") / run_id
 
           index = json.loads(
-              (root / "candidate" / "fundamentals_chunks.json").read_text(
-                  encoding="utf-8"
-              )
+              (
+                  root
+                  / "candidate"
+                  / "fundamentals_chunks.json"
+              ).read_text(encoding="utf-8")
           )
+
           report = json.loads(
-              (root / "evidence" / "br04_transport.json").read_text(
-                  encoding="utf-8"
-              )
+              (
+                  root
+                  / "evidence"
+                  / "br04_transport.json"
+              ).read_text(encoding="utf-8")
           )
 
           total_parts = int(index.get("total_parts", 0))
+
           if total_parts < 1:
-              raise SystemExit("No transport chunks generated")
+              raise SystemExit(
+                  "No transport chunks generated"
+              )
 
           parts = sorted(
-              (root / "candidate").glob("sp500_fundamentals_part_*.csv")
+              (root / "candidate").glob(
+                  "sp500_fundamentals_part_*.csv"
+              )
           )
+
           if len(parts) != total_parts:
               raise SystemExit(
-                  f"Chunk count mismatch: files={len(parts)} "
+                  f"Chunk count mismatch: "
+                  f"files={len(parts)} "
                   f"index={total_parts}"
               )
 
           if report.get("overall_passed") is not True:
-              raise SystemExit("BR04-T20 did not pass")
+              raise SystemExit(
+                  "BR04-T20 did not pass"
+              )
           PY
 
       - name: Commit S3 transport evidence only
         run: |
           ROOT="data/staging/br04/${S1_RUN_ID}"
 
-          git config user.name "investment-os-data-bridge[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name \
+            "investment-os-data-bridge[bot]"
+
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add \
             "${ROOT}/candidate/fundamentals_chunks.json" \
@@ -151,7 +185,8 @@ jobs:
           if git diff --cached --quiet; then
             echo "Nessun nuovo output S3 da committare."
           else
-            git commit -m "data: BR-04 S3 transport ${S1_RUN_ID}"
+            git commit \
+              -m "data: BR-04 S3 transport ${S1_RUN_ID}"
             git push
           fi
 
@@ -163,19 +198,30 @@ jobs:
           from pathlib import Path
 
           run_id = os.environ["S1_RUN_ID"]
+
           p = (
               Path("data/staging/br04")
               / run_id
               / "evidence"
               / "br04_transport.json"
           )
-          j = json.loads(p.read_text(encoding="utf-8"))
 
-          print("overall_passed =", j.get("overall_passed"))
+          j = json.loads(
+              p.read_text(encoding="utf-8")
+          )
+
+          print("S1_RUN_ID =", run_id)
+          print(
+              "overall_passed =",
+              j.get("overall_passed")
+          )
           print("test =", j.get("test"))
 
           if not j.get("overall_passed"):
               raise SystemExit(
-                  "S3 transport failed. Do not proceed to S4."
+                  "S3 transport failed. "
+                  "Do not proceed to S4."
               )
+
+          print("BR-04 S3 / T20 PASS")
           PY
