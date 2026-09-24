@@ -1882,7 +1882,7 @@ def main() -> int:
         "generated_at_utc": now_iso(),
         "run_id": RUN_ID,
         "phase": "S1",
-        "implementation_revision": "br04_s1_builder_r3",
+        "implementation_revision": "br04_s1_builder_r4_deterministic",
         "base_canonical_sha256": base_sha,
         "candidate_sha256": candidate_sha,
         "source_t00bis_run_id": source_t00_run_id,
