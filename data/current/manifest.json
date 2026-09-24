@@ -1,6 +1,6 @@
 {
   "schema_version": "1.4",
-  "updated_at_utc": "2026-09-24T10:53:29Z",
+  "updated_at_utc": "2026-09-24T10:58:20Z",
   "mode": "auto",
   "fundamentals_rebuilt_this_run": false,
   "state_street": {
@@ -90,20 +90,20 @@
       "bytes": 1116
     },
     "status.md": {
-      "sha256": "63262fd1b82e7d5f7ec9838714304a869a1fbdbaf76ffefdc728dc00340cd7f5",
-      "bytes": 3611
+      "sha256": "39c45248588719c81ebb76743954e20af4f850092bdd0acba8b1f72845bbe3d9",
+      "bytes": 4634
     },
     "br03_regression.json": {
       "sha256": "c201273cd9ae20bb817fae0a2dc591cdc9cc0fd36486963fa0accee156929f8f",
       "bytes": 2032
     },
     "fundamentals_chunks.json": {
-      "sha256": "51b3ca813d6738a3b32ce21136bdbea7a16d332f6b41b3c4ab8882f977a446b9",
-      "bytes": 22950
+      "sha256": "21b21b04a8b4e48d5d6653dd851b835235d011ef603f5c7a511b1b54eb57ddb2",
+      "bytes": 21600
     },
     "fundamentals_chunks.md": {
-      "sha256": "77473ca506e3f05255de625c1ce3263c39abae68543656ace6e7fd9732749385",
-      "bytes": 14873
+      "sha256": "1c8c3f1befd4dcd233f134fa79668579f74fa23bb7bf09541cf5cdd8be136b5b",
+      "bytes": 13523
     }
   },
   "methodology_notes": [
@@ -517,6 +517,10 @@
     "s7_run_id": "35989832022",
     "s7_verified_at_utc": "2026-09-24T10:53:29Z",
     "s7_canonical_sha256": "d2207e92bbe6cc0ef883db6a54d93ac965b08da487741b4de8e2459ed6282f45",
-    "s7_t20_passed": true
+    "s7_t20_passed": true,
+    "canonical_path": "data/current/sp500_fundamentals.csv",
+    "transport_urls_scope": "data/current",
+    "metadata_finalized_at_utc": "2026-09-24T10:58:20Z",
+    "metadata_finalization_run_id": "35990281570"
   }
 }

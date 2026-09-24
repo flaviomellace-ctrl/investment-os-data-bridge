@@ -1,6 +1,6 @@
 # Investment OS Data Bridge — stato
 
-Aggiornato: **2026-09-24T10:45:50Z**
+Aggiornato: **2026-09-24T10:58:20Z**
 
 - Righe universo equity-like: **504**
 - Ticker con CIK SEC mappato: **99.8%**
@@ -75,7 +75,6 @@ La copertura qui è una misura tecnica, non un BQS. Metriche non appropriate a u
 
 **`MISSING` resta `MISSING`: nessuna assenza è convertita in zero.**
 
-S7 post-promotion verification is still required before BR-04 is considered fully closed.
 
 ## BR-04 S7 — POST-PROMOTION VERIFIED
 
@@ -90,4 +89,16 @@ S7 post-promotion verification is still required before BR-04 is considered full
 - Reassembled canonical byte-identical: **YES**
 - Pre-promotion archive verified: **YES**
 - BR-04 staging/promotion lifecycle: **CLOSED**
+- Blind Test: **NOT EXECUTED**
+
+## BR-04 S7 — METADATA FINALIZED
+
+- Finalization run: **35990281570**
+- Finalized at: **2026-09-24T10:58:20Z**
+- Transport URLs point to: `data/current/`
+- `fundamentals_chunks.json` canonical URLs: **YES**
+- `fundamentals_chunks.md` canonical URLs: **YES**
+- Manifest output hashes refreshed: **YES**
+- Canonical fundamentals SHA-256 unchanged: `d2207e92bbe6cc0ef883db6a54d93ac965b08da487741b4de8e2459ed6282f45`
+- BR04-T20 re-verified after metadata finalization: **PASS**
 - Blind Test: **NOT EXECUTED**

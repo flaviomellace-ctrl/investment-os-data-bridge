@@ -1,0 +1,28 @@
+{
+  "schema": "br04_s7_metadata_finalize_v1.0",
+  "phase": "S7_METADATA_FINALIZE",
+  "run_id": "35990281570",
+  "generated_at_utc": "2026-09-24T10:58:20Z",
+  "candidate_sha256": "d2207e92bbe6cc0ef883db6a54d93ac965b08da487741b4de8e2459ed6282f45",
+  "canonical_sha256_before": "d2207e92bbe6cc0ef883db6a54d93ac965b08da487741b4de8e2459ed6282f45",
+  "canonical_sha256_after": "d2207e92bbe6cc0ef883db6a54d93ac965b08da487741b4de8e2459ed6282f45",
+  "checks": {
+    "canonical_sha_unchanged": true,
+    "source_sha_matches": true,
+    "part_sha256_failures_zero": true,
+    "rows_match": true,
+    "ranges_contiguous": true,
+    "part_count_matches": true,
+    "reassembled_byte_identical": true,
+    "reassembled_sha_matches": true,
+    "all_urls_point_to_current": true,
+    "md_has_no_staging_urls": true,
+    "status_has_no_stale_s7_required_line": true
+  },
+  "fundamentals_chunks_json_sha256": "21b21b04a8b4e48d5d6653dd851b835235d011ef603f5c7a511b1b54eb57ddb2",
+  "fundamentals_chunks_md_sha256": "1c8c3f1befd4dcd233f134fa79668579f74fa23bb7bf09541cf5cdd8be136b5b",
+  "status_sha256": "39c45248588719c81ebb76743954e20af4f850092bdd0acba8b1f72845bbe3d9",
+  "manifest_schema_version": "1.4",
+  "blind_test_executed": false,
+  "overall_passed": true
+}
