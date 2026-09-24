@@ -1,0 +1,49 @@
+{
+  "schema": "br04_s7_post_promotion_v1.0",
+  "phase": "S7",
+  "s7_run_id": "35989832022",
+  "generated_at_utc": "2026-09-24T10:53:29Z",
+  "base_canonical_sha256": "c95e356632182dddd85b002a552eefa83da27264838617d8661af895fbb69594",
+  "candidate_sha256": "d2207e92bbe6cc0ef883db6a54d93ac965b08da487741b4de8e2459ed6282f45",
+  "canonical_sha256": "d2207e92bbe6cc0ef883db6a54d93ac965b08da487741b4de8e2459ed6282f45",
+  "result": "PASS",
+  "checks": {
+    "canonical_file_exists": true,
+    "canonical_sha_matches_approved_candidate": true,
+    "canonical_t20_passed": true,
+    "manifest_schema_1_4": true,
+    "manifest_candidate_matches": true,
+    "manifest_base_matches": true,
+    "manifest_t31_present": true,
+    "manifest_s7_previously_false_or_true": true,
+    "manifest_blind_test_false": true,
+    "archive_exists": true,
+    "archive_matches_pre_promotion_base": true,
+    "status_records_promotion": true,
+    "status_records_t31_pass": true,
+    "status_blind_test_not_executed": true,
+    "metadata_consistent": true
+  },
+  "canonical_t20": {
+    "index_exists": true,
+    "part_sha256_failures": 0,
+    "rows_match_source": true,
+    "ranges_contiguous": true,
+    "all_parts_under_hard_max": true,
+    "reassembled_byte_identical": true,
+    "reassembled_sha256_matches_source": true,
+    "source_sha256_matches_approved_candidate": true,
+    "total_parts_declared": 50,
+    "total_parts_read": 50,
+    "rows_declared": 504,
+    "rows_from_parts": 504
+  },
+  "details": {
+    "current_sha256": "d2207e92bbe6cc0ef883db6a54d93ac965b08da487741b4de8e2459ed6282f45",
+    "expected_candidate_sha256": "d2207e92bbe6cc0ef883db6a54d93ac965b08da487741b4de8e2459ed6282f45",
+    "archive_sha256": "c95e356632182dddd85b002a552eefa83da27264838617d8661af895fbb69594",
+    "expected_archive_path": "data/archive/20260924T104550Z"
+  },
+  "blind_test_executed": false,
+  "br04_closed": true
+}
