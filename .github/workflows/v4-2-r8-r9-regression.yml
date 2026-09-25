@@ -1,0 +1,78 @@
+name: V4.2 R8-R9 Regression
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: v4-2-r8-r9-regression
+  cancel-in-progress: false
+
+jobs:
+  regress:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify frozen V4.1 engine
+        shell: bash
+        run: |
+          python - <<'PY'
+          import hashlib
+          from pathlib import Path
+          p = Path("src/investment_os/v4_1_frozen/v4_scoring.py")
+          expected = "68f626974592915d6c2a8e6583d6c77b"
+          actual = hashlib.md5(p.read_bytes()).hexdigest()
+          print("expected =", expected)
+          print("actual   =", actual)
+          if actual != expected:
+              raise SystemExit("Frozen V4.1 engine MD5 mismatch")
+          PY
+
+      - name: Syntax check
+        run: |
+          python -m py_compile \
+            src/investment_os/v4_1_frozen/v4_scoring.py \
+            tests/v4_1_frozen/test_v4.py \
+            tests/test_sector_variants_v42.py \
+            src/regress_v42_r8_r9.py
+
+      - name: Run R8-R9
+        run: python src/regress_v42_r8_r9.py
+
+      - name: Commit regression evidence
+        run: |
+          git config user.name "investment-os-data-bridge[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            docs/V4_2_R8_R9_RECEIPT.json \
+            docs/V4_2_R8_R9_REGRESSION_REPORT.md \
+            docs/V4_2_R8_OUTPUT.txt \
+            docs/V4_1_REGRESSION_OUTPUT_R8_R9.txt
+
+          if git diff --cached --quiet; then
+            echo "No regression evidence changes to commit."
+            exit 1
+          fi
+
+          git commit -m "test: record V4.2 R8-R9 regression evidence"
+          git push
+
+      - name: Summary
+        run: |
+          echo "V4.2 R8/R9 regression PASS."
+          echo "No V4.2 real-data ranking was executed."
+          echo "System remains NOT LIVE."
