@@ -1,12 +1,16 @@
 """
-INVESTMENT OS V4.1 - motore di scoring di riferimento.
-Price-independent BQS + IOS disaccoppiato. Nessun parametro e' stato scelto osservando
+INVESTMENT OS V4.2 - motore di scoring pre-freeze.
+Derivato byte-for-byte dalla V4.1 salvo le modifiche V4.2 autorizzate e pre-registrate.\nPrice-independent BQS + IOS disaccoppiato. Nessun parametro e' stato scelto osservando
 l'effetto su una societa' specifica: ogni ancora ha una motivazione economica generale
 registrata in PARAM_REGISTER.
 V3 non e' toccato: questo modulo e' nuovo e separato.
 """
 from dataclasses import dataclass, field
 from typing import Optional, Dict, List, Any
+
+ENGINE_VERSION = "V4.2-PRE-FREEZE-1.0"
+GROWTH_POLICY = "G2_GUARDED_PER_SHARE"
+GROWTH_CAP = 0.15
 
 MISSING = None
 NA = "NOT_APPLICABLE"          # metrica non pertinente al modello di business
@@ -197,6 +201,32 @@ def bqs_confidence(bqs_cov, data_cov, status, metric_cov=100.0, provisional=()):
 # ---------------------------------------------------------------- IOS
 IOS_GATE = dict(min_bqs=60.0, min_data_coverage=70.0)
 
+def guarded_per_share_growth(revenue_cagr3, fcf_per_share_cagr3):
+    """V4.2 G2 growth policy, frozen before real-data ranking.
+
+    Growth credit exists only when revenue growth and per-share owner-cash growth agree.
+    Required input MISSING/NA/CONFLICTING stays unknown; it is never converted to zero.
+    """
+    bad = (None, NA, CONFLICTING)
+    if revenue_cagr3 in bad or fcf_per_share_cagr3 in bad:
+        return None
+    try:
+        r = float(revenue_cagr3)
+        fps = float(fcf_per_share_cagr3)
+    except (TypeError, ValueError):
+        return None
+    return min(max(r, 0.0), max(fps, 0.0), GROWTH_CAP)
+
+def _required_dilution(c):
+    """Dilution is a required IOS input in V4.2: MISSING is not zero."""
+    v = c.get("share_change")
+    if v in (None, NA, CONFLICTING):
+        return None
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return None
+
 def discount_rate(mod, net_debt_to_ocf, bqs_score):
     r = 0.095
     if mod in ("SEMICONDUCTOR","RESOURCES","MARKETPLACE_NETWORK"): r += 0.010
@@ -244,7 +274,7 @@ def ios(c: dict, bqs_score, bqs_cov):
     if (c.get("data_coverage_pct") or 0) < IOS_GATE["min_data_coverage"]: return None, {"gate": "coverage<70"}
     mod = c.get("module", "GENERAL"); variant = ios_variant(mod)
     mc = c.get("market_cap")
-    if mc in (None, 0): return None, {"gate": "market cap MISSING", "variant": variant}
+    if mc in (None, 0, NA, CONFLICTING): return None, {"gate": "market cap MISSING/CONFLICTING", "variant": variant}
     r = discount_rate(mod, c.get("net_debt_to_ocf"), bqs_score)
 
     if variant in ("IOS_BANK", "IOS_INSURANCE"):
@@ -258,7 +288,10 @@ def ios(c: dict, bqs_score, bqs_cov):
                               "variant": variant}
         bear = base * 0.75 if g > 0 else base * 0.80
         bull = base * 1.30
-        owner, dil = earnings, c.get("share_change") or 0.0
+        dil = _required_dilution(c)
+        if dil is None:
+            return None, {"gate": "share_change MISSING/CONFLICTING", "variant": variant}
+        owner = earnings
         exp_ret = owner / mc + min(g, 0.10) - max(0.0, dil)
         detail_extra = dict(variant=variant, basis="utile normalizzato su capitale proprio",
                             sustainable_growth=round(g, 4))
@@ -272,23 +305,54 @@ def ios(c: dict, bqs_score, bqs_cov):
         base = two_stage_dcf(affo, g, 5, 0.020, r)
         bear = two_stage_dcf(affo, max(0.0, g - 0.03), 5, 0.010, r + 0.01)
         bull = two_stage_dcf(affo, g + 0.02, 5, 0.025, r - 0.005)
-        owner, dil = affo, c.get("share_change") or 0.0
+        dil = _required_dilution(c)
+        if dil is None:
+            return None, {"gate": "share_change MISSING/CONFLICTING", "variant": variant}
+        owner = affo
         exp_ret = owner / mc + min(g, 0.06) - max(0.0, dil)
         detail_extra = dict(variant=variant, basis="AFFO", growth_used=round(g, 4))
     else:
         ocf, capex, sbc = c.get("ocf"), c.get("capex"), c.get("sbc")
-        if ocf is None: return None, {"gate": "cassa operativa MISSING", "variant": variant}
-        fcf = ocf - (capex or 0.0)
-        owner = fcf - (sbc or 0.0)                # owner earnings prudenziali (par. 12)
-        g = c.get("revenue_cagr3")
-        g = 0.0 if g in (None, NA, CONFLICTING) else max(0.0, min(g, 0.15))
-        dil = c.get("share_change") or 0.0
-        base = two_stage_dcf(owner, min(g, 0.12), 5, 0.025, r)
-        bear = two_stage_dcf(owner, max(0.0, min(g, 0.12) - 0.04), 5, 0.015, r + 0.01)
-        bull = two_stage_dcf(owner, min(g, 0.12) + 0.03, 5, 0.030, r - 0.005)
-        exp_ret = owner / mc + min(g, 0.10) - max(0.0, dil)
-        detail_extra = dict(variant=variant, basis="owner earnings = OCF - capex - SBC",
-                            fcf=fcf, growth_used=round(g, 4))
+        if ocf in (None, NA, CONFLICTING):
+            return None, {"gate": "cassa operativa MISSING/CONFLICTING", "variant": variant}
+        if capex in (None, NA, CONFLICTING):
+            return None, {"gate": "capex MISSING/CONFLICTING", "variant": variant}
+        if sbc in (None, NA, CONFLICTING):
+            return None, {"gate": "SBC MISSING/CONFLICTING", "variant": variant}
+
+        dil = _required_dilution(c)
+        if dil is None:
+            return None, {"gate": "share_change MISSING/CONFLICTING", "variant": variant}
+
+        fcf = ocf - capex
+        owner = fcf - sbc
+
+        g = guarded_per_share_growth(
+            c.get("revenue_cagr3"),
+            c.get("fcf_per_share_cagr3"),
+        )
+        if g is None:
+            return None, {
+                "gate": "guarded growth inputs MISSING/CONFLICTING",
+                "variant": variant,
+                "growth_policy": GROWTH_POLICY,
+            }
+
+        # V4.2: G2 can contribute up to 15% to expected return, but the DCF
+        # remains prudentially capped at the V4.1 12% first-stage growth.
+        dcf_g = min(g, 0.12)
+        base = two_stage_dcf(owner, dcf_g, 5, 0.025, r)
+        bear = two_stage_dcf(owner, max(0.0, dcf_g - 0.04), 5, 0.015, r + 0.01)
+        bull = two_stage_dcf(owner, dcf_g + 0.03, 5, 0.030, r - 0.005)
+        exp_ret = owner / mc + g - max(0.0, dil)
+        detail_extra = dict(
+            variant=variant,
+            basis="owner earnings = OCF - capex - SBC",
+            fcf=fcf,
+            growth_used=round(g, 4),
+            dcf_growth_used=round(dcf_g, 4),
+            growth_policy=GROWTH_POLICY,
+        )
 
     # ---- corpo comune: gli stessi cinque pesi costituzionali per ogni variante
     oy = owner / mc
