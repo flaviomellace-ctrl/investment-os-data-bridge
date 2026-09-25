@@ -1,0 +1,44 @@
+[PASS] R4 genuine inflection is eligible
+[PASS] R4 genuine inflection is high confidence
+[PASS] R4 mature compounder is not falsely called inflection
+[PASS] R4 one-off may meet raw floors but is not high confidence
+[PASS] R4 cash-quality flag blocks high-confidence inflection
+[PASS] R4 cyclical rebound flag blocks high-confidence inflection
+[PASS] R4 dilution-funded growth fails eligibility
+[PASS] R4 revenue without cash conversion fails eligibility
+[PASS] R4 cash growth with declining revenue fails eligibility
+[PASS] R4 only genuine synthetic inflection reaches high-confidence Lane I
+A_GENUINE_INFLECTION {'G0_V41_BASELINE': 0.1, 'G1_BLENDED': 0.15, 'G2_GUARDED_PER_SHARE': 0.15}
+B_MATURE_COMPOUNDER {'G0_V41_BASELINE': 0.09, 'G1_BLENDED': 0.099, 'G2_GUARDED_PER_SHARE': 0.09}
+C_ONE_OFF_FAKE_INFLECTION {'G0_V41_BASELINE': 0.05, 'G1_BLENDED': 0.15, 'G2_GUARDED_PER_SHARE': 0.05}
+D_WORKING_CAPITAL_OR_FLOAT_BOOST {'G0_V41_BASELINE': 0.1, 'G1_BLENDED': 0.15, 'G2_GUARDED_PER_SHARE': 0.1}
+E_CYCLICAL_REBOUND {'G0_V41_BASELINE': 0.06, 'G1_BLENDED': 0.15, 'G2_GUARDED_PER_SHARE': 0.06}
+F_DILUTION_FUNDED_GROWTH {'G0_V41_BASELINE': 0.1, 'G1_BLENDED': 0.15, 'G2_GUARDED_PER_SHARE': 0.06}
+G_REVENUE_WITHOUT_CASH {'G0_V41_BASELINE': 0.1, 'G1_BLENDED': 0.121, 'G2_GUARDED_PER_SHARE': 0.03}
+H_CASH_GROWTH_DECLINING_REVENUE {'G0_V41_BASELINE': 0.0, 'G1_BLENDED': 0.15, 'G2_GUARDED_PER_SHARE': 0.0}
+[PASS] R5 baseline misses at least one required synthetic behavior
+[PASS] R5 blended candidate has false-positive weakness
+[PASS] R5 guarded per-share treatment passes all pre-registered archetype behaviors
+[PASS] R5 G2 monotonic when both underlying growth rates rise
+[PASS] R5 G2 revenue-only acceleration receives no extra credit
+[PASS] R5 G2 cash-only acceleration receives no extra credit
+[PASS] R5 G2 hard cap is 15%
+[PASS] R5 G2 does not convert missing input into zero
+[PASS] R4 merge total remains 10
+[PASS] R4 merge takes first 7 valuation names
+[PASS] R4 merge dedupes and fills 3 distinct Lane-I slots
+[PASS] R4 insufficient Lane-I candidates backfill from valuation lane
+
+BAKEOFF_SCORES {'G0_V41_BASELINE': 5, 'G1_BLENDED': 2, 'G2_GUARDED_PER_SHARE': 8}
+PASS=22 FAIL=0
+R4/R5 SYNTHETIC SUITE PASSED
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.

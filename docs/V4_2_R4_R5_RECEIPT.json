@@ -1,0 +1,50 @@
+{
+  "schema": "investment_os_v4_2_r4_r5_receipt_v1.0",
+  "created_date": "2026-09-25",
+  "stage": "R4_R5_SYNTHETIC",
+  "status": "PASS",
+  "system_live": false,
+  "real_data_v42_ranking_executed": false,
+  "real_ticker_used_for_tuning": false,
+  "v4_1_modified": false,
+  "lane_source_sha256": "c45dbb85558919358a727c0dbe3d657d9cd9a41ea6987a51289374af69b55c3a",
+  "test_sha256": "b933c2d4fec7a9c3c774b618ad48bf2d9fe64d8ea63f2236c010249c275183f6",
+  "pass_lines": 22,
+  "fail_lines": 0,
+  "exit_code": 0,
+  "lane_i": {
+    "min_bqs": 60.0,
+    "min_revenue_cagr3": 0.05,
+    "min_fcf_cagr3": 0.15,
+    "min_fcf_per_share_cagr3": 0.12,
+    "min_cash_conversion": 0.75,
+    "max_share_change": 0.03,
+    "lane_v_quota": 7,
+    "lane_i_quota": 3,
+    "deep_dive_total": 10
+  },
+  "growth_bakeoff": {
+    "G0_V41_BASELINE": {
+      "score": 5,
+      "total": 8
+    },
+    "G1_BLENDED": {
+      "score": 2,
+      "total": 8
+    },
+    "G2_GUARDED_PER_SHARE": {
+      "score": 8,
+      "total": 8,
+      "selected": true
+    }
+  },
+  "selected_growth_formula": "min(max(revenue_cagr3,0), max(fcf_per_share_cagr3,0), 0.15)",
+  "engine_integration_authorized_now": false,
+  "next_gate": "R6_R7_QUALITY_OF_CASH_AND_COMMITMENTS",
+  "test_assertion_correction": {
+    "type": "EXPECTED_VALUE_FIX",
+    "implementation_changed": false,
+    "parameter_changed": false,
+    "detail": "Backfill expectation corrected from V9,V10 to V8,V9."
+  }
+}
