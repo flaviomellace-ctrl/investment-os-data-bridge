@@ -1,0 +1,40 @@
+[PASS] R6 reported OE = OCF-capex-SBC
+[PASS] R6 missing SBC is not zero
+[PASS] R6 clean normalization preserves OE
+[PASS] R6 clean normalization not material
+[PASS] R6 temporary reserve/float cash benefit is removed
+[PASS] R6 25% adjustment is material
+[PASS] R6 material cash-quality adjustment -> PROVISIONAL
+[PASS] R6 material cash-quality adjustment -> reconcile gate
+[PASS] R6 documented temporary negative drag may be added back
+[PASS] R6 incomplete normalization stays MISSING
+[PASS] R6 unprovenanced normalization input rejected
+[PASS] R6 working-capital anomaly without full quantification -> PROVISIONAL
+[PASS] R7 quantified uncovered commitment is summed
+[PASS] R7 already-in-debt commitment is not double counted
+[PASS] R7 quantified commitments alone do not auto-block
+[PASS] R7 commitment/OE ratio is diagnostic
+[PASS] R7 unquantified material commitment -> INVESTIGARE
+[PASS] R7 unquantified material commitment -> PROVISIONAL
+[PASS] R7 immaterial unresolved commitment does not auto-block
+[PASS] R7 gross debt/EBITDA computed
+[PASS] R7 net debt/EBITDA computed
+[PASS] R7 SBC-stress leverage computed
+[PASS] R7 SBC-stress at 3x -> CAUTION
+[PASS] R7 stress view remains explicitly secondary
+[PASS] R7 missing SBC does not become zero in leverage stress
+[PASS] R7 generic leverage stress is N/A for banks
+[PASS] R7 nonpositive EBITDA-after-SBC is indeterminate, not fabricated
+
+PASS=27 FAIL=0
+R6/R7 SYNTHETIC SUITE PASSED
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
