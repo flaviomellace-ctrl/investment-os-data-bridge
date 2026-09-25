@@ -1,0 +1,32 @@
+[PASS] R2-A triage candidate
+[PASS] R2-A true marketplace routes to MARKETPLACE_NETWORK
+[PASS] R2-B marketing language alone is not a candidate
+[PASS] R2-B SaaS keeps original module
+[PASS] R2-C principal economics not classified marketplace
+[PASS] R2-D agency network routes marketplace
+[PASS] R2-E insufficient evidence does not force marketplace
+[PASS] R2 primary-source requirement
+[PASS] R2-F definition drift -> CONFLICTING
+[PASS] R2 normalized take rate
+[PASS] R2 normalized EBITDA/volume
+[PASS] R2 normalized FCF/volume
+[PASS] R2 cohort retention accepted
+[PASS] R2 non-cohort retention -> MISSING
+[PASS] R2 scope mismatch -> CONFLICTING
+[PASS] R2 MISSING stays MISSING
+[PASS] R3 gross/net presentation does not alter marketplace scoring inputs
+[PASS] R3 accounting presentation can differ diagnostically
+[PASS] R2 classifier has no ticker/company-name parameter
+
+PASS=19 FAIL=0
+R2/R3 SYNTHETIC SUITE PASSED
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.

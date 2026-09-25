@@ -1,0 +1,17 @@
+{
+  "schema": "investment_os_v4_2_r2_r3_receipt_v1.0",
+  "created_date": "2026-09-25",
+  "system_live": false,
+  "stage": "R2_R3_SYNTHETIC",
+  "status": "PASS",
+  "classifier_sha256": "c4031e77f9baf8347b7c07f82decb8bf0e6b2209bae3d9f21c06c7a61b92d170",
+  "test_sha256": "d49adb5a9f330c87cbfb970ec8a334785a9100835db1b60da79829a9ea89e579",
+  "pass_lines": 19,
+  "fail_lines": 0,
+  "exit_code": 0,
+  "real_data_ranking_executed": false,
+  "real_ticker_used_in_tests": false,
+  "bqs_ios_weights_modified": false,
+  "v4_1_modified": false,
+  "next_gate": "R4_R5_INFLECTION_SYNTHETIC_AND_GROWTH_BAKEOFF"
+}
