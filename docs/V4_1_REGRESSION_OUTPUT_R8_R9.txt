@@ -1,0 +1,50 @@
+[PASS] T1 BQS price-independent — 78.0 == 78.0
+[PASS] T2 MISSING != 0 — missing 77.8 vs zero 68.8 (pieno 78.0)
+[PASS] T2b la ridistribuzione e' tracciata dalla copertura metrica — metric coverage 87.8% vs 100.0%
+[PASS] T2c molte metriche mancanti -> PROVISIONAL — metric coverage 76.5%, componenti provisional ['economics']
+[PASS] T3 banca valutata senza metriche non pertinenti — BQS 80.8, economics 21.13, coverage 100.0%
+[PASS] T3b utility: FCF NOT_APPLICABLE senza penalita' arbitraria — BQS 65.3
+[PASS] T4 invarianza presentazione lordo/netto (V4) — delta economics V4 = 0.00 punti
+[PASS] T4b la stessa coppia sotto la lente V3 divergeva — delta economics V3 = 13.39 punti
+[PASS] T5 effetto base rilevato — ['BASE_EFFECT_SUSPECTED', 'PRIOR_YEAR_ONE_OFF_SUSPECTED']
+[PASS] T5b nessun falso positivo su crescita regolare — []
+[PASS] T5c la crescita non dipende dallo YoY dell'utile netto — runway identico: guidato dai CAGR
+[PASS] T6 IOS calcolato per BQS>=60 fuori dalla Top 30 — BQS 65.1 -> IOS 94.8
+[PASS] T6b sotto BQS 60 nessun IOS — BQS 8.4, gate BQS<60
+[PASS] T7 riga difettosa riparata prima di marcarla — PRESENT
+[PASS] T7b riparazione fallita -> CONFLICTING, non zero
+[PASS] T8 buyback accrescitivo premiato sopra la semplice compensazione — 14.09 vs 5.69
+[PASS] T9 determinismo
+[PASS] T10 nessun BUY se NOT LIVE
+[PASS] T10b nessun BUY senza Decision Gate
+[PASS] T10c nessun BUY con red flag irrisolta
+[PASS] T10d nessun BUY con conflitto dati
+[PASS] T10e con tutte le condizioni il gate apre
+[PASS] T11 optionality non muove il BQS
+[PASS] T11b optionality obbliga la verifica qualitativa
+[PASS] T12 tutti i parametri motivati — 35 parametri
+[PASS] T13 archetipo eccezionale nella banda >=90 — BQS 99.6
+[PASS] T13b archetipo sulle ancore 'buona qualita' nella banda 70-79 — BQS 76.2
+[PASS] T13c archetipo mediocre sotto 60 — BQS 15.6
+[PASS] T14 ogni ancora 'mid' e' compresa fra lo e hi — []
+[PASS] T14b ogni parametro ha l'ancora di banda — []
+[PASS] T15 instradamento delle varianti IOS
+[PASS] T15b banca senza book value/ROE-crescita: nessun IOS via OCF-capex-SBC — BQS 85.3, gate book value / ROE / crescita sostenibile MISSING
+[PASS] T15c banca valutata sul capitale proprio, non sull'OCF — IOS 57.0, base 'utile normalizzato su capitale proprio'
+[PASS] T15d la SBC non e' sottratta due volte all'utile GAAP di una banca — owner 3.920e+09
+[PASS] T15e assicuratore: IOS ancorato al capitale, combined ratio richiesto — IOS 66.7
+[PASS] T15f assicuratore senza combined ratio: nessun IOS, non un IOS approssimato — combined ratio MISSING: sottoscrizione non valutabile
+[PASS] T15g REIT senza AFFO: nessun IOS via FCF (capex sviluppo != manutenzione) — AFFO MISSING: FFO e capex di manutenzione non separati
+[PASS] T15h REIT valutato su AFFO — IOS 31.2
+[PASS] T16 percorso GENERAL invariato: owner earnings = OCF - capex - SBC — IOS 88.2
+[PASS] T17a componente con copertura 0% -> PROVISIONAL — provisional=['balance']
+[PASS] T17a2 la confidence recepisce la componente vuota
+[PASS] T17a3 piu' componenti vuote sono tutte segnalate — provisional=['runway', 'balance']
+[PASS] T17b componente parzialmente coperta sotto il 60% -> PROVISIONAL — economics 8/25 = 32% del peso applicabile
+[PASS] T17c componente coperta a sufficienza -> nessun PROVISIONAL — economics 22/25 = 88%, provisional=[]
+[PASS] T17c2 componente con metriche NOT_APPLICABLE non e' PROVISIONAL — provisional=[]
+[PASS] T17d punteggi invariati sugli archetipi completamente coperti — golden {'BASE': 78.0, 'ECC': 99.6, 'ANC': 76.2, 'MED': 15.6} — scostamenti: nessuno
+[PASS] T17d2 gli archetipi completamente coperti non hanno componenti PROVISIONAL
+[PASS] T17d3 la correzione non tocca il punteggio, solo la confidence — il punteggio con componente vuota resta calcolato sulle componenti disponibili
+
+TUTTI I TEST PASSATI

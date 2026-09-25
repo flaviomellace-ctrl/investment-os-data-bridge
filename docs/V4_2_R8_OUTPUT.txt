@@ -1,0 +1,24 @@
+[PASS] R8 GENERAL -> IOS_GENERAL
+[PASS] R8 SOFTWARE -> IOS_GENERAL
+[PASS] R8 MARKETPLACE_NETWORK -> IOS_GENERAL
+[PASS] R8 BANK -> IOS_BANK
+[PASS] R8 ASSETMGR_EXCH -> IOS_BANK
+[PASS] R8 INSURANCE -> IOS_INSURANCE
+[PASS] R8 REIT -> IOS_REIT
+[PASS] R8 marketplace economics include EBITDA/volume
+[PASS] R8 marketplace economics include FCF/volume
+[PASS] R8 marketplace economics include take rate
+[PASS] R8 marketplace economics exclude op-margin scoring
+[PASS] R8 marketplace receives model-risk premium
+[PASS] R8 general base discount unchanged
+[PASS] R8 bank without book-value basis cannot fall back to general OCF IOS
+[PASS] R8 bank with required capital inputs is calculable
+[PASS] R8 bank basis remains normalized equity earnings
+[PASS] R8 insurer with combined ratio uses IOS_INSURANCE
+[PASS] R8 insurer missing combined ratio gets no approximated IOS
+[PASS] R8 REIT without AFFO cannot use general owner earnings
+[PASS] R8 REIT with AFFO uses IOS_REIT
+[PASS] R8 REIT basis remains AFFO
+
+PASS=21 FAIL=0
+R8 SECTOR-VARIANT REGRESSION PASSED
