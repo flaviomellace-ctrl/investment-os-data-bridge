@@ -1,0 +1,47 @@
+[PASS] I1 V4.2 engine has explicit version
+[PASS] I2 V4.2 growth policy is G2
+[PASS] I3.1 BQS parity V4.1==V4.2
+[PASS] I3.2 BQS parity V4.1==V4.2
+[PASS] I3.3 BQS parity V4.1==V4.2
+[PASS] I3.4 BQS parity V4.1==V4.2
+[PASS] I4 G2 genuine 16% revenue / 27% FCF-share -> 15%
+[PASS] I5 G2 revenue-only acceleration gets no extra credit
+[PASS] I6 G2 cash-only acceleration gets no extra credit
+[PASS] I7 G2 missing stays unknown
+[PASS] I8 GENERAL IOS remains calculable with complete inputs
+[PASS] I9 GENERAL detail reports G2 policy
+[PASS] I10 GENERAL DCF growth retains 12% prudential cap
+[PASS] I11 BQS unchanged on genuine inflection
+[PASS] I12 V4.2 recognizes 15% guarded growth
+[PASS] I13 V4.2 expected return exceeds V4.1 when both growth signals support it
+[PASS] I14 capex MISSING blocks GENERAL IOS instead of becoming zero
+[PASS] I14 sbc MISSING blocks GENERAL IOS instead of becoming zero
+[PASS] I14 share_change MISSING blocks GENERAL IOS instead of becoming zero
+[PASS] I14 fcf_per_share_cagr3 MISSING blocks GENERAL IOS instead of becoming zero
+[PASS] I15 BANK BQS parity
+[PASS] I16 BANK IOS numeric parity
+[PASS] I17 BANK IOS variant parity
+[PASS] I15 INSURANCE BQS parity
+[PASS] I16 INSURANCE IOS numeric parity
+[PASS] I17 INSURANCE IOS variant parity
+[PASS] I15 REIT BQS parity
+[PASS] I16 REIT IOS numeric parity
+[PASS] I17 REIT IOS variant parity
+[PASS] I18 BANK missing dilution is not zero
+[PASS] I18 INSURANCE missing dilution is not zero
+[PASS] I18 REIT missing dilution is not zero
+[PASS] I19 NOT LIVE still blocks BUY
+[PASS] I20 unresolved red flag still blocks BUY
+
+PASS=34 FAIL=0
+V4.2 ENGINE INTEGRATION SYNTHETIC SUITE PASSED
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.

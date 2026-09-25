@@ -1,0 +1,32 @@
+{
+  "schema": "investment_os_v4_2_engine_integration_candidate_v1.0",
+  "created_date": "2026-09-25",
+  "status": "PASS",
+  "system_live": false,
+  "real_data_v42_ranking_executed": false,
+  "v4_1_modified": false,
+  "v4_1_engine_md5": "68f626974592915d6c2a8e6583d6c77b",
+  "v4_2_engine_md5": "232ac18be2ada2d3a6ef97b0d4308b7b",
+  "v4_2_engine_sha256": "cbdb4e24173638d8377422f13094020090b2253fa1566a7e06374da32348ed6e",
+  "integration_test_sha256": "453f1c3ff931c7907903ac967546db5776f71a308002b704df8a29377e7a67b2",
+  "v41_regression": {
+    "pass": 48,
+    "fail": 0,
+    "exit_code": 0
+  },
+  "v42_integration_regression": {
+    "pass": 34,
+    "fail": 0,
+    "exit_code": 0
+  },
+  "authorized_changes": [
+    "G2 guarded per-share growth in IOS_GENERAL",
+    "strict OCF/capex/SBC required inputs",
+    "strict share_change required input",
+    "market_cap conflict gate"
+  ],
+  "bqs_changed": false,
+  "ios_weights_changed": false,
+  "sector_variant_formulas_changed": false,
+  "next_gate": "UPLOAD_AND_RUN_V4_2_ENGINE_INTEGRATION_SYNTHETIC_WORKFLOW"
+}
