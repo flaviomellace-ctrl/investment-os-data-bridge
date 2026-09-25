@@ -1,0 +1,27 @@
+{
+  "schema": "investment_os_v4_2_r0_r1_receipt_v1.0",
+  "created_date": "2026-09-25",
+  "system_live": false,
+  "r0": {
+    "status": "PASS",
+    "engine_md5_expected": "68f626974592915d6c2a8e6583d6c77b",
+    "engine_md5_observed": "68f626974592915d6c2a8e6583d6c77b",
+    "engine_sha256_observed": "91ce6231e8070a6fea10d2f025d3d60256ee418ff5ddeedd0215198171c13fc9",
+    "canonical_sha256_from_freeze_receipt": "d2207e92bbe6cc0ef883db6a54d93ac965b08da487741b4de8e2459ed6282f45",
+    "quant_freeze_run_id": "36045268572",
+    "canonical_rows": 504,
+    "canonical_parts": 50,
+    "t20_byte_identical": true,
+    "market_cap_reconstructed_from_bridge_shares": false
+  },
+  "r1": {
+    "status": "PASS",
+    "test_v4_sha256": "4c095a89db80b8206760f8f7c4cc817abfa1b72a14743b58f51c9c0aa38101b1",
+    "exit_code": 0,
+    "pass_lines": 48,
+    "all_tests_marker": true
+  },
+  "no_v4_2_real_ranking_executed": true,
+  "no_real_ticker_used_for_parameter_tuning": true,
+  "v4_1_modified": false
+}
