@@ -1,0 +1,53 @@
+name: V4.2 R10B Primary Source Recovery
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: v4-2-r10b-primary-source-recovery
+  cancel-in-progress: false
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Syntax and synthetic tests
+        run: |
+          python -m py_compile src/r10b_primary_source_recovery.py
+          python tests/test_r10b_primary_source_recovery.py
+      - name: Verify SEC contact secret exists
+        env:
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+        run: |
+          python - <<'PY'
+          import os
+          e=os.getenv("SEC_CONTACT_EMAIL","").strip()
+          if "@" not in e: raise SystemExit("SEC_CONTACT_EMAIL secret missing")
+          print("SEC contact secret present")
+          PY
+      - name: Run primary-source recovery
+        env:
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+        run: python src/r10b_primary_source_recovery.py
+      - name: Commit immutable R10B candidate
+        run: |
+          git config user.name "investment-os-data-bridge[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          OUT="data/v4_2/r10b/${GITHUB_RUN_ID}"
+          test -f "${OUT}/V4_2_R10B_RECEIPT.json"
+          test -f "${OUT}/V4_2_R10B_CANDIDATE_FUNDAMENTALS.csv"
+          git add "${OUT}"
+          if git diff --cached --quiet; then exit 1; fi
+          git commit -m "v4.2: freeze R10B primary-source recovery ${GITHUB_RUN_ID}"
+          git push
+      - name: Summary
+        run: |
+          echo "R10B candidate frozen."
+          echo "No engine changes. No ranking recomputation. data/current unchanged."
+          echo "System remains NOT LIVE."
