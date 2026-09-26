@@ -1,0 +1,40 @@
+{
+  "schema": "investment_os_v4_2_r10c_receipt_v1.0",
+  "stage": "R10C_FROZEN_ENGINE_RERUN_ON_R10B_CANDIDATE",
+  "run_id": "36268612607",
+  "frozen": true,
+  "system_live": false,
+  "engine_modified": false,
+  "fresh_market_data_used": false,
+  "validation_material_used": false,
+  "post_result_tuning_authorized": false,
+  "r10b_candidate_sha256": "979914c918cdd5771409bca679ce8e84f3224bb602ed36c0e1dcfb71fbd920c6",
+  "r10b_provenance_sha256": "1eb6937ff390a9dad591f87d816c01e56333e99a8e4c93ab3e66707862bad224",
+  "v42_engine_sha256": "cbdb4e24173638d8377422f13094020090b2253fa1566a7e06374da32348ed6e",
+  "pre_run_checks": {
+    "r10_comparison_sha": true,
+    "candidate_sha": true,
+    "provenance_sha": true,
+    "r10b_frozen": true,
+    "r10b_candidate_sha": true,
+    "engine_sha": true,
+    "manifest_engine_sha": true,
+    "manifest_frozen": true,
+    "canonical_immutable": true
+  },
+  "outputs": {
+    "V4_2_R10C_FULL_COMPARISON.csv": {
+      "sha256": "7069635e5bf147ba0f8078ca4df8288fbb20f3c573d668de285caa89b83fc2c0",
+      "bytes": 54782
+    },
+    "V4_2_R10C_AGGREGATES.json": {
+      "sha256": "93dba6a4dfa741d5b97e19fbb6212e3454c0da0553418f2bd1f3d06165a9b556",
+      "bytes": 1846
+    },
+    "V4_2_R10C_REPORT.md": {
+      "sha256": "a892a096a8f630a95f21a9d0d5d978504838d5d9760e359c830bf10ef0a119a7",
+      "bytes": 797
+    }
+  },
+  "next_gate": "BR09_AND_R6_R7_REAL_OVERLAYS_BEFORE_INDEPENDENT_BLIND_VALIDATION"
+}
