@@ -1,0 +1,20 @@
+{
+  "schema": "investment_os_v4_2_r10b_aggregates_v1.0",
+  "run_id": "36265893463",
+  "system_live": false,
+  "engine_modified": false,
+  "ranking_recomputed": false,
+  "data_current_modified": false,
+  "source": "SEC_COMPANYFACTS_PRIMARY",
+  "source_queue_rows": 136,
+  "rows_touched": 0,
+  "direct_primary_fills": 0,
+  "direct_fills_by_field": {},
+  "derived_fills": 0,
+  "derived_fills_by_field": {},
+  "provenance_rows": 0,
+  "unresolved_items": 0,
+  "fetch_failures": 136,
+  "candidate_sha256": "9ca5724ce08f150281ba45fa63b3f785ac6f081112c18fecdd90d7f0508c4207",
+  "canonical_sha256_after_run": "d2207e92bbe6cc0ef883db6a54d93ac965b08da487741b4de8e2459ed6282f45"
+}
