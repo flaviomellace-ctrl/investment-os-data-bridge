@@ -1,0 +1,39 @@
+name: V4.2 R10D Real Overlays
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: v4-2-r10d-real-overlays
+  cancel-in-progress: false
+jobs:
+  overlays:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Syntax check
+        run: python -m py_compile src/r10d_real_overlays.py
+      - name: Run R10D real overlays
+        env:
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+        run: python src/r10d_real_overlays.py
+      - name: Commit immutable R10D evidence
+        run: |
+          git config user.name "investment-os-data-bridge[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          OUT="data/v4_2/r10d/${GITHUB_RUN_ID}"
+          test -f "${OUT}/V4_2_R10D_RECEIPT.json"
+          git add "${OUT}"
+          if git diff --cached --quiet; then exit 1; fi
+          git commit -m "v4.2: freeze R10D real overlays ${GITHUB_RUN_ID}"
+          git push
+      - name: Summary
+        run: |
+          echo "R10D frozen. No ranking/model changes."
+          echo "System remains NOT LIVE."
