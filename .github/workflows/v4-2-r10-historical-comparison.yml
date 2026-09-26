@@ -1,0 +1,77 @@
+name: V4.2 R10 Historical Comparison
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: v4-2-r10-historical-comparison
+  cancel-in-progress: false
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify frozen V4.2 engine manifest
+        run: |
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          m=json.loads(Path("docs/V4_2_ENGINE_MANIFEST.json").read_text())
+          p=Path("src/investment_os/v4_2/v4_scoring.py")
+          sha=hashlib.sha256(p.read_bytes()).hexdigest()
+          md5=hashlib.md5(p.read_bytes()).hexdigest()
+          assert m["frozen"] is True
+          assert m["real_data_v42_ranking_executed"] is False
+          assert sha == "cbdb4e24173638d8377422f13094020090b2253fa1566a7e06374da32348ed6e"
+          assert md5 == "232ac18be2ada2d3a6ef97b0d4308b7b"
+          print("V4.2 engine seal PASS")
+          print("sha256 =",sha)
+          print("md5 =",md5)
+          PY
+
+      - name: Syntax check R10
+        run: python -m py_compile src/r10_compare_v41_v42.py
+
+      - name: Run first frozen real-data V4.2 comparison
+        run: python src/r10_compare_v41_v42.py
+
+      - name: Commit immutable R10 evidence
+        run: |
+          git config user.name "investment-os-data-bridge[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          OUT="data/v4_2/r10/${GITHUB_RUN_ID}"
+          test -f "${OUT}/V4_2_R10_RECEIPT.json"
+          test -f "${OUT}/V4_2_R10_FULL_COMPARISON.csv"
+
+          git add "${OUT}"
+
+          if git diff --cached --quiet; then
+            echo "No R10 evidence changes to commit."
+            exit 1
+          fi
+
+          git commit -m "v4.2: freeze R10 historical comparison ${GITHUB_RUN_ID}"
+          git push
+
+      - name: Summary
+        run: |
+          echo "V4.2 R10 historical comparison frozen."
+          echo "No post-result tuning is authorized."
+          echo "BR-09 and real R6/R7 overlays remain pending before new blind validation."
+          echo "System remains NOT LIVE."
