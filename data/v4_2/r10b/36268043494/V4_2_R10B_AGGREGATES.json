@@ -1,0 +1,37 @@
+{
+  "schema": "investment_os_v4_2_r10b_aggregates_v1.0",
+  "run_id": "36268043494",
+  "system_live": false,
+  "engine_modified": false,
+  "ranking_recomputed": false,
+  "data_current_modified": false,
+  "source": "SEC_COMPANYFACTS_PRIMARY",
+  "source_queue_rows": 136,
+  "rows_touched": 98,
+  "direct_primary_fills": 244,
+  "direct_fills_by_field": {
+    "annual_capex": 1,
+    "annual_diluted_shares": 55,
+    "annual_revenue": 16,
+    "annual_sbc": 33,
+    "fy_minus_3_capex": 6,
+    "fy_minus_3_diluted_shares": 57,
+    "fy_minus_3_operating_cash_flow": 4,
+    "fy_minus_3_revenue": 16,
+    "prior_diluted_shares": 56
+  },
+  "derived_fills": 167,
+  "derived_fills_by_field": {
+    "annual_fcf": 1,
+    "diluted_shares_yoy": 55,
+    "fcf_cagr3": 5,
+    "fcf_per_share_cagr3": 47,
+    "revenue_cagr3": 17,
+    "sbc_to_revenue": 42
+  },
+  "provenance_rows": 411,
+  "unresolved_items": 105,
+  "fetch_failures": 0,
+  "candidate_sha256": "979914c918cdd5771409bca679ce8e84f3224bb602ed36c0e1dcfb71fbd920c6",
+  "canonical_sha256_after_run": "d2207e92bbe6cc0ef883db6a54d93ac965b08da487741b4de8e2459ed6282f45"
+}
