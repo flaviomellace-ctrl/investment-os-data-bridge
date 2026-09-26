@@ -1,0 +1,38 @@
+name: V4.2 R10C Frozen Engine Rerun
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: v4-2-r10c-frozen-engine-rerun
+  cancel-in-progress: false
+jobs:
+  rerun:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Syntax check
+        run: python -m py_compile src/r10c_frozen_engine_rerun.py
+      - name: Run R10C
+        run: python src/r10c_frozen_engine_rerun.py
+      - name: Commit immutable R10C evidence
+        run: |
+          git config user.name "investment-os-data-bridge[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          OUT="data/v4_2/r10c/${GITHUB_RUN_ID}"
+          test -f "${OUT}/V4_2_R10C_RECEIPT.json"
+          git add "${OUT}"
+          if git diff --cached --quiet; then exit 1; fi
+          git commit -m "v4.2: freeze R10C engine rerun ${GITHUB_RUN_ID}"
+          git push
+      - name: Summary
+        run: |
+          echo "R10C frozen."
+          echo "Same V4.2 engine; no fresh market data; no model tuning."
+          echo "System remains NOT LIVE."
