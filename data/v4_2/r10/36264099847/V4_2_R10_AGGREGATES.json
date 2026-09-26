@@ -1,0 +1,123 @@
+{
+  "schema": "investment_os_v4_2_r10_aggregates_v1.0",
+  "run_id": "36264099847",
+  "scope": "HISTORICAL_ENGINE_AND_DISCOVERY_NUMERIC_COMPARISON",
+  "system_live": false,
+  "real_data_v42_ranking_executed": true,
+  "fresh_market_data_used": false,
+  "frozen_v41_market_snapshot_used": true,
+  "marketplace_documentary_routing_applied": false,
+  "cash_quality_real_overlay_complete": false,
+  "commitments_real_overlay_complete": false,
+  "universe_rows": 504,
+  "bqs_gate_pool": 347,
+  "v41_ios_numeric": 309,
+  "v42_ios_numeric": 159,
+  "ios_pool_loss_fraction": 0.485437,
+  "matched_numeric": 159,
+  "ios_delta_matched": {
+    "mean": -0.1352,
+    "median": 0.0,
+    "p05": -16.27,
+    "p95": 15.4,
+    "min": -41.8,
+    "max": 16.7
+  },
+  "v41_numeric_to_v42_blocked": 150,
+  "blocked_reasons": {
+    "SBC MISSING/CONFLICTING": 40,
+    "capex MISSING/CONFLICTING": 22,
+    "guarded growth inputs MISSING/CONFLICTING": 38,
+    "share_change MISSING/CONFLICTING": 50
+  },
+  "top20_overlap_count": 8,
+  "top20_jaccard": 0.25,
+  "top10_overlap_count": 2,
+  "spearman_common_numeric": 0.911358,
+  "lane_i_pre_diagnostic_count": 34,
+  "lane_i_breadth_fraction": 0.097983,
+  "diagnostic_queue_count": 10,
+  "module_stats": {
+    "ASSETMGR_EXCH": {
+      "universe": 19,
+      "v41_ios_numeric": 13,
+      "v42_ios_numeric": 10,
+      "matched": 10,
+      "mean_ios_delta_matched": 0.0
+    },
+    "BANK": {
+      "universe": 20,
+      "v41_ios_numeric": 7,
+      "v42_ios_numeric": 7,
+      "matched": 7,
+      "mean_ios_delta_matched": 0.0
+    },
+    "GENERAL": {
+      "universe": 216,
+      "v41_ios_numeric": 143,
+      "v42_ios_numeric": 72,
+      "matched": 72,
+      "mean_ios_delta_matched": -2.4694
+    },
+    "INDUSTRIAL": {
+      "universe": 39,
+      "v41_ios_numeric": 26,
+      "v42_ios_numeric": 10,
+      "matched": 10,
+      "mean_ios_delta_matched": 4.26
+    },
+    "INSURANCE": {
+      "universe": 29,
+      "v41_ios_numeric": 0,
+      "v42_ios_numeric": 0,
+      "matched": 0,
+      "mean_ios_delta_matched": null
+    },
+    "REIT": {
+      "universe": 30,
+      "v41_ios_numeric": 0,
+      "v42_ios_numeric": 0,
+      "matched": 0,
+      "mean_ios_delta_matched": null
+    },
+    "RESOURCES": {
+      "universe": 21,
+      "v41_ios_numeric": 14,
+      "v42_ios_numeric": 6,
+      "matched": 6,
+      "mean_ios_delta_matched": -0.5667
+    },
+    "SEMICONDUCTOR": {
+      "universe": 39,
+      "v41_ios_numeric": 31,
+      "v42_ios_numeric": 22,
+      "matched": 22,
+      "mean_ios_delta_matched": 1.6273
+    },
+    "SOFTWARE": {
+      "universe": 49,
+      "v41_ios_numeric": 43,
+      "v42_ios_numeric": 30,
+      "matched": 30,
+      "mean_ios_delta_matched": 2.71
+    },
+    "UNKNOWN": {
+      "universe": 5,
+      "v41_ios_numeric": 0,
+      "v42_ios_numeric": 0,
+      "matched": 0,
+      "mean_ios_delta_matched": null
+    },
+    "UTILITY": {
+      "universe": 37,
+      "v41_ios_numeric": 32,
+      "v42_ios_numeric": 2,
+      "matched": 2,
+      "mean_ios_delta_matched": 0.0
+    }
+  },
+  "alerts": [
+    "MAJOR_IOS_NUMERIC_POOL_LOSS"
+  ],
+  "review_status": "MAJOR_REVIEW"
+}

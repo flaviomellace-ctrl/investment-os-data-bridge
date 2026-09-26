@@ -1,0 +1,59 @@
+{
+  "schema": "investment_os_v4_2_r10_receipt_v1.0",
+  "stage": "R10_HISTORICAL_V41_COMPARISON",
+  "run_id": "36264099847",
+  "frozen": true,
+  "system_live": false,
+  "real_data_v42_ranking_executed": true,
+  "post_result_tuning_authorized": false,
+  "fresh_market_data_used": false,
+  "validation_material_used": false,
+  "canonical_sha256": "d2207e92bbe6cc0ef883db6a54d93ac965b08da487741b4de8e2459ed6282f45",
+  "v41_ranking_sha256": "fe6aa604ca9529e2ffa53927581c509e213dc0d034072e6508a6c3ae0d1542b0",
+  "v41_market_snapshot_sha256": "8d446fcdc0c6715d75746433840962dfb163874c7daccca95cad945cfdc9552d",
+  "v42_engine_sha256": "cbdb4e24173638d8377422f13094020090b2253fa1566a7e06374da32348ed6e",
+  "v42_engine_md5": "232ac18be2ada2d3a6ef97b0d4308b7b",
+  "pre_run_checks": {
+    "canonical_sha": true,
+    "v41_ranking_sha": true,
+    "v41_market_sha": true,
+    "v42_engine_sha": true,
+    "v42_engine_md5": true,
+    "engine_manifest_frozen": true,
+    "manifest_engine_sha": true,
+    "manifest_real_ranking_false_before_run": true,
+    "manifest_bqs_unchanged": true,
+    "manifest_ios_weights_unchanged": true,
+    "v41_receipt_canonical_sha": true
+  },
+  "aggregate_review_status": "MAJOR_REVIEW",
+  "alerts": [
+    "MAJOR_IOS_NUMERIC_POOL_LOSS"
+  ],
+  "marketplace_documentary_routing_applied": false,
+  "cash_quality_real_overlay_complete": false,
+  "commitments_real_overlay_complete": false,
+  "outputs": {
+    "V4_2_R10_FULL_COMPARISON.csv": {
+      "sha256": "6ad6979068054c173726b849e71f22552c181483ea4075b99cea9db0a6b7bf71",
+      "bytes": 100633
+    },
+    "V4_2_R10_LANE_I_PRE_DIAGNOSTIC.csv": {
+      "sha256": "76627147f928ad04699651d9f1815c915540978f7053499a976d07e9950a6ac3",
+      "bytes": 6481
+    },
+    "V4_2_R10_DIAGNOSTIC_QUEUE.csv": {
+      "sha256": "3781ba992314015360417681cc2dc4fbe3ed3b4b76d7d7a9adfd38635b5618f7",
+      "bytes": 926
+    },
+    "V4_2_R10_AGGREGATES.json": {
+      "sha256": "b7802efe8bb43444de0c535729bcc97c4f454e79bff2c52605caf000fdf14154",
+      "bytes": 3101
+    },
+    "V4_2_R10_REPORT.md": {
+      "sha256": "610b5d8c50c9b59715b489c3cd4ea768581584f7d82f07a5a8654a85834a731e",
+      "bytes": 1945
+    }
+  },
+  "next_gate": "REAL_DATA_OVERLAYS_BR09_R6_R7_BEFORE_NEW_BLIND_VALIDATION"
+}
