@@ -1,0 +1,54 @@
+{
+  "schema": "investment_os_v4_2_r10a_aggregates_v1.0",
+  "run_id": "36265062577",
+  "system_live": false,
+  "engine_modified": false,
+  "ranking_recomputed": false,
+  "external_data_fetched": false,
+  "data_current_modified": false,
+  "blocked_rows_audited": 150,
+  "repair_class_counts": {
+    "ECONOMICALLY_NONCOMPUTABLE_FROM_EXISTING_SERIES": 14,
+    "MULTI_CAUSE": 17,
+    "SOURCE_RECOVERY_REQUIRED": 119
+  },
+  "root_cause_occurrences": {
+    "CAPEX_SUPPORTED_XBRL_TAG_NOT_FOUND": 22,
+    "FCF_PER_SHARE_CAGR_CURRENT_CAPEX_MISSING": 22,
+    "FCF_PER_SHARE_CAGR_CURRENT_DILUTED_SHARES_MISSING": 61,
+    "FCF_PER_SHARE_CAGR_FY_MINUS_3_CAPEX_MISSING": 25,
+    "FCF_PER_SHARE_CAGR_FY_MINUS_3_DILUTED_SHARES_MISSING": 67,
+    "FCF_PER_SHARE_CAGR_FY_MINUS_3_OCF_MISSING": 14,
+    "FCF_PER_SHARE_CAGR_NONPOSITIVE_ENDPOINT": 31,
+    "REVENUE_CAGR_CURRENT_REVENUE_MISSING": 18,
+    "REVENUE_CAGR_FY_MINUS_3_REVENUE_MISSING": 24,
+    "SBC_SUPPORTED_XBRL_TAG_NOT_FOUND": 48,
+    "SHARE_CHANGE_CURRENT_DILUTED_SHARES_MISSING": 64,
+    "SHARE_CHANGE_PRIOR_DILUTED_SHARES_MISSING": 64
+  },
+  "deterministic_repair_code_occurrences": {},
+  "source_recovery_code_occurrences": {
+    "CAPEX_SUPPORTED_XBRL_TAG_NOT_FOUND": 22,
+    "FCF_PER_SHARE_CAGR_CURRENT_CAPEX_MISSING": 22,
+    "FCF_PER_SHARE_CAGR_CURRENT_DILUTED_SHARES_MISSING": 61,
+    "FCF_PER_SHARE_CAGR_FY_MINUS_3_CAPEX_MISSING": 25,
+    "FCF_PER_SHARE_CAGR_FY_MINUS_3_DILUTED_SHARES_MISSING": 67,
+    "FCF_PER_SHARE_CAGR_FY_MINUS_3_OCF_MISSING": 14,
+    "REVENUE_CAGR_CURRENT_REVENUE_MISSING": 18,
+    "REVENUE_CAGR_FY_MINUS_3_REVENUE_MISSING": 24,
+    "SBC_SUPPORTED_XBRL_TAG_NOT_FOUND": 48,
+    "SHARE_CHANGE_CURRENT_DILUTED_SHARES_MISSING": 64,
+    "SHARE_CHANGE_PRIOR_DILUTED_SHARES_MISSING": 64
+  },
+  "noncomputable_code_occurrences": {
+    "FCF_PER_SHARE_CAGR_NONPOSITIVE_ENDPOINT": 31
+  },
+  "rows_with_deterministic_repair_candidate": 0,
+  "rows_requiring_primary_source_recovery": 136,
+  "rows_with_economically_noncomputable_series": 31,
+  "unexplained_rows": 0,
+  "review_status": "RECONCILIATION_REQUIRED",
+  "decision_flags": [
+    "PRIMARY_SOURCE_RECOVERY_REQUIRED"
+  ]
+}
