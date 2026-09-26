@@ -14,7 +14,7 @@ No BQS/IOS formula changes. No BUY/ADD. No fresh market data. No validation targ
 """
 
 from __future__ import annotations
-import csv,gzip,hashlib,html,json,math,os,re,time,urllib.request,zlib
+import csv,gzip,hashlib,html,json,math,os,re,sys,time,urllib.request,zlib
 from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any,Dict,List,Optional,Sequence
@@ -98,7 +98,13 @@ def num(v):
     except:return None
     return x if math.isfinite(x) else None
 def load(name,p):
-    sp=importlib.util.spec_from_file_location(name,p);m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m);return m
+    sp=importlib.util.spec_from_file_location(name,p)
+    if sp is None or sp.loader is None:
+        raise RuntimeError(f"cannot import {p}")
+    m=importlib.util.module_from_spec(sp)
+    sys.modules[name]=m
+    sp.loader.exec_module(m)
+    return m
 def cik10(v):
     try:return str(int(float(str(v).strip()))).zfill(10)
     except:return ""
