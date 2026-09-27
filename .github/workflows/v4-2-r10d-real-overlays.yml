@@ -1,6 +1,13 @@
 name: V4.2 R10D Real Overlays
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "src/r10d_real_overlays.py"
+      - "tests/test_r10d_dynamic_loader.py"
+      - "docs/V4_2_R10D_TECHNICAL_FIX_1.md"
+      - ".github/workflows/v4-2-r10d-real-overlays.yml"
 permissions:
   contents: write
 concurrency:
@@ -17,8 +24,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Syntax check
-        run: python -m py_compile src/r10d_real_overlays.py
+      - name: Syntax and loader regression
+        run: |
+          python -m py_compile src/r10d_real_overlays.py
+          python tests/test_r10d_dynamic_loader.py
       - name: Run R10D real overlays
         env:
           SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
