@@ -1,0 +1,13 @@
+{
+  "schema": "investment_os_v4_2_r10d_aggregates_v1.0",
+  "run_id": "36303846263",
+  "system_live": false,
+  "queue_count": 10,
+  "overlay_count": 10,
+  "br09_provisional_count": 0,
+  "candidates_with_r6r7_reconcile_or_investigate": 9,
+  "marketplace_verified_count": 0,
+  "engine_modified": false,
+  "ranking_recomputed": false,
+  "fresh_market_data_used": false
+}

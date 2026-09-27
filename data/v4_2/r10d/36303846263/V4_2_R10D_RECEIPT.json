@@ -1,0 +1,34 @@
+{
+  "schema": "investment_os_v4_2_r10d_receipt_v1.0",
+  "stage": "R10D_REAL_OVERLAYS",
+  "run_id": "36303846263",
+  "frozen": true,
+  "system_live": false,
+  "engine_modified": false,
+  "ranking_recomputed": false,
+  "validation_material_used": false,
+  "pre_run_checks": {
+    "r10c_sha": true,
+    "candidate_sha": true,
+    "v41_sha": true
+  },
+  "outputs": {
+    "V4_2_R10D_DEEP_DIVE_QUEUE.csv": {
+      "sha256": "6f98eb035083ab13830fa77058278cfdc14bd424de21a74bb839a1c3edc5e645",
+      "bytes": 456
+    },
+    "V4_2_R10D_REAL_OVERLAYS.csv": {
+      "sha256": "922210ba7b49f3c17b5a761d1a72038edccb6005751ffafdab91aa3a03fce121",
+      "bytes": 4536
+    },
+    "V4_2_R10D_AGGREGATES.json": {
+      "sha256": "e4e6dfb4760de2939bd009e47eeed08cd627df19c4946604fae54c0ff0b687f5",
+      "bytes": 367
+    },
+    "V4_2_R10D_REPORT.md": {
+      "sha256": "8c75e566bfcbfec4adec5887f24f2a03f2ade6da0ea8718a1aa7bcecdf85d362",
+      "bytes": 477
+    }
+  },
+  "next_gate": "RESOLVE_PROVISIONAL_BR09_AND_R6_R7_FLAGS_THEN_R11_HIDDEN_CONTROLS"
+}
