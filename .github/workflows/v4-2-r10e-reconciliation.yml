@@ -1,0 +1,55 @@
+name: V4.2 R10E Reconciliation Evidence
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - src/r10e_reconciliation_evidence.py
+      - tests/test_r10e_evidence.py
+      - .github/workflows/v4-2-r10e-reconciliation.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: v4-2-r10e-reconciliation
+  cancel-in-progress: false
+
+jobs:
+  evidence:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Evidence integrity tests
+        run: python tests/test_r10e_evidence.py
+      - name: Collect pinned SEC evidence
+        env:
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+        run: python src/r10e_reconciliation_evidence.py
+      - name: Preserve primary sources and diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r10e-primary-evidence-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            ${{ runner.temp }}/r10e_primary_sources
+            data/v4_2/r10e/${{ github.run_id }}-${{ github.run_attempt }}
+          retention-days: 90
+      - name: Commit evidence without changing frozen results
+        run: |
+          git config user.name "investment-os-data-bridge[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          OUT="data/v4_2/r10e/${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          test -f "${OUT}/V4_2_R10E_RECEIPT.json"
+          git add "${OUT}"
+          git commit -m "v4.2: preserve R10E reconciliation evidence ${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          git push
+      - name: Summary
+        run: cat "data/v4_2/r10e/${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}/V4_2_R10E_REPORT.md" >> "$GITHUB_STEP_SUMMARY"
