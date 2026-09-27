@@ -1,0 +1,165 @@
+{
+  "cases": [
+    {
+      "ticker": "FISV",
+      "missing": [],
+      "issues": [
+        "SEMANTIC_CASH_AND_COMMITMENTS_RECONCILIATION_OPEN",
+        "NORMALIZATION_NOT_COMPLETE",
+        "DEBT_PARTIAL"
+      ],
+      "DA_frozen": "PRESENT",
+      "DA_report_date": "PRESENT",
+      "cash_gate": "NO_ADDITIONAL_CASH_QUALITY_BLOCK",
+      "commitments_gate": "INVESTIGARE",
+      "prior_leverage_status": "PRESENT"
+    },
+    {
+      "ticker": "CMCSA",
+      "missing": [],
+      "issues": [
+        "SEMANTIC_CASH_AND_COMMITMENTS_RECONCILIATION_OPEN",
+        "NORMALIZATION_NOT_COMPLETE",
+        "DEBT_PARTIAL"
+      ],
+      "DA_frozen": "PRESENT",
+      "DA_report_date": "PRESENT",
+      "cash_gate": "NO_ADDITIONAL_CASH_QUALITY_BLOCK",
+      "commitments_gate": "INVESTIGARE",
+      "prior_leverage_status": "PRESENT"
+    },
+    {
+      "ticker": "FOX",
+      "missing": [
+        "annual_operating_income",
+        "cash_and_equivalents"
+      ],
+      "issues": [
+        "SEMANTIC_CASH_AND_COMMITMENTS_RECONCILIATION_OPEN",
+        "NORMALIZATION_NOT_COMPLETE",
+        "R10D_OVERLAY_USES_DIFFERENT_FILING_FROM_FROZEN_FUNDAMENTALS",
+        "DEBT_PARTIAL"
+      ],
+      "DA_frozen": "PRESENT",
+      "DA_report_date": "PRESENT",
+      "cash_gate": "NO_ADDITIONAL_CASH_QUALITY_BLOCK",
+      "commitments_gate": "NO_AUTOMATIC_BLOCK",
+      "prior_leverage_status": "MISSING"
+    },
+    {
+      "ticker": "GM",
+      "missing": [
+        "total_debt"
+      ],
+      "issues": [
+        "SEMANTIC_CASH_AND_COMMITMENTS_RECONCILIATION_OPEN",
+        "NORMALIZATION_NOT_COMPLETE",
+        "DEBT_MISSING"
+      ],
+      "DA_frozen": "PRESENT",
+      "DA_report_date": "PRESENT",
+      "cash_gate": "RECONCILE_CASH_QUALITY",
+      "commitments_gate": "INVESTIGARE",
+      "prior_leverage_status": "MISSING"
+    },
+    {
+      "ticker": "ADBE",
+      "missing": [
+        "annual_DA_exact_frozen_period"
+      ],
+      "issues": [
+        "SEMANTIC_CASH_AND_COMMITMENTS_RECONCILIATION_OPEN",
+        "NORMALIZATION_NOT_COMPLETE",
+        "CANDIDATE_PERIOD_DIFFERS_FROM_SAME_ACCESSION_REPORT_DATE",
+        "DEBT_PARTIAL"
+      ],
+      "DA_frozen": "MISSING",
+      "DA_report_date": "PRESENT",
+      "cash_gate": "RECONCILE_CASH_QUALITY",
+      "commitments_gate": "INVESTIGARE",
+      "prior_leverage_status": "MISSING"
+    },
+    {
+      "ticker": "TROW",
+      "missing": [
+        "total_debt",
+        "annual_DA_exact_frozen_period"
+      ],
+      "issues": [
+        "SEMANTIC_CASH_AND_COMMITMENTS_RECONCILIATION_OPEN",
+        "NORMALIZATION_NOT_COMPLETE",
+        "DEBT_MISSING"
+      ],
+      "DA_frozen": "MISSING",
+      "DA_report_date": "MISSING",
+      "cash_gate": "RECONCILE_CASH_QUALITY",
+      "commitments_gate": "NO_AUTOMATIC_BLOCK",
+      "prior_leverage_status": "MISSING"
+    },
+    {
+      "ticker": "AMP",
+      "missing": [
+        "annual_operating_income",
+        "total_debt",
+        "cash_and_equivalents"
+      ],
+      "issues": [
+        "SEMANTIC_CASH_AND_COMMITMENTS_RECONCILIATION_OPEN",
+        "NORMALIZATION_NOT_COMPLETE",
+        "DEBT_MISSING"
+      ],
+      "DA_frozen": "PRESENT",
+      "DA_report_date": "PRESENT",
+      "cash_gate": "RECONCILE_CASH_QUALITY",
+      "commitments_gate": "INVESTIGARE",
+      "prior_leverage_status": "MISSING"
+    },
+    {
+      "ticker": "NEM",
+      "missing": [
+        "annual_operating_income"
+      ],
+      "issues": [
+        "SEMANTIC_CASH_AND_COMMITMENTS_RECONCILIATION_OPEN",
+        "NORMALIZATION_NOT_COMPLETE",
+        "DEBT_PARTIAL"
+      ],
+      "DA_frozen": "PRESENT",
+      "DA_report_date": "PRESENT",
+      "cash_gate": "RECONCILE_CASH_QUALITY",
+      "commitments_gate": "INVESTIGARE",
+      "prior_leverage_status": "MISSING"
+    },
+    {
+      "ticker": "FIX",
+      "missing": [],
+      "issues": [
+        "SEMANTIC_CASH_AND_COMMITMENTS_RECONCILIATION_OPEN",
+        "NORMALIZATION_NOT_COMPLETE",
+        "DEBT_PARTIAL"
+      ],
+      "DA_frozen": "PRESENT",
+      "DA_report_date": "PRESENT",
+      "cash_gate": "NO_ADDITIONAL_CASH_QUALITY_BLOCK",
+      "commitments_gate": "INVESTIGARE",
+      "prior_leverage_status": "PRESENT"
+    },
+    {
+      "ticker": "ANET",
+      "missing": [
+        "total_debt"
+      ],
+      "issues": [
+        "SEMANTIC_CASH_AND_COMMITMENTS_RECONCILIATION_OPEN",
+        "NORMALIZATION_NOT_COMPLETE",
+        "DEBT_MISSING"
+      ],
+      "DA_frozen": "PRESENT",
+      "DA_report_date": "PRESENT",
+      "cash_gate": "NO_ADDITIONAL_CASH_QUALITY_BLOCK",
+      "commitments_gate": "INVESTIGARE",
+      "prior_leverage_status": "MISSING"
+    }
+  ],
+  "errors": []
+}
