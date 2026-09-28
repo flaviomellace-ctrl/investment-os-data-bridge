@@ -1,0 +1,921 @@
+{
+  "schema": "r10f_reviewed_source_corrections_v1",
+  "review_date": "2026-09-28",
+  "source_run_id": "36336222379",
+  "source_artifact_id": 10937655129,
+  "source_artifact_sha256": "de766c06c2669ba93183bf9c58d5aa038cc340d5bb3057408966b1d2ef91327e",
+  "system_live": false,
+  "engine_modified": false,
+  "items": [
+    {
+      "item_id": "ADBE_annual_DA",
+      "ticker": "ADBE",
+      "field": "annual_DA",
+      "report_date": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "prior_value_or_status": "MISSING",
+      "components": [
+        {
+          "id": "f-329",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:DepreciationDepletionAndAmortization",
+            "scale": "6",
+            "id": "f-329"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "818000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "818000000",
+      "review_status": "SOURCE_RECONCILED",
+      "reason": "Same frozen accession reports 2025-11-28; bulk nominal date 2025-11-30 caused the miss. Period correction is accession-specific evidence, not a generic date tolerance.",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FISV_annual_DA",
+      "ticker": "FISV",
+      "field": "annual_DA",
+      "report_date": "2025-12-31",
+      "source_accession": "0000798354-26-000009",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm",
+      "source_file": "FISV_0000798354-26-000009.html",
+      "source_sha256": "223c6d6c8d23f6337a65082857b03268267d5253b7fc9ea807b18bebf970979f",
+      "prior_value_or_status": 669000000,
+      "components": [
+        {
+          "id": "f-376",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:OtherDepreciationAndAmortization",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-376"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1857000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-379",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "fi:AmortizationOfAcquisitionRelatedIntangibleAssets",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-379"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1304000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "3161000000",
+      "review_status": "SOURCE_RECONCILED",
+      "reason": "Add the two distinct cash-flow reconciliation lines: depreciation/other amortization and acquisition-related intangible amortization. Exclude financing amortization 46m; do not add the overlapping standalone depreciation 669m or rounded total intangible amortization 2.3bn.",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FIX_annual_DA_face_statement",
+      "ticker": "FIX",
+      "field": "annual_DA_face_statement",
+      "report_date": "2025-12-31",
+      "source_accession": "0001104659-26-017530",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/fix-20251231x10k.htm",
+      "source_file": "FIX_0001104659-26-017530.html",
+      "source_sha256": "94f1f335cbf42ebe0937f588964c4a683e45fda9a1437d76b8fff351e067c91e",
+      "prior_value_or_status": 62400000,
+      "components": [
+        {
+          "id": "Tc_qZHhl4EvB0Whvw-7W-fy7A_8_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "Duration_1_1_2025_To_12_31_2025_iRcRbidoh0-AvPUH5g4aeQ",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:Depreciation",
+            "scale": "3",
+            "id": "Tc_qZHhl4EvB0Whvw-7W-fy7A_8_3"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "62379000",
+          "coefficient": 1
+        },
+        {
+          "id": "Tc_7IqUlDEaYEC_uOcodb8Fmg_7_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "Duration_1_1_2025_To_12_31_2025_iRcRbidoh0-AvPUH5g4aeQ",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:AmortizationOfIntangibleAssets",
+            "scale": "3",
+            "id": "Tc_7IqUlDEaYEC_uOcodb8Fmg_7_3"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "79580000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "141959000",
+      "review_status": "CONFLICTING_EXTERNAL_AGGREGATE",
+      "reason": "Primary cash-flow statement: depreciation 62.379m + intangible amortization 79.580m. R10E Companyfacts inventory reports the latter as 79.578m: 2,000 USD discrepancy retained, not suppressed. The old rounded 62.4m tag omitted the second line.",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FOX_cash_and_equivalents_face_statement",
+      "ticker": "FOX",
+      "field": "cash_and_equivalents_face_statement",
+      "report_date": "2025-06-30",
+      "source_accession": "0001628280-25-038077",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1754301/000162828025038077/fox-20250630.htm",
+      "source_file": "FOX_0001628280-25-038077.html",
+      "source_sha256": "f71f3742a2cf017cfa21f2ff332051e990a948dbdc113834229386b357bc63c9",
+      "prior_value_or_status": "MISSING",
+      "components": [
+        {
+          "id": "f-125",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-10",
+            "decimals": "-6",
+            "name": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-125"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-06-30"
+            ],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "5351000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "5351000000",
+      "review_status": "SOURCE_RECONCILED_WITH_LABEL_REVIEW",
+      "reason": "Face balance-sheet label is Cash and cash equivalents although the taxonomy concept name includes restricted cash. This documented label review applies only to this accession.",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FOX_operating_income_derived",
+      "ticker": "FOX",
+      "field": "operating_income_derived",
+      "report_date": "2025-06-30",
+      "source_accession": "0001628280-25-038077",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1754301/000162828025038077/fox-20250630.htm",
+      "source_file": "FOX_0001628280-25-038077.html",
+      "source_sha256": "f71f3742a2cf017cfa21f2ff332051e990a948dbdc113834229386b357bc63c9",
+      "prior_value_or_status": "MISSING",
+      "components": [
+        {
+          "id": "f-59",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-59"
+          },
+          "context": {
+            "startdate": [
+              "2024-07-01"
+            ],
+            "enddate": [
+              "2025-06-30"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "16300000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-62",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingCostsAndExpenses",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-62"
+          },
+          "context": {
+            "startdate": [
+              "2024-07-01"
+            ],
+            "enddate": [
+              "2025-06-30"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "10518000000",
+          "coefficient": -1
+        },
+        {
+          "id": "f-65",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:SellingGeneralAndAdministrativeExpense",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-65"
+          },
+          "context": {
+            "startdate": [
+              "2024-07-01"
+            ],
+            "enddate": [
+              "2025-06-30"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "2168000000",
+          "coefficient": -1
+        },
+        {
+          "id": "f-68",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:DepreciationAndAmortization",
+            "scale": "6",
+            "id": "f-68"
+          },
+          "context": {
+            "startdate": [
+              "2024-07-01"
+            ],
+            "enddate": [
+              "2025-06-30"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "385000000",
+          "coefficient": -1
+        },
+        {
+          "id": "f-71",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "sign": "-",
+            "name": "us-gaap:OtherOperatingIncomeExpenseNet",
+            "scale": "6",
+            "id": "f-71"
+          },
+          "context": {
+            "startdate": [
+              "2024-07-01"
+            ],
+            "enddate": [
+              "2025-06-30"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "-350000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "2879000000",
+      "review_status": "DERIVED_NOT_DIRECT_TAG",
+      "reason": "Income-statement bridge: revenue minus operating costs, SG&A and D&A, plus signed other operating expense (-350m). Excludes equity affiliate results, interest and non-operating other income. No restructuring add-back.",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "NEM_operating_income_derived",
+      "ticker": "NEM",
+      "field": "operating_income_derived",
+      "report_date": "2025-12-31",
+      "source_accession": "0001164727-26-000010",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "prior_value_or_status": "MISSING",
+      "components": [
+        {
+          "id": "f-57",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-57"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "22669000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-87",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:CostsAndExpenses",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-87"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "11708000000",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "10961000000",
+      "review_status": "DERIVED_NOT_DIRECT_TAG",
+      "reason": "Sales minus the full costs-and-expenses subtotal. Includes impairment and gains on asset sales as presented; no normalization. Excludes separately presented other income/expense.",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "GM_debt_carrying_amount_face_statement",
+      "ticker": "GM",
+      "field": "debt_carrying_amount_face_statement",
+      "report_date": "2025-12-31",
+      "source_accession": "0001467858-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/gm-20251231.htm",
+      "source_file": "GM_0001467858-26-000013.html",
+      "source_sha256": "a50e0240c592baf8375a2bcb18386e0fea4ab13b5c15468d70faffc81af85cd7",
+      "prior_value_or_status": "MISSING",
+      "components": [
+        {
+          "id": "f-179",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-14",
+            "decimals": "-6",
+            "name": "us-gaap:DebtCurrent",
+            "scale": "6",
+            "id": "f-179"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": [
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "gm:BusinessGroupAxis",
+                "value": "gm:AutomotiveMember"
+              }
+            ]
+          },
+          "expected_value_usd": "656000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-181",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-16",
+            "decimals": "-6",
+            "name": "us-gaap:DebtCurrent",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-181"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": [
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "gm:BusinessGroupAxis",
+                "value": "gm:GmFinancialMember"
+              }
+            ]
+          },
+          "expected_value_usd": "35012000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-187",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-14",
+            "decimals": "-6",
+            "name": "us-gaap:LongTermDebtAndCapitalLeaseObligations",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-187"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": [
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "gm:BusinessGroupAxis",
+                "value": "gm:AutomotiveMember"
+              }
+            ]
+          },
+          "expected_value_usd": "15591000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-189",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-16",
+            "decimals": "-6",
+            "name": "us-gaap:LongTermDebtAndCapitalLeaseObligations",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-189"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": [
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "gm:BusinessGroupAxis",
+                "value": "gm:GmFinancialMember"
+              }
+            ]
+          },
+          "expected_value_usd": "79018000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "130277000000",
+      "review_status": "SOURCE_RECONCILED_SCOPE_REVIEW_REQUIRED",
+      "reason": "Four face balance-sheet cells: current and noncurrent Automotive and GM Financial debt. This carrying-amount sum is distinct from the 131.574bn maturity/principal schedule. Do not mix automotive-only debt with consolidated earnings.",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "AMP_cash_excluding_consolidated_investment_entities",
+      "ticker": "AMP",
+      "field": "cash_excluding_consolidated_investment_entities",
+      "report_date": "2025-12-31",
+      "source_accession": "0000820027-26-000011",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000011/amp-20251231.htm",
+      "source_file": "AMP_0000820027-26-000011.html",
+      "source_sha256": "669df3b7b6e2aa5be18356b2d7700f8eeb19ffad08761f003b7cd6e019578800",
+      "prior_value_or_status": "MISSING",
+      "components": [
+        {
+          "id": "f-150",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-12",
+            "decimals": "-6",
+            "name": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-150"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": [
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "srt:ConsolidatedEntitiesAxis",
+                "value": "srt:ConsolidatedEntityExcludingVariableInterestEntitiesVIEMember"
+              }
+            ]
+          },
+          "expected_value_usd": "9953000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "9953000000",
+      "review_status": "SOURCE_RECONCILED_SCOPE_REVIEW_REQUIRED",
+      "reason": "Issuer cash balance excludes the separately presented 150m CIE cash and restricted/segregated balances; do not combine with a different earnings/debt scope.",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "AMP_debt_excluding_consolidated_investment_entities",
+      "ticker": "AMP",
+      "field": "debt_excluding_consolidated_investment_entities",
+      "report_date": "2025-12-31",
+      "source_accession": "0000820027-26-000011",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000011/amp-20251231.htm",
+      "source_file": "AMP_0000820027-26-000011.html",
+      "source_sha256": "669df3b7b6e2aa5be18356b2d7700f8eeb19ffad08761f003b7cd6e019578800",
+      "prior_value_or_status": "MISSING",
+      "components": [
+        {
+          "id": "f-188",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-16",
+            "decimals": "-6",
+            "name": "us-gaap:AdvancesFromFederalHomeLoanBanks",
+            "scale": "6",
+            "id": "f-188"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "200000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-190",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-12",
+            "decimals": "-6",
+            "name": "us-gaap:LongTermDebt",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-190"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": [
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "srt:ConsolidatedEntitiesAxis",
+                "value": "srt:ConsolidatedEntityExcludingVariableInterestEntitiesVIEMember"
+              }
+            ]
+          },
+          "expected_value_usd": "3077000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "3277000000",
+      "review_status": "SOURCE_RECONCILED_SCOPE_REVIEW_REQUIRED",
+      "reason": "Short-term borrowings 200m plus issuer long-term debt 3.077bn. Does not establish a valid generic EBITDA view for the mixed financial business.",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "AMP_debt_consolidated_investment_entities",
+      "ticker": "AMP",
+      "field": "debt_consolidated_investment_entities",
+      "report_date": "2025-12-31",
+      "source_accession": "0000820027-26-000011",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000011/amp-20251231.htm",
+      "source_file": "AMP_0000820027-26-000011.html",
+      "source_sha256": "669df3b7b6e2aa5be18356b2d7700f8eeb19ffad08761f003b7cd6e019578800",
+      "prior_value_or_status": "MISSING",
+      "components": [
+        {
+          "id": "f-192",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-14",
+            "decimals": "-6",
+            "name": "us-gaap:LongTermDebt",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-192"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": [
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "srt:ConsolidatedEntitiesAxis",
+                "value": "us-gaap:VariableInterestEntityPrimaryBeneficiaryMember"
+              }
+            ]
+          },
+          "expected_value_usd": "2585000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "2585000000",
+      "review_status": "SOURCE_RECONCILED_SCOPE_REVIEW_REQUIRED",
+      "reason": "Separately presented CIE debt, retained separately from issuer borrowing scope. Not automatically assigned to issuer debt.",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "ADBE_purchase_obligations",
+      "ticker": "ADBE",
+      "field": "purchase_obligations",
+      "report_date": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "prior_value_or_status": "UNQUANTIFIED",
+      "components": [
+        {
+          "id": "f-1326",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-6",
+            "name": "us-gaap:UnrecordedUnconditionalPurchaseObligationBalanceSheetAmount",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-1326"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-11-28"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "6821000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "6821000000",
+      "review_status": "QUANTIFIED_CATEGORY_ONLY",
+      "reason": "Unrecorded unconditional purchase obligations. This quantifies one commitment category, not all commitments or debt.",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "ANET_purchase_obligations",
+      "ticker": "ANET",
+      "field": "purchase_obligations",
+      "report_date": "2025-12-31",
+      "source_accession": "0001596532-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_file": "ANET_0001596532-26-000013.html",
+      "source_sha256": "f4f873ca437c7ab9cffd7e8b4a7a55a9df0439e9ff77e94c820deb66e47dc959",
+      "prior_value_or_status": "UNQUANTIFIED",
+      "components": [
+        {
+          "id": "f-747",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-8",
+            "name": "us-gaap:PurchaseCommitmentRemainingMinimumAmountCommitted",
+            "format": "ixt:num-dot-decimal",
+            "scale": "9",
+            "id": "f-747"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001596532"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "6800000000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "6800000000",
+      "review_status": "QUANTIFIED_CATEGORY_ONLY",
+      "reason": "Non-cancellable purchase commitments, reported rounded to 0.1bn. Does not establish zero debt or clear all commitments.",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "TROW_mixed_DA_impairment_retention_lines",
+      "ticker": "TROW",
+      "field": "mixed_DA_impairment_retention_lines",
+      "report_date": "2025-12-31",
+      "source_accession": "0001628280-26-008002",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026008002/trow-20251231.htm",
+      "source_file": "TROW_0001628280-26-008002.html",
+      "source_sha256": "6bf42c9f8c74ed6554dca86bfb26d1e91499b8cfe91f46b9b8ccbc5c4a6e6f76",
+      "prior_value_or_status": "MISSING_DA",
+      "components": [
+        {
+          "id": "f-239",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-5",
+            "name": "trow:DepreciationAmortizationAndImpairmentOfPropertyEquipmentAndSoftware",
+            "scale": "6",
+            "id": "f-239"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001113169"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "405800000.0",
+          "coefficient": 1
+        },
+        {
+          "id": "f-242",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-5",
+            "name": "trow:AmortizationOfAcquisitionRelatedAssetsAndRetentionArrangements",
+            "scale": "6",
+            "id": "f-242"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001113169"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "199700000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "605500000",
+      "review_status": "NOT_ACCEPTED_AS_PURE_DA",
+      "reason": "These lines include impairments and retention arrangements. Do not substitute their sum for pure D&A without disaggregation.",
+      "promoted_to_frozen_inputs": false
+    }
+  ]
+}
