@@ -1,0 +1,372 @@
+{
+  "schema": "r10f_source_corrections_verification_v1",
+  "items": [
+    {
+      "item_id": "ADBE_annual_operating_cash_flow",
+      "ticker": "ADBE",
+      "field": "annual_operating_cash_flow",
+      "value_usd": "10031000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "ADBE_annual_capex",
+      "ticker": "ADBE",
+      "field": "annual_capex",
+      "value_usd": "179000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "ADBE_annual_sbc",
+      "ticker": "ADBE",
+      "field": "annual_sbc",
+      "value_usd": "1942000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "ADBE_reported_OE_arithmetic",
+      "ticker": "ADBE",
+      "field": "reported_OE_arithmetic",
+      "value_usd": "7910000000",
+      "source_verification": "PASS",
+      "review_status": "ARITHMETIC_ONLY_NOT_NORMALIZED_NOT_DISTRIBUTABLE_CASH",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "AMP_annual_operating_cash_flow",
+      "ticker": "AMP",
+      "field": "annual_operating_cash_flow",
+      "value_usd": "8323000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "AMP_annual_capex",
+      "ticker": "AMP",
+      "field": "annual_capex",
+      "value_usd": "162000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "AMP_annual_sbc",
+      "ticker": "AMP",
+      "field": "annual_sbc",
+      "value_usd": "206000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "AMP_reported_OE_arithmetic",
+      "ticker": "AMP",
+      "field": "reported_OE_arithmetic",
+      "value_usd": "7955000000",
+      "source_verification": "PASS",
+      "review_status": "ARITHMETIC_ONLY_NOT_NORMALIZED_NOT_DISTRIBUTABLE_CASH",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "ANET_annual_operating_cash_flow",
+      "ticker": "ANET",
+      "field": "annual_operating_cash_flow",
+      "value_usd": "4371900000.0",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "ANET_annual_capex",
+      "ticker": "ANET",
+      "field": "annual_capex",
+      "value_usd": "119500000.0",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "ANET_annual_sbc",
+      "ticker": "ANET",
+      "field": "annual_sbc",
+      "value_usd": "439200000.0",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "ANET_reported_OE_arithmetic",
+      "ticker": "ANET",
+      "field": "reported_OE_arithmetic",
+      "value_usd": "3813200000.0",
+      "source_verification": "PASS",
+      "review_status": "ARITHMETIC_ONLY_NOT_NORMALIZED_NOT_DISTRIBUTABLE_CASH",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "CMCSA_annual_operating_cash_flow",
+      "ticker": "CMCSA",
+      "field": "annual_operating_cash_flow",
+      "value_usd": "33643000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "CMCSA_annual_capex",
+      "ticker": "CMCSA",
+      "field": "annual_capex",
+      "value_usd": "11750000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "CMCSA_annual_sbc",
+      "ticker": "CMCSA",
+      "field": "annual_sbc",
+      "value_usd": "1288000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "CMCSA_reported_OE_arithmetic",
+      "ticker": "CMCSA",
+      "field": "reported_OE_arithmetic",
+      "value_usd": "20605000000",
+      "source_verification": "PASS",
+      "review_status": "ARITHMETIC_ONLY_NOT_NORMALIZED_NOT_DISTRIBUTABLE_CASH",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FISV_annual_operating_cash_flow",
+      "ticker": "FISV",
+      "field": "annual_operating_cash_flow",
+      "value_usd": "6062000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FISV_annual_capex",
+      "ticker": "FISV",
+      "field": "annual_capex",
+      "value_usd": "1763000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FISV_annual_sbc",
+      "ticker": "FISV",
+      "field": "annual_sbc",
+      "value_usd": "357000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FISV_reported_OE_arithmetic",
+      "ticker": "FISV",
+      "field": "reported_OE_arithmetic",
+      "value_usd": "3942000000",
+      "source_verification": "PASS",
+      "review_status": "ARITHMETIC_ONLY_NOT_NORMALIZED_NOT_DISTRIBUTABLE_CASH",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FIX_annual_operating_cash_flow",
+      "ticker": "FIX",
+      "field": "annual_operating_cash_flow",
+      "value_usd": "1186356000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FIX_annual_capex",
+      "ticker": "FIX",
+      "field": "annual_capex",
+      "value_usd": "154903000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FIX_annual_sbc",
+      "ticker": "FIX",
+      "field": "annual_sbc",
+      "value_usd": "21809000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FIX_reported_OE_arithmetic",
+      "ticker": "FIX",
+      "field": "reported_OE_arithmetic",
+      "value_usd": "1009644000",
+      "source_verification": "PASS",
+      "review_status": "ARITHMETIC_ONLY_NOT_NORMALIZED_NOT_DISTRIBUTABLE_CASH",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FOX_annual_operating_cash_flow",
+      "ticker": "FOX",
+      "field": "annual_operating_cash_flow",
+      "value_usd": "3324000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FOX_annual_capex",
+      "ticker": "FOX",
+      "field": "annual_capex",
+      "value_usd": "331000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FOX_annual_sbc",
+      "ticker": "FOX",
+      "field": "annual_sbc",
+      "value_usd": "135000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FOX_reported_OE_arithmetic",
+      "ticker": "FOX",
+      "field": "reported_OE_arithmetic",
+      "value_usd": "2858000000",
+      "source_verification": "PASS",
+      "review_status": "ARITHMETIC_ONLY_NOT_NORMALIZED_NOT_DISTRIBUTABLE_CASH",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "GM_annual_operating_cash_flow",
+      "ticker": "GM",
+      "field": "annual_operating_cash_flow",
+      "value_usd": "26867000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "GM_annual_capex",
+      "ticker": "GM",
+      "field": "annual_capex",
+      "value_usd": "9303000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "GM_annual_sbc",
+      "ticker": "GM",
+      "field": "annual_sbc",
+      "value_usd": "334000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "GM_reported_OE_arithmetic",
+      "ticker": "GM",
+      "field": "reported_OE_arithmetic",
+      "value_usd": "17230000000",
+      "source_verification": "PASS",
+      "review_status": "ARITHMETIC_ONLY_NOT_NORMALIZED_NOT_DISTRIBUTABLE_CASH",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "NEM_annual_operating_cash_flow",
+      "ticker": "NEM",
+      "field": "annual_operating_cash_flow",
+      "value_usd": "10334000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "NEM_annual_capex",
+      "ticker": "NEM",
+      "field": "annual_capex",
+      "value_usd": "3035000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "NEM_annual_sbc",
+      "ticker": "NEM",
+      "field": "annual_sbc",
+      "value_usd": "99000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "NEM_reported_OE_arithmetic",
+      "ticker": "NEM",
+      "field": "reported_OE_arithmetic",
+      "value_usd": "7200000000",
+      "source_verification": "PASS",
+      "review_status": "ARITHMETIC_ONLY_NOT_NORMALIZED_NOT_DISTRIBUTABLE_CASH",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "TROW_annual_operating_cash_flow",
+      "ticker": "TROW",
+      "field": "annual_operating_cash_flow",
+      "value_usd": "1753400000.0",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "TROW_annual_capex",
+      "ticker": "TROW",
+      "field": "annual_capex",
+      "value_usd": "274200000.0",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "TROW_annual_sbc",
+      "ticker": "TROW",
+      "field": "annual_sbc",
+      "value_usd": "216900000.0",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "TROW_reported_OE_arithmetic",
+      "ticker": "TROW",
+      "field": "reported_OE_arithmetic",
+      "value_usd": "1262300000.0",
+      "source_verification": "PASS",
+      "review_status": "ARITHMETIC_ONLY_NOT_NORMALIZED_NOT_DISTRIBUTABLE_CASH",
+      "promoted_to_frozen_inputs": false
+    }
+  ],
+  "source_verified_count": 40,
+  "case_closures": 0,
+  "engine_modified": false,
+  "ranking_recomputed": false,
+  "system_live": false,
+  "registry_sha256": "b8eaa4d64244bf0015f0b3123e86fc43993eaf20cef3b399961e4b2e8366624a",
+  "verifier_sha256": "65d1d38edbd1e29a7de03794e3a249f50b94885b24cdee5e58134b207e8caf9b"
+}
