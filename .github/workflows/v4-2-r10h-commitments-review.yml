@@ -1,0 +1,75 @@
+name: V4.2 R10H Commitments Source Review
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - src/r10f_verify_source_corrections.py
+      - tests/test_r10f_source_corrections.py
+      - requirements-r10f.txt
+      - data/v4_2/r10h/review_20260928/**
+      - .github/workflows/v4-2-r10h-commitments-review.yml
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install isolated source-review dependency
+        run: python -m pip install -r requirements-r10f.txt
+      - name: Synthetic source integrity tests
+        run: python tests/test_r10f_source_corrections.py
+      - name: Retrieve sealed R10E primary sources
+        uses: actions/download-artifact@v4
+        with:
+          name: r10e-primary-evidence-36336222379-1
+          github-token: ${{ github.token }}
+          run-id: '36336222379'
+          path: ${{ runner.temp }}/r10h-source-archive
+      - name: Verify all reviewed source corrections
+        run: |
+          python src/r10f_verify_source_corrections.py \
+            --registry data/v4_2/r10h/review_20260928/V4_2_R10H_COMMITMENTS_REVIEW.json \
+            --sources "${RUNNER_TEMP}/r10h-source-archive/_temp/r10e_primary_sources" \
+            --output "${RUNNER_TEMP}/r10h-receipt.json"
+          cmp "${RUNNER_TEMP}/r10h-receipt.json" data/v4_2/r10h/review_20260928/V4_2_R10H_VERIFICATION_RECEIPT.json
+          git diff --exit-code
+      - name: Verify documentary excerpts
+        run: |
+          python - <<'PYCODE'
+          import hashlib, json, os
+          from pathlib import Path
+          from lxml import html
+          registry = json.loads(Path('data/v4_2/r10h/review_20260928/V4_2_R10H_COMMITMENTS_REVIEW.json').read_text())
+          base = Path(os.environ['RUNNER_TEMP']) / 'r10h-source-archive/_temp/r10e_primary_sources'
+          reviews = registry['narrative_reviews']
+          assert len(reviews) == 14
+          for item in reviews:
+              name = item['source_file']
+              assert Path(name).name == name
+              raw = (base / name).read_bytes()
+              assert hashlib.sha256(raw).hexdigest() == item['source_sha256']
+              text = ' '.join(' '.join(html.fromstring(raw).itertext()).split())
+              excerpt = item['excerpt']
+              start = item['excerpt_start']
+              assert excerpt and start >= 0
+              assert text[start:start + len(excerpt)] == excerpt
+              assert hashlib.sha256(excerpt.encode()).hexdigest() == item['excerpt_sha256']
+          print('14 documentary excerpts verified; semantic judgments are not automated.')
+          PYCODE
+      - name: Summary
+        run: |
+          echo '## R10H commitments source evidence verified' >> "$GITHUB_STEP_SUMMARY"
+          echo '23 reviewed numeric items match pinned filing bytes, inline facts, units, periods and scopes.' >> "$GITHUB_STEP_SUMMARY"
+          echo '14 documentary excerpts verified against archived source text.' >> "$GITHUB_STEP_SUMMARY"
+          echo '8 synthetic integrity tests passed. Frozen engine and ranking unchanged.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'These are source corrections and proposals, not closed due-diligence cases. System NOT LIVE.' >> "$GITHUB_STEP_SUMMARY"
