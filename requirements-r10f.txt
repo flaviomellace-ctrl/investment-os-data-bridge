@@ -1,0 +1,2 @@
+# Isolated source-review tool; does not change the frozen engine environment.
+lxml==6.1.1
