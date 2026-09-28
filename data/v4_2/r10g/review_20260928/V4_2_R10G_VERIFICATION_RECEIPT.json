@@ -1,0 +1,417 @@
+{
+  "schema": "r10f_source_corrections_verification_v1",
+  "items": [
+    {
+      "item_id": "FISV_operating_lease_liability",
+      "ticker": "FISV",
+      "field": "operating_lease_liability",
+      "value_usd": "763000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FISV_operating_lease_current_plus_noncurrent",
+      "ticker": "FISV",
+      "field": "operating_lease_current_plus_noncurrent",
+      "value_usd": "763000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FISV_operating_lease_undiscounted_payments",
+      "ticker": "FISV",
+      "field": "operating_lease_undiscounted_payments",
+      "value_usd": "904000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FISV_operating_lease_discount",
+      "ticker": "FISV",
+      "field": "operating_lease_discount",
+      "value_usd": "141000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FISV_finance_lease_liability_separate",
+      "ticker": "FISV",
+      "field": "finance_lease_liability_separate",
+      "value_usd": "1125000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FISV_payment_discount_liability_residual",
+      "ticker": "FISV",
+      "field": "payment_discount_liability_residual",
+      "value_usd": "0",
+      "source_verification": "PASS",
+      "review_status": "ARITHMETIC_RECONCILED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "CMCSA_operating_lease_liability",
+      "ticker": "CMCSA",
+      "field": "operating_lease_liability",
+      "value_usd": "6097000000",
+      "source_verification": "PASS",
+      "review_status": "DISCLOSED_TOTAL_DIFFERENCE_RETAINED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "CMCSA_operating_lease_current_plus_noncurrent",
+      "ticker": "CMCSA",
+      "field": "operating_lease_current_plus_noncurrent",
+      "value_usd": "6096000000",
+      "source_verification": "PASS",
+      "review_status": "DISCLOSED_TOTAL_DIFFERENCE_RETAINED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "CMCSA_operating_lease_undiscounted_payments",
+      "ticker": "CMCSA",
+      "field": "operating_lease_undiscounted_payments",
+      "value_usd": "9646000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "CMCSA_operating_lease_discount",
+      "ticker": "CMCSA",
+      "field": "operating_lease_discount",
+      "value_usd": "3549000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "CMCSA_payment_discount_liability_residual",
+      "ticker": "CMCSA",
+      "field": "payment_discount_liability_residual",
+      "value_usd": "0",
+      "source_verification": "PASS",
+      "review_status": "ARITHMETIC_RECONCILED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FOX_operating_lease_liability",
+      "ticker": "FOX",
+      "field": "operating_lease_liability",
+      "value_usd": "863000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FOX_operating_lease_current_plus_noncurrent",
+      "ticker": "FOX",
+      "field": "operating_lease_current_plus_noncurrent",
+      "value_usd": "863000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FOX_operating_lease_undiscounted_payments",
+      "ticker": "FOX",
+      "field": "operating_lease_undiscounted_payments",
+      "value_usd": "1349000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FOX_operating_lease_discount",
+      "ticker": "FOX",
+      "field": "operating_lease_discount",
+      "value_usd": "486000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FOX_payment_discount_liability_residual",
+      "ticker": "FOX",
+      "field": "payment_discount_liability_residual",
+      "value_usd": "0",
+      "source_verification": "PASS",
+      "review_status": "ARITHMETIC_RECONCILED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "GM_operating_lease_liability",
+      "ticker": "GM",
+      "field": "operating_lease_liability",
+      "value_usd": "1301000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "GM_operating_lease_undiscounted_payments",
+      "ticker": "GM",
+      "field": "operating_lease_undiscounted_payments",
+      "value_usd": "1548000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "GM_operating_lease_discount",
+      "ticker": "GM",
+      "field": "operating_lease_discount",
+      "value_usd": "248000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "GM_payment_discount_liability_residual",
+      "ticker": "GM",
+      "field": "payment_discount_liability_residual",
+      "value_usd": "-1000000",
+      "source_verification": "PASS",
+      "review_status": "DISCLOSED_TOTAL_DIFFERENCE_RETAINED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "ADBE_operating_lease_liability",
+      "ticker": "ADBE",
+      "field": "operating_lease_liability",
+      "value_usd": "438000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "ADBE_operating_lease_current_plus_noncurrent",
+      "ticker": "ADBE",
+      "field": "operating_lease_current_plus_noncurrent",
+      "value_usd": "438000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "ADBE_operating_lease_undiscounted_payments",
+      "ticker": "ADBE",
+      "field": "operating_lease_undiscounted_payments",
+      "value_usd": "485000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "ADBE_operating_lease_discount",
+      "ticker": "ADBE",
+      "field": "operating_lease_discount",
+      "value_usd": "47000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "ADBE_payment_discount_liability_residual",
+      "ticker": "ADBE",
+      "field": "payment_discount_liability_residual",
+      "value_usd": "0",
+      "source_verification": "PASS",
+      "review_status": "ARITHMETIC_RECONCILED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "TROW_operating_lease_liability",
+      "ticker": "TROW",
+      "field": "operating_lease_liability",
+      "value_usd": "447200000.0",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "TROW_operating_lease_undiscounted_payments",
+      "ticker": "TROW",
+      "field": "operating_lease_undiscounted_payments",
+      "value_usd": "564000000.0",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "TROW_operating_lease_discount",
+      "ticker": "TROW",
+      "field": "operating_lease_discount",
+      "value_usd": "116800000.0",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "TROW_payment_discount_liability_residual",
+      "ticker": "TROW",
+      "field": "payment_discount_liability_residual",
+      "value_usd": "0.0",
+      "source_verification": "PASS",
+      "review_status": "ARITHMETIC_RECONCILED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "AMP_operating_lease_liability",
+      "ticker": "AMP",
+      "field": "operating_lease_liability",
+      "value_usd": "276000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "AMP_operating_lease_undiscounted_payments",
+      "ticker": "AMP",
+      "field": "operating_lease_undiscounted_payments",
+      "value_usd": "302000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "AMP_operating_lease_discount",
+      "ticker": "AMP",
+      "field": "operating_lease_discount",
+      "value_usd": "26000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "AMP_finance_lease_liability_separate",
+      "ticker": "AMP",
+      "field": "finance_lease_liability_separate",
+      "value_usd": "0",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "AMP_payment_discount_liability_residual",
+      "ticker": "AMP",
+      "field": "payment_discount_liability_residual",
+      "value_usd": "0",
+      "source_verification": "PASS",
+      "review_status": "ARITHMETIC_RECONCILED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "NEM_operating_lease_liability",
+      "ticker": "NEM",
+      "field": "operating_lease_liability",
+      "value_usd": "109000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "NEM_operating_lease_undiscounted_payments",
+      "ticker": "NEM",
+      "field": "operating_lease_undiscounted_payments",
+      "value_usd": "123000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "NEM_operating_lease_discount",
+      "ticker": "NEM",
+      "field": "operating_lease_discount",
+      "value_usd": "14000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "NEM_finance_lease_liability_separate",
+      "ticker": "NEM",
+      "field": "finance_lease_liability_separate",
+      "value_usd": "474000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "NEM_payment_discount_liability_residual",
+      "ticker": "NEM",
+      "field": "payment_discount_liability_residual",
+      "value_usd": "0",
+      "source_verification": "PASS",
+      "review_status": "ARITHMETIC_RECONCILED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FIX_operating_lease_liability",
+      "ticker": "FIX",
+      "field": "operating_lease_liability",
+      "value_usd": "338132000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FIX_operating_lease_current_plus_noncurrent",
+      "ticker": "FIX",
+      "field": "operating_lease_current_plus_noncurrent",
+      "value_usd": "338132000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FIX_operating_lease_undiscounted_payments",
+      "ticker": "FIX",
+      "field": "operating_lease_undiscounted_payments",
+      "value_usd": "485830000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FIX_operating_lease_discount",
+      "ticker": "FIX",
+      "field": "operating_lease_discount",
+      "value_usd": "147698000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FIX_payment_discount_liability_residual",
+      "ticker": "FIX",
+      "field": "payment_discount_liability_residual",
+      "value_usd": "0",
+      "source_verification": "PASS",
+      "review_status": "ARITHMETIC_RECONCILED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "ANET_operating_lease_undiscounted_payments",
+      "ticker": "ANET",
+      "field": "operating_lease_undiscounted_payments",
+      "value_usd": "90500000.0",
+      "source_verification": "PASS",
+      "review_status": "PAYMENTS_NET_OF_IMMATERIAL_SUBLEASE_NOT_PV_LIABILITY",
+      "promoted_to_frozen_inputs": false
+    }
+  ],
+  "source_verified_count": 45,
+  "case_closures": 0,
+  "engine_modified": false,
+  "ranking_recomputed": false,
+  "system_live": false,
+  "registry_sha256": "aa348073669c2d958f9e28530cdb03d964435043f9dc4a2f6268df88f7e88f1f",
+  "verifier_sha256": "65d1d38edbd1e29a7de03794e3a249f50b94885b24cdee5e58134b207e8caf9b"
+}
