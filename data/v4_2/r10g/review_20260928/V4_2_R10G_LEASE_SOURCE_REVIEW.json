@@ -1,0 +1,2585 @@
+{
+  "schema": "r10g_lease_source_review_v1",
+  "review_date": "2026-09-28",
+  "source_run_id": 36336222379,
+  "source_artifact_id": 10937655129,
+  "source_artifact_sha256": "de766c06c2669ba93183bf9c58d5aa038cc340d5bb3057408966b1d2ef91327e",
+  "system_live": false,
+  "engine_modified": false,
+  "items": [
+    {
+      "item_id": "FISV_operating_lease_liability",
+      "ticker": "FISV",
+      "field": "operating_lease_liability",
+      "report_date": "2025-12-31",
+      "accession": "0000798354-26-000009",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm",
+      "source_file": "FISV_0000798354-26-000009.html",
+      "source_sha256": "223c6d6c8d23f6337a65082857b03268267d5253b7fc9ea807b18bebf970979f",
+      "components": [
+        {
+          "id": "f-1115",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-29",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiability",
+            "scale": "6",
+            "id": "f-1115"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "763000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "763000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "FISV_operating_lease_current_plus_noncurrent",
+      "ticker": "FISV",
+      "field": "operating_lease_current_plus_noncurrent",
+      "report_date": "2025-12-31",
+      "accession": "0000798354-26-000009",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm",
+      "source_file": "FISV_0000798354-26-000009.html",
+      "source_sha256": "223c6d6c8d23f6337a65082857b03268267d5253b7fc9ea807b18bebf970979f",
+      "components": [
+        {
+          "id": "f-634",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-29",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiabilityCurrent",
+            "scale": "6",
+            "id": "f-634"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "126000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-1040",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-29",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiabilityNoncurrent",
+            "scale": "6",
+            "id": "f-1040"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "637000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "763000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "FISV_operating_lease_undiscounted_payments",
+      "ticker": "FISV",
+      "field": "operating_lease_undiscounted_payments",
+      "report_date": "2025-12-31",
+      "accession": "0000798354-26-000009",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm",
+      "source_file": "FISV_0000798354-26-000009.html",
+      "source_sha256": "223c6d6c8d23f6337a65082857b03268267d5253b7fc9ea807b18bebf970979f",
+      "components": [
+        {
+          "id": "f-1111",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-29",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDue",
+            "scale": "6",
+            "id": "f-1111"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "904000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "904000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "FISV_operating_lease_discount",
+      "ticker": "FISV",
+      "field": "operating_lease_discount",
+      "report_date": "2025-12-31",
+      "accession": "0000798354-26-000009",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm",
+      "source_file": "FISV_0000798354-26-000009.html",
+      "source_sha256": "223c6d6c8d23f6337a65082857b03268267d5253b7fc9ea807b18bebf970979f",
+      "components": [
+        {
+          "id": "f-1113",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-29",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "scale": "6",
+            "id": "f-1113"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "141000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "141000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "FISV_finance_lease_liability_separate",
+      "ticker": "FISV",
+      "field": "finance_lease_liability_separate",
+      "report_date": "2025-12-31",
+      "accession": "0000798354-26-000009",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm",
+      "source_file": "FISV_0000798354-26-000009.html",
+      "source_sha256": "223c6d6c8d23f6337a65082857b03268267d5253b7fc9ea807b18bebf970979f",
+      "components": [
+        {
+          "id": "f-1116",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-29",
+            "decimals": "-6",
+            "name": "us-gaap:FinanceLeaseLiability",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-1116"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1125000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1125000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "FISV_payment_discount_liability_residual",
+      "ticker": "FISV",
+      "field": "payment_discount_liability_residual",
+      "report_date": "2025-12-31",
+      "accession": "0000798354-26-000009",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm",
+      "source_file": "FISV_0000798354-26-000009.html",
+      "source_sha256": "223c6d6c8d23f6337a65082857b03268267d5253b7fc9ea807b18bebf970979f",
+      "components": [
+        {
+          "id": "f-1111",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-29",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDue",
+            "scale": "6",
+            "id": "f-1111"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "904000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-1113",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-29",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "scale": "6",
+            "id": "f-1113"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "141000000",
+          "coefficient": -1
+        },
+        {
+          "id": "f-1115",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-29",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiability",
+            "scale": "6",
+            "id": "f-1115"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "763000000",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "0",
+      "review_status": "ARITHMETIC_RECONCILED"
+    },
+    {
+      "item_id": "CMCSA_operating_lease_liability",
+      "ticker": "CMCSA",
+      "field": "operating_lease_liability",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-004994",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm",
+      "source_file": "CMCSA_0001628280-26-004994.html",
+      "source_sha256": "fc72fe8b3d83df999bb6d463e34e79d167f97e4abd0c394dd33df2ad0a880db2",
+      "components": [
+        {
+          "id": "f-1497",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-23",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiability",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-1497"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "6097000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "6097000000",
+      "review_status": "DISCLOSED_TOTAL_DIFFERENCE_RETAINED"
+    },
+    {
+      "item_id": "CMCSA_operating_lease_current_plus_noncurrent",
+      "ticker": "CMCSA",
+      "field": "operating_lease_current_plus_noncurrent",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-004994",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm",
+      "source_file": "CMCSA_0001628280-26-004994.html",
+      "source_sha256": "fc72fe8b3d83df999bb6d463e34e79d167f97e4abd0c394dd33df2ad0a880db2",
+      "components": [
+        {
+          "id": "f-1482",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-23",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiabilityCurrent",
+            "scale": "6",
+            "id": "f-1482"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "686000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-1486",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-23",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiabilityNoncurrent",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-1486"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "5410000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "6096000000",
+      "review_status": "DISCLOSED_TOTAL_DIFFERENCE_RETAINED"
+    },
+    {
+      "item_id": "CMCSA_operating_lease_undiscounted_payments",
+      "ticker": "CMCSA",
+      "field": "operating_lease_undiscounted_payments",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-004994",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm",
+      "source_file": "CMCSA_0001628280-26-004994.html",
+      "source_sha256": "fc72fe8b3d83df999bb6d463e34e79d167f97e4abd0c394dd33df2ad0a880db2",
+      "components": [
+        {
+          "id": "f-1495",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-23",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDue",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-1495"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "9646000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "9646000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "CMCSA_operating_lease_discount",
+      "ticker": "CMCSA",
+      "field": "operating_lease_discount",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-004994",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm",
+      "source_file": "CMCSA_0001628280-26-004994.html",
+      "source_sha256": "fc72fe8b3d83df999bb6d463e34e79d167f97e4abd0c394dd33df2ad0a880db2",
+      "components": [
+        {
+          "id": "f-1496",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-23",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-1496"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "3549000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "3549000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "CMCSA_payment_discount_liability_residual",
+      "ticker": "CMCSA",
+      "field": "payment_discount_liability_residual",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-004994",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm",
+      "source_file": "CMCSA_0001628280-26-004994.html",
+      "source_sha256": "fc72fe8b3d83df999bb6d463e34e79d167f97e4abd0c394dd33df2ad0a880db2",
+      "components": [
+        {
+          "id": "f-1495",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-23",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDue",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-1495"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "9646000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-1496",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-23",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-1496"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "3549000000",
+          "coefficient": -1
+        },
+        {
+          "id": "f-1497",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-23",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiability",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-1497"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "6097000000",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "0",
+      "review_status": "ARITHMETIC_RECONCILED"
+    },
+    {
+      "item_id": "FOX_operating_lease_liability",
+      "ticker": "FOX",
+      "field": "operating_lease_liability",
+      "report_date": "2025-06-30",
+      "accession": "0001628280-25-038077",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1754301/000162828025038077/fox-20250630.htm",
+      "source_file": "FOX_0001628280-25-038077.html",
+      "source_sha256": "f71f3742a2cf017cfa21f2ff332051e990a948dbdc113834229386b357bc63c9",
+      "components": [
+        {
+          "id": "f-728",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-10",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiability",
+            "scale": "6",
+            "id": "f-728"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-06-30"
+            ],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "863000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "863000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "FOX_operating_lease_current_plus_noncurrent",
+      "ticker": "FOX",
+      "field": "operating_lease_current_plus_noncurrent",
+      "report_date": "2025-06-30",
+      "accession": "0001628280-25-038077",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1754301/000162828025038077/fox-20250630.htm",
+      "source_file": "FOX_0001628280-25-038077.html",
+      "source_sha256": "f71f3742a2cf017cfa21f2ff332051e990a948dbdc113834229386b357bc63c9",
+      "components": [
+        {
+          "id": "f-720",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-10",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiabilityCurrent",
+            "scale": "6",
+            "id": "f-720"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-06-30"
+            ],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "41000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-724",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-10",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiabilityNoncurrent",
+            "scale": "6",
+            "id": "f-724"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-06-30"
+            ],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "822000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "863000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "FOX_operating_lease_undiscounted_payments",
+      "ticker": "FOX",
+      "field": "operating_lease_undiscounted_payments",
+      "report_date": "2025-06-30",
+      "accession": "0001628280-25-038077",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1754301/000162828025038077/fox-20250630.htm",
+      "source_file": "FOX_0001628280-25-038077.html",
+      "source_sha256": "f71f3742a2cf017cfa21f2ff332051e990a948dbdc113834229386b357bc63c9",
+      "components": [
+        {
+          "id": "f-755",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-10",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDue",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-755"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-06-30"
+            ],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1349000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1349000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "FOX_operating_lease_discount",
+      "ticker": "FOX",
+      "field": "operating_lease_discount",
+      "report_date": "2025-06-30",
+      "accession": "0001628280-25-038077",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1754301/000162828025038077/fox-20250630.htm",
+      "source_file": "FOX_0001628280-25-038077.html",
+      "source_sha256": "f71f3742a2cf017cfa21f2ff332051e990a948dbdc113834229386b357bc63c9",
+      "components": [
+        {
+          "id": "f-756",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-10",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "scale": "6",
+            "id": "f-756"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-06-30"
+            ],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "486000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "486000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "FOX_payment_discount_liability_residual",
+      "ticker": "FOX",
+      "field": "payment_discount_liability_residual",
+      "report_date": "2025-06-30",
+      "accession": "0001628280-25-038077",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1754301/000162828025038077/fox-20250630.htm",
+      "source_file": "FOX_0001628280-25-038077.html",
+      "source_sha256": "f71f3742a2cf017cfa21f2ff332051e990a948dbdc113834229386b357bc63c9",
+      "components": [
+        {
+          "id": "f-755",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-10",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDue",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-755"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-06-30"
+            ],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1349000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-756",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-10",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "scale": "6",
+            "id": "f-756"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-06-30"
+            ],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "486000000",
+          "coefficient": -1
+        },
+        {
+          "id": "f-728",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-10",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiability",
+            "scale": "6",
+            "id": "f-728"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-06-30"
+            ],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "863000000",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "0",
+      "review_status": "ARITHMETIC_RECONCILED"
+    },
+    {
+      "item_id": "GM_operating_lease_liability",
+      "ticker": "GM",
+      "field": "operating_lease_liability",
+      "report_date": "2025-12-31",
+      "accession": "0001467858-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/gm-20251231.htm",
+      "source_file": "GM_0001467858-26-000013.html",
+      "source_sha256": "a50e0240c592baf8375a2bcb18386e0fea4ab13b5c15468d70faffc81af85cd7",
+      "components": [
+        {
+          "id": "f-1057",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-12",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiabilityCurrent",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-1057"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "266000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-1376",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-12",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiabilityNoncurrent",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-1376"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1035000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1301000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "GM_operating_lease_undiscounted_payments",
+      "ticker": "GM",
+      "field": "operating_lease_undiscounted_payments",
+      "report_date": "2025-12-31",
+      "accession": "0001467858-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/gm-20251231.htm",
+      "source_file": "GM_0001467858-26-000013.html",
+      "source_sha256": "a50e0240c592baf8375a2bcb18386e0fea4ab13b5c15468d70faffc81af85cd7",
+      "components": [
+        {
+          "id": "f-1065",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-12",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDueNextTwelveMonths",
+            "scale": "6",
+            "id": "f-1065"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "321000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-1066",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-12",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDueYearTwo",
+            "scale": "6",
+            "id": "f-1066"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "254000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-1067",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-12",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDueYearThree",
+            "scale": "6",
+            "id": "f-1067"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "216000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-1068",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-12",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDueYearFour",
+            "scale": "6",
+            "id": "f-1068"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "185000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-1069",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-12",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDueYearFive",
+            "scale": "6",
+            "id": "f-1069"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "156000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-1070",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-12",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDueAfterYearFive",
+            "scale": "6",
+            "id": "f-1070"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "416000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1548000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "GM_operating_lease_discount",
+      "ticker": "GM",
+      "field": "operating_lease_discount",
+      "report_date": "2025-12-31",
+      "accession": "0001467858-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/gm-20251231.htm",
+      "source_file": "GM_0001467858-26-000013.html",
+      "source_sha256": "a50e0240c592baf8375a2bcb18386e0fea4ab13b5c15468d70faffc81af85cd7",
+      "components": [
+        {
+          "id": "f-1071",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-12",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "scale": "6",
+            "id": "f-1071"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "248000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "248000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "GM_payment_discount_liability_residual",
+      "ticker": "GM",
+      "field": "payment_discount_liability_residual",
+      "report_date": "2025-12-31",
+      "accession": "0001467858-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/gm-20251231.htm",
+      "source_file": "GM_0001467858-26-000013.html",
+      "source_sha256": "a50e0240c592baf8375a2bcb18386e0fea4ab13b5c15468d70faffc81af85cd7",
+      "components": [
+        {
+          "id": "f-1065",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-12",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDueNextTwelveMonths",
+            "scale": "6",
+            "id": "f-1065"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "321000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-1066",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-12",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDueYearTwo",
+            "scale": "6",
+            "id": "f-1066"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "254000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-1067",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-12",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDueYearThree",
+            "scale": "6",
+            "id": "f-1067"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "216000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-1068",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-12",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDueYearFour",
+            "scale": "6",
+            "id": "f-1068"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "185000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-1069",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-12",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDueYearFive",
+            "scale": "6",
+            "id": "f-1069"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "156000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-1070",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-12",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDueAfterYearFive",
+            "scale": "6",
+            "id": "f-1070"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "416000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-1071",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-12",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "scale": "6",
+            "id": "f-1071"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "248000000",
+          "coefficient": -1
+        },
+        {
+          "id": "f-1057",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-12",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiabilityCurrent",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-1057"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "266000000",
+          "coefficient": -1
+        },
+        {
+          "id": "f-1376",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-12",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiabilityNoncurrent",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-1376"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1035000000",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "-1000000",
+      "review_status": "DISCLOSED_TOTAL_DIFFERENCE_RETAINED"
+    },
+    {
+      "item_id": "ADBE_operating_lease_liability",
+      "ticker": "ADBE",
+      "field": "operating_lease_liability",
+      "report_date": "2025-11-28",
+      "accession": "0000796343-26-000003",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-917",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiability",
+            "scale": "6",
+            "id": "f-917"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-11-28"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "438000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "438000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "ADBE_operating_lease_current_plus_noncurrent",
+      "ticker": "ADBE",
+      "field": "operating_lease_current_plus_noncurrent",
+      "report_date": "2025-11-28",
+      "accession": "0000796343-26-000003",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-90",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiabilityCurrent",
+            "scale": "6",
+            "id": "f-90"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-11-28"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "77000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-100",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiabilityNoncurrent",
+            "scale": "6",
+            "id": "f-100"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-11-28"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "361000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "438000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "ADBE_operating_lease_undiscounted_payments",
+      "ticker": "ADBE",
+      "field": "operating_lease_undiscounted_payments",
+      "report_date": "2025-11-28",
+      "accession": "0000796343-26-000003",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-915",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDue",
+            "scale": "6",
+            "id": "f-915"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-11-28"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "485000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "485000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "ADBE_operating_lease_discount",
+      "ticker": "ADBE",
+      "field": "operating_lease_discount",
+      "report_date": "2025-11-28",
+      "accession": "0000796343-26-000003",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-916",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "scale": "6",
+            "id": "f-916"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-11-28"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "47000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "47000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "ADBE_payment_discount_liability_residual",
+      "ticker": "ADBE",
+      "field": "payment_discount_liability_residual",
+      "report_date": "2025-11-28",
+      "accession": "0000796343-26-000003",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-915",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDue",
+            "scale": "6",
+            "id": "f-915"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-11-28"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "485000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-916",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "scale": "6",
+            "id": "f-916"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-11-28"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "47000000",
+          "coefficient": -1
+        },
+        {
+          "id": "f-917",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiability",
+            "scale": "6",
+            "id": "f-917"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-11-28"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "438000000",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "0",
+      "review_status": "ARITHMETIC_RECONCILED"
+    },
+    {
+      "item_id": "TROW_operating_lease_liability",
+      "ticker": "TROW",
+      "field": "operating_lease_liability",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-008002",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026008002/trow-20251231.htm",
+      "source_file": "TROW_0001628280-26-008002.html",
+      "source_sha256": "6bf42c9f8c74ed6554dca86bfb26d1e91499b8cfe91f46b9b8ccbc5c4a6e6f76",
+      "components": [
+        {
+          "id": "f-81",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-5",
+            "name": "us-gaap:OperatingLeaseLiability",
+            "scale": "6",
+            "id": "f-81"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001113169"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "447200000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "447200000.0",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "TROW_operating_lease_undiscounted_payments",
+      "ticker": "TROW",
+      "field": "operating_lease_undiscounted_payments",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-008002",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026008002/trow-20251231.htm",
+      "source_file": "TROW_0001628280-26-008002.html",
+      "source_sha256": "6bf42c9f8c74ed6554dca86bfb26d1e91499b8cfe91f46b9b8ccbc5c4a6e6f76",
+      "components": [
+        {
+          "id": "f-930",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-5",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDue",
+            "scale": "6",
+            "id": "f-930"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001113169"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "564000000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "564000000.0",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "TROW_operating_lease_discount",
+      "ticker": "TROW",
+      "field": "operating_lease_discount",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-008002",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026008002/trow-20251231.htm",
+      "source_file": "TROW_0001628280-26-008002.html",
+      "source_sha256": "6bf42c9f8c74ed6554dca86bfb26d1e91499b8cfe91f46b9b8ccbc5c4a6e6f76",
+      "components": [
+        {
+          "id": "f-931",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-5",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "scale": "6",
+            "id": "f-931"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001113169"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "116800000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "116800000.0",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "TROW_payment_discount_liability_residual",
+      "ticker": "TROW",
+      "field": "payment_discount_liability_residual",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-008002",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026008002/trow-20251231.htm",
+      "source_file": "TROW_0001628280-26-008002.html",
+      "source_sha256": "6bf42c9f8c74ed6554dca86bfb26d1e91499b8cfe91f46b9b8ccbc5c4a6e6f76",
+      "components": [
+        {
+          "id": "f-930",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-5",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDue",
+            "scale": "6",
+            "id": "f-930"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001113169"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "564000000.0",
+          "coefficient": 1
+        },
+        {
+          "id": "f-931",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-5",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "scale": "6",
+            "id": "f-931"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001113169"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "116800000.0",
+          "coefficient": -1
+        },
+        {
+          "id": "f-81",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-5",
+            "name": "us-gaap:OperatingLeaseLiability",
+            "scale": "6",
+            "id": "f-81"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001113169"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "447200000.0",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "0.0",
+      "review_status": "ARITHMETIC_RECONCILED"
+    },
+    {
+      "item_id": "AMP_operating_lease_liability",
+      "ticker": "AMP",
+      "field": "operating_lease_liability",
+      "report_date": "2025-12-31",
+      "accession": "0000820027-26-000011",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000011/amp-20251231.htm",
+      "source_file": "AMP_0000820027-26-000011.html",
+      "source_sha256": "669df3b7b6e2aa5be18356b2d7700f8eeb19ffad08761f003b7cd6e019578800",
+      "components": [
+        {
+          "id": "f-5021",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-16",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiability",
+            "scale": "6",
+            "id": "f-5021"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "276000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "276000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "AMP_operating_lease_undiscounted_payments",
+      "ticker": "AMP",
+      "field": "operating_lease_undiscounted_payments",
+      "report_date": "2025-12-31",
+      "accession": "0000820027-26-000011",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000011/amp-20251231.htm",
+      "source_file": "AMP_0000820027-26-000011.html",
+      "source_sha256": "669df3b7b6e2aa5be18356b2d7700f8eeb19ffad08761f003b7cd6e019578800",
+      "components": [
+        {
+          "id": "f-5067",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-16",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDue",
+            "scale": "6",
+            "id": "f-5067"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "302000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "302000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "AMP_operating_lease_discount",
+      "ticker": "AMP",
+      "field": "operating_lease_discount",
+      "report_date": "2025-12-31",
+      "accession": "0000820027-26-000011",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000011/amp-20251231.htm",
+      "source_file": "AMP_0000820027-26-000011.html",
+      "source_sha256": "669df3b7b6e2aa5be18356b2d7700f8eeb19ffad08761f003b7cd6e019578800",
+      "components": [
+        {
+          "id": "f-5068",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-16",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "scale": "6",
+            "id": "f-5068"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "26000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "26000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "AMP_finance_lease_liability_separate",
+      "ticker": "AMP",
+      "field": "finance_lease_liability_separate",
+      "report_date": "2025-12-31",
+      "accession": "0000820027-26-000011",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000011/amp-20251231.htm",
+      "source_file": "AMP_0000820027-26-000011.html",
+      "source_sha256": "669df3b7b6e2aa5be18356b2d7700f8eeb19ffad08761f003b7cd6e019578800",
+      "components": [
+        {
+          "id": "f-5025",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-16",
+            "decimals": "-6",
+            "name": "us-gaap:FinanceLeaseLiability",
+            "format": "ixt:fixed-zero",
+            "scale": "6",
+            "id": "f-5025"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "0",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "AMP_payment_discount_liability_residual",
+      "ticker": "AMP",
+      "field": "payment_discount_liability_residual",
+      "report_date": "2025-12-31",
+      "accession": "0000820027-26-000011",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000011/amp-20251231.htm",
+      "source_file": "AMP_0000820027-26-000011.html",
+      "source_sha256": "669df3b7b6e2aa5be18356b2d7700f8eeb19ffad08761f003b7cd6e019578800",
+      "components": [
+        {
+          "id": "f-5067",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-16",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDue",
+            "scale": "6",
+            "id": "f-5067"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "302000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-5068",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-16",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "scale": "6",
+            "id": "f-5068"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "26000000",
+          "coefficient": -1
+        },
+        {
+          "id": "f-5021",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-16",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiability",
+            "scale": "6",
+            "id": "f-5021"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "276000000",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "0",
+      "review_status": "ARITHMETIC_RECONCILED"
+    },
+    {
+      "item_id": "NEM_operating_lease_liability",
+      "ticker": "NEM",
+      "field": "operating_lease_liability",
+      "report_date": "2025-12-31",
+      "accession": "0001164727-26-000010",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "components": [
+        {
+          "id": "f-3531",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-7",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiability",
+            "scale": "6",
+            "id": "f-3531"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "109000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "109000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "NEM_operating_lease_undiscounted_payments",
+      "ticker": "NEM",
+      "field": "operating_lease_undiscounted_payments",
+      "report_date": "2025-12-31",
+      "accession": "0001164727-26-000010",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "components": [
+        {
+          "id": "f-3525",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-7",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDue",
+            "scale": "6",
+            "id": "f-3525"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "123000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "123000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "NEM_operating_lease_discount",
+      "ticker": "NEM",
+      "field": "operating_lease_discount",
+      "report_date": "2025-12-31",
+      "accession": "0001164727-26-000010",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "components": [
+        {
+          "id": "f-3527",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-7",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "scale": "6",
+            "id": "f-3527"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "14000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "14000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "NEM_finance_lease_liability_separate",
+      "ticker": "NEM",
+      "field": "finance_lease_liability_separate",
+      "report_date": "2025-12-31",
+      "accession": "0001164727-26-000010",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "components": [
+        {
+          "id": "f-3532",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-7",
+            "decimals": "-6",
+            "name": "us-gaap:FinanceLeaseLiability",
+            "scale": "6",
+            "id": "f-3532"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "474000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "474000000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "NEM_payment_discount_liability_residual",
+      "ticker": "NEM",
+      "field": "payment_discount_liability_residual",
+      "report_date": "2025-12-31",
+      "accession": "0001164727-26-000010",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "components": [
+        {
+          "id": "f-3525",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-7",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDue",
+            "scale": "6",
+            "id": "f-3525"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "123000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-3527",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-7",
+            "decimals": "-6",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "scale": "6",
+            "id": "f-3527"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "14000000",
+          "coefficient": -1
+        },
+        {
+          "id": "f-3531",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-7",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseLiability",
+            "scale": "6",
+            "id": "f-3531"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "109000000",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "0",
+      "review_status": "ARITHMETIC_RECONCILED"
+    },
+    {
+      "item_id": "FIX_operating_lease_liability",
+      "ticker": "FIX",
+      "field": "operating_lease_liability",
+      "report_date": "2025-12-31",
+      "accession": "0001104659-26-017530",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/fix-20251231x10k.htm",
+      "source_file": "FIX_0001104659-26-017530.html",
+      "source_sha256": "94f1f335cbf42ebe0937f588964c4a683e45fda9a1437d76b8fff351e067c91e",
+      "components": [
+        {
+          "id": "Tc_53S6y_9WhkqAAXbhChEIVQ_7_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "As_Of_12_31_2025_5si6P6gM9EWwy4z8Bmkn8g",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:OperatingLeaseLiability",
+            "scale": "3",
+            "id": "Tc_53S6y_9WhkqAAXbhChEIVQ_7_3"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "338132000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "338132000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "FIX_operating_lease_current_plus_noncurrent",
+      "ticker": "FIX",
+      "field": "operating_lease_current_plus_noncurrent",
+      "report_date": "2025-12-31",
+      "accession": "0001104659-26-017530",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/fix-20251231x10k.htm",
+      "source_file": "FIX_0001104659-26-017530.html",
+      "source_sha256": "94f1f335cbf42ebe0937f588964c4a683e45fda9a1437d76b8fff351e067c91e",
+      "components": [
+        {
+          "id": "Tc_W-cRio9B9UabFoDwqdszlw_4_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "As_Of_12_31_2025_5si6P6gM9EWwy4z8Bmkn8g",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:OperatingLeaseLiabilityCurrent",
+            "scale": "3",
+            "id": "Tc_W-cRio9B9UabFoDwqdszlw_4_3"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "35542000",
+          "coefficient": 1
+        },
+        {
+          "id": "Tc_yaGevb-OOkmjpS3qicgdQQ_30_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "As_Of_12_31_2025_5si6P6gM9EWwy4z8Bmkn8g",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:OperatingLeaseLiabilityNoncurrent",
+            "scale": "3",
+            "id": "Tc_yaGevb-OOkmjpS3qicgdQQ_30_3"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "302590000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "338132000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "FIX_operating_lease_undiscounted_payments",
+      "ticker": "FIX",
+      "field": "operating_lease_undiscounted_payments",
+      "report_date": "2025-12-31",
+      "accession": "0001104659-26-017530",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/fix-20251231x10k.htm",
+      "source_file": "FIX_0001104659-26-017530.html",
+      "source_sha256": "94f1f335cbf42ebe0937f588964c4a683e45fda9a1437d76b8fff351e067c91e",
+      "components": [
+        {
+          "id": "Tc_ZvdwJalteUmS25lPvtTuVA_8_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "As_Of_12_31_2025_5si6P6gM9EWwy4z8Bmkn8g",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDue",
+            "scale": "3",
+            "id": "Tc_ZvdwJalteUmS25lPvtTuVA_8_3"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "485830000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "485830000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "FIX_operating_lease_discount",
+      "ticker": "FIX",
+      "field": "operating_lease_discount",
+      "report_date": "2025-12-31",
+      "accession": "0001104659-26-017530",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/fix-20251231x10k.htm",
+      "source_file": "FIX_0001104659-26-017530.html",
+      "source_sha256": "94f1f335cbf42ebe0937f588964c4a683e45fda9a1437d76b8fff351e067c91e",
+      "components": [
+        {
+          "id": "Tc_5IWaolQEQ06Mu7JLnOGHjQ_9_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "As_Of_12_31_2025_5si6P6gM9EWwy4z8Bmkn8g",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "scale": "3",
+            "id": "Tc_5IWaolQEQ06Mu7JLnOGHjQ_9_3"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "147698000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "147698000",
+      "review_status": "QUANTIFIED_CATEGORY_SCOPE_REVIEW_REQUIRED"
+    },
+    {
+      "item_id": "FIX_payment_discount_liability_residual",
+      "ticker": "FIX",
+      "field": "payment_discount_liability_residual",
+      "report_date": "2025-12-31",
+      "accession": "0001104659-26-017530",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/fix-20251231x10k.htm",
+      "source_file": "FIX_0001104659-26-017530.html",
+      "source_sha256": "94f1f335cbf42ebe0937f588964c4a683e45fda9a1437d76b8fff351e067c91e",
+      "components": [
+        {
+          "id": "Tc_ZvdwJalteUmS25lPvtTuVA_8_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "As_Of_12_31_2025_5si6P6gM9EWwy4z8Bmkn8g",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDue",
+            "scale": "3",
+            "id": "Tc_ZvdwJalteUmS25lPvtTuVA_8_3"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "485830000",
+          "coefficient": 1
+        },
+        {
+          "id": "Tc_5IWaolQEQ06Mu7JLnOGHjQ_9_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "As_Of_12_31_2025_5si6P6gM9EWwy4z8Bmkn8g",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "scale": "3",
+            "id": "Tc_5IWaolQEQ06Mu7JLnOGHjQ_9_3"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "147698000",
+          "coefficient": -1
+        },
+        {
+          "id": "Tc_53S6y_9WhkqAAXbhChEIVQ_7_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "As_Of_12_31_2025_5si6P6gM9EWwy4z8Bmkn8g",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:OperatingLeaseLiability",
+            "scale": "3",
+            "id": "Tc_53S6y_9WhkqAAXbhChEIVQ_7_3"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "338132000",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "0",
+      "review_status": "ARITHMETIC_RECONCILED"
+    },
+    {
+      "item_id": "ANET_operating_lease_undiscounted_payments",
+      "ticker": "ANET",
+      "field": "operating_lease_undiscounted_payments",
+      "report_date": "2025-12-31",
+      "accession": "0001596532-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_file": "ANET_0001596532-26-000013.html",
+      "source_sha256": "f4f873ca437c7ab9cffd7e8b4a7a55a9df0439e9ff77e94c820deb66e47dc959",
+      "components": [
+        {
+          "id": "f-752",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-5",
+            "name": "us-gaap:LesseeOperatingLeaseLiabilityPaymentsDue",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-752"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001596532"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "90500000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "90500000.0",
+      "review_status": "PAYMENTS_NET_OF_IMMATERIAL_SUBLEASE_NOT_PV_LIABILITY"
+    }
+  ]
+}
