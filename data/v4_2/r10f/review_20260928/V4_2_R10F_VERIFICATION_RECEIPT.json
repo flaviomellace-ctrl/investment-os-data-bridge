@@ -1,0 +1,129 @@
+{
+  "schema": "r10f_source_corrections_verification_v1",
+  "items": [
+    {
+      "item_id": "ADBE_annual_DA",
+      "ticker": "ADBE",
+      "field": "annual_DA",
+      "value_usd": "818000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_RECONCILED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FISV_annual_DA",
+      "ticker": "FISV",
+      "field": "annual_DA",
+      "value_usd": "3161000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_RECONCILED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FIX_annual_DA_face_statement",
+      "ticker": "FIX",
+      "field": "annual_DA_face_statement",
+      "value_usd": "141959000",
+      "source_verification": "PASS",
+      "review_status": "CONFLICTING_EXTERNAL_AGGREGATE",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FOX_cash_and_equivalents_face_statement",
+      "ticker": "FOX",
+      "field": "cash_and_equivalents_face_statement",
+      "value_usd": "5351000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_RECONCILED_WITH_LABEL_REVIEW",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FOX_operating_income_derived",
+      "ticker": "FOX",
+      "field": "operating_income_derived",
+      "value_usd": "2879000000",
+      "source_verification": "PASS",
+      "review_status": "DERIVED_NOT_DIRECT_TAG",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "NEM_operating_income_derived",
+      "ticker": "NEM",
+      "field": "operating_income_derived",
+      "value_usd": "10961000000",
+      "source_verification": "PASS",
+      "review_status": "DERIVED_NOT_DIRECT_TAG",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "GM_debt_carrying_amount_face_statement",
+      "ticker": "GM",
+      "field": "debt_carrying_amount_face_statement",
+      "value_usd": "130277000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_RECONCILED_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "AMP_cash_excluding_consolidated_investment_entities",
+      "ticker": "AMP",
+      "field": "cash_excluding_consolidated_investment_entities",
+      "value_usd": "9953000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_RECONCILED_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "AMP_debt_excluding_consolidated_investment_entities",
+      "ticker": "AMP",
+      "field": "debt_excluding_consolidated_investment_entities",
+      "value_usd": "3277000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_RECONCILED_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "AMP_debt_consolidated_investment_entities",
+      "ticker": "AMP",
+      "field": "debt_consolidated_investment_entities",
+      "value_usd": "2585000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_RECONCILED_SCOPE_REVIEW_REQUIRED",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "ADBE_purchase_obligations",
+      "ticker": "ADBE",
+      "field": "purchase_obligations",
+      "value_usd": "6821000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_ONLY",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "ANET_purchase_obligations",
+      "ticker": "ANET",
+      "field": "purchase_obligations",
+      "value_usd": "6800000000.0",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_ONLY",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "TROW_mixed_DA_impairment_retention_lines",
+      "ticker": "TROW",
+      "field": "mixed_DA_impairment_retention_lines",
+      "value_usd": "605500000.0",
+      "source_verification": "PASS",
+      "review_status": "NOT_ACCEPTED_AS_PURE_DA",
+      "promoted_to_frozen_inputs": false
+    }
+  ],
+  "source_verified_count": 13,
+  "case_closures": 0,
+  "engine_modified": false,
+  "ranking_recomputed": false,
+  "system_live": false,
+  "registry_sha256": "1b223e20a33ab7110c25f6e6b33ad3d3999bad75ea5e72de66f2d9153747587c",
+  "verifier_sha256": "65d1d38edbd1e29a7de03794e3a249f50b94885b24cdee5e58134b207e8caf9b"
+}
