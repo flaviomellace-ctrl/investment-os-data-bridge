@@ -1,0 +1,219 @@
+{
+  "schema": "r10f_source_corrections_verification_v1",
+  "items": [
+    {
+      "item_id": "FISV_operating_leases_not_commenced",
+      "ticker": "FISV",
+      "field": "operating_leases_not_commenced",
+      "value_usd": "162000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FISV_finance_leases_not_commenced",
+      "ticker": "FISV",
+      "field": "finance_leases_not_commenced",
+      "value_usd": "393000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "CMCSA_licensed_content_unrecognized_minimum",
+      "ticker": "CMCSA",
+      "field": "licensed_content_unrecognized_minimum",
+      "value_usd": "2600000000.0",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "CMCSA_letters_of_credit_and_guarantees",
+      "ticker": "CMCSA",
+      "field": "letters_of_credit_and_guarantees",
+      "value_usd": "313000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "CMCSA_atairos_unfunded_capital",
+      "ticker": "CMCSA",
+      "field": "atairos_unfunded_capital",
+      "value_usd": "1300000000.0",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FOX_licensed_programming",
+      "ticker": "FOX",
+      "field": "licensed_programming",
+      "value_usd": "26941000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FOX_other_commitments",
+      "ticker": "FOX",
+      "field": "other_commitments",
+      "value_usd": "1595000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FOX_firm_commitments_including_borrowings",
+      "ticker": "FOX",
+      "field": "firm_commitments_including_borrowings",
+      "value_usd": "35186000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "GM_ev_purchase_remaining",
+      "ticker": "GM",
+      "field": "ev_purchase_remaining",
+      "value_usd": "293000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "GM_guarantees_maximum_exposure",
+      "ticker": "GM",
+      "field": "guarantees_maximum_exposure",
+      "value_usd": "3500000000.0",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "GM_nonconsolidated_vie_maximum_exposure",
+      "ticker": "GM",
+      "field": "nonconsolidated_vie_maximum_exposure",
+      "value_usd": "8500000000.0",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "GM_battery_jv_capital_included_in_vie_maximum",
+      "ticker": "GM",
+      "field": "battery_jv_capital_included_in_vie_maximum",
+      "value_usd": "4000000000.0",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "GM_transferred_receivables_serviced_not_debt",
+      "ticker": "GM",
+      "field": "transferred_receivables_serviced_not_debt",
+      "value_usd": "1700000000.0",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "AMP_funding_commitments_total",
+      "ticker": "AMP",
+      "field": "funding_commitments_total",
+      "value_usd": "3322000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "AMP_funding_commitments_components",
+      "ticker": "AMP",
+      "field": "funding_commitments_components",
+      "value_usd": "3322000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "NEM_surety_lc_guarantees_total",
+      "ticker": "NEM",
+      "field": "surety_lc_guarantees_total",
+      "value_usd": "1943000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "NEM_letters_of_credit_included_in_total",
+      "ticker": "NEM",
+      "field": "letters_of_credit_included_in_total",
+      "value_usd": "1139000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "NEM_reclamation_lc_included_in_lc",
+      "ticker": "NEM",
+      "field": "reclamation_lc_included_in_lc",
+      "value_usd": "1005000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FIX_letters_of_credit_outstanding",
+      "ticker": "FIX",
+      "field": "letters_of_credit_outstanding",
+      "value_usd": "79000000.0",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "TROW_nonconsolidated_vie_unfunded_capital",
+      "ticker": "TROW",
+      "field": "nonconsolidated_vie_unfunded_capital",
+      "value_usd": "199300000.0",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "TROW_oha_product_launch_commitment",
+      "ticker": "TROW",
+      "field": "oha_product_launch_commitment",
+      "value_usd": "287000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "ADBE_purchase_obligations",
+      "ticker": "ADBE",
+      "field": "purchase_obligations",
+      "value_usd": "6821000000",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_ONLY",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "ANET_purchase_obligations",
+      "ticker": "ANET",
+      "field": "purchase_obligations",
+      "value_usd": "6800000000.0",
+      "source_verification": "PASS",
+      "review_status": "QUANTIFIED_CATEGORY_ONLY",
+      "promoted_to_frozen_inputs": false
+    }
+  ],
+  "source_verified_count": 23,
+  "case_closures": 0,
+  "engine_modified": false,
+  "ranking_recomputed": false,
+  "system_live": false,
+  "registry_sha256": "bb0519ad0dadc2380979662b50612305e474a810dc3a870155d488e3c344133b",
+  "verifier_sha256": "65d1d38edbd1e29a7de03794e3a249f50b94885b24cdee5e58134b207e8caf9b"
+}
