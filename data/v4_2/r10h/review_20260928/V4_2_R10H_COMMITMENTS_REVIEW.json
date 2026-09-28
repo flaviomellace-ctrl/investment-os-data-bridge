@@ -1,0 +1,1280 @@
+{
+  "schema": "r10h_commitments_source_review_v1",
+  "review_date": "2026-09-28",
+  "source_run_id": 36336222379,
+  "source_artifact_id": 10937655129,
+  "source_artifact_sha256": "de766c06c2669ba93183bf9c58d5aa038cc340d5bb3057408966b1d2ef91327e",
+  "items": [
+    {
+      "item_id": "FISV_operating_leases_not_commenced",
+      "ticker": "FISV",
+      "field": "operating_leases_not_commenced",
+      "report_date": "2025-12-31",
+      "accession": "0000798354-26-000009",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm",
+      "source_file": "FISV_0000798354-26-000009.html",
+      "source_sha256": "223c6d6c8d23f6337a65082857b03268267d5253b7fc9ea807b18bebf970979f",
+      "components": [
+        {
+          "id": "f-1118",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-29",
+            "decimals": "-6",
+            "name": "fi:LesseeOperatingLeaseLeaseNotYetCommencedLiabilityToBePaid",
+            "scale": "6",
+            "id": "f-1118"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "162000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "162000000",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS"
+    },
+    {
+      "item_id": "FISV_finance_leases_not_commenced",
+      "ticker": "FISV",
+      "field": "finance_leases_not_commenced",
+      "report_date": "2025-12-31",
+      "accession": "0000798354-26-000009",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm",
+      "source_file": "FISV_0000798354-26-000009.html",
+      "source_sha256": "223c6d6c8d23f6337a65082857b03268267d5253b7fc9ea807b18bebf970979f",
+      "components": [
+        {
+          "id": "f-1120",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-29",
+            "decimals": "-6",
+            "name": "fi:LesseeFinanceLeaseLeaseNotYetCommencedLiabilityToBePaid",
+            "scale": "6",
+            "id": "f-1120"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "393000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "393000000",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS"
+    },
+    {
+      "item_id": "CMCSA_licensed_content_unrecognized_minimum",
+      "ticker": "CMCSA",
+      "field": "licensed_content_unrecognized_minimum",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-004994",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm",
+      "source_file": "CMCSA_0001628280-26-004994.html",
+      "source_sha256": "fc72fe8b3d83df999bb6d463e34e79d167f97e4abd0c394dd33df2ad0a880db2",
+      "components": [
+        {
+          "id": "f-820",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-23",
+            "decimals": "-8",
+            "name": "cmcsa:BroadcastersLicenseAgreementCommitmentsAmount",
+            "format": "ixt:num-dot-decimal",
+            "scale": "9",
+            "id": "f-820"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "2600000000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "2600000000.0",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS"
+    },
+    {
+      "item_id": "CMCSA_letters_of_credit_and_guarantees",
+      "ticker": "CMCSA",
+      "field": "letters_of_credit_and_guarantees",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-004994",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm",
+      "source_file": "CMCSA_0001628280-26-004994.html",
+      "source_sha256": "fc72fe8b3d83df999bb6d463e34e79d167f97e4abd0c394dd33df2ad0a880db2",
+      "components": [
+        {
+          "id": "f-1064",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-23",
+            "decimals": "-6",
+            "name": "cmcsa:LettersOfCreditAndBankGuaranteesOutstandingAmount",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-1064"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "313000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "313000000",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS"
+    },
+    {
+      "item_id": "CMCSA_atairos_unfunded_capital",
+      "ticker": "CMCSA",
+      "field": "atairos_unfunded_capital",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-004994",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm",
+      "source_file": "CMCSA_0001628280-26-004994.html",
+      "source_sha256": "fc72fe8b3d83df999bb6d463e34e79d167f97e4abd0c394dd33df2ad0a880db2",
+      "components": [
+        {
+          "id": "f-1155",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-272",
+            "decimals": "-8",
+            "name": "cmcsa:VariableInterestEntityReportingEntityInvolvementUnfundedCapitalCommitment",
+            "scale": "9",
+            "id": "f-1155"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": [
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "srt:ConsolidatedEntitiesAxis",
+                "value": "us-gaap:VariableInterestEntityNotPrimaryBeneficiaryMember"
+              },
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "srt:ScheduleOfEquityMethodInvestmentEquityMethodInvesteeNameAxis",
+                "value": "cmcsa:AtairosMember"
+              }
+            ]
+          },
+          "expected_value_usd": "1300000000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1300000000.0",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS"
+    },
+    {
+      "item_id": "FOX_licensed_programming",
+      "ticker": "FOX",
+      "field": "licensed_programming",
+      "report_date": "2025-06-30",
+      "accession": "0001628280-25-038077",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1754301/000162828025038077/fox-20250630.htm",
+      "source_file": "FOX_0001628280-25-038077.html",
+      "source_sha256": "f71f3742a2cf017cfa21f2ff332051e990a948dbdc113834229386b357bc63c9",
+      "components": [
+        {
+          "id": "f-982",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-220",
+            "decimals": "-6",
+            "name": "us-gaap:ContractualObligation",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-982"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-06-30"
+            ],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": [
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "us-gaap:PublicUtilitiesInventoryAxis",
+                "value": "fox:LicensedProgrammingMember"
+              }
+            ]
+          },
+          "expected_value_usd": "26941000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "26941000000",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS"
+    },
+    {
+      "item_id": "FOX_other_commitments",
+      "ticker": "FOX",
+      "field": "other_commitments",
+      "report_date": "2025-06-30",
+      "accession": "0001628280-25-038077",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1754301/000162828025038077/fox-20250630.htm",
+      "source_file": "FOX_0001628280-25-038077.html",
+      "source_sha256": "f71f3742a2cf017cfa21f2ff332051e990a948dbdc113834229386b357bc63c9",
+      "components": [
+        {
+          "id": "f-987",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-10",
+            "decimals": "-6",
+            "name": "us-gaap:OtherCommitment",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-987"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-06-30"
+            ],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1595000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1595000000",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS"
+    },
+    {
+      "item_id": "FOX_firm_commitments_including_borrowings",
+      "ticker": "FOX",
+      "field": "firm_commitments_including_borrowings",
+      "report_date": "2025-06-30",
+      "accession": "0001628280-25-038077",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1754301/000162828025038077/fox-20250630.htm",
+      "source_file": "FOX_0001628280-25-038077.html",
+      "source_sha256": "f71f3742a2cf017cfa21f2ff332051e990a948dbdc113834229386b357bc63c9",
+      "components": [
+        {
+          "id": "f-992",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-10",
+            "decimals": "-6",
+            "name": "us-gaap:ContractualObligation",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-992"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-06-30"
+            ],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "35186000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "35186000000",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS"
+    },
+    {
+      "item_id": "GM_ev_purchase_remaining",
+      "ticker": "GM",
+      "field": "ev_purchase_remaining",
+      "report_date": "2025-12-31",
+      "accession": "0001467858-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/gm-20251231.htm",
+      "source_file": "GM_0001467858-26-000013.html",
+      "source_sha256": "a50e0240c592baf8375a2bcb18386e0fea4ab13b5c15468d70faffc81af85cd7",
+      "components": [
+        {
+          "id": "f-1091",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-233",
+            "decimals": "-6",
+            "name": "us-gaap:PurchaseCommitmentRemainingMinimumAmountCommitted",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-1091"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": [
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "gm:BusinessGroupAxis",
+                "value": "gm:GmFinancialMember"
+              },
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "us-gaap:OtherCommitmentsAxis",
+                "value": "gm:ElectricVehiclesMember"
+              }
+            ]
+          },
+          "expected_value_usd": "293000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "293000000",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS"
+    },
+    {
+      "item_id": "GM_guarantees_maximum_exposure",
+      "ticker": "GM",
+      "field": "guarantees_maximum_exposure",
+      "report_date": "2025-12-31",
+      "accession": "0001467858-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/gm-20251231.htm",
+      "source_file": "GM_0001467858-26-000013.html",
+      "source_sha256": "a50e0240c592baf8375a2bcb18386e0fea4ab13b5c15468d70faffc81af85cd7",
+      "components": [
+        {
+          "id": "f-2078",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-12",
+            "decimals": "-8",
+            "name": "us-gaap:GuaranteeObligationsMaximumExposure",
+            "scale": "9",
+            "id": "f-2078"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "3500000000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "3500000000.0",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS"
+    },
+    {
+      "item_id": "GM_nonconsolidated_vie_maximum_exposure",
+      "ticker": "GM",
+      "field": "nonconsolidated_vie_maximum_exposure",
+      "report_date": "2025-12-31",
+      "accession": "0001467858-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/gm-20251231.htm",
+      "source_file": "GM_0001467858-26-000013.html",
+      "source_sha256": "a50e0240c592baf8375a2bcb18386e0fea4ab13b5c15468d70faffc81af85cd7",
+      "components": [
+        {
+          "id": "f-1354",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-343",
+            "decimals": "-8",
+            "name": "us-gaap:VariableInterestEntityEntityMaximumLossExposureAmount",
+            "format": "ixt:num-dot-decimal",
+            "scale": "9",
+            "id": "f-1354"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": [
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "srt:ConsolidatedEntitiesAxis",
+                "value": "us-gaap:VariableInterestEntityNotPrimaryBeneficiaryMember"
+              }
+            ]
+          },
+          "expected_value_usd": "8500000000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "8500000000.0",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS"
+    },
+    {
+      "item_id": "GM_battery_jv_capital_included_in_vie_maximum",
+      "ticker": "GM",
+      "field": "battery_jv_capital_included_in_vie_maximum",
+      "report_date": "2025-12-31",
+      "accession": "0001467858-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/gm-20251231.htm",
+      "source_file": "GM_0001467858-26-000013.html",
+      "source_sha256": "a50e0240c592baf8375a2bcb18386e0fea4ab13b5c15468d70faffc81af85cd7",
+      "components": [
+        {
+          "id": "f-1356",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-345",
+            "decimals": "-8",
+            "name": "us-gaap:LongTermPurchaseCommitmentAmount",
+            "format": "ixt:num-dot-decimal",
+            "scale": "9",
+            "id": "f-1356"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": [
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "srt:ConsolidatedEntitiesAxis",
+                "value": "us-gaap:VariableInterestEntityNotPrimaryBeneficiaryMember"
+              },
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "srt:ScheduleOfEquityMethodInvestmentEquityMethodInvesteeNameAxis",
+                "value": "gm:BatteryCellManufacturingJointVenturesMember"
+              },
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "us-gaap:LongTermPurchaseCommitmentByCategoryOfItemPurchasedAxis",
+                "value": "us-gaap:CapitalAdditionsMember"
+              }
+            ]
+          },
+          "expected_value_usd": "4000000000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "4000000000.0",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS"
+    },
+    {
+      "item_id": "GM_transferred_receivables_serviced_not_debt",
+      "ticker": "GM",
+      "field": "transferred_receivables_serviced_not_debt",
+      "report_date": "2025-12-31",
+      "accession": "0001467858-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/gm-20251231.htm",
+      "source_file": "GM_0001467858-26-000013.html",
+      "source_sha256": "a50e0240c592baf8375a2bcb18386e0fea4ab13b5c15468d70faffc81af85cd7",
+      "components": [
+        {
+          "id": "f-1013",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-16",
+            "decimals": "-8",
+            "name": "us-gaap:ContinuingInvolvementWithTransferredFinancialAssetsPrincipalAmountOutstanding",
+            "format": "ixt:num-dot-decimal",
+            "scale": "9",
+            "id": "f-1013"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": [
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "gm:BusinessGroupAxis",
+                "value": "gm:GmFinancialMember"
+              }
+            ]
+          },
+          "expected_value_usd": "1700000000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1700000000.0",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS"
+    },
+    {
+      "item_id": "AMP_funding_commitments_total",
+      "ticker": "AMP",
+      "field": "funding_commitments_total",
+      "report_date": "2025-12-31",
+      "accession": "0000820027-26-000011",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000011/amp-20251231.htm",
+      "source_file": "AMP_0000820027-26-000011.html",
+      "source_sha256": "669df3b7b6e2aa5be18356b2d7700f8eeb19ffad08761f003b7cd6e019578800",
+      "components": [
+        {
+          "id": "f-5956",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-16",
+            "decimals": "-6",
+            "name": "us-gaap:OtherCommitment",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-5956"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "3322000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "3322000000",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS"
+    },
+    {
+      "item_id": "AMP_funding_commitments_components",
+      "ticker": "AMP",
+      "field": "funding_commitments_components",
+      "report_date": "2025-12-31",
+      "accession": "0000820027-26-000011",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000011/amp-20251231.htm",
+      "source_file": "AMP_0000820027-26-000011.html",
+      "source_sha256": "669df3b7b6e2aa5be18356b2d7700f8eeb19ffad08761f003b7cd6e019578800",
+      "components": [
+        {
+          "id": "f-5946",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-2307",
+            "decimals": "-6",
+            "name": "us-gaap:OtherCommitment",
+            "scale": "6",
+            "id": "f-5946"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": [
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "us-gaap:OtherCommitmentsAxis",
+                "value": "us-gaap:LoanOriginationCommitmentsMember"
+              }
+            ]
+          },
+          "expected_value_usd": "32000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-5948",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-2309",
+            "decimals": "-6",
+            "name": "us-gaap:OtherCommitment",
+            "scale": "6",
+            "id": "f-5948"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": [
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "us-gaap:OtherCommitmentsAxis",
+                "value": "us-gaap:RealEstateFundsMember"
+              }
+            ]
+          },
+          "expected_value_usd": "1000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-5950",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-2311",
+            "decimals": "-6",
+            "name": "us-gaap:OtherCommitment",
+            "scale": "6",
+            "id": "f-5950"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": [
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "us-gaap:OtherCommitmentsAxis",
+                "value": "us-gaap:PrivateEquityFundsMember"
+              }
+            ]
+          },
+          "expected_value_usd": "7000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-5952",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-2313",
+            "decimals": "-6",
+            "name": "us-gaap:OtherCommitment",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-5952"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": [
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "us-gaap:OtherCommitmentsAxis",
+                "value": "us-gaap:CommitmentsToExtendCreditMember"
+              }
+            ]
+          },
+          "expected_value_usd": "3258000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-5954",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-2315",
+            "decimals": "-6",
+            "name": "us-gaap:OtherCommitment",
+            "scale": "6",
+            "id": "f-5954"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": [
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "us-gaap:OtherCommitmentsAxis",
+                "value": "us-gaap:HomeEquityMember"
+              }
+            ]
+          },
+          "expected_value_usd": "24000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "3322000000",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS"
+    },
+    {
+      "item_id": "NEM_surety_lc_guarantees_total",
+      "ticker": "NEM",
+      "field": "surety_lc_guarantees_total",
+      "report_date": "2025-12-31",
+      "accession": "0001164727-26-000010",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "components": [
+        {
+          "id": "f-3665",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-7",
+            "decimals": "-6",
+            "name": "nem:LettersOfCreditSuretyBondsAndBankGuaranteesOutstanding",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-3665"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1943000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1943000000",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS"
+    },
+    {
+      "item_id": "NEM_letters_of_credit_included_in_total",
+      "ticker": "NEM",
+      "field": "letters_of_credit_included_in_total",
+      "report_date": "2025-12-31",
+      "accession": "0001164727-26-000010",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "components": [
+        {
+          "id": "f-3396",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-7",
+            "decimals": "-6",
+            "name": "us-gaap:LettersOfCreditOutstandingAmount",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-3396"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1139000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1139000000",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS"
+    },
+    {
+      "item_id": "NEM_reclamation_lc_included_in_lc",
+      "ticker": "NEM",
+      "field": "reclamation_lc_included_in_lc",
+      "report_date": "2025-12-31",
+      "accession": "0001164727-26-000010",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "components": [
+        {
+          "id": "f-3398",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-7",
+            "decimals": "-6",
+            "name": "nem:LettersOfCreditOutstandingAmountReclamationObligations",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-3398"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1005000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1005000000",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS"
+    },
+    {
+      "item_id": "FIX_letters_of_credit_outstanding",
+      "ticker": "FIX",
+      "field": "letters_of_credit_outstanding",
+      "report_date": "2025-12-31",
+      "accession": "0001104659-26-017530",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/fix-20251231x10k.htm",
+      "source_file": "FIX_0001104659-26-017530.html",
+      "source_sha256": "94f1f335cbf42ebe0937f588964c4a683e45fda9a1437d76b8fff351e067c91e",
+      "components": [
+        {
+          "id": "Narr_R0FlAa-YzUmbr9iNwHiEmg",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "As_Of_12_31_2025_us-gaap_CreditFacilityAxis_us-gaap_RevolvingCreditFacilityMember_piT5BgKs_kCn7Us5j55YZA",
+            "decimals": "-5",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:LettersOfCreditOutstandingAmount",
+            "scale": "6",
+            "id": "Narr_R0FlAa-YzUmbr9iNwHiEmg"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": [
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "us-gaap:CreditFacilityAxis",
+                "value": "us-gaap:RevolvingCreditFacilityMember"
+              }
+            ]
+          },
+          "expected_value_usd": "79000000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "79000000.0",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS"
+    },
+    {
+      "item_id": "TROW_nonconsolidated_vie_unfunded_capital",
+      "ticker": "TROW",
+      "field": "nonconsolidated_vie_unfunded_capital",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-008002",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026008002/trow-20251231.htm",
+      "source_file": "TROW_0001628280-26-008002.html",
+      "source_sha256": "6bf42c9f8c74ed6554dca86bfb26d1e91499b8cfe91f46b9b8ccbc5c4a6e6f76",
+      "components": [
+        {
+          "id": "f-647",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-178",
+            "decimals": "-5",
+            "name": "trow:VariableInterestEntityReportingEntityInvolvementMaximumLossExposureUnfundedCapitalCommitmentsAmount",
+            "scale": "6",
+            "id": "f-647"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001113169"
+            ],
+            "dimensions": [
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "srt:ConsolidatedEntitiesAxis",
+                "value": "us-gaap:VariableInterestEntityNotPrimaryBeneficiaryMember"
+              }
+            ]
+          },
+          "expected_value_usd": "199300000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "199300000.0",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS"
+    },
+    {
+      "item_id": "TROW_oha_product_launch_commitment",
+      "ticker": "TROW",
+      "field": "oha_product_launch_commitment",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-008002",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026008002/trow-20251231.htm",
+      "source_file": "TROW_0001628280-26-008002.html",
+      "source_sha256": "6bf42c9f8c74ed6554dca86bfb26d1e91499b8cfe91f46b9b8ccbc5c4a6e6f76",
+      "components": [
+        {
+          "id": "f-1341",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-304",
+            "decimals": "-5",
+            "name": "us-gaap:OtherCommitment",
+            "scale": "6",
+            "id": "f-1341"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001113169"
+            ],
+            "dimensions": [
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "us-gaap:OtherCommitmentsAxis",
+                "value": "trow:OHACommitmentsMember"
+              }
+            ]
+          },
+          "expected_value_usd": "287000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "287000000",
+      "review_status": "QUANTIFIED_CATEGORY_NOT_ADDITIVE_WITH_OVERLAPPING_ITEMS"
+    },
+    {
+      "item_id": "ADBE_purchase_obligations",
+      "ticker": "ADBE",
+      "field": "purchase_obligations",
+      "report_date": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "prior_value_or_status": "UNQUANTIFIED",
+      "components": [
+        {
+          "id": "f-1326",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-6",
+            "name": "us-gaap:UnrecordedUnconditionalPurchaseObligationBalanceSheetAmount",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-1326"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-11-28"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "6821000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "6821000000",
+      "review_status": "QUANTIFIED_CATEGORY_ONLY",
+      "reason": "Unrecorded unconditional purchase obligations. This quantifies one commitment category, not all commitments or debt.",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "ANET_purchase_obligations",
+      "ticker": "ANET",
+      "field": "purchase_obligations",
+      "report_date": "2025-12-31",
+      "source_accession": "0001596532-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_file": "ANET_0001596532-26-000013.html",
+      "source_sha256": "f4f873ca437c7ab9cffd7e8b4a7a55a9df0439e9ff77e94c820deb66e47dc959",
+      "prior_value_or_status": "UNQUANTIFIED",
+      "components": [
+        {
+          "id": "f-747",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-8",
+            "name": "us-gaap:PurchaseCommitmentRemainingMinimumAmountCommitted",
+            "format": "ixt:num-dot-decimal",
+            "scale": "9",
+            "id": "f-747"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001596532"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "6800000000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "6800000000",
+      "review_status": "QUANTIFIED_CATEGORY_ONLY",
+      "reason": "Non-cancellable purchase commitments, reported rounded to 0.1bn. Does not establish zero debt or clear all commitments.",
+      "promoted_to_frozen_inputs": false
+    }
+  ],
+  "narrative_reviews": [
+    {
+      "review_id": "FISV_purchase_obligations",
+      "ticker": "FISV",
+      "source_file": "FISV_0000798354-26-000009.html",
+      "source_sha256": "223c6d6c8d23f6337a65082857b03268267d5253b7fc9ea807b18bebf970979f",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm",
+      "report_date": "2025-12-31",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 234029,
+      "excerpt": " $ 2,248 $ 8,270 $ 10,620 $ 14,528 Minimum finance lease payments (1) 1,655 416 678 476 85 Minimum operating lease payments (1) 1,066 148 265 172 481 Purchase obligations (1) (3) 3,833 1,280 1,578 669 306 Total $ 42,220 $ 4,092 $ 10,791 $ 11,937 $ 15,400 (1) Interest, finance lease, operating lease and purchase obligations are reported on a pre-tax basis. (2) The calculations assume that only mandatory debt repayments are made, no additional refinancing or lending occurs, except for our 3.200% senior notes due in July 2026, and U.S. dollar and Euro commercial paper notes programs as we have the intent to refinance this debt on a long-term basis through the issuance of new commercial paper notes upon maturity, and we have the ability to do so under our revolving credit facility which matures in August 2030. The variable rate on the revolvi",
+      "excerpt_sha256": "3aee3698a99b1372bef5a0737efc374e952b4070889f98fe90b538687684c3b9"
+    },
+    {
+      "review_id": "FISV_lease_scope",
+      "ticker": "FISV",
+      "source_file": "FISV_0000798354-26-000009.html",
+      "source_sha256": "223c6d6c8d23f6337a65082857b03268267d5253b7fc9ea807b18bebf970979f",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm",
+      "report_date": "2025-12-31",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 370434,
+      "excerpt": " 1,125 (1) Operating lease payments include $ 84 million related to options to extend lease terms that are reasonably certain of being exercised. (2) Operating lease payments exclude $ 162 million of legally binding minimum lease payments for leases signed but not yet commenced. Operating leases that have been signed but not yet commenced are for real estate and will commence in 2026 with lease terms up to 21 years. (3) Finance lease payments exclude $ 393 million of legally binding minimum lease payments for leases signed but not yet commenced. Finance leases that have been signed but not yet commenced are for equipment and will commence in 2026 with lease terms of up to 7 years. 75 Table of Contents Company as Lessor The Company owns certain POS terminal equipment which it leases to merchants. Leases are classified as operating or sales-type leases based on factors such as the lease term, lease payments, and the economic life, fair value and estimated residual value of the asset. The terms of the leases typically range from one month to four years . For operating leases, the minimum lease payments received are recognized as lease income within product revenue on a straight-line basis over the lease term and the leased asset is included in property and equipment, net in the consolidated balance sheets and depreciated over its estimated useful life. For sales-type leases, selli",
+      "excerpt_sha256": "63d96a901db7b57976aa07c385bcf315cdff818d49d449b341516f2cb33345a0"
+    },
+    {
+      "review_id": "CMCSA_licensed_content",
+      "ticker": "CMCSA",
+      "source_file": "CMCSA_0001628280-26-004994.html",
+      "source_sha256": "fc72fe8b3d83df999bb6d463e34e79d167f97e4abd0c394dd33df2ad0a880db2",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm",
+      "report_date": "2025-12-31",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 331864,
+      "excerpt": "(in millions) Owned Licensed Completed, not released: 2026 $ 52 Released and licensed content: 2026 $ 2,261 $ 3,280 2027 $ 824 $ 672 2028 $ 182 $ 382 We have future minimum commitments for licensed content that are not recognized in our consolidated balance sheet as of December 31, 2025 totaling $ 2.6 billion. The following table summarizes the amount of accrued participation and residual liabilities that we expect to pay during the upcoming operating cycle. December 31 (in millions) 2025 2024 Current portion of accrued participations and residuals $ 1,537 $ 1,444 75 Comcast 2025 Annual Report on Form 10-K Table of Contents Comcast Corporation Capitalization and Recognition of Film and Telev",
+      "excerpt_sha256": "188e25d41bbf63096ad83932fd0ed7399cc4a2556200ef6ef259bad2636e27d3"
+    },
+    {
+      "review_id": "FOX_firm_commitments",
+      "ticker": "FOX",
+      "source_file": "FOX_0001628280-25-038077.html",
+      "source_sha256": "f71f3742a2cf017cfa21f2ff332051e990a948dbdc113834229386b357bc63c9",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1754301/000162828025038077/fox-20250630.htm",
+      "report_date": "2025-06-30",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 340307,
+      "excerpt": "o make future payments. These firm commitments secure the future rights to various assets and services to be used in the normal course of operations. The following table summarizes the Company\u2019s material firm commitments as of June 30, 2025: As of June 30, 2025 Payments due by period Total 1 year 2 - 3 years 4 - 5 years After 5 years (in millions) Borrowings $ 6,650 $ \u2014 $ \u2014 $ 2,600 $ 4,050 Licensed programming 26,941 5,666 10,129 9,840 1,306 Other commitments and contractual obligations 1,595 464 704 262 165 Total commitments $ 35,186 $ 6,130 $ 10,833 $ 12,702 $ 5,521 Borrowings See Note 9\u2014Borrowings. Licensed programming Under the Company\u2019s contracts with the National Football League (\u201cNFL\u201d), the remaining future minimum payments for program rights to broadcast certain football games are payable over the remaining term of the contract through the 2033 NFL season. The NFL has a one-time termination right after the 2029 NFL season. 85 FOX CORPORATION NOTES TO THE CONSOLIDATED FINANCIAL STATEMENTS The Company\u2019s contract with Major League Baseball (\u201cMLB\u201d) gives the Company rights to broadcast certain regular season and post-season games, as well as exclusive rights to broadcast MLB\u2019s World Series and All-Star Game through the 2028 MLB season. The Company\u2019s contracts with the National Association of Stock Car Auto Racing (\u201cNASCAR\u201d) give the Company rights to broadcast certain races and ancillary content through calendar year 2031. Under the Company\u2019s contracts with certain collegiate conferences, remaining future minimum payments for program rights to broadcast certain sports events are payable over the remaining terms of the contracts. Other commitments and contractual obligations Primarily includes obligations relating to talent costs and television rating services agreements. Leases See Note 10\u2014Leases. Pension and other",
+      "excerpt_sha256": "fd2961416f4ab1a2f7e797fef15a07766aed966aef1995be80cea7c62ad777ed"
+    },
+    {
+      "review_id": "GM_vie_scope",
+      "ticker": "GM",
+      "source_file": "GM_0001467858-26-000013.html",
+      "source_sha256": "a50e0240c592baf8375a2bcb18386e0fea4ab13b5c15468d70faffc81af85cd7",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/gm-20251231.htm",
+      "report_date": "2025-12-31",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 394426,
+      "excerpt": "e approximately $ 3.6 billion and $ 4.3 billion and liabilities were insignificant related to our nonconsolidated VIEs at December 31, 2025 and 2024. Our maximum exposure to loss as a result of our involvement with these VIEs was $ 8.5 billion and $ 7.0 billion, inclusive of $ 4.0 billion and $ 2.3 billion in committed capital contributions to our battery cell manufacturing joint ventures, at December 31, 2025 and 2024. Our maximum exposure to loss, and required capital contributions, could vary depending on our battery cell joint ventures' requirements and access to capital. We currently lack the power through voting or similar rights to direct the activities of these entities that most significantly affect their economic performance. 76 Table of Contents GENERAL MOTORS COMPANY AND SUBSIDIARIES NOTES TO CONSOLIDATED FINANCIAL STATEMENTS \u2013 (Continued) Note 12. Accrued and Other Liabilities December 31, 2025 December 31, 2024 Accrued liabilities Dealer and customer allowances, claims, and discounts $ 6,485 $ 7,270 Deferred revenue 3,950 3,371 Product warranty and related liabilities 6,308 4,555 Payrolls and employee benefits excluding postemployment benefits 2,650 3,221 Other(a) 14,361 12,737 Total accrued liabilities $ 33,754 $ 31",
+      "excerpt_sha256": "aa6c1238bebf4872647aa5f1fdcaddb413811f85f3e22cbc06186b48efa3288f"
+    },
+    {
+      "review_id": "GM_serviced_receivables",
+      "ticker": "GM",
+      "source_file": "GM_0001467858-26-000013.html",
+      "source_sha256": "a50e0240c592baf8375a2bcb18386e0fea4ab13b5c15468d70faffc81af85cd7",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/gm-20251231.htm",
+      "report_date": "2025-12-31",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 374577,
+      "excerpt": " $ 2.0 billion in cash proceeds. GM Financial has continuing involvement with the finance receivables transferred, primarily in its role as servicer. The outstanding off-balance sheet amount of the transferred finance receivables subject to continuing involvement was $ 1.7 billion at December 31, 2025. 70 Table of Contents GENERAL MOTORS COMPANY AND SUBSIDIARIES NOTES TO CONSOLIDATED FINANCIAL STATEMENTS \u2013 (Continued) Transactions with GM Financial The following tables show transactions between our Automotive operations, Cruise, and GM Financial. These amounts are presented in GM Financial's consolidated balance sheets and statements of incom",
+      "excerpt_sha256": "27d624696eecfe36386f9ddf464af02eb40c00324c0a78d01153ee3a380bc58d"
+    },
+    {
+      "review_id": "ADBE_purchases",
+      "ticker": "ADBE",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "report_date": "2025-11-28",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 217784,
+      "excerpt": "rchase obligations resulting from agreements to purchase goods and services in the ordinary course of business. As of November 28, 2025, the value of our non-cancellable unconditional purchase obligations was $6.82 billion, primarily relating to contracts with vendors for third-party hosting and data center services. See Note 16 of our Notes to Consolidated Financial Statements for additional information regarding our purchase obligations. We lease certain facilities and data centers under non-cancellable operating lease arrangements that expire at various dates through 2038. As of November 28, 2025, the value of our obligations under operating leases was $485 million. S ee Note 7 of our Notes to Consolidated Financial Statements for additional information regarding our lease obligations . Stock Repurchase Program To facilitate our stock ",
+      "excerpt_sha256": "4ad5339fad000d2581d0735b23a26dd736d7775afbdd4820a8e06edc9fa5171f"
+    },
+    {
+      "review_id": "TROW_contingent_earnout",
+      "ticker": "TROW",
+      "source_file": "TROW_0001628280-26-008002.html",
+      "source_sha256": "6bf42c9f8c74ed6554dca86bfb26d1e91499b8cfe91f46b9b8ccbc5c4a6e6f76",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026008002/trow-20251231.htm",
+      "report_date": "2025-12-31",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 337723,
+      "excerpt": "hes through 2026. CONTINGENCIES. Contingent Consideration As part of the purchase consideration for our acquisition of OHA in December 2021, there is contingent consideration in the amount of up to $ 900 million, payable in cash, that may be due as part of an earnout payment in 2026 and 2027 upon satisfying or exceeding certain defined revenue targets. These defined revenue targets will be evaluated on a cumulative basis from 2022 through 2026. About 22 % of the earnout is conditioned upon continued service with T. Rowe Price Group and was excluded from the purchase consideration and deemed compensatory. The fair value of the earnout is remeasured each reporting period and was valued at zero as of December 31, 2025 and December 31, 2024. Value Creation In addition, simultaneously with the OHA acquisition, a Value Creation Agreement was entered into whereby certain employees of OHA will receive incentive payments equal to 10 % of the appreciated value of the OHA business on the fifth anniversary of the acquisition date, subject to an annualized preferred return to T. Rowe Price. This arrangement is treated as a post-combination compe",
+      "excerpt_sha256": "c2d0d19df016ea63c823937c1945a689ecab137b5008e941cd5b27cc98bbac1c"
+    },
+    {
+      "review_id": "AMP_immaterial_vie_subitem",
+      "ticker": "AMP",
+      "source_file": "AMP_0000820027-26-000011.html",
+      "source_sha256": "669df3b7b6e2aa5be18356b2d7700f8eeb19ffad08761f003b7cd6e019578800",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000011/amp-20251231.htm",
+      "report_date": "2025-12-31",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 770476,
+      "excerpt": "carrying value. The carrying value of other non-consolidated VIEs was $ 105 million and $ 161 million as of December 31, 2025 and 2024, respectively. The Company\u2019s liability related to original purchase commitments not yet remitted to the VIEs was not material as of both December 31, 2025 and 2024. The Company has not provided any additional support to the VIEs beyond the funding commitments. Property Funds, Non-U.S. Series Funds, Hedge Funds and other Private Funds The Company provides investment advice and other related services to property funds, non-U.S. series funds, hedge funds and other private funds, some of which are considered VIEs. For investment management services, the Company generally earns management fees based on the market value of assets under management, and in certain ",
+      "excerpt_sha256": "1e7063e029e66302c1efc25619e4e27f939abe6a8f90a40d047623cc998e142b"
+    },
+    {
+      "review_id": "AMP_funding",
+      "ticker": "AMP",
+      "source_file": "AMP_0000820027-26-000011.html",
+      "source_sha256": "669df3b7b6e2aa5be18356b2d7700f8eeb19ffad08761f003b7cd6e019578800",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000011/amp-20251231.htm",
+      "report_date": "2025-12-31",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 961350,
+      "excerpt": " Commercial mortgage loans $ 32 $ 58 Property funds 1 63 Private funds 7 \u2014 Pledged asset lines of credit 3,258 2,399 Home equity lines of credit 24 \u2014 Total funding commitments $ 3,322 $ 2,520 Contingencies The Company and its subsidiaries are involved, in the normal course of business, in legal proceedings, which include regulatory inquiries, arbit",
+      "excerpt_sha256": "3990c3c3d6c53c284d3d98b924dbfb2b027a64a7af1d931056bbe5f4c130c789"
+    },
+    {
+      "review_id": "NEM_contractual_obligations",
+      "ticker": "NEM",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "report_date": "2025-12-31",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 620904,
+      "excerpt": "ities. For further information on our Debt , refer to Note 20 to the Consolidated Financial Statements. 103 Table of Contents Contractual Obligations Our contractual obligations at December 31, 2025 are summarized as follows: Payments Due by Period Total Current Non-Current Debt (1) $ 8,242 $ 239 $ 8,003 Finance lease and other financing obligations (2) 608 119 489 Remediation and reclamation liabilities (3) 9,894 922 8,972 Uncertain income tax liabilities and interest (4) 128 \u2014 128 Employee-related benefits (5) 1,207 432 775 Operating leases and other obligations (6) 123 33 90 Minimum royalty payments (7) 29 29 \u2014 Purchase obligations (8) 836 380 456 Other 392 213 179 $ 21,459 $ 2,367 $ 19,092 ____________________________ (1) Debt includes principal of $5,343 on senior notes and estimated interest payments of $2,899 on senior notes, assuming no early extinguishment. (2) Finance lease and other financing obligations includes finance lease payments of $608. (3) Mining operations are subject to extensive environmental regulations in the jurisdictions in which they operate. Pursuant to environmental regulations, we are required to close our operations and reclaim and remediate the lands that operations have disturbed. The estimated undiscounted cash outflows of these Reclamation and remediation liabilities are reflected here. For more information regarding reclamation and remediation liabilities, refer to Note 6 to the Consolidated Financial Statements. (4) We are unable to reasonably estimate the timing of our uncertain income tax liabilities and interest payments due to uncertainties in the timing of the effective settlement of tax positions. (5) Contractual obligations for Employee-related benefits include severance, workers\u2019 participation, pension and other benefit plans. Pension plan and other benefit payments beyond 2035 cannot be reasonably estimated given variable market conditions and actuarial assumptions and are not included. (6) Operating lease and other obligations includes operating lease payments of $123. (7) Minimum royalty payments are related to continuing operations and are presented net of recoverable amounts. (8) Purchase obligations are not recorded in the Consolidated Financial Statements. Purchase obligations represent contractual obligations for purchase of power, materials and supplies, consumables, inventories and capital projects. Environmental Our mining and exploration activities a",
+      "excerpt_sha256": "b41f049579a3890f571fcd68f0843b590926967e3ebbdd7902031958657c03a0"
+    },
+    {
+      "review_id": "FIX_surety_unquantified",
+      "ticker": "FIX",
+      "source_file": "FIX_0001104659-26-017530.html",
+      "source_sha256": "94f1f335cbf42ebe0937f588964c4a683e45fda9a1437d76b8fff351e067c91e",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/fix-20251231x10k.htm",
+      "report_date": "2025-12-31",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 200147,
+      "excerpt": "nd vendors who provided goods or services under a contract, the customer may demand that the surety make payments or provide services under the bond. We must reimburse the sureties for any expenses or outlays they incur. To date, we are not aware of any losses to our sureties in connection with bonds the sureties have posted on our behalf, and we do not expect such losses to be incurred in the foreseeable future. Under standard terms in the surety market, sureties issue bonds on a project-by-project basis and can decline to issue bonds at any time. Historically, approximately 10% to 20% of our business has required bonds. While we currently have strong surety relationships to support our bonding needs, future market conditions or changes in the sureties\u2019 assessments of our operating and financial risk could cause our sureties to decline to issue bonds for our work. If that were to occur, our alternatives include doing more business that does not require bonds, posting other forms of collateral for project performance, such as letters of credit or cash, and seeking bonding capacity from other sureties. We would likely also encounter ",
+      "excerpt_sha256": "8217719b96f3b0ec58245a4f7fcb470140fca47b14f888b0cf67e8410ce179f7"
+    },
+    {
+      "review_id": "FIX_purchase_scope",
+      "ticker": "FIX",
+      "source_file": "FIX_0001104659-26-017530.html",
+      "source_sha256": "94f1f335cbf42ebe0937f588964c4a683e45fda9a1437d76b8fff351e067c91e",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/fix-20251231x10k.htm",
+      "report_date": "2025-12-31",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 203788,
+      "excerpt": "7.1 million of liabilities for uncertain tax positions, or unrecognized tax benefits. Other than the lease obligations discussed in Note 10 \u201cLeases,\u201d we have no significant purchase or operating commitments outside of commitments to deliver equipment and provide labor in the ordinary course of performing project work. ITEM 7A. Quantitative and Qualitative Disclosures about Market Risk We are exposed to market risk primarily related to potential adverse changes in interest rates. At times, we use derivative financial instruments to manage our interest rate risk. There is some market risk from fluctuations in the prices of certain commodities a",
+      "excerpt_sha256": "f2c0599d9b208a0a4cf6301a090e8ea8db0d8e95d29684b33eff5fc716cf368b"
+    },
+    {
+      "review_id": "ANET_negated_spv_scope",
+      "ticker": "ANET",
+      "source_file": "ANET_0001596532-26-000013.html",
+      "source_sha256": "f4f873ca437c7ab9cffd7e8b4a7a55a9df0439e9ff77e94c820deb66e47dc959",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "report_date": "2025-12-31",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 307872,
+      "excerpt": "95.0 million through the end of fiscal 2026 when construction is expected to be completed. Off-balance Sheet Arrangements 60 As of December 31, 2025, we did not have any relationships with any unconsolidated entities or financial partnerships, such as entities often referred to as structured finance or special purpose entities, that would have been established for the purpose of facilitating off-balance sheet arrangements or other contractually narrow or limited purposes. Critical Accounting Estimates We have prepared our consolidated financial statements in accordance with accounting principles generally accepted in the United States (\"GAAP\" or \"U.S. GAAP\") and include our accounts and the accounts of our wholly owned subsidiaries. The preparation of these consolidated financial statements requires our management to make estimates, assumptions and judgments that affect the reported amou",
+      "excerpt_sha256": "0e1a0b82eb9fdc9ae09de638828072430928c87f5b4e3ff31ef69b31655636e5"
+    }
+  ],
+  "system_live": false,
+  "case_closures": 0
+}
