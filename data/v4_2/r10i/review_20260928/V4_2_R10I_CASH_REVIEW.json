@@ -1,0 +1,2473 @@
+{
+  "schema": "r10i_cash_quality_review_v1",
+  "review_date": "2026-09-28",
+  "source_run_id": 36336222379,
+  "source_artifact_id": 10937655129,
+  "source_artifact_sha256": "de766c06c2669ba93183bf9c58d5aa038cc340d5bb3057408966b1d2ef91327e",
+  "items": [
+    {
+      "ticker": "ADBE",
+      "report_date": "2025-11-28",
+      "accession": "0000796343-26-000003",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "item_id": "ADBE_annual_operating_cash_flow",
+      "field": "annual_operating_cash_flow",
+      "components": [
+        {
+          "id": "f-362",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-362"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "10031000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "10031000000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "ADBE",
+      "report_date": "2025-11-28",
+      "accession": "0000796343-26-000003",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "item_id": "ADBE_annual_capex",
+      "field": "annual_capex",
+      "components": [
+        {
+          "id": "f-377",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "scale": "6",
+            "id": "f-377"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "179000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "179000000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "ADBE",
+      "report_date": "2025-11-28",
+      "accession": "0000796343-26-000003",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "item_id": "ADBE_annual_sbc",
+      "field": "annual_sbc",
+      "components": [
+        {
+          "id": "f-332",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:ShareBasedCompensation",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-332"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1942000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1942000000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "ADBE",
+      "report_date": "2025-11-28",
+      "accession": "0000796343-26-000003",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "item_id": "ADBE_reported_OE_arithmetic",
+      "field": "reported_OE_arithmetic",
+      "components": [
+        {
+          "id": "f-362",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-362"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "10031000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-377",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "scale": "6",
+            "id": "f-377"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "179000000",
+          "coefficient": -1
+        },
+        {
+          "id": "f-332",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:ShareBasedCompensation",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-332"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1942000000",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "7910000000",
+      "review_status": "ARITHMETIC_ONLY_NOT_NORMALIZED_NOT_DISTRIBUTABLE_CASH"
+    },
+    {
+      "ticker": "AMP",
+      "report_date": "2025-12-31",
+      "accession": "0000820027-26-000011",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000011/amp-20251231.htm",
+      "source_file": "AMP_0000820027-26-000011.html",
+      "source_sha256": "669df3b7b6e2aa5be18356b2d7700f8eeb19ffad08761f003b7cd6e019578800",
+      "item_id": "AMP_annual_operating_cash_flow",
+      "field": "annual_operating_cash_flow",
+      "components": [
+        {
+          "id": "f-348",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-348"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "8323000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "8323000000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "AMP",
+      "report_date": "2025-12-31",
+      "accession": "0000820027-26-000011",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000011/amp-20251231.htm",
+      "source_file": "AMP_0000820027-26-000011.html",
+      "source_sha256": "669df3b7b6e2aa5be18356b2d7700f8eeb19ffad08761f003b7cd6e019578800",
+      "item_id": "AMP_annual_capex",
+      "field": "annual_capex",
+      "components": [
+        {
+          "id": "f-378",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:PaymentsToAcquireProductiveAssets",
+            "scale": "6",
+            "id": "f-378"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "162000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "162000000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "AMP",
+      "report_date": "2025-12-31",
+      "accession": "0000820027-26-000011",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000011/amp-20251231.htm",
+      "source_file": "AMP_0000820027-26-000011.html",
+      "source_sha256": "669df3b7b6e2aa5be18356b2d7700f8eeb19ffad08761f003b7cd6e019578800",
+      "item_id": "AMP_annual_sbc",
+      "field": "annual_sbc",
+      "components": [
+        {
+          "id": "f-300",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:ShareBasedCompensation",
+            "scale": "6",
+            "id": "f-300"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "206000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "206000000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "AMP",
+      "report_date": "2025-12-31",
+      "accession": "0000820027-26-000011",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000011/amp-20251231.htm",
+      "source_file": "AMP_0000820027-26-000011.html",
+      "source_sha256": "669df3b7b6e2aa5be18356b2d7700f8eeb19ffad08761f003b7cd6e019578800",
+      "item_id": "AMP_reported_OE_arithmetic",
+      "field": "reported_OE_arithmetic",
+      "components": [
+        {
+          "id": "f-348",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-348"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "8323000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-378",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:PaymentsToAcquireProductiveAssets",
+            "scale": "6",
+            "id": "f-378"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "162000000",
+          "coefficient": -1
+        },
+        {
+          "id": "f-300",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:ShareBasedCompensation",
+            "scale": "6",
+            "id": "f-300"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "206000000",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "7955000000",
+      "review_status": "ARITHMETIC_ONLY_NOT_NORMALIZED_NOT_DISTRIBUTABLE_CASH"
+    },
+    {
+      "ticker": "ANET",
+      "report_date": "2025-12-31",
+      "accession": "0001596532-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_file": "ANET_0001596532-26-000013.html",
+      "source_sha256": "f4f873ca437c7ab9cffd7e8b4a7a55a9df0439e9ff77e94c820deb66e47dc959",
+      "item_id": "ANET_annual_operating_cash_flow",
+      "field": "annual_operating_cash_flow",
+      "components": [
+        {
+          "id": "f-310",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-5",
+            "name": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-310"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001596532"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "4371900000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "4371900000.0",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "ANET",
+      "report_date": "2025-12-31",
+      "accession": "0001596532-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_file": "ANET_0001596532-26-000013.html",
+      "source_sha256": "f4f873ca437c7ab9cffd7e8b4a7a55a9df0439e9ff77e94c820deb66e47dc959",
+      "item_id": "ANET_annual_capex",
+      "field": "annual_capex",
+      "components": [
+        {
+          "id": "f-322",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-5",
+            "name": "us-gaap:PaymentsToAcquireProductiveAssets",
+            "scale": "6",
+            "id": "f-322"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001596532"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "119500000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "119500000.0",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "ANET",
+      "report_date": "2025-12-31",
+      "accession": "0001596532-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_file": "ANET_0001596532-26-000013.html",
+      "source_sha256": "f4f873ca437c7ab9cffd7e8b4a7a55a9df0439e9ff77e94c820deb66e47dc959",
+      "item_id": "ANET_annual_sbc",
+      "field": "annual_sbc",
+      "components": [
+        {
+          "id": "f-280",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-5",
+            "name": "us-gaap:ShareBasedCompensation",
+            "scale": "6",
+            "id": "f-280"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001596532"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "439200000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "439200000.0",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "ANET",
+      "report_date": "2025-12-31",
+      "accession": "0001596532-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_file": "ANET_0001596532-26-000013.html",
+      "source_sha256": "f4f873ca437c7ab9cffd7e8b4a7a55a9df0439e9ff77e94c820deb66e47dc959",
+      "item_id": "ANET_reported_OE_arithmetic",
+      "field": "reported_OE_arithmetic",
+      "components": [
+        {
+          "id": "f-310",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-5",
+            "name": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-310"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001596532"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "4371900000.0",
+          "coefficient": 1
+        },
+        {
+          "id": "f-322",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-5",
+            "name": "us-gaap:PaymentsToAcquireProductiveAssets",
+            "scale": "6",
+            "id": "f-322"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001596532"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "119500000.0",
+          "coefficient": -1
+        },
+        {
+          "id": "f-280",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-5",
+            "name": "us-gaap:ShareBasedCompensation",
+            "scale": "6",
+            "id": "f-280"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001596532"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "439200000.0",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "3813200000.0",
+      "review_status": "ARITHMETIC_ONLY_NOT_NORMALIZED_NOT_DISTRIBUTABLE_CASH"
+    },
+    {
+      "ticker": "CMCSA",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-004994",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm",
+      "source_file": "CMCSA_0001628280-26-004994.html",
+      "source_sha256": "fc72fe8b3d83df999bb6d463e34e79d167f97e4abd0c394dd33df2ad0a880db2",
+      "item_id": "CMCSA_annual_operating_cash_flow",
+      "field": "annual_operating_cash_flow",
+      "components": [
+        {
+          "id": "f-225",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-225"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "33643000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "33643000000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "CMCSA",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-004994",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm",
+      "source_file": "CMCSA_0001628280-26-004994.html",
+      "source_sha256": "fc72fe8b3d83df999bb6d463e34e79d167f97e4abd0c394dd33df2ad0a880db2",
+      "item_id": "CMCSA_annual_capex",
+      "field": "annual_capex",
+      "components": [
+        {
+          "id": "f-228",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-228"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "11750000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "11750000000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "CMCSA",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-004994",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm",
+      "source_file": "CMCSA_0001628280-26-004994.html",
+      "source_sha256": "fc72fe8b3d83df999bb6d463e34e79d167f97e4abd0c394dd33df2ad0a880db2",
+      "item_id": "CMCSA_annual_sbc",
+      "field": "annual_sbc",
+      "components": [
+        {
+          "id": "f-201",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:ShareBasedCompensation",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-201"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1288000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1288000000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "CMCSA",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-004994",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm",
+      "source_file": "CMCSA_0001628280-26-004994.html",
+      "source_sha256": "fc72fe8b3d83df999bb6d463e34e79d167f97e4abd0c394dd33df2ad0a880db2",
+      "item_id": "CMCSA_reported_OE_arithmetic",
+      "field": "reported_OE_arithmetic",
+      "components": [
+        {
+          "id": "f-225",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-225"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "33643000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-228",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-228"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "11750000000",
+          "coefficient": -1
+        },
+        {
+          "id": "f-201",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:ShareBasedCompensation",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-201"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1288000000",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "20605000000",
+      "review_status": "ARITHMETIC_ONLY_NOT_NORMALIZED_NOT_DISTRIBUTABLE_CASH"
+    },
+    {
+      "ticker": "FISV",
+      "report_date": "2025-12-31",
+      "accession": "0000798354-26-000009",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm",
+      "source_file": "FISV_0000798354-26-000009.html",
+      "source_sha256": "223c6d6c8d23f6337a65082857b03268267d5253b7fc9ea807b18bebf970979f",
+      "item_id": "FISV_annual_operating_cash_flow",
+      "field": "annual_operating_cash_flow",
+      "components": [
+        {
+          "id": "f-427",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-427"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "6062000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "6062000000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "FISV",
+      "report_date": "2025-12-31",
+      "accession": "0000798354-26-000009",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm",
+      "source_file": "FISV_0000798354-26-000009.html",
+      "source_sha256": "223c6d6c8d23f6337a65082857b03268267d5253b7fc9ea807b18bebf970979f",
+      "item_id": "FISV_annual_capex",
+      "field": "annual_capex",
+      "components": [
+        {
+          "id": "f-430",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-430"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1763000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1763000000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "FISV",
+      "report_date": "2025-12-31",
+      "accession": "0000798354-26-000009",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm",
+      "source_file": "FISV_0000798354-26-000009.html",
+      "source_sha256": "223c6d6c8d23f6337a65082857b03268267d5253b7fc9ea807b18bebf970979f",
+      "item_id": "FISV_annual_sbc",
+      "field": "annual_sbc",
+      "components": [
+        {
+          "id": "f-385",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:ShareBasedCompensation",
+            "scale": "6",
+            "id": "f-385"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "357000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "357000000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "FISV",
+      "report_date": "2025-12-31",
+      "accession": "0000798354-26-000009",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm",
+      "source_file": "FISV_0000798354-26-000009.html",
+      "source_sha256": "223c6d6c8d23f6337a65082857b03268267d5253b7fc9ea807b18bebf970979f",
+      "item_id": "FISV_reported_OE_arithmetic",
+      "field": "reported_OE_arithmetic",
+      "components": [
+        {
+          "id": "f-427",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-427"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "6062000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-430",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-430"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1763000000",
+          "coefficient": -1
+        },
+        {
+          "id": "f-385",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:ShareBasedCompensation",
+            "scale": "6",
+            "id": "f-385"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "357000000",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "3942000000",
+      "review_status": "ARITHMETIC_ONLY_NOT_NORMALIZED_NOT_DISTRIBUTABLE_CASH"
+    },
+    {
+      "ticker": "FIX",
+      "report_date": "2025-12-31",
+      "accession": "0001104659-26-017530",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/fix-20251231x10k.htm",
+      "source_file": "FIX_0001104659-26-017530.html",
+      "source_sha256": "94f1f335cbf42ebe0937f588964c4a683e45fda9a1437d76b8fff351e067c91e",
+      "item_id": "FIX_annual_operating_cash_flow",
+      "field": "annual_operating_cash_flow",
+      "components": [
+        {
+          "id": "Tc_ZENC8IFyj0ydVz-n3awuMA_27_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "Duration_1_1_2025_To_12_31_2025_iRcRbidoh0-AvPUH5g4aeQ",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "scale": "3",
+            "id": "Tc_ZENC8IFyj0ydVz-n3awuMA_27_3"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1186356000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1186356000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "FIX",
+      "report_date": "2025-12-31",
+      "accession": "0001104659-26-017530",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/fix-20251231x10k.htm",
+      "source_file": "FIX_0001104659-26-017530.html",
+      "source_sha256": "94f1f335cbf42ebe0937f588964c4a683e45fda9a1437d76b8fff351e067c91e",
+      "item_id": "FIX_annual_capex",
+      "field": "annual_capex",
+      "components": [
+        {
+          "id": "Tc_IUKkB5DiMUiEt8bvW5GLhw_29_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "Duration_1_1_2025_To_12_31_2025_iRcRbidoh0-AvPUH5g4aeQ",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "scale": "3",
+            "id": "Tc_IUKkB5DiMUiEt8bvW5GLhw_29_3"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "154903000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "154903000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "FIX",
+      "report_date": "2025-12-31",
+      "accession": "0001104659-26-017530",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/fix-20251231x10k.htm",
+      "source_file": "FIX_0001104659-26-017530.html",
+      "source_sha256": "94f1f335cbf42ebe0937f588964c4a683e45fda9a1437d76b8fff351e067c91e",
+      "item_id": "FIX_annual_sbc",
+      "field": "annual_sbc",
+      "components": [
+        {
+          "id": "Tc_5GC843isdECxJIT1RpNSjQ_15_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "Duration_1_1_2025_To_12_31_2025_iRcRbidoh0-AvPUH5g4aeQ",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:ShareBasedCompensation",
+            "scale": "3",
+            "id": "Tc_5GC843isdECxJIT1RpNSjQ_15_3"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "21809000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "21809000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "FIX",
+      "report_date": "2025-12-31",
+      "accession": "0001104659-26-017530",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/fix-20251231x10k.htm",
+      "source_file": "FIX_0001104659-26-017530.html",
+      "source_sha256": "94f1f335cbf42ebe0937f588964c4a683e45fda9a1437d76b8fff351e067c91e",
+      "item_id": "FIX_reported_OE_arithmetic",
+      "field": "reported_OE_arithmetic",
+      "components": [
+        {
+          "id": "Tc_ZENC8IFyj0ydVz-n3awuMA_27_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "Duration_1_1_2025_To_12_31_2025_iRcRbidoh0-AvPUH5g4aeQ",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "scale": "3",
+            "id": "Tc_ZENC8IFyj0ydVz-n3awuMA_27_3"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1186356000",
+          "coefficient": 1
+        },
+        {
+          "id": "Tc_IUKkB5DiMUiEt8bvW5GLhw_29_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "Duration_1_1_2025_To_12_31_2025_iRcRbidoh0-AvPUH5g4aeQ",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "scale": "3",
+            "id": "Tc_IUKkB5DiMUiEt8bvW5GLhw_29_3"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "154903000",
+          "coefficient": -1
+        },
+        {
+          "id": "Tc_5GC843isdECxJIT1RpNSjQ_15_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "Duration_1_1_2025_To_12_31_2025_iRcRbidoh0-AvPUH5g4aeQ",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:ShareBasedCompensation",
+            "scale": "3",
+            "id": "Tc_5GC843isdECxJIT1RpNSjQ_15_3"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "21809000",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "1009644000",
+      "review_status": "ARITHMETIC_ONLY_NOT_NORMALIZED_NOT_DISTRIBUTABLE_CASH"
+    },
+    {
+      "ticker": "FOX",
+      "report_date": "2025-06-30",
+      "accession": "0001628280-25-038077",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1754301/000162828025038077/fox-20250630.htm",
+      "source_file": "FOX_0001628280-25-038077.html",
+      "source_sha256": "f71f3742a2cf017cfa21f2ff332051e990a948dbdc113834229386b357bc63c9",
+      "item_id": "FOX_annual_operating_cash_flow",
+      "field": "annual_operating_cash_flow",
+      "components": [
+        {
+          "id": "f-234",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-234"
+          },
+          "context": {
+            "startdate": [
+              "2024-07-01"
+            ],
+            "enddate": [
+              "2025-06-30"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "3324000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "3324000000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "FOX",
+      "report_date": "2025-06-30",
+      "accession": "0001628280-25-038077",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1754301/000162828025038077/fox-20250630.htm",
+      "source_file": "FOX_0001628280-25-038077.html",
+      "source_sha256": "f71f3742a2cf017cfa21f2ff332051e990a948dbdc113834229386b357bc63c9",
+      "item_id": "FOX_annual_capex",
+      "field": "annual_capex",
+      "components": [
+        {
+          "id": "f-237",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "scale": "6",
+            "id": "f-237"
+          },
+          "context": {
+            "startdate": [
+              "2024-07-01"
+            ],
+            "enddate": [
+              "2025-06-30"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "331000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "331000000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "FOX",
+      "report_date": "2025-06-30",
+      "accession": "0001628280-25-038077",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1754301/000162828025038077/fox-20250630.htm",
+      "source_file": "FOX_0001628280-25-038077.html",
+      "source_sha256": "f71f3742a2cf017cfa21f2ff332051e990a948dbdc113834229386b357bc63c9",
+      "item_id": "FOX_annual_sbc",
+      "field": "annual_sbc",
+      "components": [
+        {
+          "id": "f-207",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:ShareBasedCompensation",
+            "scale": "6",
+            "id": "f-207"
+          },
+          "context": {
+            "startdate": [
+              "2024-07-01"
+            ],
+            "enddate": [
+              "2025-06-30"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "135000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "135000000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "FOX",
+      "report_date": "2025-06-30",
+      "accession": "0001628280-25-038077",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1754301/000162828025038077/fox-20250630.htm",
+      "source_file": "FOX_0001628280-25-038077.html",
+      "source_sha256": "f71f3742a2cf017cfa21f2ff332051e990a948dbdc113834229386b357bc63c9",
+      "item_id": "FOX_reported_OE_arithmetic",
+      "field": "reported_OE_arithmetic",
+      "components": [
+        {
+          "id": "f-234",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-234"
+          },
+          "context": {
+            "startdate": [
+              "2024-07-01"
+            ],
+            "enddate": [
+              "2025-06-30"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "3324000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-237",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "scale": "6",
+            "id": "f-237"
+          },
+          "context": {
+            "startdate": [
+              "2024-07-01"
+            ],
+            "enddate": [
+              "2025-06-30"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "331000000",
+          "coefficient": -1
+        },
+        {
+          "id": "f-207",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:ShareBasedCompensation",
+            "scale": "6",
+            "id": "f-207"
+          },
+          "context": {
+            "startdate": [
+              "2024-07-01"
+            ],
+            "enddate": [
+              "2025-06-30"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "135000000",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "2858000000",
+      "review_status": "ARITHMETIC_ONLY_NOT_NORMALIZED_NOT_DISTRIBUTABLE_CASH"
+    },
+    {
+      "ticker": "GM",
+      "report_date": "2025-12-31",
+      "accession": "0001467858-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/gm-20251231.htm",
+      "source_file": "GM_0001467858-26-000013.html",
+      "source_sha256": "a50e0240c592baf8375a2bcb18386e0fea4ab13b5c15468d70faffc81af85cd7",
+      "item_id": "GM_annual_operating_cash_flow",
+      "field": "annual_operating_cash_flow",
+      "components": [
+        {
+          "id": "f-251",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-251"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "26867000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "26867000000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "GM",
+      "report_date": "2025-12-31",
+      "accession": "0001467858-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/gm-20251231.htm",
+      "source_file": "GM_0001467858-26-000013.html",
+      "source_sha256": "a50e0240c592baf8375a2bcb18386e0fea4ab13b5c15468d70faffc81af85cd7",
+      "item_id": "GM_annual_capex",
+      "field": "annual_capex",
+      "components": [
+        {
+          "id": "f-254",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-254"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "9303000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "9303000000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "GM",
+      "report_date": "2025-12-31",
+      "accession": "0001467858-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/gm-20251231.htm",
+      "source_file": "GM_0001467858-26-000013.html",
+      "source_sha256": "a50e0240c592baf8375a2bcb18386e0fea4ab13b5c15468d70faffc81af85cd7",
+      "item_id": "GM_annual_sbc",
+      "field": "annual_sbc",
+      "components": [
+        {
+          "id": "f-2517",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "scale": "6",
+            "id": "f-2517"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "334000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "334000000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "GM",
+      "report_date": "2025-12-31",
+      "accession": "0001467858-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/gm-20251231.htm",
+      "source_file": "GM_0001467858-26-000013.html",
+      "source_sha256": "a50e0240c592baf8375a2bcb18386e0fea4ab13b5c15468d70faffc81af85cd7",
+      "item_id": "GM_reported_OE_arithmetic",
+      "field": "reported_OE_arithmetic",
+      "components": [
+        {
+          "id": "f-251",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-251"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "26867000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-254",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-254"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "9303000000",
+          "coefficient": -1
+        },
+        {
+          "id": "f-2517",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "scale": "6",
+            "id": "f-2517"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001467858"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "334000000",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "17230000000",
+      "review_status": "ARITHMETIC_ONLY_NOT_NORMALIZED_NOT_DISTRIBUTABLE_CASH"
+    },
+    {
+      "ticker": "NEM",
+      "report_date": "2025-12-31",
+      "accession": "0001164727-26-000010",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "item_id": "NEM_annual_operating_cash_flow",
+      "field": "annual_operating_cash_flow",
+      "components": [
+        {
+          "id": "f-346",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-346"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "10334000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "10334000000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "NEM",
+      "report_date": "2025-12-31",
+      "accession": "0001164727-26-000010",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "item_id": "NEM_annual_capex",
+      "field": "annual_capex",
+      "components": [
+        {
+          "id": "f-349",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:PaymentsToAcquireProductiveAssets",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-349"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "3035000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "3035000000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "NEM",
+      "report_date": "2025-12-31",
+      "accession": "0001164727-26-000010",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "item_id": "NEM_annual_sbc",
+      "field": "annual_sbc",
+      "components": [
+        {
+          "id": "f-2781",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "scale": "6",
+            "id": "f-2781"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "99000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "99000000",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "NEM",
+      "report_date": "2025-12-31",
+      "accession": "0001164727-26-000010",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "item_id": "NEM_reported_OE_arithmetic",
+      "field": "reported_OE_arithmetic",
+      "components": [
+        {
+          "id": "f-346",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-346"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "10334000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-349",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:PaymentsToAcquireProductiveAssets",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-349"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "3035000000",
+          "coefficient": -1
+        },
+        {
+          "id": "f-2781",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "scale": "6",
+            "id": "f-2781"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "99000000",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "7200000000",
+      "review_status": "ARITHMETIC_ONLY_NOT_NORMALIZED_NOT_DISTRIBUTABLE_CASH"
+    },
+    {
+      "ticker": "TROW",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-008002",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026008002/trow-20251231.htm",
+      "source_file": "TROW_0001628280-26-008002.html",
+      "source_sha256": "6bf42c9f8c74ed6554dca86bfb26d1e91499b8cfe91f46b9b8ccbc5c4a6e6f76",
+      "item_id": "TROW_annual_operating_cash_flow",
+      "field": "annual_operating_cash_flow",
+      "components": [
+        {
+          "id": "f-263",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-5",
+            "name": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-263"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001113169"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1753400000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1753400000.0",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "TROW",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-008002",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026008002/trow-20251231.htm",
+      "source_file": "TROW_0001628280-26-008002.html",
+      "source_sha256": "6bf42c9f8c74ed6554dca86bfb26d1e91499b8cfe91f46b9b8ccbc5c4a6e6f76",
+      "item_id": "TROW_annual_capex",
+      "field": "annual_capex",
+      "components": [
+        {
+          "id": "f-275",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-5",
+            "name": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "scale": "6",
+            "id": "f-275"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001113169"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "274200000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "274200000.0",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "TROW",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-008002",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026008002/trow-20251231.htm",
+      "source_file": "TROW_0001628280-26-008002.html",
+      "source_sha256": "6bf42c9f8c74ed6554dca86bfb26d1e91499b8cfe91f46b9b8ccbc5c4a6e6f76",
+      "item_id": "TROW_annual_sbc",
+      "field": "annual_sbc",
+      "components": [
+        {
+          "id": "f-248",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-5",
+            "name": "us-gaap:ShareBasedCompensation",
+            "scale": "6",
+            "id": "f-248"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001113169"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "216900000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "216900000.0",
+      "review_status": "SOURCE_MATCH_NO_ECONOMIC_COMPLETENESS_ASSERTION"
+    },
+    {
+      "ticker": "TROW",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-008002",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026008002/trow-20251231.htm",
+      "source_file": "TROW_0001628280-26-008002.html",
+      "source_sha256": "6bf42c9f8c74ed6554dca86bfb26d1e91499b8cfe91f46b9b8ccbc5c4a6e6f76",
+      "item_id": "TROW_reported_OE_arithmetic",
+      "field": "reported_OE_arithmetic",
+      "components": [
+        {
+          "id": "f-263",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-5",
+            "name": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-263"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001113169"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1753400000.0",
+          "coefficient": 1
+        },
+        {
+          "id": "f-275",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-5",
+            "name": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "scale": "6",
+            "id": "f-275"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001113169"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "274200000.0",
+          "coefficient": -1
+        },
+        {
+          "id": "f-248",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-5",
+            "name": "us-gaap:ShareBasedCompensation",
+            "scale": "6",
+            "id": "f-248"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001113169"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "216900000.0",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "1262300000.0",
+      "review_status": "ARITHMETIC_ONLY_NOT_NORMALIZED_NOT_DISTRIBUTABLE_CASH"
+    }
+  ],
+  "narrative_reviews": [
+    {
+      "ticker": "ADBE",
+      "report_date": "2025-11-28",
+      "accession": "0000796343-26-000003",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "review_id": "ADBE_cashflow_statement",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 236052,
+      "excerpt": "Years Ended November 28, 2025 November 29, 2024 December 1, 2023 Cash flows from operating activities: Net income $ 7,130 $ 5,560 $ 5,428 Adjustments to reconcile net income to net cash provided by operating activities: Depreciation, amortization and accretion 818 857 872 Stock-based compensation 1,942 1,833 1,718 Lease-related asset impairments — 78 — Deferred income taxes ( 512 ) ( 468 ) ( 426 ) Other non-cash items 48 52 65 Changes in operating assets and liabilities, net of acquired assets and assumed liabilities: Trade receivables, net ( 275 ) 143 ( 159 ) Prepaid expenses and other assets ( 90 ) ( 616 ) ( 818 ) Trade payables 64 44 ( 49 ) Accrued expenses and other liabilities 180 196 146 Income taxes payable ( 45 ) 68 ( 11 ) Deferred revenue 771 309 536 Net cash provided by operating activities 10,031 8,056 7,302 Cash flows from investing activities: Purchases of short-term investments ( 2,034 ) ( 59 ) — Maturities of short-term investments 1,168 486 965 Proceeds from sales of short-term investments 6 11 223 Acquisitions, net of cash acquired ( 17 ) — — Purchases of property and equipment ( 179 ) ( 183 ) ( 360 ) Purchases of long-term investments, intangibles and other assets ( 134 ) ( 108 ) ( 53 ) Other investing activities, net 3 2 1 Net cash provided by (used for) investing activities ( 1,187 ) 149 776 Cash flows from financing activities: Repurchases of common stock ( 11,281 ) ( 9,500 ) ( 4,400 ) Proceeds from re-issuance of treasury stock 348 361 314 Taxes paid related to net share settlement of equity awards ( 475 ) ( 677 ) ( 589 ) Proceeds from issuance of debt 1,997 1,997 — Repayment of debt ( 1,500 ) — ( 500 ) Other financing activities, net ( 149 ) 95 ( 7 ) Net cash used for financing activities ( 11,060 ) ( 7,724 ) ( 5,182 ) Effect of foreign currency exchange rates on cash and cash equivalents 34 ( 9 ) 9 Net change in cash and cash equivalents ( 2,182 ) 472 2,905 Cash and cash equivalents at beginning of year 7,613 7,141 4,236 Cash and cash equivalents at end of year $ 5,431 $ 7,613 $ 7,141 Supplemental disclosures: Cash paid for income taxes, net of refunds $ 2,219 $ 1,727 $ 1,854 Cash paid for interest $ 246 $ 143 $ 106",
+      "excerpt_sha256": "8b8b6649c3890b8f3c073cd0dafa47515473124e3f5853538f38f36674ba5959"
+    },
+    {
+      "ticker": "AMP",
+      "report_date": "2025-12-31",
+      "accession": "0000820027-26-000011",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000011/amp-20251231.htm",
+      "source_file": "AMP_0000820027-26-000011.html",
+      "source_sha256": "669df3b7b6e2aa5be18356b2d7700f8eeb19ffad08761f003b7cd6e019578800",
+      "review_id": "AMP_cashflow_statement",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 683418,
+      "excerpt": "Years Ended December 31, 2025 2024 2023 (in millions) Cash Flows from Operating Activities Net income $ 3,563 $ 3,401 $ 2,556 Adjustments to reconcile net income to net cash provided by (used in) operating activities: Depreciation, amortization and accretion, net ( 93 ) ( 159 ) ( 154 ) Deferred income tax expense (benefit) 157 125 18 Share-based compensation 206 193 187 Net realized investment (gains) losses ( 3 ) 15 47 Net trading (gains) losses ( 6 ) ( 7 ) ( 9 ) Loss from equity method investments 8 19 27 Impairments and provision for loan and credit losses 19 9 ( 16 ) Net (gains) losses of consolidated investment entities 12 ( 13 ) 23 Changes in operating assets and liabilities Restricted and segregated investments 477 102 ( 8 ) Deferred acquisition costs 52 36 64 Policyholder account balances, future policy benefits and claims, and market risk benefits, net 4,610 3,831 3,071 Derivatives, net of collateral ( 394 ) ( 1,696 ) ( 624 ) Receivables ( 159 ) 215 276 Brokerage deposits ( 385 ) ( 55 ) ( 781 ) Accounts payable and accrued expenses 261 105 354 Current income tax, net ( 108 ) 200 ( 387 ) Other operating assets and liabilities of consolidated investment entities, net 6 1 ( 5 ) Other, net 100 273 46 Net cash provided by (used in) operating activities 8,323 6,595 4,685 Cash Flows from Investing Activities Available-for-Sale securities: Proceeds from sales 2,154 2,340 734 Maturities, sinking fund payments and calls 16,919 15,684 9,230 Purchases ( 19,504 ) ( 18,536 ) ( 19,694 ) Proceeds from sales, maturities and repayments of mortgage loans 240 175 152 Funding of mortgage loans ( 713 ) ( 413 ) ( 284 ) Proceeds from sales, maturities and collections of other investments 70 123 145 Purchase of other investments ( 51 ) ( 158 ) ( 116 ) Purchase of investments by consolidated investment entities ( 1,431 ) ( 1,125 ) ( 427 ) Proceeds from sales, maturities and repayments of investments by consolidated investment entities 988 1,117 643 Purchase of land, buildings, equipment and software ( 162 ) ( 176 ) ( 184 ) Cash paid for written options with deferred premiums ( 50 ) ( 57 ) ( 59 ) Cash received from written options with deferred premiums 20 22 43 Cash paid for deposit receivables ( 29 ) ( 33 ) ( 39 ) Cash received for deposit receivables 427 592 774 Other, net ( 406 ) ( 106 ) ( 180 ) Net cash provided by (used in) investing activities $ ( 1,528 ) $ ( 551 ) $ ( 9,262 ) See Notes to Consolidated Financial Statements.",
+      "excerpt_sha256": "fa003fefae203ec949608b3c7a304c8e7748b4828a9d6e0a946bb1dd0e225575"
+    },
+    {
+      "ticker": "ANET",
+      "report_date": "2025-12-31",
+      "accession": "0001596532-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_file": "ANET_0001596532-26-000013.html",
+      "source_sha256": "f4f873ca437c7ab9cffd7e8b4a7a55a9df0439e9ff77e94c820deb66e47dc959",
+      "review_id": "ANET_cashflow_statement",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 336280,
+      "excerpt": "Year Ended December 31, 2025 2024 2023 CASH FLOWS FROM OPERATING ACTIVITIES: Net income $ 3,511.4 $ 2,852.1 $ 2,087.3 Adjustments to reconcile net income to net cash provided by operating activities: Depreciation and amortization 72.6 62.0 70.6 Stock-based compensation 439.2 355.4 296.8 Deferred income taxes ( 312.0 ) ( 492.9 ) ( 370.8 ) Other ( 27.1 ) ( 53.6 ) ( 34.0 ) Changes in operating assets and liabilities: Accounts receivable, net ( 746.4 ) ( 106.1 ) ( 105.9 ) Inventories ( 412.5 ) 110.6 ( 655.5 ) Other assets ( 937.4 ) ( 234.2 ) ( 66.4 ) Accounts payable 260.5 ( 51.6 ) 198.6 Other liabilities 119.4 47.8 128.1 Deferred revenue 2,452.0 1,285.2 465.0 Income taxes, net ( 47.8 ) ( 66.5 ) 20.2 Net cash provided by operating activities 4,371.9 3,708.2 2,034.0 CASH FLOWS FROM INVESTING ACTIVITIES: Proceeds from maturities of marketable securities 3,432.5 2,058.6 1,887.9 Proceeds from sale of marketable securities 144.3 48.8 67.3 Purchases of marketable securities ( 6,748.4 ) ( 4,526.1 ) ( 2,606.9 ) Purchases of property, equipment and intangible assets ( 119.5 ) ( 32.0 ) ( 34.4 ) Cash paid for business combination, net of cash acquired ( 300.0 ) — 1.8 Other 14.9 ( 6.6 ) ( 3.2 ) Net cash used in investing activities ( 3,576.2 ) ( 2,457.3 ) ( 687.5 ) CASH FLOWS FROM FINANCING ACTIVITIES: Proceeds from issuance of common stock under equity plans 57.7 60.2 62.1 Tax withholding paid on behalf of employees for net share settlement ( 50.5 ) ( 58.4 ) ( 33.6 ) Repurchase of common stock ( 1,603.1 ) ( 423.6 ) ( 112.3 ) Net cash used in financing activities ( 1,595.9 ) ( 421.8 ) ( 83.8 ) Effect of exchange rate changes 1.7 ( 4.8 ) 0.8 NET INCREASE (DECREASE) IN CASH, CASH EQUIVALENTS AND RESTRICTED CASH ( 798.5 ) 824.3 1,263.5 CASH, CASH EQUIVALENTS AND RESTRICTED CASH —Beginning of period 2,763.8 1,939.5 676.0 CASH, CASH EQUIVALENTS AND RESTRICTED CASH —End of period $ 1,965.3 $ 2,763.8 $ 1,939.5 SUPPLEMENTAL DISCLOSURES OF CASH FLOW INFORMATION: Cash paid for income taxes, net of refunds $ 1,095.9 $ 970.6 $ 686.2",
+      "excerpt_sha256": "9473f8bb7de5fb6d51cf97afc2b953d1838fe8c568ea2f63b0ee8389ab598316"
+    },
+    {
+      "ticker": "CMCSA",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-004994",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm",
+      "source_file": "CMCSA_0001628280-26-004994.html",
+      "source_sha256": "fc72fe8b3d83df999bb6d463e34e79d167f97e4abd0c394dd33df2ad0a880db2",
+      "review_id": "CMCSA_cashflow_statement",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 290502,
+      "excerpt": "Year ended December 31 (in millions) 2025 2024 2023 Operating Activities Net income $ 19,660 $ 15,877 $ 15,107 Adjustments to reconcile net income to net cash provided by operating activities: Depreciation and amortization 16,210 14,802 14,336 Share-based compensation 1,288 1,288 1,241 Noncash interest expense (income), net 488 464 316 Net (gain) loss on investment activity and other ( 8,853 ) 1,088 ( 768 ) Deferred income taxes 2,674 ( 902 ) ( 2,739 ) Changes in operating assets and liabilities, net of effects of acquisitions and divestitures: Current and noncurrent receivables, net ( 135 ) 136 ( 996 ) Film and television costs, net 338 290 ( 260 ) Accounts payable and accrued expenses related to trade creditors ( 20 ) ( 758 ) ( 520 ) Other operating assets and liabilities 1,994 ( 4,611 ) 2,784 Net cash provided by operating activities 33,643 27,673 28,501 Investing Activities Capital expenditures ( 11,750 ) ( 12,181 ) ( 12,242 ) Cash paid for intangible assets ( 2,658 ) ( 2,949 ) ( 3,298 ) Construction of Universal Beijing Resort ( 11 ) ( 116 ) ( 137 ) Acquisitions, net of cash acquired ( 1,306 ) ( 119 ) — Proceeds from sales of businesses and investments 670 771 661 Advance on sale of investment — — 8,610 Purchases of investments ( 1,302 ) ( 1,082 ) ( 1,313 ) Other 199 6 558 Net cash provided by (used in) investing activities ( 16,157 ) ( 15,670 ) ( 7,161 ) Financing Activities Proceeds from (repayments of) short-term borrowings, net — — ( 660 ) Proceeds from borrowings 3,494 6,268 6,052 Repurchases and repayments of debt ( 5,740 ) ( 3,573 ) ( 4,015 ) Repayment of collateralized obligation — — ( 5,175 ) Repurchases of common stock under repurchase program and employee plans ( 7,155 ) ( 9,103 ) ( 11,291 ) Dividends paid ( 4,894 ) ( 4,814 ) ( 4,766 ) Other ( 50 ) 339 5 Net cash provided by (used in) financing activities ( 14,346 ) ( 10,883 ) ( 19,850 ) Impact of foreign currency on cash, cash equivalents and restricted cash 42 ( 26 ) 9 Increase (decrease) in cash, cash equivalents and restricted cash 3,182 1,095 1,500 Cash, cash equivalents and restricted cash, beginning of year 7,377 6,282 4,782 Cash, cash equivalents and restricted cash, end of year $ 10,559 $ 7,377 $ 6,282",
+      "excerpt_sha256": "2407577fd80e24b92ce9c30d07ab0e18e56b7fae9d047ff7095c8fbaca07242a"
+    },
+    {
+      "ticker": "FISV",
+      "report_date": "2025-12-31",
+      "accession": "0000798354-26-000009",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm",
+      "source_file": "FISV_0000798354-26-000009.html",
+      "source_sha256": "223c6d6c8d23f6337a65082857b03268267d5253b7fc9ea807b18bebf970979f",
+      "review_id": "FISV_cashflow_statement",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 268043,
+      "excerpt": "Year Ended December 31, (In millions) 2025 2024 2023 Cash flows from operating activities: Net income $ 3,490 $ 3,180 $ 3,129 Adjustments to reconcile net income to net cash provided by operating activities: Depreciation and other amortization 1,857 1,672 1,479 Amortization of acquisition-related intangible assets 1,304 1,423 1,642 Amortization of financing costs and debt discounts 46 43 41 Share-based compensation 357 367 342 Deferred income taxes ( 942 ) ( 662 ) ( 511 ) Net gain on sale of business and distribution of other assets ( 120 ) — ( 167 ) Gain on sale of investments ( 74 ) — — (Income) loss from investments in unconsolidated affiliates ( 37 ) 685 15 Distributions from unconsolidated affiliates 44 39 55 Non-cash settlement charge for terminated pension plans — 147 — Non-cash foreign currency exchange losses 159 92 76 Other operating activities ( 13 ) ( 17 ) ( 27 ) Changes in assets and liabilities, net of effects from acquisitions and dispositions: Trade accounts receivable ( 123 ) ( 169 ) 23 Prepaid expenses and other assets ( 528 ) ( 398 ) ( 790 ) Contract costs ( 252 ) ( 267 ) ( 246 ) Accounts payable and other liabilities 878 426 ( 54 ) Contract liabilities 16 70 155 Net cash provided by operating activities 6,062 6,631 5,162 Cash flows from investing activities: Capital expenditures, including capitalized software and other intangibles ( 1,763 ) ( 1,569 ) ( 1,388 ) Net proceeds from sale of business and other assets — — 234 Merchant cash advances, including Clover Capital program ( 1,129 ) — — Repayment of merchant cash advances, including Clover Capital program 1,018 — — Settlement anticipation cash advances, net ( 525 ) ( 801 ) — Payments for acquisition of businesses, net of cash acquired ( 820 ) — ( 13 ) Distributions from unconsolidated affiliates 42 60 136 Purchases of investments ( 81 ) ( 155 ) ( 39 ) Proceeds from sale of investments 756 61 5 Other investing activities ( 18 ) — ( 3 ) Net cash used in investing activities ( 2,520 ) ( 2,404 ) ( 1,068 ) Cash flows from financing activities: Debt proceeds 6,504 6,783 5,567 Debt repayments ( 3,955 ) ( 5,396 ) ( 3,015 ) Net (repayments of) borrowings from commercial paper and short-term borrowings ( 370 ) 278 ( 1,456 ) Payments of debt financing costs ( 20 ) ( 28 ) ( 38 ) Proceeds from issuance of treasury stock 62 97 101 Purchases of treasury stock, including employee shares withheld for tax obligations ( 5,899 ) ( 5,837 ) ( 4,827 ) Settlement activity, net 222 — ( 527 ) Distributions paid to noncontrolling interests and redeemable noncontrolling interest ( 10 ) ( 55 ) ( 34 ) Payments to acquire noncontrolling interests of consolidated subsidiaries ( 436 ) — ( 56 ) Payments of acquisition-related contingent consideration — ( 3 ) ( 35 ) Settlement of derivative contracts 65 — — Other financing activities 5 ( 4 ) ( 36 ) Net cash used in financing activities ( 3,832 ) ( 4,165 ) ( 4,356 ) Effect of exchange rate changes on cash and cash equivalents 99 ( 32 ) 33 Net change in cash and cash equivalents ( 191 ) 30 ( 229 ) Cash and cash equivalents, beginning balance 2,993 2,963 3,192 Cash and cash equivalents, ending balance $ 2,802 $ 2,993 $ 2,963",
+      "excerpt_sha256": "88f084bbdf7189a86a292d1ed90832f83583348ee635c8fc31faf372f047d94b"
+    },
+    {
+      "ticker": "FIX",
+      "report_date": "2025-12-31",
+      "accession": "0001104659-26-017530",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/fix-20251231x10k.htm",
+      "source_file": "FIX_0001104659-26-017530.html",
+      "source_sha256": "94f1f335cbf42ebe0937f588964c4a683e45fda9a1437d76b8fff351e067c91e",
+      "review_id": "FIX_cashflow_statement",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 222221,
+      "excerpt": "​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ Year Ended December 31, ​ ​ 2025 ​ ​ ​ 2024 ​ ​ ​ 2023 CASH FLOWS FROM OPERATING ACTIVITIES: ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ Net income ​ $ 1,022,558 ​ $ 522,433 ​ $ 323,398 ​ Adjustments to reconcile net income to net cash provided by operating activities— ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ Amortization of identifiable intangible assets ​ 79,580 ​ 97,266 ​ 43,404 ​ Depreciation expense ​ 62,379 ​ 48,219 ​ 38,162 ​ Change in right-of-use assets ​ ​ 33,848 ​ ​ 30,950 ​ 25,964 ​ Bad debt expense ​ 6,609 ​ 6,952 ​ 4,944 ​ Deferred tax provision (benefit) ​ ( 5,277 ) ​ ( 66,613 ) ​ 95,296 ​ Amortization of debt financing costs ​ 1,018 ​ 687 ​ 685 ​ Gain on sale of assets ​ ( 1,974 ) ​ ( 3,030 ) ​ ( 2,302 ) ​ Changes in the fair value of contingent earn-out obligations ​ 33,473 ​ 88,146 ​ 23,607 ​ Stock-based compensation ​ 21,809 ​ 16,646 ​ 12,939 ​ Changes in operating assets and liabilities, net of effects of acquisitions and divestitures— ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ (Increase) decrease in— ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ Receivables, net ​ ( 594,298 ) ​ ( 333,233 ) ​ ( 381,555 ) ​ Inventories ​ ( 24,411 ) ​ 6,544 ​ ( 29,688 ) ​ Prepaid expenses and other current assets ​ ( 91,359 ) ​ ( 7,868 ) ​ ( 11,137 ) ​ Costs and estimated earnings in excess of billings and unbilled accounts receivable ​ ( 19,945 ) ​ ( 82,081 ) ​ 7,350 ​ Other noncurrent assets ​ ( 386 ) ​ ( 2,220 ) ​ ( 152 ) ​ Increase (decrease) in— ​ ​ ​ ​ ​ ​ ​ ​ ​ Accounts payable and other current liabilities ​ ( 276,051 ) ​ 502,888 ​ 136,467 ​ Billings in excess of costs and estimated earnings and deferred revenue ​ 910,084 ​ 32,173 ​ 349,166 ​ Other long-term liabilities ​ 28,699 ​ ( 8,802 ) ​ 3,020 ​ Net cash provided by operating activities ​ 1,186,356 ​ 849,057 ​ 639,568 ​ CASH FLOWS FROM INVESTING ACTIVITIES: ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ Purchases of property and equipment ​ ( 154,903 ) ​ ( 111,071 ) ​ ( 94,838 ) ​ Proceeds from sales of property and equipment ​ 3,695 ​ 5,538 ​ 5,951 ​ Cash paid for acquisitions, net of cash acquired ​ ( 279,610 ) ​ ( 235,466 ) ​ ​ ( 102,261 ) ​ Payments for investments ​ ​ ( 64,201 ) ​ ​ ( 2,510 ) ​ ​ ( 1,860 ) ​ Proceeds from investments ​ ​ 27,747 ​ ​ — ​ ​ — ​ Net cash used in investing activities ​ ( 467,272 ) ​ ( 343,509 ) ​ ( 193,008 ) ​ CASH FLOWS FROM FINANCING ACTIVITIES: ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ Proceeds from revolving credit facility ​ 200,000 ​ 182,000 ​ 285,000 ​ Payments on revolving credit facility ​ ( 100,000 ) ​ ( 182,000 ) ​ ( 500,000 ) ​ Proceeds from other debt ​ ​ — ​ ​ 640 ​ ​ — ​ Payments on other debt ​ ( 43,059 ) ​ ( 26,576 ) ​ ( 12,033 ) ​ Debt financing costs ​ ( 3,709 ) ​ — ​ — ​ Payments of dividends to stockholders ​ ( 68,833 ) ​ ( 42,766 ) ​ ( 30,379 ) ​ Share repurchases ​ ( 215,999 ) ​ ( 57,912 ) ​ ( 21,184 ) ​ Shares received in lieu of tax withholding ​ ( 10,016 ) ​ ( 8,915 ) ​ ( 4,725 ) ​ Proceeds from exercise of options ​ 793 ​ 184 ​ 18 ​ Deferred acquisition payments ​ ​ — ​ ​ ( 50 ) ​ ​ — ​ Payments for contingent consideration arrangements ​ ( 46,302 ) ​ ( 25,364 ) ​ ( 15,321 ) ​ Net cash used in financing activities ​ ( 287,125 ) ​ ( 160,759 ) ​ ( 298,624 ) ​ NET INCREASE IN CASH AND CASH EQUIVALENTS ​ 431,959 ​ 344,789 ​ 147,936 ​ CASH AND CASH EQUIVALENTS, beginning of period ​ 549,939 ​ 205,150 ​ 57,214 ​ CASH AND CASH EQUIVALENTS, end of period ​ $ 981,898 ​ $ 549,939 ​ $ 205,150 ​",
+      "excerpt_sha256": "8342ff1919b45be81678028670d7524c9aa98c7ab4c1fa139607e858be598edf"
+    },
+    {
+      "ticker": "FOX",
+      "report_date": "2025-06-30",
+      "accession": "0001628280-25-038077",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1754301/000162828025038077/fox-20250630.htm",
+      "source_file": "FOX_0001628280-25-038077.html",
+      "source_sha256": "f71f3742a2cf017cfa21f2ff332051e990a948dbdc113834229386b357bc63c9",
+      "review_id": "FOX_cashflow_statement",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 263308,
+      "excerpt": "For the years ended June 30, 2025 2024 2023 OPERATING ACTIVITIES Net income $ 2,293 $ 1,554 $ 1,253 Adjustments to reconcile net income to net cash provided by operating activities Depreciation and amortization 385 389 411 Amortization of cable distribution investments 10 16 16 Restructuring, impairment and other corporate matters 267 67 367 Equity-based compensation 135 90 74 Equity losses (earnings) of affiliates 29 44 ( 4 ) Cash distributions received from affiliates 13 — — Non-operating other, net ( 438 ) 47 ( 368 ) Deferred income taxes 164 203 321 Change in operating assets and liabilities, net of acquisitions and dispositions Receivables and other assets ( 95 ) ( 172 ) ( 104 ) Inventories net of programming payable 521 ( 303 ) 145 Accounts payable and accrued expenses 89 ( 1 ) ( 68 ) Other changes, net ( 49 ) ( 94 ) ( 243 ) Net cash provided by operating activities 3,324 1,840 1,800 INVESTING ACTIVITIES Property, plant and equipment ( 331 ) ( 345 ) ( 357 ) Acquisitions, net of cash acquired ( 97 ) — — Purchase of investments ( 79 ) ( 103 ) ( 54 ) Other investing activities, net ( 30 ) ( 4 ) ( 27 ) Net cash used in investing activities ( 537 ) ( 452 ) ( 438 ) FINANCING ACTIVITIES Repurchase of shares ( 1,000 ) ( 1,000 ) ( 2,000 ) Repayment of borrowings ( 600 ) ( 1,250 ) — Borrowings — 1,232 — Dividends paid and distributions ( 277 ) ( 281 ) ( 299 ) Sale of subsidiary noncontrolling interest — — 35 Other financing activities, net 122 ( 42 ) ( 26 ) Net cash used in financing activities ( 1,755 ) ( 1,341 ) ( 2,290 ) Net increase (decrease) in cash and cash equivalents 1,032 47 ( 928 ) Cash and cash equivalents, beginning of year 4,319 4,272 5,200 Cash and cash equivalents, end of year $ 5,351 $ 4,319 $ 4,272",
+      "excerpt_sha256": "a287d15dd5acbb9183dd9bfbcc8b711057c7bfbdd82300db752baf467f234907"
+    },
+    {
+      "ticker": "GM",
+      "report_date": "2025-12-31",
+      "accession": "0001467858-26-000013",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/gm-20251231.htm",
+      "source_file": "GM_0001467858-26-000013.html",
+      "source_sha256": "a50e0240c592baf8375a2bcb18386e0fea4ab13b5c15468d70faffc81af85cd7",
+      "review_id": "GM_cashflow_statement",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 313581,
+      "excerpt": "Years Ended December 31, 2025 2024 2023 Cash flows from operating activities Net income (loss) $ 2,780 $ 5,963 $ 9,840 Depreciation and impairment of Equipment on operating leases, net 4,942 4,844 4,904 Depreciation, amortization, and impairment charges on Property, net 9,646 7,545 6,984 Foreign currency remeasurement and transaction (gains) losses 363 ( 321 ) 349 Undistributed earnings and impairment of nonconsolidated affiliates, net 1,785 4,118 245 Pension contributions and OPEB payments ( 539 ) ( 1,518 ) ( 1,100 ) Pension and OPEB (income) expense, net 29 89 90 Provision (benefit) for deferred taxes ( 1,249 ) 1,368 ( 1,041 ) Change in other operating assets and liabilities (Note 24) 9,056 ( 1,529 ) 1,822 Other operating activities 54 ( 433 ) ( 1,163 ) Net cash provided by (used in) operating activities 26,867 20,129 20,930 Cash flows from investing activities Expenditures for property ( 9,303 ) ( 10,830 ) ( 10,970 ) Available-for-sale marketable securities, acquisitions ( 2,339 ) ( 3,986 ) ( 4,429 ) Available-for-sale marketable securities, liquidations 3,012 4,331 9,345 Purchases of finance receivables ( 36,745 ) ( 36,348 ) ( 35,379 ) Principal collections and recoveries on finance receivables 35,109 31,784 28,346 Proceeds from sale of finance receivables (Note 5) 2,005 — — Purchases of leased vehicles ( 15,793 ) ( 15,279 ) ( 13,640 ) Proceeds from termination of leased vehicles 10,095 10,892 13,033 Other investing activities ( 2,175 ) ( 1,081 ) ( 969 ) Net cash provided by (used in) investing activities ( 16,134 ) ( 20,517 ) ( 14,663 ) Cash flows from financing activities Net increase (decrease) in short-term debt ( 312 ) 128 ( 156 ) Proceeds from issuance of debt (original maturities greater than three months) 43,191 53,435 50,963 Payments on debt (original maturities greater than three months) ( 45,591 ) ( 43,399 ) ( 44,675 ) Payments to purchase common stock (Note 20) ( 6,012 ) ( 7,064 ) ( 11,115 ) Issuance (redemption) of subsidiary stock (Note 20) ( 29 ) ( 101 ) — Dividends paid ( 657 ) ( 653 ) ( 597 ) Other financing activities ( 180 ) ( 407 ) ( 774 ) Net cash provided by (used in) financing activities ( 9,590 ) 1,938 ( 6,353 ) Effect of exchange rate changes on cash, cash equivalents, and restricted cash 177 ( 503 ) 54 Net increase (decrease) in cash, cash equivalents, and restricted cash 1,320 1,047 ( 31 ) Cash, cash equivalents, and restricted cash at beginning of period 22,964 21,917 21,948 Cash, cash equivalents, and restricted cash at end of period $ 24,284 $ 22,964 $ 21,917 Significant Non-cash Investing and Financing Activity Non-cash property additions $ 3,859 $ 3,864 $ 6,013 Non-cash Ultium loan receivable reduction $ 390 $ — $ —",
+      "excerpt_sha256": "80f841eeb8394c9312f70ba76236ba35a90ca8d98a396a7e0dbfd6f2d1160001"
+    },
+    {
+      "ticker": "NEM",
+      "report_date": "2025-12-31",
+      "accession": "0001164727-26-000010",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "review_id": "NEM_cashflow_statement",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 730263,
+      "excerpt": "Year Ended December 31, 2025 2024 2023 Operating activities: Net income (loss) $ 7,167 $ 3,381 $ ( 2,467 ) Adjustments: Depreciation and amortization 2,521 2,576 2,108 Impairment charges 842 78 1,891 (Gain) loss on sale of assets held for sale ( 1,066 ) 1,114 — Net loss (income) from discontinued operations — ( 68 ) ( 27 ) Deferred income taxes 1,391 80 ( 104 ) Change in fair value of investments and options ( 604 ) ( 62 ) 47 Reclamation and remediation 219 302 1,506 Loss (gain) on debt extinguishment 101 ( 32 ) — Stock-based compensation 99 89 80 Other non-cash adjustments ( 126 ) ( 115 ) 233 Change in operating assets and liabilities: Trade and other receivables ( 93 ) ( 441 ) ( 240 ) Inventories, stockpiles and ore on leach pads ( 454 ) ( 534 ) ( 187 ) Other assets ( 247 ) 64 50 Accounts payable ( 19 ) ( 2 ) ( 42 ) Reclamation and remediation liabilities ( 803 ) ( 433 ) ( 275 ) Accrued tax liabilities 1,039 235 ( 197 ) Other accrued liabilities 367 86 378 Net cash provided by (used in) operating activities of continuing operations 10,334 6,318 2,754 Net cash provided by (used in) operating activities of discontinued operations — 45 9 Net cash provided by (used in) operating activities 10,334 6,363 2,763 Investing activities: Additions to property, plant and mine development ( 3,035 ) ( 3,402 ) ( 2,666 ) Proceeds from sales of mining operations and other assets, net 2,811 560 — Proceeds from sales of investments 986 21 234 Return of investment from equity method investees 62 56 36 Contributions to equity method investees ( 59 ) ( 96 ) ( 108 ) Purchases of investments ( 14 ) ( 66 ) ( 551 ) Maturities of investments — 28 1,363 Acquisitions, net (1) — — 668 Other ( 145 ) 44 22 Net cash provided by (used in) investing activities of continuing operations 606 ( 2,855 ) ( 1,002 ) Net cash provided by (used in) investing activities of discontinued operations — 153 — Net cash provided by (used in) investing activities 606 ( 2,702 ) ( 1,002 ) Financing activities: Repayment of debt ( 3,430 ) ( 3,860 ) — Repurchases of common stock ( 2,303 ) ( 1,246 ) — Dividends paid to common stockholders ( 1,106 ) ( 1,145 ) ( 1,415 ) Distributions to noncontrolling interests ( 217 ) ( 161 ) ( 150 ) Funding from noncontrolling interests 133 115 138 Payments on lease and other financing obligations ( 95 ) ( 87 ) ( 67 ) Payments for withholding of employee taxes related to stock-based compensation ( 23 ) ( 14 ) ( 25 ) Proceeds from issuance of debt, net — 3,476 — Other 1 ( 31 ) ( 84 ) Net cash provided by (used in) financing activities ( 7,040 ) ( 2,953 ) ( 1,603 ) Effect of exchange rate changes on cash, cash equivalents and restricted cash ( 4 ) ( 20 ) ( 2 ) Net change in cash, cash equivalents and restricted cash, including cash and restricted cash reclassified to assets held for sale 3,896 688 156 Less: Cash and restricted cash reclassified to assets held for sale (2) 138 ( 138 ) — Net change in cash, cash equivalents and restricted cash 4,034 550 156 Cash, cash equivalents and restricted cash at beginning of period 3,650 3,100 2,944 Cash, cash equivalents and restricted cash at end of period $ 7,684 $ 3,650 $ 3,100",
+      "excerpt_sha256": "a81ee16ab413ce273d3fe483711a86916bf77ca2bc17c7f21dd48add9d821a02"
+    },
+    {
+      "ticker": "TROW",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-008002",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026008002/trow-20251231.htm",
+      "source_file": "TROW_0001628280-26-008002.html",
+      "source_sha256": "6bf42c9f8c74ed6554dca86bfb26d1e91499b8cfe91f46b9b8ccbc5c4a6e6f76",
+      "review_id": "TROW_cashflow_statement",
+      "text_normalization": "space_join_itertext_then_split_join",
+      "excerpt_start": 254891,
+      "excerpt": "2025 2024 2023 Cash flows from operating activities Net income $ 2,208.3 $ 2,135.8 $ 1,835.7 Adjustments to reconcile net income to net cash provided by operating activities Depreciation, amortization and impairment of property, equipment and software 405.8 254.1 254.8 Amortization and impairment of acquisition-related assets and retention arrangements 199.7 250.1 226.8 Fair value remeasurement of contingent consideration liability — ( 13.4 ) ( 82.4 ) Stock-based compensation expense 216.9 247.3 265.6 Net gains recognized on investments ( 452.4 ) ( 340.2 ) ( 460.8 ) Net (investments) redemptions in investment products used to economically hedge deferred compensation liabilities 8.0 ( 93.2 ) 56.1 Net change in securities held by consolidated investment products ( 1,002.7 ) ( 760.4 ) ( 1,070.3 ) Other changes in assets and liabilities 169.8 5.5 193.6 Net cash provided by operating activities 1,753.4 1,685.6 1,219.1 Cash flows from investing activities Purchases of sponsored investment products ( 112.9 ) ( 100.1 ) ( 85.3 ) Dispositions of sponsored investment products 769.1 533.4 616.6 Net cash of investment products upon deconsolidation ( 63.1 ) ( 15.8 ) ( 56.8 ) Additions to property, equipment and software ( 274.2 ) ( 423.4 ) ( 307.9 ) Other investing activity ( 88.6 ) ( 171.6 ) ( 38.4 ) Net cash provided by (used in) investing activities 230.3 ( 177.5 ) 128.2 Cash flows from financing activities Repurchases of common stock ( 620.9 ) ( 337.2 ) ( 254.4 ) Common share issuances under stock-based compensation plans ( 22.3 ) ( 33.3 ) ( 18.0 ) Dividends paid to common stockholders and equity-unit holders ( 1,143.0 ) ( 1,135.6 ) ( 1,121.7 ) Net distributions to non-controlling interests in consolidated entities ( 34.4 ) ( 36.7 ) ( 43.3 ) Net subscriptions from redeemable non-controlling interest holders 543.2 606.2 358.8 Net cash used in financing activities ( 1,277.4 ) ( 936.6 ) ( 1,078.6 ) Effect of exchange rate changes on cash and cash equivalents of consolidated investment products ( 1.9 ) ( 2.4 ) 0.4 Net change in cash and cash equivalents during year 704.4 569.1 269.1 Cash and cash equivalents at beginning of year, including $ 63.1 million at December 31, 2024, $ 77.2 million at December 31, 2023, and $ 119.1 million at December 31, 2022, held by consolidated investment products 2,712.9 2,143.8 $ 1,874.7 Cash and cash equivalents at end of year, including $ 39.1 million at December 31, 2025, $ 63.1 million at December 31, 2024, and $ 77.2 million at December 31, 2023, held by consolidated investment products $ 3,417.3 $ 2,712.9 $ 2,143.8",
+      "excerpt_sha256": "4d8bee6867268b017bef41b4c5762363b51609bb8b77d548bb5fcac44f8100de"
+    }
+  ],
+  "case_dispositions": [
+    {
+      "ticker": "ADBE",
+      "report_date": "2025-11-28",
+      "reported_owner_earnings_usd": "7910000000",
+      "normalized_owner_earnings_usd": null,
+      "normalization_complete": false,
+      "cash_review_status": "TAX_SIGNAL_NOT_PROVEN_ANOMALY",
+      "cash_review_reason": "Il testo intercettato riguarda incertezza futura sugli accertamenti, non dimostra un beneficio temporaneo nell’OCF 2025. Imposte differite -512m già riconciliate nel rendiconto; imposte pagate 2219m. Non sottrarre di nuovo le imposte differite. La riga investimenti/intangibili/altri beni 134m richiede separazione prima di affermare completezza economica del capex.",
+      "cash_gate": "RECONCILE_CASH_QUALITY",
+      "confidence": "PROVISIONAL",
+      "disposition": "INVESTIGARE",
+      "buy_add_allowed": false,
+      "commitments_review": "R10H quantified categories do not establish complete uncovered obligations or resolve all overlap",
+      "leverage_review": "R10F/R10G source evidence does not close debt completeness, conflicts and sector perimeter",
+      "br09_review": "R10D lexical negative is not sufficient substantive classification; retain original module pending documentary review",
+      "case_closed": false
+    },
+    {
+      "ticker": "AMP",
+      "report_date": "2025-12-31",
+      "reported_owner_earnings_usd": "7955000000",
+      "normalized_owner_earnings_usd": null,
+      "normalization_complete": false,
+      "cash_review_status": "FINANCIAL_PERIMETER_UNRESOLVED",
+      "cash_review_reason": "OCF include +4610m da saldi assicurati, benefici e market risk benefits; non equivale a cassa distribuibile. Portafoglio investimenti e passività devono essere trattati insieme. Riserva liberata nella nota non è automaticamente cash flow. Applicare variante finanziaria congelata, non generic OE come misura operativa.",
+      "cash_gate": "RECONCILE_CASH_QUALITY",
+      "confidence": "PROVISIONAL",
+      "disposition": "INVESTIGARE",
+      "buy_add_allowed": false,
+      "commitments_review": "R10H quantified categories do not establish complete uncovered obligations or resolve all overlap",
+      "leverage_review": "R10F/R10G source evidence does not close debt completeness, conflicts and sector perimeter",
+      "br09_review": "R10D lexical negative is not sufficient substantive classification; retain original module pending documentary review",
+      "case_closed": false
+    },
+    {
+      "ticker": "ANET",
+      "report_date": "2025-12-31",
+      "reported_owner_earnings_usd": "3813200000.0",
+      "normalized_owner_earnings_usd": null,
+      "normalization_complete": false,
+      "cash_review_status": "WORKING_CAPITAL_RECONCILIATION_REQUIRED",
+      "cash_review_reason": "Deferred revenue +2452m, contro assorbimenti crediti 746.4m, inventari 412.5m e altri attivi 937.4m. Il contributo non è tutto profitto ricorrente né tutto beneficio temporaneo: analizzare contratti e recupero degli anticipi prima di normalizzare. Capex include intangibili.",
+      "cash_gate": "RECONCILE_CASH_QUALITY",
+      "confidence": "PROVISIONAL",
+      "disposition": "INVESTIGARE",
+      "buy_add_allowed": false,
+      "commitments_review": "R10H quantified categories do not establish complete uncovered obligations or resolve all overlap",
+      "leverage_review": "R10F/R10G source evidence does not close debt completeness, conflicts and sector perimeter",
+      "br09_review": "R10D lexical negative is not sufficient substantive classification; retain original module pending documentary review",
+      "case_closed": false
+    },
+    {
+      "ticker": "CMCSA",
+      "report_date": "2025-12-31",
+      "reported_owner_earnings_usd": "20605000000",
+      "normalized_owner_earnings_usd": null,
+      "normalization_complete": false,
+      "cash_review_status": "CAPEX_SCOPE_AND_WORKING_CAPITAL_REVIEW",
+      "cash_review_reason": "Oltre al capex 11750m compaiono 2658m pagati per intangibili e 11m per Universal Beijing. Il calcolo congelato non incorpora queste righe: completezza del capex da riconciliare senza modificare formula o ranking. Guadagni investimenti -8853m già stornati nella riconciliazione OCF; altre attività/passività +1994m da spiegare.",
+      "cash_gate": "RECONCILE_CASH_QUALITY",
+      "confidence": "PROVISIONAL",
+      "disposition": "INVESTIGARE",
+      "buy_add_allowed": false,
+      "commitments_review": "R10H quantified categories do not establish complete uncovered obligations or resolve all overlap",
+      "leverage_review": "R10F/R10G source evidence does not close debt completeness, conflicts and sector perimeter",
+      "br09_review": "R10D lexical negative is not sufficient substantive classification; retain original module pending documentary review",
+      "case_closed": false
+    },
+    {
+      "ticker": "FISV",
+      "report_date": "2025-12-31",
+      "reported_owner_earnings_usd": "3942000000",
+      "normalized_owner_earnings_usd": null,
+      "normalization_complete": false,
+      "cash_review_status": "ADVANCES_AND_SETTLEMENT_PERIMETER_REVIEW",
+      "cash_review_reason": "Capex 1763m include software e altri intangibili. Merchant advances 1129m e rimborsi 1018m, settlement anticipation advances netti 525m sono investing; settlement activity 222m è financing. Non confondere settlement cash con cassa disponibile. Imposte differite -942m già nel ponte OCF.",
+      "cash_gate": "RECONCILE_CASH_QUALITY",
+      "confidence": "PROVISIONAL",
+      "disposition": "INVESTIGARE",
+      "buy_add_allowed": false,
+      "commitments_review": "R10H quantified categories do not establish complete uncovered obligations or resolve all overlap",
+      "leverage_review": "R10F/R10G source evidence does not close debt completeness, conflicts and sector perimeter",
+      "br09_review": "R10D lexical negative is not sufficient substantive classification; retain original module pending documentary review",
+      "case_closed": false
+    },
+    {
+      "ticker": "FIX",
+      "report_date": "2025-12-31",
+      "reported_owner_earnings_usd": "1009644000",
+      "normalized_owner_earnings_usd": null,
+      "normalization_complete": false,
+      "cash_review_status": "WORKING_CAPITAL_RECONCILIATION_REQUIRED",
+      "cash_review_reason": "Billings in excess/deferred revenue +910.084m contro crediti -594.298m e debiti/altri passivi correnti -276.051m. Non sottrarre l’intero anticipo senza ricostruire i costi coperti; non aggiungere automaticamente gli assorbimenti. Fair value earn-out 33.473m già nel ponte OCF. Rimane il conflitto D&A di R10F.",
+      "cash_gate": "RECONCILE_CASH_QUALITY",
+      "confidence": "PROVISIONAL",
+      "disposition": "INVESTIGARE",
+      "buy_add_allowed": false,
+      "commitments_review": "R10H quantified categories do not establish complete uncovered obligations or resolve all overlap",
+      "leverage_review": "R10F/R10G source evidence does not close debt completeness, conflicts and sector perimeter",
+      "br09_review": "R10D lexical negative is not sufficient substantive classification; retain original module pending documentary review",
+      "case_closed": false
+    },
+    {
+      "ticker": "FOX",
+      "report_date": "2025-06-30",
+      "reported_owner_earnings_usd": "2858000000",
+      "normalized_owner_earnings_usd": null,
+      "normalization_complete": false,
+      "cash_review_status": "WORKING_CAPITAL_AND_ONE_OFF_REVIEW",
+      "cash_review_reason": "Inventories net of programming payable +521m; restructuring/impairment/other corporate matters +267m nel ponte. Distinguere cash settlements e noncash adjustments. Nessuna add-back automatica. Si usa il filing congelato al 30 giugno 2025, non il successivo 2026.",
+      "cash_gate": "RECONCILE_CASH_QUALITY",
+      "confidence": "PROVISIONAL",
+      "disposition": "INVESTIGARE",
+      "buy_add_allowed": false,
+      "commitments_review": "R10H quantified categories do not establish complete uncovered obligations or resolve all overlap",
+      "leverage_review": "R10F/R10G source evidence does not close debt completeness, conflicts and sector perimeter",
+      "br09_review": "R10D lexical negative is not sufficient substantive classification; retain original module pending documentary review",
+      "case_closed": false
+    },
+    {
+      "ticker": "GM",
+      "report_date": "2025-12-31",
+      "reported_owner_earnings_usd": "17230000000",
+      "normalized_owner_earnings_usd": null,
+      "normalization_complete": false,
+      "cash_review_status": "CAPTIVE_FINANCE_AND_WORKING_CAPITAL_REVIEW",
+      "cash_review_reason": "OCF consolidato include +9056m da altri attivi/passivi operativi; investing include acquisti veicoli in leasing 15793m e realizzi 10095m, oltre ai crediti finanziari. OCF meno solo property capex non rappresenta direttamente cassa automotive distribuibile. Il riferimento a reserve release riguarda 2024, non prova beneficio 2025. SBC 334m confermato nella nota compensi.",
+      "cash_gate": "RECONCILE_CASH_QUALITY",
+      "confidence": "PROVISIONAL",
+      "disposition": "INVESTIGARE",
+      "buy_add_allowed": false,
+      "commitments_review": "R10H quantified categories do not establish complete uncovered obligations or resolve all overlap",
+      "leverage_review": "R10F/R10G source evidence does not close debt completeness, conflicts and sector perimeter",
+      "br09_review": "R10D lexical negative is not sufficient substantive classification; retain original module pending documentary review",
+      "case_closed": false
+    },
+    {
+      "ticker": "NEM",
+      "report_date": "2025-12-31",
+      "reported_owner_earnings_usd": "7200000000",
+      "normalized_owner_earnings_usd": null,
+      "normalization_complete": false,
+      "cash_review_status": "NONCASH_REVERSAL_RESOLVED_TAX_TIMING_OPEN",
+      "cash_review_reason": "Variazione fair value -604m e plusvalenza cessioni -1066m sono già rettifiche nel ponte OCF: non sottrarle nuovamente. Accrued tax liabilities +1039m e deferred taxes +1391m richiedono riconciliazione dei tempi fiscali; reclamation liabilities -803m richiede confronto con obblighi futuri. SBC 99m confermato in nota e rendiconto.",
+      "cash_gate": "RECONCILE_CASH_QUALITY",
+      "confidence": "PROVISIONAL",
+      "disposition": "INVESTIGARE",
+      "buy_add_allowed": false,
+      "commitments_review": "R10H quantified categories do not establish complete uncovered obligations or resolve all overlap",
+      "leverage_review": "R10F/R10G source evidence does not close debt completeness, conflicts and sector perimeter",
+      "br09_review": "R10D lexical negative is not sufficient substantive classification; retain original module pending documentary review",
+      "case_closed": false
+    },
+    {
+      "ticker": "TROW",
+      "report_date": "2025-12-31",
+      "reported_owner_earnings_usd": "1262300000.0",
+      "normalized_owner_earnings_usd": null,
+      "normalization_complete": false,
+      "cash_review_status": "CONSOLIDATED_PRODUCTS_PERIMETER_REVIEW",
+      "cash_review_reason": "Fair value contingent consideration nel 2025 è zero (2024 -13.4m); gains investments -452.4m già rettificati. Trading securities dei prodotti consolidati assorbono 1002.7m: non aggiungerli indietro senza separare perimetro emittente, prodotti e interessenze terzi. OE aritmetico non sostituisce IOS_BANK.",
+      "cash_gate": "RECONCILE_CASH_QUALITY",
+      "confidence": "PROVISIONAL",
+      "disposition": "INVESTIGARE",
+      "buy_add_allowed": false,
+      "commitments_review": "R10H quantified categories do not establish complete uncovered obligations or resolve all overlap",
+      "leverage_review": "R10F/R10G source evidence does not close debt completeness, conflicts and sector perimeter",
+      "br09_review": "R10D lexical negative is not sufficient substantive classification; retain original module pending documentary review",
+      "case_closed": false
+    }
+  ],
+  "system_live": false,
+  "engine_modified": false,
+  "ranking_recomputed": false,
+  "case_closures": 0
+}
