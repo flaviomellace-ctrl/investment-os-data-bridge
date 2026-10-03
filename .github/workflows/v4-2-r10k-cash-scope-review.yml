@@ -1,0 +1,87 @@
+name: V4.2 R10K Cash Scope Bridges
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - data/v4_2/r10k/review_20261003/**
+      - .github/workflows/v4-2-r10k-cash-scope-review.yml
+permissions:
+  contents: read
+  actions: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install isolated review dependency
+        run: python -m pip install -r requirements-r10f.txt
+      - name: Synthetic integrity tests
+        run: python tests/test_r10f_source_corrections.py
+      - name: Retrieve sealed R10E sources
+        uses: actions/download-artifact@v4
+        with:
+          name: r10e-primary-evidence-36336222379-1
+          github-token: ${{ github.token }}
+          run-id: '36336222379'
+          path: ${{ runner.temp }}/r10k-source-archive
+      - name: Verify numeric sources and calculations
+        run: |
+          python src/r10f_verify_source_corrections.py \
+            --registry data/v4_2/r10k/review_20261003/V4_2_R10K_CASH_SCOPE_REVIEW.json \
+            --sources "${RUNNER_TEMP}/r10k-source-archive/_temp/r10e_primary_sources" \
+            --output "${RUNNER_TEMP}/r10k-receipt.json"
+          cmp "${RUNNER_TEMP}/r10k-receipt.json" data/v4_2/r10k/review_20261003/V4_2_R10K_VERIFICATION_RECEIPT.json
+      - name: Verify excerpts and documentary table bridge
+        run: |
+          python - <<'PYCODE'
+          import json, hashlib, os
+          from pathlib import Path
+          from decimal import Decimal
+          from lxml import html
+          r = json.loads(Path('data/v4_2/r10k/review_20261003/V4_2_R10K_CASH_SCOPE_REVIEW.json').read_text())
+          base = Path(os.environ['RUNNER_TEMP']) / 'r10k-source-archive/_temp/r10e_primary_sources'
+          def norm(e):
+              return ' '.join(' '.join(e.itertext()).split())
+          assert len(r['items']) == 8 and len(r['narrative_reviews']) == 6
+          for item in r['narrative_reviews']:
+              name = item['source_file']
+              assert Path(name).name == name
+              raw = (base / name).read_bytes()
+              assert hashlib.sha256(raw).hexdigest() == item['source_sha256']
+              text = norm(html.fromstring(raw))
+              excerpt = item['excerpt']
+              start = item['excerpt_start']
+              assert excerpt and start >= 0 and text[start:start + len(excerpt)] == excerpt
+              assert hashlib.sha256(excerpt.encode()).hexdigest() == item['excerpt_sha256']
+          b = r['documentary_table_bridge']
+          evidence = next(x for x in r['narrative_reviews'] if x['review_id'] == b['review_id'])
+          root = html.fromstring((base / evidence['source_file']).read_bytes())
+          tables = [x for x in root.iter('table') if norm(x) == evidence['excerpt']]
+          assert len(tables) == 1
+          rows = [tr for tr in tables[0].iter('tr') if norm(tr).startswith(b['row_label'])]
+          assert len(rows) == 1
+          cells = [norm(c) for c in rows[0] if norm(c)]
+          assert cells == b['expected_nonempty_cells']
+          def number(s):
+              return Decimal(s.replace(',', '').replace('(', '-').replace(')', '')) * 1000000
+          keys = ['issuer_ocf_usd', 'consolidated_products_ocf_usd', 'eliminations_ocf_usd', 'consolidated_ocf_usd']
+          vals = [number(s) for s in cells[1:]]
+          assert vals == [Decimal(b[k]) for k in keys]
+          assert sum(vals[:3]) == vals[3]
+          assert r['normalized_owner_earnings_usd'] is None and r['normalization_complete'] is False
+          assert r['system_live'] is False and r['engine_modified'] is False
+          assert r['ranking_recomputed'] is False and r['case_closures'] == 0
+          print('6 excerpts and one structured documentary OCF bridge verified; no normalized OE asserted.')
+          PYCODE
+          git diff --exit-code
+      - name: Summary
+        run: |
+          echo '## R10K cash-scope bridges verified' >> "$GITHUB_STEP_SUMMARY"
+          echo '8 numeric source items/calculations; 6 documentary excerpts; one structured issuer/product/elimination OCF bridge.' >> "$GITHUB_STEP_SUMMARY"
+          echo '8 synthetic integrity tests passed. Scope reconciliation is not complete economic normalization.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Engine and ranking unchanged. System NOT LIVE. Claude development handoff documented; R11/R12 not performed.' >> "$GITHUB_STEP_SUMMARY"
