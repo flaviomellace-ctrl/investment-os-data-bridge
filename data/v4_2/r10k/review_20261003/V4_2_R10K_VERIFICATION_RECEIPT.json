@@ -1,0 +1,84 @@
+{
+  "schema": "r10f_source_corrections_verification_v1",
+  "items": [
+    {
+      "item_id": "CMCSA_reported_ocf",
+      "ticker": "CMCSA",
+      "field": "reported_ocf",
+      "value_usd": "33643000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_SCOPE_BRIDGE_NOT_COMPLETE_NORMALIZATION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "CMCSA_reported_ppe_capex",
+      "ticker": "CMCSA",
+      "field": "reported_ppe_capex",
+      "value_usd": "11750000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_SCOPE_BRIDGE_NOT_COMPLETE_NORMALIZATION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "CMCSA_reported_sbc",
+      "ticker": "CMCSA",
+      "field": "reported_sbc",
+      "value_usd": "1288000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_SCOPE_BRIDGE_NOT_COMPLETE_NORMALIZATION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "CMCSA_cash_intangible_investment",
+      "ticker": "CMCSA",
+      "field": "cash_intangible_investment",
+      "value_usd": "2658000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_SCOPE_BRIDGE_NOT_COMPLETE_NORMALIZATION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "CMCSA_beijing_construction_investment",
+      "ticker": "CMCSA",
+      "field": "beijing_construction_investment",
+      "value_usd": "11000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_SCOPE_BRIDGE_NOT_COMPLETE_NORMALIZATION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "CMCSA_expanded_cash_investment_scope",
+      "ticker": "CMCSA",
+      "field": "expanded_cash_investment_scope",
+      "value_usd": "14419000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_SCOPE_BRIDGE_NOT_COMPLETE_NORMALIZATION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "CMCSA_OE_after_expanded_cash_investment_scope",
+      "ticker": "CMCSA",
+      "field": "OE_after_expanded_cash_investment_scope",
+      "value_usd": "17936000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_SCOPE_BRIDGE_NOT_COMPLETE_NORMALIZATION",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "CMCSA_additional_investment_deduction",
+      "ticker": "CMCSA",
+      "field": "additional_investment_deduction",
+      "value_usd": "2669000000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_SCOPE_BRIDGE_NOT_COMPLETE_NORMALIZATION",
+      "promoted_to_frozen_inputs": false
+    }
+  ],
+  "source_verified_count": 8,
+  "case_closures": 0,
+  "engine_modified": false,
+  "ranking_recomputed": false,
+  "system_live": false,
+  "registry_sha256": "62ce77b6d4f960e56e2f1c42d6fc4c2d83f1ffd6df7f170b5d5dc1832c5977a6",
+  "verifier_sha256": "65d1d38edbd1e29a7de03794e3a249f50b94885b24cdee5e58134b207e8caf9b"
+}
