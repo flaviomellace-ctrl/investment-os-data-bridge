@@ -1,0 +1,53 @@
+name: V4.2 R10N Verified Historical Leverage
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - data/v4_2/r10n/review_20261003/**
+      - src/r10n_verified_leverage_view.py
+      - .github/workflows/v4-2-r10n-verified-leverage.yml
+permissions:
+  contents: read
+  actions: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install isolated source verifier dependency
+        run: python -m pip install -r requirements-r10f.txt
+      - name: Source integrity negative controls
+        run: python tests/test_r10f_source_corrections.py
+      - name: Retrieve sealed R10E sources
+        uses: actions/download-artifact@v4
+        with:
+          name: r10e-primary-evidence-36336222379-1
+          github-token: ${{ github.token }}
+          run-id: '36336222379'
+          path: ${{ runner.temp }}/r10n-source-archive
+      - name: Verify thirty input facts and six secondary views
+        run: |
+          python src/r10n_verified_leverage_view.py \
+            --registry data/v4_2/r10n/review_20261003/V4_2_R10N_LEVERAGE_SOURCE_REVIEW.json \
+            --sources "${RUNNER_TEMP}/r10n-source-archive/_temp/r10e_primary_sources" \
+            --engine src/cash_quality_commitments_v42.py \
+            --output "${RUNNER_TEMP}/r10n-receipt.json"
+          cmp "${RUNNER_TEMP}/r10n-receipt.json" data/v4_2/r10n/review_20261003/V4_2_R10N_VERIFICATION_RECEIPT.json
+          git diff --exit-code
+      - name: Summary
+        run: |
+          python - <<'PYCODE'
+          import json, os
+          from pathlib import Path
+          r=json.loads((Path(os.environ['RUNNER_TEMP'])/'r10n-receipt.json').read_text())
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as output:
+              output.write('## R10N historical leverage source and arithmetic verified\n\n')
+              output.write(f"{r['primary_input_checks_pass']} primary input checks; {r['views_calculated']} secondary views.\n\n")
+              output.write(f"{r['previously_missing_views_now_calculable']} previously missing views now calculable; corrected D&A retained.\n\n")
+              output.write('Perimeter/cash/commitments/BR09 reviews remain open. No case clearance, ranking change, BUY/ADD, R11/R12 or LIVE activation.\n')
+          PYCODE
