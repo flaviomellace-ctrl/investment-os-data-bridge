@@ -1,0 +1,1634 @@
+{
+  "schema": "r10n_historical_leverage_source_registry_v1",
+  "review_date": "2026-10-03",
+  "items": [
+    {
+      "ticker": "FISV",
+      "report_date": "2025-12-31",
+      "source_accession": "0000798354-26-000009",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm",
+      "source_file": "FISV_0000798354-26-000009.html",
+      "source_sha256": "223c6d6c8d23f6337a65082857b03268267d5253b7fc9ea807b18bebf970979f",
+      "components": [
+        {
+          "id": "f-97",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingIncomeLoss",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-97"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "5818000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "5818000000",
+      "item_id": "FISV_operating_income",
+      "field": "operating_income",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "FISV",
+      "report_date": "2025-12-31",
+      "source_accession": "0000798354-26-000009",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm",
+      "source_file": "FISV_0000798354-26-000009.html",
+      "source_sha256": "223c6d6c8d23f6337a65082857b03268267d5253b7fc9ea807b18bebf970979f",
+      "components": [
+        {
+          "id": "f-187",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-29",
+            "decimals": "-6",
+            "name": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+            "scale": "6",
+            "id": "f-187"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "798000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "798000000",
+      "item_id": "FISV_cash",
+      "field": "cash",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "FISV",
+      "report_date": "2025-12-31",
+      "source_accession": "0000798354-26-000009",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm",
+      "source_file": "FISV_0000798354-26-000009.html",
+      "source_sha256": "223c6d6c8d23f6337a65082857b03268267d5253b7fc9ea807b18bebf970979f",
+      "components": [
+        {
+          "id": "f-1272",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-29",
+            "decimals": "-6",
+            "name": "us-gaap:DebtAndCapitalLeaseObligations",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-1272"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "28997000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "28997000000",
+      "item_id": "FISV_gross_debt",
+      "field": "gross_debt",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "FISV",
+      "report_date": "2025-12-31",
+      "source_accession": "0000798354-26-000009",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm",
+      "source_file": "FISV_0000798354-26-000009.html",
+      "source_sha256": "223c6d6c8d23f6337a65082857b03268267d5253b7fc9ea807b18bebf970979f",
+      "components": [
+        {
+          "id": "f-385",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:ShareBasedCompensation",
+            "scale": "6",
+            "id": "f-385"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "357000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "357000000",
+      "item_id": "FISV_sbc",
+      "field": "sbc",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FISV_da",
+      "ticker": "FISV",
+      "field": "da",
+      "report_date": "2025-12-31",
+      "source_accession": "0000798354-26-000009",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm",
+      "source_file": "FISV_0000798354-26-000009.html",
+      "source_sha256": "223c6d6c8d23f6337a65082857b03268267d5253b7fc9ea807b18bebf970979f",
+      "prior_value_or_status": 669000000,
+      "components": [
+        {
+          "id": "f-376",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:OtherDepreciationAndAmortization",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-376"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1857000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-379",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "fi:AmortizationOfAcquisitionRelatedIntangibleAssets",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-379"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000798354"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1304000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "3161000000",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "reason": "Add the two distinct cash-flow reconciliation lines: depreciation/other amortization and acquisition-related intangible amortization. Exclude financing amortization 46m; do not add the overlapping standalone depreciation 669m or rounded total intangible amortization 2.3bn.",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "CMCSA",
+      "report_date": "2025-12-31",
+      "source_accession": "0001628280-26-004994",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm",
+      "source_file": "CMCSA_0001628280-26-004994.html",
+      "source_sha256": "fc72fe8b3d83df999bb6d463e34e79d167f97e4abd0c394dd33df2ad0a880db2",
+      "components": [
+        {
+          "id": "f-115",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingIncomeLoss",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-115"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "20672000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "20672000000",
+      "item_id": "CMCSA_operating_income",
+      "field": "operating_income",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "CMCSA",
+      "report_date": "2025-12-31",
+      "source_accession": "0001628280-26-004994",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm",
+      "source_file": "CMCSA_0001628280-26-004994.html",
+      "source_sha256": "fc72fe8b3d83df999bb6d463e34e79d167f97e4abd0c394dd33df2ad0a880db2",
+      "components": [
+        {
+          "id": "f-291",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-23",
+            "decimals": "-6",
+            "name": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-291"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "9481000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "9481000000",
+      "item_id": "CMCSA_cash",
+      "field": "cash",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "CMCSA",
+      "report_date": "2025-12-31",
+      "source_accession": "0001628280-26-004994",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm",
+      "source_file": "CMCSA_0001628280-26-004994.html",
+      "source_sha256": "fc72fe8b3d83df999bb6d463e34e79d167f97e4abd0c394dd33df2ad0a880db2",
+      "components": [
+        {
+          "id": "f-322",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-23",
+            "decimals": "-6",
+            "name": "us-gaap:DebtCurrent",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-322"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "5958000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-328",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-23",
+            "decimals": "-6",
+            "name": "us-gaap:LongTermDebtAndCapitalLeaseObligations",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-328"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "92979000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "98937000000",
+      "item_id": "CMCSA_gross_debt",
+      "field": "gross_debt",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "CMCSA",
+      "report_date": "2025-12-31",
+      "source_accession": "0001628280-26-004994",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm",
+      "source_file": "CMCSA_0001628280-26-004994.html",
+      "source_sha256": "fc72fe8b3d83df999bb6d463e34e79d167f97e4abd0c394dd33df2ad0a880db2",
+      "components": [
+        {
+          "id": "f-201",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:ShareBasedCompensation",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-201"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1288000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1288000000",
+      "item_id": "CMCSA_sbc",
+      "field": "sbc",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "CMCSA",
+      "report_date": "2025-12-31",
+      "source_accession": "0001628280-26-004994",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm",
+      "source_file": "CMCSA_0001628280-26-004994.html",
+      "source_sha256": "fc72fe8b3d83df999bb6d463e34e79d167f97e4abd0c394dd33df2ad0a880db2",
+      "components": [
+        {
+          "id": "f-198",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:DepreciationDepletionAndAmortization",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-198"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001166691"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "16210000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "16210000000",
+      "item_id": "CMCSA_da",
+      "field": "da",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "ADBE",
+      "report_date": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-185",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingIncomeLoss",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-185"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "8706000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "8706000000",
+      "item_id": "ADBE_operating_income",
+      "field": "operating_income",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "ADBE",
+      "report_date": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-54",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-6",
+            "name": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-54"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-11-28"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "5431000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "5431000000",
+      "item_id": "ADBE_cash",
+      "field": "cash",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "ADBE",
+      "report_date": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-94",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-6",
+            "name": "us-gaap:LongTermDebt",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-94"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-11-28"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "6210000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "6210000000",
+      "item_id": "ADBE_gross_debt",
+      "field": "gross_debt",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "ADBE",
+      "report_date": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-332",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:ShareBasedCompensation",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-332"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1942000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1942000000",
+      "item_id": "ADBE_sbc",
+      "field": "sbc",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "ADBE_da",
+      "ticker": "ADBE",
+      "field": "da",
+      "report_date": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "prior_value_or_status": "MISSING",
+      "components": [
+        {
+          "id": "f-329",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:DepreciationDepletionAndAmortization",
+            "scale": "6",
+            "id": "f-329"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "818000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "818000000",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "reason": "Same frozen accession reports 2025-11-28; bulk nominal date 2025-11-30 caused the miss. Period correction is accession-specific evidence, not a generic date tolerance.",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FOX_operating_income",
+      "ticker": "FOX",
+      "field": "operating_income",
+      "report_date": "2025-06-30",
+      "source_accession": "0001628280-25-038077",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1754301/000162828025038077/fox-20250630.htm",
+      "source_file": "FOX_0001628280-25-038077.html",
+      "source_sha256": "f71f3742a2cf017cfa21f2ff332051e990a948dbdc113834229386b357bc63c9",
+      "prior_value_or_status": "MISSING",
+      "components": [
+        {
+          "id": "f-59",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-59"
+          },
+          "context": {
+            "startdate": [
+              "2024-07-01"
+            ],
+            "enddate": [
+              "2025-06-30"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "16300000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-62",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingCostsAndExpenses",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-62"
+          },
+          "context": {
+            "startdate": [
+              "2024-07-01"
+            ],
+            "enddate": [
+              "2025-06-30"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "10518000000",
+          "coefficient": -1
+        },
+        {
+          "id": "f-65",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:SellingGeneralAndAdministrativeExpense",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-65"
+          },
+          "context": {
+            "startdate": [
+              "2024-07-01"
+            ],
+            "enddate": [
+              "2025-06-30"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "2168000000",
+          "coefficient": -1
+        },
+        {
+          "id": "f-68",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:DepreciationAndAmortization",
+            "scale": "6",
+            "id": "f-68"
+          },
+          "context": {
+            "startdate": [
+              "2024-07-01"
+            ],
+            "enddate": [
+              "2025-06-30"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "385000000",
+          "coefficient": -1
+        },
+        {
+          "id": "f-71",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "sign": "-",
+            "name": "us-gaap:OtherOperatingIncomeExpenseNet",
+            "scale": "6",
+            "id": "f-71"
+          },
+          "context": {
+            "startdate": [
+              "2024-07-01"
+            ],
+            "enddate": [
+              "2025-06-30"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "-350000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "2879000000",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "reason": "Income-statement bridge: revenue minus operating costs, SG&A and D&A, plus signed other operating expense (-350m). Excludes equity affiliate results, interest and non-operating other income. No restructuring add-back.",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FOX_cash",
+      "ticker": "FOX",
+      "field": "cash",
+      "report_date": "2025-06-30",
+      "source_accession": "0001628280-25-038077",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1754301/000162828025038077/fox-20250630.htm",
+      "source_file": "FOX_0001628280-25-038077.html",
+      "source_sha256": "f71f3742a2cf017cfa21f2ff332051e990a948dbdc113834229386b357bc63c9",
+      "prior_value_or_status": "MISSING",
+      "components": [
+        {
+          "id": "f-125",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-10",
+            "decimals": "-6",
+            "name": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-125"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-06-30"
+            ],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "5351000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "5351000000",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "reason": "Face balance-sheet label is Cash and cash equivalents although the taxonomy concept name includes restricted cash. This documented label review applies only to this accession.",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "FOX",
+      "report_date": "2025-06-30",
+      "source_accession": "0001628280-25-038077",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1754301/000162828025038077/fox-20250630.htm",
+      "source_file": "FOX_0001628280-25-038077.html",
+      "source_sha256": "f71f3742a2cf017cfa21f2ff332051e990a948dbdc113834229386b357bc63c9",
+      "components": [
+        {
+          "id": "f-147",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-10",
+            "decimals": "-6",
+            "name": "us-gaap:LongTermDebtCurrent",
+            "format": "ixt:fixed-zero",
+            "scale": "6",
+            "id": "f-147"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-06-30"
+            ],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "0",
+          "coefficient": 1
+        },
+        {
+          "id": "f-153",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-10",
+            "decimals": "-6",
+            "name": "us-gaap:LongTermDebtNoncurrent",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-153"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-06-30"
+            ],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "6602000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "6602000000",
+      "item_id": "FOX_gross_debt",
+      "field": "gross_debt",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "FOX",
+      "report_date": "2025-06-30",
+      "source_accession": "0001628280-25-038077",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1754301/000162828025038077/fox-20250630.htm",
+      "source_file": "FOX_0001628280-25-038077.html",
+      "source_sha256": "f71f3742a2cf017cfa21f2ff332051e990a948dbdc113834229386b357bc63c9",
+      "components": [
+        {
+          "id": "f-207",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:ShareBasedCompensation",
+            "scale": "6",
+            "id": "f-207"
+          },
+          "context": {
+            "startdate": [
+              "2024-07-01"
+            ],
+            "enddate": [
+              "2025-06-30"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "135000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "135000000",
+      "item_id": "FOX_sbc",
+      "field": "sbc",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "FOX",
+      "report_date": "2025-06-30",
+      "source_accession": "0001628280-25-038077",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1754301/000162828025038077/fox-20250630.htm",
+      "source_file": "FOX_0001628280-25-038077.html",
+      "source_sha256": "f71f3742a2cf017cfa21f2ff332051e990a948dbdc113834229386b357bc63c9",
+      "components": [
+        {
+          "id": "f-198",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:DepreciationAndAmortization",
+            "scale": "6",
+            "id": "f-198"
+          },
+          "context": {
+            "startdate": [
+              "2024-07-01"
+            ],
+            "enddate": [
+              "2025-06-30"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001754301"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "385000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "385000000",
+      "item_id": "FOX_da",
+      "field": "da",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "NEM_operating_income",
+      "ticker": "NEM",
+      "field": "operating_income",
+      "report_date": "2025-12-31",
+      "source_accession": "0001164727-26-000010",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "prior_value_or_status": "MISSING",
+      "components": [
+        {
+          "id": "f-57",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-57"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "22669000000",
+          "coefficient": 1
+        },
+        {
+          "id": "f-87",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:CostsAndExpenses",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-87"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "11708000000",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "10961000000",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "reason": "Sales minus the full costs-and-expenses subtotal. Includes impairment and gains on asset sales as presented; no normalization. Excludes separately presented other income/expense.",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "NEM",
+      "report_date": "2025-12-31",
+      "source_accession": "0001164727-26-000010",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "components": [
+        {
+          "id": "f-189",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-7",
+            "decimals": "-6",
+            "name": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-189"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "7647000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "7647000000",
+      "item_id": "NEM_cash",
+      "field": "cash",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "NEM",
+      "report_date": "2025-12-31",
+      "source_accession": "0001164727-26-000010",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "components": [
+        {
+          "id": "f-230",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-7",
+            "decimals": "-6",
+            "name": "us-gaap:LongTermDebtCurrent",
+            "format": "ixt:fixed-zero",
+            "scale": "6",
+            "id": "f-230"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "0",
+          "coefficient": 1
+        },
+        {
+          "id": "f-239",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-7",
+            "decimals": "-6",
+            "name": "us-gaap:LongTermDebtNoncurrent",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-239"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "5115000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "5115000000",
+      "item_id": "NEM_gross_debt",
+      "field": "gross_debt",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "NEM",
+      "report_date": "2025-12-31",
+      "source_accession": "0001164727-26-000010",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "components": [
+        {
+          "id": "f-2781",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "scale": "6",
+            "id": "f-2781"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "99000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "99000000",
+      "item_id": "NEM_sbc",
+      "field": "sbc",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "NEM",
+      "report_date": "2025-12-31",
+      "source_accession": "0001164727-26-000010",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "components": [
+        {
+          "id": "f-289",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:DepreciationDepletionAndAmortization",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-289"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "2521000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "2521000000",
+      "item_id": "NEM_da",
+      "field": "da",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "FIX",
+      "report_date": "2025-12-31",
+      "source_accession": "0001104659-26-017530",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/fix-20251231x10k.htm",
+      "source_file": "FIX_0001104659-26-017530.html",
+      "source_sha256": "94f1f335cbf42ebe0937f588964c4a683e45fda9a1437d76b8fff351e067c91e",
+      "components": [
+        {
+          "id": "Tc_JjraLLZOwUeIqin-idmytQ_9_4",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "Duration_1_1_2025_To_12_31_2025_iRcRbidoh0-AvPUH5g4aeQ",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:OperatingIncomeLoss",
+            "scale": "3",
+            "id": "Tc_JjraLLZOwUeIqin-idmytQ_9_4"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1314589000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1314589000",
+      "item_id": "FIX_operating_income",
+      "field": "operating_income",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "FIX",
+      "report_date": "2025-12-31",
+      "source_accession": "0001104659-26-017530",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/fix-20251231x10k.htm",
+      "source_file": "FIX_0001104659-26-017530.html",
+      "source_sha256": "94f1f335cbf42ebe0937f588964c4a683e45fda9a1437d76b8fff351e067c91e",
+      "components": [
+        {
+          "id": "Tc_LTkbs22fPEixxFWaWYfaiQ_5_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "As_Of_12_31_2025_5si6P6gM9EWwy4z8Bmkn8g",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+            "scale": "3",
+            "id": "Tc_LTkbs22fPEixxFWaWYfaiQ_5_3"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "981898000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "981898000",
+      "item_id": "FIX_cash",
+      "field": "cash",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "FIX",
+      "report_date": "2025-12-31",
+      "source_accession": "0001104659-26-017530",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/fix-20251231x10k.htm",
+      "source_file": "FIX_0001104659-26-017530.html",
+      "source_sha256": "94f1f335cbf42ebe0937f588964c4a683e45fda9a1437d76b8fff351e067c91e",
+      "components": [
+        {
+          "id": "Tc_ZTsfiA_AFkyySXy3-uXcYQ_6_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "As_Of_12_31_2025_5si6P6gM9EWwy4z8Bmkn8g",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:LongTermDebt",
+            "scale": "3",
+            "id": "Tc_ZTsfiA_AFkyySXy3-uXcYQ_6_3"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-12-31"
+            ],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "145226000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "145226000",
+      "item_id": "FIX_gross_debt",
+      "field": "gross_debt",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "ticker": "FIX",
+      "report_date": "2025-12-31",
+      "source_accession": "0001104659-26-017530",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/fix-20251231x10k.htm",
+      "source_file": "FIX_0001104659-26-017530.html",
+      "source_sha256": "94f1f335cbf42ebe0937f588964c4a683e45fda9a1437d76b8fff351e067c91e",
+      "components": [
+        {
+          "id": "Tc_5GC843isdECxJIT1RpNSjQ_15_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "Duration_1_1_2025_To_12_31_2025_iRcRbidoh0-AvPUH5g4aeQ",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:ShareBasedCompensation",
+            "scale": "3",
+            "id": "Tc_5GC843isdECxJIT1RpNSjQ_15_3"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "21809000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "21809000",
+      "item_id": "FIX_sbc",
+      "field": "sbc",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "FIX_da",
+      "ticker": "FIX",
+      "field": "da",
+      "report_date": "2025-12-31",
+      "source_accession": "0001104659-26-017530",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/fix-20251231x10k.htm",
+      "source_file": "FIX_0001104659-26-017530.html",
+      "source_sha256": "94f1f335cbf42ebe0937f588964c4a683e45fda9a1437d76b8fff351e067c91e",
+      "prior_value_or_status": 62400000,
+      "components": [
+        {
+          "id": "Tc_qZHhl4EvB0Whvw-7W-fy7A_8_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "Duration_1_1_2025_To_12_31_2025_iRcRbidoh0-AvPUH5g4aeQ",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:Depreciation",
+            "scale": "3",
+            "id": "Tc_qZHhl4EvB0Whvw-7W-fy7A_8_3"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "62379000",
+          "coefficient": 1
+        },
+        {
+          "id": "Tc_7IqUlDEaYEC_uOcodb8Fmg_7_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "Duration_1_1_2025_To_12_31_2025_iRcRbidoh0-AvPUH5g4aeQ",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:AmortizationOfIntangibleAssets",
+            "scale": "3",
+            "id": "Tc_7IqUlDEaYEC_uOcodb8Fmg_7_3"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "79580000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "141959000",
+      "review_status": "SOURCE_VERIFIED_HISTORICAL_LEVERAGE_INPUT",
+      "reason": "The claimed 2,000 USD discrepancy in R10F was a review error: same-accession annual Companyfacts and primary cash-flow statement both report intangible amortization of 79,580,000 USD. D&A is 62,379,000 + 79,580,000 = 141,959,000 USD. No economic case closure or frozen-input promotion.",
+      "promoted_to_frozen_inputs": false
+    }
+  ],
+  "cases": [
+    {
+      "ticker": "FISV",
+      "module": "SOFTWARE",
+      "report_date": "2025-12-31",
+      "input_refs": {
+        "operating_income": "FISV_operating_income",
+        "cash": "FISV_cash",
+        "gross_debt": "FISV_gross_debt",
+        "sbc": "FISV_sbc",
+        "da": "FISV_da"
+      },
+      "prior_r10d_leverage_status": "PRESENT",
+      "perimeter_status": "REPORTED_CARRYING_DEBT_AND_CASH_SCOPE_ONLY",
+      "economic_case_closed": false,
+      "unresolved_material_red_flag": true,
+      "buy_add_allowed": false
+    },
+    {
+      "ticker": "CMCSA",
+      "module": "GENERAL",
+      "report_date": "2025-12-31",
+      "input_refs": {
+        "operating_income": "CMCSA_operating_income",
+        "cash": "CMCSA_cash",
+        "gross_debt": "CMCSA_gross_debt",
+        "sbc": "CMCSA_sbc",
+        "da": "CMCSA_da"
+      },
+      "prior_r10d_leverage_status": "PRESENT",
+      "perimeter_status": "REPORTED_CARRYING_DEBT_AND_CASH_SCOPE_ONLY",
+      "economic_case_closed": false,
+      "unresolved_material_red_flag": true,
+      "buy_add_allowed": false
+    },
+    {
+      "ticker": "ADBE",
+      "module": "SOFTWARE",
+      "report_date": "2025-11-28",
+      "input_refs": {
+        "operating_income": "ADBE_operating_income",
+        "cash": "ADBE_cash",
+        "gross_debt": "ADBE_gross_debt",
+        "sbc": "ADBE_sbc",
+        "da": "ADBE_da"
+      },
+      "prior_r10d_leverage_status": "MISSING",
+      "perimeter_status": "REPORTED_CARRYING_DEBT_AND_CASH_SCOPE_ONLY",
+      "economic_case_closed": false,
+      "unresolved_material_red_flag": true,
+      "buy_add_allowed": false
+    },
+    {
+      "ticker": "FOX",
+      "module": "GENERAL",
+      "report_date": "2025-06-30",
+      "input_refs": {
+        "operating_income": "FOX_operating_income",
+        "cash": "FOX_cash",
+        "gross_debt": "FOX_gross_debt",
+        "sbc": "FOX_sbc",
+        "da": "FOX_da"
+      },
+      "prior_r10d_leverage_status": "MISSING",
+      "perimeter_status": "REPORTED_CARRYING_DEBT_AND_CASH_SCOPE_ONLY",
+      "economic_case_closed": false,
+      "unresolved_material_red_flag": true,
+      "buy_add_allowed": false
+    },
+    {
+      "ticker": "NEM",
+      "module": "RESOURCES",
+      "report_date": "2025-12-31",
+      "input_refs": {
+        "operating_income": "NEM_operating_income",
+        "cash": "NEM_cash",
+        "gross_debt": "NEM_gross_debt",
+        "sbc": "NEM_sbc",
+        "da": "NEM_da"
+      },
+      "prior_r10d_leverage_status": "MISSING",
+      "perimeter_status": "REPORTED_CARRYING_DEBT_AND_CASH_SCOPE_ONLY",
+      "economic_case_closed": false,
+      "unresolved_material_red_flag": true,
+      "buy_add_allowed": false
+    },
+    {
+      "ticker": "FIX",
+      "module": "INDUSTRIAL",
+      "report_date": "2025-12-31",
+      "input_refs": {
+        "operating_income": "FIX_operating_income",
+        "cash": "FIX_cash",
+        "gross_debt": "FIX_gross_debt",
+        "sbc": "FIX_sbc",
+        "da": "FIX_da"
+      },
+      "prior_r10d_leverage_status": "PRESENT",
+      "perimeter_status": "REPORTED_CARRYING_DEBT_AND_CASH_SCOPE_ONLY",
+      "economic_case_closed": false,
+      "unresolved_material_red_flag": true,
+      "buy_add_allowed": false
+    }
+  ],
+  "engine_modified": false,
+  "ranking_recomputed": false,
+  "system_live": false,
+  "full_case_closures": 0,
+  "normalization_complete": false,
+  "scope_notes": {
+    "FISV": "Debt includes finance leases/other financing; D&A 3161m supersedes depreciation-only 669m. Settlement cash is not added.",
+    "CMCSA": "Current debt plus noncurrent debt/capital lease obligations; no second finance-lease addition.",
+    "FOX": "2025 fiscal filing only. Derived operating income retains impairment/restructuring.",
+    "NEM": "Current debt explicitly tagged zero, plus noncurrent carrying debt. Gains/impairments remain in derived operating income.",
+    "ADBE": "Actual accession fiscal end 2025-11-28. Carrying debt 6210m differs from principal 6150m.",
+    "FIX": "R10L D&A 141.959m; carrying debt 145.226m. Operating lease/surety/commitments are separate unresolved scope."
+  },
+  "excluded_from_generic_view": {
+    "GM": "Captive-finance vs automotive debt/cash/EBITDA perimeter must be separated.",
+    "AMP": "Financial/insurance capital and CIE perimeter; generic industrial leverage is not clearance.",
+    "TROW": "Preserve IOS_BANK; no mixed D&A/retention/impairment amount as pure D&A.",
+    "ANET": "Borrowing debt MISSING; absence of a tag is not zero. Lease payments are not PV debt."
+  }
+}
