@@ -1,0 +1,186 @@
+{
+  "schema": "r10o_statement_bridge_verification_v1",
+  "source_inputs_verified": 51,
+  "equations": [
+    {
+      "equation_id": "OCF_FULL_FACE_STATEMENT",
+      "value_usd": "10031000000",
+      "difference_usd": "0",
+      "status": "PASS"
+    },
+    {
+      "equation_id": "INVESTING_FULL_FACE_STATEMENT",
+      "value_usd": "-1187000000",
+      "difference_usd": "0",
+      "status": "PASS"
+    },
+    {
+      "equation_id": "FINANCING_FULL_FACE_STATEMENT",
+      "value_usd": "-11060000000",
+      "difference_usd": "0",
+      "status": "PASS"
+    },
+    {
+      "equation_id": "NET_CASH_CHANGE",
+      "value_usd": "-2182000000",
+      "difference_usd": "0",
+      "status": "PASS"
+    },
+    {
+      "equation_id": "ENDING_CASH_FROM_BEGINNING",
+      "value_usd": "5431000000",
+      "difference_usd": "0",
+      "status": "PASS"
+    },
+    {
+      "equation_id": "PURCHASE_OBLIGATION_MATURITY_TOTAL",
+      "value_usd": "6821000000",
+      "difference_usd": "0",
+      "status": "PASS"
+    },
+    {
+      "equation_id": "UNRECOGNIZED_TAX_BENEFIT_ROLLFORWARD",
+      "value_usd": "693000000",
+      "difference_usd": "0",
+      "status": "PASS"
+    },
+    {
+      "equation_id": "REPORTED_OE_UNCHANGED",
+      "value_usd": "7910000000",
+      "difference_usd": "0",
+      "status": "PASS"
+    },
+    {
+      "equation_id": "WORKING_CAPITAL_BRIDGE_NET_NOT_NORMALIZATION",
+      "value_usd": "605000000",
+      "difference_usd": "0",
+      "status": "PASS"
+    },
+    {
+      "equation_id": "CAPEX_MIXED_LINE_FULL_DEDUCTION_SENSITIVITY_ONLY",
+      "value_usd": "7776000000",
+      "difference_usd": "0",
+      "status": "PASS"
+    }
+  ],
+  "narratives": [
+    {
+      "narrative_id": "FUTURE_TAX_AUDIT_TIMING",
+      "occurrences": 2,
+      "status": "PASS"
+    },
+    {
+      "narrative_id": "TAX_ACT_FY2025_NOT_MATERIAL",
+      "occurrences": 1,
+      "status": "PASS"
+    },
+    {
+      "narrative_id": "GLOBAL_MINIMUM_TAX_FY2025_NOT_MATERIAL",
+      "occurrences": 1,
+      "status": "PASS"
+    },
+    {
+      "narrative_id": "CASH_ON_HAND_CONDITIONAL_ACQUISITION",
+      "occurrences": 1,
+      "status": "PASS"
+    },
+    {
+      "narrative_id": "ACQUISITION_CLOSING_CONDITIONAL",
+      "occurrences": 2,
+      "status": "PASS"
+    },
+    {
+      "narrative_id": "MIXED_INVESTING_CAPTION",
+      "occurrences": 1,
+      "status": "PASS"
+    },
+    {
+      "narrative_id": "ROYALTIES_VARIABLE_NOT_DEBT",
+      "occurrences": 1,
+      "status": "PASS"
+    },
+    {
+      "narrative_id": "INDEMNIFICATION_LIMIT_UNKNOWN",
+      "occurrences": 2,
+      "status": "PASS"
+    },
+    {
+      "narrative_id": "WORKING_CAPITAL_TIMING",
+      "occurrences": 1,
+      "status": "PASS"
+    }
+  ],
+  "equations_passed": 10,
+  "narratives_passed": 9,
+  "status": "PRIMARY_STATEMENT_AND_DOCUMENTARY_DISPOSITIONS_PASS_FULL_CASE_OPEN",
+  "subflag_dispositions": [
+    {
+      "flag_id": "ADBE_GENERIC_TAX_TIMING_PHRASE",
+      "status": "SOURCE_FALSE_POSITIVE_DISPOSED",
+      "scope": "La frase riguarda risoluzioni future di audit; non prova un beneficio temporaneo OCF 2025. Non è clearance della fiscalità complessiva.",
+      "normalization_adjustment_usd": null
+    },
+    {
+      "flag_id": "ADBE_FY2025_NEW_TAX_LAW_CASH_BENEFIT",
+      "status": "SOURCE_NOT_MATERIAL_FOR_FROZEN_PERIOD",
+      "scope": "Filing: nessun impatto materiale su cash taxes FY2025. Benefici attesi in periodi successivi non trasferiti al freeze.",
+      "normalization_adjustment_usd": null
+    },
+    {
+      "flag_id": "ADBE_DEFERRED_TAX_DOUBLE_COUNT",
+      "status": "ACCOUNTING_TREATMENT_DISPOSED",
+      "scope": "-512m già nel ponte OCF; non sottrarli una seconda volta. Tax settlement benefit -55m è P&L, non prova un cash refund.",
+      "normalization_adjustment_usd": null
+    }
+  ],
+  "conditional_commitments": [
+    {
+      "category": "CONDITIONAL_ACQUISITION_CASH_CONSIDERATION",
+      "amount_usd": "1900000000",
+      "amount_precision": "APPROXIMATE_DISCLOSED",
+      "source_item_id": "f-1327",
+      "conditional": true,
+      "already_in_reported_debt": false,
+      "combined_with_purchase_obligations": false,
+      "status": "SOURCE_VERIFIED_CONDITIONAL_FUTURE_CASH_USE",
+      "current_2026_status": "NOT_CHECKED_NOT_USED_IN_HISTORICAL_REVIEW"
+    },
+    {
+      "category": "INDEMNIFICATION_MAXIMUM",
+      "amount_usd": null,
+      "status": "NOT_ESTIMABLE_BY_ISSUER",
+      "materiality_clearance": false,
+      "missing_is_zero": false
+    },
+    {
+      "category": "ROYALTY_EXPENSE",
+      "amount_usd": "283000000",
+      "source_item_id": "f-1328",
+      "scope": "Fiscal 2025 cost of revenue; not quantified future minimum cash commitment",
+      "added_to_debt": false
+    }
+  ],
+  "capex_sensitivity": {
+    "mixed_line_usd": "134000000",
+    "source_item_id": "f-380",
+    "statement_caption_controls_scope_over_tag_name": true,
+    "reported_oe_usd": "7910000000",
+    "full_mixed_line_deduction_sensitivity_usd": "7776000000",
+    "maximum_difference_from_this_line_only_usd": "134000000",
+    "difference_ratio": "0.01694058154235145",
+    "is_normalized_owner_earnings": false,
+    "is_total_cash_quality_bound": false,
+    "interpretation": "Endpoint con sottrazione di tutta la riga mista; quota capex non separata, altri effetti temporanei non inclusi. Non giustifica normalization_complete né clearance del caso."
+  },
+  "economic_case_closed": false,
+  "normalization_complete": false,
+  "normalized_owner_earnings_usd": null,
+  "buy_add_allowed": false,
+  "engine_modified": false,
+  "ranking_recomputed": false,
+  "r11_performed": false,
+  "r12_performed": false,
+  "system_live": false,
+  "registry_sha256": "4302d62a14bd9bda757e1704606c5d153d264187d30234c6399f9d8dabe9b173",
+  "verifier_sha256": "30955d2b7c3c0c3e27c9a87e7cb83de5807b301ef16a0fd838fd28f319d74d82"
+}
