@@ -45,7 +45,7 @@ def verify(reg,sources,overlay):
             'source_inputs_verified':len(primary['items']),'narrative_checks_passed':len(narratives),
             'equations':equations,'equations_passed':len(equations),
             'narratives':narratives,'dispositions':reg['dispositions'],
-            'human_economic_annotations_not_semantically_certified':True,
+            'economic_annotations_not_semantically_certified':True,'independent_human_review_performed':False,
             'aggregate_cash_reviews_still_open':True,'economic_cases_closed':0,'economic_cases_open':10,
             'engine_modified':False,'ranking_recomputed':False,'r11_performed':False,'r12_performed':False,'system_live':False}
 
