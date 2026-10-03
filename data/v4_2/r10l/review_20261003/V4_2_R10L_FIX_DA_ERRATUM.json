@@ -1,0 +1,116 @@
+{
+  "schema": "r10l_fix_da_erratum_v1",
+  "date": "2026-10-03",
+  "items": [
+    {
+      "item_id": "FIX_annual_DA_face_statement",
+      "ticker": "FIX",
+      "field": "annual_DA_face_statement",
+      "report_date": "2025-12-31",
+      "source_accession": "0001104659-26-017530",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/fix-20251231x10k.htm",
+      "source_file": "FIX_0001104659-26-017530.html",
+      "source_sha256": "94f1f335cbf42ebe0937f588964c4a683e45fda9a1437d76b8fff351e067c91e",
+      "prior_value_or_status": 62400000,
+      "components": [
+        {
+          "id": "Tc_qZHhl4EvB0Whvw-7W-fy7A_8_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "Duration_1_1_2025_To_12_31_2025_iRcRbidoh0-AvPUH5g4aeQ",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:Depreciation",
+            "scale": "3",
+            "id": "Tc_qZHhl4EvB0Whvw-7W-fy7A_8_3"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "62379000",
+          "coefficient": 1
+        },
+        {
+          "id": "Tc_7IqUlDEaYEC_uOcodb8Fmg_7_3",
+          "attributes": {
+            "unitref": "Unit_Standard_USD_p1lbA4ZWPUKjEPOCBZU4jQ",
+            "contextref": "Duration_1_1_2025_To_12_31_2025_iRcRbidoh0-AvPUH5g4aeQ",
+            "decimals": "-3",
+            "format": "ixt:num-dot-decimal",
+            "name": "us-gaap:AmortizationOfIntangibleAssets",
+            "scale": "3",
+            "id": "Tc_7IqUlDEaYEC_uOcodb8Fmg_7_3"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001035983"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "79580000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "141959000",
+      "review_status": "SOURCE_RECONCILED_ERRATUM",
+      "reason": "The claimed 2,000 USD discrepancy in R10F was a review error: same-accession annual Companyfacts and primary cash-flow statement both report intangible amortization of 79,580,000 USD. D&A is 62,379,000 + 79,580,000 = 141,959,000 USD. No economic case closure or frozen-input promotion.",
+      "promoted_to_frozen_inputs": false
+    }
+  ],
+  "cross_source_check": {
+    "source_file": "FIX_companyfacts.json",
+    "source_sha256": "7c39703c55f5115c89b1922f0f5ec74210bf703e0ddd4b34cba0fa695472c62e",
+    "taxonomy": "us-gaap",
+    "concept": "AmortizationOfIntangibleAssets",
+    "unit": "USD",
+    "selection": {
+      "accn": "0001104659-26-017530",
+      "start": "2025-01-01",
+      "end": "2025-12-31",
+      "form": "10-K",
+      "fp": "FY"
+    },
+    "expected_record": {
+      "start": "2025-01-01",
+      "end": "2025-12-31",
+      "val": 79580000,
+      "accn": "0001104659-26-017530",
+      "fy": 2025,
+      "fp": "FY",
+      "form": "10-K",
+      "filed": "2026-02-19"
+    },
+    "primary_component_index": 1,
+    "expected_difference_usd": "0"
+  },
+  "supersedes": [
+    {
+      "path": "data/v4_2/r10f/review_20260928/V4_2_R10F_REVIEWED_SOURCE_CORRECTIONS.json",
+      "item_id": "FIX_annual_DA_face_statement",
+      "superseded_claim": "CONFLICTING_EXTERNAL_AGGREGATE and 2,000 USD discrepancy"
+    }
+  ],
+  "whole_case_closed": false,
+  "case_closures": 0,
+  "engine_modified": false,
+  "ranking_recomputed": false,
+  "system_live": false,
+  "buy_add_allowed": false
+}
