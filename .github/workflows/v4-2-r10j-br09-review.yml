@@ -1,0 +1,86 @@
+name: V4.2 R10J BR09 Documentary Review
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - data/v4_2/r10j/review_20261003/**
+      - .github/workflows/v4-2-r10j-br09-review.yml
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install isolated source-review dependency
+        run: python -m pip install -r requirements-r10f.txt
+      - name: Synthetic integrity tests
+        run: python tests/test_r10f_source_corrections.py
+      - name: Retrieve sealed R10E primary sources
+        uses: actions/download-artifact@v4
+        with:
+          name: r10e-primary-evidence-36336222379-1
+          github-token: ${{ github.token }}
+          run-id: '36336222379'
+          path: ${{ runner.temp }}/r10j-source-archive
+      - name: Verify source excerpts and review dispositions
+        run: |
+          python - <<'PYCODE'
+          import hashlib, json, os
+          from pathlib import Path
+          from lxml import html
+          r = json.loads(Path('data/v4_2/r10j/review_20261003/V4_2_R10J_BR09_REVIEW.json').read_text())
+          base = Path(os.environ['RUNNER_TEMP']) / 'r10j-source-archive/_temp/r10e_primary_sources'
+          reviews = r['narrative_reviews']
+          assert len(reviews) == 19
+          ids = {x['review_id'] for x in reviews}
+          assert len(ids) == 19
+          for item in reviews:
+              name = item['source_file']
+              assert Path(name).name == name
+              raw = (base / name).read_bytes()
+              assert hashlib.sha256(raw).hexdigest() == item['source_sha256']
+              text = ' '.join(' '.join(html.fromstring(raw).itertext()).split())
+              excerpt = item['excerpt']
+              start = item['excerpt_start']
+              assert excerpt and start >= 0
+              assert text[start:start + len(excerpt)] == excerpt
+              assert hashlib.sha256(excerpt.encode()).hexdigest() == item['excerpt_sha256']
+          cases = r['classification_reviews']
+          assert len(cases) == 10 and len({c['ticker'] for c in cases}) == 10
+          assert sum(c['classification_status'] == 'PROVISIONAL' for c in cases) == 5
+          assert sum(c['outcome'] == 'DOCUMENTARY_NEGATIVE' for c in cases) == 5
+          for c in cases:
+              assert set(c['evidence_review_ids']) <= ids
+              assert c['effective_module'] == c['original_module']
+              assert c['buy_add_allowed'] is False and c['engine_inputs_modified'] is False
+              assert c['ranking_recomputed'] is False
+              assert c['reason'] and c['source_url'] and c['filing_date'] and c['accession']
+              if c['outcome'] == 'DOCUMENTARY_NEGATIVE':
+                  assert c['two_sided_intermediation'] == 'NO'
+                  assert c['revenue_linked_to_underlying_volume'] == 'NOT_APPLICABLE'
+              else:
+                  assert c['classification_status'] == 'PROVISIONAL'
+                  assert c['recommended_action'] == 'RECONCILE_BR09_BEFORE_VALIDATION'
+          assert r['engine_modified'] is False and r['ranking_recomputed'] is False
+          assert r['system_live'] is False and r['full_case_closures'] == 0
+          assert r['independent_validation_performed'] is False
+          print('19 excerpts verified; 10 dispositions consistent. Semantic judgments not automated.')
+          PYCODE
+          git diff --exit-code
+      - name: Summary
+        run: |
+          echo '## R10J BR09 documentary integrity checks passed' >> "$GITHUB_STEP_SUMMARY"
+          echo '19 primary-filing excerpts verified; 10 documented classification reviews.' >> "$GITHUB_STEP_SUMMARY"
+          echo '5 documentary negatives; 5 provisional scope reviews; 8 synthetic integrity tests passed.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Effective modules and ranking unchanged. Zero full-case closures. No BUY/ADD.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'R11/R12 NOT RUN. System NOT LIVE.' >> "$GITHUB_STEP_SUMMARY"
