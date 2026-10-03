@@ -1,0 +1,62 @@
+name: V4.2 R10O Statement Dispositions
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - data/v4_2/r10o/review_20261003/**
+      - src/r10o_verify_statement_bridges.py
+      - tests/test_r10o_statement_bridges.py
+      - .github/workflows/v4-2-r10o-statement-dispositions.yml
+permissions:
+  contents: read
+  actions: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install source verifier dependency
+        run: python -m pip install -r requirements-r10f.txt
+      - name: Original source integrity negative controls
+        run: python tests/test_r10f_source_corrections.py
+      - name: Retrieve sealed R10E sources
+        uses: actions/download-artifact@v4
+        with:
+          name: r10e-primary-evidence-36336222379-1
+          github-token: ${{ github.token }}
+          run-id: '36336222379'
+          path: ${{ runner.temp }}/r10o-source-archive
+      - name: Verify primary statement inputs, equations and documentary dispositions
+        run: |
+          python src/r10o_verify_statement_bridges.py \
+            --registry data/v4_2/r10o/review_20261003/V4_2_R10O_STATEMENT_REVIEW.json \
+            --sources "${RUNNER_TEMP}/r10o-source-archive/_temp/r10e_primary_sources" \
+            --output "${RUNNER_TEMP}/r10o-receipt.json"
+          cmp "${RUNNER_TEMP}/r10o-receipt.json" data/v4_2/r10o/review_20261003/V4_2_R10O_VERIFICATION_RECEIPT.json
+          python tests/test_r10o_statement_bridges.py \
+            data/v4_2/r10o/review_20261003/V4_2_R10O_STATEMENT_REVIEW.json \
+            "${RUNNER_TEMP}/r10o-source-archive/_temp/r10e_primary_sources"
+          python - <<'PYCODE'
+          import hashlib
+          from pathlib import Path
+          p=Path('src/cash_quality_commitments_v42.py')
+          assert hashlib.sha256(p.read_bytes()).hexdigest()=='1d76a9a260793614edb5964b02eaed71b8b0ce6307fdb257d16773b9adb1ef3a'
+          PYCODE
+          git diff --exit-code
+      - name: Summary
+        run: |
+          python - <<'PYCODE'
+          import json,os
+          from pathlib import Path
+          r=json.loads((Path(os.environ['RUNNER_TEMP'])/'r10o-receipt.json').read_text())
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as out:
+              out.write('## R10O historical statement verification\n\n')
+              out.write(f"{r['source_inputs_verified']} source inputs, {r['equations_passed']} equations, {r['narratives_passed']} documentary checks PASS.\n\n")
+              out.write('Three narrow dispositions; conditional future acquisition cash use disclosed separately.\n\n')
+              out.write('Full case remains open; no normalization, ranking change, BUY/ADD, R11/R12 or LIVE clearance.\n')
+          PYCODE
