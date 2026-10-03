@@ -1,0 +1,2584 @@
+{
+  "schema": "r10o_accession_pinned_statement_review_v1",
+  "date": "2026-10-03",
+  "ticker": "ADBE",
+  "frozen_period_end": "2025-11-28",
+  "items": [
+    {
+      "item_id": "f-326",
+      "ticker": "ADBE",
+      "field": "us-gaap:NetIncomeLoss",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-326",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:NetIncomeLoss",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-326"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "7130000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "7130000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-329",
+      "ticker": "ADBE",
+      "field": "us-gaap:DepreciationDepletionAndAmortization",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-329",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:DepreciationDepletionAndAmortization",
+            "scale": "6",
+            "id": "f-329"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "818000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "818000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-332",
+      "ticker": "ADBE",
+      "field": "us-gaap:ShareBasedCompensation",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-332",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:ShareBasedCompensation",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-332"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1942000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1942000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-335",
+      "ticker": "ADBE",
+      "field": "us-gaap:OperatingLeaseImpairmentLoss",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-335",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:OperatingLeaseImpairmentLoss",
+            "format": "ixt:fixed-zero",
+            "scale": "6",
+            "id": "f-335"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "0",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-338",
+      "ticker": "ADBE",
+      "field": "us-gaap:DeferredIncomeTaxesAndTaxCredits",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-338",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "sign": "-",
+            "name": "us-gaap:DeferredIncomeTaxesAndTaxCredits",
+            "scale": "6",
+            "id": "f-338"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "-512000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "-512000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-341",
+      "ticker": "ADBE",
+      "field": "us-gaap:OtherNoncashIncomeExpense",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-341",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "sign": "-",
+            "name": "us-gaap:OtherNoncashIncomeExpense",
+            "scale": "6",
+            "id": "f-341"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "-48000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "-48000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-344",
+      "ticker": "ADBE",
+      "field": "us-gaap:IncreaseDecreaseInReceivables",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-344",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:IncreaseDecreaseInReceivables",
+            "scale": "6",
+            "id": "f-344"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "275000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "275000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-347",
+      "ticker": "ADBE",
+      "field": "us-gaap:IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-347",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+            "scale": "6",
+            "id": "f-347"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "90000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "90000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-350",
+      "ticker": "ADBE",
+      "field": "us-gaap:IncreaseDecreaseInAccountsPayable",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-350",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:IncreaseDecreaseInAccountsPayable",
+            "scale": "6",
+            "id": "f-350"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "64000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "64000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-353",
+      "ticker": "ADBE",
+      "field": "us-gaap:IncreaseDecreaseInAccruedLiabilities",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-353",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:IncreaseDecreaseInAccruedLiabilities",
+            "scale": "6",
+            "id": "f-353"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "180000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "180000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-356",
+      "ticker": "ADBE",
+      "field": "us-gaap:IncreaseDecreaseInAccruedIncomeTaxesPayable",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-356",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "sign": "-",
+            "name": "us-gaap:IncreaseDecreaseInAccruedIncomeTaxesPayable",
+            "scale": "6",
+            "id": "f-356"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "-45000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "-45000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-359",
+      "ticker": "ADBE",
+      "field": "us-gaap:IncreaseDecreaseInDeferredRevenue",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-359",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:IncreaseDecreaseInDeferredRevenue",
+            "scale": "6",
+            "id": "f-359"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "771000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "771000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-362",
+      "ticker": "ADBE",
+      "field": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-362",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-362"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "10031000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "10031000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-365",
+      "ticker": "ADBE",
+      "field": "us-gaap:PaymentsToAcquireShortTermInvestments",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-365",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:PaymentsToAcquireShortTermInvestments",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-365"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "2034000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "2034000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-368",
+      "ticker": "ADBE",
+      "field": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfShorttermInvestments",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-368",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfShorttermInvestments",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-368"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1168000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1168000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-371",
+      "ticker": "ADBE",
+      "field": "us-gaap:ProceedsFromSaleOfShortTermInvestments",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-371",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:ProceedsFromSaleOfShortTermInvestments",
+            "scale": "6",
+            "id": "f-371"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "6000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "6000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-374",
+      "ticker": "ADBE",
+      "field": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-374",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
+            "scale": "6",
+            "id": "f-374"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "17000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "17000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-377",
+      "ticker": "ADBE",
+      "field": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-377",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "scale": "6",
+            "id": "f-377"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "179000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "179000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-380",
+      "ticker": "ADBE",
+      "field": "us-gaap:PaymentsToAcquireLongtermInvestments",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-380",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:PaymentsToAcquireLongtermInvestments",
+            "scale": "6",
+            "id": "f-380"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "134000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "134000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-383",
+      "ticker": "ADBE",
+      "field": "us-gaap:PaymentsForProceedsFromOtherInvestingActivities",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-383",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "sign": "-",
+            "name": "us-gaap:PaymentsForProceedsFromOtherInvestingActivities",
+            "scale": "6",
+            "id": "f-383"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "-3000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "-3000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-386",
+      "ticker": "ADBE",
+      "field": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-386",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "sign": "-",
+            "name": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-386"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "-1187000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "-1187000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-389",
+      "ticker": "ADBE",
+      "field": "us-gaap:PaymentsForRepurchaseOfCommonStock",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-389",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:PaymentsForRepurchaseOfCommonStock",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-389"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "11281000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "11281000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-392",
+      "ticker": "ADBE",
+      "field": "us-gaap:ProceedsFromSaleOfTreasuryStock",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-392",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:ProceedsFromSaleOfTreasuryStock",
+            "scale": "6",
+            "id": "f-392"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "348000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "348000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-395",
+      "ticker": "ADBE",
+      "field": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-395",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+            "scale": "6",
+            "id": "f-395"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "475000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "475000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-398",
+      "ticker": "ADBE",
+      "field": "us-gaap:ProceedsFromIssuanceOfLongTermDebt",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-398",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:ProceedsFromIssuanceOfLongTermDebt",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-398"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1997000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1997000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-401",
+      "ticker": "ADBE",
+      "field": "us-gaap:RepaymentsOfLongTermDebt",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-401",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:RepaymentsOfLongTermDebt",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-401"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1500000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1500000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-404",
+      "ticker": "ADBE",
+      "field": "us-gaap:ProceedsFromPaymentsForOtherFinancingActivities",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-404",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "sign": "-",
+            "name": "us-gaap:ProceedsFromPaymentsForOtherFinancingActivities",
+            "scale": "6",
+            "id": "f-404"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "-149000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "-149000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-407",
+      "ticker": "ADBE",
+      "field": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-407",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "sign": "-",
+            "name": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-407"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "-11060000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "-11060000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-410",
+      "ticker": "ADBE",
+      "field": "us-gaap:EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-410",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+            "scale": "6",
+            "id": "f-410"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "34000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "34000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-413",
+      "ticker": "ADBE",
+      "field": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-413",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "sign": "-",
+            "name": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-413"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "-2182000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "-2182000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-416",
+      "ticker": "ADBE",
+      "field": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+      "report_date": "2024-11-29",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-416",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-5",
+            "decimals": "-6",
+            "name": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-416"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2024-11-29"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "7613000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "7613000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-419",
+      "ticker": "ADBE",
+      "field": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-419",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-6",
+            "name": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-419"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-11-28"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "5431000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "5431000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-422",
+      "ticker": "ADBE",
+      "field": "us-gaap:IncomeTaxesPaidNet",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-422",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:IncomeTaxesPaidNet",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-422"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "2219000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "2219000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-425",
+      "ticker": "ADBE",
+      "field": "us-gaap:InterestPaidNet",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-425",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:InterestPaidNet",
+            "scale": "6",
+            "id": "f-425"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "246000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "246000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-1067",
+      "ticker": "ADBE",
+      "field": "us-gaap:IncomeTaxReconciliationTaxSettlementsDomestic",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-1067",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "sign": "-",
+            "name": "us-gaap:IncomeTaxReconciliationTaxSettlementsDomestic",
+            "scale": "6",
+            "id": "f-1067"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "-55000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "-55000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-1129",
+      "ticker": "ADBE",
+      "field": "us-gaap:UnrecognizedTaxBenefits",
+      "report_date": "2024-11-29",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-1129",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-5",
+            "decimals": "-6",
+            "name": "us-gaap:UnrecognizedTaxBenefits",
+            "scale": "6",
+            "id": "f-1129"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2024-11-29"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "683000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "683000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-1131",
+      "ticker": "ADBE",
+      "field": "us-gaap:UnrecognizedTaxBenefitsIncreasesResultingFromPriorPeriodTaxPositions",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-1131",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:UnrecognizedTaxBenefitsIncreasesResultingFromPriorPeriodTaxPositions",
+            "scale": "6",
+            "id": "f-1131"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "12000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "12000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-1133",
+      "ticker": "ADBE",
+      "field": "us-gaap:UnrecognizedTaxBenefitsDecreasesResultingFromPriorPeriodTaxPositions",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-1133",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:UnrecognizedTaxBenefitsDecreasesResultingFromPriorPeriodTaxPositions",
+            "scale": "6",
+            "id": "f-1133"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "50000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "50000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-1135",
+      "ticker": "ADBE",
+      "field": "us-gaap:UnrecognizedTaxBenefitsIncreasesResultingFromCurrentPeriodTaxPositions",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-1135",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:UnrecognizedTaxBenefitsIncreasesResultingFromCurrentPeriodTaxPositions",
+            "scale": "6",
+            "id": "f-1135"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "108000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "108000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-1137",
+      "ticker": "ADBE",
+      "field": "us-gaap:UnrecognizedTaxBenefitsReductionsResultingFromLapseOfApplicableStatuteOfLimitations",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-1137",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:UnrecognizedTaxBenefitsReductionsResultingFromLapseOfApplicableStatuteOfLimitations",
+            "scale": "6",
+            "id": "f-1137"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "60000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "60000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-1139",
+      "ticker": "ADBE",
+      "field": "us-gaap:UnrecognizedTaxBenefitsDecreasesResultingFromSettlementsWithTaxingAuthorities",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-1139",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:UnrecognizedTaxBenefitsDecreasesResultingFromSettlementsWithTaxingAuthorities",
+            "format": "ixt:fixed-zero",
+            "scale": "6",
+            "id": "f-1139"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "0",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-1141",
+      "ticker": "ADBE",
+      "field": "us-gaap:UnrecognizedTaxBenefits",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-1141",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-6",
+            "name": "us-gaap:UnrecognizedTaxBenefits",
+            "scale": "6",
+            "id": "f-1141"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-11-28"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "693000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "693000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-1320",
+      "ticker": "ADBE",
+      "field": "us-gaap:UnrecordedUnconditionalPurchaseObligationBalanceOnFirstAnniversary",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-1320",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-6",
+            "name": "us-gaap:UnrecordedUnconditionalPurchaseObligationBalanceOnFirstAnniversary",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-1320"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-11-28"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "2083000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "2083000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-1321",
+      "ticker": "ADBE",
+      "field": "us-gaap:UnrecordedUnconditionalPurchaseObligationBalanceOnSecondAnniversary",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-1321",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-6",
+            "name": "us-gaap:UnrecordedUnconditionalPurchaseObligationBalanceOnSecondAnniversary",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-1321"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-11-28"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1901000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1901000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-1322",
+      "ticker": "ADBE",
+      "field": "us-gaap:UnrecordedUnconditionalPurchaseObligationBalanceOnThirdAnniversary",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-1322",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-6",
+            "name": "us-gaap:UnrecordedUnconditionalPurchaseObligationBalanceOnThirdAnniversary",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-1322"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-11-28"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1623000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1623000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-1323",
+      "ticker": "ADBE",
+      "field": "us-gaap:UnrecordedUnconditionalPurchaseObligationBalanceOnFourthAnniversary",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-1323",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-6",
+            "name": "us-gaap:UnrecordedUnconditionalPurchaseObligationBalanceOnFourthAnniversary",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-1323"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-11-28"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "1196000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1196000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-1324",
+      "ticker": "ADBE",
+      "field": "us-gaap:UnrecordedUnconditionalPurchaseObligationBalanceOnFifthAnniversary",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-1324",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-6",
+            "name": "us-gaap:UnrecordedUnconditionalPurchaseObligationBalanceOnFifthAnniversary",
+            "scale": "6",
+            "id": "f-1324"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-11-28"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "12000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "12000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-1325",
+      "ticker": "ADBE",
+      "field": "us-gaap:UnrecordedUnconditionalPurchaseObligationDueAfterFiveYears",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-1325",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-6",
+            "name": "us-gaap:UnrecordedUnconditionalPurchaseObligationDueAfterFiveYears",
+            "scale": "6",
+            "id": "f-1325"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-11-28"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "6000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "6000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-1326",
+      "ticker": "ADBE",
+      "field": "us-gaap:UnrecordedUnconditionalPurchaseObligationBalanceSheetAmount",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-1326",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-4",
+            "decimals": "-6",
+            "name": "us-gaap:UnrecordedUnconditionalPurchaseObligationBalanceSheetAmount",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-1326"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-11-28"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "6821000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "6821000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-1327",
+      "ticker": "ADBE",
+      "field": "us-gaap:OtherCommitment",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-1327",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-314",
+            "decimals": "-8",
+            "name": "us-gaap:OtherCommitment",
+            "scale": "9",
+            "id": "f-1327"
+          },
+          "context": {
+            "startdate": [],
+            "enddate": [],
+            "instant": [
+              "2025-11-28"
+            ],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": [
+              {
+                "tag": "xbrldi:explicitmember",
+                "dimension": "us-gaap:BusinessAcquisitionAxis",
+                "value": "adbe:SemrushHoldingsIncMember"
+              }
+            ]
+          },
+          "expected_value_usd": "1900000000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "1900000000.0",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "f-1328",
+      "ticker": "ADBE",
+      "field": "us-gaap:RoyaltyExpense",
+      "report_date": "2025-11-28",
+      "frozen_fiscal_period_end": "2025-11-28",
+      "source_accession": "0000796343-26-000003",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "components": [
+        {
+          "id": "f-1328",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:RoyaltyExpense",
+            "scale": "6",
+            "id": "f-1328"
+          },
+          "context": {
+            "startdate": [
+              "2024-11-30"
+            ],
+            "enddate": [
+              "2025-11-28"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000796343"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "283000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "283000000",
+      "review_status": "SOURCE_VERIFIED_STATEMENT_OR_NOTE_INPUT",
+      "promoted_to_frozen_inputs": false
+    }
+  ],
+  "equations": [
+    {
+      "equation_id": "OCF_FULL_FACE_STATEMENT",
+      "terms": [
+        {
+          "item_id": "f-326",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-329",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-332",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-335",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-338",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-341",
+          "coefficient": -1
+        },
+        {
+          "item_id": "f-344",
+          "coefficient": -1
+        },
+        {
+          "item_id": "f-347",
+          "coefficient": -1
+        },
+        {
+          "item_id": "f-350",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-353",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-356",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-359",
+          "coefficient": 1
+        }
+      ],
+      "target_item_id": "f-362"
+    },
+    {
+      "equation_id": "INVESTING_FULL_FACE_STATEMENT",
+      "terms": [
+        {
+          "item_id": "f-365",
+          "coefficient": -1
+        },
+        {
+          "item_id": "f-368",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-371",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-374",
+          "coefficient": -1
+        },
+        {
+          "item_id": "f-377",
+          "coefficient": -1
+        },
+        {
+          "item_id": "f-380",
+          "coefficient": -1
+        },
+        {
+          "item_id": "f-383",
+          "coefficient": -1
+        }
+      ],
+      "target_item_id": "f-386"
+    },
+    {
+      "equation_id": "FINANCING_FULL_FACE_STATEMENT",
+      "terms": [
+        {
+          "item_id": "f-389",
+          "coefficient": -1
+        },
+        {
+          "item_id": "f-392",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-395",
+          "coefficient": -1
+        },
+        {
+          "item_id": "f-398",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-401",
+          "coefficient": -1
+        },
+        {
+          "item_id": "f-404",
+          "coefficient": 1
+        }
+      ],
+      "target_item_id": "f-407"
+    },
+    {
+      "equation_id": "NET_CASH_CHANGE",
+      "terms": [
+        {
+          "item_id": "f-362",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-386",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-407",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-410",
+          "coefficient": 1
+        }
+      ],
+      "target_item_id": "f-413"
+    },
+    {
+      "equation_id": "ENDING_CASH_FROM_BEGINNING",
+      "terms": [
+        {
+          "item_id": "f-416",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-413",
+          "coefficient": 1
+        }
+      ],
+      "target_item_id": "f-419"
+    },
+    {
+      "equation_id": "PURCHASE_OBLIGATION_MATURITY_TOTAL",
+      "terms": [
+        {
+          "item_id": "f-1320",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-1321",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-1322",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-1323",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-1324",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-1325",
+          "coefficient": 1
+        }
+      ],
+      "target_item_id": "f-1326"
+    },
+    {
+      "equation_id": "UNRECOGNIZED_TAX_BENEFIT_ROLLFORWARD",
+      "terms": [
+        {
+          "item_id": "f-1129",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-1131",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-1133",
+          "coefficient": -1
+        },
+        {
+          "item_id": "f-1135",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-1137",
+          "coefficient": -1
+        },
+        {
+          "item_id": "f-1139",
+          "coefficient": -1
+        }
+      ],
+      "target_item_id": "f-1141"
+    },
+    {
+      "equation_id": "REPORTED_OE_UNCHANGED",
+      "terms": [
+        {
+          "item_id": "f-362",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-377",
+          "coefficient": -1
+        },
+        {
+          "item_id": "f-332",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "7910000000"
+    },
+    {
+      "equation_id": "WORKING_CAPITAL_BRIDGE_NET_NOT_NORMALIZATION",
+      "terms": [
+        {
+          "item_id": "f-344",
+          "coefficient": -1
+        },
+        {
+          "item_id": "f-347",
+          "coefficient": -1
+        },
+        {
+          "item_id": "f-350",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-353",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-356",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-359",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "605000000"
+    },
+    {
+      "equation_id": "CAPEX_MIXED_LINE_FULL_DEDUCTION_SENSITIVITY_ONLY",
+      "terms": [
+        {
+          "item_id": "f-362",
+          "coefficient": 1
+        },
+        {
+          "item_id": "f-377",
+          "coefficient": -1
+        },
+        {
+          "item_id": "f-332",
+          "coefficient": -1
+        },
+        {
+          "item_id": "f-380",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "7776000000"
+    }
+  ],
+  "narratives": [
+    {
+      "narrative_id": "FUTURE_TAX_AUDIT_TIMING",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "excerpt": "The timing of the resolution of income tax examinations is highly uncertain as are the amounts and timing of tax payments that are part of any audit settlement process.",
+      "expected_occurrences": 2
+    },
+    {
+      "narrative_id": "TAX_ACT_FY2025_NOT_MATERIAL",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "excerpt": "The 2025 U.S. Tax Act did not have a material impact on fiscal 2025 effective rates for income taxes or for cash taxes paid.",
+      "expected_occurrences": 1
+    },
+    {
+      "narrative_id": "GLOBAL_MINIMUM_TAX_FY2025_NOT_MATERIAL",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "excerpt": "The legislation did not have a material impact on our fiscal 2025 effective rates for income taxes or for cash taxes paid",
+      "expected_occurrences": 1
+    },
+    {
+      "narrative_id": "CASH_ON_HAND_CONDITIONAL_ACQUISITION",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "excerpt": "We expect to finance the acquisition using cash on hand.",
+      "expected_occurrences": 1
+    },
+    {
+      "narrative_id": "ACQUISITION_CLOSING_CONDITIONAL",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "excerpt": "The transaction is subject to regulatory approvals and customary closing conditions and is expected to close in the first half of fiscal 2026.",
+      "expected_occurrences": 2
+    },
+    {
+      "narrative_id": "MIXED_INVESTING_CAPTION",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "excerpt": "Purchases of long-term investments, intangibles and other assets",
+      "expected_occurrences": 1
+    },
+    {
+      "narrative_id": "ROYALTIES_VARIABLE_NOT_DEBT",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "excerpt": "Royalty expense is generally based on a dollar amount per unit or a percentage of the underlying revenue.",
+      "expected_occurrences": 1
+    },
+    {
+      "narrative_id": "INDEMNIFICATION_LIMIT_UNKNOWN",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "excerpt": "Historically, costs related to these indemnification provisions have not been significant and we are unable to estimate the maximum potential impact of these indemnification provisions on our future results of operations.",
+      "expected_occurrences": 2
+    },
+    {
+      "narrative_id": "WORKING_CAPITAL_TIMING",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "excerpt": "Working capital sources of cash included increases in deferred revenue, partially offset by increases in trade receivables attributable to the timing of billings.",
+      "expected_occurrences": 1
+    }
+  ],
+  "subflag_dispositions": [
+    {
+      "flag_id": "ADBE_GENERIC_TAX_TIMING_PHRASE",
+      "status": "SOURCE_FALSE_POSITIVE_DISPOSED",
+      "scope": "La frase riguarda risoluzioni future di audit; non prova un beneficio temporaneo OCF 2025. Non è clearance della fiscalità complessiva.",
+      "normalization_adjustment_usd": null
+    },
+    {
+      "flag_id": "ADBE_FY2025_NEW_TAX_LAW_CASH_BENEFIT",
+      "status": "SOURCE_NOT_MATERIAL_FOR_FROZEN_PERIOD",
+      "scope": "Filing: nessun impatto materiale su cash taxes FY2025. Benefici attesi in periodi successivi non trasferiti al freeze.",
+      "normalization_adjustment_usd": null
+    },
+    {
+      "flag_id": "ADBE_DEFERRED_TAX_DOUBLE_COUNT",
+      "status": "ACCOUNTING_TREATMENT_DISPOSED",
+      "scope": "-512m già nel ponte OCF; non sottrarli una seconda volta. Tax settlement benefit -55m è P&L, non prova un cash refund.",
+      "normalization_adjustment_usd": null
+    }
+  ],
+  "conditional_commitments": [
+    {
+      "category": "CONDITIONAL_ACQUISITION_CASH_CONSIDERATION",
+      "amount_usd": "1900000000",
+      "amount_precision": "APPROXIMATE_DISCLOSED",
+      "source_item_id": "f-1327",
+      "conditional": true,
+      "already_in_reported_debt": false,
+      "combined_with_purchase_obligations": false,
+      "status": "SOURCE_VERIFIED_CONDITIONAL_FUTURE_CASH_USE",
+      "current_2026_status": "NOT_CHECKED_NOT_USED_IN_HISTORICAL_REVIEW"
+    },
+    {
+      "category": "INDEMNIFICATION_MAXIMUM",
+      "amount_usd": null,
+      "status": "NOT_ESTIMABLE_BY_ISSUER",
+      "materiality_clearance": false,
+      "missing_is_zero": false
+    },
+    {
+      "category": "ROYALTY_EXPENSE",
+      "amount_usd": "283000000",
+      "source_item_id": "f-1328",
+      "scope": "Fiscal 2025 cost of revenue; not quantified future minimum cash commitment",
+      "added_to_debt": false
+    }
+  ],
+  "capex_sensitivity": {
+    "mixed_line_usd": "134000000",
+    "source_item_id": "f-380",
+    "statement_caption_controls_scope_over_tag_name": true,
+    "reported_oe_usd": "7910000000",
+    "full_mixed_line_deduction_sensitivity_usd": "7776000000",
+    "maximum_difference_from_this_line_only_usd": "134000000",
+    "difference_ratio": "0.01694058154235145",
+    "is_normalized_owner_earnings": false,
+    "is_total_cash_quality_bound": false,
+    "interpretation": "Endpoint con sottrazione di tutta la riga mista; quota capex non separata, altri effetti temporanei non inclusi. Non giustifica normalization_complete né clearance del caso."
+  },
+  "unresolved": [
+    "Separazione di lungo termine, intangibili e altri asset nella riga 134m.",
+    "Ricorrenza/timing dei flussi di working capital, tax settlement e cash taxes.",
+    "BR09 del perimetro misto; impegni/royalty e indemnifications con limiti residui."
+  ],
+  "engine_modified": false,
+  "ranking_recomputed": false,
+  "economic_case_closed": false,
+  "normalized_owner_earnings_usd": null,
+  "normalization_complete": false,
+  "buy_add_allowed": false,
+  "system_live": false
+}
