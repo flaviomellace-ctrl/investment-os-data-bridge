@@ -1,0 +1,68 @@
+name: V4.2 R10L FIX D&A Erratum
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - data/v4_2/r10l/review_20261003/**
+      - .github/workflows/v4-2-r10l-fix-da-erratum.yml
+permissions:
+  contents: read
+  actions: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install isolated review dependency
+        run: python -m pip install -r requirements-r10f.txt
+      - name: Synthetic integrity tests
+        run: python tests/test_r10f_source_corrections.py
+      - name: Retrieve sealed R10E sources
+        uses: actions/download-artifact@v4
+        with:
+          name: r10e-primary-evidence-36336222379-1
+          github-token: ${{ github.token }}
+          run-id: '36336222379'
+          path: ${{ runner.temp }}/r10l-source-archive
+      - name: Verify primary D&A and receipt
+        run: |
+          python src/r10f_verify_source_corrections.py \
+            --registry data/v4_2/r10l/review_20261003/V4_2_R10L_FIX_DA_ERRATUM.json \
+            --sources "${RUNNER_TEMP}/r10l-source-archive/_temp/r10e_primary_sources" \
+            --output "${RUNNER_TEMP}/r10l-receipt.json"
+          cmp "${RUNNER_TEMP}/r10l-receipt.json" data/v4_2/r10l/review_20261003/V4_2_R10L_VERIFICATION_RECEIPT.json
+      - name: Compare exact accession Companyfacts record
+        run: |
+          python - <<'PYCODE'
+          import hashlib, json, os
+          from decimal import Decimal
+          from pathlib import Path
+          r = json.loads(Path('data/v4_2/r10l/review_20261003/V4_2_R10L_FIX_DA_ERRATUM.json').read_text())
+          x = r['cross_source_check']
+          assert Path(x['source_file']).name == x['source_file']
+          p = Path(os.environ['RUNNER_TEMP']) / 'r10l-source-archive/_temp/r10e_primary_sources' / x['source_file']
+          raw = p.read_bytes()
+          assert hashlib.sha256(raw).hexdigest() == x['source_sha256']
+          records = json.loads(raw)['facts'][x['taxonomy']][x['concept']]['units'][x['unit']]
+          matches = [v for v in records if all(v.get(k) == value for k, value in x['selection'].items())]
+          assert len(matches) == 1 and matches[0] == x['expected_record']
+          component = r['items'][0]['components'][x['primary_component_index']]
+          assert component['attributes']['name'] == x['taxonomy'] + ':' + x['concept']
+          difference = Decimal(matches[0]['val']) - Decimal(component['expected_value_usd'])
+          assert difference == Decimal(x['expected_difference_usd']) == 0
+          assert r['case_closures'] == 0 and r['whole_case_closed'] is False
+          assert not any(r[k] for k in ['engine_modified', 'ranking_recomputed', 'system_live', 'buy_add_allowed'])
+          print('Exact accession Companyfacts matches primary amortization; claimed 2,000 USD discrepancy corrected.')
+          PYCODE
+          git diff --exit-code
+      - name: Summary
+        run: |
+          echo '## R10L source discrepancy resolved' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Primary filing and exact-accession Companyfacts both report intangible amortization of USD 79,580,000; D&A USD 141,959,000.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'The prior 2,000 USD discrepancy was a review error. 8 integrity tests passed; whole FIX case remains open.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'No frozen-input promotion, ranking change, BUY/ADD, R11/R12 result or LIVE activation.' >> "$GITHUB_STEP_SUMMARY"
