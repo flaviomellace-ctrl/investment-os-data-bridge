@@ -160,7 +160,8 @@
       "current_aggregate_review": "HOLD_UNRESOLVED_NO_BUY_ADD"
     }
   ],
-  "human_economic_annotations_not_semantically_certified": true,
+  "economic_annotations_not_semantically_certified": true,
+  "independent_human_review_performed": false,
   "aggregate_cash_reviews_still_open": true,
   "economic_cases_closed": 0,
   "economic_cases_open": 10,
@@ -169,6 +170,6 @@
   "r11_performed": false,
   "r12_performed": false,
   "system_live": false,
-  "registry_sha256": "319b210228fab62ab5c176546ed26b3bcf6b1ce1c56f25d945b0430fac0e102d",
-  "verifier_sha256": "8d3961560da6faa65335fce1edc1753d1e96e52ce27eda9e4104f6cc9846de82"
+  "registry_sha256": "046388a304b52249eed3e6a6d60b64c22ede83355da070e9e327c8bebea9b092",
+  "verifier_sha256": "317fa12c64b7705ccd79ba88af8baf26ecc51653cdc186e4546c2cc3a554eb4e"
 }
