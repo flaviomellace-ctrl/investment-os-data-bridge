@@ -49,5 +49,5 @@ jobs:
               out.write('## R10P original cash-alert review\n\n')
               out.write(f"{r['source_inputs_verified']} source facts, {r['equations_passed']} equations and {r['narrative_checks_passed']} excerpts verified.\n\n")
               out.write(f"{r['original_alerts_handled']}/{r['original_alerts']} original alert matches disposed; {r['original_alerts_still_open']} remains open.\n\n")
-              out.write('Scope is original lexical matches only. Economic annotations are human judgments. All ten aggregate cases remain open; no R11/R12, BUY/ADD, normalization or LIVE clearance.\n')
+              out.write('Scope is original lexical matches only. Assistant documentary interpretation is not independent semantic validation. All ten aggregate cases remain open; no R11/R12, BUY/ADD, normalization or LIVE clearance.\n')
           PYCODE
