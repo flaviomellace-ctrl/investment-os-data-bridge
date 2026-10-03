@@ -1,0 +1,256 @@
+{
+  "schema": "r10n_verified_historical_leverage_receipt_v1",
+  "registry_sha256": "b902df0037732a79a76ac19bbc1d20e85db6f85906e4b91009343a5e1a8396b8",
+  "status": "SOURCE_AND_ARITHMETIC_PASS_PERIMETER_REVIEWS_OPEN",
+  "primary_input_checks_pass": 30,
+  "views_calculated": 6,
+  "previously_missing_views_now_calculable": 3,
+  "cases": [
+    {
+      "ticker": "FISV",
+      "module": "SOFTWARE",
+      "report_date": "2025-12-31",
+      "input_refs": {
+        "operating_income": "FISV_operating_income",
+        "cash": "FISV_cash",
+        "gross_debt": "FISV_gross_debt",
+        "sbc": "FISV_sbc",
+        "da": "FISV_da"
+      },
+      "prior_r10d_leverage_status": "PRESENT",
+      "perimeter_status": "REPORTED_CARRYING_DEBT_AND_CASH_SCOPE_ONLY",
+      "economic_case_closed": false,
+      "unresolved_material_red_flag": true,
+      "buy_add_allowed": false,
+      "inputs_usd": {
+        "operating_income": "5818000000",
+        "cash": "798000000",
+        "gross_debt": "28997000000",
+        "sbc": "357000000",
+        "da": "3161000000"
+      },
+      "reported_ebitda_usd": "8979000000",
+      "reported_ebitda_after_sbc_usd": "8622000000",
+      "secondary_view": {
+        "status": "PRESENT",
+        "gross_debt_to_ebitda": 3.22942421205034,
+        "net_debt_to_ebitda": 3.140550172625014,
+        "gross_debt_to_ebitda_after_sbc": 3.363140802598005,
+        "stress_metric_status": "PRESENT",
+        "risk_band": "CAUTION",
+        "secondary_view_only": true,
+        "version": "V4.2-R6R7-1.0"
+      },
+      "normalization_complete": false,
+      "normalized_owner_earnings_usd": null,
+      "disposition": "HOLD_UNRESOLVED_NO_BUY_ADD"
+    },
+    {
+      "ticker": "CMCSA",
+      "module": "GENERAL",
+      "report_date": "2025-12-31",
+      "input_refs": {
+        "operating_income": "CMCSA_operating_income",
+        "cash": "CMCSA_cash",
+        "gross_debt": "CMCSA_gross_debt",
+        "sbc": "CMCSA_sbc",
+        "da": "CMCSA_da"
+      },
+      "prior_r10d_leverage_status": "PRESENT",
+      "perimeter_status": "REPORTED_CARRYING_DEBT_AND_CASH_SCOPE_ONLY",
+      "economic_case_closed": false,
+      "unresolved_material_red_flag": true,
+      "buy_add_allowed": false,
+      "inputs_usd": {
+        "operating_income": "20672000000",
+        "cash": "9481000000",
+        "gross_debt": "98937000000",
+        "sbc": "1288000000",
+        "da": "16210000000"
+      },
+      "reported_ebitda_usd": "36882000000",
+      "reported_ebitda_after_sbc_usd": "35594000000",
+      "secondary_view": {
+        "status": "PRESENT",
+        "gross_debt_to_ebitda": 2.682528062469497,
+        "net_debt_to_ebitda": 2.4254649964752453,
+        "gross_debt_to_ebitda_after_sbc": 2.7795976850030906,
+        "stress_metric_status": "PRESENT",
+        "risk_band": "BELOW_CAUTION",
+        "secondary_view_only": true,
+        "version": "V4.2-R6R7-1.0"
+      },
+      "normalization_complete": false,
+      "normalized_owner_earnings_usd": null,
+      "disposition": "HOLD_UNRESOLVED_NO_BUY_ADD"
+    },
+    {
+      "ticker": "ADBE",
+      "module": "SOFTWARE",
+      "report_date": "2025-11-28",
+      "input_refs": {
+        "operating_income": "ADBE_operating_income",
+        "cash": "ADBE_cash",
+        "gross_debt": "ADBE_gross_debt",
+        "sbc": "ADBE_sbc",
+        "da": "ADBE_da"
+      },
+      "prior_r10d_leverage_status": "MISSING",
+      "perimeter_status": "REPORTED_CARRYING_DEBT_AND_CASH_SCOPE_ONLY",
+      "economic_case_closed": false,
+      "unresolved_material_red_flag": true,
+      "buy_add_allowed": false,
+      "inputs_usd": {
+        "operating_income": "8706000000",
+        "cash": "5431000000",
+        "gross_debt": "6210000000",
+        "sbc": "1942000000",
+        "da": "818000000"
+      },
+      "reported_ebitda_usd": "9524000000",
+      "reported_ebitda_after_sbc_usd": "7582000000",
+      "secondary_view": {
+        "status": "PRESENT",
+        "gross_debt_to_ebitda": 0.6520369592608147,
+        "net_debt_to_ebitda": 0.08179336413271734,
+        "gross_debt_to_ebitda_after_sbc": 0.8190451068319704,
+        "stress_metric_status": "PRESENT",
+        "risk_band": "BELOW_CAUTION",
+        "secondary_view_only": true,
+        "version": "V4.2-R6R7-1.0"
+      },
+      "normalization_complete": false,
+      "normalized_owner_earnings_usd": null,
+      "disposition": "HOLD_UNRESOLVED_NO_BUY_ADD"
+    },
+    {
+      "ticker": "FOX",
+      "module": "GENERAL",
+      "report_date": "2025-06-30",
+      "input_refs": {
+        "operating_income": "FOX_operating_income",
+        "cash": "FOX_cash",
+        "gross_debt": "FOX_gross_debt",
+        "sbc": "FOX_sbc",
+        "da": "FOX_da"
+      },
+      "prior_r10d_leverage_status": "MISSING",
+      "perimeter_status": "REPORTED_CARRYING_DEBT_AND_CASH_SCOPE_ONLY",
+      "economic_case_closed": false,
+      "unresolved_material_red_flag": true,
+      "buy_add_allowed": false,
+      "inputs_usd": {
+        "operating_income": "2879000000",
+        "cash": "5351000000",
+        "gross_debt": "6602000000",
+        "sbc": "135000000",
+        "da": "385000000"
+      },
+      "reported_ebitda_usd": "3264000000",
+      "reported_ebitda_after_sbc_usd": "3129000000",
+      "secondary_view": {
+        "status": "PRESENT",
+        "gross_debt_to_ebitda": 2.022671568627451,
+        "net_debt_to_ebitda": 0.38327205882352944,
+        "gross_debt_to_ebitda_after_sbc": 2.1099392777245125,
+        "stress_metric_status": "PRESENT",
+        "risk_band": "BELOW_CAUTION",
+        "secondary_view_only": true,
+        "version": "V4.2-R6R7-1.0"
+      },
+      "normalization_complete": false,
+      "normalized_owner_earnings_usd": null,
+      "disposition": "HOLD_UNRESOLVED_NO_BUY_ADD"
+    },
+    {
+      "ticker": "NEM",
+      "module": "RESOURCES",
+      "report_date": "2025-12-31",
+      "input_refs": {
+        "operating_income": "NEM_operating_income",
+        "cash": "NEM_cash",
+        "gross_debt": "NEM_gross_debt",
+        "sbc": "NEM_sbc",
+        "da": "NEM_da"
+      },
+      "prior_r10d_leverage_status": "MISSING",
+      "perimeter_status": "REPORTED_CARRYING_DEBT_AND_CASH_SCOPE_ONLY",
+      "economic_case_closed": false,
+      "unresolved_material_red_flag": true,
+      "buy_add_allowed": false,
+      "inputs_usd": {
+        "operating_income": "10961000000",
+        "cash": "7647000000",
+        "gross_debt": "5115000000",
+        "sbc": "99000000",
+        "da": "2521000000"
+      },
+      "reported_ebitda_usd": "13482000000",
+      "reported_ebitda_after_sbc_usd": "13383000000",
+      "secondary_view": {
+        "status": "PRESENT",
+        "gross_debt_to_ebitda": 0.37939474855362704,
+        "net_debt_to_ebitda": -0.1878059635068981,
+        "gross_debt_to_ebitda_after_sbc": 0.3822013001569155,
+        "stress_metric_status": "PRESENT",
+        "risk_band": "BELOW_CAUTION",
+        "secondary_view_only": true,
+        "version": "V4.2-R6R7-1.0"
+      },
+      "normalization_complete": false,
+      "normalized_owner_earnings_usd": null,
+      "disposition": "HOLD_UNRESOLVED_NO_BUY_ADD"
+    },
+    {
+      "ticker": "FIX",
+      "module": "INDUSTRIAL",
+      "report_date": "2025-12-31",
+      "input_refs": {
+        "operating_income": "FIX_operating_income",
+        "cash": "FIX_cash",
+        "gross_debt": "FIX_gross_debt",
+        "sbc": "FIX_sbc",
+        "da": "FIX_da"
+      },
+      "prior_r10d_leverage_status": "PRESENT",
+      "perimeter_status": "REPORTED_CARRYING_DEBT_AND_CASH_SCOPE_ONLY",
+      "economic_case_closed": false,
+      "unresolved_material_red_flag": true,
+      "buy_add_allowed": false,
+      "inputs_usd": {
+        "operating_income": "1314589000",
+        "cash": "981898000",
+        "gross_debt": "145226000",
+        "sbc": "21809000",
+        "da": "141959000"
+      },
+      "reported_ebitda_usd": "1456548000",
+      "reported_ebitda_after_sbc_usd": "1434739000",
+      "secondary_view": {
+        "status": "PRESENT",
+        "gross_debt_to_ebitda": 0.09970560530789235,
+        "net_debt_to_ebitda": -0.5744211656601773,
+        "gross_debt_to_ebitda_after_sbc": 0.10122119772307019,
+        "stress_metric_status": "PRESENT",
+        "risk_band": "BELOW_CAUTION",
+        "secondary_view_only": true,
+        "version": "V4.2-R6R7-1.0"
+      },
+      "normalization_complete": false,
+      "normalized_owner_earnings_usd": null,
+      "disposition": "HOLD_UNRESOLVED_NO_BUY_ADD"
+    }
+  ],
+  "excluded_from_generic_view": {
+    "GM": "Captive-finance vs automotive debt/cash/EBITDA perimeter must be separated.",
+    "AMP": "Financial/insurance capital and CIE perimeter; generic industrial leverage is not clearance.",
+    "TROW": "Preserve IOS_BANK; no mixed D&A/retention/impairment amount as pure D&A.",
+    "ANET": "Borrowing debt MISSING; absence of a tag is not zero. Lease payments are not PV debt."
+  },
+  "engine_modified": false,
+  "ranking_recomputed": false,
+  "system_live": false,
+  "full_case_closures": 0,
+  "r11_performed": false,
+  "r12_performed": false
+}
