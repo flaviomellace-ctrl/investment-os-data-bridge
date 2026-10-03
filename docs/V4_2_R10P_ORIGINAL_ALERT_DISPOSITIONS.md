@@ -14,7 +14,7 @@
 
 Quattro alert originali sono trattati documentalmente e uno resta aperto. Questo rapporto 4/5 non è una percentuale di completamento del sistema. Le conclusioni riguardano il match originario del primo scan; non l'intera fiscalità, tutte le rivalutazioni o la ricorrenza degli owner earnings.
 
-Otto valori inline e sette estratti sono verificati sul filing completo con SHA-256, contesti e unità; il registro copre esattamente tutti e soli i cinque alert originali. Tre equazioni Decimal verificano l'annullamento dei due gains nel ponte OCF e la specifica remeasurement corrente esplicitamente zero. I segni XBRL vanno letti insieme al caption: il tag NEM cash FV vale +604m per convenzione, mentre il prospetto lo presenta come rettifica -604m. Il verificatore certifica fonte, aritmetica e copertura, non il merito semantico del giudizio umano.
+Otto valori inline e sette estratti sono verificati sul filing completo con SHA-256, contesti e unità; il registro copre esattamente tutti e soli i cinque alert originali. Tre equazioni Decimal verificano l'annullamento dei due gains nel ponte OCF e la specifica remeasurement corrente esplicitamente zero. I segni XBRL vanno letti insieme al caption: il tag NEM cash FV vale +604m per convenzione, mentre il prospetto lo presenta come rettifica -604m. Il verificatore certifica fonte, aritmetica e copertura, non il merito semantico dell'interpretazione economica. La revisione documentale è dell'assistente; non è stata eseguita una revisione umana indipendente. Questa precisazione sostituisce la precedente etichetta imprecisa "Human reviewed" del primo registro R10P.
 
 ## Stato corrente e passi necessari
 
