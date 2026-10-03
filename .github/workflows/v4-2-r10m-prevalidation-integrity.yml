@@ -1,0 +1,46 @@
+name: V4.2 R10M Prevalidation Integrity
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - src/r10m_prevalidation_integrity.py
+      - .github/workflows/v4-2-r10m-prevalidation-integrity.yml
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Audit frozen code, original suites, R10C reproduction and Gate blocks
+        env:
+          R10M_OUTPUT: ${{ runner.temp }}/r10m-audit
+        run: python src/r10m_prevalidation_integrity.py
+      - name: Verify tracked files unchanged
+        run: git diff --exit-code
+      - name: Save audit evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: r10m-prevalidation-integrity-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/r10m-audit
+          if-no-files-found: error
+          retention-days: 90
+      - name: Summary
+        env:
+          R10M_OUTPUT: ${{ runner.temp }}/r10m-audit
+        run: |
+          python - <<'PYCODE'
+          import json, os
+          from pathlib import Path
+          r=json.loads((Path(os.environ['R10M_OUTPUT'])/'V4_2_R10M_AUDIT_RECEIPT.json').read_text())
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as output:
+              output.write('## R10M technical integrity verified\n')
+              output.write(f"{r['suite_count']} original suites; {r['synthetic_check_lines_passed']} PASS checks. Frozen engine/module hashes unchanged.\n\n")
+              output.write('R10C 504-row comparison reproduced byte for byte. Ten unresolved cases remain blocked from BUY/ADD even in hypothetical LIVE mode.\n\n')
+              output.write('Economic reviews remain open. R11/R12 not performed; no independent validation or LIVE activation.\n')
+          PYCODE
