@@ -1,0 +1,21 @@
+{
+  "schema": "r10f_source_corrections_verification_v1",
+  "items": [
+    {
+      "item_id": "FIX_annual_DA_face_statement",
+      "ticker": "FIX",
+      "field": "annual_DA_face_statement",
+      "value_usd": "141959000",
+      "source_verification": "PASS",
+      "review_status": "SOURCE_RECONCILED_ERRATUM",
+      "promoted_to_frozen_inputs": false
+    }
+  ],
+  "source_verified_count": 1,
+  "case_closures": 0,
+  "engine_modified": false,
+  "ranking_recomputed": false,
+  "system_live": false,
+  "registry_sha256": "71be8ae7621bdad4581c9e026b6eb44dedac29fb60158b1b1a867e855ff0cf95",
+  "verifier_sha256": "65d1d38edbd1e29a7de03794e3a249f50b94885b24cdee5e58134b207e8caf9b"
+}
