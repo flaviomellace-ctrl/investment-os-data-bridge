@@ -551,7 +551,7 @@
       "expected_result_usd": "0"
     }
   ],
-  "economic_annotations": "Human reviewed, not semantic certification by workflow",
+  "economic_annotations": "Assistant documentary review; not human review or independent semantic validation",
   "engine_modified": false,
   "ranking_recomputed": false,
   "r11_performed": false,
