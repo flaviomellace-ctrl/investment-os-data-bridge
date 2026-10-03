@@ -1,0 +1,560 @@
+{
+  "schema": "r10p_original_cash_alert_dispositions_v1",
+  "date": "2026-10-03",
+  "original_overlay_sha256": "922210ba7b49f3c17b5a761d1a72038edccb6005751ffafdab91aa3a03fce121",
+  "items": [
+    {
+      "item_id": "NEM_f-90",
+      "ticker": "NEM",
+      "field": "us-gaap:DebtAndEquitySecuritiesUnrealizedGainLoss",
+      "report_date": "2025-12-31",
+      "source_accession": "0001164727-26-000010",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "components": [
+        {
+          "id": "f-90",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:DebtAndEquitySecuritiesUnrealizedGainLoss",
+            "scale": "6",
+            "id": "f-90"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "604000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "604000000",
+      "review_status": "SOURCE_VERIFIED_ORIGINAL_ALERT_SCOPE",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "NEM_f-304",
+      "ticker": "NEM",
+      "field": "us-gaap:UnrealizedGainLossOnInvestments",
+      "report_date": "2025-12-31",
+      "source_accession": "0001164727-26-000010",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "components": [
+        {
+          "id": "f-304",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:UnrealizedGainLossOnInvestments",
+            "scale": "6",
+            "id": "f-304"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "604000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "604000000",
+      "review_status": "SOURCE_VERIFIED_ORIGINAL_ALERT_SCOPE",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "NEM_f-81",
+      "ticker": "NEM",
+      "field": "us-gaap:ImpairmentOfLongLivedAssetsToBeDisposedOf",
+      "report_date": "2025-12-31",
+      "source_accession": "0001164727-26-000010",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "components": [
+        {
+          "id": "f-81",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "sign": "-",
+            "name": "us-gaap:ImpairmentOfLongLivedAssetsToBeDisposedOf",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-81"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "-1066000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "-1066000000",
+      "review_status": "SOURCE_VERIFIED_ORIGINAL_ALERT_SCOPE",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "NEM_f-295",
+      "ticker": "NEM",
+      "field": "us-gaap:ImpairmentOfLongLivedAssetsToBeDisposedOf",
+      "report_date": "2025-12-31",
+      "source_accession": "0001164727-26-000010",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "components": [
+        {
+          "id": "f-295",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "sign": "-",
+            "name": "us-gaap:ImpairmentOfLongLivedAssetsToBeDisposedOf",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-295"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001164727"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "-1066000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "-1066000000",
+      "review_status": "SOURCE_VERIFIED_ORIGINAL_ALERT_SCOPE",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "TROW_f-245",
+      "ticker": "TROW",
+      "field": "us-gaap:BusinessCombinationContingentConsiderationArrangementsChangeInAmountOfContingentConsiderationLiability1",
+      "report_date": "2025-12-31",
+      "source_accession": "0001628280-26-008002",
+      "source_file": "TROW_0001628280-26-008002.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026008002/trow-20251231.htm",
+      "source_sha256": "6bf42c9f8c74ed6554dca86bfb26d1e91499b8cfe91f46b9b8ccbc5c4a6e6f76",
+      "components": [
+        {
+          "id": "f-245",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-5",
+            "name": "us-gaap:BusinessCombinationContingentConsiderationArrangementsChangeInAmountOfContingentConsiderationLiability1",
+            "format": "ixt:fixed-zero",
+            "scale": "6",
+            "id": "f-245"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001113169"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "0",
+      "review_status": "SOURCE_VERIFIED_ORIGINAL_ALERT_SCOPE",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "TROW_f-246",
+      "ticker": "TROW",
+      "field": "us-gaap:BusinessCombinationContingentConsiderationArrangementsChangeInAmountOfContingentConsiderationLiability1",
+      "report_date": "2024-12-31",
+      "source_accession": "0001628280-26-008002",
+      "source_file": "TROW_0001628280-26-008002.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026008002/trow-20251231.htm",
+      "source_sha256": "6bf42c9f8c74ed6554dca86bfb26d1e91499b8cfe91f46b9b8ccbc5c4a6e6f76",
+      "components": [
+        {
+          "id": "f-246",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-20",
+            "decimals": "-5",
+            "sign": "-",
+            "name": "us-gaap:BusinessCombinationContingentConsiderationArrangementsChangeInAmountOfContingentConsiderationLiability1",
+            "scale": "6",
+            "id": "f-246"
+          },
+          "context": {
+            "startdate": [
+              "2024-01-01"
+            ],
+            "enddate": [
+              "2024-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001113169"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "-13400000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "-13400000.0",
+      "review_status": "SOURCE_VERIFIED_ORIGINAL_ALERT_SCOPE",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "TROW_f-251",
+      "ticker": "TROW",
+      "field": "trow:NetGainsLossesRecognizedOnInvestments",
+      "report_date": "2025-12-31",
+      "source_accession": "0001628280-26-008002",
+      "source_file": "TROW_0001628280-26-008002.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026008002/trow-20251231.htm",
+      "source_sha256": "6bf42c9f8c74ed6554dca86bfb26d1e91499b8cfe91f46b9b8ccbc5c4a6e6f76",
+      "components": [
+        {
+          "id": "f-251",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-5",
+            "name": "trow:NetGainsLossesRecognizedOnInvestments",
+            "scale": "6",
+            "id": "f-251"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0001113169"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "452400000.0",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "452400000.0",
+      "review_status": "SOURCE_VERIFIED_ORIGINAL_ALERT_SCOPE",
+      "promoted_to_frozen_inputs": false
+    },
+    {
+      "item_id": "AMP_f-324",
+      "ticker": "AMP",
+      "field": "us-gaap:IncreaseDecreaseInInsuranceLiabilities",
+      "report_date": "2025-12-31",
+      "source_accession": "0000820027-26-000011",
+      "source_file": "AMP_0000820027-26-000011.html",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000011/amp-20251231.htm",
+      "source_sha256": "669df3b7b6e2aa5be18356b2d7700f8eeb19ffad08761f003b7cd6e019578800",
+      "components": [
+        {
+          "id": "f-324",
+          "attributes": {
+            "unitref": "usd",
+            "contextref": "c-1",
+            "decimals": "-6",
+            "name": "us-gaap:IncreaseDecreaseInInsuranceLiabilities",
+            "format": "ixt:num-dot-decimal",
+            "scale": "6",
+            "id": "f-324"
+          },
+          "context": {
+            "startdate": [
+              "2025-01-01"
+            ],
+            "enddate": [
+              "2025-12-31"
+            ],
+            "instant": [],
+            "identifier": [
+              "0000820027"
+            ],
+            "dimensions": []
+          },
+          "expected_value_usd": "4610000000",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "4610000000",
+      "review_status": "SOURCE_VERIFIED_ORIGINAL_ALERT_SCOPE",
+      "promoted_to_frozen_inputs": false
+    }
+  ],
+  "narratives": [
+    {
+      "narrative_id": "GM_PRIOR_YEAR_RESERVE_RELEASE",
+      "ticker": "GM",
+      "source_file": "GM_0001467858-26-000013.html",
+      "source_sha256": "a50e0240c592baf8375a2bcb18386e0fea4ab13b5c15468d70faffc81af85cd7",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/gm-20251231.htm",
+      "source_accession": "0001467858-26-000013",
+      "excerpt": "as well as a nonrecurring reserve release in 2024",
+      "expected_occurrences": 1
+    },
+    {
+      "narrative_id": "ADBE_FUTURE_TAX_AUDIT",
+      "ticker": "ADBE",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_accession": "0000796343-26-000003",
+      "excerpt": "The timing of the resolution of income tax examinations is highly uncertain as are the amounts and timing of tax payments that are part of any audit settlement process.",
+      "expected_occurrences": 2
+    },
+    {
+      "narrative_id": "ADBE_FY2025_TAX_ACT_NOT_MATERIAL",
+      "ticker": "ADBE",
+      "source_file": "ADBE_0000796343-26-000003.html",
+      "source_sha256": "2f9517846df00cecc94ca8d13dbde81c0b7bff6f69e9cefd0d47462bfa62a10b",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "source_accession": "0000796343-26-000003",
+      "excerpt": "The 2025 U.S. Tax Act did not have a material impact on fiscal 2025 effective rates for income taxes or for cash taxes paid.",
+      "expected_occurrences": 1
+    },
+    {
+      "narrative_id": "TROW_CURRENT_AND_PRIOR_REMEASUREMENT",
+      "ticker": "TROW",
+      "source_file": "TROW_0001628280-26-008002.html",
+      "source_sha256": "6bf42c9f8c74ed6554dca86bfb26d1e91499b8cfe91f46b9b8ccbc5c4a6e6f76",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026008002/trow-20251231.htm",
+      "source_accession": "0001628280-26-008002",
+      "excerpt": "Fair value remeasurement of contingent consideration liability — ( 13.4 ) ( 82.4 )",
+      "expected_occurrences": 1
+    },
+    {
+      "narrative_id": "NEM_FV_IN_CASH_BRIDGE",
+      "ticker": "NEM",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_accession": "0001164727-26-000010",
+      "excerpt": "Change in fair value of investments and options ( 604 ) ( 62 ) 47",
+      "expected_occurrences": 1
+    },
+    {
+      "narrative_id": "NEM_ASSET_GAIN_IN_CASH_BRIDGE",
+      "ticker": "NEM",
+      "source_file": "NEM_0001164727-26-000010.html",
+      "source_sha256": "175e43e555a5ef554adb45be829069f3de8bbc1292374c3b9e22826c0455b39b",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/nem-20251231.htm",
+      "source_accession": "0001164727-26-000010",
+      "excerpt": "(Gain) loss on sale of assets held for sale ( 1,066 ) 1,114 —",
+      "expected_occurrences": 1
+    },
+    {
+      "narrative_id": "AMP_INSURANCE_CASH_SCOPE",
+      "ticker": "AMP",
+      "source_file": "AMP_0000820027-26-000011.html",
+      "source_sha256": "669df3b7b6e2aa5be18356b2d7700f8eeb19ffad08761f003b7cd6e019578800",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000011/amp-20251231.htm",
+      "source_accession": "0000820027-26-000011",
+      "excerpt": "Policyholder account balances, future policy benefits and claims, and market risk benefits, net 4,610 3,831 3,071",
+      "expected_occurrences": 1
+    }
+  ],
+  "dispositions": [
+    {
+      "ticker": "GM",
+      "original_flag": "RESERVE_OR_FLOAT_DEPENDENCY",
+      "status": "DISPOSED_PRIOR_PERIOD_EXCERPT",
+      "original_alert_handled": true,
+      "numeric_refs": [],
+      "narrative_refs": [
+        "GM_PRIOR_YEAR_RESERVE_RELEASE"
+      ],
+      "documented_reason": "Il solo match del primo scan riguarda il nonrecurring reserve release 2024, non dimostra una dipendenza OCF 2025. La separazione automotive/captive finance resta aperta.",
+      "scope": "ONLY_THE_ORIGINAL_LEXICAL_CASH_ALERT",
+      "economic_case_closed": false,
+      "buy_add_allowed": false,
+      "normalization_complete": false,
+      "normalized_owner_earnings_usd": null,
+      "current_aggregate_review": "HOLD_UNRESOLVED_NO_BUY_ADD"
+    },
+    {
+      "ticker": "ADBE",
+      "original_flag": "TAX_TIMING_ANOMALY",
+      "status": "DISPOSED_FUTURE_AUDIT_STATEMENT",
+      "original_alert_handled": true,
+      "numeric_refs": [],
+      "narrative_refs": [
+        "ADBE_FUTURE_TAX_AUDIT",
+        "ADBE_FY2025_TAX_ACT_NOT_MATERIAL"
+      ],
+      "documented_reason": "La frase prospettica non dimostra un beneficio temporaneo 2025. Nessuna rettifica cash tax imputata a zero per l’intero caso; perimetro capex e ricorrenza restano aperti.",
+      "scope": "ONLY_THE_ORIGINAL_LEXICAL_CASH_ALERT",
+      "economic_case_closed": false,
+      "buy_add_allowed": false,
+      "normalization_complete": false,
+      "normalized_owner_earnings_usd": null,
+      "current_aggregate_review": "HOLD_UNRESOLVED_NO_BUY_ADD"
+    },
+    {
+      "ticker": "TROW",
+      "original_flag": "NONCASH_REVALUATION",
+      "status": "DISPOSED_SPECIFIC_CURRENT_REMEASUREMENT",
+      "original_alert_handled": true,
+      "numeric_refs": [
+        "TROW_f-245",
+        "TROW_f-246",
+        "TROW_f-251"
+      ],
+      "narrative_refs": [
+        "TROW_CURRENT_AND_PRIOR_REMEASUREMENT"
+      ],
+      "documented_reason": "La specifica contingent remeasurement è esplicitamente zero nel 2025; -13.4m riguarda 2024. I gains investments 452.4m sono già rettificati in OCF. Non normalizza il perimetro issuer/products; preservare IOS_BANK.",
+      "scope": "ONLY_THE_ORIGINAL_LEXICAL_CASH_ALERT",
+      "economic_case_closed": false,
+      "buy_add_allowed": false,
+      "normalization_complete": false,
+      "normalized_owner_earnings_usd": null,
+      "current_aggregate_review": "HOLD_UNRESOLVED_NO_BUY_ADD"
+    },
+    {
+      "ticker": "NEM",
+      "original_flag": "NONCASH_REVALUATION",
+      "status": "DISPOSED_ALREADY_RECONCILED_NONCASH",
+      "original_alert_handled": true,
+      "numeric_refs": [
+        "NEM_f-90",
+        "NEM_f-304",
+        "NEM_f-81",
+        "NEM_f-295"
+      ],
+      "narrative_refs": [
+        "NEM_FV_IN_CASH_BRIDGE",
+        "NEM_ASSET_GAIN_IN_CASH_BRIDGE"
+      ],
+      "documented_reason": "FV gain 604m e gain cessioni 1066m sono già stornati nel ponte OCF. Il loro match non richiede una seconda sottrazione. Timing tax, bonifica e commitments restano aperti.",
+      "scope": "ONLY_THE_ORIGINAL_LEXICAL_CASH_ALERT",
+      "economic_case_closed": false,
+      "buy_add_allowed": false,
+      "normalization_complete": false,
+      "normalized_owner_earnings_usd": null,
+      "current_aggregate_review": "HOLD_UNRESOLVED_NO_BUY_ADD"
+    },
+    {
+      "ticker": "AMP",
+      "original_flag": "RESERVE_OR_FLOAT_DEPENDENCY",
+      "status": "OPEN_INSURANCE_ECONOMIC_PERIMETER",
+      "original_alert_handled": false,
+      "numeric_refs": [
+        "AMP_f-324"
+      ],
+      "narrative_refs": [
+        "AMP_INSURANCE_CASH_SCOPE"
+      ],
+      "documented_reason": "Il contributo netto dei saldi assicurativi e MRB è 4610m nel 2025. Non è automaticamente cassa distribuibile né interamente beneficio temporaneo: separare asset/liabilities, perimetro CIE e capitale finanziario.",
+      "scope": "ONLY_THE_ORIGINAL_LEXICAL_CASH_ALERT",
+      "economic_case_closed": false,
+      "buy_add_allowed": false,
+      "normalization_complete": false,
+      "normalized_owner_earnings_usd": null,
+      "current_aggregate_review": "HOLD_UNRESOLVED_NO_BUY_ADD"
+    }
+  ],
+  "equations": [
+    {
+      "equation_id": "FV_GAIN_AND_CASH_REVERSAL_CANCEL",
+      "terms": [
+        {
+          "item_id": "NEM_f-90",
+          "coefficient": 1
+        },
+        {
+          "item_id": "NEM_f-304",
+          "coefficient": -1
+        }
+      ],
+      "expected_result_usd": "0"
+    },
+    {
+      "equation_id": "ASSET_SALE_GAIN_AND_CASH_REVERSAL_CANCEL",
+      "terms": [
+        {
+          "item_id": "NEM_f-81",
+          "coefficient": -1
+        },
+        {
+          "item_id": "NEM_f-295",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "0"
+    },
+    {
+      "equation_id": "CURRENT_CONTINGENT_REMEASUREMENT_EXPLICIT_ZERO",
+      "terms": [
+        {
+          "item_id": "TROW_f-245",
+          "coefficient": 1
+        }
+      ],
+      "expected_result_usd": "0"
+    }
+  ],
+  "economic_annotations": "Human reviewed, not semantic certification by workflow",
+  "engine_modified": false,
+  "ranking_recomputed": false,
+  "r11_performed": false,
+  "r12_performed": false,
+  "system_live": false
+}
