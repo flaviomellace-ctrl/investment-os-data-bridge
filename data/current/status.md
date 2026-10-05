@@ -1,8 +1,8 @@
 # Investment OS Data Bridge — stato
 
-Aggiornato: **2026-09-28T11:41:11+00:00**
+Aggiornato: **2026-10-05T12:16:28+00:00**
 
-- Righe universo equity-like: **504**
+- Righe universo equity-like: **505**
 - Ticker con CIK SEC mappato: **99.8%**
 - Società con filing annuale individuato: **100.0%**
 - Società con >=90% core metric coverage: **64.1%**
