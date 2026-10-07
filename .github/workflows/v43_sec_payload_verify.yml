@@ -1,0 +1,121 @@
+name: V4.3 SEC payload verification (read-only)
+
+# Manual run only. Downloads raw SEC companyconcept payloads, hashes them and
+# compares them with the V4.3 evidence ledger and the R10B recovery provenance.
+# It NEVER writes to the repository: no commit, no push, no change to
+# data/current, V4.2 or any frozen file. The only output is a run artifact.
+#
+# Outcome of the comparison step, kept apart on purpose:
+#   exit 0  every row confirmed                      -> run green
+#   exit 1  some rows NOT CONFIRMED (a result)       -> run green, warning
+#   exit 2+ TECHNICAL ERROR (payloads refused, crash) -> run RED
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: v43-sec-payload-verify
+  cancel-in-progress: false
+
+env:
+  PINS_SHA256: "dada7a0c17aa7a441786ae1ffeb1e9bf5271c980f25fcf15e4132530e9c66e7a"
+  PROVENANCE: data/v4_2/r10b/36268043494/V4_2_R10B_RECOVERY_PROVENANCE.csv
+  PROVENANCE_SHA256: "1eb6937ff390a9dad591f87d816c01e56333e99a8e4c93ab3e66707862bad224"
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout (read-only)
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify pinned tool, fetch list, ledger and provenance
+        run: |
+          set -euo pipefail
+          echo "${PINS_SHA256}  v43_sec_verify/PINS.sha256" | sha256sum -c -
+          (cd v43_sec_verify && sha256sum -c PINS.sha256)
+          echo "${PROVENANCE_SHA256}  ${PROVENANCE}" | sha256sum -c -
+
+      - name: Fetch SEC payloads
+        env:
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+        run: |
+          set -euo pipefail
+          python -B v43_sec_verify/sec_payloads.py fetch \
+            --list v43_sec_verify/SEC_FETCH_LIST.csv \
+            --out "${RUNNER_TEMP}/sec_payloads" > "${RUNNER_TEMP}/fetch.json"
+          cat "${RUNNER_TEMP}/fetch.json"
+          python -B -c "import json,os;d=json.load(open(os.path.join(os.environ['RUNNER_TEMP'],'fetch.json')));print('RECEIPT_SHA256='+d['PAYLOAD_RECEIPT_SHA256'])" >> "${GITHUB_ENV}"
+
+      - name: Compare ledger and provenance with payloads
+        id: check
+        run: |
+          set -uo pipefail
+          rc=0
+          python -B v43_sec_verify/sec_payloads.py check \
+            --payloads "${RUNNER_TEMP}/sec_payloads" \
+            --receipt-sha256 "${RECEIPT_SHA256}" \
+            --ledger v43_sec_verify/SEC_FACTS_LEDGER.csv \
+            --provenance "${PROVENANCE}" \
+            --out "${RUNNER_TEMP}/sec_payloads/VERIFICATION.csv" > "${RUNNER_TEMP}/check.json" || rc=$?
+          cat "${RUNNER_TEMP}/check.json" || true
+          echo "rc=${rc}" >> "${GITHUB_OUTPUT}"
+          if [ "${rc}" -eq 0 ]; then
+            echo "CHECK_RESULT=ALL_ROWS_CONFIRMED" >> "${GITHUB_ENV}"
+          elif [ "${rc}" -eq 1 ]; then
+            echo "CHECK_RESULT=ROWS_NOT_CONFIRMED" >> "${GITHUB_ENV}"
+            echo "::warning::Some ledger or provenance rows are NOT CONFIRMED by the SEC payloads. This is a result of the verification, not a failure of the run: see VERIFICATION.csv in the artifact."
+          else
+            echo "CHECK_RESULT=TECHNICAL_ERROR" >> "${GITHUB_ENV}"
+            echo "::error::Technical error in the comparison step (exit ${rc}). No verification result exists."
+            exit "${rc}"
+          fi
+          (cd "${RUNNER_TEMP}/sec_payloads" && sha256sum VERIFICATION.csv > VERIFICATION.sha256)
+
+      - name: Repository must be untouched
+        if: always()
+        run: |
+          set -euo pipefail
+          test -z "$(git status --porcelain)"
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "### V4.3 SEC payload verification"
+            echo ""
+            echo "PAYLOAD_RECEIPT_SHA256: \`${RECEIPT_SHA256:-NOT_PRODUCED}\`"
+            echo ""
+            echo "Commit: \`${GITHUB_SHA}\` · run \`${GITHUB_RUN_ID}\`"
+            echo ""
+            echo "Comparison outcome: **${CHECK_RESULT:-NOT_RUN_OR_TECHNICAL_ERROR}**"
+            echo ""
+            echo "- ALL_ROWS_CONFIRMED / ROWS_NOT_CONFIRMED are verification results."
+            echo "- TECHNICAL_ERROR or NOT_RUN means there is NO verification result."
+            echo ""
+            echo "Fetch (includes absent_keys, each confirmed by two HTTP 404): $(cat "${RUNNER_TEMP}/fetch.json" 2>/dev/null || echo not produced)"
+            echo ""
+            echo "Check: $(cat "${RUNNER_TEMP}/check.json" 2>/dev/null || echo not produced)"
+            echo ""
+            echo "No promotion, no repository write, no BUY/ADD. The artifact is evidence for a separate review."
+          } >> "${GITHUB_STEP_SUMMARY}"
+
+      - name: Upload payloads and receipt
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v43-sec-payloads-${{ github.run_id }}
+          path: ${{ runner.temp }}/sec_payloads
+          if-no-files-found: error
+          retention-days: 90
