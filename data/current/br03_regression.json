@@ -1,6 +1,6 @@
 {
   "schema": "br03_capital_return_v1.1",
-  "generated_at_utc": "2026-10-05T12:22:51+00:00",
+  "generated_at_utc": "2026-10-12T13:17:06+00:00",
   "tests_passed": 16,
   "tests_total": 16,
   "all_passed": true,
@@ -11,7 +11,7 @@
     },
     "BR03-T02": {
       "passed": true,
-      "detail": "checked=25; violations=0"
+      "detail": "checked=22; violations=0"
     },
     "BR03-T03": {
       "passed": true,
@@ -31,7 +31,7 @@
     },
     "BR03-T07": {
       "passed": true,
-      "detail": "checked=237; violations=0"
+      "detail": "checked=236; violations=0"
     },
     "BR03-T08": {
       "passed": true,
@@ -67,7 +67,7 @@
     },
     "BR03-T16": {
       "passed": true,
-      "detail": "all non-BR03 pre-existing columns unchanged; protected=239; ignored_existing_br03=46"
+      "detail": "all non-BR03 pre-existing columns unchanged; protected=158; ignored_existing_br03=0"
     }
   },
   "note": "BR03-T14 is a data-contract type-safety proxy; full V4.1 engine run occurs in the post-BR03 preflight. BR03-T15 is finalized by split_for_claude.py."

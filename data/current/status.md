@@ -1,45 +1,45 @@
 # Investment OS Data Bridge — stato
 
-Aggiornato: **2026-10-05T12:16:28+00:00**
+Aggiornato: **2026-10-12T13:10:29+00:00**
 
-- Righe universo equity-like: **505**
+- Righe universo equity-like: **504**
 - Ticker con CIK SEC mappato: **99.8%**
-- Società con filing annuale individuato: **100.0%**
+- Società con filing annuale individuato: **99.0%**
 - Società con >=90% core metric coverage: **64.1%**
-- Ultimo SEC Financial Statement Data Set disponibile: **2026Q2**
-- Fondamentali costruiti usando trimestri: **2025Q3, 2025Q4, 2026Q1, 2026Q2**
+- Ultimo SEC Financial Statement Data Set disponibile: **2026Q3**
+- Fondamentali costruiti usando trimestri: **2025Q4, 2026Q1, 2026Q2, 2026Q3**
 
 ## Importante
 
 La copertura qui è una misura tecnica, non un BQS. Metriche non appropriate a un settore possono essere `NOT_APPLICABLE` nel successivo processo di analisi. Prima di BUY/ADD i finalisti devono essere verificati contro gli ultimi filing e fonti primarie.
 ## V4.1 enrichment BR-01 / BR-02
 
-- SEC quarterly datasets usati per lo storico: **16** (2022Q3 → 2026Q2)
+- SEC quarterly datasets usati per lo storico: **16** (2022Q4 → 2026Q3)
 - Storico ricavi a 4 esercizi: **85.7%**
-- Storico operating income a 4 esercizi: **71.4%**
-- Storico FCF a 4 esercizi: **78.0%**
+- Storico operating income a 4 esercizi: **71.6%**
+- Storico FCF a 4 esercizi: **77.8%**
 - Storico diluted shares a 4 esercizi: **70.6%**
 - SBC corrente disponibile: **80.0%**
 - Revenue CAGR 3y calcolabile: **85.5%**
-- Operating-income CAGR 3y calcolabile: **62.5%**
-- FCF CAGR 3y calcolabile: **64.3%**
-- FCF/share CAGR 3y calcolabile: **47.4%**
+- Operating-income CAGR 3y calcolabile: **62.7%**
+- FCF CAGR 3y calcolabile: **63.7%**
+- FCF/share CAGR 3y calcolabile: **47.2%**
 
 `MISSING` resta `MISSING`: nessuna assenza è convertita in zero.
 ## V4.1 enrichment BR-03
 
-- SEC quarterly datasets usati: **16** (2022Q3 → 2026Q2)
+- SEC quarterly datasets usati: **16** (2022Q4 → 2026Q3)
 - `annual_buyback` disponibile: **81.2%**
-- `annual_dividends_paid` disponibile: **78.2%**
-- `buyback_accretion` disponibile/N.A.: **67.5%**
-- `payout_ratio` disponibile: **74.2%**
+- `annual_dividends_paid` disponibile: **78.0%**
+- `buyback_accretion` disponibile/N.A.: **67.7%**
+- `payout_ratio` disponibile: **74.0%**
 - `BUYBACK_TAG_ABSENT_CF_PRESENT`: **17.5%**
-- `DIVIDENDS_TAG_ABSENT_CF_PRESENT`: **20.4%**
+- `DIVIDENDS_TAG_ABSENT_CF_PRESENT`: **20.6%**
 - `NO_BUYBACK_NO_SBC`: **0**
 - `PAYOUT_NEGATIVE_EARNINGS`: **27**
-- `SHARE_COUNT_DISCONTINUITY`: **10**
+- `SHARE_COUNT_DISCONTINUITY`: **9**
 - Buyback tag usage: **{"PaymentsForRepurchaseOfCommonStock": 395, "PaymentsForRepurchaseOfEquity": 7, "TreasuryStockValueAcquiredCostMethod": 7}**
-- Dividend tag usage: **{"PaymentsOfDividends": 138, "PaymentsOfDividendsCommonStock": 236, "PaymentsOfOrdinaryDividends": 20}**
+- Dividend tag usage: **{"PaymentsOfDividends": 135, "PaymentsOfDividendsCommonStock": 238, "PaymentsOfOrdinaryDividends": 20}**
 - Bridge regression checks: **16/16 passed**
 - `MISSING` resta `MISSING`: nessuna assenza è convertita in zero.
 ## V4.1 enrichment BR-05

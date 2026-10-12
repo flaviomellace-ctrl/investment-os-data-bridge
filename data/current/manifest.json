@@ -1,50 +1,44 @@
 {
   "schema_version": "1.3",
-  "updated_at_utc": "2026-10-05T12:16:28+00:00",
+  "updated_at_utc": "2026-10-12T13:10:29+00:00",
   "mode": "auto",
-  "fundamentals_rebuilt_this_run": false,
+  "fundamentals_rebuilt_this_run": true,
   "state_street": {
     "header_row_zero_based": 4,
-    "raw_rows_after_header": 594,
-    "equity_like_rows": 505,
+    "raw_rows_after_header": 593,
+    "equity_like_rows": 504,
     "excluded_cash_or_obvious_non_equity_rows": 1,
     "data_as_of": null,
     "source": "State Street SPY daily holdings",
     "product_url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-500-etf-trust-spy",
     "download_url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-spy.xlsx",
-    "downloaded_at": "2026-10-05T12:16:28+00:00",
-    "sha256": "0307e5ff6ecca541b0666f3f47645341fbca1edefaa4fc95eab0a297eb67b6b1",
-    "bytes": 54525
+    "downloaded_at": "2026-10-12T13:09:21+00:00",
+    "sha256": "a636ac4892720c574c85949a58b2a1ebafa45a2c7949828ffb0645fc6f64eabd",
+    "bytes": 54377
   },
   "sec_ticker_map": {
     "source": "SEC company_tickers.json",
     "url": "https://www.sec.gov/files/company_tickers.json",
-    "downloaded_at": "2026-10-05T12:16:28+00:00",
-    "sha256": "31a807ba3f3c0b3340008aba9c3b487734d5b2d8dd5751c2a1b3667696cfa315",
-    "rows": 10440
+    "downloaded_at": "2026-10-12T13:09:21+00:00",
+    "sha256": "a9595d33a34615553ee706c95458fff0bb9fec9642a9d61710f3e5dbd45ca23e",
+    "rows": 10445
   },
   "sec": {
     "index": {
       "source": "SEC Financial Statement Data Sets index",
       "url": "https://www.sec.gov/data-research/sec-markets-data/financial-statement-data-sets",
-      "downloaded_at": "2026-10-05T12:16:28+00:00",
-      "latest_available": "2026Q2",
-      "quarters_found": 70
+      "downloaded_at": "2026-10-12T13:09:22+00:00",
+      "latest_available": "2026Q3",
+      "quarters_found": 71
     },
-    "latest_available_quarter": "2026Q2",
+    "latest_available_quarter": "2026Q3",
     "quarters_used": [
-      "2025Q3",
       "2025Q4",
       "2026Q1",
-      "2026Q2"
+      "2026Q2",
+      "2026Q3"
     ],
     "quarter_downloads": [
-      {
-        "quarter": "2025Q3",
-        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q3.zip",
-        "sha256": "ebe25fa74c3655f4738ed9eb144af3953c3981c80f57d74829fb9ad68b114710",
-        "bytes": 127842298
-      },
       {
         "quarter": "2025Q4",
         "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2025q4.zip",
@@ -62,40 +56,46 @@
         "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q2.zip",
         "sha256": "d7c815395cd420cfbe09b29dbae73a45406c5d0652d5ae1859ae11ea2e22df77",
         "bytes": 60419016
+      },
+      {
+        "quarter": "2026Q3",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q3.zip",
+        "sha256": "b6ebdc56b78526a6423f5b99f6e355afcb0510e7264324300ee5f0d3bd1bad21",
+        "bytes": 65148008
       }
     ],
     "fair_access_note": "Declared User-Agent; scripted downloads intentionally kept far below 10 requests/second."
   },
   "universe": {
-    "rows": 505,
-    "cik_mapped": 504,
+    "rows": 504,
+    "cik_mapped": 503,
     "cik_mapping_pct": 99.8
   },
-  "archive_created": null,
+  "archive_created": "data/archive/20261012T130922Z_before_2026Q3",
   "outputs": {
     "sp500_universe.csv": {
-      "sha256": "2990a56c81deb910e5053a2fe1ceca82c299bd2ee36c4bb871113230f21695d6",
-      "bytes": 44992
+      "sha256": "7aea365432d3a9fb111bd9898b8ebfeeb4d0a0f3691090d3b3108215348930ee",
+      "bytes": 44860
     },
     "sp500_fundamentals.csv": {
-      "sha256": "a986f564bca3bffc7453202e405ba173d5e27602bc5f44ab6bd090f769e0d5ce",
-      "bytes": 1990248
+      "sha256": "cff650f78c8458e0194a169f54393a654f73c916346022157c9eeb48737fa27d",
+      "bytes": 1500885
     },
     "sp500_coverage.csv": {
-      "sha256": "111b673cfdce33acccfd2fd1b4355d1ba30083450e4f26de700443b83f69e6ab",
-      "bytes": 86244
+      "sha256": "0b7572b16f6a8bcc6d3618d6d3b82cc90cdf18ac18d05980380cd8f363fdf791",
+      "bytes": 86175
     },
     "claude_sources.md": {
       "sha256": "2789aca4cdb4e925a054c7bc28ee950155354061ff68e11783808e0382dea81d",
       "bytes": 1116
     },
     "status.md": {
-      "sha256": "dbe4a9d2c25c6ef9e7f5184b4ff6f145d15892e0e7ecd5dea783a2d06493453b",
-      "bytes": 2512
+      "sha256": "3302d5615404694b5f7fd12dccbb0014122c6000112987b236ddc55d95d9bf76",
+      "bytes": 2510
     },
     "br03_regression.json": {
-      "sha256": "bfe110dd747dad7d01be600465ea10f50ee6d25b04c9f0dbc65e2cb6a71f5a34",
-      "bytes": 2032
+      "sha256": "a93dd29919316c35bab2a7d2e7d69da9a77de16cf89e63e6a0e053ad497ac10b",
+      "bytes": 2031
     }
   },
   "methodology_notes": [
@@ -106,10 +106,9 @@
   ],
   "br01_br02_enrichment": {
     "schema": "br01_br02_v1.2",
-    "updated_at_utc": "2026-10-05T12:20:18+00:00",
-    "latest_available_quarter": "2026Q2",
+    "updated_at_utc": "2026-10-12T13:14:26+00:00",
+    "latest_available_quarter": "2026Q3",
     "quarters_used": [
-      "2022Q3",
       "2022Q4",
       "2023Q1",
       "2023Q2",
@@ -124,23 +123,18 @@
       "2025Q3",
       "2025Q4",
       "2026Q1",
-      "2026Q2"
+      "2026Q2",
+      "2026Q3"
     ],
     "annual_history_years_target": 4,
     "sec_index": {
       "source": "SEC Financial Statement Data Sets index",
       "url": "https://www.sec.gov/data-research/sec-markets-data/financial-statement-data-sets",
-      "downloaded_at": "2026-10-05T12:16:29+00:00",
-      "latest_available": "2026Q2",
-      "quarters_found": 70
+      "downloaded_at": "2026-10-12T13:10:29+00:00",
+      "latest_available": "2026Q3",
+      "quarters_found": 71
     },
     "quarter_downloads": [
-      {
-        "quarter": "2022Q3",
-        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2022q3.zip",
-        "sha256": "4bbfdc953177acf1a430a9f0a624dd8244bc81292d42872107d0446d06167c26",
-        "bytes": 97589396
-      },
       {
         "quarter": "2022Q4",
         "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2022q4.zip",
@@ -230,18 +224,24 @@
         "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q2.zip",
         "sha256": "d7c815395cd420cfbe09b29dbae73a45406c5d0652d5ae1859ae11ea2e22df77",
         "bytes": 60419016
+      },
+      {
+        "quarter": "2026Q3",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q3.zip",
+        "sha256": "b6ebdc56b78526a6423f5b99f6e355afcb0510e7264324300ee5f0d3bd1bad21",
+        "bytes": 65148008
       }
     ],
     "coverage": {
       "revenue_4y_pct": 85.7,
-      "operating_income_4y_pct": 71.4,
-      "fcf_4y_pct": 78.0,
+      "operating_income_4y_pct": 71.6,
+      "fcf_4y_pct": 77.8,
       "diluted_shares_4y_pct": 70.6,
       "sbc_current_pct": 80.0,
       "revenue_cagr3_pct": 85.5,
-      "opinc_cagr3_pct": 62.5,
-      "fcf_cagr3_pct": 64.3,
-      "fcf_per_share_cagr3_pct": 47.4
+      "opinc_cagr3_pct": 62.7,
+      "fcf_cagr3_pct": 63.7,
+      "fcf_per_share_cagr3_pct": 47.2
     },
     "rules": [
       "Missing values are never converted to zero.",
@@ -253,10 +253,9 @@
   },
   "br03_capital_return": {
     "schema": "br03_capital_return_v1.1",
-    "updated_at_utc": "2026-10-05T12:22:51+00:00",
-    "latest_available_quarter": "2026Q2",
+    "updated_at_utc": "2026-10-12T13:17:06+00:00",
+    "latest_available_quarter": "2026Q3",
     "quarters_used": [
-      "2022Q3",
       "2022Q4",
       "2023Q1",
       "2023Q2",
@@ -271,22 +270,17 @@
       "2025Q3",
       "2025Q4",
       "2026Q1",
-      "2026Q2"
+      "2026Q2",
+      "2026Q3"
     ],
     "sec_index": {
       "source": "SEC Financial Statement Data Sets index",
       "url": "https://www.sec.gov/data-research/sec-markets-data/financial-statement-data-sets",
-      "downloaded_at": "2026-10-05T12:20:18+00:00",
-      "latest_available": "2026Q2",
-      "quarters_found": 70
+      "downloaded_at": "2026-10-12T13:14:27+00:00",
+      "latest_available": "2026Q3",
+      "quarters_found": 71
     },
     "quarter_downloads": [
-      {
-        "quarter": "2022Q3",
-        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2022q3.zip",
-        "sha256": "4bbfdc953177acf1a430a9f0a624dd8244bc81292d42872107d0446d06167c26",
-        "bytes": 97589396
-      },
       {
         "quarter": "2022Q4",
         "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2022q4.zip",
@@ -376,18 +370,24 @@
         "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q2.zip",
         "sha256": "d7c815395cd420cfbe09b29dbae73a45406c5d0652d5ae1859ae11ea2e22df77",
         "bytes": 60419016
+      },
+      {
+        "quarter": "2026Q3",
+        "url": "https://www.sec.gov/files/dera/data/financial-statement-data-sets/2026q3.zip",
+        "sha256": "b6ebdc56b78526a6423f5b99f6e355afcb0510e7264324300ee5f0d3bd1bad21",
+        "bytes": 65148008
       }
     ],
     "coverage": {
       "annual_buyback_pct": 81.2,
-      "annual_dividends_paid_pct": 78.2,
-      "buyback_accretion_pct": 67.5,
-      "payout_ratio_pct": 74.2,
+      "annual_dividends_paid_pct": 78.0,
+      "buyback_accretion_pct": 67.7,
+      "payout_ratio_pct": 74.0,
       "buyback_tag_absent_cf_present_pct": 17.5,
-      "dividends_tag_absent_cf_present_pct": 20.4,
+      "dividends_tag_absent_cf_present_pct": 20.6,
       "no_buyback_no_sbc_count": 0,
       "payout_negative_earnings_count": 27,
-      "share_count_discontinuity_count": 10
+      "share_count_discontinuity_count": 9
     },
     "buyback_tag_hierarchy": [
       "PaymentsForRepurchaseOfCommonStock",
@@ -423,27 +423,27 @@
         "PaymentsForRepurchaseOfEquity": 7
       },
       "dividend_tag_levels": {
-        "PaymentsOfDividends": 138,
-        "PaymentsOfDividendsCommonStock": 236,
+        "PaymentsOfDividends": 135,
+        "PaymentsOfDividendsCommonStock": 238,
         "PaymentsOfOrdinaryDividends": 20
       },
       "flags": {
-        "DIVIDENDS_INCLUDES_PREFERRED_OR_NCI": 138,
+        "DIVIDENDS_INCLUDES_PREFERRED_OR_NCI": 135,
         "BUYBACK_TAG_ABSENT_CF_PRESENT": 88,
-        "DIVIDENDS_TAG_ABSENT_CF_PRESENT": 103,
-        "BUYBACK_ZERO_REPORTED": 29,
+        "DIVIDENDS_TAG_ABSENT_CF_PRESENT": 104,
+        "BUYBACK_ZERO_REPORTED": 26,
         "DIVIDENDS_TAG_VARIANT": 20,
-        "PAYOUT_ABOVE_EARNINGS": 38,
         "DIVIDENDS_ZERO_REPORTED": 2,
         "PAYOUT_NEGATIVE_EARNINGS": 27,
-        "SHARE_ISSUANCE": 24,
+        "SHARE_ISSUANCE": 29,
+        "PAYOUT_ABOVE_EARNINGS": 39,
         "BUYBACK_FROM_EQUITY_STATEMENT": 7,
-        "SHARE_COUNT_DISCONTINUITY": 10,
+        "SHARE_COUNT_DISCONTINUITY": 9,
         "BUYBACK_TAG_BROAD": 7,
         "PERIOD_MISMATCH": 1
       },
-      "protected_existing_columns": 239,
-      "ignored_existing_br03_columns": 46,
+      "protected_existing_columns": 158,
+      "ignored_existing_br03_columns": 0,
       "existing_fields_unchanged": true
     },
     "regression": {
@@ -454,14 +454,14 @@
   },
   "br05_market_enrichment": {
     "schema": "br05_market_v2.0",
-    "updated_at_utc": "2026-10-05T12:22:55+00:00",
+    "updated_at_utc": "2026-10-12T13:17:11+00:00",
     "coverage_price_and_market_cap_pct": 99.6,
     "primary_source": "NASDAQ_PUBLIC_SCREENER",
     "primary_endpoint": "https://api.nasdaq.com/api/screener/stocks",
     "nasdaq": {
       "http_status": 200,
-      "rows_returned": 7001,
-      "retrieved_at_utc": "2026-10-05T12:22:52+00:00"
+      "rows_returned": 7010,
+      "retrieved_at_utc": "2026-10-12T13:17:07+00:00"
     },
     "fallback_source": "FMP_STABLE_QUOTE_SINGLE",
     "fallback_endpoint": "https://financialmodelingprep.com/stable/quote",
