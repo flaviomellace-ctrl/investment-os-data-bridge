@@ -1,121 +1,233 @@
-name: V4.3 SEC payload verification (read-only)
+name: V4.3 primary source investigation (read-only)
 
-# Manual run only. Downloads raw SEC companyconcept payloads, hashes them and
-# compares them with the V4.3 evidence ledger and the R10B recovery provenance.
-# It NEVER writes to the repository: no commit, no push, no change to
-# data/current, V4.2 or any frozen file. The only output is a run artifact.
-#
-# Outcome of the comparison step, kept apart on purpose:
-#   exit 0  every row confirmed                      -> run green
-#   exit 1  some rows NOT CONFIRMED (a result)       -> run green, warning
-#   exit 2+ TECHNICAL ERROR (payloads refused, crash) -> run RED
-
+# Evidence acquisition only. This branch does not compose or promote data.
 on:
   workflow_dispatch: {}
-
 permissions:
   contents: read
-
 concurrency:
-  group: v43-sec-payload-verify
+  group: v43-primary-source-investigation
   cancel-in-progress: false
-
-env:
-  PINS_SHA256: "dada7a0c17aa7a441786ae1ffeb1e9bf5271c980f25fcf15e4132530e9c66e7a"
-  PROVENANCE: data/v4_2/r10b/36268043494/V4_2_R10B_RECOVERY_PROVENANCE.csv
-  PROVENANCE_SHA256: "1eb6937ff390a9dad591f87d816c01e56333e99a8e4c93ab3e66707862bad224"
-
 jobs:
-  verify:
+  acquire:
+    if: github.ref == 'refs/heads/codex/v43-primary-source-investigation-20261012'
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 25
     steps:
-      - name: Checkout (read-only)
-        uses: actions/checkout@v4
-        with:
-          persist-credentials: false
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Verify pinned tool, fetch list, ledger and provenance
-        run: |
-          set -euo pipefail
-          echo "${PINS_SHA256}  v43_sec_verify/PINS.sha256" | sha256sum -c -
-          (cd v43_sec_verify && sha256sum -c PINS.sha256)
-          echo "${PROVENANCE_SHA256}  ${PROVENANCE}" | sha256sum -c -
-
-      - name: Fetch SEC payloads
+      - name: Fetch primary SEC evidence (no repository checkout)
         env:
           SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+          PRIMARY_OUT: ${{ runner.temp }}/v43_primary_sources
         run: |
           set -euo pipefail
-          python -B v43_sec_verify/sec_payloads.py fetch \
-            --list v43_sec_verify/SEC_FETCH_LIST.csv \
-            --out "${RUNNER_TEMP}/sec_payloads" > "${RUNNER_TEMP}/fetch.json"
-          cat "${RUNNER_TEMP}/fetch.json"
-          python -B -c "import json,os;d=json.load(open(os.path.join(os.environ['RUNNER_TEMP'],'fetch.json')));print('RECEIPT_SHA256='+d['PAYLOAD_RECEIPT_SHA256'])" >> "${GITHUB_ENV}"
-
-      - name: Compare ledger and provenance with payloads
-        id: check
-        run: |
-          set -uo pipefail
-          rc=0
-          python -B v43_sec_verify/sec_payloads.py check \
-            --payloads "${RUNNER_TEMP}/sec_payloads" \
-            --receipt-sha256 "${RECEIPT_SHA256}" \
-            --ledger v43_sec_verify/SEC_FACTS_LEDGER.csv \
-            --provenance "${PROVENANCE}" \
-            --out "${RUNNER_TEMP}/sec_payloads/VERIFICATION.csv" > "${RUNNER_TEMP}/check.json" || rc=$?
-          cat "${RUNNER_TEMP}/check.json" || true
-          echo "rc=${rc}" >> "${GITHUB_OUTPUT}"
-          if [ "${rc}" -eq 0 ]; then
-            echo "CHECK_RESULT=ALL_ROWS_CONFIRMED" >> "${GITHUB_ENV}"
-          elif [ "${rc}" -eq 1 ]; then
-            echo "CHECK_RESULT=ROWS_NOT_CONFIRMED" >> "${GITHUB_ENV}"
-            echo "::warning::Some ledger or provenance rows are NOT CONFIRMED by the SEC payloads. This is a result of the verification, not a failure of the run: see VERIFICATION.csv in the artifact."
-          else
-            echo "CHECK_RESULT=TECHNICAL_ERROR" >> "${GITHUB_ENV}"
-            echo "::error::Technical error in the comparison step (exit ${rc}). No verification result exists."
-            exit "${rc}"
-          fi
-          (cd "${RUNNER_TEMP}/sec_payloads" && sha256sum VERIFICATION.csv > VERIFICATION.sha256)
-
-      - name: Repository must be untouched
+          python3 -B - <<'PYCODE'
+          #!/usr/bin/env python3
+          """Read-only SEC acquisition. Writes evidence only; no correction or promotion."""
+          import gzip
+          import hashlib
+          import json
+          import os
+          import re
+          import sys
+          import time
+          import urllib.error
+          import urllib.parse
+          import urllib.request
+          from datetime import datetime, timezone
+          from html.parser import HTMLParser
+          from pathlib import Path
+          
+          COMPANIES = [40533, 48898, 62996, 79879, 766704, 874761, 879169, 1103982, 1121788, 1396009]
+          FILINGS = [
+              (40533, '0000040533-26-000006', '10-K'),
+              (40533, '0000040533-25-000008', '10-K'),
+              (48898, '0001628280-26-007500', '10-K'),
+              (48898, '0001628280-25-005311', '10-K'),
+              (62996, '0000062996-26-000005', '10-K'),
+              (62996, '0000062996-25-000004', '10-K'),
+              (79879, '0000079879-26-000046', '10-K'),
+              (79879, '0000079879-25-000034', '10-K'),
+              (1103982, '0001628280-26-005345', '10-K'),
+              (1103982, '0001103982-25-000030', '10-K'),
+              (1121788, '0000950170-25-022760', '10-K'),
+              (874761, '0000874761-25-000035', '10-Q'),
+          ]
+          
+          def now():
+              return datetime.now(timezone.utc).isoformat()
+          
+          def digest(b):
+              return hashlib.sha256(b).hexdigest()
+          
+          class IndexRows(HTMLParser):
+              def __init__(self):
+                  super().__init__(convert_charrefs=True)
+                  self.rows = []
+                  self.row = None
+                  self.cell = None
+          
+              def handle_starttag(self, tag, attrs):
+                  attrs = dict(attrs)
+                  if tag == 'tr':
+                      self.row = []
+                  elif tag == 'td' and self.row is not None:
+                      self.cell = {'text': '', 'links': []}
+                  elif tag == 'a' and self.cell is not None:
+                      self.cell['links'].append(attrs.get('href', ''))
+          
+              def handle_data(self, data):
+                  if self.cell is not None:
+                      self.cell['text'] += data
+          
+              def handle_endtag(self, tag):
+                  if tag == 'td' and self.row is not None and self.cell is not None:
+                      self.cell['text'] = ' '.join(self.cell['text'].split())
+                      self.row.append(self.cell)
+                      self.cell = None
+                  elif tag == 'tr' and self.row is not None:
+                      self.rows.append(self.row)
+                      self.row = None
+          
+          def document_url(href, index_url, archive_prefix):
+              u = urllib.parse.urljoin(index_url, href)
+              p = urllib.parse.urlsplit(u)
+              if p.path in ('/ix', '/ixviewer/doc/action'):
+                  docs = urllib.parse.parse_qs(p.query).get('doc', [])
+                  if len(docs) != 1:
+                      raise ValueError('ambiguous iXBRL document link')
+                  u = urllib.parse.urljoin(index_url, docs[0])
+                  p = urllib.parse.urlsplit(u)
+              if p.scheme != 'https' or p.hostname != 'www.sec.gov' or not p.path.startswith(archive_prefix) or p.query or p.fragment or '..' in p.path.split('/'):
+                  raise ValueError('document link outside pinned filing directory')
+              return u
+          
+          def select_documents(html, index_url, archive_prefix, form):
+              p = IndexRows()
+              p.feed(html)
+              primary = []
+              instance = []
+              for row in p.rows:
+                  if len(row) < 4:
+                      continue
+                  description, doc, kind = row[1], row[2], row[3]
+                  if kind['text'] == form:
+                      primary.extend(document_url(x, index_url, archive_prefix) for x in doc['links'])
+                  if 'EXTRACTED XBRL INSTANCE DOCUMENT' in description['text'].upper():
+                      instance.extend(document_url(x, index_url, archive_prefix) for x in doc['links'])
+              if len(set(primary)) != 1 or len(set(instance)) != 1:
+                  raise ValueError('primary document or extracted instance missing/ambiguous')
+              return sorted(set(primary))[0], sorted(set(instance))[0]
+          
+          class SafeRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self, req, fp, code, msg, headers, newurl):
+                  p = urllib.parse.urlsplit(newurl)
+                  if p.scheme != 'https' or p.hostname not in ('www.sec.gov', 'data.sec.gov'):
+                      raise ValueError('redirect outside SEC')
+                  return super().redirect_request(req, fp, code, msg, headers, newurl)
+          
+          def main():
+              out = Path(os.environ['PRIMARY_OUT'])
+              if out.exists():
+                  raise ValueError('output directory exists')
+              email = os.environ.get('SEC_CONTACT_EMAIL', '').strip()
+              if '@' not in email:
+                  raise ValueError('SEC_CONTACT_EMAIL is required')
+              out.mkdir(parents=True)
+              (out / 'raw').mkdir()
+              entries, errors = [], []
+              opener = urllib.request.build_opener(SafeRedirect())
+          
+              def fetch(url, name, role, identity):
+                  time.sleep(0.55)
+                  entry = {'url': url, 'role': role, 'identity': identity, 'retrieved_at_utc': now()}
+                  try:
+                      req = urllib.request.Request(url, headers={
+                          'User-Agent': 'InvestmentOSSourceInvestigation/1.0 ' + email,
+                          'Accept-Encoding': 'identity',
+                      })
+                      with opener.open(req, timeout=60) as response:
+                          body = response.read(50 * 1024 * 1024 + 1)
+                          if len(body) > 50 * 1024 * 1024:
+                              raise ValueError('response exceeds acquisition limit')
+                          entry.update(http_status=response.status, final_url=response.url,
+                                       response_headers={k: v for k, v in response.headers.items()
+                                                         if k.lower() in ('content-type', 'content-encoding', 'content-length', 'date', 'etag', 'last-modified', 'server')})
+                          encoding = response.headers.get('Content-Encoding', 'identity').lower()
+                      path = 'raw/' + name
+                      (out / path).write_bytes(body)
+                      entry.update(file=path, bytes=len(body), sha256=digest(body), status='FETCHED')
+                      entries.append(entry)
+                      if encoding == 'gzip':
+                          return gzip.decompress(body)
+                      if encoding not in ('identity', ''):
+                          raise ValueError('unsupported HTTP content encoding')
+                      return body
+                  except Exception as exc:
+                      if entry not in entries:
+                          entry['status'] = 'FETCH_FAILED'
+                          if isinstance(exc, urllib.error.HTTPError):
+                              entry['http_status'] = exc.code
+                          entries.append(entry)
+                      errors.append({'url': url, 'role': role, 'error_type': type(exc).__name__,
+                                     'http_status': getattr(exc, 'code', None)})
+                      print('Acquisition failed:', role, identity, type(exc).__name__)
+                      return None
+          
+              for cik in COMPANIES:
+                  body = fetch(f'https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json',
+                               f'CIK{cik:010d}_companyfacts.json', 'COMPANYFACTS', {'cik': cik})
+                  if body is not None:
+                      try:
+                          j = json.loads(body)
+                          if int(j.get('cik', -1)) != cik or not isinstance(j.get('facts'), dict):
+                              raise ValueError('companyfacts identity/shape mismatch')
+                      except Exception as exc:
+                          errors.append({'role': 'COMPANYFACTS_VALIDATION', 'cik': cik, 'error_type': type(exc).__name__})
+          
+              for cik, accession, form in FILINGS:
+                  compact = accession.replace('-', '')
+                  prefix = f'/Archives/edgar/data/{cik}/{compact}/'
+                  index_url = f'https://www.sec.gov{prefix}{accession}-index.htm'
+                  identity = {'cik': cik, 'accession': accession, 'form': form}
+                  body = fetch(index_url, accession + '_index.htm', 'FILING_INDEX', identity)
+                  if body is None:
+                      continue
+                  try:
+                      primary, instance = select_documents(body.decode('utf-8'), index_url, prefix, form)
+                  except Exception as exc:
+                      errors.append({'role': 'FILING_INDEX_SELECTION', **identity, 'error_type': type(exc).__name__})
+                      continue
+                  fetch(primary, accession + '_primary.htm', 'PRIMARY_IXBRL', identity)
+                  fetch(instance, accession + '_instance.xml', 'EXTRACTED_INSTANCE', identity)
+          
+              targets = {'companies': COMPANIES, 'filings': FILINGS}
+              receipt = {'schema': 'v43_primary_acquisition_v1', 'scope': 'EVIDENCE_ONLY',
+                         'created_at_utc': now(), 'github_run_id': os.environ.get('GITHUB_RUN_ID'),
+                         'github_sha': os.environ.get('GITHUB_SHA'),
+                         'targets': targets, 'target_sha256': digest(json.dumps(targets, sort_keys=True).encode()),
+                         'entries': entries, 'errors': errors, 'acquisition_complete': not errors,
+                         'economic_clearance': False, 'candidate_promoted': False, 'buy_add_allowed': False}
+              data = (json.dumps(receipt, indent=2, allow_nan=False) + '\n').encode()
+              (out / 'PRIMARY_RECEIPT.json').write_bytes(data)
+              sha = digest(data)
+              summary = {'PRIMARY_RECEIPT_SHA256': sha, 'files_fetched': sum(e['status'] == 'FETCHED' for e in entries),
+                         'errors': len(errors), 'acquisition_complete': not errors,
+                         'candidate_promoted': False, 'buy_add_allowed': False}
+              (out / 'ACQUISITION_SUMMARY.json').write_text(json.dumps(summary, indent=2) + '\n')
+              print(json.dumps(summary))
+              if os.environ.get('GITHUB_STEP_SUMMARY'):
+                  with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as f:
+                      f.write('## V4.3 primary-source acquisition\n\n' + '\n'.join(f'- {k}: `{v}`' for k, v in summary.items()) + '\n')
+              return 2 if errors else 0
+          
+          if __name__ == '__main__':
+              sys.exit(main())
+          PYCODE
+      - name: Preserve raw sources and acquisition receipt
         if: always()
-        run: |
-          set -euo pipefail
-          test -z "$(git status --porcelain)"
-
-      - name: Summary
-        if: always()
-        run: |
-          {
-            echo "### V4.3 SEC payload verification"
-            echo ""
-            echo "PAYLOAD_RECEIPT_SHA256: \`${RECEIPT_SHA256:-NOT_PRODUCED}\`"
-            echo ""
-            echo "Commit: \`${GITHUB_SHA}\` · run \`${GITHUB_RUN_ID}\`"
-            echo ""
-            echo "Comparison outcome: **${CHECK_RESULT:-NOT_RUN_OR_TECHNICAL_ERROR}**"
-            echo ""
-            echo "- ALL_ROWS_CONFIRMED / ROWS_NOT_CONFIRMED are verification results."
-            echo "- TECHNICAL_ERROR or NOT_RUN means there is NO verification result."
-            echo ""
-            echo "Fetch (includes absent_keys, each confirmed by two HTTP 404): $(cat "${RUNNER_TEMP}/fetch.json" 2>/dev/null || echo not produced)"
-            echo ""
-            echo "Check: $(cat "${RUNNER_TEMP}/check.json" 2>/dev/null || echo not produced)"
-            echo ""
-            echo "No promotion, no repository write, no BUY/ADD. The artifact is evidence for a separate review."
-          } >> "${GITHUB_STEP_SUMMARY}"
-
-      - name: Upload payloads and receipt
-        if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # official v4, pinned
         with:
-          name: v43-sec-payloads-${{ github.run_id }}
-          path: ${{ runner.temp }}/sec_payloads
+          name: v43-primary-sources-${{ github.run_id }}
+          path: ${{ runner.temp }}/v43_primary_sources
           if-no-files-found: error
           retention-days: 90
