@@ -84,7 +84,7 @@ jobs:
                       raise ValueError('ambiguous iXBRL document link')
                   u = urllib.parse.urljoin(index_url, docs[0])
                   p = urllib.parse.urlsplit(u)
-              if p.scheme != 'https' or p.hostname != 'www.sec.gov' or not p.path.startswith(archive_prefix) or p.query or p.fragment or '..' in p.path.split('/'):
+              if p.scheme != 'https' or p.hostname != 'www.sec.gov' or not re.fullmatch(r'/Archives/edgar/data/[0-9]+/'+re.escape(archive_prefix.rstrip('/').split('/')[-1])+r'/[^/]+', p.path) or p.query or p.fragment or '..' in p.path.split('/'):
                   raise ValueError('document link outside pinned filing directory')
               return u
           
@@ -98,7 +98,7 @@ jobs:
                       continue
                   description, doc, kind = row[1], row[2], row[3]
                   if kind['text'] == form:
-                      primary.extend(document_url(x, index_url, archive_prefix) for x in doc['links'])
+                      primary.extend(document_url(x, index_url, archive_prefix) for x in doc['links'] if urllib.parse.urlsplit(x).path.lower().endswith(('.htm','.html')) or urllib.parse.urlsplit(x).path in ('/ix','/ixviewer/doc/action'))
                   if 'EXTRACTED XBRL INSTANCE DOCUMENT' in description['text'].upper():
                       instance.extend(document_url(x, index_url, archive_prefix) for x in doc['links'])
               if len(set(primary)) != 1 or len(set(instance)) != 1:
