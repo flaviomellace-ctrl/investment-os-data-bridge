@@ -52,7 +52,7 @@ from pathlib import Path
 
 import pandas as pd
 
-import bridge
+# Network dependency is loaded only by main after pinned-input validation.
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -637,6 +637,88 @@ def first_by_hierarchy(
     return None
 
 
+def liability_source_value(liab_fact: dict | None) -> float | None:
+    """Parent equity residual is not consolidated liabilities.
+
+    Without a direct liability total keep MISSING. Ordinary and redeemable
+    noncontrolling interests cannot be presumed absent from an equity residual.
+    This correction does not promote manually reviewed amounts into inputs.
+    """
+    if not liab_fact:
+        return None
+    try:
+        value = float(liab_fact["value"])
+    except (TypeError, ValueError, KeyError):
+        return None
+    return value if math.isfinite(value) and value > 0 else None
+
+
+def reconcile_lease_facts(aggregate: list[dict], current: list[dict],
+                          noncurrent: list[dict]) -> tuple[list[dict], str]:
+    """Retain a prudent observed bound; conflicting data never become exact."""
+    items = aggregate + current + noncurrent
+    if not items:
+        return [], "MISSING"
+    valid = []
+    for x in items:
+        try:
+            v = float(x["value"])
+            if math.isfinite(v) and v >= 0:
+                valid.append(x)
+        except (TypeError, ValueError, KeyError):
+            pass
+    bound = [max(valid, key=lambda x: float(x["value"]))] if valid else []
+    scopes = {(x.get("adsh"), x.get("ddate"), x.get("uom"), x.get("qtrs")) for x in items}
+    if len(scopes) != 1 or any(x.get(k) in (None, "") for x in items for k in ("adsh", "ddate", "uom", "qtrs")):
+        return bound, "CONFLICTING_SCOPE"
+    if len(valid) != len(items):
+        return bound, "CONFLICTING_VALUE"
+    groups = [aggregate, current, noncurrent]
+    selected = [max(g, key=lambda x: float(x["value"])) if g else None for g in groups]
+    total, cur, noncur = selected
+    component = [x for x in (cur, noncur) if x is not None]
+    component_value = sum(float(x["value"]) for x in component)
+    prudent = component if component_value > sum(float(x["value"]) for x in bound) else bound
+    if any(len({float(x["value"]) for x in g}) > 1 for g in groups):
+        return prudent, "CONFLICTING_VALUE"
+    if total is not None:
+        tv = float(total["value"])
+        if (cur is not None and noncur is not None and not math.isclose(tv, component_value, rel_tol=1e-14, abs_tol=0.0)) or component_value > tv and not math.isclose(tv, component_value, rel_tol=1e-14, abs_tol=0.0):
+            return prudent, "CONFLICTING_TOTAL_COMPONENTS"
+        if cur is not None and noncur is not None:
+            total = dict(total, _reconciled_current=cur, _reconciled_noncurrent=noncur)
+        return [total], "PRESENT"
+    return component, "PRESENT" if cur is not None and noncur is not None else "PARTIAL_COMPONENT"
+
+
+def merge_finance_into_debt(component_total, component_items, finance_items, finance_status):
+    """Respect combined-tag coverage separately for current/noncurrent debt."""
+    value = sum_items(finance_items)
+    if value is None:
+        return component_total, component_items, finance_status.startswith("CONFLICTING")
+    combined_current = any(x.get("tag", "").startswith("LongTermDebtAndCapitalLeaseObligations") and x.get("tag", "").endswith("Current") for x in component_items)
+    combined_noncurrent = any(x.get("tag", "").startswith("LongTermDebtAndCapitalLeaseObligations") and not x.get("tag", "").endswith("Current") for x in component_items)
+    if not combined_current and not combined_noncurrent:
+        return component_total + value, component_items + finance_items, finance_status.startswith("CONFLICTING")
+    pieces = []
+    for fact in finance_items:
+        if fact.get("_reconciled_current") is not None:
+            pieces += [fact["_reconciled_current"], fact["_reconciled_noncurrent"]]
+        elif fact.get("tag", "").endswith(("Current", "Noncurrent")):
+            pieces.append(fact)
+    added = [x for x in pieces if (x.get("tag", "").endswith("Current") and not combined_current)
+             or (x.get("tag", "").endswith("Noncurrent") and not combined_noncurrent)]
+    component_total += sum_items(added) or 0.0
+    component_items += added
+    conflict = finance_status.startswith("CONFLICTING")
+    if not pieces and not (combined_current and combined_noncurrent):
+        # Unknown allocation: retain the maximum known bound, never presume full coverage.
+        conflict = True
+        if value > component_total:
+            component_total, component_items = value, finance_items
+    return component_total, component_items, conflict
+
+
 def provenance_values(fact: dict | None) -> dict[str, str]:
     if fact is None:
         return {
@@ -801,6 +883,8 @@ def main() -> int:
 
     annual_adshs = set(annual_meta)
 
+    global bridge
+    import bridge
     downloader = bridge.Downloader()
     quarters, sec_index_meta = bridge.discover_sec_quarters(downloader)
     selected_quarters = quarters[-SEC_QUARTERS:]
@@ -1077,6 +1161,23 @@ def main() -> int:
 
             if status == "CONFLICTING":
                 conflicting_fact = True
+                if line["class"] in {"FINANCE_LEASE", "OPERATING_LEASE"}:
+                    # Preserve observed same-scope USD values as uncertain bounds;
+                    # usable_fact deliberately cannot select an exact conflicting fact.
+                    matching = nums[nums["adsh"].eq(adsh) & nums["tag"].eq(line["tag"])
+                                    & nums["ddate_norm"].eq(period) & nums["qtrs_num"].eq(0)
+                                    & nums["uom"].eq("USD")]
+                    if line["version"]:
+                        matching = matching[matching["version"].eq(line["version"])]
+                    for _, candidate in matching.iterrows():
+                        try:
+                            number = float(candidate["value"])
+                        except (ValueError, TypeError):
+                            continue
+                        if math.isfinite(number) and number >= 0:
+                            bound = {"value":number,"tag":line["tag"],"version":line["version"],"adsh":adsh,
+                                     "ddate":period,"qtrs":"0","uom":"USD"}
+                            facts_by_tag[line["tag"]].append(fact_with_face(line,bound))
                 continue
 
             if status == "MISSING":
@@ -1138,20 +1239,18 @@ def main() -> int:
         op_agg = [
             x for tag in OPERATING_LEASE_AGGREGATE for x in facts_by_tag.get(tag, [])
         ]
-        if op_agg:
-            op_lease_items = [max(op_agg, key=lambda x: float(x["value"]))]
-        else:
-            op_lease_items = [
-                x
-                for tag in (OPERATING_LEASE_CURRENT | OPERATING_LEASE_NONCURRENT)
-                for x in facts_by_tag.get(tag, [])
-            ]
+        op_lease_items, op_lease_status = reconcile_lease_facts(
+            op_agg,
+            [x for tag in OPERATING_LEASE_CURRENT for x in facts_by_tag.get(tag, [])],
+            [x for tag in OPERATING_LEASE_NONCURRENT for x in facts_by_tag.get(tag, [])],
+        )
+        if op_lease_status != "PRESENT":
+            flags.add("OPERATING_LEASE_" + op_lease_status)
         op_lease = sum_items(op_lease_items)
         if op_lease is not None:
-            values["operating_lease_liabilities"] = fmt_num(op_lease)
-            values["operating_lease_liabilities_components"] = make_component_string(
-                op_lease_items
-            )
+            values["operating_lease_liabilities_components"] = make_component_string(op_lease_items)
+            if op_lease_status == "PRESENT":
+                values["operating_lease_liabilities"] = fmt_num(op_lease)
 
         lse_fact = first_by_hierarchy(
             facts_by_tag,
@@ -1162,16 +1261,10 @@ def main() -> int:
 
         lse = float(lse_fact["value"]) if lse_fact else None
         equity_control = float(equity_fact["value"]) if equity_fact else None
-        total_liabilities = float(liab_fact["value"]) if liab_fact else None
+        total_liabilities = liability_source_value(liab_fact)
 
         if total_liabilities is None and lse is not None and equity_control is not None:
-            derived = lse - equity_control
-            if derived >= 0:
-                total_liabilities = derived
-                values["total_liabilities_components"] = (
-                    f"LiabilitiesAndStockholdersEquity={fmt_num(lse)};"
-                    f"StockholdersEquity=-{fmt_num(equity_control)}"
-                )
+            flags.add("TOTAL_LIABILITIES_EQUITY_RESIDUAL_REJECTED")
         elif total_liabilities is not None:
             values["total_liabilities_components"] = (
                 f"Liabilities={fmt_num(total_liabilities)}"
@@ -1225,11 +1318,14 @@ def main() -> int:
         fin_agg = [
             x for tag in FINANCE_LEASE_AGGREGATE for x in facts_by_tag.get(tag, [])
         ]
-        if fin_agg:
-            finance_items = [max(fin_agg, key=lambda x: float(x["value"]))]
-        else:
-            finance_items = fin_current + fin_noncurrent
+        finance_items, finance_lease_status = reconcile_lease_facts(
+            fin_agg, fin_current, fin_noncurrent,
+        )
+        if finance_lease_status != "PRESENT":
+            flags.add("FINANCE_LEASE_" + finance_lease_status)
         finance_value = sum_items(finance_items)
+        if finance_lease_status.startswith("CONFLICTING"):
+            conflicting_fact = True
 
         full_agg_items = [
             x for tag in FULL_DEBT_AGGREGATE_TAGS for x in facts_by_tag.get(tag, [])
@@ -1268,14 +1364,11 @@ def main() -> int:
 
         # Add explicit finance lease only when not already represented by a
         # combined debt+lease aggregate in the chosen current/noncurrent lines.
-        combined_used = any(
-            x["tag"].startswith("LongTermDebtAndCapitalLeaseObligations")
-            for x in component_items
-        )
-        if finance_value is not None and not combined_used:
-            component_total += finance_value
+        component_total, component_items, finance_conflict = merge_finance_into_debt(
+            component_total, component_items, finance_items, finance_lease_status)
+        conflicting_fact = conflicting_fact or finance_conflict
+        if finance_value is not None:
             has_component_total = True
-            component_items += finance_items
 
         if has_component_total:
             total_candidates.append(
@@ -1364,7 +1457,7 @@ def main() -> int:
                 noncurrent_used
             )
 
-        if finance_value is not None:
+        if finance_value is not None and finance_lease_status == "PRESENT":
             values["finance_lease_liabilities"] = fmt_num(finance_value)
             values["finance_lease_liabilities_components"] = make_component_string(
                 finance_items
@@ -1730,7 +1823,7 @@ def main() -> int:
             ("long_term_debt", noncurrent_used),
             ("finance_lease_liabilities", finance_items),
             ("total_debt", total_used),
-            ("operating_lease_liabilities", op_lease_items),
+            ("operating_lease_liabilities" if op_lease_status == "PRESENT" else "operating_lease_candidate_lower_bound", op_lease_items),
         ]
         if cash_fact:
             used_as_map.append(("cash_and_equivalents", [cash_fact]))
