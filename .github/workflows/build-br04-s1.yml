@@ -25,6 +25,26 @@ jobs:
           python-version: "3.12"
           cache: "pip"
 
+      - name: Verify accepted BR-04 builder identity
+        shell: bash
+        run: |
+          python -I -S - <<'PY_PREFLIGHT'
+          import hashlib
+          import sys
+          from pathlib import Path
+
+          # Accepted 0.3 builder. Identity only; this is not economic clearance.
+          expected = "fa3ac869c21bb9e71ff1fe22aa9b5aa060f11849dabe241fdadbc84cfdb53ec3"
+          builder = Path("src/build_br04_candidate.py")
+          if builder.is_symlink() or not builder.is_file():
+              sys.exit("BR04_PREFLIGHT_BLOCKED: builder missing or not a regular file")
+          actual = hashlib.sha256(builder.read_bytes()).hexdigest()
+          print(f"BR04 builder SHA256: {actual}")
+          if actual != expected:
+              sys.exit(f"BR04_PREFLIGHT_BLOCKED: expected accepted 0.3 SHA256 {expected}")
+          print("BR04_PREFLIGHT_OK: identity matches; no promotion or BUY/ADD clearance")
+          PY_PREFLIGHT
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
