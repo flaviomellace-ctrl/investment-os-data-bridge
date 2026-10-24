@@ -1,0 +1,110 @@
+{
+  "schema": "br04_t00bis_probe_v1.2",
+  "generated_at_utc": "2026-10-24T18:51:45+00:00",
+  "run_id": "40122469278",
+  "purpose": "BR04-T00-bis pre-candidate census only",
+  "base_canonical_sha256": "51249aad299ba874b4e688993aa1a4491cc5556cf6c3f0ede339504d672e0dcf",
+  "base_git_sha": "40b228beae0da4b0048f9a9624b3ac3a82fd3df3",
+  "candidate_sha256": null,
+  "candidate_sha256_exemption": "T00-bis is pre-candidate under R3 §17.6",
+  "universe_rows": 504,
+  "companies_with_annual_adsh": 499,
+  "companies_without_annual_adsh": 5,
+  "unique_annual_adsh_filings": 496,
+  "annual_adsh_counting_rule": "company rows, not unique ADSH values",
+  "quarters_used": [
+    "2022Q4",
+    "2023Q1",
+    "2023Q2",
+    "2023Q3",
+    "2023Q4",
+    "2024Q1",
+    "2024Q2",
+    "2024Q3",
+    "2024Q4",
+    "2025Q1",
+    "2025Q2",
+    "2025Q3",
+    "2025Q4",
+    "2026Q1",
+    "2026Q2",
+    "2026Q3"
+  ],
+  "sec_index": {
+    "source": "SEC Financial Statement Data Sets index",
+    "url": "https://www.sec.gov/data-research/sec-markets-data/financial-statement-data-sets",
+    "downloaded_at": "2026-10-24T18:49:45+00:00",
+    "latest_available": "2026Q3",
+    "quarters_found": 71
+  },
+  "statement_scope": {
+    "debt": "BS",
+    "cash": "BS",
+    "liabilities_and_equity_control": "BS",
+    "gross_interest": "IS",
+    "net_interest": "IS",
+    "interest_income": "IS",
+    "interest_paid": "CF"
+  },
+  "interest_unions": {
+    "gross_l1_or_l2_face": 317,
+    "gross_l1_or_l2_usable_annual": 312,
+    "only_net_face": 37,
+    "only_net_usable_annual": 37,
+    "only_interest_paid_face": 41,
+    "only_interest_paid_usable_annual": 42,
+    "net_plus_interest_income_face": 2,
+    "net_plus_interest_income_usable_annual": 1,
+    "net_plus_interest_income_no_gross_face": 0,
+    "net_plus_interest_income_no_gross_usable_annual": 0
+  },
+  "cash_union": {
+    "exact_cash_face_BS": 425,
+    "exact_cash_usable_annual_BS": 416
+  },
+  "debt_class_unions": {
+    "current_face_BS": 365,
+    "current_usable_annual_BS": 361,
+    "noncurrent_face_BS": 399,
+    "noncurrent_usable_annual_BS": 390,
+    "aggregate_face_BS": 58,
+    "aggregate_usable_annual_BS": 53,
+    "any_debt_face_BS": 461,
+    "any_debt_usable_annual_BS": 452
+  },
+  "custom_label_census": {
+    "custom_debt_rows": 70,
+    "custom_debt_companies": 49,
+    "custom_non_debt_rows": 75,
+    "custom_non_debt_companies": 65,
+    "custom_equity_hint_rows": 12,
+    "custom_equity_hint_companies": 12,
+    "custom_unclassified_rows_all_BS": 553,
+    "custom_unclassified_companies_all_BS": 235,
+    "custom_unclassified_companies_passive_hint": 101
+  },
+  "closure": {
+    "strict_closure_demonstration_supported_by_current_fsds": false,
+    "closure_demonstrated_companies": null,
+    "blocker": "PRE_HAS_ORDER_BUT_NO_PARENT_CHILD_OR_CALCULATION_HIERARCHY",
+    "companies_with_LSE_on_face": 495,
+    "companies_with_usable_LSE_annual_fact": 495,
+    "companies_without_passive_hint_custom_unclassified": 395
+  },
+  "legacy_forbidden_tags": {
+    "companies_observed_on_BS_face": 0,
+    "must_be_zero_under_R3": true
+  },
+  "rules": [
+    "No canonical file is modified.",
+    "T00-bis records base_canonical_sha256 and is exempt from candidate_sha256.",
+    "Face statement means PRE inpth=0 on the statement required by the frozen contract.",
+    "Usable annual fact must also be present on that required face statement.",
+    "Usable annual fact means same annual_adsh, same annual_period, consolidated and unsegmented; flow tags require qtrs=4.",
+    "Net interest is never counted as gross interest.",
+    "Custom label collision between debt and non-debt dictionaries resolves to debt conservatively.",
+    "Strict balance-sheet closure is not fabricated when PRE lacks parent-child/calculation hierarchy.",
+    "No ticker is written to the report.",
+    "No BQS, IOS, ranking, recommendation or Blind Test is executed."
+  ]
+}
