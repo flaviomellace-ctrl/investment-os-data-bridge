@@ -1,0 +1,14 @@
+{
+  "schema": "br04_diff_vs_current_s1_v1.0",
+  "generated_at_utc": "2026-10-24T18:58:04+00:00",
+  "run_id": "40122845921",
+  "base_canonical_sha256": "51249aad299ba874b4e688993aa1a4491cc5556cf6c3f0ede339504d672e0dcf",
+  "candidate_sha256": "e108b517924ceced165d356874b5e0a4598ec9a103d452f034ff4431ab34f9e0",
+  "rows_base": 504,
+  "rows_candidate": 504,
+  "base_columns": 212,
+  "candidate_columns": 285,
+  "new_br04_columns": 73,
+  "existing_cells_changed": 0,
+  "existing_columns_string_equal": true
+}
