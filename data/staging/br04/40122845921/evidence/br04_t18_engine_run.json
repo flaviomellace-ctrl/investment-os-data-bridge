@@ -1,0 +1,164 @@
+{
+  "schema": "br04_t18_engine_run_v1.0",
+  "phase": "S4",
+  "test_id": "BR04-T18",
+  "implementation_revision": "br04_s4_engine_preflight_r1",
+  "s4_run_id": "40184495820",
+  "generated_at_utc": "2026-10-25T10:22:32Z",
+  "engine_md5": "68f626974592915d6c2a8e6583d6c77b",
+  "expected_engine_md5": "68f626974592915d6c2a8e6583d6c77b",
+  "engine_md5_verified": true,
+  "candidate_sha256": "e108b517924ceced165d356874b5e0a4598ec9a103d452f034ff4431ab34f9e0",
+  "expected_candidate_sha256": "e108b517924ceced165d356874b5e0a4598ec9a103d452f034ff4431ab34f9e0",
+  "candidate_sha256_verified": true,
+  "base_canonical_sha256": "51249aad299ba874b4e688993aa1a4491cc5556cf6c3f0ede339504d672e0dcf",
+  "s1_run_id": "40122845921",
+  "source": "data/staging/br04/40122845921/candidate (chunks)",
+  "read_from_data_current": false,
+  "chunks_declared": 50,
+  "chunks_read": 50,
+  "rows_declared": 504,
+  "rows_read": 504,
+  "columns": 285,
+  "transport_validation": {
+    "rows_from_parts": 504,
+    "rows_match_source": true,
+    "ranges_contiguous": true,
+    "all_parts_under_hard_max": true,
+    "reassembled_byte_identical": true,
+    "reassembled_sha256": "e108b517924ceced165d356874b5e0a4598ec9a103d452f034ff4431ab34f9e0"
+  },
+  "transport_independently_verified": {
+    "part_sha256_failures": 0,
+    "ranges_contiguous": true,
+    "all_parts_under_hard_max": true,
+    "reassembled_sha256_matches_source": true
+  },
+  "exceptions": 0,
+  "exception_details": [],
+  "aggregate_preflight_statistics": {
+    "rows_evaluated": 504,
+    "bqs_confidence_distribution": {
+      "HIGH": 2,
+      "PROVISIONAL": 502
+    },
+    "bqs_non_provisional": 2,
+    "bqs_provisional": 502,
+    "bqs_band_distribution_counts_only": {
+      "60-69": 118,
+      "70-79": 117,
+      "80-89": 98,
+      "<60": 146,
+      ">=90": 19,
+      "non_calcolabile": 6
+    },
+    "gate_bqs60_coverage70": 348,
+    "ios_computable_total": 310,
+    "ios_computable_by_variant": {
+      "IOS_BANK": {
+        "at_gate": 22,
+        "computable": 20
+      },
+      "IOS_GENERAL": {
+        "at_gate": 293,
+        "computable": 290
+      },
+      "IOS_INSURANCE": {
+        "at_gate": 16,
+        "computable": 0
+      },
+      "IOS_REIT": {
+        "at_gate": 17,
+        "computable": 0
+      }
+    },
+    "ios_blocked_reasons_counts": {
+      "IOS_BANK :: book value / ROE / crescita sostenibile MISSING": 2,
+      "IOS_GENERAL :: cassa operativa MISSING": 2,
+      "IOS_GENERAL :: market cap MISSING": 1,
+      "IOS_INSURANCE :: book value / ROE / crescita sostenibile MISSING": 1,
+      "IOS_INSURANCE :: combined ratio MISSING: sottoscrizione non valutabile": 15,
+      "IOS_REIT :: AFFO MISSING: FFO e capex di manutenzione non separati": 17
+    },
+    "provisional_components_counts": {
+      "balance": 318,
+      "economics": 166,
+      "governance": 12,
+      "mgmt": 225,
+      "moat": 484,
+      "runway": 131
+    },
+    "br04_field_states": {
+      "net_debt_to_ocf": {
+        "MISSING": 324,
+        "NOT_APPLICABLE": 20,
+        "NUMERIC": 160
+      },
+      "interest_coverage": {
+        "MISSING": 168,
+        "NOT_APPLICABLE": 20,
+        "NUMERIC": 316
+      },
+      "roic": {
+        "CONFLICTING": 1,
+        "MISSING": 454,
+        "NOT_APPLICABLE": 49
+      }
+    },
+    "br04_total_debt_status": {
+      "CONFLICTING": 5,
+      "MISSING": 41,
+      "PARTIAL": 458
+    },
+    "br04_interest_status": {
+      "MISSING": 86,
+      "PARTIAL": 106,
+      "PRESENT": 312
+    },
+    "br04_status": {
+      "CONFLICTING": 5,
+      "MISSING": 24,
+      "PARTIAL": 475
+    },
+    "br04_flag_counts": {
+      "BANK_INTEREST_IS_FUNDING_COST": 20,
+      "BANK_LEVERAGE_VIA_EQUITY_TO_ASSETS": 20,
+      "BS_CLOSURE_FAILED": 499,
+      "CASH_MISSING": 81,
+      "CUSTOM_TAG_DEBT_BY_LABEL": 46,
+      "DEBT_CONFLICTING_PRUDENTIAL_VALUE": 5,
+      "EBIT_NON_POSITIVE": 17,
+      "FACE_LINE_VALUE_NOT_FOUND": 17,
+      "FINANCE_LEASE_MISSING": 479,
+      "FINANCE_LEASE_PARTIAL_COMPONENT": 7,
+      "FSDS_FACE_ONLY": 499,
+      "INSURER_OCF_INCLUDES_FLOAT": 29,
+      "INTEREST_CASH_BASIS": 106,
+      "INTEREST_DEBT_ONLY": 12,
+      "INTEREST_MISSING_WITH_DEBT": 59,
+      "INTEREST_NET_ONLY": 39,
+      "LEVERAGE_ABOVE_THRESHOLD_BY_LOWER_BOUND": 159,
+      "LEVERAGE_BELOW_THRESHOLD_BY_UPPER_BOUND": 96,
+      "LEVERAGE_THRESHOLD_INDETERMINATE": 211,
+      "NET_DEBT_NOT_SERVICEABLE_FROM_OCF": 3,
+      "NO_ANNUAL_ADSH": 5,
+      "OCF_MISSING": 12,
+      "OPERATING_LEASE_MISSING": 267,
+      "OPERATING_LEASE_PARTIAL_COMPONENT": 92,
+      "REIT_BOOK_ROIC_DEPRECIATION_DISTORTED": 30,
+      "ROIC_DEBT_PARTIAL": 416,
+      "STI_NOT_NETTED": 58,
+      "TOTAL_DEBT_BELOW_LEGACY": 2,
+      "TOTAL_LIABILITIES_EQUITY_RESIDUAL_REJECTED": 130,
+      "UTILITY_SECURITIZATION_INCLUDED": 3
+    },
+    "ios_leverage_indeterminate_rows": 211
+  },
+  "individual_data_emitted": false,
+  "ranking_emitted": false,
+  "tickers_emitted": false,
+  "blind_test_executed": false,
+  "data_current_modified": false,
+  "candidate_promoted": false,
+  "overall_passed": true
+}
