@@ -1,0 +1,44 @@
+{
+  "schema": "br04_transport_v1.0",
+  "generated_at_utc": "2026-10-25T10:01:04.431320+00:00",
+  "phase": "S3",
+  "implementation_revision": "br04_s3_transport_r2",
+  "s3_run_id": "40183001118",
+  "s1_run_id": "40122845921",
+  "base_canonical_sha256": "51249aad299ba874b4e688993aa1a4491cc5556cf6c3f0ede339504d672e0dcf",
+  "canonical_sha256_before_s3": "51249aad299ba874b4e688993aa1a4491cc5556cf6c3f0ede339504d672e0dcf",
+  "canonical_sha256_after_s3": "51249aad299ba874b4e688993aa1a4491cc5556cf6c3f0ede339504d672e0dcf",
+  "candidate_sha256": "e108b517924ceced165d356874b5e0a4598ec9a103d452f034ff4431ab34f9e0",
+  "candidate_rows": 504,
+  "candidate_columns": 285,
+  "total_parts": 50,
+  "splitter_schema": "investment_os_byte_preserving_splitter_v1.0",
+  "splitter_byte_preserving": true,
+  "target_max_bytes": 48000,
+  "hard_max_bytes": 58000,
+  "test": {
+    "id": "BR04-T20",
+    "status": "PASS",
+    "checks": {
+      "rows_match_source": true,
+      "ranges_contiguous": true,
+      "all_parts_under_hard_max": true,
+      "source_sha256_verified": true,
+      "reassembled_byte_identical": true,
+      "reassembled_sha256_verified": true,
+      "all_part_sha256_verified": true,
+      "candidate_unchanged_by_s3": true,
+      "canonical_unchanged_by_s3": true,
+      "s2_chain_of_custody_match": true
+    },
+    "part_hash_failures": 0
+  },
+  "overall_passed": true,
+  "invariants": [
+    "Candidate CSV was not modified by S3.",
+    "data/current was not modified by S3.",
+    "Chunks were generated from the exact S1 candidate.",
+    "Reassembly is byte-identical to the candidate.",
+    "No ranking, BQS, IOS, recommendation or Blind Test was executed."
+  ]
+}
