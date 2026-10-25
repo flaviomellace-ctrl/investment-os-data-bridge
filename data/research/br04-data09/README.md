@@ -40,7 +40,7 @@ From repository root:
 The script writes only data/research/br04-data09/RESEARCH_NOT_PROMOTED.csv and
 reconstruction.json. The CSV is reproducible and is not checked in. Input bytes
 and the 75-cell manifest are SHA-256 pinned. Expected output SHA-256:
-a07152b3156b4dcfed065db3fe613a919604d4093084275c530d533695996449.
+9c51a0b017cd769425c128721e935819b0634942d050142b82c6bcae3bb2429d.
 
 Local validation: exact deterministic reconstruction; four test methods including
 five semantic rejection cases; input/manifest tamper rejection; all legacy cells
@@ -49,11 +49,10 @@ This resolves five mapping conflicts, not all missing data or economic cases.
 
 ## Remaining validation
 
-The new hash has NOT passed the complete S2, S3 or S4 workflows. Existing evidence
-for e108b517...f9e0 is not transferable. Source-component audit reconciliation
-must accompany the added source facts before those workflows can approve this
-candidate. No numeric staging directory is created, so the automatic selection
-of the S1–S4 pipeline cannot pick DATA09. Do not dispatch S6.
+The research S2 extension is implemented below; its remote result is recorded
+separately. S3/S4 have not been run on this hash. Existing approvals for the
+original S1 are not transferable. No numeric staging directory is created;
+promotion workflows cannot select DATA09. Do not dispatch S6.
 
 ## Primary-component supplement
 
@@ -68,8 +67,25 @@ Seven negative semantic cases test wrong accession, period, unit, value,
 overlapping debt coverage, asset-as-debt classification and lease PV mismatch;
 byte tampering of candidate or primary evidence also fails closed.
 
-Full S2 integration remains pending: source_validation currently verifies selected
-components against SEC FSDS NUM and face tables. It must explicitly distinguish
-and validate the primary-document supplement, while preserving all unamended FSDS
-checks. Copying these links into br04_components.csv and labelling them FSDS would
-misrepresent their origin. S3/S4 have not been run on the DATA09 hash.
+## Research S2 integration (explicit opt-in)
+
+`python src/regress_br04_candidate.py --research-data09` now reconstructs DATA09
+and validates its primary evidence before applying the regression suite. Default
+S1 behavior is unchanged. Research outputs stay outside numeric staging and use
+a distinct `S2_RESEARCH` phase/schema with original_fsds_contract_approval=false.
+
+The in-memory component view preserves 3,937 FSDS rows, supersedes six incorrect
+associations and adds 28 primary links. JPM's 1,493,429m loans asset is explicitly
+reclassified from CUSTOM_DEBT to CUSTOM_NON_DEBT using its pinned asset evidence;
+the original audit and every source staging file are retained unchanged.
+
+T11 gains a hash-pinned primary-XBRL path. T24 still independently requires SEC
+PRE balance-sheet face membership for all total-debt components; primary rows
+are matched by filing, BS, tag and taxonomy version because they have no PRE line
+number. No absence is waived. The PR workflow downloads SEC quarters and records
+all 29 tests and three blocking gates against the new candidate hash.
+
+The five amended rows now carry PRIMARY_DOCUMENT_SUPPLEMENTED instead of
+FSDS_FACE_ONLY, making their mixed provenance explicit. This changes the output
+hash from a07152b3... to 9c51a0b017cd769425c128721e935819b0634942d050142b82c6bcae3bb2429d;
+the edit count remains 75. Results for the previous hash do not transfer.

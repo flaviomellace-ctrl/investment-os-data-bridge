@@ -16,7 +16,7 @@ class RebaseTests(unittest.TestCase):
 
     def test_reconstruction_exact_and_protected(self):
         result, report = rebase.reconstruct(self.source, self.manifest)
-        self.assertEqual(hashlib.sha256(result).hexdigest(), 'a07152b3156b4dcfed065db3fe613a919604d4093084275c530d533695996449')
+        self.assertEqual(hashlib.sha256(result).hexdigest(), '9c51a0b017cd769425c128721e935819b0634942d050142b82c6bcae3bb2429d')
         self.assertEqual(report['changed_cells'], 75)
         self.assertEqual(report['leverage_indeterminate'], 212)
         self.assertNotIn('CONFLICTING', report['br04_status'])

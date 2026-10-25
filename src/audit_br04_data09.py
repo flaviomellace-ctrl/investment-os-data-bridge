@@ -5,7 +5,7 @@ import io
 import json
 from pathlib import Path
 
-CANDIDATE_SHA = 'a07152b3156b4dcfed065db3fe613a919604d4093084275c530d533695996449'
+CANDIDATE_SHA = '9c51a0b017cd769425c128721e935819b0634942d050142b82c6bcae3bb2429d'
 EVIDENCE_SHA = '2c38aa6d339df54562936e07d3ec66520c3f40afce38dac5ec544de32b0071f9'
 SELECTED = ['short', 'long', 'collateral_financing', 'subordinated', 'cfe_notes']
 

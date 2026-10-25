@@ -1,0 +1,48 @@
+name: BR-04 DATA09 Research Regression
+on:
+  pull_request:
+    paths:
+      - 'src/*br04*'
+      - 'tests/test_br04*'
+      - 'data/research/br04-data09/**'
+      - '.github/workflows/br04-data09-research.yml'
+permissions:
+  contents: read
+jobs:
+  research-regression:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Reconstruct and validate research candidate
+        run: |
+          python src/rebase_br04_data09.py --input data/staging/br04/40122845921/candidate/sp500_fundamentals.csv
+          python src/audit_br04_data09.py
+          python -m unittest discover -s tests -v
+      - name: Research S2 with independent SEC re-read
+        env:
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+        run: python src/regress_br04_candidate.py --research-data09
+      - name: Print aggregate report and enforce research gate
+        if: always()
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('data/research/br04-data09/research_regression.json')
+          if not p.exists():
+              raise SystemExit('Research regression did not produce a report')
+          r = json.loads(p.read_text())
+          print('DATA09_RESEARCH_REPORT=' + json.dumps(r, separators=(',', ':')))
+          assert r['schema'] == 'br04_data09_research_regression_v1'
+          assert r['original_fsds_contract_approval'] is False
+          assert r['candidate_promoted'] is False
+          assert r['buy_add_allowed'] is False
+          assert r['overall_passed'], (r['failed_tests'], r['failed_gates'])
+          PY

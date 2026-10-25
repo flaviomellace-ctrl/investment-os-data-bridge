@@ -7,7 +7,7 @@ from collections import Counter
 from pathlib import Path
 
 INPUT_SHA = 'e108b517924ceced165d356874b5e0a4598ec9a103d452f034ff4431ab34f9e0'
-MANIFEST_SHA = '046a14230ee2336e190e2c31a6a5297227accd74acec4151fab2ec03d80cc1e6'
+MANIFEST_SHA = '59b896d7949c22be95b08c6f7073519ed00a65180b34549aeca36c6b26c91479'
 
 def require(ok, message):
     if not ok:
