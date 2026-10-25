@@ -42,6 +42,7 @@ import pandas as pd
 
 import bridge
 import build_br04_candidate as builder
+from br04_lease_regression import valid_partial_operating_lease
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -790,6 +791,12 @@ def main() -> int:
         for value_col, comp_col in reconstruct_pairs:
             value = finite(row.get(value_col))
             comps, parsed = parse_components(row.get(comp_col))
+            if (value_col == "operating_lease_liabilities"
+                    and "OPERATING_LEASE_PARTIAL_COMPONENT" in flags_of(row)):
+                checked += 1
+                if not valid_partial_operating_lease(row, components_rows):
+                    failures += 1
+                continue
             if not comps:
                 continue
             checked += 1
