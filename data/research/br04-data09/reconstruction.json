@@ -1,0 +1,26 @@
+{
+  "schema": "br04_data09_reconstruction_v1",
+  "input_sha256": "e108b517924ceced165d356874b5e0a4598ec9a103d452f034ff4431ab34f9e0",
+  "output_sha256": "a07152b3156b4dcfed065db3fe613a919604d4093084275c530d533695996449",
+  "manifest_sha256": "046a14230ee2336e190e2c31a6a5297227accd74acec4151fab2ec03d80cc1e6",
+  "rows": 504,
+  "columns": 285,
+  "changed_cells": 75,
+  "changed_rows": 5,
+  "unchanged_rows": 499,
+  "legacy_columns_preserved": 212,
+  "br04_status": {
+    "PARTIAL": 480,
+    "MISSING": 24
+  },
+  "leverage_indeterminate": 212,
+  "source_quarters_preserved": true,
+  "regression_s2_for_new_hash": false,
+  "transport_s3_for_new_hash": false,
+  "engine_s4_for_new_hash": false,
+  "independent_review_completed": false,
+  "economic_clearance": false,
+  "candidate_promoted": false,
+  "buy_add_allowed": false,
+  "system_live": false
+}

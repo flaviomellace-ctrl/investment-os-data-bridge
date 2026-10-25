@@ -1,0 +1,1736 @@
+{
+  "data07_reconstruction_sha256": "2ce0e525cdff6faa8d2051b9982aad8505ade199611c469a162605be53af0ef8",
+  "lease_evidence": [
+    {
+      "ticker": "JPM",
+      "accession": "0001628280-26-008131",
+      "source_hashes": {
+        "xml": "9fe211a6d6f7ec3af368f81c820868b54d7ea02ca2fe9776e72d7a41e2472126",
+        "html": "c92ca3fb1db48edf5843a8a721a78cdca4ad21091d8efaf6165dc57dfe688a81"
+      },
+      "lease_observations": [
+        {
+          "direct_fact": {
+            "id": "f-6582",
+            "concept": "{http://fasb.org/us-gaap/2025}OperatingLeaseLiability",
+            "context_ref": "c-30",
+            "cik": "0000019617",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 9337000000
+          },
+          "crosscheck": "INSTANCE_AND_PRIMARY_HTML",
+          "caption": "Lease liabilities9,3378,900",
+          "undiscounted": {
+            "id": "f-6610",
+            "concept": "{http://fasb.org/us-gaap/2025}LesseeOperatingLeaseLiabilityPaymentsDue",
+            "context_ref": "c-30",
+            "cik": "0000019617",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 11255000000
+          },
+          "interest": {
+            "id": "f-6611",
+            "concept": "{http://fasb.org/us-gaap/2025}LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "context_ref": "c-30",
+            "cik": "0000019617",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 1918000000
+          }
+        }
+      ],
+      "notes": [
+        {
+          "id": "f-6572",
+          "concept": "{http://fasb.org/us-gaap/2025}LesseeOperatingLeasesTextBlock",
+          "text": "LeasesFirm as lesseeAt December 31, 2025 JPMorganChase and its subsidiaries were obligated under a number of noncancellable leases, predominantly operating leases for premises and equipment used primarily for business purposes. These leases generally have terms of 20 years or less, determined based on the contractual maturity of the lease, and include periods covered by options to extend or terminate the lease when the Firm is reasonably certain that it will exercise those options. All leases with lease terms greater than twelve months are reported as a lease liability with a corresponding right-of-use (\u201cROU\u201d) asset. None of these lease agreements impose restrictions on the Firm\u2019s ability to pay dividends, engage in debt or equity financing transactions or enter into further lease agreements. Certain of these leases contain escalation clauses that will increase rental payments based on maintenance, utility and tax increases, which are non-lease components. The Firm elected not to separate lease and non-lease components of a contract for its real estate leases. As such, real estate lease payments represent payments on both lease and non-lease components. Operating lease liabilities and ROU assets are recognized at the lease commencement date based on the present value of the future minimum lease payments over the lease term. The future lease payments are discounted at a rate that estimates the Firm\u2019s collateralized borrowing rate for financing instruments of a similar term and are included in accounts payable and other liabilities. The operating lease ROU assets, predominantly included in premises and equipment, also include any lease prepayments made, plus initial direct costs incurred, less any lease incentives received. Rental expense associated with operating leases is recognized on a straight-line basis over the lease term, and generally included in occupancy expense in the Consolidated statements of income. The carrying values of the Firm\u2019s operating leases were as follows: December 31,(in millions, except where otherwise noted)20252024Right-of-use assets$8,901$8,494Lease liabilities9,3378,900Weighted average remaining lease term (in years)8.28.3Weighted average discount rate4.43 %4.24 %Year ended December 31, (in millions)202520242023Supplemental cash flow informationCash paid for amounts included in the measurement of lease liabilities - operating cash flows$1,759$1,734$1,662Supplemental non-cash informationRight-of-use assets obtained in exchange for operating lease obligations$1,834$1,565$2,094 Year ended December 31, (in millions)202520242023Rental expenseGross rental expense$2,388 $2,231 $2,079 Sublease rental income(28)(41)(72)Net rental expense$2,360 $2,190 $2,007 The following table presents future payments under operating leases as of December 31, 2025.Year ended December 31, (in millions)2026$1,767 20271,699 20281,539 20291,322 20301,094 After 20303,834 Total future minimum lease payments11,255 Less: Imputed interest(1,918)Total$9,337 In addition to the table above, as of December 31, 2025, the Firm had additional future operating lease commitments of $1.9 billion that were signed but had not yet commenced. These operating leases will commence between 2026 and 2029 with lease terms up to 21 years.Firm as lessorThe Firm provides auto and equipment lease financing to its customers through lease arrangements with lease terms that may contain renewal, termination and/or purchase options. The Firm\u2019s lease financings are predominantly auto operating leases. These assets subject to operating leases are recognized in other assets on the Firm\u2019s Consolidated balance sheets and are depreciated on a straight-line basis over the lease term to reduce the asset to its estimated residual value. Depreciation expense is included in technology, communications and equipment expense in the Consolidated statements of income. The Firm\u2019s lease income is generally recognized on a straight-line basis over the lease term and is included in other income in the Consolidated statements of income. On a periodic basis, the Firm assesses leased assets for impairment, and if the carrying amount of the leased asset exceeds the undiscounted cash flows from the lease payments and the estimated residual value upon disposition of the leased asset, an impairment is recognized. The risk of loss on auto and equipment leased assets relating to the residual value of the leased assets is monitored through projections of the asset residual values at lease origination and periodic review of residual values, and is mitigated through arrangements with certain manufacturers or lessees. The following table presents the carrying value of assets subject to leases reported on the Consolidated balance sheets. December 31,(in millions)20252024Carrying value of assets subject to operating leases, net of accumulated depreciation$20,130 $12,988 Accumulated depreciation3,177 2,509 The following table presents the Firm\u2019s operating lease income and the related depreciation expense on the Consolidated statements of income. Year ended December 31, (in millions)202520242023Operating lease income$3,803 $2,795 $2,843 Depreciation expense2,418 1,685 1,778 The following table presents future receipts under operating leases as of December 31, 2025. Year ended December 31, (in millions)2026$3,637 20272,645 20281,023 202944 20304 After 2030\u2014 Total future minimum lease receipts$7,353",
+          "text_sha256": "f66ed182501d6e66817594819a58f0298b4b07fa52ec27a3095a7cb5ffc515b7"
+        },
+        {
+          "id": "f-6650",
+          "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtTextBlock",
+          "text": "Long-term debtJPMorganChase issues long-term debt denominated in various currencies, predominantly U.S. dollars, with both fixed and variable interest rates. Included in senior and subordinated debt below are various equity-linked or other indexed instruments, which the Firm has elected to measure at fair value. Changes in fair value are recorded in principal transactions revenue in the Consolidated statements of income, except for unrealized gains/(losses) due to DVA which are recorded in OCI. The following table is a summary of long-term debt carrying values (including unamortized premiums and discounts, issuance costs, valuation adjustments and fair value adjustments, where applicable) by remaining contractual maturity as of December 31, 2025.By remaining maturity atDecember 31,(in millions, except rates)20252024Under 1 year1-5 yearsAfter 5 yearsTotalTotalParent companySenior debt:Fixed rate$11,761 $91,867 $122,443 $226,071 $214,911 Variable rate48 6,795 1,618 8,461 8,655 Interest rates(f)2.84 %3.74 %4.14 %3.90 %3.71 %Subordinated debt:Fixed rate$2,489 $3,099 $12,919 $18,507 $14,457 Variable rate\u2014 \u2014 \u2014 \u2014 \u2014 Interest rates(f)4.83 %4.63 %4.96 %4.89 %4.76 %Subtotal$14,298 $101,761 $136,980 $253,039 $238,023 SubsidiariesFederal Home Loan Banks advances:Fixed rate$1,236 $405 $18 $1,659 $9,257 Variable rate\u2014 16,500 \u2014 16,500 20,000 Interest rates(f)3.33 %4.05 %5.65 %4.01 %4.67 %Purchase Money Note:(a)Fixed rate$\u2014 $49,435 $\u2014 $49,435 $49,208 Interest rates(f)\u2014 %3.40 %\u2014 %3.40 %3.40 %Senior debt:Fixed rate$5,896 $19,908 $11,973 $37,777 $26,545 Variable rate21,159 43,393 10,650 75,202 56,782 Interest rates(f)5.02 %3.88%1.35 %3.66 %3.81 %Subtotal$28,291 $129,641 $22,641 $180,573 $161,792 Junior subordinated debt:Fixed rate$\u2014 $495 $\u2014 $495 $488 Variable rate\u2014 421 678 1,099 1,115 Interest rates(f)\u2014 %6.87 %5.06 %6.10 %6.58 %Subtotal$\u2014 $916 $678 $1,594 $1,603 Total long-term debt(b)(c)(d)$42,589 $232,318 $160,299 $435,206 (g)(h)$401,418 Long-term beneficial interests:Fixed rate$1,156 $4,728 $\u2014 $5,884 $5,312 Variable rate\u2014 13 120 133 166 Interest rates(f)5.16 %4.54 %3.14 %4.63 %4.62 %Total long-term beneficial interests(e)$1,156 $4,741 $120 $6,017 $5,478 (a)Reflects the Purchase Money Note associated with First Republic. Refer to Note 34 for additional information.(b)Included long-term debt of $70.0 billion and $80.9 billion secured by assets totaling $191.0 billion and $185.5 billion at December 31, 2025 and 2024, respectively. The amount of long-term debt secured by assets does not include amounts related to hybrid instruments. (c)Included $134.6 billion and $100.8 billion of long-term debt accounted for at fair value at December 31, 2025 and 2024, respectively. (d)Included $18.1 billion and $13.5 billion of outstanding zero-coupon notes at December 31, 2025 and 2024, respectively. The aggregate principal amount of these notes at their respective maturities is $57.6 billion and $50.2 billion, respectively. The aggregate principal amount reflects the contractual principal payment at maturity, which may exceed the contractual principal payment at the Firm\u2019s next call date, if applicable.(e)Included on the Consolidated balance sheets in beneficial interests issued by consolidated VIEs. Also included amounts accounted for at fair value which were not material as of December 31, 2025 and 2024. Excluded short-term commercial paper and other short-term beneficial interests of $21.9 billion and $21.8 billion at December 31, 2025 and 2024, respectively. (f)The interest rates shown are the weighted average of contractual rates in effect at December 31, 2025 and 2024, respectively, including non-U.S. dollar fixed- and variable-rate issuances, which excludes the effects of the associated derivative instruments used in hedge accounting relationships, if applicable. The interest rates shown exclude structured notes accounted for at fair value.(g)As of December 31, 2025, long-term debt in the aggregate of $320.4 billion was redeemable at the option of JPMorganChase, in whole or in part, prior to maturity, based on the terms specified in the respective instruments.(h)The aggregate carrying values of debt that matures in each of the five years subsequent to 2025 is $42.6 billion in 2026, $55.8 billion in 2027, $105.4 billion in 2028, $31.4 billion in 2029 and $39.8 billion in 2030.The weighted-average contractual interest rates for total long-term debt excluding structured notes accounted for at fair value were 3.89% and 3.82% as of December 31, 2025 and 2024, respectively. In order to modify exposure to interest rate and currency exchange rate movements, JPMorganChase utilizes derivative instruments, primarily interest rate and cross-currency interest rate swaps, in conjunction with some of its debt issuances. The use of these instruments modifies the Firm\u2019s interest expense on the associated debt. The modified weighted-average interest rates for total long-term debt, including the effects of related derivative instruments, were 4.75% and 5.15% as of December 31, 2025 and 2024, respectively. JPMorgan Chase & Co. has guaranteed certain long-term debt of its subsidiaries, including structured notes. These guarantees rank pari passu with the Firm\u2019s other unsecured and unsubordinated indebtedness. The amount of such guaranteed long-term debt and structured notes was $47.6 billion and $41.2 billion at December 31, 2025 and 2024, respectively. The Firm\u2019s unsecured debt does not contain requirements that would call for an acceleration of payments, maturities or changes in the structure of the existing debt, provide any limitations on future borrowings or require additional collateral, based on unfavorable changes in the Firm\u2019s credit ratings, financial ratios, earnings or stock price.",
+          "text_sha256": "a433dca5acc54e2af064b2a60059e19ec0c8a33e111ca3a0775d308167e51968"
+        }
+      ]
+    },
+    {
+      "ticker": "CVX",
+      "accession": "0000093410-26-000078",
+      "source_hashes": {
+        "xml": "383742ba0900c6bad8fbea17085f2854a2264ca1d3673de71654c94b76ddbe98",
+        "html": "4731f02b5688823678b8978c66513f0f36341afaf25e49cd133db05fc7676ad8"
+      },
+      "lease_observations": [
+        {
+          "direct_fact": {
+            "id": "f-814",
+            "concept": "{http://fasb.org/us-gaap/2025}OperatingLeaseLiability",
+            "context_ref": "c-13",
+            "cik": "0000093410",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 5985000000
+          },
+          "crosscheck": "INSTANCE_AND_PRIMARY_HTML",
+          "caption": "Total lease liabilities $5,985 $1,445 $5,070 $604",
+          "undiscounted": {
+            "id": "f-866",
+            "concept": "{http://fasb.org/us-gaap/2025}LesseeOperatingLeaseLiabilityPaymentsDue",
+            "context_ref": "c-13",
+            "cik": "0000093410",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 6901000000
+          },
+          "interest": {
+            "id": "f-868",
+            "concept": "{http://fasb.org/us-gaap/2025}LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "context_ref": "c-13",
+            "cik": "0000093410",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 916000000
+          }
+        },
+        {
+          "direct_fact": {
+            "id": "f-815",
+            "concept": "{http://fasb.org/us-gaap/2025}FinanceLeaseLiability",
+            "context_ref": "c-13",
+            "cik": "0000093410",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 1445000000
+          },
+          "crosscheck": "INSTANCE_AND_PRIMARY_HTML",
+          "caption": "Total lease liabilities $5,985 $1,445 $5,070 $604",
+          "undiscounted": {
+            "id": "f-867",
+            "concept": "{http://fasb.org/us-gaap/2025}FinanceLeaseLiabilityPaymentsDue",
+            "context_ref": "c-13",
+            "cik": "0000093410",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 1719000000
+          },
+          "interest": {
+            "id": "f-869",
+            "concept": "{http://fasb.org/us-gaap/2025}FinanceLeaseLiabilityUndiscountedExcessAmount",
+            "context_ref": "c-13",
+            "cik": "0000093410",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 274000000
+          }
+        }
+      ],
+      "notes": [
+        {
+          "id": "f-778",
+          "concept": "{http://fasb.org/us-gaap/2025}LesseeOperatingLeasesTextBlock",
+          "text": "Lease CommitmentsThe company enters into leasing arrangements as a lessee; any lessor arrangements are not significant. Operating lease arrangements mainly involve land, bareboat charters, terminals, drill ships, drilling rigs, time chartered vessels, office buildings and warehouses, and exploration and production equipment. Finance leases primarily include facilities, vessels and office buildings. Details of the right-of-use assets and lease liabilities for operating and finance leases, including the balance sheet presentation, are as follows:At December 31, 2025At December 31, 2024OperatingLeasesFinanceLeasesOperatingLeasesFinanceLeasesDeferred charges and other assets$6,054 $\u2014 $5,315 $\u2014 Properties, plant and equipment, net\u2014 1,413 \u2014 570 Right-of-use assets*$6,054 $1,413 $5,315 $570 Accrued liabilities$1,831 $\u2014 $1,519 $\u2014 Short-term debt\u2014 786 \u2014 58 Current lease liabilities1,831 786 1,519 58 Deferred credits and other noncurrent obligations4,154 \u2014 3,551 \u2014 Long-term debt\u2014 659 \u2014 546 Noncurrent lease liabilities4,154 659 3,551 546 Total lease liabilities $5,985 $1,445 $5,070 $604 Weighted-average remaining lease term (in years)6.66.56.313.2Weighted-average discount rate4.0 %4.9 %3.7 %4.6 %* Includes non-cash additions of $2,845 and $971 in 2025, and $2,205 and $40 in 2024 for right-of-use assets obtained in exchange for new and modified lease liabilities for operating and finance leases, respectively. Total lease costs consist of both amounts recognized in the Consolidated Statement of Income during the period and amounts capitalized as part of the cost of another asset. Total lease costs incurred for operating and finance leases were as follows:Year-ended December 31202520242023Operating lease costs*$3,719 $3,447 $2,984 Finance lease costs 154 8352Total lease costs$3,873 $3,530 $3,036 * Includes variable and short-term lease costs.Cash paid for amounts included in the measurement of lease liabilities was as follows:Year-ended December 31202520242023Operating cash flows from operating leases$2,838 $2,468 $2,271 Investing cash flows from operating leases881 979 713 Operating cash flows from finance leases42 26 15 Financing cash flows from finance leases136 67 42 At December 31, 2025, the estimated future undiscounted cash flows for operating and finance leases were as follows:At December 31, 2025Operating LeasesFinanceLeasesYear2026$2,017 $825 20271,369 98 2028898 96 2029551 93 2030365 83 Thereafter1,701 524 Total$6,901 $1,719 Less: Amounts representing interest916 274 Total lease liabilities$5,985 $1,445 Additionally, the company has $1,316 in future undiscounted cash flows for operating leases not yet commenced. These leases are primarily for drilling rigs, time chartered vessels, exploration and production equipment and storage tanks. For those leasing arrangements where the underlying asset is not yet constructed, the lessor is primarily involved in the design and construction of the asset.",
+          "text_sha256": "6a3c2743f8d50d5e9c7158cb6716f5f9dbacfaa94971400a97c8ac89758313fd"
+        },
+        {
+          "id": "f-2043",
+          "concept": "{http://fasb.org/us-gaap/2025}ShortTermDebtTextBlock",
+          "text": "Short-Term Debt At December 3120252024Commercial paper$4,642 $5,386 Notes payable to banks and others with originating terms of one year or less96 131 Current maturities of long-term debt2,345 4,012 Current maturities of long-term finance leases786 58 Redeemable long-term obligations3,049 3,069 Subtotal10,918 12,656 Reclassified to long-term debt(9,941)(8,250)Total short-term debt$977 $4,406 Redeemable long-term obligations consist primarily of tax-exempt variable-rate put bonds that are included as current liabilities because they become redeemable at the option of the bondholders during the year following the balance sheet date. The company may periodically enter into interest rate swaps on a portion of its short-term debt. At December 31, 2025, the company had no interest rate swaps on short-term debt. At December 31, 2025, the company had $11,400 in 364-day committed credit facilities with various major banks that enable the refinancing of short-term obligations. The credit facilities allow the company the option to convert outstanding short-term obligations into a term loan for a period of up to one year from the facilities termination date. This supports commercial paper borrowing and can also be used for general corporate purposes. The company\u2019s practice has been to replace expiring commitments with new commitments on substantially the same terms, maintaining levels management believes appropriate. Any borrowings under these facilities would be unsecured indebtedness at interest rates based on the Secured Overnight Financing Rate (SOFR), or an average of base lending rates published by specified banks and on terms reflecting the company\u2019s strong credit rating. No borrowings were outstanding under these facilities at December 31, 2025. The company classified $9,941 and $8,250 of short-term debt as long-term at December 31, 2025 and 2024, respectively. Settlement of these obligations is not expected to require the use of working capital within one year, as the company had the intent and the ability, as evidenced by committed credit facilities, to continue refinancing them.",
+          "text_sha256": "341fc5f15c9bf5db8fd617c7c926d310786310898bf90012fb082e496dc962df"
+        },
+        {
+          "id": "f-2066",
+          "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtTextBlock",
+          "text": "Long-Term Debt Total long-term debt including finance lease liabilities at December 31, 2025, was $39,781. The company\u2019s long-term debt outstanding at year-end 2025 and 2024 was as follows: At December 3120252024Weighted Average Interest Rate (%)1Range of Interest Rates (%)2PrincipalPrincipalNotes due 20262.9542,250 2,250 Notes due 20273.5941.018 - 8.0005,000 2,000 Notes due 20284.7623.850 - 5.8754,700 600 Notes due 20295.8723.250 - 7.8751,567 500 Notes due 20303.9552.236 - 5.5005,350 1,500 Notes and Debentures due 20317.4847.300 - 8.625734 102 Notes and Debentures due 20324.9444.500 - 8.6252,083 183 Notes due 20337.125540 \u2014 Notes due 20354.9094.850 - 4.9801,650 \u2014 Notes due 20405.1522.978 - 6.0001,043 293 Notes due 20415.6965.600 - 6.0001,646 397 Notes due 20435.250330 330 Notes due 20445.050222 222 Notes due 20475.5694.950 - 5.800687 187 Notes due 20494.200237 237 Notes due 20502.7632.343 - 3.0781,750 1,750 Notes due 20753.722154 \u2014 Debentures due 20977.25060 60 Bank loans due 2026 to 20285.4602.448 - 8.040532 193 Term loans and credit facility borrowings7.3207.250 - 8.136367 \u2014 Medium-term notes, maturing from 2033 to 20385.7863.688 - 7.84020 20 Notes due 2025\u2014 4,012 Total including debt due within one year$30,922 14,836 Debt due within one year(2,345)(4,012)Fair market value adjustment for debt acquired in the Noble and Hess acquisitions649 529 Reclassified from short-term debt9,941 8,250 Unamortized discounts and debt issuance costs(45)(14)Finance lease liabilities3659 546 Total long-term debt$39,781 $20,135 1 Weighted-average interest rate at December 31, 2025.2 Range of interest rates at December 31, 2025.3 For details on finance lease liabilities, see Note 5 Lease Commitments. Chevron has an automatic shelf registration statement that expires in November 2027. This registration statement is for an unspecified amount of nonconvertible debt securities issued or guaranteed by Chevron Corporation or CUSA.Long-term debt excluding finance lease liabilities with a principal balance of $30,922 matures as follows: 2026 \u2013 $2,345; 2027 \u2013 $5,723; 2028 \u2013 $4,752; 2029 \u2013 $1,567; 2030 \u2013 $5,350; and after 2030 \u2013 $11,185.See Note 9 Fair Value Measurements for information concerning the fair value of the company\u2019s long-term debt.",
+          "text_sha256": "1260034e19a2c54c5e6df86ba5fb537f648e64aab10980a15ee0b786e7f5e955"
+        }
+      ]
+    },
+    {
+      "ticker": "USB",
+      "accession": "0000036104-26-000011",
+      "source_hashes": {
+        "xml": "be4faaba337c204fa7f007eb51d161a7e6d09273faa9f29222ee2946563ac2da",
+        "html": "b53931f103a1662a81938ece1fa134e64fb5509769db6ec9d9361d779180c122"
+      },
+      "lease_observations": [
+        {
+          "direct_fact": {
+            "id": "f-2205",
+            "concept": "{http://fasb.org/us-gaap/2025}OperatingLeaseLiability",
+            "context_ref": "c-14",
+            "cik": "0000036104",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 1419000000
+          },
+          "crosscheck": "INSTANCE_AND_EMBEDDED_NOTE_6",
+          "undiscounted": {
+            "id": "f-2201",
+            "concept": "{http://fasb.org/us-gaap/2025}LesseeOperatingLeaseLiabilityPaymentsDue",
+            "context_ref": "c-14",
+            "cik": "0000036104",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 1748000000
+          },
+          "interest": {
+            "id": "f-2203",
+            "concept": "{http://fasb.org/us-gaap/2025}LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "context_ref": "c-14",
+            "cik": "0000036104",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 329000000
+          }
+        },
+        {
+          "direct_fact": {
+            "id": "f-2206",
+            "concept": "{http://fasb.org/us-gaap/2025}FinanceLeaseLiability",
+            "context_ref": "c-14",
+            "cik": "0000036104",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 125000000
+          },
+          "crosscheck": "INSTANCE_AND_EMBEDDED_NOTE_6",
+          "undiscounted": {
+            "id": "f-2202",
+            "concept": "{http://fasb.org/us-gaap/2025}FinanceLeaseLiabilityPaymentsDue",
+            "context_ref": "c-14",
+            "cik": "0000036104",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 142000000
+          },
+          "interest": {
+            "id": "f-2204",
+            "concept": "{http://fasb.org/us-gaap/2025}FinanceLeaseLiabilityUndiscountedExcessAmount",
+            "context_ref": "c-14",
+            "cik": "0000036104",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 17000000
+          }
+        }
+      ],
+      "notes": [
+        {
+          "id": "f-2121",
+          "concept": "{http://fasb.org/us-gaap/2025}LesseeOperatingLeasesTextBlock",
+          "text": "NOTE 6 LeasesThe Company, as a lessor, originates retail and commercial leases either directly to the consumer or indirectly through dealer networks. Retail leases consist primarily of automobiles, while commercial leases may include high dollar assets such as aircraft or lower cost items such as office equipment. The components of the net investment in sales-type and direct financing leases, at December 31, were as follows: (Dollars in Millions)20252024Lease receivables$7,277 $7,328 Unguaranteed residual values accruing to the lessor\u2019s benefit653 911 Total net investment in sales-type and direct financing leases$7,930 $8,239 The Company, as a lessor, recorded $792 million, $775 million and $738 million of revenue on its Consolidated Statement of Income for the years ended December 31, 2025, 2024 and 2023, respectively, primarily consisting of interest income on sales-type and direct financing leases. The contractual future lease payments to be received by the Company, at December 31, 2025, were as follows: (Dollars in Millions)Sales-type and Direct Financing Leases Operating Leases2026$2,611 $145 20272,524 123 20281,612 93 2029735 63 2030294 41 Thereafter342 67 Total lease payments8,118 $532 Amounts representing interest(841)Lease receivables$7,277 The Company, as lessee, leases certain assets for use in its operations. Leased assets primarily include retail branches, operations centers and other corporate locations, and, to a lesser extent, office and computer equipment. For each lease with an original term greater than 12 months, the Company records a lease liability and a corresponding ROU asset. At December 31, 2025, the Company\u2019s ROU assets included in premises and equipment and lease liabilities included in long-term debt and other liabilities were $1.5 billion and $1.5 billion, respectively, compared with $1.4 billion of ROU assets and $1.5 billion of lease liabilities at December 31, 2024, respectively.Total costs incurred by the Company, as a lessee, were $446 million, $529 million and $496 million for the years ended December 31, 2025, 2024 and 2023, respectively, and principally related to contractual lease payments on operating leases and included in net occupancy and equipment expense. The Company\u2019s leases do not impose significant covenants or other restrictions on the Company. The following table presents amounts relevant to the Company\u2019s assets leased for use in its operations for the years ended December 31: (Dollars in Millions)202520242023Cash paid for amounts included in the measurement of lease liabilitiesOperating cash flows from operating leases$339 $389 $409 Operating cash flows from finance leases7 7 7 Financing cash flows from finance leases51 62 49 Right of use assets obtained in exchange for new operating lease liabilities275 268 230 Right of use assets obtained in exchange for new finance lease liabilities14 59 25 The following table presents the weighted-average remaining lease terms and discount rates of the Company\u2019s assets leased for use in its operations at December 31: 20252024Weighted-average remaining lease term of operating leases (in years)7.16.7Weighted-average remaining lease term of finance leases (in years)8.48.1Weighted-average discount rate of operating leases4.1 %4.0 %Weighted-average discount rate of finance leases6.7 %7.3 %The contractual future lease obligations of the Company at December 31, 2025, were as follows: (Dollars in Millions)Operating Leases Finance Leases 2026$326 $43 2027304 31 2028266 20 2029225 12 2030164 9 Thereafter463 27 Total lease payments1,748 142 Amounts representing interest(329)(17)Lease liabilities$1,419 $125",
+          "text_sha256": "405436f22f85b32c85109c99aafc3d4a5b9c7e04a61a5a6e43059dca21dda7f7"
+        },
+        {
+          "id": "f-2521",
+          "concept": "{http://fasb.org/us-gaap/2025}ShortTermDebtTextBlock",
+          "text": "NOTE 12 Short-Term BorrowingsShort-term borrowings at December 31 consisted of the following: (Dollars in Millions)20252024Federal funds purchased$285 $252 Securities sold under agreements to repurchase9,228 7,642 Commercial paper4,341 4,288 Other short-term borrowings3,308 3,336 Total$17,162 $15,518",
+          "text_sha256": "e7e6b28839de08d71da45ccdd681a76d3ba01f39430dd9482c3233a9915acc45"
+        },
+        {
+          "id": "f-2543",
+          "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtTextBlock",
+          "text": "NOTE 13 Long-Term DebtLong-term debt (debt with original maturities of more than one year) at December 31 consisted of the following: (Dollars in Millions)Rate TypeRate(a) Maturity Date20252024U.S. Bancorp (Parent Company)Subordinated notesFixed7.500 %2026$199 $199 Fixed3.100 %20261,000 1,000 Fixed3.000 %20291,000 1,000 Fixed4.967 %20331,300 1,300 Fixed2.491 %20361,300 1,300 Medium-term notesFixed1.375% - 6.787% 2026 - 204529,285 27,939 Floating2.866 %2028588 519 Other(b)2,385 2,000 Subtotal37,057 35,257 SubsidiariesFederal Home Loan Bank advancesFixed1.860% - 5.260% 2026 - 202711,550 12,550 Floating4.130% - 4.590% 2026 - 20273,500 3,000 Bank notesFixed3.966% - 5.550% 2027 - 20323,097 3,405 Floating\u2014% - 4.564% 2027 - 20652,892 1,813 Other(c)2,668 1,977 Subtotal23,707 22,745 Total$60,764 $58,002 (a)Weighted-average interest rates of medium-term notes, Federal Home Loan Bank advances and bank notes were 4.60 percent, 4.41 percent and 3.44 percent, respectively.(b)Includes $2.3 billion and $2.2 billion at December 31, 2025 and 2024, respectively, of discounted noninterest-bearing additional cash received by the Company upon close of its 2022 acquisition of MUB from Mitsubishi UFJ Financial Group (\"MUFG\") to be delivered to MUFG on or prior to December 1, 2027, discounted at the Company\u2019s 5-year unsecured borrowing rate as of the acquisition date, as well as debt issuance fees and unrealized gains and losses and deferred amounts relating to derivative instruments.(c)Includes consolidated community development and tax-advantaged investment VIEs, finance lease obligations, debt issuance fees, and unrealized gains and losses and deferred amounts relating to derivative instruments.The Company has arrangements with the Federal Home Loan Bank and Federal Reserve Bank whereby the Company could have borrowed an additional $205.1 billion and $171.2 billion at December 31, 2025 and 2024, respectively. Maturities of long-term debt outstanding at December 31, 2025, were: (Dollars in Millions)Parent CompanyConsolidated2026$2,428 $15,402 20275,355 11,645 20284,001 5,773 20294,571 4,554 20304,244 4,264 Thereafter16,458 19,126 Total$37,057 $60,764",
+          "text_sha256": "864d945caf686ee4be82e8147dec7380e510b9e3f451347611dc3dbf04eebee3"
+        }
+      ]
+    },
+    {
+      "ticker": "STT",
+      "accession": "0000093751-26-000124",
+      "source_hashes": {
+        "xml": "47080e7e18628a45e330f5cb318f98f61053aa14dd558a2311082628f978d1c1",
+        "html": "0a20104d9721dfcf003b73d492143bd5760aec8c696af27c3a1fe476bec8a403"
+      },
+      "lease_observations": [
+        {
+          "direct_fact": {
+            "id": "f-3328",
+            "concept": "{http://fasb.org/us-gaap/2025}OperatingLeaseLiability",
+            "context_ref": "c-8",
+            "cik": "0000093751",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 863000000
+          },
+          "crosscheck": "INSTANCE_AND_PRIMARY_HTML",
+          "caption": "Total$863 $106 $969",
+          "undiscounted": {
+            "id": "f-3322",
+            "concept": "{http://fasb.org/us-gaap/2025}LesseeOperatingLeaseLiabilityPaymentsDue",
+            "context_ref": "c-8",
+            "cik": "0000093751",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 1058000000
+          },
+          "interest": {
+            "id": "f-3325",
+            "concept": "{http://fasb.org/us-gaap/2025}LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "context_ref": "c-8",
+            "cik": "0000093751",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 195000000
+          }
+        },
+        {
+          "direct_fact": {
+            "id": "f-3329",
+            "concept": "{http://fasb.org/us-gaap/2025}FinanceLeaseLiability",
+            "context_ref": "c-8",
+            "cik": "0000093751",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 106000000
+          },
+          "crosscheck": "INSTANCE_AND_PRIMARY_HTML",
+          "caption": "Total$863 $106 $969",
+          "undiscounted": {
+            "id": "f-3323",
+            "concept": "{http://fasb.org/us-gaap/2025}FinanceLeaseLiabilityPaymentsDue",
+            "context_ref": "c-8",
+            "cik": "0000093751",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 114000000
+          },
+          "interest": {
+            "id": "f-3326",
+            "concept": "{http://fasb.org/us-gaap/2025}FinanceLeaseLiabilityUndiscountedExcessAmount",
+            "context_ref": "c-8",
+            "cik": "0000093751",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 8000000
+          }
+        }
+      ],
+      "notes": [
+        {
+          "id": "f-2071",
+          "concept": "{http://fasb.org/us-gaap/2025}ShortTermDebtTextBlock",
+          "text": "Short-Term BorrowingsOur short-term borrowings primarily include securities sold under repurchase agreements and FHLB funding recorded in other short-term borrowings.Collectively, short-term borrowings had weighted-average interest rates of 4.49% and 5.03% in 2025 and 2024, respectively.The following tables present information with respect to the amounts outstanding and weighted-average interest rates of the primary components of our short-term borrowings as of and for the years ended December 31:(Dollars in millions)Securities Sold UnderRepurchase AgreementsOther(1)2025202420252024Balance as of December 31$841 $3,681 $3,750 $9,815 Average outstanding during the year2,198 3,163 9,396 11,128 Weighted-average interest rate as of year-end0.73 %5.62 %4.33 %4.77 %Weighted-average interest rate during the year4.32 4.93 4.62 5.19 (1) Primarily includes FHLB borrowings.Obligations to repurchase securities sold are recorded as a liability in our consolidated statement of condition. Applicable securities with a fair value of $1.07 billion underlying the repurchase agreements remained in our investment securities portfolio as of December 31, 2025.The following table presents information about these securities and the carrying value of the related repurchase agreements, including accrued interest, as of December 31, 2025. Securities SoldRepurchase Agreements(1)(In millions)AmortizedCostFair ValueAmortizedCostOvernight maturity$1,058 $1,072 $841 (1) Collateralized by investment securities.We maintain an agreement with a clearing organization (FICC) that enables us to net securities purchased under resale agreements and sold under repurchase agreements with counterparties that are also members of the clearing organization when specific netting criteria are met. The impact of this netting was $242.73 billion on average in 2025 compared to $191.26 billion in 2024, primarily due to higher FICC repo volumes.State Street Bank currently maintains a line of credit of CAD $1.40 billion, or approximately $1.02 billion, as of December 31, 2025, to support its Canadian securities processing operations. The line of credit has no stated termination date and is cancellable by either party with prior notice. As of both December 31, 2025 and 2024, there was no balance outstanding on this line of credit.",
+          "text_sha256": "4a13a72b5ef010fe3aeb953d3cbb3c250c835e256da7489a6785dce0ceddfb11"
+        },
+        {
+          "id": "f-2101",
+          "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtTextBlock",
+          "text": "Long-Term Debt(Dollars in millions)As of December 31,Issuance DateMaturity DateCoupon RateSeniorityInterest Due Dates20252024Parent Company and Non-Banking Subsidiary IssuancesFebruary 28, 2025February 28, 20284.536 %Senior notes2/28; 8/28$1,346 $\u2014 October 22, 2024October 22, 20274.330 %Senior notes4/22, 10/22(2)1,208 1,189 August 3, 2023August 3, 20265.272 %Senior notes2/3; 8/3(2)1,204 1,203 November 21, 2023November 21, 20295.684 %Fixed-to-floating rate senior notes5/21; 11/21(2)1,009 986 August 20, 2024February 20, 20294.530 %Fixed-to-floating rate senior notes2/20; 8/20(2)1,007 989 March 18, 2024March 18, 20274.993 %Senior notes3/18, 9/18(2)1,004 993 April 24, 2025April 24, 20304.834 %Senior notes4/24; 10/24(2)1,002 \u2014 May 18, 2023May 18, 20345.159 %Fixed-to-floating rate senior notes5/18; 11/18996 995 October 23, 2025October 23, 20364.784 %Fixed-to-floating rate senior notes4/23; 10/23(2)973 \u2014 March 3, 2021March 3, 2031(1)(3)2.200 %Senior subordinated notes3/3; 9/3846 845 October 22, 2024October 22, 20324.675 %Fixed-to-floating rate senior notes4/22; 10/22(2)813 789 January 24, 2020January 24, 2030(1)2.400 %Senior notes1/24, 7/24(2)777 784 February 28, 2025February 28, 20365.146 %Fixed-to-floating rate senior notes2/28; 8/28746 \u2014 May 19, 2016May 19, 2026(1)2.650 %Senior notes5/19; 11/19(2)745 728 January 26, 2023January 26, 20344.821 %Fixed-to-floating rate senior notes1/26, 7/26(2)728 702 April 24, 2025April 24, 20284.543 %Fixed-to-floating rate senior notes4/24; 10/24(2)699 \u2014 August 4, 2022August 4, 20334.164 %Fixed-to-floating rate senior notes2/4; 8/4(2)695 665 February 28, 2025February 28, 20304.729 %Senior notes2/28; 8/28647 \u2014 February 7, 2022February 7, 20282.203 %Fixed-to-floating rate senior notes2/7; 8/7(2)634 619 December 3, 2018December 3, 20294.141 %Fixed-to-floating rate senior notes6/3; 12/3(2)536 535 November 1, 2019November 1, 2034(3)3.031 %Fixed-to-floating rate senior subordinated notes5/1; 11/1(2)518 523 November 21, 2023November 21, 2034(3)6.123 %Fixed-to-floating rate senior subordinated notes5/21; 11/21(2)507 492 November 4, 2022November 4, 20285.820 %Fixed-to-floating rate senior notes5/4; 11/4(2)503 495 April 30, 2007June 15, 2047 Floating-rate Junior subordinated debentures3/15; 6/15; 9/15; 12/15500 500 October 29, 2020March 30, 20313.152 %Fixed-to-floating rate senior notes3/30, 9/30499 498 May 13, 2022May 13, 20334.421 %Fixed-to-floating rate senior notes5/13; 11/13498 498 November 18, 2021November 18, 20271.684 %Fixed-to-floating rate senior notes5/18; 11/18(2)498 497 February 7, 2022February 7, 20332.623 %Fixed-to-floating rate senior notes2/7; 8/7(2)490 465 August 3, 2023August 3, 2026 Floating-rate Senior notes2/3; 5/3; 8/3; 11/3300 299 October 22, 2024October 22, 2027 Floating-rate Senior notes1/22; 4/22; 7/22; 10/22299 299 April 24, 2025April 24, 2028Floating-rateSenior notes1/24; 4/24; 7/24; 10/24299 \u2014 June 21, 1996June 15, 2026(1)7.350 %Senior notes6/15; 12/15150 150 May 15, 1998May 15, 2028 Floating-rate Junior subordinated debentures2/15; 5/15; 8/15; 11/15100 100 August 18, 2015August 18, 2025(1)3.550 %Senior notes2/18; 8/18(2)\u2014 1,285 May 18, 2023May 18, 2026(4)5.104 %Fixed-to-floating rate senior notes5/18; 11/18\u2014 999 January 26, 2023January 26, 2026(4)4.857 %Fixed-to-floating rate senior notes1/26, 7/26(2)\u2014 499 November 4, 2022November 4, 2026(4)5.751 %Fixed-to-floating rate senior notes5/4; 11/4(2)\u2014 498 March 30, 2020March 30, 2026(4)2.901 %Fixed-to-floating rate senior notes3/30; 9/30(2)\u2014 497 February 7, 2022February 6, 2026(4)1.746 %Fixed-to-floating rate senior notes2/6; 8/6(2)\u2014 299 State Street Bank issuances and lease obligationsNovember 25, 2024November 25, 2026(1)4.594 %Senior notes5/25, 11/251,148 1,146 November 25, 2024November 23, 2029(1)4.782 %Senior notes5/23, 11/23797 796 November 25, 2024November 25, 2026(1)Floating-rateSenior notes2/25; 5/25; 8/25; 11/25300 299 Long-term finance leases and equipment financing122 116 Total long-term debt$25,143 $23,272 (1) We may not redeem notes prior to their maturity.(2) We have entered into interest rate swap agreements, recorded as fair value hedges, to modify our interest expense on these senior and subordinated notes from a fixed rate to a floating rate. As of December 31, 2025 and 2024, these fair value hedges decreased the carrying value of long-term debt by $3 million and $220 million, respectively. Refer to Note 10 for additional information about fair value hedges.(3) The subordinated notes qualify for inclusion in tier 2 regulatory capital under current federal regulatory capital guidelines.(4) We redeemed the notes prior to original maturity date.State Street BankAs of December 31, 2025 and 2024, $106 million and $79 million, respectively, of long-term finance leases was related to information technology equipment. Refer to Note 20 for additional information.",
+          "text_sha256": "88364ad5991e783b384e589c7294534bcb16952b304bed5e3cd05970dedea5fb"
+        },
+        {
+          "id": "f-3256",
+          "concept": "{http://fasb.org/us-gaap/2025}LesseeOperatingLeasesTextBlock",
+          "text": "Occupancy Expense and Information Systems and Communications ExpenseOccupancy expense and information systems and communications expense include depreciation of buildings, leasehold improvements, computer hardware and software, equipment, furniture and fixtures, and amortization of lease right-of-use assets. Total depreciation and amortization expense in 2025, 2024 and 2023 was $892 million, $824 million and $829 million, respectively.We use our incremental borrowing rate to determine the present value of the lease payments for finance and operating leases described below. Additionally, we do not separate nonlease components such as real estate taxes and common area maintenance from base lease payments.As of December 31, 2025 and 2024, we had finance leases for information technology equipment of $89 million and $67 million, respectively, recorded in premises and equipment, with the related liability of $106 million and $79 million, respectively, recorded in long-term debt, in our consolidated statement of condition. Finance lease right-of-use asset amortization is recorded in information systems and communications expense on a straight-line basis in our consolidated statement of income over the respective lease term. Lease payments are recorded as a reduction of the liability, with a portion recorded as imputed interest expense. Accumulated amortization of the finance lease right-of-use assets was $182 million as of December 31, 2025. Interest expense related to the finance lease obligation reflected in NII was $3 million in both 2025 and 2024. As of December 31, 2025, aggregate net book value of the operating lease right-of-use assets recorded in other assets was $865 million, with the related lease liability recorded in accrued expenses and other liabilities in our consolidated statement of condition.We have entered into non-cancellable operating leases for premises and equipment. Nearly all of these leases include renewal options, and only those reasonably certain of being exercised are included in the term of the lease. Costs for operating leases are recorded on a straight-line basis which includes both interest expense and right-of-use asset amortization. Operating lease costs for office space are recorded in occupancy expense. Costs related to operating leases for equipment are recorded in information systems and communications expense.As of December 31, 2025, we have additional operating and finance leases, primarily for office space and equipment, that have not yet commenced with approximately $80 million of undiscounted future minimum lease payments. These leases will largely commence in fiscal year 2026 with lease terms ranging from 2 to 10 years.None of our leases contain residual value guarantees.The following table presents lease costs, sublease rental income, cash flows and new leases arising from lease transactions for 2025:Years Ended December 31,(In millions)20252024Finance lease:Amortization of right-of-use assets$47 $48 Interest on lease liabilities3 3 Total finance lease expense50 51 Sublease income \u2014 \u2014 Net finance lease expense50 51 Operating lease:Operating lease expense179 168 Sublease income (13)(17)Net operating lease expense166 151 Net lease expense$216 $202 Cash paid for amounts included in the measurement of lease liabilities:Operating cash flows from finance leases$3 $3 Operating cash flows from operating leases193 179 Financing cash flows from finance leases43 46 Right-of-use assets obtained in exchange for new lease obligations:Operating leases$214 $174 Finance leases64 \u2014 The following table presents future minimum lease payments under non-cancellable leases as of December 31, 2025:(In millions)Operating LeasesFinance LeasesTotal2026$174 $34 $208 2027154 29 183 2028136 29 165 2029101 22 123 203083 \u2014 83 Thereafter410 \u2014 410 Total future minimum lease payments1,058 114 1,172 Less imputed interest(195)(8)(203)Total$863 $106 $969 The following table presents details related to remaining lease terms and discount rate as of December 31, 2025 and 2024:December 31, 2025December 31, 2024Weighted-average remaining lease term (in years):Finance leases3.41.4Operating leases8.38.1Weighted-average discount rate:Finance leases5 %3 %Operating leases5 %4 %",
+          "text_sha256": "c53f436bf00f1ddccb4cbf6fc26c8f0e070061890b4e01273c4fa2dfcab95350"
+        }
+      ]
+    },
+    {
+      "ticker": "MET",
+      "accession": "0001099219-26-000013",
+      "source_hashes": {
+        "xml": "c8b1f2c98270ef998a030ecfc158ae8d4d097dfbed71c658c31c98579ba27a9a",
+        "html": "f289e04ec404625df12e74a4501af641a8a2e405a34409ed841392a49d6d5138"
+      },
+      "lease_observations": [
+        {
+          "direct_fact": {
+            "id": "f-7220",
+            "concept": "{http://fasb.org/us-gaap/2025}OperatingLeaseLiability",
+            "context_ref": "c-10",
+            "cik": "0001099219",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 1138000000
+          },
+          "crosscheck": "INSTANCE_AND_PRIMARY_HTML",
+          "caption": "Lease liabilities$1,138 $1,079",
+          "undiscounted": {
+            "id": "f-7250",
+            "concept": "{http://fasb.org/us-gaap/2025}LesseeOperatingLeaseLiabilityPaymentsDue",
+            "context_ref": "c-10",
+            "cik": "0001099219",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 1276000000
+          },
+          "interest": {
+            "id": "f-7251",
+            "concept": "{http://fasb.org/us-gaap/2025}LesseeOperatingLeaseLiabilityUndiscountedExcessAmount",
+            "context_ref": "c-10",
+            "cik": "0001099219",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 138000000
+          }
+        },
+        {
+          "direct_fact": {
+            "id": "f-7427",
+            "concept": "{http://fasb.org/us-gaap/2025}FinanceLeaseLiability",
+            "context_ref": "c-10",
+            "cik": "0001099219",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 6000000
+          },
+          "crosscheck": "INSTANCE_AND_PRIMARY_HTML",
+          "caption": "Financing lease obligations6 \u2014 6 6 \u2014 6",
+          "reconciliation_limit": "MET finance lease is a 6m carrying amount in debt Note 16; no separate maturity/PV reconciliation claimed."
+        }
+      ],
+      "notes": [
+        {
+          "id": "f-7209",
+          "concept": "{http://fasb.org/us-gaap/2025}LesseeOperatingLeasesTextBlock",
+          "text": "14. LeasesThe Company, as lessee, has entered into various lease and sublease agreements primarily for office space. The Company has operating leases with remaining lease terms of less than one year to 12 years. The remaining lease terms for the subleases are less than one year to nine years.ROU Assets and Lease LiabilitiesROU assets and lease liabilities for operating leases were:December 31, 2025December 31, 2024(In millions)ROU assets$984 $928 Lease liabilities$1,138 $1,079 Lease CostsThe components of operating lease costs were as follows:Years Ended December 31,202520242023(In millions)Operating lease cost$234 $226 $244 Variable lease cost52 52 52 Sublease income(87)(87)(95)Net lease cost$199 $191 $201 Other InformationSupplemental other information related to operating leases was as follows:December 31, 2025December 31, 2024(Dollars in millions)Cash paid for amounts included in the measurement of lease liability - operating cash flows$234 $244 ROU assets obtained in exchange for new lease liabilities (1)$120 $52 Weighted-average remaining lease term8 years8 yearsWeighted-average discount rate4.7 %4.4 %__________________(1)See Note 3 for additional ROU assets and lease liabilities recorded as part of the acquisition of PineBridge.Maturities of Lease LiabilitiesMaturities of operating lease liabilities were as follows:December 31, 2025(In millions)2026$218 2027215 2028183 2029131 2030100 Thereafter429 Total undiscounted cash flows1,276 Less: interest138 Present value of lease liability $1,138 See Notes 11 and 16 for information about the Company\u2019s investments in leased real estate and financing lease obligations.",
+          "text_sha256": "c0400a8721ef8cea80c6ebb483ef8d372e90ad3b109a600895eb8f315c1cf34a"
+        },
+        {
+          "id": "f-7401",
+          "concept": "{http://fasb.org/us-gaap/2025}ShortTermDebtTextBlock",
+          "text": "Long-term and short-term debt outstanding was as follows:December 31,20252024Interest Rates (1)MaturityFaceValueUnamortizedDiscount and Issuance CostsCarryingValueFaceValueUnamortizedDiscount and Issuance CostsCarryingValue(In millions)Senior notes0.50 %-6.50%2026-2059$14,095 $(96)$13,999 $14,530 $(99)$14,431 Surplus notes7.80 %-7.80%2025\u2014 \u2014 \u2014 250 \u2014 250 Other notes (2)3.52 %-7.41%2026-2035463 (1)462 401 (2)399 Financing lease obligations6 \u2014 6 6 \u2014 6 Total long-term debt14,564 (97)14,467 15,187 (101)15,086 Total short-term debt355 \u2014 355 465 \u2014 465 Total$14,919 $(97)$14,822 $15,652 $(101)$15,551 __________________(1)Range of interest rates are for the year ended December 31, 2025.(2)Includes $75 million of long-term borrowings related to repurchase agreements, secured by CLO Investments. At December 31, 2025, the Company pledged securities with a carrying value of $80 million to collateralize these repurchase agreements. Subject to certain constraints, the counterparties are permitted by contract to sell or re-pledge these securities.The aggregate maturities of long-term debt at December 31, 2025 for the next five years and thereafter are $172 million in 2026, $81 million in 2027, $300 million in 2028, $459 million in 2029, $996 million in 2030 and $12.5 billion thereafter.Financing lease obligations are collateralized and rank highest in priority, followed by unsecured senior notes and other notes. The $1.0 billion aggregate principal amount of 6.350% Fixed-to-Fixed Reset Rate Subordinated Debentures due March 2055, payable semi-annually, issued by MetLife, Inc, in March 2025 (the \u201c6.350% Subordinated Debt\u201d) ranks below these instruments but remains senior to junior subordinated debt securities (see Note 18). Payments of interest and principal on the Company\u2019s surplus notes, which are subordinate to all other obligations of the operating company issuing the notes and are senior to obligations of MetLife, Inc., may be made only with the prior approval of the insurance department of the state of domicile of the issuer of the notes. The Company\u2019s collateral financing arrangement (see Note 17) is supported by surplus notes of a subsidiary and, accordingly, has priority consistent with surplus notes.Certain of the Company\u2019s debt instruments and committed facilities, as well as its $3.0 billion unsecured revolving credit facility (the \u201cCredit Facility\u201d), contain various administrative, reporting, legal and financial covenants. The Company believes it was in compliance with all applicable financial covenants at December 31, 2025.Senior Notes In June 2025, in a private placement transaction, MetLife, Inc. issued the following fixed rate senior notes totaling $612 million, interest on which is payable semi-annually:\u2022 \u00a510.0 billion due June 2032 which bear interest annually at 2.140%;\u2022 \u00a515.0 billion due June 2035 which bear interest annually at 2.460%;\u2022 \u00a510.7 billion due June 2037 which bear interest annually at 2.590%;\u2022 \u00a512.1 billion due June 2040 which bear interest annually at 2.830%;\u2022 \u00a523.6 billion due June 2045 which bear interest annually at 3.290%; and\u2022 \u00a516.4 billion due June 2055 which bear interest annually at 3.620%.In connection with the issuances, MetLife, Inc. incurred $5 million of related costs which will be amortized over the applicable term of each series of senior notes.In June and September 2024, MetLife, Inc. issued $500 million and $250 million, respectively, of senior notes due December 2034, which form a single series and bear interest at a fixed rate of 5.300%, payable semi-annually. In connection with the June and September issuances, MetLife, Inc. incurred $4 million and $2 million, respectively, of related costs, which in each case will be amortized over the term of the applicable senior notes.In April 2024, MetLife, Inc. redeemed for $438 million in cash all of its \u00a3350 million aggregate principal amount outstanding 5.375% senior notes due December 2024. In March 2024, MetLife, Inc. issued the following fixed rate senior notes totaling $752 million, interest on which is payable semi-annually:\u2022\u00a57.1 billion due March 2029 which bear interest annually at 1.009%;\u2022\u00a523.1 billion due March 2031 which bear interest annually at 1.415%;\u2022\u00a516.7 billion due March 2034 which bear interest annually at 1.670%;\u2022\u00a511.2 billion due March 2039 which bear interest annually at 1.953%;\u2022\u00a515.5 billion due March 2044 which bear interest annually at 2.195%;\u2022\u00a523.5 billion due March 2054 which bear interest annually at 2.390%; and\u2022\u00a515.2 billion due March 2059 which bear interest annually at 2.448%.In connection with the March 2024 issuances, MetLife, Inc. incurred $6 million of related costs which will be amortized over the applicable term of each series of the senior notes.In July 2023, MetLife, Inc. issued $1.0 billion of senior notes due July 2033 which bear interest at a fixed rate of 5.375%, payable semi-annually. In connection with the issuance, MetLife, Inc. incurred $6 million of related costs which will be amortized over the term of the senior notes.In February 2023, MetLife, Inc. redeemed for cash and canceled $1.0 billion aggregate principal amount of its outstanding 4.368% senior notes due September 2023. In January 2023, MetLife, Inc. issued $1.0 billion of senior notes due January 2054 which bear interest at a fixed rate of 5.250%, payable semi-annually. In connection with the issuance, MetLife, Inc. incurred $11 million of related costs which will be amortized over the term of the senior notes.Facility Agreement for Senior Debt IssuancesIn March 2025, MetLife, Inc. entered into a 30-year facility agreement (the \u201cFacility Agreement\u201d) with a Delaware trust (the \u201cTrust\u201d), upon the completion of the sale of Trust securities by the Trust for $1,250 million in private placements under Rule 144A of the Securities Act of 1933. The Trust invested the proceeds from the sale of its securities in a portfolio of principal and interest strips of U.S. Treasury securities (the \u201cSTRIPS\u201d).The Facility Agreement provides the Company the right to issue and sell to the Trust from time to time up to $1,250 million of its 5.740% Senior Notes due February 15, 2055 (the \u201c5.740% Senior Notes\u201d) in exchange for a corresponding amount of the STRIPS held by the Trust. In return, the Company agreed to pay a semi-annual facility fee to the Trust at a rate of 1.2373% per annum applied to the maximum amount of senior notes that MetLife, Inc. could issue and sell to the Trust. The Company can redeem the 5.740% Senior Notes at any time, in whole or in part, at a price equal to the greater of par or a make-whole redemption price. At December 31, 2025, the Company had no senior note issuances under the Facility Agreement. The Company incurred $13 million of related costs, which were capitalized in other assets and will be amortized over the term of the Facility Agreement. Total fees associated with the facility were $13 million for the year ended December 31, 2025.Short-term DebtShort-term debt with maturities of one year or less was as follows:December 31,20252024(Dollars in millions)Short-term debt (1), (2)$355 $465 Average daily balance$394 $270 Average days outstanding72 days82 days__________________(1)Includes $238 million and $465 million at December 31, 2025 and 2024, respectively, of short-term debt related to repurchase agreements, secured by assets of subsidiaries.(2)Includes $117 million and $133 million at December 31, 2025 and 2024, respectively, of short-term debt related to VIEs. For the years ended December 31, 2025, 2024 and 2023, the weighted average interest rate on short-term debt was 5.21%, 6.65% and 8.63%, respectively.Interest ExpenseInterest expense on long-term and short-term debt was $724 million, $738 million and $740 million for the years ended December 31, 2025, 2024 and 2023, respectively, which is included in other expenses. Such amounts do not include interest expense on long-term debt related to the collateral financing arrangement or subordinated debt securities. See Notes 17 and 18.Credit and Committed FacilitiesAt December 31, 2025, the Company maintained the Credit Facility, as well as certain committed facilities aggregating $3.2 billion (the \u201cCommitted Facilities\u201d). When drawn upon, these facilities bear interest at varying rates in accordance with the respective agreements.Credit FacilityThe Company\u2019s Credit Facility is used for general corporate purposes, to support the borrowers\u2019 commercial paper programs and for the issuance of letters of credit. Total fees associated with the Credit Facility were $7 million, $7 million and $6 million for the years ended December 31, 2025, 2024 and 2023, respectively, and were included in other expenses. Information on the Credit Facility at December 31, 2025 was as follows:Borrower(s)ExpirationMaximumCapacityLetters ofCreditIssuedDrawdownsUnusedCommitments(In millions)MetLife, Inc. and MetLife Funding, Inc.May 2028(1)$3,000 $304 $\u2014 $2,696 __________________(1)All borrowings under the Credit Facility must be repaid by May 8, 2028, except that letters of credit outstanding on that date may remain outstanding until no later than May 8, 2029.Committed FacilitiesLetters of credit issued under the Committed Facilities are used for collateral for certain of the Company\u2019s affiliated reinsurance liabilities. Total fees associated with the Committed Facilities, included in other expenses, were $9 million for each of the years ended December 31, 2025, 2024 and 2023. Information on the Committed Facilities at December 31, 2025 was as follows:Account Party/Borrower(s)ExpirationMaximumCapacityLetters ofCreditIssuedDrawdownsUnusedCommitments(In millions)MetLife Reinsurance Company of Vermont (\u201cMRV\u201d) and MetLife, Inc.November 2026(1), (2)$350 $350 $\u2014 $\u2014 MRV and MetLife, Inc.December 2037(1), (3)2,891 2,456 \u2014 435 Total$3,241 $2,806 $\u2014 $435 __________________(1)MetLife, Inc. is a guarantor under the applicable facility.(2)The issuance of additional letters of credit is at the discretion of the counterparty.(3)Capacity at December 31, 2025 of $2.9 billion decreases gradually between 2026 and 2037 to $2.0 billion, and the facility expires in December 2037. Unused commitment of $435 million is based on maximum capacity. At December 31, 2025, Brighthouse Financial, Inc. and its subsidiaries (\u201cBrighthouse\u201d), a former subsidiary of MetLife, Inc., is a beneficiary of $2.5 billion of letters of credit issued under this facility and, in consideration, Brighthouse reimburses MetLife, Inc. for a portion of the letter of credit fees.",
+          "text_sha256": "ca019eb99fceedda4dce0e9c4125302380f088338463670decfd3c46f2303809"
+        },
+        {
+          "id": "f-7597",
+          "concept": "{http://www.metlife.com/20251231}JuniorSubordinatedDebtSecuritiesTextBlock",
+          "text": "18. Subordinated Debt SecuritiesOutstanding Junior Subordinated Debt SecuritiesOutstanding junior subordinated debt securities and exchangeable surplus trust securities which are exchangeable for junior subordinated debt securities prior to redemption or repayment (collectively, the \u201cjunior subordinated debt securities\u201d), were as follows:December 31,20252024IssuerIssueDateInterestRate (1)ScheduledRedemptionDateInterest RateSubsequent toScheduledRedemptionDate (2)FinalMaturityFaceValueUnamortizedDiscountand Issuance CostsCarryingValueFaceValueUnamortizedDiscountand Issuance CostsCarryingValue(In millions)MetLife, Inc.December 20066.400%December 2036SOFR + 0.26161% + 2.205%December 2066$1,250 $(12)$1,238 $1,250 $(13)$1,237 MetLife Capital Trust IV (3)December 20077.875%December 2037SOFR + 0.26161% + 3.960%December 2067700 (10)690 700 (11)689 MetLife, Inc.April 20089.250%April 2038SOFR + 0.26161% + 5.540%April 2068750 (7)743 750 (7)743 MetLife, Inc.July 200910.750%August 2039SOFR + 0.26161% + 7.548%August 2069500 (4)496 500 (5)495 Total$3,200 $(33)$3,167 $3,200 $(36)$3,164 _________________(1)Prior to the scheduled redemption date, interest is payable semiannually in arrears.(2)In the event the securities are not redeemed on or before the scheduled redemption date, interest will accrue after such date at an annual rate based on the three-month CME Term SOFR plus 0.26161% and the indicated margin, payable quarterly in arrears.(3)MetLife Capital Trust IV is a VIE which is consolidated on the financial statements of the Company. The securities issued by this entity are exchangeable surplus trust securities, which are exchangeable for a like amount of MetLife, Inc.\u2019s junior subordinated debt securities on the scheduled redemption date, mandatorily under certain circumstances, and at any time upon MetLife, Inc. exercising its option to redeem the securities.In connection with each of the junior subordinated debt securities, MetLife, Inc. may redeem or may cause the redemption of such securities (i) in whole or in part, at any time on or after the date five years prior to the scheduled redemption date at 100% of their principal amount, or (ii) in certain circumstances, in whole or in part, prior to the date five years prior to the scheduled redemption date at 100% of their principal amount or, if greater, a make-whole price, in each case, plus accrued and unpaid interest to, but excluding the date of redemption. MetLife, Inc. also has the right to, and in certain circumstances the requirement to, defer interest payments on these securities for a period up to 10 years. Interest compounds during such periods of deferral, if any. If interest is deferred for more than five consecutive years, MetLife, Inc. is required to use proceeds from the sale of its common stock or warrants on common stock to satisfy this interest payment obligation.Subordinated Debt IssuanceIn March 2025, MetLife, Inc. issued the 6.350% Subordinated Debt (together with the junior subordinated debt securities, the \u201csubordinated debt securities\u201d). MetLife, Inc. may redeem the 6.350% Subordinated Debt in whole, at any time, or in part, from time to time (i) on any interest payment date on or after March 15, 2035, the scheduled redemption date, at a redemption price equal to 100% of their principal amount, or (ii) prior to March 15, 2035, at a redemption price equal to 100% of their principal amount plus a make-whole amount, in each case, plus accrued and unpaid interest to, but excluding, the date of redemption. MetLife, Inc. may also redeem the 6.350% Subordinated Debt in whole, but not in part, depending on the specific circumstances at a redemption price equal to (i) 100% of their principal amount or (ii) 102% of their principal amount, in each case, plus accrued and unpaid interest to, but excluding, the date of redemption. MetLife, Inc. also has the right to defer interest payments on the 6.350% Subordinated Debt for periods of up to five years. Interest compounds during such periods of deferral, if any. In connection with the issuance, MetLife, Inc. incurred $12 million of related costs which will be amortized over the term of the 6.350% Subordinated Debt. At December 31, 2025, the carrying value of the 6.350% Subordinated Debt was $988 million, net of $12 million of unamortized costs and discounts.The 6.350% Subordinated Debt ranks higher in priority than MetLife, Inc.\u2019s junior subordinated debt securities and subordinate to its senior notes.Replacement Capital CovenantsIn connection with each of the junior subordinated debt securities described above, MetLife, Inc. entered into a separate replacement capital covenant (\u201cRCC\u201d) for the benefit of the holders of a designated series of MetLife, Inc.\u2019s other indebtedness (the \u201cCovered Debt\u201d). Initially, the Covered Debt for each of the junior subordinated debt securities was MetLife, Inc.\u2019s 5.700% senior notes due 2035 (the \u201c5.700% Senior Notes\u201d). As a result of the issuance of MetLife, Inc.\u2019s 10.750% Fixed-to-Floating Rate Junior Subordinated Debentures due 2069 (the \u201c10.750% JSDs\u201d), the 10.750% JSDs became the Covered Debt with respect to, and in accordance with, the terms of the RCC relating to MetLife, Inc.\u2019s 6.40% Fixed-to-Floating Rate Junior Subordinated Debentures due 2066 (the \u201c6.40% JSDs\u201d). Pursuant to the terms of the RCCs relating to all junior subordinated debt securities other than the 6.40% JSDs, the 6.350% Subordinated Debt, as of its issuance date in March 2025, became Covered Debt under each such RCC, and the 5.700% Senior Notes were no longer Covered Debt under such RCCs. As the holders of the Covered Debt under such RCCs, the holders of the 6.350% Subordinated Debt terminated these RCCs. The 10.750% JSDs remain the Covered Debt with respect to, and in accordance with, the terms of the remaining RCC relating to the 6.40% JSDs. As part of the RCC relating to the 6.40% JSDs, MetLife, Inc. agreed that it will not repay, redeem, or purchase the securities on or before a date 10 years prior to the final maturity date of the 6.40% JSDs, unless, subject to certain limitations, it has received cash proceeds during a specified period from the sale of specified replacement securities. The RCC relating to the 6.40% JSDs will terminate upon the occurrence of certain events, including an acceleration of the 6.40% JSDs due to the occurrence of an event of default. The RCC relating to the 6.40% JSDs is not intended for the benefit of holders of the 6.40% JSDs and may not be enforced by them. As part of this RCC, MetLife, Inc. is required, during the six-month period prior to the applicable scheduled redemption date, to use commercially reasonable efforts to raise replacement capital to permit repayment of such securities through the issuance of certain qualifying capital securities.Interest ExpenseInterest expense on outstanding subordinated debt securities was $312 million, $261 million and $261 million for the years ended December 31, 2025, 2024 and 2023, respectively, which is included in other expenses.",
+          "text_sha256": "ab5b7291f535ad2ed3bf4f75339df3433d2d8abe290e790fc49307bcee8fd71b"
+        }
+      ]
+    }
+  ],
+  "cash_evidence": {
+    "accession": "0000093410-26-000078",
+    "period": "2025-12-31",
+    "source_hashes": {
+      "xml": "383742ba0900c6bad8fbea17085f2854a2264ca1d3673de71654c94b76ddbe98",
+      "html": "4731f02b5688823678b8978c66513f0f36341afaf25e49cd133db05fc7676ad8"
+    },
+    "facts": {
+      "cash": {
+        "id": "f-195",
+        "concept": "{http://www.chevron.com/20251231}CashAndCashEquivalentsExcludingTimeDeposits",
+        "context_ref": "c-13",
+        "cik": "0000093410",
+        "instant": "2025-12-31",
+        "unit": "USD",
+        "decimals": -6,
+        "value_usd": 6293000000,
+        "caption": "Cash and cash equivalents$6,293 $6,781"
+      },
+      "cash_note": {
+        "id": "f-763",
+        "concept": "{http://www.chevron.com/20251231}CashAndCashEquivalentsExcludingTimeDeposits",
+        "context_ref": "c-13",
+        "cik": "0000093410",
+        "instant": "2025-12-31",
+        "unit": "USD",
+        "decimals": -6,
+        "value_usd": 6293000000,
+        "caption": "Cash and cash equivalents$6,293 $6,781 $8,178"
+      },
+      "restricted_current": {
+        "id": "f-766",
+        "concept": "{http://fasb.org/us-gaap/2025}RestrictedCashCurrent",
+        "context_ref": "c-13",
+        "cik": "0000093410",
+        "instant": "2025-12-31",
+        "unit": "USD",
+        "decimals": -6,
+        "value_usd": 174000000,
+        "caption": "Restricted cash included in \u201cPrepaid expenses and other current assets\u201d174 281 275"
+      },
+      "restricted_noncurrent": {
+        "id": "f-769",
+        "concept": "{http://fasb.org/us-gaap/2025}RestrictedCashNoncurrent",
+        "context_ref": "c-13",
+        "cik": "0000093410",
+        "instant": "2025-12-31",
+        "unit": "USD",
+        "decimals": -6,
+        "value_usd": 818000000,
+        "caption": "Restricted cash included in \u201cDeferred charges and other assets\u201d818 1,200 822"
+      },
+      "total": {
+        "id": "f-772",
+        "concept": "{http://fasb.org/us-gaap/2025}CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+        "context_ref": "c-13",
+        "cik": "0000093410",
+        "instant": "2025-12-31",
+        "unit": "USD",
+        "decimals": -6,
+        "value_usd": 7285000000,
+        "caption": "Total cash, cash equivalents and restricted cash$7,285 $8,262 $9,275"
+      }
+    },
+    "note_text": "The table below quantifies the beginning and ending balances of restricted cash and restricted cash equivalents in the Consolidated Balance Sheet:Year ended December 31202520242023Cash and cash equivalents$6,293 $6,781 $8,178 Restricted cash included in \u201cPrepaid expenses and other current assets\u201d174 281 275 Restricted cash included in \u201cDeferred charges and other assets\u201d818 1,200 822 Total cash, cash equivalents and restricted cash$7,285 $8,262 $9,275",
+    "equation": "6293000000 + 174000000 + 818000000 = 7285000000"
+  },
+  "debt_evidence": {
+    "schema": "v43_data03_debt_bridges_v1",
+    "scope": "DEVELOPMENT_SIDECAR_ONLY",
+    "baseline_sha256": "c77f320bd9e2d19b313515ccf6d6bde1f3ee86d1cc1f3d32b6d1ca67c3d033e6",
+    "baseline_rows": 504,
+    "baseline_columns": 285,
+    "baseline_cells_changed": 0,
+    "companies": [
+      {
+        "ticker": "JPM",
+        "period": "2025-12-31",
+        "accession": "0001628280-26-008131",
+        "source_sha256": {
+          "xml": "9fe211a6d6f7ec3af368f81c820868b54d7ea02ca2fe9776e72d7a41e2472126",
+          "html": "c92ca3fb1db48edf5843a8a721a78cdca4ad21091d8efaf6165dc57dfe688a81"
+        },
+        "facts": {
+          "short": {
+            "id": "f-327",
+            "concept": "{http://fasb.org/us-gaap/2025}ShortTermBorrowings",
+            "context_ref": "c-30",
+            "cik": "0000019617",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 64776000000,
+            "kind": "liability",
+            "coverage": [
+              "short"
+            ],
+            "caption": "Short-term borrowings (included $32,460 and $26,521 at fair value)64,776 52,893",
+            "evidence": "INSTANCE_AND_PRIMARY_HTML"
+          },
+          "long": {
+            "id": "f-341",
+            "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities",
+            "context_ref": "c-30",
+            "cik": "0000019617",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 435206000000,
+            "kind": "liability",
+            "coverage": [
+              "long"
+            ],
+            "caption": "Long-term debt (included $134,559 and $100,780 at fair value)435,206 401,418",
+            "evidence": "INSTANCE_AND_PRIMARY_HTML"
+          },
+          "repo_and_fedfunds": {
+            "id": "f-323",
+            "concept": "{http://fasb.org/us-gaap/2025}FederalFundsPurchasedAndSecuritiesSoldUnderAgreementsToRepurchase",
+            "context_ref": "c-30",
+            "cik": "0000019617",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 442396000000,
+            "kind": "liability",
+            "coverage": [
+              "repo_and_fedfunds"
+            ],
+            "caption": "Federal funds purchased and securities loaned or sold under repurchase agreements (included $360,194 and $226,329 at fair value)442,396 296,835",
+            "evidence": "INSTANCE_AND_PRIMARY_HTML"
+          },
+          "loans_asset": {
+            "id": "f-297",
+            "concept": "{http://www.jpmorganchase.com/20251231}FinancingReceivableExcludingAccruedInterestBeforeAllowanceForCreditLossesNetOfDeferredIncome",
+            "context_ref": "c-30",
+            "cik": "0000019617",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 1493429000000,
+            "kind": "asset",
+            "coverage": [
+              "loans_asset"
+            ],
+            "caption": "Loans (included $70,684 and $41,350 at fair value)1,493,429 1,347,988",
+            "evidence": "INSTANCE_AND_PRIMARY_HTML"
+          }
+        },
+        "named_perimeters": [
+          {
+            "label": "reported_short_plus_long",
+            "components": [
+              "short",
+              "long"
+            ],
+            "value_usd": 499982000000,
+            "status": "RECONCILED_NAMED_SUBTOTAL_NOT_APPROVED_TOTAL_DEBT"
+          },
+          {
+            "label": "reported_borrowings_plus_repo_and_fedfunds_excluding_deposits",
+            "components": [
+              "short",
+              "long",
+              "repo_and_fedfunds"
+            ],
+            "value_usd": 942378000000,
+            "status": "RECONCILED_NAMED_SUBTOTAL_NOT_APPROVED_TOTAL_DEBT"
+          }
+        ],
+        "note_equations": [],
+        "disposition": {
+          "rejected_legacy_component": "loans_asset",
+          "reason": "Loans are an asset, not a borrowing of JPM.",
+          "unresolved": "Bank funding perimeter, deposits and other collateral/trading obligations; no exhaustive funding total asserted."
+        },
+        "notes": [
+          {
+            "id": "f-6572",
+            "concept": "{http://fasb.org/us-gaap/2025}LesseeOperatingLeasesTextBlock",
+            "text": "LeasesFirm as lesseeAt December 31, 2025 JPMorganChase and its subsidiaries were obligated under a number of noncancellable leases, predominantly operating leases for premises and equipment used primarily for business purposes. These leases generally have terms of 20 years or less, determined based on the contractual maturity of the lease, and include periods covered by options to extend or terminate the lease when the Firm is reasonably certain that it will exercise those options. All leases with lease terms greater than twelve months are reported as a lease liability with a corresponding right-of-use (\u201cROU\u201d) asset. None of these lease agreements impose restrictions on the Firm\u2019s ability to pay dividends, engage in debt or equity financing transactions or enter into further lease agreements. Certain of these leases contain escalation clauses that will increase rental payments based on maintenance, utility and tax increases, which are non-lease components. The Firm elected not to separate lease and non-lease components of a contract for its real estate leases. As such, real estate lease payments represent payments on both lease and non-lease components. Operating lease liabilities and ROU assets are recognized at the lease commencement date based on the present value of the future minimum lease payments over the lease term. The future lease payments are discounted at a rate that estimates the Firm\u2019s collateralized borrowing rate for financing instruments of a similar term and are included in accounts payable and other liabilities. The operating lease ROU assets, predominantly included in premises and equipment, also include any lease prepayments made, plus initial direct costs incurred, less any lease incentives received. Rental expense associated with operating leases is recognized on a straight-line basis over the lease term, and generally included in occupancy expense in the Consolidated statements of income. The carrying values of the Firm\u2019s operating leases were as follows: December 31,(in millions, except where otherwise noted)20252024Right-of-use assets$8,901$8,494Lease liabilities9,3378,900Weighted average remaining lease term (in years)8.28.3Weighted average discount rate4.43 %4.24 %Year ended December 31, (in millions)202520242023Supplemental cash flow informationCash paid for amounts included in the measurement of lease liabilities - operating cash flows$1,759$1,734$1,662Supplemental non-cash informationRight-of-use assets obtained in exchange for operating lease obligations$1,834$1,565$2,094 Year ended December 31, (in millions)202520242023Rental expenseGross rental expense$2,388 $2,231 $2,079 Sublease rental income(28)(41)(72)Net rental expense$2,360 $2,190 $2,007 The following table presents future payments under operating leases as of December 31, 2025.Year ended December 31, (in millions)2026$1,767 20271,699 20281,539 20291,322 20301,094 After 20303,834 Total future minimum lease payments11,255 Less: Imputed interest(1,918)Total$9,337 In addition to the table above, as of December 31, 2025, the Firm had additional future operating lease commitments of $1.9 billion that were signed but had not yet commenced. These operating leases will commence between 2026 and 2029 with lease terms up to 21 years.Firm as lessorThe Firm provides auto and equipment lease financing to its customers through lease arrangements with lease terms that may contain renewal, termination and/or purchase options. The Firm\u2019s lease financings are predominantly auto operating leases. These assets subject to operating leases are recognized in other assets on the Firm\u2019s Consolidated balance sheets and are depreciated on a straight-line basis over the lease term to reduce the asset to its estimated residual value. Depreciation expense is included in technology, communications and equipment expense in the Consolidated statements of income. The Firm\u2019s lease income is generally recognized on a straight-line basis over the lease term and is included in other income in the Consolidated statements of income. On a periodic basis, the Firm assesses leased assets for impairment, and if the carrying amount of the leased asset exceeds the undiscounted cash flows from the lease payments and the estimated residual value upon disposition of the leased asset, an impairment is recognized. The risk of loss on auto and equipment leased assets relating to the residual value of the leased assets is monitored through projections of the asset residual values at lease origination and periodic review of residual values, and is mitigated through arrangements with certain manufacturers or lessees. The following table presents the carrying value of assets subject to leases reported on the Consolidated balance sheets. December 31,(in millions)20252024Carrying value of assets subject to operating leases, net of accumulated depreciation$20,130 $12,988 Accumulated depreciation3,177 2,509 The following table presents the Firm\u2019s operating lease income and the related depreciation expense on the Consolidated statements of income. Year ended December 31, (in millions)202520242023Operating lease income$3,803 $2,795 $2,843 Depreciation expense2,418 1,685 1,778 The following table presents future receipts under operating leases as of December 31, 2025. Year ended December 31, (in millions)2026$3,637 20272,645 20281,023 202944 20304 After 2030\u2014 Total future minimum lease receipts$7,353",
+            "sha256": "f66ed182501d6e66817594819a58f0298b4b07fa52ec27a3095a7cb5ffc515b7"
+          },
+          {
+            "id": "f-6650",
+            "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtTextBlock",
+            "text": "Long-term debtJPMorganChase issues long-term debt denominated in various currencies, predominantly U.S. dollars, with both fixed and variable interest rates. Included in senior and subordinated debt below are various equity-linked or other indexed instruments, which the Firm has elected to measure at fair value. Changes in fair value are recorded in principal transactions revenue in the Consolidated statements of income, except for unrealized gains/(losses) due to DVA which are recorded in OCI. The following table is a summary of long-term debt carrying values (including unamortized premiums and discounts, issuance costs, valuation adjustments and fair value adjustments, where applicable) by remaining contractual maturity as of December 31, 2025.By remaining maturity atDecember 31,(in millions, except rates)20252024Under 1 year1-5 yearsAfter 5 yearsTotalTotalParent companySenior debt:Fixed rate$11,761 $91,867 $122,443 $226,071 $214,911 Variable rate48 6,795 1,618 8,461 8,655 Interest rates(f)2.84 %3.74 %4.14 %3.90 %3.71 %Subordinated debt:Fixed rate$2,489 $3,099 $12,919 $18,507 $14,457 Variable rate\u2014 \u2014 \u2014 \u2014 \u2014 Interest rates(f)4.83 %4.63 %4.96 %4.89 %4.76 %Subtotal$14,298 $101,761 $136,980 $253,039 $238,023 SubsidiariesFederal Home Loan Banks advances:Fixed rate$1,236 $405 $18 $1,659 $9,257 Variable rate\u2014 16,500 \u2014 16,500 20,000 Interest rates(f)3.33 %4.05 %5.65 %4.01 %4.67 %Purchase Money Note:(a)Fixed rate$\u2014 $49,435 $\u2014 $49,435 $49,208 Interest rates(f)\u2014 %3.40 %\u2014 %3.40 %3.40 %Senior debt:Fixed rate$5,896 $19,908 $11,973 $37,777 $26,545 Variable rate21,159 43,393 10,650 75,202 56,782 Interest rates(f)5.02 %3.88%1.35 %3.66 %3.81 %Subtotal$28,291 $129,641 $22,641 $180,573 $161,792 Junior subordinated debt:Fixed rate$\u2014 $495 $\u2014 $495 $488 Variable rate\u2014 421 678 1,099 1,115 Interest rates(f)\u2014 %6.87 %5.06 %6.10 %6.58 %Subtotal$\u2014 $916 $678 $1,594 $1,603 Total long-term debt(b)(c)(d)$42,589 $232,318 $160,299 $435,206 (g)(h)$401,418 Long-term beneficial interests:Fixed rate$1,156 $4,728 $\u2014 $5,884 $5,312 Variable rate\u2014 13 120 133 166 Interest rates(f)5.16 %4.54 %3.14 %4.63 %4.62 %Total long-term beneficial interests(e)$1,156 $4,741 $120 $6,017 $5,478 (a)Reflects the Purchase Money Note associated with First Republic. Refer to Note 34 for additional information.(b)Included long-term debt of $70.0 billion and $80.9 billion secured by assets totaling $191.0 billion and $185.5 billion at December 31, 2025 and 2024, respectively. The amount of long-term debt secured by assets does not include amounts related to hybrid instruments. (c)Included $134.6 billion and $100.8 billion of long-term debt accounted for at fair value at December 31, 2025 and 2024, respectively. (d)Included $18.1 billion and $13.5 billion of outstanding zero-coupon notes at December 31, 2025 and 2024, respectively. The aggregate principal amount of these notes at their respective maturities is $57.6 billion and $50.2 billion, respectively. The aggregate principal amount reflects the contractual principal payment at maturity, which may exceed the contractual principal payment at the Firm\u2019s next call date, if applicable.(e)Included on the Consolidated balance sheets in beneficial interests issued by consolidated VIEs. Also included amounts accounted for at fair value which were not material as of December 31, 2025 and 2024. Excluded short-term commercial paper and other short-term beneficial interests of $21.9 billion and $21.8 billion at December 31, 2025 and 2024, respectively. (f)The interest rates shown are the weighted average of contractual rates in effect at December 31, 2025 and 2024, respectively, including non-U.S. dollar fixed- and variable-rate issuances, which excludes the effects of the associated derivative instruments used in hedge accounting relationships, if applicable. The interest rates shown exclude structured notes accounted for at fair value.(g)As of December 31, 2025, long-term debt in the aggregate of $320.4 billion was redeemable at the option of JPMorganChase, in whole or in part, prior to maturity, based on the terms specified in the respective instruments.(h)The aggregate carrying values of debt that matures in each of the five years subsequent to 2025 is $42.6 billion in 2026, $55.8 billion in 2027, $105.4 billion in 2028, $31.4 billion in 2029 and $39.8 billion in 2030.The weighted-average contractual interest rates for total long-term debt excluding structured notes accounted for at fair value were 3.89% and 3.82% as of December 31, 2025 and 2024, respectively. In order to modify exposure to interest rate and currency exchange rate movements, JPMorganChase utilizes derivative instruments, primarily interest rate and cross-currency interest rate swaps, in conjunction with some of its debt issuances. The use of these instruments modifies the Firm\u2019s interest expense on the associated debt. The modified weighted-average interest rates for total long-term debt, including the effects of related derivative instruments, were 4.75% and 5.15% as of December 31, 2025 and 2024, respectively. JPMorgan Chase & Co. has guaranteed certain long-term debt of its subsidiaries, including structured notes. These guarantees rank pari passu with the Firm\u2019s other unsecured and unsubordinated indebtedness. The amount of such guaranteed long-term debt and structured notes was $47.6 billion and $41.2 billion at December 31, 2025 and 2024, respectively. The Firm\u2019s unsecured debt does not contain requirements that would call for an acceleration of payments, maturities or changes in the structure of the existing debt, provide any limitations on future borrowings or require additional collateral, based on unfavorable changes in the Firm\u2019s credit ratings, financial ratios, earnings or stock price.",
+            "sha256": "a433dca5acc54e2af064b2a60059e19ec0c8a33e111ca3a0775d308167e51968"
+          }
+        ],
+        "legacy_status_preserved": "CONFLICTING",
+        "production_perimeter_approved": false,
+        "economic_case_closed": false
+      },
+      {
+        "ticker": "CVX",
+        "period": "2025-12-31",
+        "accession": "0000093410-26-000078",
+        "source_sha256": {
+          "xml": "383742ba0900c6bad8fbea17085f2854a2264ca1d3673de71654c94b76ddbe98",
+          "html": "4731f02b5688823678b8978c66513f0f36341afaf25e49cd133db05fc7676ad8"
+        },
+        "facts": {
+          "short": {
+            "id": "f-237",
+            "concept": "{http://fasb.org/us-gaap/2025}ShortTermBorrowings",
+            "context_ref": "c-13",
+            "cik": "0000093410",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 977000000,
+            "kind": "liability",
+            "coverage": [
+              "short"
+            ],
+            "caption": "Short-term debt $977 $4,406",
+            "evidence": "INSTANCE_AND_PRIMARY_HTML"
+          },
+          "long": {
+            "id": "f-249",
+            "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities",
+            "context_ref": "c-13",
+            "cik": "0000093410",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 39781000000,
+            "kind": "liability",
+            "coverage": [
+              "long"
+            ],
+            "caption": "Long-term debt139,781 20,135",
+            "evidence": "INSTANCE_AND_PRIMARY_HTML"
+          },
+          "finance_total": {
+            "id": "f-815",
+            "concept": "{http://fasb.org/us-gaap/2025}FinanceLeaseLiability",
+            "context_ref": "c-13",
+            "cik": "0000093410",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 1445000000,
+            "kind": "liability",
+            "coverage": [
+              "short",
+              "long"
+            ],
+            "caption": "Total lease liabilities $5,985 $1,445 $5,070 $604",
+            "evidence": "INSTANCE_AND_PRIMARY_HTML"
+          },
+          "finance_current": {
+            "id": "f-796",
+            "concept": "{http://fasb.org/us-gaap/2025}FinanceLeaseLiabilityCurrent",
+            "context_ref": "c-13",
+            "cik": "0000093410",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 786000000,
+            "kind": "liability",
+            "coverage": [
+              "short",
+              "long"
+            ],
+            "evidence": "PINNED_INSTANCE"
+          },
+          "finance_noncurrent": {
+            "id": "f-808",
+            "concept": "{http://fasb.org/us-gaap/2025}FinanceLeaseLiabilityNoncurrent",
+            "context_ref": "c-13",
+            "cik": "0000093410",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 659000000,
+            "kind": "liability",
+            "coverage": [
+              "long"
+            ],
+            "evidence": "PINNED_INSTANCE"
+          },
+          "short_before_reclassification": {
+            "id": "f-2055",
+            "concept": "{http://fasb.org/us-gaap/2025}DebtCurrent",
+            "context_ref": "c-13",
+            "cik": "0000093410",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 10918000000,
+            "kind": "liability",
+            "coverage": [
+              "short",
+              "long"
+            ],
+            "evidence": "PINNED_INSTANCE"
+          },
+          "reclassified": {
+            "id": "f-2057",
+            "concept": "{http://www.chevron.com/20251231}ShortTermDebtReclassifiedToLongTermDebtAmount",
+            "context_ref": "c-13",
+            "cik": "0000093410",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 9941000000,
+            "kind": "liability",
+            "coverage": [
+              "long"
+            ],
+            "evidence": "PINNED_INSTANCE"
+          },
+          "principal": {
+            "id": "f-2162",
+            "concept": "{http://fasb.org/us-gaap/2025}DebtInstrumentCarryingAmount",
+            "context_ref": "c-13",
+            "cik": "0000093410",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 30922000000,
+            "kind": "liability",
+            "coverage": [
+              "short",
+              "long"
+            ],
+            "evidence": "PINNED_INSTANCE"
+          },
+          "current_maturities": {
+            "id": "f-2164",
+            "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtCurrent",
+            "context_ref": "c-13",
+            "cik": "0000093410",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 2345000000,
+            "kind": "liability",
+            "coverage": [
+              "short",
+              "long"
+            ],
+            "evidence": "PINNED_INSTANCE"
+          },
+          "acquisition_fair_value": {
+            "id": "f-2166",
+            "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtFairValue",
+            "context_ref": "c-13",
+            "cik": "0000093410",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 649000000,
+            "kind": "liability",
+            "coverage": [
+              "long"
+            ],
+            "evidence": "PINNED_INSTANCE"
+          },
+          "unamortized_discount": {
+            "id": "f-2170",
+            "concept": "{http://www.chevron.com/20251231}DebtInstrumentUnamortizedDiscountPremiumAndDebtIssuanceCostsLongTermNet",
+            "context_ref": "c-13",
+            "cik": "0000093410",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 45000000,
+            "kind": "liability",
+            "coverage": [
+              "long"
+            ],
+            "evidence": "PINNED_INSTANCE"
+          },
+          "long_note_total": {
+            "id": "f-2174",
+            "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtAndCapitalLeaseObligations",
+            "context_ref": "c-13",
+            "cik": "0000093410",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 39781000000,
+            "kind": "liability",
+            "coverage": [
+              "long"
+            ],
+            "evidence": "PINNED_INSTANCE"
+          }
+        },
+        "named_perimeters": [
+          {
+            "label": "reported_short_plus_long",
+            "components": [
+              "short",
+              "long"
+            ],
+            "value_usd": 40758000000,
+            "status": "RECONCILED_NAMED_SUBTOTAL_NOT_APPROVED_TOTAL_DEBT"
+          }
+        ],
+        "note_equations": [
+          {
+            "label": "short_net_of_reclassification",
+            "terms": [
+              {
+                "coefficient": 1,
+                "fact_id": "f-2055",
+                "value_usd": 10918000000
+              },
+              {
+                "coefficient": -1,
+                "fact_id": "f-2057",
+                "value_usd": 9941000000
+              }
+            ],
+            "expected_fact_id": "f-237",
+            "result_usd": 977000000,
+            "pass": true
+          },
+          {
+            "label": "long_note_bridge",
+            "terms": [
+              {
+                "coefficient": 1,
+                "fact_id": "f-2162",
+                "value_usd": 30922000000
+              },
+              {
+                "coefficient": -1,
+                "fact_id": "f-2164",
+                "value_usd": 2345000000
+              },
+              {
+                "coefficient": 1,
+                "fact_id": "f-2166",
+                "value_usd": 649000000
+              },
+              {
+                "coefficient": 1,
+                "fact_id": "f-2057",
+                "value_usd": 9941000000
+              },
+              {
+                "coefficient": -1,
+                "fact_id": "f-2170",
+                "value_usd": 45000000
+              },
+              {
+                "coefficient": 1,
+                "fact_id": "f-808",
+                "value_usd": 659000000
+              }
+            ],
+            "expected_fact_id": "f-249",
+            "result_usd": 39781000000,
+            "pass": true
+          },
+          {
+            "label": "finance_lease_current_plus_noncurrent",
+            "terms": [
+              {
+                "coefficient": 1,
+                "fact_id": "f-796",
+                "value_usd": 786000000
+              },
+              {
+                "coefficient": 1,
+                "fact_id": "f-808",
+                "value_usd": 659000000
+              }
+            ],
+            "expected_fact_id": "f-815",
+            "result_usd": 1445000000,
+            "pass": true
+          },
+          {
+            "label": "long_note_matches_face",
+            "terms": [
+              {
+                "coefficient": 1,
+                "fact_id": "f-2174",
+                "value_usd": 39781000000
+              }
+            ],
+            "expected_fact_id": "f-249",
+            "result_usd": 39781000000,
+            "pass": true
+          }
+        ],
+        "disposition": {
+          "research_debt_caption_total_usd": 40758000000,
+          "finance_lease_already_included_usd": 1445000000,
+          "operating_leases_separate_usd": 5985000000,
+          "unresolved": "Integration contract and dependent fields (cash, net debt, bounds, ROIC and qualification); not a released row."
+        },
+        "notes": [
+          {
+            "id": "f-778",
+            "concept": "{http://fasb.org/us-gaap/2025}LesseeOperatingLeasesTextBlock",
+            "text": "Lease CommitmentsThe company enters into leasing arrangements as a lessee; any lessor arrangements are not significant. Operating lease arrangements mainly involve land, bareboat charters, terminals, drill ships, drilling rigs, time chartered vessels, office buildings and warehouses, and exploration and production equipment. Finance leases primarily include facilities, vessels and office buildings. Details of the right-of-use assets and lease liabilities for operating and finance leases, including the balance sheet presentation, are as follows:At December 31, 2025At December 31, 2024OperatingLeasesFinanceLeasesOperatingLeasesFinanceLeasesDeferred charges and other assets$6,054 $\u2014 $5,315 $\u2014 Properties, plant and equipment, net\u2014 1,413 \u2014 570 Right-of-use assets*$6,054 $1,413 $5,315 $570 Accrued liabilities$1,831 $\u2014 $1,519 $\u2014 Short-term debt\u2014 786 \u2014 58 Current lease liabilities1,831 786 1,519 58 Deferred credits and other noncurrent obligations4,154 \u2014 3,551 \u2014 Long-term debt\u2014 659 \u2014 546 Noncurrent lease liabilities4,154 659 3,551 546 Total lease liabilities $5,985 $1,445 $5,070 $604 Weighted-average remaining lease term (in years)6.66.56.313.2Weighted-average discount rate4.0 %4.9 %3.7 %4.6 %* Includes non-cash additions of $2,845 and $971 in 2025, and $2,205 and $40 in 2024 for right-of-use assets obtained in exchange for new and modified lease liabilities for operating and finance leases, respectively. Total lease costs consist of both amounts recognized in the Consolidated Statement of Income during the period and amounts capitalized as part of the cost of another asset. Total lease costs incurred for operating and finance leases were as follows:Year-ended December 31202520242023Operating lease costs*$3,719 $3,447 $2,984 Finance lease costs 154 8352Total lease costs$3,873 $3,530 $3,036 * Includes variable and short-term lease costs.Cash paid for amounts included in the measurement of lease liabilities was as follows:Year-ended December 31202520242023Operating cash flows from operating leases$2,838 $2,468 $2,271 Investing cash flows from operating leases881 979 713 Operating cash flows from finance leases42 26 15 Financing cash flows from finance leases136 67 42 At December 31, 2025, the estimated future undiscounted cash flows for operating and finance leases were as follows:At December 31, 2025Operating LeasesFinanceLeasesYear2026$2,017 $825 20271,369 98 2028898 96 2029551 93 2030365 83 Thereafter1,701 524 Total$6,901 $1,719 Less: Amounts representing interest916 274 Total lease liabilities$5,985 $1,445 Additionally, the company has $1,316 in future undiscounted cash flows for operating leases not yet commenced. These leases are primarily for drilling rigs, time chartered vessels, exploration and production equipment and storage tanks. For those leasing arrangements where the underlying asset is not yet constructed, the lessor is primarily involved in the design and construction of the asset.",
+            "sha256": "6a3c2743f8d50d5e9c7158cb6716f5f9dbacfaa94971400a97c8ac89758313fd"
+          },
+          {
+            "id": "f-2043",
+            "concept": "{http://fasb.org/us-gaap/2025}ShortTermDebtTextBlock",
+            "text": "Short-Term Debt At December 3120252024Commercial paper$4,642 $5,386 Notes payable to banks and others with originating terms of one year or less96 131 Current maturities of long-term debt2,345 4,012 Current maturities of long-term finance leases786 58 Redeemable long-term obligations3,049 3,069 Subtotal10,918 12,656 Reclassified to long-term debt(9,941)(8,250)Total short-term debt$977 $4,406 Redeemable long-term obligations consist primarily of tax-exempt variable-rate put bonds that are included as current liabilities because they become redeemable at the option of the bondholders during the year following the balance sheet date. The company may periodically enter into interest rate swaps on a portion of its short-term debt. At December 31, 2025, the company had no interest rate swaps on short-term debt. At December 31, 2025, the company had $11,400 in 364-day committed credit facilities with various major banks that enable the refinancing of short-term obligations. The credit facilities allow the company the option to convert outstanding short-term obligations into a term loan for a period of up to one year from the facilities termination date. This supports commercial paper borrowing and can also be used for general corporate purposes. The company\u2019s practice has been to replace expiring commitments with new commitments on substantially the same terms, maintaining levels management believes appropriate. Any borrowings under these facilities would be unsecured indebtedness at interest rates based on the Secured Overnight Financing Rate (SOFR), or an average of base lending rates published by specified banks and on terms reflecting the company\u2019s strong credit rating. No borrowings were outstanding under these facilities at December 31, 2025. The company classified $9,941 and $8,250 of short-term debt as long-term at December 31, 2025 and 2024, respectively. Settlement of these obligations is not expected to require the use of working capital within one year, as the company had the intent and the ability, as evidenced by committed credit facilities, to continue refinancing them.",
+            "sha256": "341fc5f15c9bf5db8fd617c7c926d310786310898bf90012fb082e496dc962df"
+          },
+          {
+            "id": "f-2066",
+            "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtTextBlock",
+            "text": "Long-Term Debt Total long-term debt including finance lease liabilities at December 31, 2025, was $39,781. The company\u2019s long-term debt outstanding at year-end 2025 and 2024 was as follows: At December 3120252024Weighted Average Interest Rate (%)1Range of Interest Rates (%)2PrincipalPrincipalNotes due 20262.9542,250 2,250 Notes due 20273.5941.018 - 8.0005,000 2,000 Notes due 20284.7623.850 - 5.8754,700 600 Notes due 20295.8723.250 - 7.8751,567 500 Notes due 20303.9552.236 - 5.5005,350 1,500 Notes and Debentures due 20317.4847.300 - 8.625734 102 Notes and Debentures due 20324.9444.500 - 8.6252,083 183 Notes due 20337.125540 \u2014 Notes due 20354.9094.850 - 4.9801,650 \u2014 Notes due 20405.1522.978 - 6.0001,043 293 Notes due 20415.6965.600 - 6.0001,646 397 Notes due 20435.250330 330 Notes due 20445.050222 222 Notes due 20475.5694.950 - 5.800687 187 Notes due 20494.200237 237 Notes due 20502.7632.343 - 3.0781,750 1,750 Notes due 20753.722154 \u2014 Debentures due 20977.25060 60 Bank loans due 2026 to 20285.4602.448 - 8.040532 193 Term loans and credit facility borrowings7.3207.250 - 8.136367 \u2014 Medium-term notes, maturing from 2033 to 20385.7863.688 - 7.84020 20 Notes due 2025\u2014 4,012 Total including debt due within one year$30,922 14,836 Debt due within one year(2,345)(4,012)Fair market value adjustment for debt acquired in the Noble and Hess acquisitions649 529 Reclassified from short-term debt9,941 8,250 Unamortized discounts and debt issuance costs(45)(14)Finance lease liabilities3659 546 Total long-term debt$39,781 $20,135 1 Weighted-average interest rate at December 31, 2025.2 Range of interest rates at December 31, 2025.3 For details on finance lease liabilities, see Note 5 Lease Commitments. Chevron has an automatic shelf registration statement that expires in November 2027. This registration statement is for an unspecified amount of nonconvertible debt securities issued or guaranteed by Chevron Corporation or CUSA.Long-term debt excluding finance lease liabilities with a principal balance of $30,922 matures as follows: 2026 \u2013 $2,345; 2027 \u2013 $5,723; 2028 \u2013 $4,752; 2029 \u2013 $1,567; 2030 \u2013 $5,350; and after 2030 \u2013 $11,185.See Note 9 Fair Value Measurements for information concerning the fair value of the company\u2019s long-term debt.",
+            "sha256": "1260034e19a2c54c5e6df86ba5fb537f648e64aab10980a15ee0b786e7f5e955"
+          }
+        ],
+        "legacy_status_preserved": "CONFLICTING",
+        "production_perimeter_approved": false,
+        "economic_case_closed": false
+      },
+      {
+        "ticker": "USB",
+        "period": "2025-12-31",
+        "accession": "0000036104-26-000011",
+        "source_sha256": {
+          "xml": "be4faaba337c204fa7f007eb51d161a7e6d09273faa9f29222ee2946563ac2da",
+          "html": "b53931f103a1662a81938ece1fa134e64fb5509769db6ec9d9361d779180c122"
+        },
+        "facts": {
+          "short": {
+            "id": "f-133",
+            "concept": "{http://fasb.org/us-gaap/2025}ShortTermBorrowings",
+            "context_ref": "c-14",
+            "cik": "0000036104",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 17162000000,
+            "kind": "liability",
+            "coverage": [
+              "short"
+            ],
+            "evidence": "PINNED_INSTANCE"
+          },
+          "long": {
+            "id": "f-137",
+            "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities",
+            "context_ref": "c-14",
+            "cik": "0000036104",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 60764000000,
+            "kind": "liability",
+            "coverage": [
+              "long"
+            ],
+            "evidence": "PINNED_INSTANCE"
+          },
+          "finance_total": {
+            "id": "f-2206",
+            "concept": "{http://fasb.org/us-gaap/2025}FinanceLeaseLiability",
+            "context_ref": "c-14",
+            "cik": "0000036104",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 125000000,
+            "kind": "liability",
+            "coverage": [
+              "long"
+            ],
+            "evidence": "PINNED_INSTANCE"
+          }
+        },
+        "named_perimeters": [
+          {
+            "label": "reported_short_plus_long",
+            "components": [
+              "short",
+              "long"
+            ],
+            "value_usd": 77926000000,
+            "status": "RECONCILED_NAMED_SUBTOTAL_NOT_APPROVED_TOTAL_DEBT"
+          }
+        ],
+        "note_equations": [],
+        "disposition": {
+          "repo_note_amount_usd": 9228000000,
+          "repo_already_in_short": true,
+          "finance_lease_already_in_long": true,
+          "unresolved": "Bank funding perimeter; the short/long subtotal already includes repos and finance leases."
+        },
+        "notes": [
+          {
+            "id": "f-2121",
+            "concept": "{http://fasb.org/us-gaap/2025}LesseeOperatingLeasesTextBlock",
+            "text": "NOTE 6 LeasesThe Company, as a lessor, originates retail and commercial leases either directly to the consumer or indirectly through dealer networks. Retail leases consist primarily of automobiles, while commercial leases may include high dollar assets such as aircraft or lower cost items such as office equipment. The components of the net investment in sales-type and direct financing leases, at December 31, were as follows: (Dollars in Millions)20252024Lease receivables$7,277 $7,328 Unguaranteed residual values accruing to the lessor\u2019s benefit653 911 Total net investment in sales-type and direct financing leases$7,930 $8,239 The Company, as a lessor, recorded $792 million, $775 million and $738 million of revenue on its Consolidated Statement of Income for the years ended December 31, 2025, 2024 and 2023, respectively, primarily consisting of interest income on sales-type and direct financing leases. The contractual future lease payments to be received by the Company, at December 31, 2025, were as follows: (Dollars in Millions)Sales-type and Direct Financing Leases Operating Leases2026$2,611 $145 20272,524 123 20281,612 93 2029735 63 2030294 41 Thereafter342 67 Total lease payments8,118 $532 Amounts representing interest(841)Lease receivables$7,277 The Company, as lessee, leases certain assets for use in its operations. Leased assets primarily include retail branches, operations centers and other corporate locations, and, to a lesser extent, office and computer equipment. For each lease with an original term greater than 12 months, the Company records a lease liability and a corresponding ROU asset. At December 31, 2025, the Company\u2019s ROU assets included in premises and equipment and lease liabilities included in long-term debt and other liabilities were $1.5 billion and $1.5 billion, respectively, compared with $1.4 billion of ROU assets and $1.5 billion of lease liabilities at December 31, 2024, respectively.Total costs incurred by the Company, as a lessee, were $446 million, $529 million and $496 million for the years ended December 31, 2025, 2024 and 2023, respectively, and principally related to contractual lease payments on operating leases and included in net occupancy and equipment expense. The Company\u2019s leases do not impose significant covenants or other restrictions on the Company. The following table presents amounts relevant to the Company\u2019s assets leased for use in its operations for the years ended December 31: (Dollars in Millions)202520242023Cash paid for amounts included in the measurement of lease liabilitiesOperating cash flows from operating leases$339 $389 $409 Operating cash flows from finance leases7 7 7 Financing cash flows from finance leases51 62 49 Right of use assets obtained in exchange for new operating lease liabilities275 268 230 Right of use assets obtained in exchange for new finance lease liabilities14 59 25 The following table presents the weighted-average remaining lease terms and discount rates of the Company\u2019s assets leased for use in its operations at December 31: 20252024Weighted-average remaining lease term of operating leases (in years)7.16.7Weighted-average remaining lease term of finance leases (in years)8.48.1Weighted-average discount rate of operating leases4.1 %4.0 %Weighted-average discount rate of finance leases6.7 %7.3 %The contractual future lease obligations of the Company at December 31, 2025, were as follows: (Dollars in Millions)Operating Leases Finance Leases 2026$326 $43 2027304 31 2028266 20 2029225 12 2030164 9 Thereafter463 27 Total lease payments1,748 142 Amounts representing interest(329)(17)Lease liabilities$1,419 $125",
+            "sha256": "405436f22f85b32c85109c99aafc3d4a5b9c7e04a61a5a6e43059dca21dda7f7"
+          },
+          {
+            "id": "f-2521",
+            "concept": "{http://fasb.org/us-gaap/2025}ShortTermDebtTextBlock",
+            "text": "NOTE 12 Short-Term BorrowingsShort-term borrowings at December 31 consisted of the following: (Dollars in Millions)20252024Federal funds purchased$285 $252 Securities sold under agreements to repurchase9,228 7,642 Commercial paper4,341 4,288 Other short-term borrowings3,308 3,336 Total$17,162 $15,518",
+            "sha256": "e7e6b28839de08d71da45ccdd681a76d3ba01f39430dd9482c3233a9915acc45"
+          },
+          {
+            "id": "f-2543",
+            "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtTextBlock",
+            "text": "NOTE 13 Long-Term DebtLong-term debt (debt with original maturities of more than one year) at December 31 consisted of the following: (Dollars in Millions)Rate TypeRate(a) Maturity Date20252024U.S. Bancorp (Parent Company)Subordinated notesFixed7.500 %2026$199 $199 Fixed3.100 %20261,000 1,000 Fixed3.000 %20291,000 1,000 Fixed4.967 %20331,300 1,300 Fixed2.491 %20361,300 1,300 Medium-term notesFixed1.375% - 6.787% 2026 - 204529,285 27,939 Floating2.866 %2028588 519 Other(b)2,385 2,000 Subtotal37,057 35,257 SubsidiariesFederal Home Loan Bank advancesFixed1.860% - 5.260% 2026 - 202711,550 12,550 Floating4.130% - 4.590% 2026 - 20273,500 3,000 Bank notesFixed3.966% - 5.550% 2027 - 20323,097 3,405 Floating\u2014% - 4.564% 2027 - 20652,892 1,813 Other(c)2,668 1,977 Subtotal23,707 22,745 Total$60,764 $58,002 (a)Weighted-average interest rates of medium-term notes, Federal Home Loan Bank advances and bank notes were 4.60 percent, 4.41 percent and 3.44 percent, respectively.(b)Includes $2.3 billion and $2.2 billion at December 31, 2025 and 2024, respectively, of discounted noninterest-bearing additional cash received by the Company upon close of its 2022 acquisition of MUB from Mitsubishi UFJ Financial Group (\"MUFG\") to be delivered to MUFG on or prior to December 1, 2027, discounted at the Company\u2019s 5-year unsecured borrowing rate as of the acquisition date, as well as debt issuance fees and unrealized gains and losses and deferred amounts relating to derivative instruments.(c)Includes consolidated community development and tax-advantaged investment VIEs, finance lease obligations, debt issuance fees, and unrealized gains and losses and deferred amounts relating to derivative instruments.The Company has arrangements with the Federal Home Loan Bank and Federal Reserve Bank whereby the Company could have borrowed an additional $205.1 billion and $171.2 billion at December 31, 2025 and 2024, respectively. Maturities of long-term debt outstanding at December 31, 2025, were: (Dollars in Millions)Parent CompanyConsolidated2026$2,428 $15,402 20275,355 11,645 20284,001 5,773 20294,571 4,554 20304,244 4,264 Thereafter16,458 19,126 Total$37,057 $60,764",
+            "sha256": "864d945caf686ee4be82e8147dec7380e510b9e3f451347611dc3dbf04eebee3"
+          }
+        ],
+        "legacy_status_preserved": "CONFLICTING",
+        "production_perimeter_approved": false,
+        "economic_case_closed": false
+      },
+      {
+        "ticker": "STT",
+        "period": "2025-12-31",
+        "accession": "0000093751-26-000124",
+        "source_sha256": {
+          "xml": "47080e7e18628a45e330f5cb318f98f61053aa14dd558a2311082628f978d1c1",
+          "html": "0a20104d9721dfcf003b73d492143bd5760aec8c696af27c3a1fe476bec8a403"
+        },
+        "facts": {
+          "short": {
+            "id": "f-222",
+            "concept": "{http://fasb.org/us-gaap/2025}OtherShortTermBorrowings",
+            "context_ref": "c-8",
+            "cik": "0000093751",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 3821000000,
+            "kind": "liability",
+            "coverage": [
+              "short"
+            ],
+            "caption": "Other short-term borrowings3,821 9,840",
+            "evidence": "INSTANCE_AND_PRIMARY_HTML"
+          },
+          "long": {
+            "id": "f-226",
+            "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities",
+            "context_ref": "c-8",
+            "cik": "0000093751",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 25143000000,
+            "kind": "liability",
+            "coverage": [
+              "long"
+            ],
+            "caption": "Long-term debt25,143 23,272",
+            "evidence": "INSTANCE_AND_PRIMARY_HTML"
+          },
+          "repo": {
+            "id": "f-220",
+            "concept": "{http://fasb.org/us-gaap/2025}SecuritiesSoldUnderAgreementsToRepurchase",
+            "context_ref": "c-8",
+            "cik": "0000093751",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 841000000,
+            "kind": "liability",
+            "coverage": [
+              "repo"
+            ],
+            "caption": "Securities sold under repurchase agreements841 3,681",
+            "evidence": "INSTANCE_AND_PRIMARY_HTML"
+          },
+          "finance_total": {
+            "id": "f-3329",
+            "concept": "{http://fasb.org/us-gaap/2025}FinanceLeaseLiability",
+            "context_ref": "c-8",
+            "cik": "0000093751",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 106000000,
+            "kind": "liability",
+            "coverage": [
+              "long"
+            ],
+            "caption": "Total$863 $106 $969",
+            "evidence": "INSTANCE_AND_PRIMARY_HTML"
+          }
+        },
+        "named_perimeters": [
+          {
+            "label": "reported_short_plus_long",
+            "components": [
+              "short",
+              "long"
+            ],
+            "value_usd": 28964000000,
+            "status": "RECONCILED_NAMED_SUBTOTAL_NOT_APPROVED_TOTAL_DEBT"
+          },
+          {
+            "label": "reported_borrowings_including_separate_repo_excluding_deposits",
+            "components": [
+              "short",
+              "long",
+              "repo"
+            ],
+            "value_usd": 29805000000,
+            "status": "RECONCILED_NAMED_SUBTOTAL_NOT_APPROVED_TOTAL_DEBT"
+          }
+        ],
+        "note_equations": [],
+        "disposition": {
+          "short_note_primary_components_usd": 3750000000,
+          "full_other_short_borrowings_usd": 3821000000,
+          "unresolved": "Bank funding perimeter; the note primary-components subtotal does not replace the balance-sheet amount."
+        },
+        "notes": [
+          {
+            "id": "f-2071",
+            "concept": "{http://fasb.org/us-gaap/2025}ShortTermDebtTextBlock",
+            "text": "Short-Term BorrowingsOur short-term borrowings primarily include securities sold under repurchase agreements and FHLB funding recorded in other short-term borrowings.Collectively, short-term borrowings had weighted-average interest rates of 4.49% and 5.03% in 2025 and 2024, respectively.The following tables present information with respect to the amounts outstanding and weighted-average interest rates of the primary components of our short-term borrowings as of and for the years ended December 31:(Dollars in millions)Securities Sold UnderRepurchase AgreementsOther(1)2025202420252024Balance as of December 31$841 $3,681 $3,750 $9,815 Average outstanding during the year2,198 3,163 9,396 11,128 Weighted-average interest rate as of year-end0.73 %5.62 %4.33 %4.77 %Weighted-average interest rate during the year4.32 4.93 4.62 5.19 (1) Primarily includes FHLB borrowings.Obligations to repurchase securities sold are recorded as a liability in our consolidated statement of condition. Applicable securities with a fair value of $1.07 billion underlying the repurchase agreements remained in our investment securities portfolio as of December 31, 2025.The following table presents information about these securities and the carrying value of the related repurchase agreements, including accrued interest, as of December 31, 2025. Securities SoldRepurchase Agreements(1)(In millions)AmortizedCostFair ValueAmortizedCostOvernight maturity$1,058 $1,072 $841 (1) Collateralized by investment securities.We maintain an agreement with a clearing organization (FICC) that enables us to net securities purchased under resale agreements and sold under repurchase agreements with counterparties that are also members of the clearing organization when specific netting criteria are met. The impact of this netting was $242.73 billion on average in 2025 compared to $191.26 billion in 2024, primarily due to higher FICC repo volumes.State Street Bank currently maintains a line of credit of CAD $1.40 billion, or approximately $1.02 billion, as of December 31, 2025, to support its Canadian securities processing operations. The line of credit has no stated termination date and is cancellable by either party with prior notice. As of both December 31, 2025 and 2024, there was no balance outstanding on this line of credit.",
+            "sha256": "4a13a72b5ef010fe3aeb953d3cbb3c250c835e256da7489a6785dce0ceddfb11"
+          },
+          {
+            "id": "f-2101",
+            "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtTextBlock",
+            "text": "Long-Term Debt(Dollars in millions)As of December 31,Issuance DateMaturity DateCoupon RateSeniorityInterest Due Dates20252024Parent Company and Non-Banking Subsidiary IssuancesFebruary 28, 2025February 28, 20284.536 %Senior notes2/28; 8/28$1,346 $\u2014 October 22, 2024October 22, 20274.330 %Senior notes4/22, 10/22(2)1,208 1,189 August 3, 2023August 3, 20265.272 %Senior notes2/3; 8/3(2)1,204 1,203 November 21, 2023November 21, 20295.684 %Fixed-to-floating rate senior notes5/21; 11/21(2)1,009 986 August 20, 2024February 20, 20294.530 %Fixed-to-floating rate senior notes2/20; 8/20(2)1,007 989 March 18, 2024March 18, 20274.993 %Senior notes3/18, 9/18(2)1,004 993 April 24, 2025April 24, 20304.834 %Senior notes4/24; 10/24(2)1,002 \u2014 May 18, 2023May 18, 20345.159 %Fixed-to-floating rate senior notes5/18; 11/18996 995 October 23, 2025October 23, 20364.784 %Fixed-to-floating rate senior notes4/23; 10/23(2)973 \u2014 March 3, 2021March 3, 2031(1)(3)2.200 %Senior subordinated notes3/3; 9/3846 845 October 22, 2024October 22, 20324.675 %Fixed-to-floating rate senior notes4/22; 10/22(2)813 789 January 24, 2020January 24, 2030(1)2.400 %Senior notes1/24, 7/24(2)777 784 February 28, 2025February 28, 20365.146 %Fixed-to-floating rate senior notes2/28; 8/28746 \u2014 May 19, 2016May 19, 2026(1)2.650 %Senior notes5/19; 11/19(2)745 728 January 26, 2023January 26, 20344.821 %Fixed-to-floating rate senior notes1/26, 7/26(2)728 702 April 24, 2025April 24, 20284.543 %Fixed-to-floating rate senior notes4/24; 10/24(2)699 \u2014 August 4, 2022August 4, 20334.164 %Fixed-to-floating rate senior notes2/4; 8/4(2)695 665 February 28, 2025February 28, 20304.729 %Senior notes2/28; 8/28647 \u2014 February 7, 2022February 7, 20282.203 %Fixed-to-floating rate senior notes2/7; 8/7(2)634 619 December 3, 2018December 3, 20294.141 %Fixed-to-floating rate senior notes6/3; 12/3(2)536 535 November 1, 2019November 1, 2034(3)3.031 %Fixed-to-floating rate senior subordinated notes5/1; 11/1(2)518 523 November 21, 2023November 21, 2034(3)6.123 %Fixed-to-floating rate senior subordinated notes5/21; 11/21(2)507 492 November 4, 2022November 4, 20285.820 %Fixed-to-floating rate senior notes5/4; 11/4(2)503 495 April 30, 2007June 15, 2047 Floating-rate Junior subordinated debentures3/15; 6/15; 9/15; 12/15500 500 October 29, 2020March 30, 20313.152 %Fixed-to-floating rate senior notes3/30, 9/30499 498 May 13, 2022May 13, 20334.421 %Fixed-to-floating rate senior notes5/13; 11/13498 498 November 18, 2021November 18, 20271.684 %Fixed-to-floating rate senior notes5/18; 11/18(2)498 497 February 7, 2022February 7, 20332.623 %Fixed-to-floating rate senior notes2/7; 8/7(2)490 465 August 3, 2023August 3, 2026 Floating-rate Senior notes2/3; 5/3; 8/3; 11/3300 299 October 22, 2024October 22, 2027 Floating-rate Senior notes1/22; 4/22; 7/22; 10/22299 299 April 24, 2025April 24, 2028Floating-rateSenior notes1/24; 4/24; 7/24; 10/24299 \u2014 June 21, 1996June 15, 2026(1)7.350 %Senior notes6/15; 12/15150 150 May 15, 1998May 15, 2028 Floating-rate Junior subordinated debentures2/15; 5/15; 8/15; 11/15100 100 August 18, 2015August 18, 2025(1)3.550 %Senior notes2/18; 8/18(2)\u2014 1,285 May 18, 2023May 18, 2026(4)5.104 %Fixed-to-floating rate senior notes5/18; 11/18\u2014 999 January 26, 2023January 26, 2026(4)4.857 %Fixed-to-floating rate senior notes1/26, 7/26(2)\u2014 499 November 4, 2022November 4, 2026(4)5.751 %Fixed-to-floating rate senior notes5/4; 11/4(2)\u2014 498 March 30, 2020March 30, 2026(4)2.901 %Fixed-to-floating rate senior notes3/30; 9/30(2)\u2014 497 February 7, 2022February 6, 2026(4)1.746 %Fixed-to-floating rate senior notes2/6; 8/6(2)\u2014 299 State Street Bank issuances and lease obligationsNovember 25, 2024November 25, 2026(1)4.594 %Senior notes5/25, 11/251,148 1,146 November 25, 2024November 23, 2029(1)4.782 %Senior notes5/23, 11/23797 796 November 25, 2024November 25, 2026(1)Floating-rateSenior notes2/25; 5/25; 8/25; 11/25300 299 Long-term finance leases and equipment financing122 116 Total long-term debt$25,143 $23,272 (1) We may not redeem notes prior to their maturity.(2) We have entered into interest rate swap agreements, recorded as fair value hedges, to modify our interest expense on these senior and subordinated notes from a fixed rate to a floating rate. As of December 31, 2025 and 2024, these fair value hedges decreased the carrying value of long-term debt by $3 million and $220 million, respectively. Refer to Note 10 for additional information about fair value hedges.(3) The subordinated notes qualify for inclusion in tier 2 regulatory capital under current federal regulatory capital guidelines.(4) We redeemed the notes prior to original maturity date.State Street BankAs of December 31, 2025 and 2024, $106 million and $79 million, respectively, of long-term finance leases was related to information technology equipment. Refer to Note 20 for additional information.",
+            "sha256": "88364ad5991e783b384e589c7294534bcb16952b304bed5e3cd05970dedea5fb"
+          },
+          {
+            "id": "f-3256",
+            "concept": "{http://fasb.org/us-gaap/2025}LesseeOperatingLeasesTextBlock",
+            "text": "Occupancy Expense and Information Systems and Communications ExpenseOccupancy expense and information systems and communications expense include depreciation of buildings, leasehold improvements, computer hardware and software, equipment, furniture and fixtures, and amortization of lease right-of-use assets. Total depreciation and amortization expense in 2025, 2024 and 2023 was $892 million, $824 million and $829 million, respectively.We use our incremental borrowing rate to determine the present value of the lease payments for finance and operating leases described below. Additionally, we do not separate nonlease components such as real estate taxes and common area maintenance from base lease payments.As of December 31, 2025 and 2024, we had finance leases for information technology equipment of $89 million and $67 million, respectively, recorded in premises and equipment, with the related liability of $106 million and $79 million, respectively, recorded in long-term debt, in our consolidated statement of condition. Finance lease right-of-use asset amortization is recorded in information systems and communications expense on a straight-line basis in our consolidated statement of income over the respective lease term. Lease payments are recorded as a reduction of the liability, with a portion recorded as imputed interest expense. Accumulated amortization of the finance lease right-of-use assets was $182 million as of December 31, 2025. Interest expense related to the finance lease obligation reflected in NII was $3 million in both 2025 and 2024. As of December 31, 2025, aggregate net book value of the operating lease right-of-use assets recorded in other assets was $865 million, with the related lease liability recorded in accrued expenses and other liabilities in our consolidated statement of condition.We have entered into non-cancellable operating leases for premises and equipment. Nearly all of these leases include renewal options, and only those reasonably certain of being exercised are included in the term of the lease. Costs for operating leases are recorded on a straight-line basis which includes both interest expense and right-of-use asset amortization. Operating lease costs for office space are recorded in occupancy expense. Costs related to operating leases for equipment are recorded in information systems and communications expense.As of December 31, 2025, we have additional operating and finance leases, primarily for office space and equipment, that have not yet commenced with approximately $80 million of undiscounted future minimum lease payments. These leases will largely commence in fiscal year 2026 with lease terms ranging from 2 to 10 years.None of our leases contain residual value guarantees.The following table presents lease costs, sublease rental income, cash flows and new leases arising from lease transactions for 2025:Years Ended December 31,(In millions)20252024Finance lease:Amortization of right-of-use assets$47 $48 Interest on lease liabilities3 3 Total finance lease expense50 51 Sublease income \u2014 \u2014 Net finance lease expense50 51 Operating lease:Operating lease expense179 168 Sublease income (13)(17)Net operating lease expense166 151 Net lease expense$216 $202 Cash paid for amounts included in the measurement of lease liabilities:Operating cash flows from finance leases$3 $3 Operating cash flows from operating leases193 179 Financing cash flows from finance leases43 46 Right-of-use assets obtained in exchange for new lease obligations:Operating leases$214 $174 Finance leases64 \u2014 The following table presents future minimum lease payments under non-cancellable leases as of December 31, 2025:(In millions)Operating LeasesFinance LeasesTotal2026$174 $34 $208 2027154 29 183 2028136 29 165 2029101 22 123 203083 \u2014 83 Thereafter410 \u2014 410 Total future minimum lease payments1,058 114 1,172 Less imputed interest(195)(8)(203)Total$863 $106 $969 The following table presents details related to remaining lease terms and discount rate as of December 31, 2025 and 2024:December 31, 2025December 31, 2024Weighted-average remaining lease term (in years):Finance leases3.41.4Operating leases8.38.1Weighted-average discount rate:Finance leases5 %3 %Operating leases5 %4 %",
+            "sha256": "c53f436bf00f1ddccb4cbf6fc26c8f0e070061890b4e01273c4fa2dfcab95350"
+          }
+        ],
+        "legacy_status_preserved": "CONFLICTING",
+        "production_perimeter_approved": false,
+        "economic_case_closed": false
+      },
+      {
+        "ticker": "MET",
+        "period": "2025-12-31",
+        "accession": "0001099219-26-000013",
+        "source_sha256": {
+          "xml": "c8b1f2c98270ef998a030ecfc158ae8d4d097dfbed71c658c31c98579ba27a9a",
+          "html": "f289e04ec404625df12e74a4501af641a8a2e405a34409ed841392a49d6d5138"
+        },
+        "facts": {
+          "short": {
+            "id": "f-145",
+            "concept": "{http://fasb.org/us-gaap/2025}ShortTermBorrowings",
+            "context_ref": "c-10",
+            "cik": "0001099219",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 355000000,
+            "kind": "liability",
+            "coverage": [
+              "short"
+            ],
+            "caption": "Short-term debt (includes $117 and $133, respectively, relating to variable interest entities)355 465",
+            "evidence": "INSTANCE_AND_PRIMARY_HTML"
+          },
+          "long": {
+            "id": "f-149",
+            "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities",
+            "context_ref": "c-10",
+            "cik": "0001099219",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 14467000000,
+            "kind": "liability",
+            "coverage": [
+              "long"
+            ],
+            "caption": "Long-term debt (includes $28 and $0, respectively, relating to variable interest entities)14,467 15,086",
+            "evidence": "INSTANCE_AND_PRIMARY_HTML"
+          },
+          "collateral_financing": {
+            "id": "f-151",
+            "concept": "{http://fasb.org/us-gaap/2025}SecuredDebt",
+            "context_ref": "c-10",
+            "cik": "0001099219",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 352000000,
+            "kind": "liability",
+            "coverage": [
+              "collateral_financing"
+            ],
+            "caption": "Collateral financing arrangement352 476",
+            "evidence": "INSTANCE_AND_PRIMARY_HTML"
+          },
+          "subordinated": {
+            "id": "f-153",
+            "concept": "{http://fasb.org/us-gaap/2025}SubordinatedDebt",
+            "context_ref": "c-10",
+            "cik": "0001099219",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 4155000000,
+            "kind": "liability",
+            "coverage": [
+              "subordinated"
+            ],
+            "caption": "Subordinated debt securities4,155 3,164",
+            "evidence": "INSTANCE_AND_PRIMARY_HTML"
+          },
+          "cfe_notes": {
+            "id": "f-155",
+            "concept": "{http://www.metlife.com/20251231}NotesIssuedByCollateralizedFinancingEntities",
+            "context_ref": "c-10",
+            "cik": "0001099219",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 1206000000,
+            "kind": "liability",
+            "coverage": [
+              "cfe_notes"
+            ],
+            "caption": "Notes issued by collateralized financing entities (includes all amounts: under the fair value option; and relating to variable interest entities)1,206 \u2014",
+            "evidence": "INSTANCE_AND_PRIMARY_HTML"
+          },
+          "junior_subordinated": {
+            "id": "f-7633",
+            "concept": "{http://fasb.org/us-gaap/2025}JuniorSubordinatedNotes",
+            "context_ref": "c-10",
+            "cik": "0001099219",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 3167000000,
+            "kind": "liability",
+            "coverage": [
+              "subordinated"
+            ],
+            "evidence": "PINNED_INSTANCE"
+          },
+          "finance_total": {
+            "id": "f-7427",
+            "concept": "{http://fasb.org/us-gaap/2025}FinanceLeaseLiability",
+            "context_ref": "c-10",
+            "cik": "0001099219",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 6000000,
+            "kind": "liability",
+            "coverage": [
+              "long"
+            ],
+            "caption": "Financing lease obligations6 \u2014 6 6 \u2014 6",
+            "evidence": "INSTANCE_AND_PRIMARY_HTML"
+          },
+          "collateral_payables": {
+            "id": "f-141",
+            "concept": "{http://www.metlife.com/20251231}PayablesForCollateralUnderSecuritiesLoanedAndOtherTransactions",
+            "context_ref": "c-10",
+            "cik": "0001099219",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 17115000000,
+            "kind": "liability",
+            "coverage": [
+              "collateral_payables"
+            ],
+            "caption": "Payables for collateral under securities loaned and other transactions17,115 17,128",
+            "evidence": "INSTANCE_AND_PRIMARY_HTML"
+          },
+          "securities_lending_cash_collateral": {
+            "id": "f-5347",
+            "concept": "{http://fasb.org/us-gaap/2025}TransfersAccountedForAsSecuredBorrowingsAssociatedLiabilitiesCarryingAmount",
+            "context_ref": "c-10",
+            "cik": "0001099219",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 12198000000,
+            "kind": "liability",
+            "coverage": [
+              "collateral_payables"
+            ],
+            "caption": "Securities lending$11,866 $12,198 $12,082 $11,119 $11,404 $11,202",
+            "evidence": "INSTANCE_AND_PRIMARY_HTML"
+          },
+          "short_long_note_total": {
+            "id": "f-7450",
+            "concept": "{http://fasb.org/us-gaap/2025}DebtAndCapitalLeaseObligations",
+            "context_ref": "c-10",
+            "cik": "0001099219",
+            "instant": "2025-12-31",
+            "unit": "USD",
+            "decimals": -6,
+            "value_usd": 14822000000,
+            "kind": "liability",
+            "coverage": [
+              "short",
+              "long"
+            ],
+            "evidence": "PINNED_INSTANCE"
+          }
+        },
+        "named_perimeters": [
+          {
+            "label": "reported_short_plus_long",
+            "components": [
+              "short",
+              "long"
+            ],
+            "value_usd": 14822000000,
+            "status": "RECONCILED_NAMED_SUBTOTAL_NOT_APPROVED_TOTAL_DEBT"
+          },
+          {
+            "label": "debt_captions_excluding_CFE_and_other_collateral_payables",
+            "components": [
+              "short",
+              "long",
+              "collateral_financing",
+              "subordinated"
+            ],
+            "value_usd": 19329000000,
+            "status": "RECONCILED_NAMED_SUBTOTAL_NOT_APPROVED_TOTAL_DEBT"
+          },
+          {
+            "label": "debt_captions_including_CFE_excluding_other_collateral_payables",
+            "components": [
+              "short",
+              "long",
+              "collateral_financing",
+              "subordinated",
+              "cfe_notes"
+            ],
+            "value_usd": 20535000000,
+            "status": "RECONCILED_NAMED_SUBTOTAL_NOT_APPROVED_TOTAL_DEBT"
+          }
+        ],
+        "note_equations": [
+          {
+            "label": "short_long_note_matches_face",
+            "terms": [
+              {
+                "coefficient": 1,
+                "fact_id": "f-145",
+                "value_usd": 355000000
+              },
+              {
+                "coefficient": 1,
+                "fact_id": "f-149",
+                "value_usd": 14467000000
+              }
+            ],
+            "expected_fact_id": "f-7450",
+            "result_usd": 14822000000,
+            "pass": true
+          }
+        ],
+        "disposition": {
+          "legacy_long_term_component_352m_is_not_full_long_term_debt": true,
+          "collateral_payables_separately_reported_usd": 17115000000,
+          "securities_lending_cash_collateral_subset_usd": 12198000000,
+          "unresolved": "Insurance funding perimeter also requires collateral payables and policyholder funding review. Do not call 20.535bn the exhaustive total or add 12.198bn again to its 17.115bn parent."
+        },
+        "notes": [
+          {
+            "id": "f-7209",
+            "concept": "{http://fasb.org/us-gaap/2025}LesseeOperatingLeasesTextBlock",
+            "text": "14. LeasesThe Company, as lessee, has entered into various lease and sublease agreements primarily for office space. The Company has operating leases with remaining lease terms of less than one year to 12 years. The remaining lease terms for the subleases are less than one year to nine years.ROU Assets and Lease LiabilitiesROU assets and lease liabilities for operating leases were:December 31, 2025December 31, 2024(In millions)ROU assets$984 $928 Lease liabilities$1,138 $1,079 Lease CostsThe components of operating lease costs were as follows:Years Ended December 31,202520242023(In millions)Operating lease cost$234 $226 $244 Variable lease cost52 52 52 Sublease income(87)(87)(95)Net lease cost$199 $191 $201 Other InformationSupplemental other information related to operating leases was as follows:December 31, 2025December 31, 2024(Dollars in millions)Cash paid for amounts included in the measurement of lease liability - operating cash flows$234 $244 ROU assets obtained in exchange for new lease liabilities (1)$120 $52 Weighted-average remaining lease term8 years8 yearsWeighted-average discount rate4.7 %4.4 %__________________(1)See Note 3 for additional ROU assets and lease liabilities recorded as part of the acquisition of PineBridge.Maturities of Lease LiabilitiesMaturities of operating lease liabilities were as follows:December 31, 2025(In millions)2026$218 2027215 2028183 2029131 2030100 Thereafter429 Total undiscounted cash flows1,276 Less: interest138 Present value of lease liability $1,138 See Notes 11 and 16 for information about the Company\u2019s investments in leased real estate and financing lease obligations.",
+            "sha256": "c0400a8721ef8cea80c6ebb483ef8d372e90ad3b109a600895eb8f315c1cf34a"
+          },
+          {
+            "id": "f-7401",
+            "concept": "{http://fasb.org/us-gaap/2025}ShortTermDebtTextBlock",
+            "text": "Long-term and short-term debt outstanding was as follows:December 31,20252024Interest Rates (1)MaturityFaceValueUnamortizedDiscount and Issuance CostsCarryingValueFaceValueUnamortizedDiscount and Issuance CostsCarryingValue(In millions)Senior notes0.50 %-6.50%2026-2059$14,095 $(96)$13,999 $14,530 $(99)$14,431 Surplus notes7.80 %-7.80%2025\u2014 \u2014 \u2014 250 \u2014 250 Other notes (2)3.52 %-7.41%2026-2035463 (1)462 401 (2)399 Financing lease obligations6 \u2014 6 6 \u2014 6 Total long-term debt14,564 (97)14,467 15,187 (101)15,086 Total short-term debt355 \u2014 355 465 \u2014 465 Total$14,919 $(97)$14,822 $15,652 $(101)$15,551 __________________(1)Range of interest rates are for the year ended December 31, 2025.(2)Includes $75 million of long-term borrowings related to repurchase agreements, secured by CLO Investments. At December 31, 2025, the Company pledged securities with a carrying value of $80 million to collateralize these repurchase agreements. Subject to certain constraints, the counterparties are permitted by contract to sell or re-pledge these securities.The aggregate maturities of long-term debt at December 31, 2025 for the next five years and thereafter are $172 million in 2026, $81 million in 2027, $300 million in 2028, $459 million in 2029, $996 million in 2030 and $12.5 billion thereafter.Financing lease obligations are collateralized and rank highest in priority, followed by unsecured senior notes and other notes. The $1.0 billion aggregate principal amount of 6.350% Fixed-to-Fixed Reset Rate Subordinated Debentures due March 2055, payable semi-annually, issued by MetLife, Inc, in March 2025 (the \u201c6.350% Subordinated Debt\u201d) ranks below these instruments but remains senior to junior subordinated debt securities (see Note 18). Payments of interest and principal on the Company\u2019s surplus notes, which are subordinate to all other obligations of the operating company issuing the notes and are senior to obligations of MetLife, Inc., may be made only with the prior approval of the insurance department of the state of domicile of the issuer of the notes. The Company\u2019s collateral financing arrangement (see Note 17) is supported by surplus notes of a subsidiary and, accordingly, has priority consistent with surplus notes.Certain of the Company\u2019s debt instruments and committed facilities, as well as its $3.0 billion unsecured revolving credit facility (the \u201cCredit Facility\u201d), contain various administrative, reporting, legal and financial covenants. The Company believes it was in compliance with all applicable financial covenants at December 31, 2025.Senior Notes In June 2025, in a private placement transaction, MetLife, Inc. issued the following fixed rate senior notes totaling $612 million, interest on which is payable semi-annually:\u2022 \u00a510.0 billion due June 2032 which bear interest annually at 2.140%;\u2022 \u00a515.0 billion due June 2035 which bear interest annually at 2.460%;\u2022 \u00a510.7 billion due June 2037 which bear interest annually at 2.590%;\u2022 \u00a512.1 billion due June 2040 which bear interest annually at 2.830%;\u2022 \u00a523.6 billion due June 2045 which bear interest annually at 3.290%; and\u2022 \u00a516.4 billion due June 2055 which bear interest annually at 3.620%.In connection with the issuances, MetLife, Inc. incurred $5 million of related costs which will be amortized over the applicable term of each series of senior notes.In June and September 2024, MetLife, Inc. issued $500 million and $250 million, respectively, of senior notes due December 2034, which form a single series and bear interest at a fixed rate of 5.300%, payable semi-annually. In connection with the June and September issuances, MetLife, Inc. incurred $4 million and $2 million, respectively, of related costs, which in each case will be amortized over the term of the applicable senior notes.In April 2024, MetLife, Inc. redeemed for $438 million in cash all of its \u00a3350 million aggregate principal amount outstanding 5.375% senior notes due December 2024. In March 2024, MetLife, Inc. issued the following fixed rate senior notes totaling $752 million, interest on which is payable semi-annually:\u2022\u00a57.1 billion due March 2029 which bear interest annually at 1.009%;\u2022\u00a523.1 billion due March 2031 which bear interest annually at 1.415%;\u2022\u00a516.7 billion due March 2034 which bear interest annually at 1.670%;\u2022\u00a511.2 billion due March 2039 which bear interest annually at 1.953%;\u2022\u00a515.5 billion due March 2044 which bear interest annually at 2.195%;\u2022\u00a523.5 billion due March 2054 which bear interest annually at 2.390%; and\u2022\u00a515.2 billion due March 2059 which bear interest annually at 2.448%.In connection with the March 2024 issuances, MetLife, Inc. incurred $6 million of related costs which will be amortized over the applicable term of each series of the senior notes.In July 2023, MetLife, Inc. issued $1.0 billion of senior notes due July 2033 which bear interest at a fixed rate of 5.375%, payable semi-annually. In connection with the issuance, MetLife, Inc. incurred $6 million of related costs which will be amortized over the term of the senior notes.In February 2023, MetLife, Inc. redeemed for cash and canceled $1.0 billion aggregate principal amount of its outstanding 4.368% senior notes due September 2023. In January 2023, MetLife, Inc. issued $1.0 billion of senior notes due January 2054 which bear interest at a fixed rate of 5.250%, payable semi-annually. In connection with the issuance, MetLife, Inc. incurred $11 million of related costs which will be amortized over the term of the senior notes.Facility Agreement for Senior Debt IssuancesIn March 2025, MetLife, Inc. entered into a 30-year facility agreement (the \u201cFacility Agreement\u201d) with a Delaware trust (the \u201cTrust\u201d), upon the completion of the sale of Trust securities by the Trust for $1,250 million in private placements under Rule 144A of the Securities Act of 1933. The Trust invested the proceeds from the sale of its securities in a portfolio of principal and interest strips of U.S. Treasury securities (the \u201cSTRIPS\u201d).The Facility Agreement provides the Company the right to issue and sell to the Trust from time to time up to $1,250 million of its 5.740% Senior Notes due February 15, 2055 (the \u201c5.740% Senior Notes\u201d) in exchange for a corresponding amount of the STRIPS held by the Trust. In return, the Company agreed to pay a semi-annual facility fee to the Trust at a rate of 1.2373% per annum applied to the maximum amount of senior notes that MetLife, Inc. could issue and sell to the Trust. The Company can redeem the 5.740% Senior Notes at any time, in whole or in part, at a price equal to the greater of par or a make-whole redemption price. At December 31, 2025, the Company had no senior note issuances under the Facility Agreement. The Company incurred $13 million of related costs, which were capitalized in other assets and will be amortized over the term of the Facility Agreement. Total fees associated with the facility were $13 million for the year ended December 31, 2025.Short-term DebtShort-term debt with maturities of one year or less was as follows:December 31,20252024(Dollars in millions)Short-term debt (1), (2)$355 $465 Average daily balance$394 $270 Average days outstanding72 days82 days__________________(1)Includes $238 million and $465 million at December 31, 2025 and 2024, respectively, of short-term debt related to repurchase agreements, secured by assets of subsidiaries.(2)Includes $117 million and $133 million at December 31, 2025 and 2024, respectively, of short-term debt related to VIEs. For the years ended December 31, 2025, 2024 and 2023, the weighted average interest rate on short-term debt was 5.21%, 6.65% and 8.63%, respectively.Interest ExpenseInterest expense on long-term and short-term debt was $724 million, $738 million and $740 million for the years ended December 31, 2025, 2024 and 2023, respectively, which is included in other expenses. Such amounts do not include interest expense on long-term debt related to the collateral financing arrangement or subordinated debt securities. See Notes 17 and 18.Credit and Committed FacilitiesAt December 31, 2025, the Company maintained the Credit Facility, as well as certain committed facilities aggregating $3.2 billion (the \u201cCommitted Facilities\u201d). When drawn upon, these facilities bear interest at varying rates in accordance with the respective agreements.Credit FacilityThe Company\u2019s Credit Facility is used for general corporate purposes, to support the borrowers\u2019 commercial paper programs and for the issuance of letters of credit. Total fees associated with the Credit Facility were $7 million, $7 million and $6 million for the years ended December 31, 2025, 2024 and 2023, respectively, and were included in other expenses. Information on the Credit Facility at December 31, 2025 was as follows:Borrower(s)ExpirationMaximumCapacityLetters ofCreditIssuedDrawdownsUnusedCommitments(In millions)MetLife, Inc. and MetLife Funding, Inc.May 2028(1)$3,000 $304 $\u2014 $2,696 __________________(1)All borrowings under the Credit Facility must be repaid by May 8, 2028, except that letters of credit outstanding on that date may remain outstanding until no later than May 8, 2029.Committed FacilitiesLetters of credit issued under the Committed Facilities are used for collateral for certain of the Company\u2019s affiliated reinsurance liabilities. Total fees associated with the Committed Facilities, included in other expenses, were $9 million for each of the years ended December 31, 2025, 2024 and 2023. Information on the Committed Facilities at December 31, 2025 was as follows:Account Party/Borrower(s)ExpirationMaximumCapacityLetters ofCreditIssuedDrawdownsUnusedCommitments(In millions)MetLife Reinsurance Company of Vermont (\u201cMRV\u201d) and MetLife, Inc.November 2026(1), (2)$350 $350 $\u2014 $\u2014 MRV and MetLife, Inc.December 2037(1), (3)2,891 2,456 \u2014 435 Total$3,241 $2,806 $\u2014 $435 __________________(1)MetLife, Inc. is a guarantor under the applicable facility.(2)The issuance of additional letters of credit is at the discretion of the counterparty.(3)Capacity at December 31, 2025 of $2.9 billion decreases gradually between 2026 and 2037 to $2.0 billion, and the facility expires in December 2037. Unused commitment of $435 million is based on maximum capacity. At December 31, 2025, Brighthouse Financial, Inc. and its subsidiaries (\u201cBrighthouse\u201d), a former subsidiary of MetLife, Inc., is a beneficiary of $2.5 billion of letters of credit issued under this facility and, in consideration, Brighthouse reimburses MetLife, Inc. for a portion of the letter of credit fees.",
+            "sha256": "ca019eb99fceedda4dce0e9c4125302380f088338463670decfd3c46f2303809"
+          },
+          {
+            "id": "f-7597",
+            "concept": "{http://www.metlife.com/20251231}JuniorSubordinatedDebtSecuritiesTextBlock",
+            "text": "18. Subordinated Debt SecuritiesOutstanding Junior Subordinated Debt SecuritiesOutstanding junior subordinated debt securities and exchangeable surplus trust securities which are exchangeable for junior subordinated debt securities prior to redemption or repayment (collectively, the \u201cjunior subordinated debt securities\u201d), were as follows:December 31,20252024IssuerIssueDateInterestRate (1)ScheduledRedemptionDateInterest RateSubsequent toScheduledRedemptionDate (2)FinalMaturityFaceValueUnamortizedDiscountand Issuance CostsCarryingValueFaceValueUnamortizedDiscountand Issuance CostsCarryingValue(In millions)MetLife, Inc.December 20066.400%December 2036SOFR + 0.26161% + 2.205%December 2066$1,250 $(12)$1,238 $1,250 $(13)$1,237 MetLife Capital Trust IV (3)December 20077.875%December 2037SOFR + 0.26161% + 3.960%December 2067700 (10)690 700 (11)689 MetLife, Inc.April 20089.250%April 2038SOFR + 0.26161% + 5.540%April 2068750 (7)743 750 (7)743 MetLife, Inc.July 200910.750%August 2039SOFR + 0.26161% + 7.548%August 2069500 (4)496 500 (5)495 Total$3,200 $(33)$3,167 $3,200 $(36)$3,164 _________________(1)Prior to the scheduled redemption date, interest is payable semiannually in arrears.(2)In the event the securities are not redeemed on or before the scheduled redemption date, interest will accrue after such date at an annual rate based on the three-month CME Term SOFR plus 0.26161% and the indicated margin, payable quarterly in arrears.(3)MetLife Capital Trust IV is a VIE which is consolidated on the financial statements of the Company. The securities issued by this entity are exchangeable surplus trust securities, which are exchangeable for a like amount of MetLife, Inc.\u2019s junior subordinated debt securities on the scheduled redemption date, mandatorily under certain circumstances, and at any time upon MetLife, Inc. exercising its option to redeem the securities.In connection with each of the junior subordinated debt securities, MetLife, Inc. may redeem or may cause the redemption of such securities (i) in whole or in part, at any time on or after the date five years prior to the scheduled redemption date at 100% of their principal amount, or (ii) in certain circumstances, in whole or in part, prior to the date five years prior to the scheduled redemption date at 100% of their principal amount or, if greater, a make-whole price, in each case, plus accrued and unpaid interest to, but excluding the date of redemption. MetLife, Inc. also has the right to, and in certain circumstances the requirement to, defer interest payments on these securities for a period up to 10 years. Interest compounds during such periods of deferral, if any. If interest is deferred for more than five consecutive years, MetLife, Inc. is required to use proceeds from the sale of its common stock or warrants on common stock to satisfy this interest payment obligation.Subordinated Debt IssuanceIn March 2025, MetLife, Inc. issued the 6.350% Subordinated Debt (together with the junior subordinated debt securities, the \u201csubordinated debt securities\u201d). MetLife, Inc. may redeem the 6.350% Subordinated Debt in whole, at any time, or in part, from time to time (i) on any interest payment date on or after March 15, 2035, the scheduled redemption date, at a redemption price equal to 100% of their principal amount, or (ii) prior to March 15, 2035, at a redemption price equal to 100% of their principal amount plus a make-whole amount, in each case, plus accrued and unpaid interest to, but excluding, the date of redemption. MetLife, Inc. may also redeem the 6.350% Subordinated Debt in whole, but not in part, depending on the specific circumstances at a redemption price equal to (i) 100% of their principal amount or (ii) 102% of their principal amount, in each case, plus accrued and unpaid interest to, but excluding, the date of redemption. MetLife, Inc. also has the right to defer interest payments on the 6.350% Subordinated Debt for periods of up to five years. Interest compounds during such periods of deferral, if any. In connection with the issuance, MetLife, Inc. incurred $12 million of related costs which will be amortized over the term of the 6.350% Subordinated Debt. At December 31, 2025, the carrying value of the 6.350% Subordinated Debt was $988 million, net of $12 million of unamortized costs and discounts.The 6.350% Subordinated Debt ranks higher in priority than MetLife, Inc.\u2019s junior subordinated debt securities and subordinate to its senior notes.Replacement Capital CovenantsIn connection with each of the junior subordinated debt securities described above, MetLife, Inc. entered into a separate replacement capital covenant (\u201cRCC\u201d) for the benefit of the holders of a designated series of MetLife, Inc.\u2019s other indebtedness (the \u201cCovered Debt\u201d). Initially, the Covered Debt for each of the junior subordinated debt securities was MetLife, Inc.\u2019s 5.700% senior notes due 2035 (the \u201c5.700% Senior Notes\u201d). As a result of the issuance of MetLife, Inc.\u2019s 10.750% Fixed-to-Floating Rate Junior Subordinated Debentures due 2069 (the \u201c10.750% JSDs\u201d), the 10.750% JSDs became the Covered Debt with respect to, and in accordance with, the terms of the RCC relating to MetLife, Inc.\u2019s 6.40% Fixed-to-Floating Rate Junior Subordinated Debentures due 2066 (the \u201c6.40% JSDs\u201d). Pursuant to the terms of the RCCs relating to all junior subordinated debt securities other than the 6.40% JSDs, the 6.350% Subordinated Debt, as of its issuance date in March 2025, became Covered Debt under each such RCC, and the 5.700% Senior Notes were no longer Covered Debt under such RCCs. As the holders of the Covered Debt under such RCCs, the holders of the 6.350% Subordinated Debt terminated these RCCs. The 10.750% JSDs remain the Covered Debt with respect to, and in accordance with, the terms of the remaining RCC relating to the 6.40% JSDs. As part of the RCC relating to the 6.40% JSDs, MetLife, Inc. agreed that it will not repay, redeem, or purchase the securities on or before a date 10 years prior to the final maturity date of the 6.40% JSDs, unless, subject to certain limitations, it has received cash proceeds during a specified period from the sale of specified replacement securities. The RCC relating to the 6.40% JSDs will terminate upon the occurrence of certain events, including an acceleration of the 6.40% JSDs due to the occurrence of an event of default. The RCC relating to the 6.40% JSDs is not intended for the benefit of holders of the 6.40% JSDs and may not be enforced by them. As part of this RCC, MetLife, Inc. is required, during the six-month period prior to the applicable scheduled redemption date, to use commercially reasonable efforts to raise replacement capital to permit repayment of such securities through the issuance of certain qualifying capital securities.Interest ExpenseInterest expense on outstanding subordinated debt securities was $312 million, $261 million and $261 million for the years ended December 31, 2025, 2024 and 2023, respectively, which is included in other expenses.",
+            "sha256": "ab5b7291f535ad2ed3bf4f75339df3433d2d8abe290e790fc49307bcee8fd71b"
+          }
+        ],
+        "legacy_status_preserved": "CONFLICTING",
+        "production_perimeter_approved": false,
+        "economic_case_closed": false
+      }
+    ],
+    "coverage_semantics": "CONSERVATIVE_OVERLAP_DOMAINS_NOT_AN_ALLOCATION_BETWEEN_CURRENT_AND_NONCURRENT",
+    "bank_net_debt_to_ocf": "NOT_APPLICABLE_PRESERVED",
+    "source_authentication": "ARCHIVED_BYTES_PINNED_NOT_NEW_SEC_AUTHENTICATION",
+    "candidate_promoted": false,
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false,
+    "builder_identity": {
+      "observed_main": {
+        "expected_reference_sha256": "fa3ac869c21bb9e71ff1fe22aa9b5aa060f11849dabe241fdadbc84cfdb53ec3",
+        "actual_sha256": "efa61d3b477c9aa1339a1259b8edaa27192c8ea9e93cc74a4a3a09bf220f84c5",
+        "identity_matches_reference": false,
+        "identity_gate": "BLOCKED_BUILDER_MISMATCH",
+        "execution_authorized": false,
+        "reason": "Identity alone does not validate inputs, runtime, economic contract or authorize a run."
+      },
+      "reference_copy": {
+        "expected_reference_sha256": "fa3ac869c21bb9e71ff1fe22aa9b5aa060f11849dabe241fdadbc84cfdb53ec3",
+        "actual_sha256": "fa3ac869c21bb9e71ff1fe22aa9b5aa060f11849dabe241fdadbc84cfdb53ec3",
+        "identity_matches_reference": true,
+        "identity_gate": "PASS_IDENTITY_ONLY",
+        "execution_authorized": false,
+        "reason": "Identity alone does not validate inputs, runtime, economic contract or authorize a run."
+      }
+    }
+  },
+  "balance_sheet_bridge": {
+    "schema": "v43_data08_cvx_bs_bridge_v1",
+    "ticker": "CVX",
+    "accession": "0000093410-26-000078",
+    "period": "2025-12-31",
+    "source_hashes": {
+      "xml": "383742ba0900c6bad8fbea17085f2854a2264ca1d3673de71654c94b76ddbe98",
+      "html": "4731f02b5688823678b8978c66513f0f36341afaf25e49cd133db05fc7676ad8"
+    },
+    "facts": {
+      "short": {
+        "id": "f-237",
+        "concept": "{http://fasb.org/us-gaap/2025}ShortTermBorrowings",
+        "context_ref": "c-13",
+        "cik": "0000093410",
+        "instant": "2025-12-31",
+        "unit": "USD",
+        "decimals": -6,
+        "value_usd": 977000000,
+        "caption": "Short-term debt $977 $4,406"
+      },
+      "accounts_payable": {
+        "id": "f-239",
+        "concept": "{http://fasb.org/us-gaap/2025}AccountsPayableCurrent",
+        "context_ref": "c-13",
+        "cik": "0000093410",
+        "instant": "2025-12-31",
+        "unit": "USD",
+        "decimals": -6,
+        "value_usd": 19280000000,
+        "caption": "Accounts payable19,280 22,079"
+      },
+      "accrued_liabilities": {
+        "id": "f-241",
+        "concept": "{http://fasb.org/us-gaap/2025}AccruedLiabilitiesCurrent",
+        "context_ref": "c-13",
+        "cik": "0000093410",
+        "instant": "2025-12-31",
+        "unit": "USD",
+        "decimals": -6,
+        "value_usd": 10763000000,
+        "caption": "Accrued liabilities10,763 8,486"
+      },
+      "income_taxes": {
+        "id": "f-243",
+        "concept": "{http://fasb.org/us-gaap/2025}AccruedIncomeTaxesCurrent",
+        "context_ref": "c-13",
+        "cik": "0000093410",
+        "instant": "2025-12-31",
+        "unit": "USD",
+        "decimals": -6,
+        "value_usd": 844000000,
+        "caption": "Federal and other taxes on income844 1,872"
+      },
+      "other_taxes": {
+        "id": "f-245",
+        "concept": "{http://fasb.org/us-gaap/2025}AccrualForTaxesOtherThanIncomeTaxesCurrent",
+        "context_ref": "c-13",
+        "cik": "0000093410",
+        "instant": "2025-12-31",
+        "unit": "USD",
+        "decimals": -6,
+        "value_usd": 1523000000,
+        "caption": "Other taxes payable1,523 1,715"
+      },
+      "current_liabilities": {
+        "id": "f-247",
+        "concept": "{http://fasb.org/us-gaap/2025}LiabilitiesCurrent",
+        "context_ref": "c-13",
+        "cik": "0000093410",
+        "instant": "2025-12-31",
+        "unit": "USD",
+        "decimals": -6,
+        "value_usd": 33387000000,
+        "caption": "Total Current Liabilities33,387 38,558"
+      },
+      "long": {
+        "id": "f-249",
+        "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities",
+        "context_ref": "c-13",
+        "cik": "0000093410",
+        "instant": "2025-12-31",
+        "unit": "USD",
+        "decimals": -6,
+        "value_usd": 39781000000,
+        "caption": "Long-term debt139,781 20,135"
+      },
+      "deferred_other": {
+        "id": "f-251",
+        "concept": "{http://www.chevron.com/20251231}ContractWithCustomerLiabilityAndOtherNoncurrentLiability",
+        "context_ref": "c-13",
+        "cik": "0000093410",
+        "instant": "2025-12-31",
+        "unit": "USD",
+        "decimals": -6,
+        "value_usd": 24543000000,
+        "caption": "Deferred credits and other noncurrent obligations24,543 22,094"
+      },
+      "deferred_taxes": {
+        "id": "f-253",
+        "concept": "{http://fasb.org/us-gaap/2025}DeferredIncomeTaxLiabilitiesNet",
+        "context_ref": "c-13",
+        "cik": "0000093410",
+        "instant": "2025-12-31",
+        "unit": "USD",
+        "decimals": -6,
+        "value_usd": 30014000000,
+        "caption": "Noncurrent deferred income taxes30,014 19,137"
+      },
+      "benefits": {
+        "id": "f-255",
+        "concept": "{http://fasb.org/us-gaap/2025}PensionAndOtherPostretirementDefinedBenefitPlansLiabilitiesNoncurrent",
+        "context_ref": "c-13",
+        "cik": "0000093410",
+        "instant": "2025-12-31",
+        "unit": "USD",
+        "decimals": -6,
+        "value_usd": 4111000000,
+        "caption": "Noncurrent employee benefit plans4,111 3,857"
+      },
+      "liabilities": {
+        "id": "f-257",
+        "concept": "{http://fasb.org/us-gaap/2025}Liabilities",
+        "context_ref": "c-13",
+        "cik": "0000093410",
+        "instant": "2025-12-31",
+        "unit": "USD",
+        "decimals": -6,
+        "value_usd": 131836000000,
+        "caption": "Total Liabilities2$131,836 $103,781"
+      },
+      "parent_equity": {
+        "id": "f-287",
+        "concept": "{http://fasb.org/us-gaap/2025}StockholdersEquity",
+        "context_ref": "c-13",
+        "cik": "0000093410",
+        "instant": "2025-12-31",
+        "unit": "USD",
+        "decimals": -6,
+        "value_usd": 186450000000,
+        "caption": "Total Chevron Corporation Stockholders\u2019 Equity186,450 152,318"
+      },
+      "minority": {
+        "id": "f-289",
+        "concept": "{http://fasb.org/us-gaap/2025}MinorityInterest",
+        "context_ref": "c-13",
+        "cik": "0000093410",
+        "instant": "2025-12-31",
+        "unit": "USD",
+        "decimals": -6,
+        "value_usd": 5726000000,
+        "caption": "Noncontrolling interests5,726 839"
+      },
+      "total_equity": {
+        "id": "f-291",
+        "concept": "{http://fasb.org/us-gaap/2025}StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+        "context_ref": "c-13",
+        "cik": "0000093410",
+        "instant": "2025-12-31",
+        "unit": "USD",
+        "decimals": -6,
+        "value_usd": 192176000000,
+        "caption": "Total Equity192,176 153,157"
+      },
+      "assets": {
+        "id": "f-235",
+        "concept": "{http://fasb.org/us-gaap/2025}Assets",
+        "context_ref": "c-13",
+        "cik": "0000093410",
+        "instant": "2025-12-31",
+        "unit": "USD",
+        "decimals": -6,
+        "value_usd": 324012000000,
+        "caption": "Total Assets$324,012 $256,938"
+      },
+      "liabilities_equity": {
+        "id": "f-293",
+        "concept": "{http://fasb.org/us-gaap/2025}LiabilitiesAndStockholdersEquity",
+        "context_ref": "c-13",
+        "cik": "0000093410",
+        "instant": "2025-12-31",
+        "unit": "USD",
+        "decimals": -6,
+        "value_usd": 324012000000,
+        "caption": "Total Liabilities and Equity$324,012 $256,938"
+      }
+    },
+    "equations": [
+      {
+        "terms": [
+          "short",
+          "accounts_payable",
+          "accrued_liabilities",
+          "income_taxes",
+          "other_taxes"
+        ],
+        "target": "current_liabilities",
+        "sum_usd": 33387000000,
+        "expected_usd": 33387000000,
+        "residual_usd": 0,
+        "pass": true
+      },
+      {
+        "terms": [
+          "current_liabilities",
+          "long",
+          "deferred_other",
+          "deferred_taxes",
+          "benefits"
+        ],
+        "target": "liabilities",
+        "sum_usd": 131836000000,
+        "expected_usd": 131836000000,
+        "residual_usd": 0,
+        "pass": true
+      },
+      {
+        "terms": [
+          "parent_equity",
+          "minority"
+        ],
+        "target": "total_equity",
+        "sum_usd": 192176000000,
+        "expected_usd": 192176000000,
+        "residual_usd": 0,
+        "pass": true
+      },
+      {
+        "terms": [
+          "liabilities",
+          "total_equity"
+        ],
+        "target": "assets",
+        "sum_usd": 324012000000,
+        "expected_usd": 324012000000,
+        "residual_usd": 0,
+        "pass": true
+      },
+      {
+        "terms": [
+          "liabilities",
+          "total_equity"
+        ],
+        "target": "liabilities_equity",
+        "sum_usd": 324012000000,
+        "expected_usd": 324012000000,
+        "residual_usd": 0,
+        "pass": true
+      }
+    ],
+    "face_debt_caption_subtotal_usd": 40758000000,
+    "other_face_liabilities_usd": 91078000000,
+    "other_face_liability_components": [
+      "accounts_payable",
+      "accrued_liabilities",
+      "income_taxes",
+      "other_taxes",
+      "deferred_other",
+      "deferred_taxes",
+      "benefits"
+    ],
+    "parent_equity_only_gap_usd": 5726000000,
+    "face_balance_sheet_reconciled": true,
+    "strict_debt_perimeter_closed": false,
+    "remaining_note_review": {
+      "accrued_liabilities_usd": 10763000000,
+      "deferred_other_noncurrent_usd": 24543000000,
+      "purpose": "Classify financing/lease obligations in broad liability captions and prove no omitted or duplicated debt. Arithmetic equality alone is insufficient."
+    },
+    "candidate_mutation_allowed_by_this_proof": false,
+    "bs_closure_residual_pct_not_populated": true,
+    "independent_review_completed": false,
+    "economic_clearance": false,
+    "candidate_promoted": false,
+    "buy_add_allowed": false,
+    "system_live": false,
+    "unchanged_candidate_sha256": "2ce0e525cdff6faa8d2051b9982aad8505ade199611c469a162605be53af0ef8"
+  }
+}
