@@ -54,3 +54,22 @@ for e108b517...f9e0 is not transferable. Source-component audit reconciliation
 must accompany the added source facts before those workflows can approve this
 candidate. No numeric staging directory is created, so the automatic selection
 of the S1–S4 pipeline cannot pick DATA09. Do not dispatch S6.
+
+## Primary-component supplement
+
+Run `python src/audit_br04_data09.py` after reconstruction. The hash-pinned
+primary_component_links.json reconciles 20 aggregates to 28 archived facts,
+including filing/period/unit identity, debt coverage disjointness, component
+strings and lease present-value equations. Each link explicitly supersedes the
+corresponding S1 used_as role for that ticker; the original S1 audit remains
+unchanged. These are primary XBRL facts, not assertions of FSDS face membership.
+
+Seven negative semantic cases test wrong accession, period, unit, value,
+overlapping debt coverage, asset-as-debt classification and lease PV mismatch;
+byte tampering of candidate or primary evidence also fails closed.
+
+Full S2 integration remains pending: source_validation currently verifies selected
+components against SEC FSDS NUM and face tables. It must explicitly distinguish
+and validate the primary-document supplement, while preserving all unamended FSDS
+checks. Copying these links into br04_components.csv and labelling them FSDS would
+misrepresent their origin. S3/S4 have not been run on the DATA09 hash.
