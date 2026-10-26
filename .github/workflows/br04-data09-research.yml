@@ -6,6 +6,7 @@ on:
       - 'tests/test_br04*'
       - 'data/research/br04-data09/**'
       - 'data/research/br04-data11/**'
+      - 'data/research/br04-data12/**'
       - '.github/workflows/br04-data09-research.yml'
 permissions:
   contents: read
@@ -55,6 +56,8 @@ jobs:
         run: |
           python src/br04_data11_mcd.py
           python src/br04_data11_engine.py
+      - name: Separate DATA12 total-revenue amendment and compatibility
+        run: python src/br04_data12_revenue.py --engine
       - name: Research S3 byte-preserving transport
         run: python src/br04_data09_transport.py
       - name: Research S4 frozen engine preflight
