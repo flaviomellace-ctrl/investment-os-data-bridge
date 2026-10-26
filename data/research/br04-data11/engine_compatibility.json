@@ -1,0 +1,17 @@
+{
+  "schema": "br04_data11_engine_compatibility_v1",
+  "candidate_sha256": "c856d8af683e1b4ca8d21ba3c8258b7a19714301964209f9176893728a33b486",
+  "engine_md5": "68f626974592915d6c2a8e6583d6c77b",
+  "rows_processed": 504,
+  "exceptions": 0,
+  "confidence_counts": {
+    "PROVISIONAL": 502,
+    "HIGH": 2
+  },
+  "ios_computable_rows": 310,
+  "original_fsds_contract_approval": false,
+  "s2_s3_s4_approval_inherited": false,
+  "candidate_promoted": false,
+  "economic_clearance": false,
+  "buy_add_allowed": false
+}

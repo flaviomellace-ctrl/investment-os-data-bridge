@@ -1,0 +1,36 @@
+{
+  "schema": "br04_data11_archive_verification_v1",
+  "receipt_sha256": "668849c6473189cbdfde48b0818cd301a10a5d1272a2979e9241320e860ecc86",
+  "proof_sha256": "0a143694130f1a2a9d6592a42350023ecf205b9e4d3aafe19d9ab61771b1b676",
+  "verified_facts": [
+    {
+      "field": "annual_diluted_shares",
+      "accession": "0000063908-26-000035",
+      "table_text_sha256": "4921378ec58f6b3835d354ad615774cef3ec575aa23f103753145892bd83d2fa"
+    },
+    {
+      "field": "prior_diluted_shares",
+      "accession": "0000063908-26-000035",
+      "table_text_sha256": "4921378ec58f6b3835d354ad615774cef3ec575aa23f103753145892bd83d2fa"
+    },
+    {
+      "field": "fy_minus_1_diluted_shares",
+      "accession": "0000063908-26-000035",
+      "table_text_sha256": "4921378ec58f6b3835d354ad615774cef3ec575aa23f103753145892bd83d2fa"
+    },
+    {
+      "field": "fy_minus_2_diluted_shares",
+      "accession": "0000063908-26-000035",
+      "table_text_sha256": "4921378ec58f6b3835d354ad615774cef3ec575aa23f103753145892bd83d2fa"
+    },
+    {
+      "field": "fy_minus_3_diluted_shares",
+      "accession": "0000063908-25-000012",
+      "table_text_sha256": "4bfae3e527013dde9008f361ac5ac49c47680f3262633049951b6f0cb741eef1"
+    }
+  ],
+  "all_receipt_files_hash_verified": true,
+  "fresh_sec_fetch": false,
+  "economic_clearance": false,
+  "buy_add_allowed": false
+}
