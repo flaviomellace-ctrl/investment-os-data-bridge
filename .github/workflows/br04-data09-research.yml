@@ -46,3 +46,29 @@ jobs:
           assert r['buy_add_allowed'] is False
           assert r['overall_passed'], (r['failed_tests'], r['failed_gates'])
           PY
+      - name: Restore and verify frozen engine and synthetic suite
+        run: |
+          python src/br04_data09_runtime.py
+          python data/research/br04-data09/runtime/test_v4.py
+      - name: Research S3 byte-preserving transport
+        run: python src/br04_data09_transport.py
+      - name: Research S4 frozen engine preflight
+        run: python src/br04_data09_preflight.py
+      - name: Verify transport and engine reports
+        run: |
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          from src.audit_br04_data09 import CANDIDATE_SHA
+          root=Path('data/research/br04-data09')
+          for name in ['research_transport.json','research_engine.json']:
+              r=json.loads((root/name).read_text())
+              print('DATA09_FINAL_REPORT='+json.dumps(r,separators=(',',':')))
+              assert r['overall_passed'] is True
+              assert r['candidate_sha256']==CANDIDATE_SHA
+              assert r['candidate_promoted'] is False
+              assert r['buy_add_allowed'] is False
+              assert r['original_fsds_contract_approval'] is False
+          assert hashlib.sha256((root/'RESEARCH_NOT_PROMOTED.csv').read_bytes()).hexdigest()==CANDIDATE_SHA
+          assert hashlib.sha256(Path('data/current/sp500_fundamentals.csv').read_bytes()).hexdigest()==r['base_canonical_sha256']
+          PY

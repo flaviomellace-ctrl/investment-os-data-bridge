@@ -50,7 +50,7 @@ This resolves five mapping conflicts, not all missing data or economic cases.
 ## Remaining validation
 
 The research S2 extension is implemented below; its remote result is recorded
-separately. S3/S4 have not been run on this hash. Existing approvals for the
+separately. Research S3/S4 are implemented and locally verified below. Existing approvals for the
 original S1 are not transferable. No numeric staging directory is created;
 promotion workflows cannot select DATA09. Do not dispatch S6.
 
@@ -89,3 +89,28 @@ The five amended rows now carry PRIMARY_DOCUMENT_SUPPLEMENTED instead of
 FSDS_FACE_ONLY, making their mixed provenance explicit. This changes the output
 hash from a07152b3... to 9c51a0b017cd769425c128721e935819b0634942d050142b82c6bcae3bb2429d;
 the edit count remains 75. Results for the previous hash do not transfer.
+
+## Research S3/S4 transport and frozen-engine preflight
+
+After reconstruction:
+
+    python src/br04_data09_runtime.py
+    python data/research/br04-data09/runtime/test_v4.py
+    python src/br04_data09_transport.py
+    python src/br04_data09_preflight.py
+
+The runtime loader pins the archived successful S2 receipt and restores the
+frozen engine and synthetic tests from the existing S4 workflow. Both decoded
+files are SHA-256 checked; engine MD5 remains 68f626974592915d6c2a8e6583d6c77b.
+The S3 runner uses the existing production splitter; S4 independently checks part
+hashes, ranges, headers, byte identity and candidate custody before evaluating
+all rows with the original derivation and frozen engine. Reports have distinct
+S3_RESEARCH/S4_RESEARCH phases and original_fsds_contract_approval=false.
+All output stays in this research directory. No S1 staging metadata is invented.
+
+Local pipeline: 50 parts, 504 rows, 285 columns, zero engine exceptions; original
+canonical and candidate bytes preserved. Seven integration tests cover successful
+execution and rejection of altered canonical data, candidate, S2 receipt, chunk,
+engine or row ranges. The PR workflow repeats these checks remotely after S2.
+This technical preflight does not close missing data, economic cases, independent
+reviews or funding perimeters, and does not authorize BUY/ADD or promotion.
