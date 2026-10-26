@@ -499,6 +499,7 @@ def main() -> int:
         "expected_candidate_sha256": expected_candidate_sha,
         "candidate_sha256_verified": candidate_sha_verified,
         "base_canonical_sha256": base_sha,
+        "base_scope": transport.get("base_scope", "CURRENT_CANONICAL"),
         "s1_run_id": s1_run_id,
         "source": "data/research/br04-data09 (chunks)",
         "read_from_data_current": False,

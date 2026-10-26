@@ -12,6 +12,7 @@ import rebase_br04_data09 as rebase
 import br04_data09_runtime as runtime
 import br04_data09_transport as transport
 import br04_data09_preflight as engine
+import br04_historical_base as historical
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -20,16 +21,18 @@ class TransportPreflightTests(unittest.TestCase):
         self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup)
         self.root=Path(self.tmp.name);self.directory=self.root/'data/research/br04-data09'
         self.directory.mkdir(parents=True)
-        for name in [runtime.RECEIPT,'.github/workflows/br04-s4-engine-preflight.yml','data/current/sp500_fundamentals.csv']:
+        for name in [runtime.RECEIPT,'.github/workflows/br04-s4-engine-preflight.yml']:
             target=self.root/name;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(ROOT/name,target)
         data,_=rebase.reconstruct((ROOT/'data/staging/br04/40122845921/candidate/sp500_fundamentals.csv').read_bytes(),(ROOT/'data/research/br04-data09/manifest.json').read_bytes())
         (self.directory/'RESEARCH_NOT_PROMOTED.csv').write_bytes(data)
         runtime.restore_runtime(self.root)
         self.current=self.root/'data/current/sp500_fundamentals.csv'
+        self.current.parent.mkdir(parents=True,exist_ok=True)
+        self.current.write_bytes(historical.reconstruct((ROOT/'data/staging/br04/40122845921/candidate/sp500_fundamentals.csv').read_bytes()))
         self.before=self.current.read_bytes()
 
     def run_transport(self):
-        with patch.object(transport,'ROOT',self.root),patch.object(transport,'CURRENT',self.current),contextlib.redirect_stdout(io.StringIO()):
+        with patch.object(sys,'argv',['br04_data09_transport']),patch.object(transport,'ROOT',self.root),patch.object(transport,'CURRENT',self.current),contextlib.redirect_stdout(io.StringIO()):
             return transport.main()
 
     def run_engine(self):

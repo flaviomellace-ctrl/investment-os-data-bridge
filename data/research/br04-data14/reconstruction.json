@@ -1,0 +1,23 @@
+{
+  "schema": "br04_data14_market_rebase_v1",
+  "historical_base_sha256": "51249aad299ba874b4e688993aa1a4491cc5556cf6c3f0ede339504d672e0dcf",
+  "current_base_sha256": "91b0f052957e6a0a34768cfb48838bafe9d2f7f589c3ad439f95c7178e6125e2",
+  "input_candidate_sha256": "6c444950cc89d955231a3fd8dc34cd6f34921734ab3e124ccc81aefd74d7bca9",
+  "candidate_sha256": "bc47a98f342a69ecf6017937d7e713fb2733ab0de4057debe346fc268ccec0ea",
+  "rows": 504,
+  "columns": 285,
+  "changed_cells": 1506,
+  "changed_rows": 502,
+  "changed_field_counts": {
+    "market_cap": 502,
+    "market_data_retrieved_at_utc": 502,
+    "market_price": 502
+  },
+  "legacy_amended_cells_preserved": 30,
+  "all_non_market_candidate_fields_preserved": true,
+  "all_br04_fields_preserved": true,
+  "historical_approvals_transferred": false,
+  "candidate_promoted": false,
+  "economic_clearance": false,
+  "buy_add_allowed": false
+}

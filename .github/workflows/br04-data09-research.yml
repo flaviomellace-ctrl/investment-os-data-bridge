@@ -7,6 +7,8 @@ on:
       - 'data/research/br04-data09/**'
       - 'data/research/br04-data11/**'
       - 'data/research/br04-data12/**'
+      - 'data/research/br04-data13/**'
+      - 'data/research/br04-data14/**'
       - '.github/workflows/br04-data09-research.yml'
 permissions:
   contents: read
@@ -27,10 +29,10 @@ jobs:
           python src/rebase_br04_data09.py --input data/staging/br04/40122845921/candidate/sp500_fundamentals.csv
           python src/audit_br04_data09.py
           python -m unittest discover -s tests -v
-      - name: Research S2 with independent SEC re-read
+      - name: Historical DATA09 S2 with independent SEC re-read
         env:
           SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
-        run: python src/regress_br04_candidate.py --research-data09
+        run: python src/regress_br04_candidate.py --research-data09 --historical-base
       - name: Print aggregate report and enforce research gate
         if: always()
         run: |
@@ -59,7 +61,7 @@ jobs:
       - name: Separate DATA12 total-revenue amendment and compatibility
         run: python src/br04_data12_revenue.py --engine
       - name: Research S3 byte-preserving transport
-        run: python src/br04_data09_transport.py
+        run: python src/br04_data09_transport.py --historical-base
       - name: Research S4 frozen engine preflight
         run: python src/br04_data09_preflight.py
       - name: Verify transport and engine reports
@@ -78,5 +80,8 @@ jobs:
               assert r['buy_add_allowed'] is False
               assert r['original_fsds_contract_approval'] is False
           assert hashlib.sha256((root/'RESEARCH_NOT_PROMOTED.csv').read_bytes()).hexdigest()==CANDIDATE_SHA
-          assert hashlib.sha256(Path('data/current/sp500_fundamentals.csv').read_bytes()).hexdigest()==r['base_canonical_sha256']
+          assert r['base_scope']=='HISTORICAL_REPLAY'
+          assert hashlib.sha256((root/'historical_canonical.csv').read_bytes()).hexdigest()==r['base_canonical_sha256']
           PY
+      - name: DATA14 current-base rebase, transport and frozen-engine compatibility
+        run: python src/br04_data14_market_refresh.py

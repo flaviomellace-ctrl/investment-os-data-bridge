@@ -654,10 +654,16 @@ def source_validation(
 
 
 def main() -> int:
+    global CURRENT
     parser = argparse.ArgumentParser()
     parser.add_argument("--s1-run-id", default=None)
     parser.add_argument("--research-data09", action="store_true", help="Explicit primary-document research extension; never promotion eligible")
+    parser.add_argument("--historical-base", action="store_true", help="DATA09 replay only; does not validate current canonical")
     args = parser.parse_args()
+    if args.historical_base:
+        if not args.research_data09:raise SystemExit("Historical base requires DATA09 research")
+        from br04_historical_base import restore
+        CURRENT = restore(ROOT)
 
     research = None
     if args.research_data09:
@@ -1903,6 +1909,7 @@ def main() -> int:
         "s2_run_id": norm(__import__("os").environ.get("GITHUB_RUN_ID")),
         "s1_run_id": s1_run_id,
         "base_canonical_sha256": base_sha,
+        "base_scope": "HISTORICAL_REPLAY" if args.historical_base else "CURRENT_CANONICAL",
         "candidate_sha256": candidate_sha,
         "candidate_rows": len(candidate_rows),
         "base_columns": len(base_header),

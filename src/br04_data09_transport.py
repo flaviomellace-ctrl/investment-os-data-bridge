@@ -45,6 +45,13 @@ def load_json(path: Path) -> dict:
 
 
 def main() -> int:
+    global CURRENT
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--historical-base", action="store_true")
+    args = parser.parse_args()
+    if args.historical_base:
+        from br04_historical_base import restore
+        CURRENT = restore(ROOT)
     from br04_data09_runtime import approved_regression
     s1_run_id = "40122845921"
     candidate_dir = ROOT / "data/research/br04-data09"
@@ -167,6 +174,7 @@ def main() -> int:
         "s3_run_id": os.getenv("GITHUB_RUN_ID"),
         "s1_run_id": s1_run_id,
         "base_canonical_sha256": base_sha,
+        "base_scope": "HISTORICAL_REPLAY" if args.historical_base else "CURRENT_CANONICAL",
         "canonical_sha256_before_s3": current_before_sha,
         "canonical_sha256_after_s3": current_after_sha,
         "candidate_sha256": before_sha,
