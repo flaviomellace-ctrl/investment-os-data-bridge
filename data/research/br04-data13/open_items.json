@@ -1,0 +1,52 @@
+{
+  "schema": "br04_data13_readonly_gap_inventory_v1",
+  "candidate_sha256": "6c444950cc89d955231a3fd8dc34cd6f34921734ab3e124ccc81aefd74d7bca9",
+  "rows": 504,
+  "open_item_counts": {
+    "BANK_FUNDING_PERIMETER_UNRESOLVED": 3,
+    "ECONOMIC_CASE_REMAINS_BLOCKED": 10,
+    "INSURANCE_FUNDING_PERIMETER_UNRESOLVED": 1,
+    "LEVERAGE_INDETERMINATE": 212,
+    "MISSING_ANNUAL_CAPEX": 88,
+    "MISSING_ANNUAL_DILUTED_SHARES": 133,
+    "MISSING_ANNUAL_OPERATING_CASH_FLOW": 17,
+    "MISSING_ANNUAL_REVENUE": 53,
+    "MISSING_ANNUAL_SBC": 101,
+    "MISSING_FY_MINUS_3_DILUTED_SHARES": 148,
+    "MISSING_PRIOR_DILUTED_SHARES": 132,
+    "ROSCA_UNRESOLVED": 1,
+    "ROW_BASIS_REVENUE_MISSING": 1,
+    "STRICT_DEBT_PERIMETER_UNRESOLVED": 1
+  },
+  "rows_with_listed_open_items": 379,
+  "rows_without_listed_open_items": 125,
+  "prior_ledger_string_differences": 6,
+  "prior_ledger_substantive_differences": 1,
+  "prior_ledger_substantive_by_ticker": {
+    "CEG": 1
+  },
+  "prior_ledger_formatting_only": 5,
+  "economic_cases_present": [
+    "ADBE",
+    "AMP",
+    "ANET",
+    "CMCSA",
+    "FISV",
+    "FIX",
+    "FOX",
+    "GM",
+    "NEM",
+    "TROW"
+  ],
+  "economic_cases_absent": [],
+  "buy_add_blocked_rows": 504,
+  "candidate_modified": false,
+  "source_evidence_scope": "Archived RC1 evidence; no fresh SEC authentication",
+  "limitations": [
+    "Counts overlap; this is a finite mechanical screen, not comprehensive economic clearance.",
+    "Absence of a listed reason never authorizes trading.",
+    "CEG/WELL total-revenue policy is applied in DATA12 research only, not approved for production.",
+    "Historical PH precision evidence cannot be transferred automatically: its annual filing has changed."
+  ],
+  "next_action": "Resolve remaining economic and source-completeness gaps; do not transfer historical release approvals."
+}
