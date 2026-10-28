@@ -1,0 +1,1344 @@
+{
+  "schema": "archived_economic_registry_custody_v1",
+  "archive_registry_sha256": "b64fd9b2fdb4fa12b357e2e081a4e576cdf9e225e4ce2310f556e443716cc250",
+  "verified_references": 64,
+  "records": [
+    {
+      "flag_id": "FISV_BR09",
+      "case_id": "FISV",
+      "category": "BR09",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "consolidated_mixed_model_routing_FISV"
+      ],
+      "rationale": "Classificazione del modello documentata; perimetro misto resta PROVISIONAL.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/FISV_ESITO_COORDINATORE_20261003.md",
+          "sha256": "c0b377ddd72adf7701562a0104c06844ac4aae7bb67bd727982314d2d960a0fc",
+          "excerpt_start": 1770,
+          "excerpt_sha256": "27a4f579fd011ae1840c83c1601d634c4c9da9350dd9aa2c71e70f036a75af86",
+          "section": "external-review/FISV_ESITO_COORDINATORE_20261003.md / BR09",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/FISV_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10J_BR09_REVIEW.md",
+          "sha256": "eb9e62fa760bfd05d1ca9eedfd597c75cf9cf75c8a53b3ff35ba595c6fcc7190",
+          "section": "Riga BR09 FISV",
+          "excerpt_start": 1115,
+          "excerpt_sha256": "cab23d9f7f8d43a674215a96f601305bb0906e9a59d51ba46cdb53309e11e00c",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10J_BR09_REVIEW.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "FISV_CASH_QUALITY",
+      "case_id": "FISV",
+      "category": "CASH_QUALITY",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "settlement_cash_availability",
+        "float_income",
+        "funded_capex_overlap",
+        "working_capital_tax_temporary_share"
+      ],
+      "rationale": "Capex 1763m include software e altri intangibili. Merchant advances 1129m e rimborsi 1018m, settlement anticipation advances netti 525m sono investing; settlement activity 222m \u00e8 financing. Non confondere settlement cash con cassa disponibile. Imposte differite -942m gi\u00e0 nel ponte OCF. Confronto esterno FISV: ponte OCF 6062m e OE 3942m riscontrati; FX addback 159m distinto da rimisurazione 158m, float income incluso nei ricavi, somma noncash acquisitions 1704m non attestata per assenza di sovrapposizioni. Normalizzazione incompleta.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/FISV_ESITO_COORDINATORE_20261003.md",
+          "sha256": "c0b377ddd72adf7701562a0104c06844ac4aae7bb67bd727982314d2d960a0fc",
+          "excerpt_start": 1888,
+          "excerpt_sha256": "998cb5c957e183b145ed25a53a29b64492cbb5e62bf91cb71e27737838286883",
+          "section": "external-review/FISV_ESITO_COORDINATORE_20261003.md / CASH_QUALITY",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/FISV_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "FISV_COMMITMENTS",
+      "case_id": "FISV",
+      "category": "COMMITMENTS",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "chargeback_maximum_exposure",
+        "settlement_guarantees_scope",
+        "mixed_measure_overlap"
+      ],
+      "rationale": "Purchase commitments 3833m; leases non iniziate op 162m/finance 393m. Non aggiungere finance leases gi\u00e0 nel debito; settlement/guarantees richiedono perimetro. Confronto esterno: 5151m copre quattro categorie su basi miste, non tutte le contingenze. Chargeback potenzialmente materiale da Item 1A e nota 1: esposizione massima non quantificata, mantenere INVESTIGARE. Vista secondaria R10N confermata, nessuna chiusura aggregata.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/FISV_ESITO_COORDINATORE_20261003.md",
+          "sha256": "c0b377ddd72adf7701562a0104c06844ac4aae7bb67bd727982314d2d960a0fc",
+          "excerpt_start": 1988,
+          "excerpt_sha256": "358bfb102458e16178cff28e1c536d38988da0155d7cdb5eacd87baeda574803",
+          "section": "external-review/FISV_ESITO_COORDINATORE_20261003.md / COMMITMENTS",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/FISV_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md",
+          "sha256": "99e99c1bae3209ea8c15918aa137556c9ed8d0c8e794d9f2e6f24580426e5a4c",
+          "excerpt_start": 1231,
+          "excerpt_sha256": "39627b3ca6600537326a8424d758fce3a8f0b118751a068b8ad338a6d03e7f86",
+          "section": "repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md / COMMITMENTS",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "FISV_LEVERAGE_LEASES",
+      "case_id": "FISV",
+      "category": "LEVERAGE_LEASES",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "reported_EBITDA_not_normalized",
+        "available_cash_vs_settlement",
+        "finance_lease_already_in_debt"
+      ],
+      "rationale": "Input e aritmetica verificati da R10N. Il rapporto non normalizza EBITDA n\u00e9 chiude cash availability, obblighi, leases o perimetro economico. Leases: op 763m, finance 1125m gi\u00e0 nel debito.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md",
+          "sha256": "0c37947bc83d78ba8868e4d1dbc21f4dbc1f641f9cd0982c9179475a692ca0eb",
+          "excerpt_start": 822,
+          "excerpt_sha256": "f4911be1842ae2c83679d040ff6de995f0d1441d52527e6add842f06fabc861e",
+          "section": "repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md / LEVERAGE_LEASES",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "CMCSA_BR09",
+      "case_id": "CMCSA",
+      "category": "BR09",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "consolidated_mixed_model_routing_CMCSA"
+      ],
+      "rationale": "Classificazione del modello documentata; perimetro misto resta PROVISIONAL.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/CMCSA_ESITO_COORDINATORE_20261003.md",
+          "sha256": "557baf767a10a610aed9c2b44364b75dd58ae7b8fd5169f6e3cddfe030ccf27c",
+          "excerpt_start": 0,
+          "excerpt_sha256": "68019ba22ecc8e071805cef064269813a9c0f93b208f9707132e9b338f02d21c",
+          "section": "external-review/CMCSA_ESITO_COORDINATORE_20261003.md / BR09",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/CMCSA_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10J_BR09_REVIEW.md",
+          "sha256": "eb9e62fa760bfd05d1ca9eedfd597c75cf9cf75c8a53b3ff35ba595c6fcc7190",
+          "section": "Riga BR09 CMCSA",
+          "excerpt_start": 1590,
+          "excerpt_sha256": "7be5245c9adb94d78bd3e8c6367a6fb9d7b0b058a733576c16e228451162ee9e",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10J_BR09_REVIEW.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "CMCSA_CASH_QUALITY",
+      "case_id": "CMCSA",
+      "category": "CASH_QUALITY",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "intangible_capex_scope",
+        "tax_refund_exact_cash",
+        "tax_benefit_temporary_share",
+        "total_liabilities_fallback_correction"
+      ],
+      "rationale": "Oltre al capex 11750m compaiono 2658m pagati per intangibili e 11m per Universal Beijing. Il calcolo congelato non incorpora queste righe: completezza del capex da riconciliare senza modificare formula o ranking. Guadagni investimenti -8853m gi\u00e0 stornati nella riconciliazione OCF; altre attivit\u00e0/passivit\u00e0 +1994m da spiegare. Confronto esterno CMCSA: tax refund documentato circa 1900m, riduzione taxes payable 1400m non interamente qualificata come cash benefit temporaneo. Residui di arrotondamento OCF preservati; capex scope e normalizzazione aperti. Errore storico total_liabilities 175728m contro 175256m da fonte, fallback individuato: correzione tecnica separata ancora da applicare.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/CMCSA_ESITO_COORDINATORE_20261003.md",
+          "sha256": "557baf767a10a610aed9c2b44364b75dd58ae7b8fd5169f6e3cddfe030ccf27c",
+          "excerpt_start": 2093,
+          "excerpt_sha256": "ee79da09757e60abf7ddbe00163c6046bdb46b28a3fd49d3c05c44f0229e2510",
+          "section": "external-review/CMCSA_ESITO_COORDINATORE_20261003.md / CASH_QUALITY",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/CMCSA_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "CMCSA_COMMITMENTS",
+      "case_id": "CMCSA",
+      "category": "COMMITMENTS",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "programming_93800_content_2600_overlap",
+        "theme_park_carrying_vs_maximum",
+        "mixed_basis_total_108507"
+      ],
+      "rationale": "Content minimum 2600m, LC/guarantees 313m, Atairos unfunded 1300m: verificare impegni, scadenze e sovrapposizioni prima di sommare. Inventario ampliato: programming/production 93800m, parchi valore stimato 1900m/carrying 1100m, compensi differiti 5097m. Totale proposto 108507m non attestabile senza riconciliare basi e sovrapposizioni; BR09 resta PROVISIONAL sul perimetro advertising/marketplace.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/CMCSA_ESITO_COORDINATORE_20261003.md",
+          "sha256": "557baf767a10a610aed9c2b44364b75dd58ae7b8fd5169f6e3cddfe030ccf27c",
+          "excerpt_start": 0,
+          "excerpt_sha256": "68019ba22ecc8e071805cef064269813a9c0f93b208f9707132e9b338f02d21c",
+          "section": "external-review/CMCSA_ESITO_COORDINATORE_20261003.md / COMMITMENTS",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/CMCSA_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md",
+          "sha256": "99e99c1bae3209ea8c15918aa137556c9ed8d0c8e794d9f2e6f24580426e5a4c",
+          "excerpt_start": 1231,
+          "excerpt_sha256": "39627b3ca6600537326a8424d758fce3a8f0b118751a068b8ad338a6d03e7f86",
+          "section": "repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md / COMMITMENTS",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "CMCSA_LEVERAGE_LEASES",
+      "case_id": "CMCSA",
+      "category": "LEVERAGE_LEASES",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "reported_vs_normalized_EBITDA",
+        "carrying_vs_face_debt",
+        "operating_lease_overlap"
+      ],
+      "rationale": "Input e aritmetica verificati da R10N. Il rapporto non normalizza EBITDA n\u00e9 chiude cash availability, obblighi, leases o perimetro economico. Leases: op 6097m; componenti 6096m arrotondati.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md",
+          "sha256": "0c37947bc83d78ba8868e4d1dbc21f4dbc1f641f9cd0982c9179475a692ca0eb",
+          "excerpt_start": 914,
+          "excerpt_sha256": "63c07d4ddfbe102cc9cc857ce40f9ca21577d161853ec94a82a34b02d5c0d9cf",
+          "section": "repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md / LEVERAGE_LEASES",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "FOX_BR09",
+      "case_id": "FOX",
+      "category": "BR09",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "consolidated_mixed_model_routing_FOX"
+      ],
+      "rationale": "Classificazione del modello documentata; perimetro misto resta PROVISIONAL.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/FOX_ESITO_COORDINATORE_20261003.md",
+          "sha256": "940a7a59dc8c34b95182858739325ca965b99619f6dee5a38d5af956ea625122",
+          "excerpt_start": 0,
+          "excerpt_sha256": "e720fb9922d286038350c3cccdd17f9b2397e1c0a3fa5881e2e92f173315519b",
+          "section": "external-review/FOX_ESITO_COORDINATORE_20261003.md / BR09",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/FOX_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10J_BR09_REVIEW.md",
+          "sha256": "eb9e62fa760bfd05d1ca9eedfd597c75cf9cf75c8a53b3ff35ba595c6fcc7190",
+          "section": "Riga BR09 FOX",
+          "excerpt_start": 1715,
+          "excerpt_sha256": "9c7433596803ec2739d1dc512ca3a6524f31b37263b12e1190b3185baab0c191",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10J_BR09_REVIEW.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "FOX_CASH_QUALITY",
+      "case_id": "FOX",
+      "category": "CASH_QUALITY",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "programming_payments_temporary_share",
+        "legal_settlement_cash",
+        "FY2025_vs_FY2026_separation",
+        "total_liabilities_fallback_correction"
+      ],
+      "rationale": "Inventories net of programming payable +521m; restructuring/impairment/other corporate matters +267m nel ponte. Distinguere cash settlements e noncash adjustments. Nessuna add-back automatica. Si usa il filing congelato al 30 giugno 2025, non il successivo 2026. Confronto esterno FOX: OE 2858m, rilascio rimanenze/programmi 521m non qualificato come temporaneo; differenza stock/flussi 30m non riconciliata. Normalizzazione incompleta. total_liabilities storico 11233m contro passivit\u00e0 10840m: secondo caso documentato del fallback, correzione separata non applicata.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/FOX_ESITO_COORDINATORE_20261003.md",
+          "sha256": "940a7a59dc8c34b95182858739325ca965b99619f6dee5a38d5af956ea625122",
+          "excerpt_start": 964,
+          "excerpt_sha256": "876a2796c4ca6bb33acd6fd559811ac464e7972386b360e21717c4ebcb6d0935",
+          "section": "external-review/FOX_ESITO_COORDINATORE_20261003.md / CASH_QUALITY",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/FOX_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "FOX_COMMITMENTS",
+      "case_id": "FOX",
+      "category": "COMMITMENTS",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "NFL_post_2029_payment_perimeter",
+        "programming_payable_overlap",
+        "Venu_FOX_share",
+        "Credible_put_settlement"
+      ],
+      "rationale": "Programming 26941m e altri 1595m; totale contrattuale 35186m include borrowings 6650m. Litigations restano da valutare; totale non \u00e8 debito incrementale. Inventario 29399m su basi miste, sovrapposizioni e perimetro NFL aperti. Profilo scadenze non prova da solo omissione pagamenti. Credible mantiene il quesito di classificazione mista PROVISIONAL; FY2025 distinto da scan FY2026.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/FOX_ESITO_COORDINATORE_20261003.md",
+          "sha256": "940a7a59dc8c34b95182858739325ca965b99619f6dee5a38d5af956ea625122",
+          "excerpt_start": 964,
+          "excerpt_sha256": "876a2796c4ca6bb33acd6fd559811ac464e7972386b360e21717c4ebcb6d0935",
+          "section": "external-review/FOX_ESITO_COORDINATORE_20261003.md / COMMITMENTS",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/FOX_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md",
+          "sha256": "99e99c1bae3209ea8c15918aa137556c9ed8d0c8e794d9f2e6f24580426e5a4c",
+          "excerpt_start": 699,
+          "excerpt_sha256": "643f0043a53f51032b4d2fd4e096d989af8c03070786bb8dabdb969cefb9e077",
+          "section": "repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md / COMMITMENTS",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "FOX_LEVERAGE_LEASES",
+      "case_id": "FOX",
+      "category": "LEVERAGE_LEASES",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "reported_vs_normalized_EBITDA",
+        "FY2025_scope",
+        "finance_lease_not_disclosed"
+      ],
+      "rationale": "Input e aritmetica verificati da R10N. Il rapporto non normalizza EBITDA n\u00e9 chiude cash availability, obblighi, leases o perimetro economico. Leases: op 863m.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md",
+          "sha256": "0c37947bc83d78ba8868e4d1dbc21f4dbc1f641f9cd0982c9179475a692ca0eb",
+          "excerpt_start": 1190,
+          "excerpt_sha256": "5906c5d247f8183f4a18d4b117159fa9c12faffdf7db5abcc300d134bae64f42",
+          "section": "repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md / LEVERAGE_LEASES",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "GM_BR09",
+      "case_id": "GM",
+      "category": "BR09",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [],
+      "rationale": "Modello negativo documentato: risolve il solo quesito marketplace, non gli altri flag del dossier.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/GM_ESITO_COORDINATORE_20261003.md",
+          "sha256": "65ab406640b386f9357f0b0b9f98dc31ab46b10bc7b5488561fd55093a30c366",
+          "excerpt_start": 305,
+          "excerpt_sha256": "7b86889d7b41982a2ac7ee50b0279fbd391554e1d58da8fe374feacaf07bdf79",
+          "section": "external-review/GM_ESITO_COORDINATORE_20261003.md / BR09",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/GM_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10J_BR09_REVIEW.md",
+          "sha256": "eb9e62fa760bfd05d1ca9eedfd597c75cf9cf75c8a53b3ff35ba595c6fcc7190",
+          "section": "Riga BR09 GM",
+          "excerpt_start": 524,
+          "excerpt_sha256": "569c16f90fb32e840ba30e2bd369d3669f60e2410e2774199ae5838295c2da30",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10J_BR09_REVIEW.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "GM_CASH_QUALITY",
+      "case_id": "GM",
+      "category": "CASH_QUALITY",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "automotive_vs_captive_cash_flow",
+        "leased_vehicle_net_investment",
+        "other_operating_assets_liabilities_scope"
+      ],
+      "rationale": "OCF consolidato include +9056m da altri attivi/passivi operativi; investing include acquisti veicoli in leasing 15793m e realizzi 10095m, oltre ai crediti finanziari. OCF meno solo property capex non rappresenta direttamente cassa automotive distribuibile. Il riferimento a reserve release riguarda 2024, non prova beneficio 2025. SBC 334m confermato nella nota compensi. Confronto esterno GM: Nota 24 somma componenti 9057m contro totale pubblicato 9056m; corretta la precedente affermazione di quadratura esatta R10K. SBC expense 334m distinto dal movimento equity 531m; normalizzazione incompleta.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/GM_ESITO_COORDINATORE_20261003.md",
+          "sha256": "65ab406640b386f9357f0b0b9f98dc31ab46b10bc7b5488561fd55093a30c366",
+          "excerpt_start": 5099,
+          "excerpt_sha256": "b48a1ad411550539b1f9a64dea3057a457b7935d35906c19435e52bf8ba3781c",
+          "section": "external-review/GM_ESITO_COORDINATORE_20261003.md / CASH_QUALITY",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/GM_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "GM_COMMITMENTS",
+      "case_id": "GM",
+      "category": "COMMITMENTS",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "automotive_captive_VIE_scope",
+        "8500_VIE_4000_JV_overlap",
+        "guarantee_maximum_recourse"
+      ],
+      "rationale": "EV remaining 293m, VIE max exposure 8500m include JV capital 4000m; guarantees 3500m. Separare automotive/captive finance e sovrapposizioni.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/GM_ESITO_COORDINATORE_20261003.md",
+          "sha256": "65ab406640b386f9357f0b0b9f98dc31ab46b10bc7b5488561fd55093a30c366",
+          "excerpt_start": 5169,
+          "excerpt_sha256": "38343d746ce6f2ba37c241e5e75e49bd6c8e1250b2de2faed3f6994f9d545f84",
+          "section": "external-review/GM_ESITO_COORDINATORE_20261003.md / COMMITMENTS",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/GM_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md",
+          "sha256": "99e99c1bae3209ea8c15918aa137556c9ed8d0c8e794d9f2e6f24580426e5a4c",
+          "excerpt_start": 1231,
+          "excerpt_sha256": "39627b3ca6600537326a8424d758fce3a8f0b118751a068b8ad338a6d03e7f86",
+          "section": "repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md / COMMITMENTS",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "GM_LEVERAGE_LEASES",
+      "case_id": "GM",
+      "category": "LEVERAGE_LEASES",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "industrial_vs_captive_finance_separation",
+        "generic_leverage_not_applicable",
+        "lease_PV_vs_payments"
+      ],
+      "rationale": "Vista generica esclusa: separare perimetro finanziario/industriale; preservare la variante settoriale congelata, senza sostituirla con leva generale. Leases: op liability 1301m e future payments 1300m non intercambiabili.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md",
+          "sha256": "0c37947bc83d78ba8868e4d1dbc21f4dbc1f641f9cd0982c9179475a692ca0eb",
+          "excerpt_start": 2703,
+          "excerpt_sha256": "3f8ed1c14fa3dd3058324b4f61309d185f206212f25c6871a5b687b79764264c",
+          "section": "repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md / LEVERAGE_LEASES",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "ADBE_BR09",
+      "case_id": "ADBE",
+      "category": "BR09",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "consolidated_mixed_model_routing_ADBE"
+      ],
+      "rationale": "Classificazione del modello documentata; perimetro misto resta PROVISIONAL.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/ADBE_ESITO_COORDINATORE_20261003.md",
+          "sha256": "80c233da27af3ad24c8b98b986eee30759248c492ef4367b2f2fa0746049946f",
+          "excerpt_start": 0,
+          "excerpt_sha256": "00a796a5aea9560bfc01ad8fb32d382412771945fd68fee2880e2f9a38c908e9",
+          "section": "external-review/ADBE_ESITO_COORDINATORE_20261003.md / BR09",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/ADBE_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10J_BR09_REVIEW.md",
+          "sha256": "eb9e62fa760bfd05d1ca9eedfd597c75cf9cf75c8a53b3ff35ba595c6fcc7190",
+          "section": "Riga BR09 ADBE",
+          "excerpt_start": 1442,
+          "excerpt_sha256": "9ec5bb7f52e8baad23abafb875372e6987d7dedf41b86d5935ebe775069595d8",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10J_BR09_REVIEW.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "ADBE_CASH_QUALITY",
+      "case_id": "ADBE",
+      "category": "CASH_QUALITY",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "mixed_investing_134_split",
+        "cash_tax_drag_provenance",
+        "recurrence_not_established"
+      ],
+      "rationale": "Il testo intercettato riguarda incertezza futura sugli accertamenti, non dimostra un beneficio temporaneo nell\u2019OCF 2025. Imposte differite -512m gi\u00e0 riconciliate nel rendiconto; imposte pagate 2219m. Non sottrarre di nuovo le imposte differite. La riga investimenti/intangibili/altri beni 134m richiede separazione prima di affermare completezza economica del capex. R10O dispone tre quesiti puntuali: frase audit futura, impatto non materiale delle nuove regole nel FY2025 e divieto di duplicare le imposte differite. Il ponte OCF \u00e8 esatto; ricorrenza e riga mista restano aperte. Confronto esterno ADBE: ponte OCF e cash flow completi confermati, sensitivity 7776m non \u00e8 lower bound globale. Tre disposizioni R10O preservate, normalizzazione ancora incompleta; test con flag false non prova la risoluzione dei flag.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10O_ADBE_STATEMENT_DISPOSITIONS.md",
+          "sha256": "fd7813f4245e2f403204998ec93bf4f05565037f3a5b7bd814e18f2b9df4d23f",
+          "excerpt_start": 0,
+          "excerpt_sha256": "e2e3c590fb6f8584e3f12c626e48e10a0caab70ce0f045bd11863a908bdb0e14",
+          "section": "repo/docs/V4_2_R10O_ADBE_STATEMENT_DISPOSITIONS.md / CASH_QUALITY",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10O_ADBE_STATEMENT_DISPOSITIONS.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/external-review/ADBE_ESITO_COORDINATORE_20261003.md",
+          "sha256": "80c233da27af3ad24c8b98b986eee30759248c492ef4367b2f2fa0746049946f",
+          "excerpt_start": 0,
+          "excerpt_sha256": "3b96bf8299f52aa1c87bb07aad08825dcbd8b10acab7a8854e9d20b8f22a9361",
+          "section": "external-review/ADBE_ESITO_COORDINATORE_20261003.md / CASH_QUALITY",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/ADBE_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "ADBE_COMMITMENTS",
+      "case_id": "ADBE",
+      "category": "COMMITMENTS",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "IP_indemnity_maximum",
+        "Semrush_conditional_terms",
+        "general_ROSCA_risk_disposition"
+      ],
+      "rationale": "Purchase commitments 6821m distinti da leases. La quantificazione di questa categoria non attesta completezza di tutte le altre obbligazioni. R10O: circa 1900m per acquisizione condizionata, distinta dagli acquisti; royalties 283m sono spesa storica, non minimo futuro. Massimo degli indennizzi non stimabile, non zero. Confronto esterno: fair value minimo \u00e8 scoped officers/directors, non tutti gli indennizzi IP. Interessi futuri 1030m separati dal carrying debt. DOJ/FTC ROSCA potenzialmente significativo e non quantificato: disposizione di perimetro aperta, senza creare un nuovo flag congelato. Proposta di chiusura esterna non accettata.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10O_ADBE_STATEMENT_DISPOSITIONS.md",
+          "sha256": "fd7813f4245e2f403204998ec93bf4f05565037f3a5b7bd814e18f2b9df4d23f",
+          "excerpt_start": 0,
+          "excerpt_sha256": "e2e3c590fb6f8584e3f12c626e48e10a0caab70ce0f045bd11863a908bdb0e14",
+          "section": "repo/docs/V4_2_R10O_ADBE_STATEMENT_DISPOSITIONS.md / COMMITMENTS",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10O_ADBE_STATEMENT_DISPOSITIONS.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/external-review/ADBE_ESITO_COORDINATORE_20261003.md",
+          "sha256": "80c233da27af3ad24c8b98b986eee30759248c492ef4367b2f2fa0746049946f",
+          "excerpt_start": 0,
+          "excerpt_sha256": "67226bb7bb7dfbd1600565547040022ed74c24fe798f7c86ab9915cf22fdbcd1",
+          "section": "external-review/ADBE_ESITO_COORDINATORE_20261003.md / COMMITMENTS",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/ADBE_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "ADBE_LEVERAGE_LEASES",
+      "case_id": "ADBE",
+      "category": "LEVERAGE_LEASES",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "reported_DA_accretion_EBITDA",
+        "carrying_vs_principal",
+        "economic_perimeter_open"
+      ],
+      "rationale": "Input e aritmetica verificati da R10N. Il rapporto non normalizza EBITDA n\u00e9 chiude cash availability, obblighi, leases o perimetro economico. Leases: op 438m.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md",
+          "sha256": "0c37947bc83d78ba8868e4d1dbc21f4dbc1f641f9cd0982c9179475a692ca0eb",
+          "excerpt_start": 1058,
+          "excerpt_sha256": "2ad054e36d7e0e82315072d7c03e3add61381e6ab3fd60a691cc6378e7640231",
+          "section": "repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md / LEVERAGE_LEASES",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "TROW_BR09",
+      "case_id": "TROW",
+      "category": "BR09",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [],
+      "rationale": "Modello negativo documentato: risolve il solo quesito marketplace, non gli altri flag del dossier.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/TROW_ESITO_COORDINATORE_20261003.md",
+          "sha256": "d5b8aff41017fa4e80aa76f9a643e9d94c0417f7107be80e1eae74a3d7fd5e77",
+          "excerpt_start": 1018,
+          "excerpt_sha256": "4a523e0ad689638cbad164261a5e7a2c10d1532ec3e2d09045361a4ad910648a",
+          "section": "external-review/TROW_ESITO_COORDINATORE_20261003.md / BR09",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/TROW_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10J_BR09_REVIEW.md",
+          "sha256": "eb9e62fa760bfd05d1ca9eedfd597c75cf9cf75c8a53b3ff35ba595c6fcc7190",
+          "section": "Riga BR09 TROW",
+          "excerpt_start": 668,
+          "excerpt_sha256": "ca7b5d19cd78e1e6d098db99d7a98913f69a9c42bbe7c0180685248bef993691",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10J_BR09_REVIEW.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "TROW_CASH_QUALITY",
+      "case_id": "TROW",
+      "category": "CASH_QUALITY",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "IOS_BANK_sector_measure",
+        "issuer_vs_products_and_NCI",
+        "other_changes",
+        "capex_cash_tax_attribution"
+      ],
+      "rationale": "Fair value contingent consideration nel 2025 \u00e8 zero (2024 -13.4m); gains investments -452.4m gi\u00e0 rettificati. Trading securities dei prodotti consolidati assorbono 1002.7m: non aggiungerli indietro senza separare perimetro emittente, prodotti e interessenze terzi. OE aritmetico non sostituisce IOS_BANK. Confronto esterno TROW: OCF issuer/prodotti/elisioni riscontrati per tre anni; restano Other changes, attribution completa capex/cash tax e normalizzazione. Repo debt 21.8m dimostrato con perimetro CLO, non promosso a total_debt; IOS_BANK preservato.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/TROW_ESITO_COORDINATORE_20261003.md",
+          "sha256": "d5b8aff41017fa4e80aa76f9a643e9d94c0417f7107be80e1eae74a3d7fd5e77",
+          "excerpt_start": 1142,
+          "excerpt_sha256": "6fb1f0bc9cb9db767fbb7a5a05ae4e33b027b4a433c3da04854c08fc85810727",
+          "section": "external-review/TROW_ESITO_COORDINATORE_20261003.md / CASH_QUALITY",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/TROW_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "TROW_COMMITMENTS",
+      "case_id": "TROW",
+      "category": "COMMITMENTS",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "VIE_199_3_OHA_287_overlap",
+        "earnout_maximum_900_vs_zero_FV",
+        "current_vs_historical_tags"
+      ],
+      "rationale": "VIE 199.3m, OHA funding 287m, contingent earnout fino a 900m con fair value corrente zero; evitare doppio conteggio e tag storici non correnti.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/TROW_ESITO_COORDINATORE_20261003.md",
+          "sha256": "d5b8aff41017fa4e80aa76f9a643e9d94c0417f7107be80e1eae74a3d7fd5e77",
+          "excerpt_start": 1269,
+          "excerpt_sha256": "e005328fea6c9758977260ea52e1f5a5e3572020c59463243b3089f6c006657a",
+          "section": "external-review/TROW_ESITO_COORDINATORE_20261003.md / COMMITMENTS",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/TROW_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md",
+          "sha256": "99e99c1bae3209ea8c15918aa137556c9ed8d0c8e794d9f2e6f24580426e5a4c",
+          "excerpt_start": 699,
+          "excerpt_sha256": "643f0043a53f51032b4d2fd4e096d989af8c03070786bb8dabdb969cefb9e077",
+          "section": "repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md / COMMITMENTS",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "TROW_LEVERAGE_LEASES",
+      "case_id": "TROW",
+      "category": "LEVERAGE_LEASES",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "IOS_BANK_preserved",
+        "generic_industrial_leverage_excluded",
+        "issuer_CLO_products_scope"
+      ],
+      "rationale": "Vista generica esclusa: separare perimetro finanziario/industriale; preservare la variante settoriale congelata, senza sostituirla con leva generale. Leases: op 447.2m.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md",
+          "sha256": "0c37947bc83d78ba8868e4d1dbc21f4dbc1f641f9cd0982c9179475a692ca0eb",
+          "excerpt_start": 2997,
+          "excerpt_sha256": "5ccee2cd8a64bd6e942ef72a644d7b0e3cca9e713c8c6c4cd94c7d808a3c5f51",
+          "section": "repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md / LEVERAGE_LEASES",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "AMP_BR09",
+      "case_id": "AMP",
+      "category": "BR09",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "consolidated_mixed_model_routing_AMP"
+      ],
+      "rationale": "Classificazione del modello documentata; perimetro misto resta PROVISIONAL.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10J_BR09_REVIEW.md",
+          "sha256": "eb9e62fa760bfd05d1ca9eedfd597c75cf9cf75c8a53b3ff35ba595c6fcc7190",
+          "section": "Riga BR09 AMP",
+          "excerpt_start": 1322,
+          "excerpt_sha256": "99a90e75dfd21bc52ee9d5b3a6bec7c2be3d24574ecf543ebdf7850346eb3a0a",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10J_BR09_REVIEW.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/external-review/AMP_ESITO_V2_COORDINATORE_20261003.md",
+          "sha256": "6f284e8cb7e993190f19693b936b4b6dce16edcf39f79f8f8a0045e1fe4d196e",
+          "section": "Stato AMP_BR09",
+          "excerpt_start": 3097,
+          "excerpt_sha256": "b7298d048da6714ee0992acf710f36b389645553dd5dc230afe4811fec1f0e40",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/AMP_ESITO_V2_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "AMP_CASH_QUALITY",
+      "case_id": "AMP",
+      "category": "CASH_QUALITY",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "frozen_financial_variant",
+        "insurance_MRB_assets_liabilities_scope",
+        "distributable_cash_and_regulatory_capital"
+      ],
+      "rationale": "OCF include +4610m da saldi assicurati, benefici e market risk benefits; non equivale a cassa distribuibile. Portafoglio investimenti e passivit\u00e0 devono essere trattati insieme. Riserva liberata nella nota non \u00e8 automaticamente cash flow. Applicare variante finanziaria congelata, non generic OE come misura operativa.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/AMP_ESITO_V2_COORDINATORE_20261003.md",
+          "sha256": "6f284e8cb7e993190f19693b936b4b6dce16edcf39f79f8f8a0045e1fe4d196e",
+          "section": "Stato AMP_CASH_QUALITY",
+          "excerpt_start": 3256,
+          "excerpt_sha256": "a4a8db9c90f2042ae017371954d865d9040225a43e2021c6097e76994ebcb418",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/AMP_ESITO_V2_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "AMP_COMMITMENTS",
+      "case_id": "AMP",
+      "category": "COMMITMENTS",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "undrawn_funding_3322_scope",
+        "VIE_subclass_vs_total_exposure"
+      ],
+      "rationale": "Funding commitments 3322m non sono drawn debt. Limite su una sottoclasse VIE non prova immaterialit\u00e0 dell\u2019intero perimetro.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md",
+          "sha256": "99e99c1bae3209ea8c15918aa137556c9ed8d0c8e794d9f2e6f24580426e5a4c",
+          "excerpt_start": 1231,
+          "excerpt_sha256": "39627b3ca6600537326a8424d758fce3a8f0b118751a068b8ad338a6d03e7f86",
+          "section": "repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md / COMMITMENTS",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/external-review/AMP_ESITO_V2_COORDINATORE_20261003.md",
+          "sha256": "6f284e8cb7e993190f19693b936b4b6dce16edcf39f79f8f8a0045e1fe4d196e",
+          "section": "Stato AMP_COMMITMENTS",
+          "excerpt_start": 3380,
+          "excerpt_sha256": "27a94403d7218a180319ca9617bc3312728769dd6c0bb8ef0682e30a71063e0c",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/AMP_ESITO_V2_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "AMP_LEVERAGE_LEASES",
+      "case_id": "AMP",
+      "category": "LEVERAGE_LEASES",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "financial_insurance_regulatory_variant",
+        "generic_industrial_leverage_excluded",
+        "CIE_asset_liability_perimeter"
+      ],
+      "rationale": "Vista generica esclusa: separare perimetro finanziario/industriale; preservare la variante settoriale congelata, senza sostituirla con leva generale. Leases: op 276m; finance esplicitamente zero nel filing.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md",
+          "sha256": "0c37947bc83d78ba8868e4d1dbc21f4dbc1f641f9cd0982c9179475a692ca0eb",
+          "excerpt_start": 2844,
+          "excerpt_sha256": "fb8810ee2e1bc9247ae3cc26f743ba47308381b8c5af5a4ba473a25ca0754078",
+          "section": "repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md / LEVERAGE_LEASES",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/external-review/AMP_ESITO_V2_COORDINATORE_20261003.md",
+          "sha256": "6f284e8cb7e993190f19693b936b4b6dce16edcf39f79f8f8a0045e1fe4d196e",
+          "section": "Stato AMP_LEVERAGE_LEASES",
+          "excerpt_start": 3524,
+          "excerpt_sha256": "2b8c3f7d75dfd34ff5381175e323ff4ec84763ab1e36e88a643e63bb0448c895",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/AMP_ESITO_V2_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "NEM_BR09",
+      "case_id": "NEM",
+      "category": "BR09",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [],
+      "rationale": "Modello negativo documentato: risolve il solo quesito marketplace, non gli altri flag del dossier.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/NEM_ESITO_COORDINATORE_20261003.md",
+          "sha256": "68f9b8408f737ad0b4c5e23a267a950ac7822753c96f7f06c49ce70006eaef9a",
+          "excerpt_start": 0,
+          "excerpt_sha256": "f9b29d874f4e24432fe3f5d3815c9ee2c64d452909b50ae245c31fa11cb6c09b",
+          "section": "external-review/NEM_ESITO_COORDINATORE_20261003.md / BR09",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/NEM_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10J_BR09_REVIEW.md",
+          "sha256": "eb9e62fa760bfd05d1ca9eedfd597c75cf9cf75c8a53b3ff35ba595c6fcc7190",
+          "section": "Riga BR09 NEM",
+          "excerpt_start": 802,
+          "excerpt_sha256": "7d94ae15a6c3d38dfb01682324ffd2e27e16f30d20c3b39707ba71e5958d0662",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10J_BR09_REVIEW.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "NEM_CASH_QUALITY",
+      "case_id": "NEM",
+      "category": "CASH_QUALITY",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "tax_timing_747_807_1039_reconciliation",
+        "divestiture_cash_tax",
+        "reclamation_future_obligations"
+      ],
+      "rationale": "Variazione fair value -604m e plusvalenza cessioni -1066m sono gi\u00e0 rettifiche nel ponte OCF: non sottrarle nuovamente. Accrued tax liabilities +1039m e deferred taxes +1391m richiedono riconciliazione dei tempi fiscali; reclamation liabilities -803m richiede confronto con obblighi futuri. SBC 99m confermato in nota e rendiconto. Confronto esterno NEM: OE 7200m e ponte OCF confermati; 747m \u00e8 differenza competenza/cash non rettifica temporanea provata. Misure 807m e 1039m non intercambiabili, residuo 232m. Nessuna known adjustment accettata o normalized OE emessa.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/NEM_ESITO_COORDINATORE_20261003.md",
+          "sha256": "68f9b8408f737ad0b4c5e23a267a950ac7822753c96f7f06c49ce70006eaef9a",
+          "excerpt_start": 0,
+          "excerpt_sha256": "3ff15aa8dfda87df4a8048cfd8c84f80c5b02592ccf41c55bef7e9b408e661ec",
+          "section": "external-review/NEM_ESITO_COORDINATORE_20261003.md / CASH_QUALITY",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/NEM_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "NEM_COMMITMENTS",
+      "case_id": "NEM",
+      "category": "COMMITMENTS",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "reclamation_PV_7190_vs_nominal_9894",
+        "1943_guarantee_overlap",
+        "Other_392",
+        "indemnity_maximum"
+      ],
+      "rationale": "Purchases 836m, guarantees/LC/surety 1943m, LC 1139m include reclamation 1005m; remediation undiscounted 9894m non \u00e8 PV. Totale 21459m include debt, interest e leases. Inventario limitato 1448m non copre bonifica PV7190m, benefici1207m, uncertain tax128m, Other392m e residui contingenti. Garanzie1943m non attestabili tutte come sovrapposte a passivit\u00e0 iscritte. Lease474m/109m verificati senza promozione input. BR09 negativo gi\u00e0 disposto e vista R10N confermati.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/NEM_ESITO_COORDINATORE_20261003.md",
+          "sha256": "68f9b8408f737ad0b4c5e23a267a950ac7822753c96f7f06c49ce70006eaef9a",
+          "excerpt_start": 0,
+          "excerpt_sha256": "78fbecb5222384de17af8264c021d7b117a84d360e46a275df9fed3adc5c71cf",
+          "section": "external-review/NEM_ESITO_COORDINATORE_20261003.md / COMMITMENTS",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/NEM_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md",
+          "sha256": "99e99c1bae3209ea8c15918aa137556c9ed8d0c8e794d9f2e6f24580426e5a4c",
+          "excerpt_start": 1231,
+          "excerpt_sha256": "39627b3ca6600537326a8424d758fce3a8f0b118751a068b8ad338a6d03e7f86",
+          "section": "repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md / COMMITMENTS",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "NEM_LEVERAGE_LEASES",
+      "case_id": "NEM",
+      "category": "LEVERAGE_LEASES",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "reported_vs_normalized_EBITDA",
+        "finance_lease_debt_perimeter",
+        "reclamation_separate_view"
+      ],
+      "rationale": "Input e aritmetica verificati da R10N. Il rapporto non normalizza EBITDA n\u00e9 chiude cash availability, obblighi, leases o perimetro economico. Leases: op 109m, finance 474m.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md",
+          "sha256": "0c37947bc83d78ba8868e4d1dbc21f4dbc1f641f9cd0982c9179475a692ca0eb",
+          "excerpt_start": 1323,
+          "excerpt_sha256": "3a0e1da794c3645fff6c5cc6a9767fc333497959bcf73f1e3ce4da77706e5947",
+          "section": "repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md / LEVERAGE_LEASES",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "FIX_BR09",
+      "case_id": "FIX",
+      "category": "BR09",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [],
+      "rationale": "Modello negativo documentato: risolve il solo quesito marketplace, non gli altri flag del dossier.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/FIX_ESITO_COORDINATORE_20261003.md",
+          "sha256": "bab7a0e959043c677c2e61465e8fa0ba36710af2e74e42499ee1bf4b55263627",
+          "excerpt_start": 0,
+          "excerpt_sha256": "3ab2f91931636733718ac224a663f9bbdb12c84c12998f5633c0e89779261072",
+          "section": "external-review/FIX_ESITO_COORDINATORE_20261003.md / BR09",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/FIX_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10J_BR09_REVIEW.md",
+          "sha256": "eb9e62fa760bfd05d1ca9eedfd597c75cf9cf75c8a53b3ff35ba595c6fcc7190",
+          "section": "Riga BR09 FIX",
+          "excerpt_start": 898,
+          "excerpt_sha256": "a5b5fec724cc6a57b37f292296aaf29414fc743e152a15251c2518f050bca070",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10J_BR09_REVIEW.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "FIX_CASH_QUALITY",
+      "case_id": "FIX",
+      "category": "CASH_QUALITY",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "external_source_digest_identity",
+        "customer_repayments_cash_classification",
+        "contract_advance_temporary_share",
+        "earnout_cash_classification",
+        "refund_interest_gross_vs_net"
+      ],
+      "rationale": "Billings in excess/deferred revenue +910.084m contro crediti -594.298m e debiti/altri passivi correnti -276.051m. Non sottrarre l\u2019intero anticipo senza ricostruire i costi coperti; non aggiungere automaticamente gli assorbimenti. Fair value earn-out 33.473m gi\u00e0 nel ponte OCF. Il falso conflitto D&A \u00e8 risolto da R10L: differenza zero; restano working capital e surety. Confronto esterno FIX: file consegnato recuperato e identico al sigillato; digest esterno diverso resta non risolto. Parziale cash tax -38400k documentato, +211608k include repayment250008k non provato; WC table omette other noncurrent assets386k, ponte completo confermato.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/FIX_ESITO_COORDINATORE_20261003.md",
+          "sha256": "bab7a0e959043c677c2e61465e8fa0ba36710af2e74e42499ee1bf4b55263627",
+          "excerpt_start": 748,
+          "excerpt_sha256": "b4b3be720b4dea991742f48040ade447be4783decfa55c758a46e4240ff782b9",
+          "section": "external-review/FIX_ESITO_COORDINATORE_20261003.md / CASH_QUALITY",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/FIX_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "FIX_COMMITMENTS",
+      "case_id": "FIX",
+      "category": "COMMITMENTS",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "surety_maximum",
+        "earnout_contractual_maximum",
+        "finance_lease_not_disclosed",
+        "LC_overlap",
+        "multiemployer_pension_exposure"
+      ],
+      "rationale": "LC 79m; surety non quantificata. Assenza di perdite storiche non equivale a esposizione zero; normale commessa non rende assenti tutti gli impegni. Totale lease338132k confermato, storico302590k solo noncurrent. LC79000k non certificate tutte come sovrapposte a riserve. Massimo earn-out e surety aperti; giudizio non riducibile alla sola materialit\u00e0 surety. R10L resta causa documentata della falsa divergenza D&A; vista R10N confermata.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/FIX_ESITO_COORDINATORE_20261003.md",
+          "sha256": "bab7a0e959043c677c2e61465e8fa0ba36710af2e74e42499ee1bf4b55263627",
+          "excerpt_start": 0,
+          "excerpt_sha256": "21debfcf0d5f28d304cf7594c2b8b25e10b138a04a227ecd968ae743e8f78f60",
+          "section": "external-review/FIX_ESITO_COORDINATORE_20261003.md / COMMITMENTS",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/FIX_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md",
+          "sha256": "99e99c1bae3209ea8c15918aa137556c9ed8d0c8e794d9f2e6f24580426e5a4c",
+          "excerpt_start": 1231,
+          "excerpt_sha256": "39627b3ca6600537326a8424d758fce3a8f0b118751a068b8ad338a6d03e7f86",
+          "section": "repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md / COMMITMENTS",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "FIX_LEVERAGE_LEASES",
+      "case_id": "FIX",
+      "category": "LEVERAGE_LEASES",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "source_verified_DA_not_case_closure",
+        "finance_lease_not_disclosed",
+        "operating_lease_and_surety_separate"
+      ],
+      "rationale": "Input e aritmetica verificati da R10N. Il rapporto non normalizza EBITDA n\u00e9 chiude cash availability, obblighi, leases o perimetro economico. Leases: op 338.132m inclusa quota corrente 35.542m.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md",
+          "sha256": "0c37947bc83d78ba8868e4d1dbc21f4dbc1f641f9cd0982c9179475a692ca0eb",
+          "excerpt_start": 1459,
+          "excerpt_sha256": "6fd75b1027f61c56c4ab745d3a3313d7c0479011d1fb2e0ce4af5a0b775ac984",
+          "section": "repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md / LEVERAGE_LEASES",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "ANET_BR09",
+      "case_id": "ANET",
+      "category": "BR09",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [],
+      "rationale": "Modello negativo documentato: risolve il solo quesito marketplace, non gli altri flag del dossier.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/ANET_ESITO_COORDINATORE_20261004.md",
+          "sha256": "073a14ae44d8570498b34216837fc4dd96d2aa731b2ef0e162ed9616abb780aa",
+          "excerpt_start": 0,
+          "excerpt_sha256": "08bb55eecedaac1b505d0b0cc6c4754e746ccf5c7b00e1efe473cbd9445887fc",
+          "section": "external-review/ANET_ESITO_COORDINATORE_20261004.md / BR09",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/ANET_ESITO_COORDINATORE_20261004.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10J_BR09_REVIEW.md",
+          "sha256": "eb9e62fa760bfd05d1ca9eedfd597c75cf9cf75c8a53b3ff35ba595c6fcc7190",
+          "section": "Riga BR09 ANET",
+          "excerpt_start": 994,
+          "excerpt_sha256": "fc44bbe6e247a1dda49288f5a09012a993c574a180aeaded95f76f3602c58f1e",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10J_BR09_REVIEW.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "ANET_CASH_QUALITY",
+      "case_id": "ANET",
+      "category": "CASH_QUALITY",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "product_vs_PCS_deferred_revenue",
+        "cash_collected_vs_billed",
+        "other_assets_composition",
+        "deferred_revenue_129_gap",
+        "cash_tax_effect"
+      ],
+      "rationale": "Deferred revenue +2452m, contro assorbimenti crediti 746.4m, inventari 412.5m e altri attivi 937.4m. Il contributo non \u00e8 tutto profitto ricorrente n\u00e9 tutto beneficio temporaneo: analizzare contratti e recupero degli anticipi prima di normalizzare. Capex include intangibili. Revisione esterna ANET ricevuta: 49 fact e 20 quadrature riscontrati. R6/R7 eseguito qui senza modifiche; 687.8m WC non \u00e8 rettifica temporanea provata. Garanzie future e lease PV restano irrisolti; funded debt assente dai prospetti non promosso a zero nel freeze.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/ANET_ESITO_COORDINATORE_20261004.md",
+          "sha256": "073a14ae44d8570498b34216837fc4dd96d2aa731b2ef0e162ed9616abb780aa",
+          "excerpt_start": 0,
+          "excerpt_sha256": "559e5124165d3d3042ff73e5388de1ed47b1a359a2d1f89ac929a7311a57e0e3",
+          "section": "external-review/ANET_ESITO_COORDINATORE_20261004.md / CASH_QUALITY",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/ANET_ESITO_COORDINATORE_20261004.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "ANET_COMMITMENTS",
+      "case_id": "ANET",
+      "category": "COMMITMENTS",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "future_guarantee_indemnity_LC_maximum",
+        "lease_PV_missing",
+        "property_purchase_overlap"
+      ],
+      "rationale": "Purchase commitments 6800m; negazione su SPV ha ambito limitato. Lease payments 90.5m sono flussi non attualizzati, liability PV ancora MISSING.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/ANET_ESITO_COORDINATORE_20261004.md",
+          "sha256": "073a14ae44d8570498b34216837fc4dd96d2aa731b2ef0e162ed9616abb780aa",
+          "excerpt_start": 0,
+          "excerpt_sha256": "cf13df102d29a6d6458be007640dc1f77cbecfc24bd7cd0e7ba832f49f30fdfa",
+          "section": "external-review/ANET_ESITO_COORDINATORE_20261004.md / COMMITMENTS",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/ANET_ESITO_COORDINATORE_20261004.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md",
+          "sha256": "99e99c1bae3209ea8c15918aa137556c9ed8d0c8e794d9f2e6f24580426e5a4c",
+          "excerpt_start": 292,
+          "excerpt_sha256": "14d6e57e167d7be76ad46210c4b1499407767c7be828152f2311a7bc58b66a52",
+          "section": "repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md / COMMITMENTS",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10H_COMMITMENTS_RECONCILIATION.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "ANET_LEVERAGE_LEASES",
+      "case_id": "ANET",
+      "category": "LEVERAGE_LEASES",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "funded_debt_not_promoted_to_zero",
+        "operating_lease_PV_missing",
+        "finance_lease_not_disclosed"
+      ],
+      "rationale": "Debt e lease PV non dimostrati dal dossier: restano MISSING, non zero. Leases: op PV MISSING; 90.5m future payments non sostituisce la liability.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/ANET_ESITO_COORDINATORE_20261004.md",
+          "sha256": "073a14ae44d8570498b34216837fc4dd96d2aa731b2ef0e162ed9616abb780aa",
+          "excerpt_start": 42,
+          "excerpt_sha256": "aedae16426017035f4383858a130860f3ffd43926815ed04ca0d117f3c4a90ba",
+          "section": "external-review/ANET_ESITO_COORDINATORE_20261004.md / LEVERAGE_LEASES",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/ANET_ESITO_COORDINATORE_20261004.md",
+          "offset_unit": "UTF8_BYTES"
+        },
+        {
+          "path": "evidence/source/repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md",
+          "sha256": "0c37947bc83d78ba8868e4d1dbc21f4dbc1f641f9cd0982c9179475a692ca0eb",
+          "excerpt_start": 3120,
+          "excerpt_sha256": "8bc66f177a05ed73c182269e7ba046affe9982c0fd04f55fd93c7d8de6747b47",
+          "section": "repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md / LEVERAGE_LEASES",
+          "package_path": "evidence/archived_case_records/evidence/source/repo/docs/V4_2_R10N_VERIFIED_LEVERAGE.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    },
+    {
+      "flag_id": "ADBE_DOJ_FTC_ROSCA",
+      "case_id": "ADBE",
+      "category": "GENERAL_RISK",
+      "status": "BLOCKED_SPECIFIC_DISPOSITION_NO_ECONOMIC_CLEARANCE",
+      "specific_residual_fields": [
+        "potentially_significant_unquantified_ROSCA",
+        "Note_16_general_risk_disposition"
+      ],
+      "rationale": "Il contenzioso DOJ/FTC ROSCA di Nota 16 resta potenzialmente significativo e non quantificato; fuori R7 non significa fuori gate.",
+      "evidence_scope": "ARCHIVED_REVIEW_RECORDS_REHASHED_NOT_NEW_PRIMARY_CLEARANCE",
+      "repeat_review_without_new_evidence_is_not_resolution": true,
+      "primary_evidence_reassessed_this_stage": false,
+      "buy_add_allowed": false,
+      "economic_case_closed": false,
+      "references": [
+        {
+          "path": "evidence/source/external-review/ADBE_ESITO_COORDINATORE_20261003.md",
+          "sha256": "80c233da27af3ad24c8b98b986eee30759248c492ef4367b2f2fa0746049946f",
+          "excerpt_start": 5836,
+          "excerpt_sha256": "cd339e39a895ed8495534f72372ae72f2b60cd2a8a5c14f06b9757ab3aa36b75",
+          "section": "external-review/ADBE_ESITO_COORDINATORE_20261003.md / GENERAL_RISK",
+          "package_path": "evidence/archived_case_records/evidence/source/external-review/ADBE_ESITO_COORDINATORE_20261003.md",
+          "offset_unit": "UTF8_BYTES"
+        }
+      ]
+    }
+  ],
+  "current_candidate_clearance": false,
+  "independent_review": false
+}

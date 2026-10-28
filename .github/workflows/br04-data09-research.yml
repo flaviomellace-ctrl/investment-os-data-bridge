@@ -95,3 +95,12 @@ jobs:
         run: python src/br04_data18_historical_shares.py
       - name: DATA19 recompute SBC dependent ratios and completeness
         run: python src/br04_data19_sbc_dependents.py
+      - name: DATA20 current readiness and verified review handoff
+        run: python src/br04_data20_readiness.py
+      - name: Preserve review handoff without promotion
+        uses: actions/upload-artifact@v4
+        with:
+          name: data20-research-review-handoff
+          path: data/research/br04-data20/research-review-handoff.zip
+          if-no-files-found: error
+          retention-days: 90
