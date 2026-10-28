@@ -91,3 +91,5 @@ jobs:
         run: python src/br04_data16_missing_facts.py
       - name: DATA17 USB EX-13 SBC amendment and compatibility
         run: python src/br04_data17_usb_sbc.py
+      - name: DATA18 historical shares and derived metrics compatibility
+        run: python src/br04_data18_historical_shares.py
