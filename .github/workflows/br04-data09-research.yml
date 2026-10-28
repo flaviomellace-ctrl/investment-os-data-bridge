@@ -93,3 +93,5 @@ jobs:
         run: python src/br04_data17_usb_sbc.py
       - name: DATA18 historical shares and derived metrics compatibility
         run: python src/br04_data18_historical_shares.py
+      - name: DATA19 recompute SBC dependent ratios and completeness
+        run: python src/br04_data19_sbc_dependents.py
