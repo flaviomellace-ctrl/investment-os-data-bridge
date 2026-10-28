@@ -89,3 +89,5 @@ jobs:
         run: python src/br04_data15_ceg_sbc.py
       - name: DATA16 verified missing facts and compatibility
         run: python src/br04_data16_missing_facts.py
+      - name: DATA17 USB EX-13 SBC amendment and compatibility
+        run: python src/br04_data17_usb_sbc.py
