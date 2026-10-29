@@ -1,0 +1,729 @@
+{
+  "schema": "data28_sbc_and_history_source_v1",
+  "input_sha256": "aae4717b2eeb30ba1b65601be50e95938b6a9058bbb8462e3842320a904c1bd9",
+  "acquisition_run": 40847031311,
+  "observations": [
+    {
+      "ticker": "GE",
+      "cik": "40545",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 325000000,
+            "accn": "0000040545-26-000008",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-01-29",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "0000040545",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000040545.json",
+        "file": "raw/CIK0000040545_companyfacts.json.gz",
+        "sha256": "95ed2ee4383e17c8c50ea84b475a90b8172dc9d1728a330787ec0b7fada60216",
+        "bytes": 6167993,
+        "http_status": 200,
+        "retrieved_at": "2026-10-29T09:10:11.061808+00:00"
+      }
+    },
+    {
+      "ticker": "NEE",
+      "cik": "753308",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 185000000,
+            "accn": "0000753308-26-000015",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-13",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "0000753308",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000753308.json",
+        "file": "raw/CIK0000753308_companyfacts.json.gz",
+        "sha256": "99e84510f602363147dc6c83321aa76859e185d0807019d1efc9e0da60491954",
+        "bytes": 3918900,
+        "http_status": 200,
+        "retrieved_at": "2026-10-29T09:10:39.482531+00:00"
+      }
+    },
+    {
+      "ticker": "T",
+      "cik": "732717",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 536000000,
+            "accn": "0000732717-26-000120",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-09",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "0000732717",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000732717.json",
+        "file": "raw/CIK0000732717_companyfacts.json.gz",
+        "sha256": "438d1c67733ab15339da5b9b964e209f8a496c484c62246af68d726c0b78285f",
+        "bytes": 4800308,
+        "http_status": 200,
+        "retrieved_at": "2026-10-29T09:10:37.959243+00:00"
+      }
+    },
+    {
+      "ticker": "INTU",
+      "cik": "896878",
+      "field": "fy_minus_2_capex",
+      "facts": [
+        {
+          "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+          "fact": {
+            "start": "2023-08-01",
+            "end": "2024-07-31",
+            "val": 191000000,
+            "accn": "0000896878-24-000039",
+            "fy": 2024,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2024-09-04"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "0000896878",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000896878.json",
+        "file": "raw/CIK0000896878_companyfacts.json.gz",
+        "sha256": "456f89ae1757bb5a6ee0990f8b759e3d694222b0107c33ee4b163ee85a478d8a",
+        "bytes": 4417219,
+        "http_status": 200,
+        "retrieved_at": "2026-10-29T09:10:51.444236+00:00"
+      }
+    },
+    {
+      "ticker": "INTU",
+      "cik": "896878",
+      "field": "fy_minus_2_operating_cash_flow",
+      "facts": [
+        {
+          "concept": "NetCashProvidedByUsedInOperatingActivities",
+          "fact": {
+            "start": "2023-08-01",
+            "end": "2024-07-31",
+            "val": 4884000000,
+            "accn": "0000896878-24-000039",
+            "fy": 2024,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2024-09-04"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "0000896878",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000896878.json",
+        "file": "raw/CIK0000896878_companyfacts.json.gz",
+        "sha256": "456f89ae1757bb5a6ee0990f8b759e3d694222b0107c33ee4b163ee85a478d8a",
+        "bytes": 4417219,
+        "http_status": 200,
+        "retrieved_at": "2026-10-29T09:10:51.444236+00:00"
+      }
+    },
+    {
+      "ticker": "CI",
+      "cik": "1739940",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 291000000,
+            "accn": "0001739940-26-000006",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-26",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "0001739940",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001739940.json",
+        "file": "raw/CIK0001739940_companyfacts.json.gz",
+        "sha256": "06975e153efb2f8d174088c59762b86507fab3a97aa14de13861c58a1585c697",
+        "bytes": 1936595,
+        "http_status": 200,
+        "retrieved_at": "2026-10-29T09:11:27.619055+00:00"
+      }
+    },
+    {
+      "ticker": "CMI",
+      "cik": "26172",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 93000000,
+            "accn": "0000026172-26-000009",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-10",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "0000026172",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000026172.json",
+        "file": "raw/CIK0000026172_companyfacts.json.gz",
+        "sha256": "febe85c161aed592fcb06cca2a6f2446a3769ee07fc12eefec882dd3044db19e",
+        "bytes": 4883285,
+        "http_status": 200,
+        "retrieved_at": "2026-10-29T09:10:04.709560+00:00"
+      }
+    },
+    {
+      "ticker": "NSC",
+      "cik": "702165",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 63000000,
+            "accn": "0001628280-26-006268",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-09",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "0000702165",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000702165.json",
+        "file": "raw/CIK0000702165_companyfacts.json.gz",
+        "sha256": "1e39cce9e1272a8703da3a11c2df8133f844bedd381ae72257d2f6aef6934c8c",
+        "bytes": 3119195,
+        "http_status": 200,
+        "retrieved_at": "2026-10-29T09:10:34.795596+00:00"
+      }
+    },
+    {
+      "ticker": "D",
+      "cik": "715957",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 46000000,
+            "accn": "0001193125-26-063120",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-23",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "0000715957",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000715957.json",
+        "file": "raw/CIK0000715957_companyfacts.json.gz",
+        "sha256": "a675a88ae458df679704cef7e50039e00032d0dc9b5e55f1f05ccc9294f09bcc",
+        "bytes": 5611229,
+        "http_status": 200,
+        "retrieved_at": "2026-10-29T09:10:35.475719+00:00"
+      }
+    },
+    {
+      "ticker": "DAL",
+      "cik": "27904",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 313000000,
+            "accn": "0000027904-26-000013",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-11",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "0000027904",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000027904.json",
+        "file": "raw/CIK0000027904_companyfacts.json.gz",
+        "sha256": "1fc76c7cfaaf40573ff026475ec4e2565027fda09b7a405c2c126977cbd4efd3",
+        "bytes": 3413155,
+        "http_status": 200,
+        "retrieved_at": "2026-10-29T09:10:05.536511+00:00"
+      }
+    },
+    {
+      "ticker": "OXY",
+      "cik": "797468",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 234000000,
+            "accn": "0001628280-26-009059",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-18",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "0000797468",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000797468.json",
+        "file": "raw/CIK0000797468_companyfacts.json.gz",
+        "sha256": "4b911cbb64fe1b78f022a147470bd4376ebf25ec71897240d6ed85654d8bd410",
+        "bytes": 3830831,
+        "http_status": 200,
+        "retrieved_at": "2026-10-29T09:10:41.596443+00:00"
+      }
+    },
+    {
+      "ticker": "PRU",
+      "cik": "1137774",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 257000000,
+            "accn": "0001137774-26-000048",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-12",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "0001137774",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001137774.json",
+        "file": "raw/CIK0001137774_companyfacts.json.gz",
+        "sha256": "17596b1648b3cb267e49fc2693e89ee89a1681c22fe577e205cc6704a3196d7a",
+        "bytes": 6704512,
+        "http_status": 200,
+        "retrieved_at": "2026-10-29T09:11:12.738851+00:00"
+      }
+    },
+    {
+      "ticker": "UAL",
+      "cik": "100517",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 148000000,
+            "accn": "0000100517-26-000023",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-12",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "0000100517",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000100517.json",
+        "file": "raw/CIK0000100517_companyfacts.json.gz",
+        "sha256": "101840ea02f81817974e0ef31a52eb7ad0f28185ec8057063f9f103b5a9471e0",
+        "bytes": 3611217,
+        "http_status": 200,
+        "retrieved_at": "2026-10-29T09:10:28.725846+00:00"
+      }
+    },
+    {
+      "ticker": "HIG",
+      "cik": "874766",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 141000000,
+            "accn": "0000874766-26-000012",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-20",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "0000874766",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000874766.json",
+        "file": "raw/CIK0000874766_companyfacts.json.gz",
+        "sha256": "e5f9f62b9f64bff59e2c233598d540496ec8c143baa9e8461ea9c6c6472aed49",
+        "bytes": 6003718,
+        "http_status": 200,
+        "retrieved_at": "2026-10-29T09:10:48.833637+00:00"
+      }
+    },
+    {
+      "ticker": "MTB",
+      "cik": "36270",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 136000000,
+            "accn": "0000036270-26-000010",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-18",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "0000036270",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000036270.json",
+        "file": "raw/CIK0000036270_companyfacts.json.gz",
+        "sha256": "e7f0b48345dcdf4ae7260fd93fb834084b3bf216107bf2e3d564257a35ffcafd",
+        "bytes": 6092109,
+        "http_status": 200,
+        "retrieved_at": "2026-10-29T09:10:08.272741+00:00"
+      }
+    },
+    {
+      "ticker": "ARES",
+      "cik": "1176948",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 740549000,
+            "accn": "0001628280-26-011413",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-25",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "0001176948",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001176948.json",
+        "file": "raw/CIK0001176948_companyfacts.json.gz",
+        "sha256": "8c091571a7b1a227c61280eca4fc86c2cf8b554133fbca993d8761ae40d2d955",
+        "bytes": 1455574,
+        "http_status": 200,
+        "retrieved_at": "2026-10-29T09:11:15.258342+00:00"
+      }
+    },
+    {
+      "ticker": "LUV",
+      "cik": "92380",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 99000000,
+            "accn": "0000092380-26-000004",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-05",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "0000092380",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000092380.json",
+        "file": "raw/CIK0000092380_companyfacts.json.gz",
+        "sha256": "1d6503344364d624931047a53450e85a668b6f7f7b94295c24ee624320756033",
+        "bytes": 4141215,
+        "http_status": 200,
+        "retrieved_at": "2026-10-29T09:10:27.086229+00:00"
+      }
+    },
+    {
+      "ticker": "GL",
+      "cik": "320335",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "ShareBasedCompensation",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 53355000,
+            "accn": "0000320335-26-000090",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-25",
+            "frame": "CY2025"
+          }
+        },
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 53355000,
+            "accn": "0000320335-26-000090",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-25",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "0000320335",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320335.json",
+        "file": "raw/CIK0000320335_companyfacts.json.gz",
+        "sha256": "b51195098ddaeb34bcb4c2a2d3cff5b3677c5250f54d46416a86077ffdd91503",
+        "bytes": 4818556,
+        "http_status": 200,
+        "retrieved_at": "2026-10-29T09:10:33.212992+00:00"
+      }
+    },
+    {
+      "ticker": "AES",
+      "cik": "874761",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 14000000,
+            "accn": "0000874761-26-000063",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-03-02",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "0000874761",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000874761.json",
+        "file": "raw/CIK0000874761_companyfacts.json.gz",
+        "sha256": "0026125c9740c5d2cd27d52c84e9b9ee15795978ef56633f0b3f830f08c95f16",
+        "bytes": 6184354,
+        "http_status": 200,
+        "retrieved_at": "2026-10-29T09:10:48.107215+00:00"
+      }
+    },
+    {
+      "ticker": "NWSA",
+      "cik": "1564708",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-07-01",
+            "end": "2026-06-30",
+            "val": 77000000,
+            "accn": "0001564708-26-000175",
+            "fy": 2026,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-08-07",
+            "frame": "CY2026"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "0001564708",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001564708.json",
+        "file": "raw/CIK0001564708_companyfacts.json.gz",
+        "sha256": "a93a5df01fd389bf264e65b6651d42b3e49e6549f68d79e6d37c7670e2dd4952",
+        "bytes": 3145500,
+        "http_status": 200,
+        "retrieved_at": "2026-10-29T09:11:21.446243+00:00"
+      }
+    },
+    {
+      "ticker": "NWS",
+      "cik": "1564708",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-07-01",
+            "end": "2026-06-30",
+            "val": 77000000,
+            "accn": "0001564708-26-000175",
+            "fy": 2026,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-08-07",
+            "frame": "CY2026"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "0001564708",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001564708.json",
+        "file": "raw/CIK0001564708_companyfacts.json.gz",
+        "sha256": "a93a5df01fd389bf264e65b6651d42b3e49e6549f68d79e6d37c7670e2dd4952",
+        "bytes": 3145500,
+        "http_status": 200,
+        "retrieved_at": "2026-10-29T09:11:21.446243+00:00"
+      }
+    }
+  ],
+  "excluded_observations": [
+    {
+      "ticker": "URI",
+      "field": "fy_minus_1_capex",
+      "reason": "Productive-assets capex scope needs primary reconciliation"
+    },
+    {
+      "ticker": "URI",
+      "field": "fy_minus_2_capex",
+      "reason": "Productive-assets capex scope needs primary reconciliation"
+    },
+    {
+      "ticker": "URI",
+      "field": "fy_minus_3_capex",
+      "reason": "Productive-assets capex scope needs primary reconciliation"
+    },
+    {
+      "ticker": "DAL",
+      "field": "annual_capex",
+      "reason": "Productive-assets capex scope needs primary reconciliation"
+    },
+    {
+      "ticker": "DAL",
+      "field": "fy_minus_1_capex",
+      "reason": "Productive-assets capex scope needs primary reconciliation"
+    },
+    {
+      "ticker": "DAL",
+      "field": "fy_minus_2_capex",
+      "reason": "Productive-assets capex scope needs primary reconciliation"
+    },
+    {
+      "ticker": "DAL",
+      "field": "fy_minus_3_capex",
+      "reason": "Productive-assets capex scope needs primary reconciliation"
+    },
+    {
+      "ticker": "VTR",
+      "field": "annual_capex",
+      "reason": "Productive-assets capex scope needs primary reconciliation"
+    },
+    {
+      "ticker": "VTR",
+      "field": "fy_minus_1_capex",
+      "reason": "Productive-assets capex scope needs primary reconciliation"
+    },
+    {
+      "ticker": "VTR",
+      "field": "fy_minus_2_capex",
+      "reason": "Productive-assets capex scope needs primary reconciliation"
+    },
+    {
+      "ticker": "VTR",
+      "field": "fy_minus_3_capex",
+      "reason": "Productive-assets capex scope needs primary reconciliation"
+    },
+    {
+      "ticker": "MTB",
+      "field": "fy_minus_2_capex",
+      "reason": "Productive-assets capex scope needs primary reconciliation"
+    },
+    {
+      "ticker": "MTB",
+      "field": "fy_minus_3_capex",
+      "reason": "Productive-assets capex scope needs primary reconciliation"
+    },
+    {
+      "ticker": "SW",
+      "field": "annual_capex",
+      "reason": "Productive-assets capex scope needs primary reconciliation"
+    },
+    {
+      "ticker": "SW",
+      "field": "annual_operating_cash_flow",
+      "reason": "Current OCF requires full BR04 dependent-field reconciliation"
+    }
+  ],
+  "source_scope": "SEC Companyfacts exact original accession/annual period/USD, no later conflicting annual values; raw receipt hashes verified from DATA25 artifact",
+  "economic_clearance": false,
+  "buy_add_allowed": false
+}

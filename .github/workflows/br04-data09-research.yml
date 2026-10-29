@@ -137,3 +137,14 @@ jobs:
           path: data/research/br04-data27/research-review-handoff.zip
           if-no-files-found: error
           retention-days: 90
+      - name: DATA28 source-verified SBC and INTU history
+        run: python src/br04_data28_sbc_history.py
+      - name: DATA29 current research handoff
+        run: python src/br04_data29_readiness.py
+      - name: Preserve DATA29 review handoff
+        uses: actions/upload-artifact@v4
+        with:
+          name: data29-research-review-handoff
+          path: data/research/br04-data29/research-review-handoff.zip
+          if-no-files-found: error
+          retention-days: 90
