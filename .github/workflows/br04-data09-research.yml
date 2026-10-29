@@ -126,14 +126,14 @@ jobs:
           path: data/research/br04-data24/research-review-handoff.zip
           if-no-files-found: error
           retention-days: 90
-      - name: DATA25 bulk missing-share source acquisition
-        env:
-          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
-        run: python src/br04_data25_share_sources.py
-      - name: Preserve DATA25 source receipts
+      - name: DATA26 pinned bulk share recovery and dependent metrics
+        run: python src/br04_data26_bulk_shares.py
+      - name: DATA27 current readiness and review handoff
+        run: python src/br04_data27_readiness.py
+      - name: Preserve DATA27 review handoff
         uses: actions/upload-artifact@v4
         with:
-          name: data25-share-source-evidence
-          path: data/research/br04-data25/
+          name: data27-research-review-handoff
+          path: data/research/br04-data27/research-review-handoff.zip
           if-no-files-found: error
           retention-days: 90
