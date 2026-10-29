@@ -104,3 +104,14 @@ jobs:
           path: data/research/br04-data20/research-review-handoff.zip
           if-no-files-found: error
           retention-days: 90
+      - name: DATA21 Comcast liabilities source reconciliation
+        run: python src/br04_data21_cmcsa_liabilities.py
+      - name: DATA22 updated readiness and review handoff
+        run: python src/br04_data22_readiness.py
+      - name: Preserve updated review handoff
+        uses: actions/upload-artifact@v4
+        with:
+          name: data22-research-review-handoff
+          path: data/research/br04-data22/research-review-handoff.zip
+          if-no-files-found: error
+          retention-days: 90
