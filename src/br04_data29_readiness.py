@@ -9,6 +9,7 @@ from pathlib import Path
 CANDIDATE_SHA='dcfce67f685fecb205b2b0028a759bc1e29bed61745b2cd34904d4dba0435a5e'
 
 ECONOMIC_CASES={'FISV','CMCSA','FOX','GM','ADBE','TROW','AMP','NEM','FIX','ANET'}
+SBC_SCOPE_REVIEW={'NEE','T','CI','CMI','NSC','D','DAL','OXY','PRU','UAL','HIG','MTB','ARES','LUV','GL','AES','NWSA','NWS'}
 REQUIRED=['annual_operating_cash_flow','annual_capex','annual_sbc','annual_revenue','annual_diluted_shares','prior_diluted_shares','fy_minus_3_diluted_shares']
 LEDGER_SHA='8fde42ccc4941c6ca6d183f6aa984c9eacbc171af36d9eb0d2fc00622fe318af'
 PROOFS_SHA='0a143694130f1a2a9d6592a42350023ecf205b9e4d3aafe19d9ab61771b1b676'
@@ -40,6 +41,7 @@ def inventory(data,ledger_bytes,proof_bytes):
     qualification=[];counts=Counter()
     for r in rows:
         t=r['ticker'];reasons=[]
+        if t in SBC_SCOPE_REVIEW:reasons.append('SBC_AWARD_SCOPE_UNVERIFIED')
         if r['total_debt_status']=='CONFLICTING':reasons.append('CONFLICTING_DEBT_MAPPING')
         if r['ios_leverage_indeterminate'].lower()=='true':reasons.append('LEVERAGE_INDETERMINATE')
         if t in ECONOMIC_CASES:reasons.append('ECONOMIC_CASE_REMAINS_BLOCKED')
@@ -80,6 +82,7 @@ def main():
     if runtime['candidate_sha256']!=CANDIDATE_SHA or not runtime['overall_passed']:raise ValueError('runtime mismatch')
     summary.update(archived_economic_records=41,archived_verified_references=64,archived_review_is_current_clearance=False,technical_subissue_resolved='CMCSA liabilities corrected; IP mixed-basis ratios quarantined; economic cases remain open',release_decision='BLOCKED',r11_status='NOT_EXECUTED',r12_status='NOT_EXECUTED',r12_ready=False,system_live=False,buy_add_allowed=False,s6_dispatched=False)
     actions={
+        'SBC_AWARD_SCOPE_UNVERIFIED':'Verify total versus award-subset, equity/cash settlement and capitalization against the original primary statement; the BNY counterexample proves exact Companyfacts matching alone is insufficient.',
         'SBC_NET_CAPITALIZATION_POLICY_UNRESOLVED':'FE: reconcile gross 85m versus net-expensed 39m with the SBC/capex policy; do not map a capitalized-cost tag to total SBC by name alone.',
         'IP_MIXED_CONTINUING_DISCONTINUED_BASIS':'Reconstruct a consistent continuing-operations series for revenue, earnings, OCF and capex; current source comparatives differ from original filings. Preserve adapter reinvestment-rate suppression.',
         'ROW_BASIS_REVENUE_MISSING':'IP: establish FY2022 revenue on the same row/business basis; reconcile divestitures and comparative presentation before enabling growth.',
@@ -114,7 +117,7 @@ DATA23 suppresses IP revenue growth, net/FCF margins and its research adapter re
 
 DATA26 adds bulk shares selected from exact original SEC Companyfacts accessions/annual periods/units, rejecting later conflicting values. This is source recovery, not independent inline verification or economic qualification. Source receipt files were preserved in DATA25 acquisition run 40847031311.
 
-DATA28 recovers 19 SBC expenses and two historical INTU values from the same receipt-verified Companyfacts corpus; source scope is explicit and does not constitute economic clearance. Broad productive-asset capex facts remain excluded pending primary reconciliation.
+DATA28 provisionally recovers 18 SBC observations whose total-award scope remains unverified. All 18 have an explicit SBC_AWARD_SCOPE_UNVERIFIED disposition after the BNY counterexample. It also recovers and two historical INTU values from the same receipt-verified Companyfacts corpus; source scope is explicit and does not constitute economic clearance. Broad productive-asset capex facts remain excluded pending primary reconciliation.
 
 Source code and pinned evidence are in the accompanying Git commit. Re-run the research workflow to reconstruct generated files. No production data is changed.
 '''

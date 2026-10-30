@@ -1,4 +1,4 @@
-"""Recover 19 SBC facts and two INTU historical observations; retain IP quarantine; research only."""
+"""Recover 18 SBC facts; exclude GE after-tax amount and two INTU historical observations; retain IP quarantine; research only."""
 import csv,io,json,hashlib
 from pathlib import Path
 from collections import Counter
@@ -14,6 +14,9 @@ def amend(data,proof):
     require(len(rows)==len(by)==504 and len(header)==285,'shape mismatch')
     require(len(ev['observations'])==21,'source scope mismatch')
     for ob in ev['observations']:
+        if ob['ticker']=='GE':
+            require(ob['facts'][0]['fact']['val']==325000000,'GE exclusion evidence mismatch')
+            continue  # Primary filing labels 325m after-tax, incompatible with pretax SBC.
         r=by[ob['ticker']];field=ob['field'];p='annual_' if field=='annual_sbc' else 'fy_minus_2_';facts=ob['facts'];f=facts[0]['fact'];tag=facts[0]['concept']
         require(field=='annual_sbc' or (r['ticker']=='INTU' and field in ['fy_minus_2_capex','fy_minus_2_operating_cash_flow']),'unexpected field')
         require(len({x['fact']['val'] for x in facts})==1 and f['val']>0,'ambiguous value')
@@ -34,7 +37,7 @@ def amend(data,proof):
         r['br03_status']='PRESENT' if acc and payout else 'PARTIAL' if acc or payout or raw_known else 'MISSING';allowed.add((r['ticker'],'br03_status'))
     ledger=[dict(ticker=a['ticker'],field=k,before=a[k],after=b[k]) for a,b in zip(before,rows) for k in header if a[k]!=b[k]]
     require(all((x['ticker'],x['field']) in allowed for x in ledger),'scope mismatch')
-    require(len({x['ticker'] for x in ledger})==20,'ticker scope mismatch')
+    require(len({x['ticker'] for x in ledger})==19,'ticker scope mismatch')
     s=io.StringIO(newline='');w=csv.DictWriter(s,fieldnames=header);w.writeheader();w.writerows(rows)
     return s.getvalue().encode(),ledger
 
@@ -64,6 +67,6 @@ def main():
             value,_=engine.ios(c,score,cov);ios+=value is not None
         n+=1
     require(n==504 and current.read_bytes()==baseline and candidate.read_bytes()==data,'runtime mutation')
-    report=dict(schema='br04_data28_sbc_history_v1',input_sha256=INPUT,candidate_sha256=sha(data),proof_sha256=PROOF,current_base_sha256=CURRENT_SHA,changes=ledger,research_adapter_overrides={'IP':['reinvestment_rate']},override_reason='capex/revenue basis mismatch; frozen engine unchanged',other_rows_preserved=484,transport=transport,engine_md5=md5,rows_processed=n,exceptions=0,confidence_counts=dict(counts),ios_computable_rows=ios,overall_passed=True,historical_approvals_transferred=False,candidate_promoted=False,economic_clearance=False,buy_add_allowed=False)
+    report=dict(schema='br04_data28_sbc_history_v1',input_sha256=INPUT,candidate_sha256=sha(data),proof_sha256=PROOF,current_base_sha256=CURRENT_SHA,changes=ledger,research_adapter_overrides={'IP':['reinvestment_rate']},override_reason='capex/revenue basis mismatch; frozen engine unchanged',other_rows_preserved=485,excluded_facts={'GE':'325m is after-tax; preserve missing pretax SBC'},transport=transport,engine_md5=md5,rows_processed=n,exceptions=0,confidence_counts=dict(counts),ios_computable_rows=ios,overall_passed=True,historical_approvals_transferred=False,candidate_promoted=False,economic_clearance=False,buy_add_allowed=False)
     (out/'report.json').write_text(json.dumps(report,indent=2)+'\n');print('DATA28_REPORT='+json.dumps(report))
 if __name__=='__main__':main()
