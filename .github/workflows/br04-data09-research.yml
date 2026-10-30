@@ -148,3 +148,15 @@ jobs:
           path: data/research/br04-data29/research-review-handoff.zip
           if-no-files-found: error
           retention-days: 90
+
+      - name: DATA30 primary-confirmed SBC recovery
+        run: python src/br04_data30_sbc_primary.py
+      - name: DATA31 current research handoff
+        run: python src/br04_data31_readiness.py
+      - name: Preserve DATA31 review handoff
+        uses: actions/upload-artifact@v4
+        with:
+          name: data31-research-review-handoff
+          path: data/research/br04-data31/research-review-handoff.zip
+          if-no-files-found: error
+          retention-days: 90

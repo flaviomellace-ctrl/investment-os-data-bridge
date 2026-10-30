@@ -1,0 +1,1209 @@
+{
+  "observations": [
+    {
+      "ticker": "WMT",
+      "cik": "104169",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-02-01",
+            "end": "2026-01-31",
+            "val": 3603000000,
+            "accn": "0000104169-26-000055",
+            "fy": 2026,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-03-13",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "104169",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000104169.json",
+        "file": "CIK0000104169_companyfacts.json.gz",
+        "sha256": "49330f98609f70fcef4054edc90bc811398a58c4bf26dc0b218d607967a8dbe4",
+        "bytes": 3771831,
+        "http_status": null,
+        "retrieved_at": null,
+        "recovered_without_http_receipt": true
+      },
+      "primary": {
+        "ticker": "WMT",
+        "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/wmt-20260131.htm",
+        "sha256": "ac8f2564190f65a897e5c1f378b0eff87a35264b24954c8b988246199e5cb56e",
+        "applied_value": 3603000000,
+        "matches": [
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "c-1",
+            "excerpt": "Fiscal Years Ended January 31,(Amounts in millions)202620252024Restricted stock units$2,028 $1,909 $1,258 Restricted stock and performance-based restricted stock units587 632 609 Other988 228 226 Share-based compensation expense$3,603 $2,769 $2,093"
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "CAT",
+      "cik": "18230",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 242000000,
+            "accn": "0000018230-26-000008",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-13",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "18230",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000018230.json",
+        "file": "CIK0000018230_companyfacts.json.gz",
+        "sha256": "01ddc6ffa741f0a7da440e2949b2ed19cec14fab35435a398e3f3d0100019715",
+        "bytes": 5868239,
+        "http_status": 200,
+        "retrieved_at": "2026-10-30T05:55:36.950967+00:00",
+        "recovered_without_http_receipt": false
+      },
+      "primary": {
+        "ticker": "CAT",
+        "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000008/cat-20251231.htm",
+        "sha256": "5896c70015c370651103e1dc66ebb404e3346d28fb1b0da2dfb60c451717b914",
+        "applied_value": 242000000,
+        "matches": [
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "c-1",
+            "excerpt": "Before tax, stock-based compensation expense for 2025, 2024 and 2023 was $242 million, $223 million and $208 million, respectively, with a corresponding income tax benefit of $38 million, $30 million and $33 million, respectively."
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "UNP",
+      "cik": "100885",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 142000000,
+            "accn": "0000100885-26-000037",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-06",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "100885",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000100885.json",
+        "file": "CIK0000100885_companyfacts.json.gz",
+        "sha256": "0ad87b2eccbaeb0c2685e9aa7de2d79142b3885986a3a94ee64de2e3eb1b5d6f",
+        "bytes": 3648879,
+        "http_status": null,
+        "retrieved_at": null,
+        "recovered_without_http_receipt": true
+      },
+      "primary": {
+        "ticker": "UNP",
+        "url": "https://www.sec.gov/Archives/edgar/data/100885/000010088526000037/unp-20251231.htm",
+        "sha256": "690924a5c39b052a7609405c523552fdecb2725a0b0c8c98a7a1486ddb34202a",
+        "applied_value": 142000000,
+        "matches": [
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "c-1",
+            "excerpt": "Millions202520242023Stock-based compensation, before tax:Stock options$24 $18 $16 Retention awards102 77 71 ESPP16 23 20 Total stock-based compensation, before tax$142 $118 $107 Excess income tax benefits from equity compensation plans$12 $15 $11"
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "COP",
+      "cik": "1163165",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 336000000,
+            "accn": "0001163165-26-000009",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-17",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "1163165",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001163165.json",
+        "file": "CIK0001163165_companyfacts.json.gz",
+        "sha256": "cccc8afe3602880e8f2909266e778aa195b42e745da669a801925c593720d2fc",
+        "bytes": 4981846,
+        "http_status": null,
+        "retrieved_at": null,
+        "recovered_without_http_receipt": true
+      },
+      "primary": {
+        "ticker": "COP",
+        "url": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000009/cop-20251231.htm",
+        "sha256": "79b931bcc8b59b911a77e01c780eb8fc0caccf7f3d7c7344b708193b00bf4994",
+        "applied_value": 336000000,
+        "matches": [
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "c-1",
+            "excerpt": "Compensation Expense\u2014Total share-based compensation expense recognized in net income (loss) and the associated tax benefit were:Millions of Dollars202520242023Compensation cost$336 268 334 Tax benefit79 67 84"
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "MPC",
+      "cik": "1510295",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "ShareBasedCompensation",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 160000000,
+            "accn": "0001510295-26-000009",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-26",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "1510295",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001510295.json",
+        "file": "CIK0001510295_companyfacts.json.gz",
+        "sha256": "959e8816abb188a8475cc8bdaca0862c7fbe5e3bba650152fcb4f83ea821d849",
+        "bytes": 4256473,
+        "http_status": null,
+        "retrieved_at": null,
+        "recovered_without_http_receipt": true
+      },
+      "primary": {
+        "ticker": "MPC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1510295/000151029526000009/mpc-20251231.htm",
+        "sha256": "b5e6fd7a56cf74f1a3a4ef89a0abf13677438b680721336edc98ca04c9285499",
+        "applied_value": 160000000,
+        "matches": [
+          {
+            "tag": "us-gaap:ShareBasedCompensation",
+            "context": "c-1",
+            "excerpt": "(Millions of dollars)202520242023Share-based compensation expense$160 $137 $211 Tax benefit recognized on share-based compensation expense38 33 51 Cash received by MPC upon exercise of stock option awards24 25 62 Tax benefit received for tax deductions for stock awards exercised6 28 49"
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "VLO",
+      "cik": "1035002",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "ShareBasedCompensation",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 117000000,
+            "accn": "0001628280-26-011499",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-25",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "1035002",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001035002.json",
+        "file": "CIK0001035002_companyfacts.json.gz",
+        "sha256": "ba9baadcf9568df5228d6340a7308e4c5d9252d5a98542b2f4302927c97a9e6a",
+        "bytes": 4190577,
+        "http_status": null,
+        "retrieved_at": null,
+        "recovered_without_http_receipt": true
+      },
+      "primary": {
+        "ticker": "VLO",
+        "url": "https://www.sec.gov/Archives/edgar/data/1035002/000162828026011499/vlo-20251231.htm",
+        "sha256": "aaa54db3579fc7861ca1fff446619799b3c2d95a793b2a86757d7431614be585",
+        "applied_value": 117000000,
+        "matches": [
+          {
+            "tag": "us-gaap:ShareBasedCompensation",
+            "context": "c-1",
+            "excerpt": "Year Ended December 31,202520242023Stock-based compensation expense:Restricted stock$73 $67 $69 Performance awards44 33 38 Total stock-based compensation expense$117 $100 $107 Tax benefit recognized on stock-based compensation expense$16 $13 $14 Tax benefit realized for tax deductions resulting fromexercises and vestings\u2014 \u2014 2"
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "PSX",
+      "cik": "1534701",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 220000000,
+            "accn": "0001534701-26-000006",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-20",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "1534701",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001534701.json",
+        "file": "CIK0001534701_companyfacts.json.gz",
+        "sha256": "02eb06ab4e8ee39f1e46400ead103eeee7f158ca19a0ae956e749430498c97a8",
+        "bytes": 3731794,
+        "http_status": null,
+        "retrieved_at": null,
+        "recovered_without_http_receipt": true
+      },
+      "primary": {
+        "ticker": "PSX",
+        "url": "https://www.sec.gov/Archives/edgar/data/1534701/000153470126000006/psx-20251231.htm",
+        "sha256": "fb0816eb00983cb7981587706e8a97e41315c83b5faabd3fc3835b3d89492662",
+        "applied_value": 220000000,
+        "matches": [
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "c-1",
+            "excerpt": "Millions of Dollars 202520242023Restricted stock units$115 121 130 Performance share units100 83 139 Stock options2 4 19 Other3 2 9 Total share-based compensation expense$220 210 297 Income tax benefit$(65)(84)(87)"
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "MCK",
+      "cik": "927653",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-04-01",
+            "end": "2026-03-31",
+            "val": 247000000,
+            "accn": "0000927653-26-000069",
+            "fy": 2026,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-05-08",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "927653",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000927653.json",
+        "file": "CIK0000927653_companyfacts.json.gz",
+        "sha256": "435891f1a2c1f818252726af1c515add6885f06b80cc11aceeffc620f32c103d",
+        "bytes": 4333890,
+        "http_status": 200,
+        "retrieved_at": "2026-10-30T05:57:33.082822+00:00",
+        "recovered_without_http_receipt": false
+      },
+      "primary": {
+        "ticker": "MCK",
+        "url": "https://www.sec.gov/Archives/edgar/data/927653/000092765326000069/mck-20260331.htm",
+        "sha256": "36c28dadc084d74452cc4c02c6001120593f0be5bf34f3dc8d836333c2a81ea6",
+        "applied_value": 247000000,
+        "matches": [
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "c-1",
+            "excerpt": "Years Ended March 31, (In millions)202620252024Restricted stock unit awards (1)$231 $211 $168 Employee stock purchase plan16 15 14 Share-based compensation expense 247 226 182 Tax benefit for share-based compensation expense(72)(85)(72)Share-based compensation expense, net of tax$175 $141 $110"
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "HWM",
+      "cik": "4281",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "ShareBasedCompensation",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 73000000,
+            "accn": "0000004281-26-000012",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-12",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "4281",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000004281.json",
+        "file": "CIK0000004281_companyfacts.json.gz",
+        "sha256": "efb7515e04b3b23ecffca457a089bee7d554020bd6bb4e6aad539b9637ba1ec5",
+        "bytes": 5023129,
+        "http_status": 200,
+        "retrieved_at": "2026-10-30T05:56:01.809115+00:00",
+        "recovered_without_http_receipt": false
+      },
+      "primary": {
+        "ticker": "HWM",
+        "url": "https://www.sec.gov/Archives/edgar/data/4281/000000428126000012/hwm-20251231.htm",
+        "sha256": "3e326286b6def1831da6cc21795fce42e81f3e15a7d4321f7d9c61a8a3cda126",
+        "applied_value": 73000000,
+        "matches": [
+          {
+            "tag": "us-gaap:ShareBasedCompensation",
+            "context": "c-1",
+            "excerpt": "In 2025, 2024, and 2023, Howmet recognized stock-based compensation expense of $73 ($68 after-tax), $63 ($57 after-tax), and $50 ($44 after-tax), respectively. Senior executive performance awards granted in April 2020 were modified in June 2020, resulting in incremental compensation expense of $12, which was amortized over the remaining service period that ended April 1, 2023."
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "CSX",
+      "cik": "277948",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 54000000,
+            "accn": "0000277948-26-000006",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-12",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "277948",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000277948.json",
+        "file": "CIK0000277948_companyfacts.json.gz",
+        "sha256": "59e87be010209bd73b7ca64b02c3be02b607eafd0b899c4fc33f733c308fabfa",
+        "bytes": 3003526,
+        "http_status": 200,
+        "retrieved_at": "2026-10-30T05:55:46.717006+00:00",
+        "recovered_without_http_receipt": false
+      },
+      "primary": {
+        "ticker": "CSX",
+        "url": "https://www.sec.gov/Archives/edgar/data/277948/000027794826000006/csx-20251231.htm",
+        "sha256": "d4b91488c27b9099dea8a6fc34b7046766b0dc30763ad22dbd8c44688032bc81",
+        "applied_value": 54000000,
+        "matches": [
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "c-1",
+            "excerpt": "Years Ended(Dollars in Millions)202520242023Share-Based Compensation ExpenseRestricted Stock Units$26 $28 $19 Stock Options14 12 12 Employee Stock Purchase Plans10 8 7 Stock Awards for Directors3 2 2 Performance Units1 (10)20 Total Share-based Compensation Expense$54 $40 $60 Income Tax Benefit$13 $13 $14"
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "TDG",
+      "cik": "1260221",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "ShareBasedCompensation",
+          "fact": {
+            "start": "2024-10-01",
+            "end": "2025-09-30",
+            "val": 152000000,
+            "accn": "0001260221-25-000081",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2025-11-12",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "1260221",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001260221.json",
+        "file": "CIK0001260221_companyfacts.json.gz",
+        "sha256": "74a8d46bf913c5464b41d705af26fc749725d4375dec095885d3053603bdd9d9",
+        "bytes": 3329571,
+        "http_status": null,
+        "retrieved_at": null,
+        "recovered_without_http_receipt": true
+      },
+      "primary": {
+        "ticker": "TDG",
+        "url": "https://www.sec.gov/Archives/edgar/data/1260221/000126022125000081/tdg-20250930.htm",
+        "sha256": "cdbbf4bc27bbc51deb5b79ecc642065ed7f8d8e296034d856dd01acb0cea930f",
+        "applied_value": 152000000,
+        "matches": [
+          {
+            "tag": "us-gaap:ShareBasedCompensation",
+            "context": "c-1",
+            "excerpt": "Non-cash stock compensation expense recognized by the Company during the fiscal years ended September 30, 2025, 2024 and 2023 was $152 million, $188 million and $135 million, respectively. The related tax benefit for the fiscal years ended September 30, 2025, 2024 and 2023 was $24 million, $24 million and $15 million, respectively. Of the non-cash stock compensation expense recorded in fiscal 2025, 2024 and 2023, $150 million, $134 million and $112 million was recorded as a component of additional paid in capital and less than $2 million, $54 million and $23 million was recorded as a component of other non-current liabilities. The liability awards relate to stock options granted between fiscal 2017 to fiscal 2020 from the 2014 stock option plan to certain employees in lieu of these individuals receiving salary and bonus compensation paid in cash. The vesting of the stock options are subject to the achievement of the same operating performance goals as other grants. The liability is remeasured each reporting period based on the market value of our common shares on the last day of the reported period. The other non-current liabilities related to stock-based compensation was $102 million as of September 30, 2025 and 2024."
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "ALL",
+      "cik": "899051",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 123000000,
+            "accn": "0000899051-26-000031",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-20",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "899051",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000899051.json",
+        "file": "CIK0000899051_companyfacts.json.gz",
+        "sha256": "8590136d2df586eb759817c7c3793416e24065d5bd8b8886641f2d81296551b0",
+        "bytes": 5815440,
+        "http_status": 200,
+        "retrieved_at": "2026-10-30T05:57:17.744764+00:00",
+        "recovered_without_http_receipt": false
+      },
+      "primary": {
+        "ticker": "ALL",
+        "url": "https://www.sec.gov/Archives/edgar/data/899051/000089905126000031/all-20251231.htm",
+        "sha256": "1d4c109407335620c1791e328f6fa13681115f00347fd6f27d83f16bd5d4a4be",
+        "applied_value": 123000000,
+        "matches": [
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "c-1",
+            "excerpt": "The following table provides the amounts of total compensation expense for the equity incentive plans and the total related tax benefits recognized.For the year ended December 31,($ in millions)202520242023Compensation expense$123 $125 $73 Income tax benefits17 18 12"
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "PCAR",
+      "cik": "75362",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 24100000,
+            "accn": "0001193125-26-057025",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-18",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "75362",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
+        "file": "CIK0000075362_companyfacts.json.gz",
+        "sha256": "175b5d91142bbefcd93dde4e72eba7c09cad99aaadb2fdce31da70a4a91b87f0",
+        "bytes": 3178123,
+        "http_status": 200,
+        "retrieved_at": "2026-10-30T05:56:38.524687+00:00",
+        "recovered_without_http_receipt": false
+      },
+      "primary": {
+        "ticker": "PCAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/75362/000119312526057025/pcar-20251231.htm",
+        "sha256": "59e230355f4000a1195caf3a6df200e2bddf67dc8d38127c93d0be421b101774",
+        "applied_value": 24100000,
+        "matches": [
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "C_46e60203-44d8-4189-a72e-c41f4afcbb07",
+            "excerpt": "2025 2024 2023 Intrinsic value of options exercised $ 38.9 $ 56.8 $ 41.2 Cash received from stock option exercises 43.6 52.0 51.7 Tax benefit related to stock award exercises 11.6 8.0 5.4 Stock-based compensation 24.1 22.9 21.2 Tax benefit related to stock-based compensation 2.5 2.1 1.7"
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "TFC",
+      "cik": "92230",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "ShareBasedCompensation",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 317000000,
+            "accn": "0000092230-26-000030",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-24",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "92230",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000092230.json",
+        "file": "CIK0000092230_companyfacts.json.gz",
+        "sha256": "1a02be35eefd2e3c0ce33d01f37d85c097211ad31f11189c2480b2414f8cb42b",
+        "bytes": 6102559,
+        "http_status": 200,
+        "retrieved_at": "2026-10-30T05:57:33.359671+00:00",
+        "recovered_without_http_receipt": false
+      },
+      "primary": {
+        "ticker": "TFC",
+        "url": "https://www.sec.gov/Archives/edgar/data/92230/000009223026000030/tfc-20251231.htm",
+        "sha256": "8687f16257c75f412f9168f8eec3a13a768edd8cc64f5db172228eb1cea3360d",
+        "applied_value": 317000000,
+        "matches": [
+          {
+            "tag": "us-gaap:ShareBasedCompensation",
+            "context": "c-1",
+            "excerpt": "As of / For the Year Ended December 31,(Dollars in millions)202520242023Equity-based compensation expense$317 $292 $298 Income tax benefit from equity-based compensation expense75 69 70 Intrinsic value of options exercised, and RSUs and PSUs that vested during the year270 169 170 Grant date fair value of equity-based awards that vested during the year302 260 258 Unrecognized compensation cost related to equity-based awards258 258 240 Weighted-average life over which compensation cost is expected to be recognized2.5 years2.5 years2.5 years"
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "AIG",
+      "cik": "5272",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 207000000,
+            "accn": "0000005272-26-000023",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-12",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "5272",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000005272.json",
+        "file": "CIK0000005272_companyfacts.json.gz",
+        "sha256": "f0345bdab4c5d99fd3fc9d0fdf2fe7d72787367ee0fbb4ed5b603a9e8fa730f0",
+        "bytes": 6911912,
+        "http_status": 200,
+        "retrieved_at": "2026-10-30T05:56:12.066676+00:00",
+        "recovered_without_http_receipt": false
+      },
+      "primary": {
+        "ticker": "AIG",
+        "url": "https://www.sec.gov/Archives/edgar/data/5272/000000527226000023/aig-20251231.htm",
+        "sha256": "88c4c38fc1ab278fce66326f4387f84a5835b6f7e7fc02fff5a1cf2241145f8a",
+        "applied_value": 207000000,
+        "matches": [
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "c-1",
+            "excerpt": "The following table presents our total share-based compensation expense:Years Ended December 31,(in millions)202520242023Share-based compensation expense - pre-tax(a)$207 $211 $199 Share-based compensation expense - after tax(b)164 167 157 (a)As a result of accelerated vesting events, such as retirement eligibility in the year of grant and involuntary terminations, we recognized $34 million, $52 million and $58 million in 2025, 2024 and 2023, respectively, prior to the end of the specified vesting periods. It is our policy to reverse compensation expense for forfeited awards when they occur. (b)We also recognized $11 million of tax benefit due to share settlements occurring in 2025."
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "ED",
+      "cik": "1047862",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 55000000,
+            "accn": "0001047862-26-000031",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-19",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "1047862",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001047862.json",
+        "file": "CIK0001047862_companyfacts.json.gz",
+        "sha256": "601927f4ea1fddbc6f3de3e8b97480e23d773d9c0bae64a1823ccd06d9e1a85a",
+        "bytes": 4133552,
+        "http_status": null,
+        "retrieved_at": null,
+        "recovered_without_http_receipt": true
+      },
+      "primary": {
+        "ticker": "ED",
+        "url": "https://www.sec.gov/Archives/edgar/data/1047862/000104786226000031/ed-20251231.htm",
+        "sha256": "b7d9b28214676f080dd19ee13e3e4f0500df4ce28a356f004855c249d4319d5f",
+        "applied_value": 55000000,
+        "matches": [
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "c-1",
+            "excerpt": "Con EdisonCECONY(Millions of Dollars)202520242023202520242023Performance-based restricted stock$41$23$41$37$20$36Time-based restricted stock322322Non-employee director deferred stock compensation333333Stock purchase plan877777Total$55$35$53$50$32$48Income tax benefit$15$10$15$14$9$13"
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "WEC",
+      "cik": "783325",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 48200000,
+            "accn": "0000783325-26-000018",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-20",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "783325",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000783325.json",
+        "file": "CIK0000783325_companyfacts.json.gz",
+        "sha256": "afdc13ef71db7d9a9cb1b866d528ad90ba1eb9769cbf191bb44980b64c5cfa5d",
+        "bytes": 4186360,
+        "http_status": 200,
+        "retrieved_at": "2026-10-30T05:56:49.543674+00:00",
+        "recovered_without_http_receipt": false
+      },
+      "primary": {
+        "ticker": "WEC",
+        "url": "https://www.sec.gov/Archives/edgar/data/783325/000078332526000018/wec-20251231.htm",
+        "sha256": "e3db6575f9d2027e33e1e314f2209cef3caba524eb27df2fc629753b8c6015f1",
+        "applied_value": 48200000,
+        "matches": [
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "c-1",
+            "excerpt": "(in millions)202520242023Stock options$4.1 $4.9 $5.3 Restricted stock6.2 7.6 6.6 Performance units37.9 26.8 (2.2)(1)Stock-based compensation expense$48.2 $39.3 $9.7 Related tax benefit$13.2 $10.8 $2.7"
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "JBL",
+      "cik": "898293",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2024-09-01",
+            "end": "2025-08-31",
+            "val": 107000000,
+            "accn": "0001628280-25-045293",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2025-10-17"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "898293",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000898293.json",
+        "file": "CIK0000898293_companyfacts.json.gz",
+        "sha256": "5d5a27e3c27c45ba7012d9b885949ac94aa2c4aa58435c60c7ccc068cfba5ef1",
+        "bytes": 3941345,
+        "http_status": 200,
+        "retrieved_at": "2026-10-30T05:57:17.529987+00:00",
+        "recovered_without_http_receipt": false
+      },
+      "primary": {
+        "ticker": "JBL",
+        "url": "https://www.sec.gov/Archives/edgar/data/898293/000162828025045293/jbl-20250831.htm",
+        "sha256": "ed231e520994c461e428708feae54d3aae4f14518069ee55aea3b05e9e1742be",
+        "applied_value": 107000000,
+        "matches": [
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "c-1",
+            "excerpt": "The Company recognized stock-based compensation expense within selling, general and administrative expense as follows (in millions): Fiscal Year Ended August 31, 202520242023Restricted stock units$89 $70 $81 Employee stock purchase plan18 19 14 Total$107 $89 $95"
+          },
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "c-355",
+            "excerpt": "Fiscal Year Ended August 31, 202520242023Segment income$1,620 $1,588 $1,733 Reconciling items:Amortization of intangibles(62)(40)(33)Stock-based compensation expense and related charges(107)(89)(95)Restructuring, severance and related charges(1)(181)(296)(57)Business interruption and impairment charges, net(2)(8)(16)\u2014 (Loss) gain from the divestiture of businesses(3)(53)942 \u2014 Acquisition and divestiture related charges(20)(70)\u2014 Loss on securities(4)(46)\u2014 \u2014 Other expense (net of periodic benefit cost)(104)(95)(80)Interest expense, net(147)(173)(206)Income before income tax$892 $1,751 $1,262"
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "NTRS",
+      "cik": "73124",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 126500000,
+            "accn": "0000073124-26-000016",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-24",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "73124",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000073124.json",
+        "file": "CIK0000073124_companyfacts.json.gz",
+        "sha256": "3bf02dba79e919b823581221f3e54bdd623db993ab33370bff3efb0f4da788de",
+        "bytes": 5956699,
+        "http_status": 200,
+        "retrieved_at": "2026-10-30T05:56:33.495258+00:00",
+        "recovered_without_http_receipt": false
+      },
+      "primary": {
+        "ticker": "NTRS",
+        "url": "https://www.sec.gov/Archives/edgar/data/73124/000007312426000016/ntrs-20251231.htm",
+        "sha256": "dbbb7fa85c0362272eed79b6fd06338c29bb53711ebf8392a99ef49749355189",
+        "applied_value": 126500000,
+        "matches": [
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "c-1",
+            "excerpt": "FOR THE YEAR ENDED DECEMBER 31,(In Millions)202520242023Restricted Stock Unit Awards$101.0 $91.4 $95.7 Performance Stock Units25.5 28.0 22.5 Total Share-Based Compensation Expense$126.5 $119.4 $118.2 Tax Benefits Recognized$31.0 $29.3 $29.9"
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "PCG",
+      "cik": "1004980",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 134000000,
+            "accn": "0001004980-26-000009",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-12",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "1004980",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001004980.json",
+        "file": "CIK0001004980_companyfacts.json.gz",
+        "sha256": "d93dbac689a7ffa7aee181522d98656237d07e111cb17eaaaab910dd66b56b3c",
+        "bytes": 3313889,
+        "http_status": null,
+        "retrieved_at": null,
+        "recovered_without_http_receipt": true
+      },
+      "primary": {
+        "ticker": "PCG",
+        "url": "https://www.sec.gov/Archives/edgar/data/1004980/000100498026000009/pcg-20251231.htm",
+        "sha256": "763ce9b5c8aa66a9b70e237b7c8605c32fb26dd33cef2caa7b36a14e02611d56",
+        "applied_value": 134000000,
+        "matches": [
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "c-1",
+            "excerpt": "(in millions)202520242023Restricted stock units80 67 64 Performance shares54 31 27 Total compensation expense (pre-tax)$134 $98 $91 Total compensation expense (after-tax)$97 $71 $65"
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "AWK",
+      "cik": "1410636",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 32000000,
+            "accn": "0001410636-26-000034",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-18",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "1410636",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001410636.json",
+        "file": "CIK0001410636_companyfacts.json.gz",
+        "sha256": "4e6cceeeacd74fb03ced2b13209a913336a001826722cec211b9cd742db904af",
+        "bytes": 3937163,
+        "http_status": null,
+        "retrieved_at": null,
+        "recovered_without_http_receipt": true
+      },
+      "primary": {
+        "ticker": "AWK",
+        "url": "https://www.sec.gov/Archives/edgar/data/1410636/000141063626000034/awk-20251231.htm",
+        "sha256": "c03be7477a346a188a1367220d29d8ec84e8ad30db3d68955afee4d0b3bff419",
+        "applied_value": 32000000,
+        "matches": [
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "c-1",
+            "excerpt": "202520242023RSUs and PSUs$30 $34 $23 Nonqualified employee stock purchase plan2 2 2 Stock-based compensation32 36 25 Income tax benefit(7)(8)(6)Stock-based compensation expense, net of tax$25 $28 $19"
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "ES",
+      "cik": "72741",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 33600000,
+            "accn": "0001628280-26-008461",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-17",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "72741",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000072741.json",
+        "file": "CIK0000072741_companyfacts.json.gz",
+        "sha256": "e188d2e3ec734e7bf2f7e3a2e3d8480ccb2e9ea02ac405e33bc2bc16b6680ad5",
+        "bytes": 3792139,
+        "http_status": 200,
+        "retrieved_at": "2026-10-30T05:56:28.193266+00:00",
+        "recovered_without_http_receipt": false
+      },
+      "primary": {
+        "ticker": "ES",
+        "url": "https://www.sec.gov/Archives/edgar/data/72741/000162828026008461/es-20251231.htm",
+        "sha256": "81d52b0f36fed31322c10b4052451f9d274433b82a8ed99748bddffc93f8010c",
+        "applied_value": 33600000,
+        "matches": [
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "c-1",
+            "excerpt": "EversourceFor the Years Ended December 31,(Millions of Dollars)202520242023Compensation Expense$33.6 $30.0 $27.8 Future Income Tax Benefit8.8 7.8 7.3 For the Years Ended December 31, 202520242023(Millions of Dollars)CL&PNSTARElectricPSNHCL&PNSTARElectricPSNHCL&PNSTARElectricPSNHCompensation Expense$10.5 $11.6 $4.3 $9.3 $9.6 $3.6 $8.7 $8.7 $3.0 Future Income Tax Benefit2.7 3.0 1.1 2.4 2.5 0.9 2.3 2.3 0.8"
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "EIX",
+      "cik": "827052",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 57000000,
+            "accn": "0000827052-26-000012",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-18",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "827052",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000827052.json",
+        "file": "CIK0000827052_companyfacts.json.gz",
+        "sha256": "09629d6d15fe1dd4e4fb03cda6a1d0efbacdf4e835c56b6db35491cd27f80809",
+        "bytes": 4059817,
+        "http_status": 200,
+        "retrieved_at": "2026-10-30T05:56:56.030476+00:00",
+        "recovered_without_http_receipt": false
+      },
+      "primary": {
+        "ticker": "EIX",
+        "url": "https://www.sec.gov/Archives/edgar/data/827052/000082705226000012/eix-20251231.htm",
+        "sha256": "e9228895ebd6f6b25280194236d99bf534fde70fd6b4e7ca1ca58f0c2692f8f4",
+        "applied_value": 57000000,
+        "matches": [
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "c-1",
+            "excerpt": "Edison InternationalSCEYears ended December 31,(in millions)202520242023202520242023Stock-based compensation expense1:Stock options$11$13 $12 $6$7 $6 Performance shares2321 15 1010 8 Restricted stock units2121 17 1415 12 Other22 2 \u2014\u2014 \u2014 Total stock-based compensation expense$57$57 $46 $30$32 $26 Income tax benefits related to stock-based compensation expense$13$23 $7 $7$14 $5"
+          },
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "c-7",
+            "excerpt": "Edison InternationalSCEYears ended December 31,(in millions)202520242023202520242023Stock-based compensation expense1:Stock options$11$13 $12 $6$7 $6 Performance shares2321 15 1010 8 Restricted stock units2121 17 1415 12 Other22 2 \u2014\u2014 \u2014 Total stock-based compensation expense$57$57 $46 $30$32 $26 Income tax benefits related to stock-based compensation expense$13$23 $7 $7$14 $5"
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "DOW",
+      "cik": "1751788",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 154000000,
+            "accn": "0001751788-26-000018",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-03",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "1751788",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001751788.json",
+        "file": "CIK0001751788_companyfacts.json.gz",
+        "sha256": "1c64351d4eafc2c9595fbef8317df11583f0fb0271763186cf6eb1f2ce92195f",
+        "bytes": 2673465,
+        "http_status": 200,
+        "retrieved_at": "2026-10-30T05:55:31.889214+00:00",
+        "recovered_without_http_receipt": false
+      },
+      "primary": {
+        "ticker": "DOW",
+        "url": "https://www.sec.gov/Archives/edgar/data/1751788/000175178826000018/dow-20251231.htm",
+        "sha256": "5938cf08a156b9570103985b5701fdb10bdbe18f56f26bdb0e687ece6bcdef1e",
+        "applied_value": 154000000,
+        "matches": [
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "c-2",
+            "excerpt": "The total stock-based compensation expense included in the consolidated statements of income was $154 million, $159 million and $212 million in 2025, 2024 and 2023, respectively. The income tax benefits related to stock-based compensation arrangements were $34 million, $35 million and $47 million in 2025, 2024 and 2023, respectively."
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "LNT",
+      "cik": "352541",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 22000000,
+            "accn": "0000352541-26-000007",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-20",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "352541",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000352541.json",
+        "file": "CIK0000352541_companyfacts.json.gz",
+        "sha256": "8b7e672af6eb1e1576f77f9109d24ae8dc447d2efa347d1eddb598880dbcefe0",
+        "bytes": 3390539,
+        "http_status": 200,
+        "retrieved_at": "2026-10-30T05:55:56.522980+00:00",
+        "recovered_without_http_receipt": false
+      },
+      "primary": {
+        "ticker": "LNT",
+        "url": "https://www.sec.gov/Archives/edgar/data/352541/000035254126000007/lnt-20251231.htm",
+        "sha256": "085fb545573fb653466825a9ee51bfdfce14a7a7c49958b4813f272a9a7ed092",
+        "applied_value": 22000000,
+        "matches": [
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "c-1",
+            "excerpt": "Alliant EnergyIPLWPL202520242023202520242023202520242023Compensation expense$22$12$12$11$6$6$10$5$5Income tax benefits333222111As of December 31, 2025, Alliant Energy\u2019s, IPL\u2019s and WPL\u2019s total unrecognized compensation cost related to share-based compensation awards was $14 million, $7 million and $6 million, respectively, which is expected to be recognized over a weighted average period of between one year and two years. Share-based compensation expense is recognized on a straight-line basis over the requisite service periods and is recorded in \u201cOther operation and maintenance\u201d in the income statements. As of December 31, 2025, 725,647 shares were included in the calculation of diluted EPS related to the nonvested equity awards."
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    },
+    {
+      "ticker": "BALL",
+      "cik": "9389",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 28000000,
+            "accn": "0001104659-26-017410",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-19",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "9389",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000009389.json",
+        "file": "CIK0000009389_companyfacts.json.gz",
+        "sha256": "75fe375c1c37418d1c4b81341fe67ef4e5c91b582b0accff37a6dcae05cd37a8",
+        "bytes": 3930147,
+        "http_status": 200,
+        "retrieved_at": "2026-10-30T05:57:38.436461+00:00",
+        "recovered_without_http_receipt": false
+      },
+      "primary": {
+        "ticker": "BALL",
+        "url": "https://www.sec.gov/Archives/edgar/data/9389/000110465926017410/ball-20251231x10k.htm",
+        "sha256": "e8a1f4a00484538462c0107524d0a1c96be4f54faa83ff3bfe6daae55c6f3c47",
+        "applied_value": 28000000,
+        "matches": [
+          {
+            "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+            "context": "Duration_1_1_2025_To_12_31_2025_phrSNBh1ZE-3CxvnnwNUhQ",
+            "excerpt": "For the years ended December 31, 2025, 2024 and 2023, the company recognized pretax expense of $28 million (all in continuing operations), $63 million ($56 million in continuing operations and $7 million in discontinued operations) and $33 million ($29 million in continuing operations and $4 million in discontinued operations), respectively, for all of its share-based compensation arrangements. The after-tax expense for these arrangements was $26 million, $56 million and $31 million in 2025, 2024 and 2023, respectively. At December 31, 2025, there was $33 million of total unrecognized compensation cost related to nonvested share-based compensation arrangements. This cost is expected to be recognized in earnings over a weighted average period of 2.0 years."
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": ""
+      }
+    }
+  ]
+}
