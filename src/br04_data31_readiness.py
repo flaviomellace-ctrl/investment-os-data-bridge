@@ -119,7 +119,7 @@ DATA26 adds bulk shares selected from exact original SEC Companyfacts accessions
 
 DATA28 recovers 17 SBC observations checked against primary expense disclosures. GE after-tax and AES award-subset values are excluded; see sbc_primary_scope_review.json. It also recovers and two historical INTU values from the same receipt-verified Companyfacts corpus; source scope is explicit and does not constitute economic clearance. Broad productive-asset capex facts remain excluded pending primary reconciliation.
 
-DATA30 adds 26 primary-confirmed SBC expenses and recomputes dependent ratios/status; 14 unresolved issuer cases remain excluded.
+DATA30 adds 33 primary-confirmed SBC expenses and recomputes dependent ratios/status; 7 unresolved issuer cases remain excluded.
 
 Source code and pinned evidence are in the accompanying Git commit. Re-run the research workflow to reconstruct generated files. No production data is changed.
 '''
