@@ -1,0 +1,25 @@
+{
+  "candidate_modified": false,
+  "findings": [
+    {
+      "ticker": "BNY",
+      "file": "bny_2025.htm",
+      "sha256": "ee0d99153af6fef1e2d8011b6d5f7f27f31912ab23da5132b8f3e6c5409f7fef",
+      "bytes": 7213837,
+      "excerpt": "25. As of Dec. 31, 2025, $25 million of total unrecognized compensation cost is expected to be recognized over a weighted average period of six years.Compensation costs for stock options recorded to income were less than $1 million in 2025. There was no income tax benefit recognized in the consolidated income statement related to compensation costs for stock options in 2025. There were no compensation costs in 2024 or 2023.Note 17\u2013Employee benefit plansBNY has defined benefit and/or defined contribution retirement plans and other post-retirement plans providing healthcare benefits. The defined benefit pension plans cover approximately 5,400 U.S. employees and approximately 17,500 non-U.S. employees.BNY has one qualified and several non-qualified defined benefit pension plans in the U.S. an",
+      "url": "https://www.sec.gov/Archives/edgar/data/1390777/000139077726000033/bk-20251231_d2.htm"
+    },
+    {
+      "ticker": "CARR",
+      "file": "carr_2025.htm",
+      "sha256": "3b2fefd4bc161ea8cabc641c47c9ee5dbf4be343d44ec67e77c028ab944c881a",
+      "bytes": 3020219,
+      "excerpt": "lopment, in the accompanying Consolidated Statement of Operations. Stock-based compensation cost by award type is as follows:(In millions)202520242023Equity compensation costs - equity settled$74 $98 $81 Equity compensation costs - cash settled (1)(2)2 3 Total stock-based compensation cost$72 $100 $84 Amounts recorded in continuing operations$72 $87 $74 Amounts recorded in discontinued operations\u2014 13 10 Total stock-based compensation cost$72 $100 $84 Income tax benefit$8 $13 $11 (1) The cash settled awards are classified as liability awards and are measured at fair value at each balance sheet date.76Table of ContentsAs of December 31, 2025 and 2024, there were $101 million and $112 million of unrecognized stock-based compensation costs related to non-vested awards granted under the plan, r",
+      "url": "https://www.sec.gov/Archives/edgar/data/1783180/000178318026000008/carr-20251231.htm"
+    }
+  ],
+  "BNY": "Reject USD 1m as consolidated SBC: primary text says stock-option expense less than USD 1m; award subset and precision limit.",
+  "CARR": "74m equity settled plus -2m cash settled equals 72m total expense. Policy must distinguish total expense from equity-only cashflow addback.",
+  "release_clearance": false,
+  "followup": "Audit award scope of previously applied DATA28 AllocatedShareBasedCompensationExpense facts. Exact accession, period and nonconflicting value do not prove consolidated total."
+}
