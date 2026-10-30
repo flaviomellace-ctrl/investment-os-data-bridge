@@ -9,7 +9,7 @@ from pathlib import Path
 CANDIDATE_SHA='dcfce67f685fecb205b2b0028a759bc1e29bed61745b2cd34904d4dba0435a5e'
 
 ECONOMIC_CASES={'FISV','CMCSA','FOX','GM','ADBE','TROW','AMP','NEM','FIX','ANET'}
-SBC_SCOPE_REVIEW={'NEE','T','CI','CMI','NSC','D','DAL','OXY','PRU','UAL','HIG','MTB','ARES','LUV','GL','AES','NWSA','NWS'}
+SBC_SCOPE_REVIEW=set()  # Remaining 17 ticker observations checked against primary award expense disclosures.
 REQUIRED=['annual_operating_cash_flow','annual_capex','annual_sbc','annual_revenue','annual_diluted_shares','prior_diluted_shares','fy_minus_3_diluted_shares']
 LEDGER_SHA='8fde42ccc4941c6ca6d183f6aa984c9eacbc171af36d9eb0d2fc00622fe318af'
 PROOFS_SHA='0a143694130f1a2a9d6592a42350023ecf205b9e4d3aafe19d9ab61771b1b676'
@@ -96,7 +96,7 @@ def main():
     for row in rows:
         row['disposition']='BLOCKED_EVIDENCE_REQUIRED' if row['reasons'] else 'BLOCKED_INDEPENDENT_REVIEW_REQUIRED'
         row['required_actions']=[actions.get(reason,'Recover '+reason.removeprefix('MISSING_')+' with period, units, accession and dependent metrics verified; otherwise preserve missing.') for reason in row['reasons']]
-    files={'open_items.json':summary,'qualification.json':rows,'prior_amendment_comparison.json':diffs,'economic_dispositions.json':registry,'runtime_report.json':runtime,'sbc_history_source.json':json.loads(proof),'bulk_share_sources.json':json.loads(zlib.decompress(base64.b64decode((root/'docs/evidence/bulk_share_sources.json.zlib.b64').read_bytes()))),'ip_basis_reconciliation.json':json.loads((root/'docs/evidence/ip_mixed_basis_source.json').read_bytes()),'cmcsa_source_reconciliation.json':json.loads((root/'docs/evidence/cmcsa_liabilities_source.json').read_bytes())}
+    files={'open_items.json':summary,'qualification.json':rows,'prior_amendment_comparison.json':diffs,'economic_dispositions.json':registry,'runtime_report.json':runtime,'sbc_primary_scope_review.json':json.loads((root/'docs/evidence/sbc_primary_scope_review.json').read_bytes()),'sbc_history_source.json':json.loads(proof),'bulk_share_sources.json':json.loads(zlib.decompress(base64.b64decode((root/'docs/evidence/bulk_share_sources.json.zlib.b64').read_bytes()))),'ip_basis_reconciliation.json':json.loads((root/'docs/evidence/ip_mixed_basis_source.json').read_bytes()),'cmcsa_source_reconciliation.json':json.loads((root/'docs/evidence/cmcsa_liabilities_source.json').read_bytes())}
     for name,value in files.items():(out/name).write_text(json.dumps(value,indent=2)+'\n')
     (out/'RESEARCH_NOT_PROMOTED.csv').write_bytes(raw)
     instructions='''# Review handoff — BLOCKED, not final approval
@@ -117,7 +117,7 @@ DATA23 suppresses IP revenue growth, net/FCF margins and its research adapter re
 
 DATA26 adds bulk shares selected from exact original SEC Companyfacts accessions/annual periods/units, rejecting later conflicting values. This is source recovery, not independent inline verification or economic qualification. Source receipt files were preserved in DATA25 acquisition run 40847031311.
 
-DATA28 provisionally recovers 18 SBC observations whose total-award scope remains unverified. All 18 have an explicit SBC_AWARD_SCOPE_UNVERIFIED disposition after the BNY counterexample. It also recovers and two historical INTU values from the same receipt-verified Companyfacts corpus; source scope is explicit and does not constitute economic clearance. Broad productive-asset capex facts remain excluded pending primary reconciliation.
+DATA28 recovers 17 SBC observations checked against primary expense disclosures. GE after-tax and AES award-subset values are excluded; see sbc_primary_scope_review.json. It also recovers and two historical INTU values from the same receipt-verified Companyfacts corpus; source scope is explicit and does not constitute economic clearance. Broad productive-asset capex facts remain excluded pending primary reconciliation.
 
 Source code and pinned evidence are in the accompanying Git commit. Re-run the research workflow to reconstruct generated files. No production data is changed.
 '''
