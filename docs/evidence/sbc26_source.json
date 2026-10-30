@@ -1528,6 +1528,114 @@
         "original_primary_url": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000086/pgr-20251231.htm",
         "source_bytes": 3439668
       }
+    },
+    {
+      "ticker": "RF",
+      "cik": "1281761",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 69000000,
+            "accn": "0001281761-26-000019",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-24",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "1281761",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001281761.json",
+        "file": "CIK0001281761_companyfacts.json.gz",
+        "sha256": "b6dec3ef9f5ee90723b8efb243bd6e2bd9e71a6401bb93944a5411b7c5ebd729",
+        "bytes": 6634151,
+        "http_status": null,
+        "retrieved_at": null,
+        "recovered_without_http_receipt": true
+      },
+      "primary": {
+        "ticker": "RF",
+        "url": "https://www.sec.gov/Archives/edgar/data/1281761/000128176126000019/rf-20251231.htm",
+        "sha256": "ca5892f4737273c6bffe4dbff1b041cbdfe006ea092ad5aa636235a95b15d2b3",
+        "applied_value": 69000000,
+        "matches": [
+          {
+            "excerpt": "No stock options were outstanding during 2025, 2024 or 2023. While Regions has the ability to issue stock appreciation rights, none have been issued to date. The terms of all awards issued under these plans are determined by the CHR Committee of the Board; however, no awards may be granted after the tenth anniversary from the date the plans were initially approved by shareholders. Incentive awards usually vest based on employee service, generally"
+          },
+          {
+            "excerpt": "The following table summarizes the elements of compensation cost recognized in the consolidated statements of income for the years ended December 31:202520242023 (In millions)Compensation cost of restricted and performance stock awards$69 $73 $61 Tax benefits related to share-based compensation cost(17)(18)(16)Compensation cost of share-based compensation awards, net of tax$52 $55 $45 During 2025, 2024 and 2023, Regions made restricted stock grants that vest based upon satisfaction of service conditions and restricted stock award and performance stock award grants that vest based upon satisfaction of both service conditions and performance conditions. Incremental shares earned above the perf"
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": "69m covers restricted/performance awards; no options outstanding in 2025/2024/2023 and no stock appreciation rights issued. 17m tax benefit excluded."
+      }
+    },
+    {
+      "ticker": "DUK",
+      "cik": "1326160",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "SharebasedCompensationArrangementBySharebasedPaymentAwardCompensationCost1",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 95000000,
+            "accn": "0001326160-26-000014",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-26",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "receipt": {
+        "cik": "1326160",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326160.json",
+        "file": "CIK0001326160_companyfacts.json.gz",
+        "sha256": "1e94bb53863e9fef2f5554a229aa7e0ebc197e06c759b5879db6137d8f1b1b3d",
+        "bytes": 5349280,
+        "http_status": null,
+        "retrieved_at": null,
+        "recovered_without_http_receipt": true
+      },
+      "rejected_fact": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "val": 102000000,
+            "accn": "0001326160-26-000014",
+            "fy": 2025,
+            "fp": "FY",
+            "form": "10-K",
+            "filed": "2026-02-26",
+            "frame": "CY2025"
+          }
+        }
+      ],
+      "primary": {
+        "ticker": "DUK",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326160/000132616026000014/duk-20251231.htm",
+        "sha256": "6f4b231a6c0d1cee116484ba17c0adf7dbff4e010579ad8823d90e03ec4b9af8",
+        "applied_value": 95000000,
+        "matches": [
+          {
+            "excerpt": "Pretax stock-based compensation cost$102 $96 $97 Stock-based compensation costs capitalized7 6 6 Stock-based compensation expense$95 $90 $91 Tax benefit associated with stock-based compensation expense$21 $20 $20 211FINANCIAL STATEMENTSSTOCK-BASED COMPENSATIONRESTRICTED STOCK UNIT AWARDSRSU awards generally vest over periods from immediate to three years. Fair value amounts are based on the market price of Duke Energy's common stock on the grant date. The following table includes information related to RSU awards. Years Ended December 31, 202520242023Shares granted (in thousands) 564 598 670 F"
+          }
+        ],
+        "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+        "note": "Use 95m expense, not 102m total cost. 7m capitalized excluded. Exact original-accession Companyfacts and inline context c-1 confirm the alternative expense tag.",
+        "rejected_value": 102000000
+      }
     }
   ],
   "expense_basis": "Pre-tax recognized compensation expense; separately disclosed capitalized costs and tax benefits excluded."

@@ -1,10 +1,10 @@
-"""Apply 33 primary-confirmed SBC expenses; research only."""
+"""Apply 35 primary-confirmed SBC expenses; research only."""
 import csv,io,json,hashlib
 from pathlib import Path
 from collections import Counter
 ROOT=Path(__file__).resolve().parents[1]
 INPUT='32b60915d9da5d6f43b10187eabee47b50710954118e64ae80161437e43d3b5b'
-PROOF='1757bad2ef1ef7d3870e12bfef505fcdf21902d276e8c5b55d1f3b0ac66df8d2'
+PROOF='7c58cb3e57bf01a6bddf4e0acbebae716c46f9430a9ff0b941ab92c41666629d'
 def sha(b):return hashlib.sha256(b).hexdigest()
 def require(ok,msg):
     if not ok:raise ValueError(msg)
@@ -12,7 +12,7 @@ def amend(data,proof):
     require(sha(data)==INPUT,'candidate hash mismatch');require(sha(proof)==PROOF,'proof hash mismatch')
     ev=json.loads(proof);rd=csv.DictReader(io.StringIO(data.decode()));header=rd.fieldnames;rows=list(rd);before=[dict(x) for x in rows];by={r['ticker']:r for r in rows};allowed=set()
     require(len(rows)==len(by)==504 and len(header)==285,'shape mismatch')
-    require(len(ev['observations'])==33,'source scope mismatch')
+    require(len(ev['observations'])==35,'source scope mismatch')
     for ob in ev['observations']:
         r=by[ob['ticker']];field=ob['field'];p='annual_' if field=='annual_sbc' else 'fy_minus_2_';facts=ob['facts'];f=facts[0]['fact'];tag=facts[0]['concept']
         require(field=='annual_sbc','unexpected field')
@@ -36,7 +36,7 @@ def amend(data,proof):
         r['br03_status']='PRESENT' if acc and payout else 'PARTIAL' if acc or payout or raw_known else 'MISSING';allowed.add((r['ticker'],'br03_status'))
     ledger=[dict(ticker=a['ticker'],field=k,before=a[k],after=b[k]) for a,b in zip(before,rows) for k in header if a[k]!=b[k]]
     require(all((x['ticker'],x['field']) in allowed for x in ledger),'scope mismatch')
-    require(len({x['ticker'] for x in ledger})==33,'ticker scope mismatch')
+    require(len({x['ticker'] for x in ledger})==35,'ticker scope mismatch')
     s=io.StringIO(newline='');w=csv.DictWriter(s,fieldnames=header);w.writeheader();w.writerows(rows)
     return s.getvalue().encode(),ledger
 
@@ -66,6 +66,6 @@ def main():
             value,_=engine.ios(c,score,cov);ios+=value is not None
         n+=1
     require(n==504 and current.read_bytes()==baseline and candidate.read_bytes()==data,'runtime mutation')
-    report=dict(schema='br04_data30_sbc_primary_v1',input_sha256=INPUT,candidate_sha256=sha(data),proof_sha256=PROOF,current_base_sha256=CURRENT_SHA,changes=ledger,research_adapter_overrides={'IP':['reinvestment_rate']},override_reason='capex/revenue basis mismatch; frozen engine unchanged',other_rows_preserved=471,excluded_facts={'GE':'325m is after-tax; preserve missing pretax SBC','AES':'14m covers only other award programs; preserve missing total'},transport=transport,engine_md5=md5,rows_processed=n,exceptions=0,confidence_counts=dict(counts),ios_computable_rows=ios,overall_passed=True,historical_approvals_transferred=False,candidate_promoted=False,economic_clearance=False,buy_add_allowed=False)
+    report=dict(schema='br04_data30_sbc_primary_v1',input_sha256=INPUT,candidate_sha256=sha(data),proof_sha256=PROOF,current_base_sha256=CURRENT_SHA,changes=ledger,research_adapter_overrides={'IP':['reinvestment_rate']},override_reason='capex/revenue basis mismatch; frozen engine unchanged',other_rows_preserved=469,excluded_facts={'GE':'325m is after-tax; preserve missing pretax SBC','AES':'14m covers only other award programs; preserve missing total'},transport=transport,engine_md5=md5,rows_processed=n,exceptions=0,confidence_counts=dict(counts),ios_computable_rows=ios,overall_passed=True,historical_approvals_transferred=False,candidate_promoted=False,economic_clearance=False,buy_add_allowed=False)
     (out/'report.json').write_text(json.dumps(report,indent=2)+'\n');print('DATA30_REPORT='+json.dumps(report))
 if __name__=='__main__':main()

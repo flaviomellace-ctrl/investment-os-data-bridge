@@ -1,6 +1,6 @@
 {
   "issuer_documents": 40,
-  "confirmed_expense_observations": 33,
+  "confirmed_expense_observations": 35,
   "candidate_modified": false,
   "candidate_sha256": "32b60915d9da5d6f43b10187eabee47b50710954118e64ae80161437e43d3b5b",
   "economic_clearance": false,
@@ -101,8 +101,8 @@
       "sha256": "37c434a89ef9e3be44c9c6dc16d9e5f97f332c97a8a712ad2604027e816d11ae",
       "applied_value": 1000000,
       "matches": [],
-      "disposition": "ADDITIONAL_SCOPE_REVIEW_REQUIRED",
-      "note": "Reject option subset and less-than qualifier; see prior EX13 proof."
+      "disposition": "EXCLUDED_TOTAL_SCOPE_UNRESOLVED",
+      "note": "1m option tag is a less-than-1m disclosure, not exact total. 508m RSU expense does not establish full PSU/option total."
     },
     {
       "ticker": "CAT",
@@ -168,16 +168,15 @@
       "ticker": "DUK",
       "url": "https://www.sec.gov/Archives/edgar/data/1326160/000132616026000014/duk-20251231.htm",
       "sha256": "6f4b231a6c0d1cee116484ba17c0adf7dbff4e010579ad8823d90e03ec4b9af8",
-      "applied_value": 102000000,
+      "applied_value": 95000000,
       "matches": [
         {
-          "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
-          "context": "c-1",
-          "excerpt": "Years Ended December 31,(in millions)202520242023RSU awards$58 $49 $54 Performance awards44 47 43 Pretax stock-based compensation cost$102 $96 $97 Stock-based compensation costs capitalized7 6 6 Stock-based compensation expense$95 $90 $91 Tax benefit associated with stock-based compensation expense$21 $20 $20"
+          "excerpt": "Pretax stock-based compensation cost$102 $96 $97 Stock-based compensation costs capitalized7 6 6 Stock-based compensation expense$95 $90 $91 Tax benefit associated with stock-based compensation expense$21 $20 $20 211FINANCIAL STATEMENTSSTOCK-BASED COMPENSATIONRESTRICTED STOCK UNIT AWARDSRSU awards generally vest over periods from immediate to three years. Fair value amounts are based on the market price of Duke Energy's common stock on the grant date. The following table includes information related to RSU awards. Years Ended December 31, 202520242023Shares granted (in thousands) 564 598 670 F"
         }
       ],
-      "disposition": "ADDITIONAL_SCOPE_REVIEW_REQUIRED",
-      "note": "102m total cost includes 7m capitalized; expense is 95m."
+      "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+      "note": "Use 95m expense, not 102m total cost. 7m capitalized excluded. Exact original-accession Companyfacts and inline context c-1 confirm the alternative expense tag.",
+      "rejected_value": 102000000
     },
     {
       "ticker": "ED",
@@ -256,8 +255,8 @@
           "excerpt": "Equity-Classified Awards Shares (in millions)Weighted-Average Grant Date Fair ValueWeighted-Average Remaining Contractual Term in YearsUnits outstanding at January 1, 202534.9 $31.52 3.0Granted8.6 $50.88 Settled(15.0)$26.56 Forfeited or expired(3.9)$46.51 Units outstanding at December 31, 2025(a)24.6 $39.01 2.1__________(a) Includes the target amount of PSUs.There were no stock options issued during the years ended December 31, 2025 and 2024. Our weighted-average assumptions used to value our stock options are a dividend yield of 1.90%, expected volatility of 34.0%, a risk-free interest rate of 3.70%, and an expected option life of 6.00 years for options issued during the year ended December 31, 2023. The expected volatility is based on the average of the implied volatility of publicly traded options for our common stock.Total compensation expense related to the above awards was $334 million, $332 million, and $340 million in the years ended December 31, 2025, 2024, and 2023. At December 31, 2025, the total unrecognized compensation expense for nonvested equity awards granted was $267 million. This expense is expected to be recorded over a weighted-average period of 1.6 years. The total fair value of stock incentive awards vested was $349 million, $257 million, and $425 million in the years ended December 31, 2025, 2024, and 2023. Liability-Classified Awards We grant certain employees stock incentive awards that are payable in cash. The total compensation expense and cash paid to settle these awards was insignificant in the years ended December 31, 2025, 2024, and 2023."
         }
       ],
-      "disposition": "ADDITIONAL_SCOPE_REVIEW_REQUIRED",
-      "note": "334m caption references above equity awards; inspect liability awards before treating as total."
+      "disposition": "EXCLUDED_TOTAL_SCOPE_UNRESOLVED",
+      "note": "334m equity awards excludes liability awards described only as insignificant; do not equate insignificant to zero."
     },
     {
       "ticker": "HWM",
@@ -306,8 +305,8 @@
           "excerpt": "The Company recognized compensation expense in connection with stock-based compensation that decreased net income by $41 million, $39 million and $36 million for the years ended December 31, 2025, 2024 and 2023. CNA also maintains its own stock-based compensation plan."
         }
       ],
-      "disposition": "ADDITIONAL_SCOPE_REVIEW_REQUIRED",
-      "note": "41m decreases net income; subsidiary CNA maintains separate plan."
+      "disposition": "EXCLUDED_TOTAL_SCOPE_UNRESOLVED",
+      "note": "41m described as reducing net income; CNA maintains own plan. Consolidated pre-tax scope unresolved."
     },
     {
       "ticker": "LNT",
@@ -396,8 +395,8 @@
           "excerpt": "Compensation expense, exclusive of those recognized within transaction costs, for our share-based payment plans was $92 million, $102 million and $63 million during 2025, 2024 and 2023, respectively, before related tax benefits of $31 million, $36 million and $14 million, respectively."
         }
       ],
-      "disposition": "ADDITIONAL_SCOPE_REVIEW_REQUIRED",
-      "note": "92m explicitly excludes compensation in transaction costs."
+      "disposition": "EXCLUDED_TOTAL_SCOPE_UNRESOLVED",
+      "note": "92m explicitly excludes awards recognized within transaction costs; 16m noncash transaction costs is not an exact award-only reconciliation."
     },
     {
       "ticker": "PCAR",
@@ -441,8 +440,8 @@
           "excerpt": "The accrual of compensation cost is based on the probable achievement of the performance conditions, which result in a payout from 0% to 200% of the initial grant. PSEG recognizes compensation expense for all other components of its PSUs based on the grant date fair value of the awards, which is equal to the market price of PSEG\u2019s common stock on the date of the grant. The accrual during the year of grant is estimated at 100% of the original grant. Such accrual may be adjusted to reflect the actual outcome. 2025 2024 2023 Millions Compensation Cost included in O&M Expense $ 43 $ 40 $ 18 Income Tax Benefit Recognized in Consolidated Statements of Operations $ 12 $ 11 $ 5 For each of the years 2025, 2024 and 2023, PSEG also recorded excess tax benefits of $9 million, $1 million and $22 million, respectively. PSEG recognizes compensation cost of awards issued over the shorter of the original vesting period or the period beginning on the date of grant and ending on the date an individual is eligible for retirement and the award vests.RSUsChanges in RSUs for the year ended December 31, 2025 are summarized as follows: Shares WeightedAverageGrantDate FairValue WeightedAverageRemainingYearsContractualTerm AggregateIntrinsicValue Non-vested as of January 1, 2025 448,790 $ 61.03 Granted 326,735 $ 83.74 Vested 354,257 $ 69.34 Canceled/Forfeited 9,265 $ 72.79 Non-vested as of December 31, 2025 412,003 $ 71.63 0.7 $ 33,083,841 The weighted average grant date fair value per share for RSUs during the years ended December 31, 2025, 2024 and 2023 was $83.74, $59.22 and $61.44 per share, respectively.The total intrinsic value of RSUs distributed during the years ended December 31, 2025, 2024 and 2023 was $36 million, $16 million and $54 million, respectively.As of December 31, 2025, there was approximately $16 million of unrecognized compensation cost related to the RSUs, which is expected to be recognized over a weighted average period of 1.2 years. DEUs of 30,462 accrued on the RSUs during the year."
         }
       ],
-      "disposition": "ADDITIONAL_SCOPE_REVIEW_REQUIRED",
-      "note": ""
+      "disposition": "EXCLUDED_TOTAL_SCOPE_UNRESOLVED",
+      "note": "43m LTIP expense does not establish consolidated total: directors and ESPP separately each disclose 2m. Do not import 43m as total."
     },
     {
       "ticker": "PGR",
@@ -482,13 +481,14 @@
       "applied_value": 69000000,
       "matches": [
         {
-          "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
-          "context": "c-1",
-          "excerpt": "202520242023 (In millions)Compensation cost of restricted and performance stock awards$69 $73 $61 Tax benefits related to share-based compensation cost(17)(18)(16)Compensation cost of share-based compensation awards, net of tax$52 $55 $45"
+          "excerpt": "No stock options were outstanding during 2025, 2024 or 2023. While Regions has the ability to issue stock appreciation rights, none have been issued to date. The terms of all awards issued under these plans are determined by the CHR Committee of the Board; however, no awards may be granted after the tenth anniversary from the date the plans were initially approved by shareholders. Incentive awards usually vest based on employee service, generally"
+        },
+        {
+          "excerpt": "The following table summarizes the elements of compensation cost recognized in the consolidated statements of income for the years ended December 31:202520242023 (In millions)Compensation cost of restricted and performance stock awards$69 $73 $61 Tax benefits related to share-based compensation cost(17)(18)(16)Compensation cost of share-based compensation awards, net of tax$52 $55 $45 During 2025, 2024 and 2023, Regions made restricted stock grants that vest based upon satisfaction of service conditions and restricted stock award and performance stock award grants that vest based upon satisfaction of both service conditions and performance conditions. Incremental shares earned above the perf"
         }
       ],
-      "disposition": "ADDITIONAL_SCOPE_REVIEW_REQUIRED",
-      "note": ""
+      "disposition": "PRIMARY_EXPENSE_SCOPE_CONFIRMED_PENDING_APPLICATION",
+      "note": "69m covers restricted/performance awards; no options outstanding in 2025/2024/2023 and no stock appreciation rights issued. 17m tax benefit excluded."
     },
     {
       "ticker": "TDG",
@@ -613,5 +613,7 @@
     }
   ],
   "expense_basis": "Pre-tax recognized compensation expense; separately disclosed capitalized costs and tax benefits excluded.",
-  "additional_incorporated_documents": 2
+  "additional_incorporated_documents": 2,
+  "excluded_observations": 5,
+  "review_complete_for_scanned_40_issuers": true
 }
