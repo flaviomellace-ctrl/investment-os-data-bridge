@@ -1,0 +1,162 @@
+name: BR-04 DATA09 Research Regression
+on:
+  pull_request:
+    paths:
+      - 'src/*br04*'
+      - 'tests/test_br04*'
+      - 'data/research/br04-data09/**'
+      - 'data/research/br04-data11/**'
+      - 'data/research/br04-data12/**'
+      - 'data/research/br04-data13/**'
+      - 'data/research/br04-data14/**'
+      - '.github/workflows/br04-data09-research.yml'
+permissions:
+  contents: read
+jobs:
+  research-regression:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Reconstruct and validate research candidate
+        run: |
+          python src/rebase_br04_data09.py --input data/staging/br04/40122845921/candidate/sp500_fundamentals.csv
+          python src/audit_br04_data09.py
+          python -m unittest discover -s tests -v
+      - name: Historical DATA09 S2 with independent SEC re-read
+        env:
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+        run: python src/regress_br04_candidate.py --research-data09 --historical-base
+      - name: Print aggregate report and enforce research gate
+        if: always()
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('data/research/br04-data09/research_regression.json')
+          if not p.exists():
+              raise SystemExit('Research regression did not produce a report')
+          r = json.loads(p.read_text())
+          print('DATA09_RESEARCH_REPORT=' + json.dumps(r, separators=(',', ':')))
+          assert r['schema'] == 'br04_data09_research_regression_v1'
+          assert r['original_fsds_contract_approval'] is False
+          assert r['candidate_promoted'] is False
+          assert r['buy_add_allowed'] is False
+          assert r['overall_passed'], (r['failed_tests'], r['failed_gates'])
+          PY
+      - name: Restore and verify frozen engine and synthetic suite
+        run: |
+          python src/br04_data09_runtime.py
+          python data/research/br04-data09/runtime/test_v4.py
+      - name: Separate DATA11 MCD amendment and engine compatibility
+        run: |
+          python src/br04_data11_mcd.py
+          python src/br04_data11_engine.py
+      - name: Separate DATA12 total-revenue amendment and compatibility
+        run: python src/br04_data12_revenue.py --engine
+      - name: Research S3 byte-preserving transport
+        run: python src/br04_data09_transport.py --historical-base
+      - name: Research S4 frozen engine preflight
+        run: python src/br04_data09_preflight.py
+      - name: Verify transport and engine reports
+        run: |
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          from src.audit_br04_data09 import CANDIDATE_SHA
+          root=Path('data/research/br04-data09')
+          for name in ['research_transport.json','research_engine.json']:
+              r=json.loads((root/name).read_text())
+              print('DATA09_FINAL_REPORT='+json.dumps(r,separators=(',',':')))
+              assert r['overall_passed'] is True
+              assert r['candidate_sha256']==CANDIDATE_SHA
+              assert r['candidate_promoted'] is False
+              assert r['buy_add_allowed'] is False
+              assert r['original_fsds_contract_approval'] is False
+          assert hashlib.sha256((root/'RESEARCH_NOT_PROMOTED.csv').read_bytes()).hexdigest()==CANDIDATE_SHA
+          assert r['base_scope']=='HISTORICAL_REPLAY'
+          assert hashlib.sha256((root/'historical_canonical.csv').read_bytes()).hexdigest()==r['base_canonical_sha256']
+          PY
+      - name: DATA14 current-base rebase, transport and frozen-engine compatibility
+        run: python src/br04_data14_market_refresh.py
+      - name: DATA15 CEG SBC amendment and compatibility
+        run: python src/br04_data15_ceg_sbc.py
+      - name: DATA16 verified missing facts and compatibility
+        run: python src/br04_data16_missing_facts.py
+      - name: DATA17 USB EX-13 SBC amendment and compatibility
+        run: python src/br04_data17_usb_sbc.py
+      - name: DATA18 historical shares and derived metrics compatibility
+        run: python src/br04_data18_historical_shares.py
+      - name: DATA19 recompute SBC dependent ratios and completeness
+        run: python src/br04_data19_sbc_dependents.py
+      - name: DATA20 current readiness and verified review handoff
+        run: python src/br04_data20_readiness.py
+      - name: Preserve review handoff without promotion
+        uses: actions/upload-artifact@v4
+        with:
+          name: data20-research-review-handoff
+          path: data/research/br04-data20/research-review-handoff.zip
+          if-no-files-found: error
+          retention-days: 90
+      - name: DATA21 Comcast liabilities source reconciliation
+        run: python src/br04_data21_cmcsa_liabilities.py
+      - name: DATA22 updated readiness and review handoff
+        run: python src/br04_data22_readiness.py
+      - name: Preserve updated review handoff
+        uses: actions/upload-artifact@v4
+        with:
+          name: data22-research-review-handoff
+          path: data/research/br04-data22/research-review-handoff.zip
+          if-no-files-found: error
+          retention-days: 90
+      - name: DATA23 IP accounting basis quarantine
+        run: python src/br04_data23_ip_basis.py
+      - name: DATA24 current research handoff
+        run: python src/br04_data24_readiness.py
+      - name: Preserve DATA24 handoff
+        uses: actions/upload-artifact@v4
+        with:
+          name: data24-research-review-handoff
+          path: data/research/br04-data24/research-review-handoff.zip
+          if-no-files-found: error
+          retention-days: 90
+      - name: DATA26 pinned bulk share recovery and dependent metrics
+        run: python src/br04_data26_bulk_shares.py
+      - name: DATA27 current readiness and review handoff
+        run: python src/br04_data27_readiness.py
+      - name: Preserve DATA27 review handoff
+        uses: actions/upload-artifact@v4
+        with:
+          name: data27-research-review-handoff
+          path: data/research/br04-data27/research-review-handoff.zip
+          if-no-files-found: error
+          retention-days: 90
+      - name: DATA28 source-verified SBC and INTU history
+        run: python src/br04_data28_sbc_history.py
+      - name: DATA29 current research handoff
+        run: python src/br04_data29_readiness.py
+      - name: Preserve DATA29 review handoff
+        uses: actions/upload-artifact@v4
+        with:
+          name: data29-research-review-handoff
+          path: data/research/br04-data29/research-review-handoff.zip
+          if-no-files-found: error
+          retention-days: 90
+
+      - name: DATA30 primary-confirmed SBC recovery
+        run: python src/br04_data30_sbc_primary.py
+      - name: DATA31 current research handoff
+        run: python src/br04_data31_readiness.py
+      - name: Preserve DATA31 review handoff
+        uses: actions/upload-artifact@v4
+        with:
+          name: data31-research-review-handoff
+          path: data/research/br04-data31/research-review-handoff.zip
+          if-no-files-found: error
+          retention-days: 90

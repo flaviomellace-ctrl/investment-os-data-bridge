@@ -1,0 +1,67 @@
+{
+  "candidate_modified": false,
+  "economic_clearance": false,
+  "candidate_sha256": "5a6802101110ee3a90ef1919a04e4414d03638f9d165852cce37bcd5911666a8",
+  "records": [
+    {
+      "ticker": "EQIX",
+      "cik": "1101239",
+      "accession": "0001101239-26-000032",
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "6ddf1d833416e9e8d3546218ff2c49754d3bc95e017e77861be2718e487bc8e3",
+      "bytes": 4072006,
+      "scanned_value_not_applied": 4311000000,
+      "disposition": "PRIMARY_LINE_CONFIRMED_DEPENDENT_RECONCILIATION_REQUIRED",
+      "note": "4311m excludes separately reported real estate acquisitions; capex perimeter must be reconciled before application.",
+      "excerpt": "Purchases of other property, plant and equipment(4,311)(3,066)(2,781)Proceeds from sale of assets, net of cash transferred\u2014 247 77 Settlement of foreign currency hedges104 83 \u2014 Investment in loan receivable(69)(261)\u2014 Loan receivable upfront fee\u2014 4 \u2014 Net cash used in investing activities(6,484)(3,937)(3,224)Cash flows from financing activities:Proceeds from employee equity awards95 91 87 Payment of dividends (1,856)(1,643)(1,375)Proceeds from public offering of common stock, net of issuance costs99 1,673 734 Proceeds from senior notes, net of debt discounts4,311 2,768 902 Repayments of finance lease liabilities(155)(140)(149)Contribution from non-controlling interest4 4 25 Repayment of senior notes(1,200)(1,000)\u2014 Other financing activities(26)(30)(13)Net cash provided by financing activities1,272 1,723 211 Effect of foreign currency exchange rates on cash, cash equivalents and restricted cash43 (49)(16)Net increase (decrease) in cash, cash equivalents and restricted cash(1,258)986 188 Cash, cash equivalents and restricted cash at beginning of period3,082 2,096 1,908 Cash, cash equivalents and restricted cash at end of period$1,824 $3,082 $2,096 Supplemental cash flow informationCash paid for taxes, net$207 $185 $153 Cash paid for interest, net of amounts capitalized$448 $486 $445 Cash and cash equivalents$1,727 $3,081 $2,096 Current portion of restricted cash included in other current assets60 1 \u2014 Non-current portion of restricted cash included in other assets37 \u2014 \u2014 Total cash"
+    },
+    {
+      "ticker": "EXR",
+      "cik": "1289490",
+      "accession": "0001289490-26-000011",
+      "url": "https://www.sec.gov/Archives/edgar/data/1289490/000128949026000011/exr-20251231.htm",
+      "sha256": "5d6c5ec9a5c78c77f2df5ecf15012212a8e791e258b05be9ab8f2a4e336011ab",
+      "bytes": 2757762,
+      "scanned_value_not_applied": 561723000,
+      "disposition": "REJECTED_ACQUISITION_NOT_CAPEX",
+      "note": "561.723m is cash paid for store acquisitions, not improvements to existing assets.",
+      "excerpt": "Store AcquisitionsThe following table shows the Company\u2019s acquisitions of stores for the years ended December 31, 2025 and 2024. The table excludes purchases of raw land and improvements made to existing assets. All store acquisitions are considered asset acquisitions under ASU 2017-01, \u201cBusiness Combinations (Topic 805): Clarifying the Definition of a Business.\u201d TotalPeriodNumber of StoresCash PaidLoans AssumedBridge Loan PayoffFair Value Adjustment of Debt AssumedInvestments in Real Estate VenturesNet Liabilities/ (Assets) AssumedValue of Equity IssuedReal estate assetsTotal 202576$561,723 $299,078 $33,150 $(15,018)$135,930 $4,464 $19,736 $1,039,063 Total 202458$479,059 $\u2014 $\u2014 $\u2014 $1,853 $2,842 $100,414 $584,168 On April 30, 2025, the Company acquired all of its partners\u2019 membership interests in the ESS-NYFL JV LP and ESS CA-TIVS JV LP joint ventures. The total value of the real estate was recorded at $436,797, which included $258,000 of assumed debt. The Company now owns 100% of the 27 properties that were held in the two joint ventures. 55EXTRA SPACE STORAGE INC.NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (continued)Amounts in thousands, except store and share data, unless otherwise statedOn March 31, 2025, the Company closed on the transfer and distribution of membership interests in its PR II EXR JV LLC joint venture. The Company exchanged its 25% ownership interest in 17 properties for its partner\u2019s 75% ownership interest in six properties. The portfolio consisted of 23 p"
+    },
+    {
+      "ticker": "DOC",
+      "cik": "765880",
+      "accession": "0001628280-26-005044",
+      "url": "https://www.sec.gov/Archives/edgar/data/765880/000162828026005044/peak-20251231.htm",
+      "sha256": "58a684249d1ea497aeda5678e720df73603bb971e6f29bc9f23a30671a5f1686",
+      "bytes": 8708754,
+      "scanned_value_not_applied": 894949000,
+      "disposition": "PRIMARY_LINE_CONFIRMED_DEPENDENT_RECONCILIATION_REQUIRED",
+      "note": "894.949m construction, tenant and other improvements; reconcile cash-flow basis before application.",
+      "excerpt": "Development ActivitiesConstruction, Tenant, and Other Capital ImprovementsThe following table summarizes the Company\u2019s expenditures for construction, tenant improvements, and other capital improvements for its consolidated property investments (in thousands): Year Ended December 31,Segment202520242023Outpatient medical$406,800 $338,685 $231,040 Lab356,113 313,749 428,961 Senior housing129,589 66,741 109,465 Other non-reportable2,447 17,588 5,095 $894,949 $736,763 $774,561 95Table of ContentsNOTE 5. Dispositions of Real Estate2026 Dispositions of Real EstateIn January 2026, the Company sold four lab buildings for $68 million.2025 Dispositions of Real EstateDuring the year ended December 31, 2025, the Company sold (i) one outpatient medical land parcel for $4 million, (ii) nine outpatient medical buildings for $160 million, and (iii) a portfolio of 16 outpatient medical buildings for $182 million, resulting in total net gain on sales of $72 million.2024 Dispositions of Real EstateDuring the year ended December 31, 2024, the Company sold: (i) a portfolio of 59 outpatient medical buildings for $674 million and provided the buyer with a mortgage loan secured by the real estate sold for $405 million (see Note 8), (ii) 14 outpatient medical buildings for $220 million, (iii) a portfolio of seven lab buildings for $180 million, (iv) a portfolio of two outpatient medical buildings for $23 million and provided the buyer with a mortgage loan secured by the real estate sold for $14 millio"
+    },
+    {
+      "ticker": "KIM",
+      "cik": "879101",
+      "accession": "0001193125-26-060760",
+      "url": "https://www.sec.gov/Archives/edgar/data/879101/000119312526060760/kim-20251231.htm",
+      "sha256": "5e416f79e3e1dba447b41745c5e2712fdcb8948e0938a16d43cae8a9c4274810",
+      "bytes": 18962799,
+      "scanned_value_not_applied": 18400000,
+      "disposition": "REJECTED_LOAN_REPAYMENT_NOT_CAPEX",
+      "note": "18.4m is mortgage/financing repayment at property acquisition; reject tag-name-only mapping.",
+      "excerpt": "During 2025, the Company (i) provided $264.5 million of mortgage and other financing loans, (ii) collected $325.0 million of mortgage and other financing receivables, of which $18.4 million was repaid at closing upon the Company's acquisition of the corresponding properties, and (iii) extended three mortgage loans with an aggregate principal balance of $176.1 million, utilizing extension options ranging from six months to one year.In addition, the Company consolidated a $14.9 million mortgage receivable encumbering a property located in Jackson Heights, NY relating to a previously held preferred equity investment during 2025. The Company then acquired this property interest and the mortgage receivable was repaid by the seller at closing.During 2024, the Company (i) provided $202.8 million of mortgage and other financing loans, (ii) issued $175.4 million of seller financing related to the sale of nine operating properties, which were acquired in conjunction with the RPT Merger, (iii) provided $50.2 million of mortgage loan financing related to the Company\u2019s previously held preferred equity investment and (iv) collected $108.4 million of mortgage and other financing receivables. 98 KIMCO REALTY CORPORATION AND SUBSIDIARIES AND KIMCO REALTY OP, LLC AND SUBSIDIARIESNOTES TO CONSOLIDATED FINANCIAL STATEMENTS, continued The following table presents the change in the allowance for loan losses for the years ended December 31, 2025, 2024 and 2023, respectively (dollars in thousands): "
+    },
+    {
+      "ticker": "DOW",
+      "cik": "1751788",
+      "accession": "0001751788-26-000018",
+      "url": "https://www.sec.gov/Archives/edgar/data/1751788/000175178826000018/dow-20251231.htm",
+      "sha256": "367f70bdd37494cff6fd235e8424e60d58c3622d7b527744ea0509f8f9d79319",
+      "bytes": 5279662,
+      "scanned_value_not_applied": 2479000000,
+      "disposition": "PRIMARY_LINE_CONFIRMED_DEPENDENT_RECONCILIATION_REQUIRED",
+      "note": "2479m gross capital expenditures; separately disclosed incentive proceeds need consistent cash-flow policy.",
+      "excerpt": "The Company's capital expenditures were $2,479 million in 2025 and $2,940 million in 2024. Capital spending was lower in 2025 as the Company reduced its full year capital spending plan to approximately $2.5 billion. The primary driver for the decrease was the Company\u2019s decision to delay construction of the Fort Saskatchewan Path2Zero project. The Company now expects to start up the first and second phases of the project by the end of 2029 and 2030, respectively. The Company expects capital spending for this key growth project to average approximately $1.5 billion annually through 2030. In total, the Company expects capital spending in 2026 to be approximately $2.5 billion, including capital spending related to the construction of the Fort Saskatchewan Path2Zero project. As evidenced across the current and prior economic cycles, the Company will adjust its spending as economic conditions evolve.Capital spending in recent years has included the construction of a world-scale polyethylene unit on the U.S. Gulf Coast, which was completed in 2025; a new reactor to expand alkoxylation capacity in Europe, mechanically completed in 2025 and expected to begin product qualification and ramp-up activities in early 2026; and construction of the world's first net-zero Scope 1 and 2 carbon dioxide equivalent (\"CO2e\") emissions integrated ethylene and derivatives complex in Alberta, Canada.Cash Flows from Financing ActivitiesCash provided by financing activities in 2025 for Dow Inc. was prim"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "ceg_sbc_source_investigation_v1",
+  "ticker": "CEG",
+  "accession": "0001868275-26-000032",
+  "concept": "AllocatedShareBasedCompensationExpense",
+  "fact_id": "f-2688",
+  "context_ref": "c-1",
+  "start": "2025-01-01",
+  "end": "2025-12-31",
+  "expense_usd": 385000000,
+  "after_tax_expense_usd": 286000000,
+  "revenue_usd": 25533000000,
+  "prospective_sbc_to_revenue": 0.015078525829318921,
+  "table_text": "For the Years Ended December 31,202520242023Total stock-based compensation expense included in Operating and maintenance expense$385 $332 $178 Income tax benefit(99)(85)(45)Total after-tax stock-based compensation expense$286 $247 $133",
+  "table_sha256": "bc4a0e59fc98fd13fb83ae5236883f9c34ba14b547510fbc0c4c7bea7e56b2cd",
+  "source_sha256": {
+    "0001868275-26-000032_index.htm": "d855426570bec52960c39fdead521a54dd67ebb2fcfac11afa6d896156adaf55",
+    "0001868275-26-000032_instance.xml": "defb0346d7adc0d1b4eb13e274a1943fb101839fbac3eb89ae6ab844a388f5e6",
+    "0001868275-26-000032_primary.htm": "7994103646b28260099b3184214081ac5d924ab02f1d7c28494f79c8b497daaf"
+  },
+  "receipt_sha256": "668849c6473189cbdfde48b0818cd301a10a5d1272a2979e9241320e860ecc86",
+  "source_scope": "Recovered archived source; not fresh SEC acquisition",
+  "candidate_modified": false,
+  "buy_add_allowed": false,
+  "economic_clearance": false,
+  "next_action": "Apply scoped DATA14 successor amendment with field provenance and dependent metrics, then run complete regression"
+}
