@@ -284,7 +284,7 @@ EME,EMCOR GROUP INC,-,105634.0,20251231.0,20260226.0,66.7,62.5,PARTIAL,MISSING_R
 AXON,AXON ENTERPRISE INC,-,1069183.0,20251231.0,20260225.0,100.0,87.5,PRESENT,OK,True,True,True,True,True,True,False,True,True,False,False,False,False,True,True,True
 DHI,DR HORTON INC,-,882184.0,20250930.0,20251119.0,100.0,87.5,PRESENT,OK,True,False,True,True,True,True,False,True,True,True,True,True,True,True,True,True
 IRM,IRON MOUNTAIN INC,-,1020569.0,20251231.0,20260212.0,100.0,100.0,PRESENT,OK,True,True,True,True,True,True,True,False,False,False,True,False,True,True,True,True
-KVUE,KENVUE INC,-,1944048.0,20251231.0,20260220.0,100.0,87.5,PRESENT,OK,False,False,False,False,True,False,False,False,False,True,True,True,True,True,True,True
+KVUE,KENVUE INC,-,1944048.0,20251231.0,20260220.0,100.0,87.5,PRESENT,OK,False,False,False,False,True,False,False,False,False,True,True,True,True,False,False,False
 ODFL,OLD DOMINION FREIGHT LINE,-,878927.0,20251231.0,20260224.0,83.3,87.5,PARTIAL,MISSING_REVENUE,False,True,True,True,True,False,True,True,True,True,True,True,True,True,True,True
 CCI,CROWN CASTLE INC,-,1051470.0,20251231.0,20260223.0,100.0,100.0,PRESENT,OK,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
 WEC,WEC ENERGY GROUP INC,-,783325.0,20251231.0,20260220.0,100.0,87.5,PRESENT,OK,True,True,False,True,False,True,True,False,False,True,True,False,True,True,True,True
