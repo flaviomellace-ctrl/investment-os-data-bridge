@@ -1,0 +1,722 @@
+{
+  "schema": "br04_data09_primary_component_links_v1",
+  "candidate_sha256": "9c51a0b017cd769425c128721e935819b0634942d050142b82c6bcae3bb2429d",
+  "primary_evidence_sha256": "2c38aa6d339df54562936e07d3ec66520c3f40afce38dac5ec544de32b0071f9",
+  "aggregate_links": 20,
+  "fact_links": 28,
+  "links": [
+    {
+      "ticker": "JPM",
+      "field": "long_term_debt",
+      "accession": "0001628280-26-008131",
+      "source_kind": "ARCHIVED_PRIMARY_XBRL",
+      "source_hashes": {
+        "xml": "9fe211a6d6f7ec3af368f81c820868b54d7ea02ca2fe9776e72d7a41e2472126",
+        "html": "c92ca3fb1db48edf5843a8a721a78cdca4ad21091d8efaf6165dc57dfe688a81"
+      },
+      "evidence_pointer": "/debt_evidence/companies/0/facts/long",
+      "facts": [
+        {
+          "id": "f-341",
+          "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities",
+          "context_ref": "c-30",
+          "cik": "0000019617",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 435206000000,
+          "kind": "liability",
+          "coverage": [
+            "long"
+          ],
+          "caption": "Long-term debt (included $134,559 and $100,780 at fair value)435,206 401,418",
+          "evidence": "INSTANCE_AND_PRIMARY_HTML"
+        }
+      ],
+      "value_usd": 435206000000,
+      "supersedes_s1_used_as": "long_term_debt",
+      "fsds_face_membership_asserted": false
+    },
+    {
+      "ticker": "JPM",
+      "field": "total_debt",
+      "accession": "0001628280-26-008131",
+      "source_kind": "ARCHIVED_PRIMARY_XBRL",
+      "source_hashes": {
+        "xml": "9fe211a6d6f7ec3af368f81c820868b54d7ea02ca2fe9776e72d7a41e2472126",
+        "html": "c92ca3fb1db48edf5843a8a721a78cdca4ad21091d8efaf6165dc57dfe688a81"
+      },
+      "evidence_pointer": "/debt_evidence/companies/0/facts",
+      "facts": [
+        {
+          "id": "f-327",
+          "concept": "{http://fasb.org/us-gaap/2025}ShortTermBorrowings",
+          "context_ref": "c-30",
+          "cik": "0000019617",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 64776000000,
+          "kind": "liability",
+          "coverage": [
+            "short"
+          ],
+          "caption": "Short-term borrowings (included $32,460 and $26,521 at fair value)64,776 52,893",
+          "evidence": "INSTANCE_AND_PRIMARY_HTML"
+        },
+        {
+          "id": "f-341",
+          "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities",
+          "context_ref": "c-30",
+          "cik": "0000019617",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 435206000000,
+          "kind": "liability",
+          "coverage": [
+            "long"
+          ],
+          "caption": "Long-term debt (included $134,559 and $100,780 at fair value)435,206 401,418",
+          "evidence": "INSTANCE_AND_PRIMARY_HTML"
+        }
+      ],
+      "value_usd": 499982000000,
+      "supersedes_s1_used_as": "total_debt",
+      "fsds_face_membership_asserted": false
+    },
+    {
+      "ticker": "CVX",
+      "field": "long_term_debt",
+      "accession": "0000093410-26-000078",
+      "source_kind": "ARCHIVED_PRIMARY_XBRL",
+      "source_hashes": {
+        "xml": "383742ba0900c6bad8fbea17085f2854a2264ca1d3673de71654c94b76ddbe98",
+        "html": "4731f02b5688823678b8978c66513f0f36341afaf25e49cd133db05fc7676ad8"
+      },
+      "evidence_pointer": "/debt_evidence/companies/1/facts/long",
+      "facts": [
+        {
+          "id": "f-249",
+          "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities",
+          "context_ref": "c-13",
+          "cik": "0000093410",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 39781000000,
+          "kind": "liability",
+          "coverage": [
+            "long"
+          ],
+          "caption": "Long-term debt139,781 20,135",
+          "evidence": "INSTANCE_AND_PRIMARY_HTML"
+        }
+      ],
+      "value_usd": 39781000000,
+      "supersedes_s1_used_as": "long_term_debt",
+      "fsds_face_membership_asserted": false
+    },
+    {
+      "ticker": "CVX",
+      "field": "total_debt",
+      "accession": "0000093410-26-000078",
+      "source_kind": "ARCHIVED_PRIMARY_XBRL",
+      "source_hashes": {
+        "xml": "383742ba0900c6bad8fbea17085f2854a2264ca1d3673de71654c94b76ddbe98",
+        "html": "4731f02b5688823678b8978c66513f0f36341afaf25e49cd133db05fc7676ad8"
+      },
+      "evidence_pointer": "/debt_evidence/companies/1/facts",
+      "facts": [
+        {
+          "id": "f-237",
+          "concept": "{http://fasb.org/us-gaap/2025}ShortTermBorrowings",
+          "context_ref": "c-13",
+          "cik": "0000093410",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 977000000,
+          "kind": "liability",
+          "coverage": [
+            "short"
+          ],
+          "caption": "Short-term debt $977 $4,406",
+          "evidence": "INSTANCE_AND_PRIMARY_HTML"
+        },
+        {
+          "id": "f-249",
+          "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities",
+          "context_ref": "c-13",
+          "cik": "0000093410",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 39781000000,
+          "kind": "liability",
+          "coverage": [
+            "long"
+          ],
+          "caption": "Long-term debt139,781 20,135",
+          "evidence": "INSTANCE_AND_PRIMARY_HTML"
+        }
+      ],
+      "value_usd": 40758000000,
+      "supersedes_s1_used_as": "total_debt",
+      "fsds_face_membership_asserted": false
+    },
+    {
+      "ticker": "USB",
+      "field": "long_term_debt",
+      "accession": "0000036104-26-000011",
+      "source_kind": "ARCHIVED_PRIMARY_XBRL",
+      "source_hashes": {
+        "xml": "be4faaba337c204fa7f007eb51d161a7e6d09273faa9f29222ee2946563ac2da",
+        "html": "b53931f103a1662a81938ece1fa134e64fb5509769db6ec9d9361d779180c122"
+      },
+      "evidence_pointer": "/debt_evidence/companies/2/facts/long",
+      "facts": [
+        {
+          "id": "f-137",
+          "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities",
+          "context_ref": "c-14",
+          "cik": "0000036104",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 60764000000,
+          "kind": "liability",
+          "coverage": [
+            "long"
+          ],
+          "evidence": "PINNED_INSTANCE"
+        }
+      ],
+      "value_usd": 60764000000,
+      "supersedes_s1_used_as": "long_term_debt",
+      "fsds_face_membership_asserted": false
+    },
+    {
+      "ticker": "USB",
+      "field": "total_debt",
+      "accession": "0000036104-26-000011",
+      "source_kind": "ARCHIVED_PRIMARY_XBRL",
+      "source_hashes": {
+        "xml": "be4faaba337c204fa7f007eb51d161a7e6d09273faa9f29222ee2946563ac2da",
+        "html": "b53931f103a1662a81938ece1fa134e64fb5509769db6ec9d9361d779180c122"
+      },
+      "evidence_pointer": "/debt_evidence/companies/2/facts",
+      "facts": [
+        {
+          "id": "f-133",
+          "concept": "{http://fasb.org/us-gaap/2025}ShortTermBorrowings",
+          "context_ref": "c-14",
+          "cik": "0000036104",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 17162000000,
+          "kind": "liability",
+          "coverage": [
+            "short"
+          ],
+          "evidence": "PINNED_INSTANCE"
+        },
+        {
+          "id": "f-137",
+          "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities",
+          "context_ref": "c-14",
+          "cik": "0000036104",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 60764000000,
+          "kind": "liability",
+          "coverage": [
+            "long"
+          ],
+          "evidence": "PINNED_INSTANCE"
+        }
+      ],
+      "value_usd": 77926000000,
+      "supersedes_s1_used_as": "total_debt",
+      "fsds_face_membership_asserted": false
+    },
+    {
+      "ticker": "STT",
+      "field": "long_term_debt",
+      "accession": "0000093751-26-000124",
+      "source_kind": "ARCHIVED_PRIMARY_XBRL",
+      "source_hashes": {
+        "xml": "47080e7e18628a45e330f5cb318f98f61053aa14dd558a2311082628f978d1c1",
+        "html": "0a20104d9721dfcf003b73d492143bd5760aec8c696af27c3a1fe476bec8a403"
+      },
+      "evidence_pointer": "/debt_evidence/companies/3/facts/long",
+      "facts": [
+        {
+          "id": "f-226",
+          "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities",
+          "context_ref": "c-8",
+          "cik": "0000093751",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 25143000000,
+          "kind": "liability",
+          "coverage": [
+            "long"
+          ],
+          "caption": "Long-term debt25,143 23,272",
+          "evidence": "INSTANCE_AND_PRIMARY_HTML"
+        }
+      ],
+      "value_usd": 25143000000,
+      "supersedes_s1_used_as": "long_term_debt",
+      "fsds_face_membership_asserted": false
+    },
+    {
+      "ticker": "STT",
+      "field": "total_debt",
+      "accession": "0000093751-26-000124",
+      "source_kind": "ARCHIVED_PRIMARY_XBRL",
+      "source_hashes": {
+        "xml": "47080e7e18628a45e330f5cb318f98f61053aa14dd558a2311082628f978d1c1",
+        "html": "0a20104d9721dfcf003b73d492143bd5760aec8c696af27c3a1fe476bec8a403"
+      },
+      "evidence_pointer": "/debt_evidence/companies/3/facts",
+      "facts": [
+        {
+          "id": "f-222",
+          "concept": "{http://fasb.org/us-gaap/2025}OtherShortTermBorrowings",
+          "context_ref": "c-8",
+          "cik": "0000093751",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 3821000000,
+          "kind": "liability",
+          "coverage": [
+            "short"
+          ],
+          "caption": "Other short-term borrowings3,821 9,840",
+          "evidence": "INSTANCE_AND_PRIMARY_HTML"
+        },
+        {
+          "id": "f-226",
+          "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities",
+          "context_ref": "c-8",
+          "cik": "0000093751",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 25143000000,
+          "kind": "liability",
+          "coverage": [
+            "long"
+          ],
+          "caption": "Long-term debt25,143 23,272",
+          "evidence": "INSTANCE_AND_PRIMARY_HTML"
+        }
+      ],
+      "value_usd": 28964000000,
+      "supersedes_s1_used_as": "total_debt",
+      "fsds_face_membership_asserted": false
+    },
+    {
+      "ticker": "MET",
+      "field": "long_term_debt",
+      "accession": "0001099219-26-000013",
+      "source_kind": "ARCHIVED_PRIMARY_XBRL",
+      "source_hashes": {
+        "xml": "c8b1f2c98270ef998a030ecfc158ae8d4d097dfbed71c658c31c98579ba27a9a",
+        "html": "f289e04ec404625df12e74a4501af641a8a2e405a34409ed841392a49d6d5138"
+      },
+      "evidence_pointer": "/debt_evidence/companies/4/facts/long",
+      "facts": [
+        {
+          "id": "f-149",
+          "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities",
+          "context_ref": "c-10",
+          "cik": "0001099219",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 14467000000,
+          "kind": "liability",
+          "coverage": [
+            "long"
+          ],
+          "caption": "Long-term debt (includes $28 and $0, respectively, relating to variable interest entities)14,467 15,086",
+          "evidence": "INSTANCE_AND_PRIMARY_HTML"
+        }
+      ],
+      "value_usd": 14467000000,
+      "supersedes_s1_used_as": "long_term_debt",
+      "fsds_face_membership_asserted": false
+    },
+    {
+      "ticker": "MET",
+      "field": "total_debt",
+      "accession": "0001099219-26-000013",
+      "source_kind": "ARCHIVED_PRIMARY_XBRL",
+      "source_hashes": {
+        "xml": "c8b1f2c98270ef998a030ecfc158ae8d4d097dfbed71c658c31c98579ba27a9a",
+        "html": "f289e04ec404625df12e74a4501af641a8a2e405a34409ed841392a49d6d5138"
+      },
+      "evidence_pointer": "/debt_evidence/companies/4/facts",
+      "facts": [
+        {
+          "id": "f-145",
+          "concept": "{http://fasb.org/us-gaap/2025}ShortTermBorrowings",
+          "context_ref": "c-10",
+          "cik": "0001099219",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 355000000,
+          "kind": "liability",
+          "coverage": [
+            "short"
+          ],
+          "caption": "Short-term debt (includes $117 and $133, respectively, relating to variable interest entities)355 465",
+          "evidence": "INSTANCE_AND_PRIMARY_HTML"
+        },
+        {
+          "id": "f-149",
+          "concept": "{http://fasb.org/us-gaap/2025}LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities",
+          "context_ref": "c-10",
+          "cik": "0001099219",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 14467000000,
+          "kind": "liability",
+          "coverage": [
+            "long"
+          ],
+          "caption": "Long-term debt (includes $28 and $0, respectively, relating to variable interest entities)14,467 15,086",
+          "evidence": "INSTANCE_AND_PRIMARY_HTML"
+        },
+        {
+          "id": "f-151",
+          "concept": "{http://fasb.org/us-gaap/2025}SecuredDebt",
+          "context_ref": "c-10",
+          "cik": "0001099219",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 352000000,
+          "kind": "liability",
+          "coverage": [
+            "collateral_financing"
+          ],
+          "caption": "Collateral financing arrangement352 476",
+          "evidence": "INSTANCE_AND_PRIMARY_HTML"
+        },
+        {
+          "id": "f-153",
+          "concept": "{http://fasb.org/us-gaap/2025}SubordinatedDebt",
+          "context_ref": "c-10",
+          "cik": "0001099219",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 4155000000,
+          "kind": "liability",
+          "coverage": [
+            "subordinated"
+          ],
+          "caption": "Subordinated debt securities4,155 3,164",
+          "evidence": "INSTANCE_AND_PRIMARY_HTML"
+        },
+        {
+          "id": "f-155",
+          "concept": "{http://www.metlife.com/20251231}NotesIssuedByCollateralizedFinancingEntities",
+          "context_ref": "c-10",
+          "cik": "0001099219",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 1206000000,
+          "kind": "liability",
+          "coverage": [
+            "cfe_notes"
+          ],
+          "caption": "Notes issued by collateralized financing entities (includes all amounts: under the fair value option; and relating to variable interest entities)1,206 \u2014",
+          "evidence": "INSTANCE_AND_PRIMARY_HTML"
+        }
+      ],
+      "value_usd": 20535000000,
+      "supersedes_s1_used_as": "total_debt",
+      "fsds_face_membership_asserted": false
+    },
+    {
+      "ticker": "JPM",
+      "field": "operating_lease_liabilities",
+      "accession": "0001628280-26-008131",
+      "source_kind": "ARCHIVED_PRIMARY_XBRL",
+      "source_hashes": {
+        "xml": "9fe211a6d6f7ec3af368f81c820868b54d7ea02ca2fe9776e72d7a41e2472126",
+        "html": "c92ca3fb1db48edf5843a8a721a78cdca4ad21091d8efaf6165dc57dfe688a81"
+      },
+      "evidence_pointer": "/lease_evidence/0/lease_observations/0/direct_fact",
+      "facts": [
+        {
+          "id": "f-6582",
+          "concept": "{http://fasb.org/us-gaap/2025}OperatingLeaseLiability",
+          "context_ref": "c-30",
+          "cik": "0000019617",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 9337000000
+        }
+      ],
+      "value_usd": 9337000000,
+      "supersedes_s1_used_as": "operating_lease_liabilities",
+      "fsds_face_membership_asserted": false
+    },
+    {
+      "ticker": "CVX",
+      "field": "operating_lease_liabilities",
+      "accession": "0000093410-26-000078",
+      "source_kind": "ARCHIVED_PRIMARY_XBRL",
+      "source_hashes": {
+        "xml": "383742ba0900c6bad8fbea17085f2854a2264ca1d3673de71654c94b76ddbe98",
+        "html": "4731f02b5688823678b8978c66513f0f36341afaf25e49cd133db05fc7676ad8"
+      },
+      "evidence_pointer": "/lease_evidence/1/lease_observations/0/direct_fact",
+      "facts": [
+        {
+          "id": "f-814",
+          "concept": "{http://fasb.org/us-gaap/2025}OperatingLeaseLiability",
+          "context_ref": "c-13",
+          "cik": "0000093410",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 5985000000
+        }
+      ],
+      "value_usd": 5985000000,
+      "supersedes_s1_used_as": "operating_lease_liabilities",
+      "fsds_face_membership_asserted": false
+    },
+    {
+      "ticker": "CVX",
+      "field": "finance_lease_liabilities",
+      "accession": "0000093410-26-000078",
+      "source_kind": "ARCHIVED_PRIMARY_XBRL",
+      "source_hashes": {
+        "xml": "383742ba0900c6bad8fbea17085f2854a2264ca1d3673de71654c94b76ddbe98",
+        "html": "4731f02b5688823678b8978c66513f0f36341afaf25e49cd133db05fc7676ad8"
+      },
+      "evidence_pointer": "/lease_evidence/1/lease_observations/1/direct_fact",
+      "facts": [
+        {
+          "id": "f-815",
+          "concept": "{http://fasb.org/us-gaap/2025}FinanceLeaseLiability",
+          "context_ref": "c-13",
+          "cik": "0000093410",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 1445000000
+        }
+      ],
+      "value_usd": 1445000000,
+      "supersedes_s1_used_as": "finance_lease_liabilities",
+      "fsds_face_membership_asserted": false
+    },
+    {
+      "ticker": "USB",
+      "field": "operating_lease_liabilities",
+      "accession": "0000036104-26-000011",
+      "source_kind": "ARCHIVED_PRIMARY_XBRL",
+      "source_hashes": {
+        "xml": "be4faaba337c204fa7f007eb51d161a7e6d09273faa9f29222ee2946563ac2da",
+        "html": "b53931f103a1662a81938ece1fa134e64fb5509769db6ec9d9361d779180c122"
+      },
+      "evidence_pointer": "/lease_evidence/2/lease_observations/0/direct_fact",
+      "facts": [
+        {
+          "id": "f-2205",
+          "concept": "{http://fasb.org/us-gaap/2025}OperatingLeaseLiability",
+          "context_ref": "c-14",
+          "cik": "0000036104",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 1419000000
+        }
+      ],
+      "value_usd": 1419000000,
+      "supersedes_s1_used_as": "operating_lease_liabilities",
+      "fsds_face_membership_asserted": false
+    },
+    {
+      "ticker": "USB",
+      "field": "finance_lease_liabilities",
+      "accession": "0000036104-26-000011",
+      "source_kind": "ARCHIVED_PRIMARY_XBRL",
+      "source_hashes": {
+        "xml": "be4faaba337c204fa7f007eb51d161a7e6d09273faa9f29222ee2946563ac2da",
+        "html": "b53931f103a1662a81938ece1fa134e64fb5509769db6ec9d9361d779180c122"
+      },
+      "evidence_pointer": "/lease_evidence/2/lease_observations/1/direct_fact",
+      "facts": [
+        {
+          "id": "f-2206",
+          "concept": "{http://fasb.org/us-gaap/2025}FinanceLeaseLiability",
+          "context_ref": "c-14",
+          "cik": "0000036104",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 125000000
+        }
+      ],
+      "value_usd": 125000000,
+      "supersedes_s1_used_as": "finance_lease_liabilities",
+      "fsds_face_membership_asserted": false
+    },
+    {
+      "ticker": "STT",
+      "field": "operating_lease_liabilities",
+      "accession": "0000093751-26-000124",
+      "source_kind": "ARCHIVED_PRIMARY_XBRL",
+      "source_hashes": {
+        "xml": "47080e7e18628a45e330f5cb318f98f61053aa14dd558a2311082628f978d1c1",
+        "html": "0a20104d9721dfcf003b73d492143bd5760aec8c696af27c3a1fe476bec8a403"
+      },
+      "evidence_pointer": "/lease_evidence/3/lease_observations/0/direct_fact",
+      "facts": [
+        {
+          "id": "f-3328",
+          "concept": "{http://fasb.org/us-gaap/2025}OperatingLeaseLiability",
+          "context_ref": "c-8",
+          "cik": "0000093751",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 863000000
+        }
+      ],
+      "value_usd": 863000000,
+      "supersedes_s1_used_as": "operating_lease_liabilities",
+      "fsds_face_membership_asserted": false
+    },
+    {
+      "ticker": "STT",
+      "field": "finance_lease_liabilities",
+      "accession": "0000093751-26-000124",
+      "source_kind": "ARCHIVED_PRIMARY_XBRL",
+      "source_hashes": {
+        "xml": "47080e7e18628a45e330f5cb318f98f61053aa14dd558a2311082628f978d1c1",
+        "html": "0a20104d9721dfcf003b73d492143bd5760aec8c696af27c3a1fe476bec8a403"
+      },
+      "evidence_pointer": "/lease_evidence/3/lease_observations/1/direct_fact",
+      "facts": [
+        {
+          "id": "f-3329",
+          "concept": "{http://fasb.org/us-gaap/2025}FinanceLeaseLiability",
+          "context_ref": "c-8",
+          "cik": "0000093751",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 106000000
+        }
+      ],
+      "value_usd": 106000000,
+      "supersedes_s1_used_as": "finance_lease_liabilities",
+      "fsds_face_membership_asserted": false
+    },
+    {
+      "ticker": "MET",
+      "field": "operating_lease_liabilities",
+      "accession": "0001099219-26-000013",
+      "source_kind": "ARCHIVED_PRIMARY_XBRL",
+      "source_hashes": {
+        "xml": "c8b1f2c98270ef998a030ecfc158ae8d4d097dfbed71c658c31c98579ba27a9a",
+        "html": "f289e04ec404625df12e74a4501af641a8a2e405a34409ed841392a49d6d5138"
+      },
+      "evidence_pointer": "/lease_evidence/4/lease_observations/0/direct_fact",
+      "facts": [
+        {
+          "id": "f-7220",
+          "concept": "{http://fasb.org/us-gaap/2025}OperatingLeaseLiability",
+          "context_ref": "c-10",
+          "cik": "0001099219",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 1138000000
+        }
+      ],
+      "value_usd": 1138000000,
+      "supersedes_s1_used_as": "operating_lease_liabilities",
+      "fsds_face_membership_asserted": false
+    },
+    {
+      "ticker": "MET",
+      "field": "finance_lease_liabilities",
+      "accession": "0001099219-26-000013",
+      "source_kind": "ARCHIVED_PRIMARY_XBRL",
+      "source_hashes": {
+        "xml": "c8b1f2c98270ef998a030ecfc158ae8d4d097dfbed71c658c31c98579ba27a9a",
+        "html": "f289e04ec404625df12e74a4501af641a8a2e405a34409ed841392a49d6d5138"
+      },
+      "evidence_pointer": "/lease_evidence/4/lease_observations/1/direct_fact",
+      "facts": [
+        {
+          "id": "f-7427",
+          "concept": "{http://fasb.org/us-gaap/2025}FinanceLeaseLiability",
+          "context_ref": "c-10",
+          "cik": "0001099219",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 6000000
+        }
+      ],
+      "value_usd": 6000000,
+      "supersedes_s1_used_as": "finance_lease_liabilities",
+      "fsds_face_membership_asserted": false
+    },
+    {
+      "ticker": "CVX",
+      "field": "cash_and_equivalents",
+      "accession": "0000093410-26-000078",
+      "source_kind": "ARCHIVED_PRIMARY_XBRL",
+      "source_hashes": {
+        "xml": "383742ba0900c6bad8fbea17085f2854a2264ca1d3673de71654c94b76ddbe98",
+        "html": "4731f02b5688823678b8978c66513f0f36341afaf25e49cd133db05fc7676ad8"
+      },
+      "evidence_pointer": "/cash_evidence/facts/cash",
+      "facts": [
+        {
+          "id": "f-195",
+          "concept": "{http://www.chevron.com/20251231}CashAndCashEquivalentsExcludingTimeDeposits",
+          "context_ref": "c-13",
+          "cik": "0000093410",
+          "instant": "2025-12-31",
+          "unit": "USD",
+          "decimals": -6,
+          "value_usd": 6293000000,
+          "caption": "Cash and cash equivalents$6,293 $6,781"
+        }
+      ],
+      "value_usd": 6293000000,
+      "supersedes_s1_used_as": "cash_and_equivalents",
+      "fsds_face_membership_asserted": false
+    }
+  ],
+  "all_aggregates_reconciled": true,
+  "source_authentication": "ARCHIVED_COPY_HASHES_ONLY_NOT_NEW_SEC_AUTHENTICATION",
+  "full_s2_passed": false,
+  "full_s3_passed": false,
+  "full_s4_passed": false,
+  "candidate_promoted": false,
+  "buy_add_allowed": false
+}

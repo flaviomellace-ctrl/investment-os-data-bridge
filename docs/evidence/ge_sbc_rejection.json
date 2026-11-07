@@ -1,0 +1,36 @@
+{
+  "ticker": "GE",
+  "cik": "0000040545",
+  "accession": "0000040545-26-000008",
+  "applied_value": 325000000,
+  "scope_verified": false,
+  "url": "https://www.sec.gov/Archives/edgar/data/40545/000004054526000008/ge-20251231.htm",
+  "sha256": "067ee70130e70b6e749206cf3dc10a41498a2e3eb4d48aee99399801c6559356",
+  "file": "GE.htm",
+  "bytes": 3254259,
+  "status": "REJECTED_AFTER_TAX",
+  "matches": [
+    {
+      "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+      "context": "c-1",
+      "value": "325",
+      "scale": "6",
+      "excerpt": "202520242023Compensation expense (after-tax)(a)$325 $286 $192 Cash received from stock options exercised428 1,492 565 Intrinsic value of stock options exercised and RSU/PSU/Performance shares vested853 1,754 561"
+    },
+    {
+      "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+      "context": "c-15",
+      "value": "286",
+      "scale": "6",
+      "excerpt": "202520242023Compensation expense (after-tax)(a)$325 $286 $192 Cash received from stock options exercised428 1,492 565 Intrinsic value of stock options exercised and RSU/PSU/Performance shares vested853 1,754 561"
+    },
+    {
+      "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+      "context": "c-16",
+      "value": "192",
+      "scale": "6",
+      "excerpt": "202520242023Compensation expense (after-tax)(a)$325 $286 $192 Cash received from stock options exercised428 1,492 565 Intrinsic value of stock options exercised and RSU/PSU/Performance shares vested853 1,754 561"
+    }
+  ],
+  "reason": "325m caption explicitly after-tax; DATA28 amendment now excludes GE and preserves its entire DATA26 row."
+}

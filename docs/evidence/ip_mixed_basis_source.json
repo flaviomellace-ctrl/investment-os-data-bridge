@@ -1,0 +1,45 @@
+{
+  "schema": "ip_mixed_basis_source_v1",
+  "accession": "0000051434-26-000055",
+  "ticker": "IP",
+  "primary_sha256": "0368e6d41532c2d0cfbe6f8cc767eb8376caad9037037ae66e958783bf507c30",
+  "receipt_sha256": "668849c6473189cbdfde48b0818cd301a10a5d1272a2979e9241320e860ecc86",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/51434/000005143426000055/ip-20251231.htm",
+  "revenue_facts": [
+    {
+      "id": "f-54",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "start": "2025-01-01",
+      "end": "2025-12-31",
+      "value": 23634000000,
+      "context": "c-1",
+      "unit": "usd"
+    },
+    {
+      "id": "f-55",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "start": "2024-01-01",
+      "end": "2024-12-31",
+      "value": 15835000000,
+      "context": "c-4",
+      "unit": "usd"
+    },
+    {
+      "id": "f-56",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "start": "2023-01-01",
+      "end": "2023-12-31",
+      "value": 16033000000,
+      "context": "c-5",
+      "unit": "usd"
+    }
+  ],
+  "income_statement_text": "In millions, except per share amounts, for the years ended December 31202520242023NET SALES$23,634$15,835$16,033COSTS AND EXPENSESCost of products sold 16,63711,39711,512Selling and administrative expenses2,0501,7031,257Depreciation and amortization 2,7478511,146Distribution expenses2,0001,1801,240Taxes other than payroll and income taxes210119127Restructuring charges, net62610365Impairment of goodwill2,467\u2014\u2014Net (gains) losses on sales and impairments of businesses(25)\u2014\u2014Net (gains) losses on sales and impairments of assets(70)(59)\u2014Interest expense, net372214230Non-operating pension (income) expense(12)(42)54EARNINGS (LOSS) FROM CONTINUING OPERATIONS BEFORE INCOME TAXES AND EQUITY EARNINGS (LOSSES)(3,368)369402Income tax provision (benefit)(533)(361)68Equity earnings (loss), net of taxes(3)(5)(21)EARNINGS (LOSS) FROM CONTINUING OPERATIONS(2,838)725313Discontinued operations, net of taxes(678)(168)(25)NET EARNINGS (LOSS)(3,516)557288BASIC EARNINGS (LOSS) PER SHAREEarnings (loss) from continuing operations$(5.61)$2.09$0.90Discontinued operations(1.34)(0.49)(0.07)Net earnings (loss)$(6.95)$1.60$0.83DILUTED EARNINGS (LOSS) PER SHAREEarnings (loss) from continuing operations$(5.61)$2.05$0.89Discontinued operations(1.34)(0.48)(0.07)Net earnings (loss)$(6.95)$1.57$0.82",
+  "income_statement_sha256": "46325302da2d8c824b5e2be4e8cc641f64312e6633fa3e328804f2d7661018ca",
+  "cashflow_basis_excerpt": "Cash provided by operations, including discontinued operations, totaled $1.7 billion in both 2025 and 2024.",
+  "original_candidate_prior_revenue": 18619000000,
+  "conclusion": "Current revenue is continuing-operations presentation; original prior revenue is not the restated comparative, while net income and cash flows include discontinued operations. Suppress mismatched revenue growth and margins pending a complete same-basis series.",
+  "source_is_archived": true,
+  "economic_case_closed": false,
+  "buy_add_allowed": false
+}

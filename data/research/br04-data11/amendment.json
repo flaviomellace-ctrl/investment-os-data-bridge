@@ -1,0 +1,45 @@
+{
+  "schema": "br04_data11_mcd_amendment_v1",
+  "input_sha256": "9c51a0b017cd769425c128721e935819b0634942d050142b82c6bcae3bb2429d",
+  "candidate_sha256": "c856d8af683e1b4ca8d21ba3c8258b7a19714301964209f9176893728a33b486",
+  "proof_sha256": "0a143694130f1a2a9d6592a42350023ecf205b9e4d3aafe19d9ab61771b1b676",
+  "changed_cells": [
+    {
+      "ticker": "MCD",
+      "field": "annual_diluted_shares",
+      "before": "716.4",
+      "after": "716400000.0"
+    },
+    {
+      "ticker": "MCD",
+      "field": "prior_diluted_shares",
+      "before": "721.9",
+      "after": "721900000.0"
+    },
+    {
+      "ticker": "MCD",
+      "field": "fy_minus_1_diluted_shares",
+      "before": "721.9",
+      "after": "721900000.0"
+    },
+    {
+      "ticker": "MCD",
+      "field": "fy_minus_2_diluted_shares",
+      "before": "732.3",
+      "after": "732300000.0"
+    },
+    {
+      "ticker": "MCD",
+      "field": "fcf_per_share_cagr3",
+      "before": "109.6582252978612",
+      "after": "0.10658225297861201"
+    }
+  ],
+  "unchanged_other_rows": 503,
+  "br04_fields_preserved": true,
+  "original_fsds_contract_approval": false,
+  "data09_s2_approval_inherited": false,
+  "candidate_promoted": false,
+  "economic_clearance": false,
+  "buy_add_allowed": false
+}

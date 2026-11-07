@@ -1,0 +1,485 @@
+{
+  "schema": "br04_data09_rebase_v1",
+  "input_sha256": "e108b517924ceced165d356874b5e0a4598ec9a103d452f034ff4431ab34f9e0",
+  "source_s1_run": "40122845921",
+  "data07_sha256": "2ce0e525cdff6faa8d2051b9982aad8505ade199611c469a162605be53af0ef8",
+  "filings": {
+    "JPM": {
+      "annual_adsh": "0001628280-26-008131",
+      "annual_period": "20251231.0"
+    },
+    "CVX": {
+      "annual_adsh": "0000093410-26-000078",
+      "annual_period": "20251231.0"
+    },
+    "USB": {
+      "annual_adsh": "0000036104-26-000011",
+      "annual_period": "20251231.0"
+    },
+    "STT": {
+      "annual_adsh": "0000093751-26-000124",
+      "annual_period": "20251231.0"
+    },
+    "MET": {
+      "annual_adsh": "0001099219-26-000013",
+      "annual_period": "20251231.0"
+    }
+  },
+  "changes": [
+    {
+      "ticker": "CVX",
+      "field": "br04_flags",
+      "before": "BS_CLOSURE_FAILED;CASH_MISSING;DEBT_CONFLICTING_PRUDENTIAL_VALUE;FINANCE_LEASE_MISSING;FSDS_FACE_ONLY;INTEREST_DEBT_ONLY;LEVERAGE_THRESHOLD_INDETERMINATE;OPERATING_LEASE_MISSING",
+      "after": "BS_CLOSURE_FAILED;INTEREST_DEBT_ONLY;LEVERAGE_THRESHOLD_INDETERMINATE;NET_DEBT_IS_PARTIAL_LOWER_BOUND;PRIMARY_CASH_NOTE_RECONCILED;PRIMARY_DEBT_NOTE_RECONCILED;PRIMARY_DOCUMENT_SUPPLEMENTED;PRIMARY_LEASE_FACTS_RECOVERED;ROIC_DEBT_PARTIAL"
+    },
+    {
+      "ticker": "CVX",
+      "field": "br04_status",
+      "before": "CONFLICTING",
+      "after": "PARTIAL"
+    },
+    {
+      "ticker": "CVX",
+      "field": "cash_and_equivalents",
+      "before": "",
+      "after": "6293000000"
+    },
+    {
+      "ticker": "CVX",
+      "field": "cash_and_equivalents_adsh",
+      "before": "",
+      "after": "0000093410-26-000078"
+    },
+    {
+      "ticker": "CVX",
+      "field": "cash_and_equivalents_ddate",
+      "before": "",
+      "after": "20251231"
+    },
+    {
+      "ticker": "CVX",
+      "field": "cash_and_equivalents_plabel",
+      "before": "",
+      "after": "Cash and cash equivalents"
+    },
+    {
+      "ticker": "CVX",
+      "field": "cash_and_equivalents_qtrs",
+      "before": "",
+      "after": "0"
+    },
+    {
+      "ticker": "CVX",
+      "field": "cash_and_equivalents_stmt",
+      "before": "",
+      "after": "BS"
+    },
+    {
+      "ticker": "CVX",
+      "field": "cash_and_equivalents_tag",
+      "before": "",
+      "after": "CashAndCashEquivalentsExcludingTimeDeposits"
+    },
+    {
+      "ticker": "CVX",
+      "field": "cash_and_equivalents_uom",
+      "before": "",
+      "after": "USD"
+    },
+    {
+      "ticker": "CVX",
+      "field": "cash_and_equivalents_version",
+      "before": "",
+      "after": "cvx/20251231"
+    },
+    {
+      "ticker": "CVX",
+      "field": "finance_lease_liabilities",
+      "before": "",
+      "after": "1445000000"
+    },
+    {
+      "ticker": "CVX",
+      "field": "finance_lease_liabilities_components",
+      "before": "",
+      "after": "FinanceLeaseLiability=1445000000"
+    },
+    {
+      "ticker": "CVX",
+      "field": "long_term_debt",
+      "before": "",
+      "after": "39781000000"
+    },
+    {
+      "ticker": "CVX",
+      "field": "long_term_debt_components",
+      "before": "",
+      "after": "LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities=39781000000"
+    },
+    {
+      "ticker": "CVX",
+      "field": "net_debt",
+      "before": "",
+      "after": "34465000000"
+    },
+    {
+      "ticker": "CVX",
+      "field": "net_debt_to_ocf_lb",
+      "before": "0.957482542208079",
+      "after": "1.01549839417779"
+    },
+    {
+      "ticker": "CVX",
+      "field": "net_debt_to_ocf_ub",
+      "before": "3.88449865935944",
+      "after": "3.69907775715254"
+    },
+    {
+      "ticker": "CVX",
+      "field": "operating_lease_liabilities",
+      "before": "",
+      "after": "5985000000"
+    },
+    {
+      "ticker": "CVX",
+      "field": "operating_lease_liabilities_components",
+      "before": "",
+      "after": "OperatingLeaseLiability=5985000000"
+    },
+    {
+      "ticker": "CVX",
+      "field": "roic",
+      "before": "CONFLICTING",
+      "after": ""
+    },
+    {
+      "ticker": "CVX",
+      "field": "total_debt",
+      "before": "",
+      "after": "40758000000"
+    },
+    {
+      "ticker": "CVX",
+      "field": "total_debt_candidates",
+      "before": "CURRENT_PLUS_NONCURRENT=977000000;LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities=39781000000",
+      "after": "CURRENT_PLUS_NONCURRENT=40758000000"
+    },
+    {
+      "ticker": "CVX",
+      "field": "total_debt_components",
+      "before": "LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities=39781000000",
+      "after": "ShortTermBorrowings=977000000;LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities=39781000000"
+    },
+    {
+      "ticker": "CVX",
+      "field": "total_debt_status",
+      "before": "CONFLICTING",
+      "after": "PARTIAL"
+    },
+    {
+      "ticker": "JPM",
+      "field": "br04_flags",
+      "before": "BANK_INTEREST_IS_FUNDING_COST;BANK_LEVERAGE_VIA_EQUITY_TO_ASSETS;BS_CLOSURE_FAILED;CASH_MISSING;CUSTOM_TAG_DEBT_BY_LABEL;DEBT_CONFLICTING_PRUDENTIAL_VALUE;FINANCE_LEASE_MISSING;FSDS_FACE_ONLY;INTEREST_CASH_BASIS;OPERATING_LEASE_MISSING",
+      "after": "BANK_FUNDING_PERIMETER_UNRESOLVED;BANK_INTEREST_IS_FUNDING_COST;BANK_LEVERAGE_VIA_EQUITY_TO_ASSETS;BS_CLOSURE_FAILED;CASH_MISSING;FINANCE_LEASE_MISSING;INTEREST_CASH_BASIS;PRIMARY_BORROWING_CAPTIONS_RECONCILED;PRIMARY_DOCUMENT_SUPPLEMENTED;TOTAL_DEBT_IS_NAMED_PARTIAL_SUBTOTAL"
+    },
+    {
+      "ticker": "JPM",
+      "field": "br04_status",
+      "before": "CONFLICTING",
+      "after": "PARTIAL"
+    },
+    {
+      "ticker": "JPM",
+      "field": "long_term_debt",
+      "before": "",
+      "after": "435206000000"
+    },
+    {
+      "ticker": "JPM",
+      "field": "long_term_debt_components",
+      "before": "",
+      "after": "LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities=435206000000"
+    },
+    {
+      "ticker": "JPM",
+      "field": "operating_lease_liabilities",
+      "before": "",
+      "after": "9337000000"
+    },
+    {
+      "ticker": "JPM",
+      "field": "operating_lease_liabilities_components",
+      "before": "",
+      "after": "OperatingLeaseLiability=9337000000"
+    },
+    {
+      "ticker": "JPM",
+      "field": "total_debt",
+      "before": "",
+      "after": "499982000000"
+    },
+    {
+      "ticker": "JPM",
+      "field": "total_debt_candidates",
+      "before": "CURRENT_PLUS_NONCURRENT=64776000000;LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities=435206000000;CUSTOM_DEBT_LINES=1493429000000",
+      "after": "CURRENT_PLUS_NONCURRENT=499982000000"
+    },
+    {
+      "ticker": "JPM",
+      "field": "total_debt_components",
+      "before": "FinancingReceivableExcludingAccruedInterestBeforeAllowanceForCreditLossesNetOfDeferredIncome=1493429000000",
+      "after": "ShortTermBorrowings=64776000000;LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities=435206000000"
+    },
+    {
+      "ticker": "JPM",
+      "field": "total_debt_status",
+      "before": "CONFLICTING",
+      "after": "PARTIAL"
+    },
+    {
+      "ticker": "MET",
+      "field": "br04_flags",
+      "before": "BS_CLOSURE_FAILED;DEBT_CONFLICTING_PRUDENTIAL_VALUE;FINANCE_LEASE_MISSING;FSDS_FACE_ONLY;INSURER_OCF_INCLUDES_FLOAT;INTEREST_CASH_BASIS;OPERATING_LEASE_MISSING;STI_NOT_NETTED",
+      "after": "BS_CLOSURE_FAILED;FINANCE_LEASE_INCLUDED_IN_LONG_TERM;INSURANCE_FUNDING_PERIMETER_UNRESOLVED;INSURER_OCF_INCLUDES_FLOAT;INTEREST_CASH_BASIS;LEVERAGE_THRESHOLD_INDETERMINATE;NET_DEBT_IS_PARTIAL_LOWER_BOUND;PRIMARY_DEBT_CAPTIONS_RECONCILED;PRIMARY_DOCUMENT_SUPPLEMENTED;STI_NOT_NETTED;TOTAL_DEBT_IS_NAMED_PARTIAL_SUBTOTAL"
+    },
+    {
+      "ticker": "MET",
+      "field": "br04_status",
+      "before": "CONFLICTING",
+      "after": "PARTIAL"
+    },
+    {
+      "ticker": "MET",
+      "field": "finance_lease_liabilities",
+      "before": "",
+      "after": "6000000"
+    },
+    {
+      "ticker": "MET",
+      "field": "finance_lease_liabilities_components",
+      "before": "",
+      "after": "FinanceLeaseLiability=6000000"
+    },
+    {
+      "ticker": "MET",
+      "field": "ios_leverage_indeterminate",
+      "before": "false",
+      "after": "true"
+    },
+    {
+      "ticker": "MET",
+      "field": "long_term_debt",
+      "before": "352000000",
+      "after": "14467000000"
+    },
+    {
+      "ticker": "MET",
+      "field": "long_term_debt_components",
+      "before": "SecuredDebt=352000000",
+      "after": "LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities=14467000000"
+    },
+    {
+      "ticker": "MET",
+      "field": "net_debt",
+      "before": "-7565000000",
+      "after": "-1497000000"
+    },
+    {
+      "ticker": "MET",
+      "field": "net_debt_to_ocf",
+      "before": "-0.442604727357828",
+      "after": ""
+    },
+    {
+      "ticker": "MET",
+      "field": "net_debt_to_ocf_lb",
+      "before": "-0.442604727357828",
+      "after": "-0.0875848350105312"
+    },
+    {
+      "ticker": "MET",
+      "field": "operating_lease_liabilities",
+      "before": "",
+      "after": "1138000000"
+    },
+    {
+      "ticker": "MET",
+      "field": "operating_lease_liabilities_components",
+      "before": "",
+      "after": "OperatingLeaseLiability=1138000000"
+    },
+    {
+      "ticker": "MET",
+      "field": "total_debt",
+      "before": "",
+      "after": "20535000000"
+    },
+    {
+      "ticker": "MET",
+      "field": "total_debt_candidates",
+      "before": "CURRENT_PLUS_NONCURRENT=707000000;LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities=14467000000",
+      "after": "DEBT_CAPTIONS_INCLUDING_CFE_EXCLUDING_OTHER_COLLATERAL_PAYABLES=20535000000"
+    },
+    {
+      "ticker": "MET",
+      "field": "total_debt_components",
+      "before": "LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities=14467000000",
+      "after": "ShortTermBorrowings=355000000;LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities=14467000000;SecuredDebt=352000000;SubordinatedDebt=4155000000;NotesIssuedByCollateralizedFinancingEntities=1206000000"
+    },
+    {
+      "ticker": "MET",
+      "field": "total_debt_status",
+      "before": "CONFLICTING",
+      "after": "PARTIAL"
+    },
+    {
+      "ticker": "STT",
+      "field": "br04_flags",
+      "before": "BANK_INTEREST_IS_FUNDING_COST;BANK_LEVERAGE_VIA_EQUITY_TO_ASSETS;BS_CLOSURE_FAILED;CASH_MISSING;DEBT_CONFLICTING_PRUDENTIAL_VALUE;FINANCE_LEASE_MISSING;FSDS_FACE_ONLY;INTEREST_CASH_BASIS;OPERATING_LEASE_MISSING",
+      "after": "BANK_FUNDING_PERIMETER_UNRESOLVED;BANK_INTEREST_IS_FUNDING_COST;BANK_LEVERAGE_VIA_EQUITY_TO_ASSETS;BS_CLOSURE_FAILED;CASH_MISSING;FINANCE_LEASE_INCLUDED_IN_LONG_TERM;INTEREST_CASH_BASIS;PRIMARY_BORROWING_CAPTIONS_RECONCILED;PRIMARY_DOCUMENT_SUPPLEMENTED;TOTAL_DEBT_IS_NAMED_PARTIAL_SUBTOTAL"
+    },
+    {
+      "ticker": "STT",
+      "field": "br04_status",
+      "before": "CONFLICTING",
+      "after": "PARTIAL"
+    },
+    {
+      "ticker": "STT",
+      "field": "finance_lease_liabilities",
+      "before": "",
+      "after": "106000000"
+    },
+    {
+      "ticker": "STT",
+      "field": "finance_lease_liabilities_components",
+      "before": "",
+      "after": "FinanceLeaseLiability=106000000"
+    },
+    {
+      "ticker": "STT",
+      "field": "long_term_debt",
+      "before": "",
+      "after": "25143000000"
+    },
+    {
+      "ticker": "STT",
+      "field": "long_term_debt_components",
+      "before": "",
+      "after": "LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities=25143000000"
+    },
+    {
+      "ticker": "STT",
+      "field": "operating_lease_liabilities",
+      "before": "",
+      "after": "863000000"
+    },
+    {
+      "ticker": "STT",
+      "field": "operating_lease_liabilities_components",
+      "before": "",
+      "after": "OperatingLeaseLiability=863000000"
+    },
+    {
+      "ticker": "STT",
+      "field": "total_debt",
+      "before": "",
+      "after": "28964000000"
+    },
+    {
+      "ticker": "STT",
+      "field": "total_debt_candidates",
+      "before": "CURRENT_PLUS_NONCURRENT=3821000000;LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities=25143000000",
+      "after": "CURRENT_PLUS_NONCURRENT=28964000000"
+    },
+    {
+      "ticker": "STT",
+      "field": "total_debt_components",
+      "before": "LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities=25143000000",
+      "after": "OtherShortTermBorrowings=3821000000;LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities=25143000000"
+    },
+    {
+      "ticker": "STT",
+      "field": "total_debt_status",
+      "before": "CONFLICTING",
+      "after": "PARTIAL"
+    },
+    {
+      "ticker": "USB",
+      "field": "br04_flags",
+      "before": "BANK_INTEREST_IS_FUNDING_COST;BANK_LEVERAGE_VIA_EQUITY_TO_ASSETS;BS_CLOSURE_FAILED;CASH_MISSING;DEBT_CONFLICTING_PRUDENTIAL_VALUE;FINANCE_LEASE_MISSING;FSDS_FACE_ONLY;INTEREST_CASH_BASIS;OPERATING_LEASE_MISSING",
+      "after": "BANK_FUNDING_PERIMETER_UNRESOLVED;BANK_INTEREST_IS_FUNDING_COST;BANK_LEVERAGE_VIA_EQUITY_TO_ASSETS;BS_CLOSURE_FAILED;CASH_MISSING;FINANCE_LEASE_INCLUDED_IN_LONG_TERM;INTEREST_CASH_BASIS;PRIMARY_BORROWING_CAPTIONS_RECONCILED;PRIMARY_DOCUMENT_SUPPLEMENTED;TOTAL_DEBT_IS_NAMED_PARTIAL_SUBTOTAL"
+    },
+    {
+      "ticker": "USB",
+      "field": "br04_status",
+      "before": "CONFLICTING",
+      "after": "PARTIAL"
+    },
+    {
+      "ticker": "USB",
+      "field": "finance_lease_liabilities",
+      "before": "",
+      "after": "125000000"
+    },
+    {
+      "ticker": "USB",
+      "field": "finance_lease_liabilities_components",
+      "before": "",
+      "after": "FinanceLeaseLiability=125000000"
+    },
+    {
+      "ticker": "USB",
+      "field": "long_term_debt",
+      "before": "",
+      "after": "60764000000"
+    },
+    {
+      "ticker": "USB",
+      "field": "long_term_debt_components",
+      "before": "",
+      "after": "LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities=60764000000"
+    },
+    {
+      "ticker": "USB",
+      "field": "operating_lease_liabilities",
+      "before": "",
+      "after": "1419000000"
+    },
+    {
+      "ticker": "USB",
+      "field": "operating_lease_liabilities_components",
+      "before": "",
+      "after": "OperatingLeaseLiability=1419000000"
+    },
+    {
+      "ticker": "USB",
+      "field": "total_debt",
+      "before": "",
+      "after": "77926000000"
+    },
+    {
+      "ticker": "USB",
+      "field": "total_debt_candidates",
+      "before": "CURRENT_PLUS_NONCURRENT=17162000000;LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities=60764000000",
+      "after": "CURRENT_PLUS_NONCURRENT=77926000000"
+    },
+    {
+      "ticker": "USB",
+      "field": "total_debt_components",
+      "before": "LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities=60764000000",
+      "after": "ShortTermBorrowings=17162000000;LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities=60764000000"
+    },
+    {
+      "ticker": "USB",
+      "field": "total_debt_status",
+      "before": "CONFLICTING",
+      "after": "PARTIAL"
+    }
+  ],
+  "source_authentication": "ARCHIVED_COPY_HASHES_ONLY_NOT_NEW_SEC_AUTHENTICATION",
+  "bank_leverage_policy": "Preserve accepted builder NOT_APPLICABLE and ios_leverage_indeterminate=false; funding scope remains explicitly unresolved.",
+  "candidate_promoted": false,
+  "buy_add_allowed": false,
+  "system_live": false
+}

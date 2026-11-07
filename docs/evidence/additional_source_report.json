@@ -1,0 +1,16 @@
+{
+  "schema": "additional_source_recovery_v1",
+  "issuers": 129,
+  "acquisition_failures": 0,
+  "observations": 66,
+  "tickers": 46,
+  "candidate_sha256": "6e44056d5b3934d6f10b9e5756c76eaf4f390e676fb58e1ef80a39454cec6654",
+  "candidate_modified": false,
+  "economic_clearance": false,
+  "limitations": [
+    "Exact accession matching does not establish complete award or capex perimeter.",
+    "BNY SBC USD 1m requires primary award-scope verification.",
+    "Recovered cached files have no retained HTTP receipt; hashes validate bytes only.",
+    "Positive-value selector omits zero or negative facts; NO_MATCH is not economic absence."
+  ]
+}

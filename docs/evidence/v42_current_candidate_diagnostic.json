@@ -1,0 +1,46 @@
+{
+  "candidate_sha256": "5a6802101110ee3a90ef1919a04e4414d03638f9d165852cce37bcd5911666a8",
+  "rows": 504,
+  "v41_gate_counts": {
+    "CALCULABLE": 313,
+    "BQS<60": 152,
+    "AFFO MISSING: FFO e capex di manutenzione non separati": 17,
+    "combined ratio MISSING: sottoscrizione non valutabile": 15,
+    "book value / ROE / crescita sostenibile MISSING": 3,
+    "cassa operativa MISSING": 2,
+    "coverage<70": 1,
+    "market cap MISSING": 1
+  },
+  "v42_gate_counts": {
+    "guarded growth inputs MISSING/CONFLICTING": 57,
+    "CALCULABLE": 201,
+    "BQS<60": 152,
+    "capex MISSING/CONFLICTING": 24,
+    "share_change MISSING/CONFLICTING": 13,
+    "SBC MISSING/CONFLICTING": 18,
+    "AFFO MISSING: FFO e capex di manutenzione non separati": 17,
+    "combined ratio MISSING: sottoscrizione non valutabile": 15,
+    "book value / ROE / crescita sostenibile MISSING": 3,
+    "cassa operativa MISSING/CONFLICTING": 2,
+    "coverage<70": 1,
+    "market cap MISSING/CONFLICTING": 1
+  },
+  "computability_transitions": {
+    "True -> False": 112,
+    "True -> True": 201,
+    "False -> False": 191
+  },
+  "lost_computability_reasons": {
+    "guarded growth inputs MISSING/CONFLICTING": 57,
+    "capex MISSING/CONFLICTING": 24,
+    "share_change MISSING/CONFLICTING": 13,
+    "SBC MISSING/CONFLICTING": 18
+  },
+  "bqs_differences": 0,
+  "nonempty_sector_fields_suppressed_by_adapter": {},
+  "scope": "Same DATA09 SIC adapter and IP basis suppression for both frozen engines; no documentary BR09 rerouting or full V4.2 overlays. Aggregate diagnostic, not validation.",
+  "candidate_modified": false,
+  "r11_status": "NOT_EXECUTED",
+  "r12_status": "NOT_EXECUTED",
+  "system_live": false
+}

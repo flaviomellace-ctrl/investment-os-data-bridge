@@ -1,0 +1,56 @@
+{
+  "schema": "br04_data10_readonly_gap_inventory_v1",
+  "candidate_sha256": "9c51a0b017cd769425c128721e935819b0634942d050142b82c6bcae3bb2429d",
+  "rows": 504,
+  "open_item_counts": {
+    "BANK_FUNDING_PERIMETER_UNRESOLVED": 3,
+    "DOCUMENTED_SHARE_UNIT_CORRECTION_NOT_REAPPLIED": 1,
+    "ECONOMIC_CASE_REMAINS_BLOCKED": 10,
+    "INSURANCE_FUNDING_PERIMETER_UNRESOLVED": 1,
+    "LEVERAGE_INDETERMINATE": 212,
+    "MISSING_ANNUAL_CAPEX": 88,
+    "MISSING_ANNUAL_DILUTED_SHARES": 133,
+    "MISSING_ANNUAL_OPERATING_CASH_FLOW": 17,
+    "MISSING_ANNUAL_REVENUE": 54,
+    "MISSING_ANNUAL_SBC": 101,
+    "MISSING_FY_MINUS_3_DILUTED_SHARES": 148,
+    "MISSING_PRIOR_DILUTED_SHARES": 132,
+    "PRIOR_REVENUE_POLICY_REQUIRES_RECONCILIATION": 2,
+    "ROSCA_UNRESOLVED": 1,
+    "ROW_BASIS_REVENUE_MISSING": 1,
+    "STRICT_DEBT_PERIMETER_UNRESOLVED": 1
+  },
+  "rows_with_listed_open_items": 380,
+  "rows_without_listed_open_items": 124,
+  "prior_ledger_string_differences": 31,
+  "prior_ledger_substantive_differences": 26,
+  "prior_ledger_substantive_by_ticker": {
+    "MCD": 5,
+    "CEG": 10,
+    "WELL": 11
+  },
+  "prior_ledger_formatting_only": 5,
+  "economic_cases_present": [
+    "ADBE",
+    "AMP",
+    "ANET",
+    "CMCSA",
+    "FISV",
+    "FIX",
+    "FOX",
+    "GM",
+    "NEM",
+    "TROW"
+  ],
+  "economic_cases_absent": [],
+  "buy_add_blocked_rows": 504,
+  "candidate_modified": false,
+  "source_evidence_scope": "Archived RC1 evidence; no fresh SEC authentication",
+  "limitations": [
+    "Counts overlap; this is a finite mechanical screen, not comprehensive economic clearance.",
+    "Absence of a listed reason never authorizes trading.",
+    "CEG/WELL total-revenue convention was a development proposal, not an approved production policy.",
+    "Historical PH precision evidence cannot be transferred automatically: its annual filing has changed."
+  ],
+  "next_action": "Revalidate MCD source-unit conversion and recompute per-share CAGR in a separate, explicitly scoped candidate amendment."
+}
