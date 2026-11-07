@@ -12,7 +12,7 @@ class MarketRefreshTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         s1=(ROOT/'data/staging/br04/40122845921/candidate/sp500_fundamentals.csv').read_bytes()
-        cls.old=historical.reconstruct(s1);cls.current=(ROOT/'data/current/sp500_fundamentals.csv').read_bytes()
+        cls.old=historical.reconstruct(s1);cls.current=m.frozen_test_base()
         data,_=base.reconstruct(s1,(ROOT/'data/research/br04-data09/manifest.json').read_bytes())
         proof=(ROOT/'data/research/br04-data10/prior_rc1_proofs.json').read_bytes()
         data,_=shares.amend(data,proof);cls.data,_=revenue.amend(data,proof)

@@ -80,3 +80,10 @@ def main():
     for name,value in [('rebase.json',report),('market_changes.json',changes)]: (out/name).write_text(json.dumps(value,indent=2)+'\n')
     print('DATA14_REPORT='+json.dumps(report,separators=(',',':')))
 if __name__=='__main__':main()
+
+def frozen_test_base():
+    """Historical regression fixture; never replaces live data/current."""
+    import base64,zlib
+    raw=zlib.decompress(base64.b64decode((ROOT/'docs/evidence/data14_base.zlib.b64').read_bytes(),validate=True))
+    require(sha(raw)==CURRENT_SHA,'frozen DATA14 fixture hash mismatch')
+    return raw

@@ -1,4 +1,4 @@
-name: BR-04 DATA09 Research Regression
+name: BR-04 Frozen Research Regression
 on:
   pull_request:
     paths:
@@ -19,6 +19,8 @@ jobs:
     timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -160,3 +162,38 @@ jobs:
           path: data/research/br04-data31/research-review-handoff.zip
           if-no-files-found: error
           retention-days: 90
+
+      - name: Bind economic blockers to exact candidate
+        run: python src/br04_economic_integration.py
+      - name: Preserve economic gate results
+        uses: actions/upload-artifact@v4
+        with:
+          name: economic-gate-research
+          path: data/research/economic-gate/
+          if-no-files-found: error
+
+  current-base-compatibility:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Require explicit rebase when merged current data changes
+        run: |
+          python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          expected='91b0f052957e6a0a34768cfb48838bafe9d2f7f589c3ad439f95c7178e6125e2'
+          actual=hashlib.sha256(Path('data/current/sp500_fundamentals.csv').read_bytes()).hexdigest()
+          report={'expected_research_base_sha256':expected,'merged_current_sha256':actual,'matches':actual==expected,'release_allowed':False}
+          Path('current-base-compatibility.json').write_text(json.dumps(report,indent=2))
+          if actual!=expected:raise SystemExit('Current data changed: explicit source reconciliation/rebase required; frozen replay is not current-base approval.')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: current-base-compatibility
+          path: current-base-compatibility.json
+          if-no-files-found: error
