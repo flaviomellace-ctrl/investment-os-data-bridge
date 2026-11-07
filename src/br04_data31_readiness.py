@@ -125,7 +125,7 @@ Source code and pinned evidence are in the accompanying Git commit. Re-run the r
 '''
     (out/'REVIEW_HANDOFF.md').write_text(instructions)
     manifest={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(out.iterdir()) if p.is_file() and p.name not in ['manifest.json','research-review-handoff.zip']}
-    (out/'manifest.json').write_text(json.dumps(dict(files=manifest,candidate_sha256=CANDIDATE_SHA,commit=os.environ.get('GITHUB_SHA'),release_decision='BLOCKED'),indent=2)+'\n')
+    (out/'manifest.json').write_text(json.dumps(dict(files=manifest,candidate_sha256=CANDIDATE_SHA,commit=os.environ.get('RESEARCH_SOURCE_SHA') or os.environ.get('GITHUB_SHA'),release_decision='BLOCKED'),indent=2)+'\n')
     with zipfile.ZipFile(out/'research-review-handoff.zip','w',zipfile.ZIP_DEFLATED) as z:
         for name in sorted(list(manifest)+['manifest.json']):z.write(out/name,name)
     with zipfile.ZipFile(out/'research-review-handoff.zip') as z:
