@@ -1,0 +1,48 @@
+{
+  "schema": "br04_data33_market_rebase_v1",
+  "source_commit": null,
+  "input_sha256": "5a6802101110ee3a90ef1919a04e4414d03638f9d165852cce37bcd5911666a8",
+  "old_market_base_sha256": "91b0f052957e6a0a34768cfb48838bafe9d2f7f589c3ad439f95c7178e6125e2",
+  "market_base_sha256": "ef47d7bd3300efb0797de784d598d6caa3999869a36771ade4477ab3aa58d3ae",
+  "candidate_sha256": "e7f69c5c8d54c232687f4e63ee1056994ce6960031af04096f92600843688f51",
+  "engine_sha256": "cbdb4e24173638d8377422f13094020090b2253fa1566a7e06374da32348ed6e",
+  "rows": 504,
+  "columns": 285,
+  "market_changed_cells": 1508,
+  "fundamental_changed_cells": 0,
+  "market_status": {
+    "PRESENT": 501,
+    "MISSING": 3
+  },
+  "v42_gate_counts": {
+    "guarded growth inputs MISSING/CONFLICTING": 56,
+    "CALCULABLE": 201,
+    "BQS<60": 152,
+    "capex MISSING/CONFLICTING": 24,
+    "share_change MISSING/CONFLICTING": 13,
+    "SBC MISSING/CONFLICTING": 18,
+    "AFFO MISSING: FFO e capex di manutenzione non separati": 17,
+    "combined ratio MISSING: sottoscrizione non valutabile": 15,
+    "book value / ROE / crescita sostenibile MISSING": 3,
+    "market cap MISSING/CONFLICTING": 2,
+    "cassa operativa MISSING/CONFLICTING": 2,
+    "coverage<70": 1
+  },
+  "transport": {
+    "parts": 51,
+    "rows": 504,
+    "reassembled_byte_identical": true,
+    "candidate_sha256": "e7f69c5c8d54c232687f4e63ee1056994ce6960031af04096f92600843688f51"
+  },
+  "bound_economic_flags": 41,
+  "bound_economic_cases": 10,
+  "buy_add_blocked_rows": 504,
+  "system_live": false,
+  "economic_clearance": false,
+  "candidate_promoted": false,
+  "r11_status": "NOT_EXECUTED",
+  "r12_status": "NOT_EXECUTED",
+  "release_decision": "BLOCKED",
+  "overall_passed": true,
+  "scope": "Market-only rebase, transport and V4.2 SIC-adapter compatibility; not full V4.2 overlays or independent validation."
+}
