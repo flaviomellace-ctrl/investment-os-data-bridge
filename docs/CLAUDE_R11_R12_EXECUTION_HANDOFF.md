@@ -59,3 +59,23 @@ Riportare R11_RECEIPT, R12_RECEIPT, manifest e log effettivi.
 Verificare che gli hash corrispondano alla stessa integrazione e che non vi siano tuning successivi.
 Esiti insufficienti non si convertono in PASS per compromesso.
 Esiti conformi consentono di valutare Bootstrap/IPS e dry-run operativo con broker automatico OFF; non autorizzano automaticamente trading reale.
+
+## Strumenti aggiornati — istruzioni aggiuntive per il preparatore (2026-11-08)
+
+Questa sezione riguarda la preparazione, NON amplia gli accessi concessi all'esecutore blind.
+
+- Preferire Claude Code con Claude Opus 5.5 se disponibile nell'account. La selezione del modello avviene nell'interfaccia o nella configurazione: il prompt non può cambiarlo da solo. Registrare modello effettivo, versione e configurazione; non dichiarare uso di strumenti non disponibili.
+- Verificare la disponibilità di Claude for Financial Advisors. Usare soltanto le skills pertinenti a ricerca, riconciliazione e documentazione. Il plugin è una raccolta di strumenti per consulenti, non una certificazione del modello d'investimento. Non acquistare piani o servizi e non collegare conti di custodia o broker per questo compito. Se non disponibile, procedere con codice e fonti accessibili senza renderlo un blocco.
+- Usare Alpha Vantage MCP ufficiale, se autorizzato e configurato: https://mcp.alphavantage.co/mcp. Le credenziali vanno inserite nell'autenticazione del connettore, mai nei prompt, report o repository.
+- Verificare quali endpoint e diritti dati siano effettivamente disponibili: non presumere real-time, copertura completa o accesso gratuito. Registrare per ogni osservazione provider, endpoint, ticker, valuta, unità, periodo fiscale, timestamp del dato e del recupero, eventuale ritardo e provenienza.
+- Confrontare i fondamentali del provider con documenti SEC originali. Non sostituire silenziosamente evidenze primarie, valori mancanti o CONFLICTING. Distinguere as-reported, dati rettificati e restatement. Le nuove informazioni possono documentare la chiusura di un rilievo soltanto dopo riconciliazione motivata.
+- Le nuove acquisizioni devono essere salvate in uno snapshot separato e confrontate con DATA33; non alterare il candidato congelato durante R11/R12. Non ricostruire market cap come prezzo per azioni.
+- Nei test storici usare soltanto informazioni disponibili alla data di riferimento, evitando look-ahead e revisioni successive non ammesse. Non usare quotazioni attuali per riempire retroattivamente un controllo.
+- Per gli esecutori R11/R12 limitare accessi e connettori al protocollo preregistrato. Nessuna ricerca dei target, chiavi attese o risultati futuri tramite MCP.
+- Consegnare inventario strumenti disponibili/usati/non disponibili, ricevute delle fonti, manifest, codice eseguito e log. Una risposta narrativa non equivale a un test eseguito.
+
+Fonti ufficiali:
+https://www.anthropic.com/claude/opus
+https://claude.com/resources/articles/claude-for-financial-advisors
+https://claude.com/marketplace/connectors/alpha-vantage
+https://github.com/alphavantage/alpha_vantage_mcp
