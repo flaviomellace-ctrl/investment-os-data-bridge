@@ -30,7 +30,7 @@ import sys
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-PIPELINE_VERSION = "V4.2-INTEGRATED-1.0"
+PIPELINE_VERSION = "V4.2-INTEGRATED-1.1"
 OUTPUT_SCHEMA = "investment_os_v4_2_integrated_run_v1"
 EVIDENCE_SCHEMA = "v42_integrated_evidence_v1"
 
@@ -121,6 +121,17 @@ def restore_growth_guard_inputs(c: dict, row: dict) -> None:
     c["opinc_yoy"] = None if cur is None or prior in (None, 0) else cur / prior - 1.0
     c["net_income_series"] = [_num(row.get(k)) for k in ("fy_minus_3_net_income", "fy_minus_2_net_income",
                                                          "fy_minus_1_net_income", "annual_net_income")]
+
+
+def open_conflicts(ev: dict) -> List[str]:
+    """Fields for which a primary-source reconciliation found an unresolved difference with the candidate."""
+    out = []
+    for item in ev.get("data_conflicts") or []:
+        if not str(item.get("field", "")).strip() or not str(item.get("source", "")).strip():
+            raise IntegrationError("data conflict needs field and source")
+        if item.get("status", "OPEN") != "RESOLVED":
+            out.append(str(item["field"]))
+    return sorted(out)
 
 
 def classify_entity(row: dict, original_module: str, br09: Optional[dict], market) -> Dict[str, Any]:
@@ -217,6 +228,11 @@ def overlay_entity(row: dict, module: str, ev: dict, cash) -> Dict[str, Any]:
             items.append(cash.Commitment("OPERATING_LEASE_LIABILITY", lease, cash.PRESENT, False, False,
                                          "candidate:operating_lease_liabilities", str(row.get("annual_period", "") or "candidate"),
                                          "reported operating lease liability"))
+        supplied = {str(x.get("category", "")) for x in cm.get("items") or []}
+        if lease is None and "OPERATING_LEASE_LIABILITY" not in supplied:
+            # Decision D3 (approved 2026-11-11): a missing lease liability is an unquantified material commitment, never zero.
+            items.append(cash.Commitment("OPERATING_LEASE_LIABILITY", None, cash.MISSING, True, False,
+                                         "candidate:operating_lease_liabilities", "", "operating lease liability not available"))
         for x in cm.get("items") or []:
             items.append(cash.Commitment(str(x.get("category", "")), _num(x.get("amount")), str(x.get("status", cash.MISSING)),
                                          _strict_bool(x.get("material", True), "material"),
@@ -280,7 +296,8 @@ def run(rows: List[dict], evidence: Optional[dict] = None, *, components: Option
             bqs_components={k: v for k, v in sorted(detail.items()) if not k.startswith("_")},
             ios=ios_value, ios_gate="CALCULABLE" if ios_value is not None else ios_detail.get("gate", "UNSPECIFIED"),
             growth_policy=ios_detail.get("growth_policy"), data_guards=guards,
-            data_conflict=any(v == "CONFLICTING" for v in row.values()) or br09["kpi_conflict"],
+            data_conflict=any(v == "CONFLICTING" for v in row.values()) or br09["kpi_conflict"] or bool(open_conflicts(ev)),
+            open_data_conflicts=open_conflicts(ev),
             market_data_status=row.get("market_data_status") or "MISSING", _c=c, _row=row, _ev=ev)
     lane_v = [dict(entity_key=k, ios=r["ios"], bqs=r["bqs"]) for k, r in results.items() if r["ios"] is not None]
     lane_v.sort(key=lambda r: (-float(r["ios"]), -float(r["bqs"]), r["entity_key"]))

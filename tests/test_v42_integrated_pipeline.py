@@ -163,6 +163,27 @@ class IntegratedPipelineTests(unittest.TestCase):
         self.assertTrue(h["lane_i"]["high_confidence"])
         self.assertEqual((g["bqs"], g["ios"]), (h["bqs"], h["ios"]))
 
+    def test_missing_lease_is_an_unquantified_commitment_not_zero(self):
+        r = one(run([row("DEV-L", operating_lease_liabilities="")], {"DEV-L": clean_evidence()}), "DEV-L")
+        self.assertEqual(r["overlay"]["commitments_gate"], "INVESTIGARE")
+        self.assertIn("OPERATING_LEASE_LIABILITY", r["overlay"]["unresolved_material_commitments"])
+        ev = clean_evidence()
+        ev["commitments"]["items"] = [dict(category="OPERATING_LEASE_LIABILITY", amount=55, status="PRESENT", material=True,
+                                           already_in_debt=False, source="dev 10-K", data_as_of="2025-12-31", definition="dev")]
+        r = one(run([row("DEV-L", operating_lease_liabilities="")], {"DEV-L": ev}), "DEV-L")
+        self.assertEqual(r["overlay"]["commitments_gate"], "NO_AUTOMATIC_BLOCK")
+        self.assertEqual(r["overlay"]["quantified_uncovered_commitments"], 55)
+
+    def test_open_primary_source_conflict_blocks(self):
+        ev = clean_evidence()
+        ev["data_conflicts"] = [dict(field="annual_revenue", candidate_value=1000, primary_value=1200, source="dev 10-K")]
+        r = one(run([row("DEV-A")], {"DEV-A": ev}), "DEV-A")
+        self.assertTrue(r["data_conflict"])
+        self.assertFalse(r["decision"]["allowed_under_hypothetical_live_state"])
+        ev["data_conflicts"][0]["status"] = "RESOLVED"
+        r = one(run([row("DEV-A")], {"DEV-A": ev}), "DEV-A")
+        self.assertTrue(r["decision"]["allowed_under_hypothetical_live_state"])
+
     def test_mixed_basis_guard_is_flag_driven(self):
         r = one(run([row("DEV-X", data_quality_flags="ANY_MIXED_CONTINUING_DISCONTINUED_BASIS", fcf_margin="", net_margin="")]), "DEV-X")
         self.assertEqual(r["data_guards"], ["MIXED_BASIS_RATIOS_SUPPRESSED"])

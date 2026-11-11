@@ -1,0 +1,17 @@
+{
+ "schema": "br04_data34_market_rebase_v1",
+ "input_sha256": "e7f69c5c8d54c232687f4e63ee1056994ce6960031af04096f92600843688f51",
+ "old_market_base_sha256": "ef47d7bd3300efb0797de784d598d6caa3999869a36771ade4477ab3aa58d3ae",
+ "market_base_sha256": "b5cd5a7f8d36c34b48f1639be3b6373abe320c87d7e1b347bf9151046f0d5c8e",
+ "market_base_commit": "757e2d31c5f7d9895b1349a3223bc4e609c05307",
+ "candidate_sha256": "c01d2d3cda520191d7167d4dfc6a64794ab0000af27ca159e36a26699ea7118d",
+ "rows": 504,
+ "columns": 285,
+ "market_changed_cells": 1503,
+ "fundamental_changed_cells": 0,
+ "candidate_promoted": false,
+ "buy_add_allowed": false,
+ "system_live": false,
+ "sec_independent_reread": "NOT_EXECUTED",
+ "scope": "Market-only rebase. Known fundamental defects are NOT corrected here: they are bound as open data conflicts in the evidence file."
+}

@@ -1,0 +1,36 @@
+{
+ "control_set_id": "R11-HC-20261111-A",
+ "detail": "Per-check detail withheld from the repository: it restates the expected outcomes. Held by the custodian.",
+ "executor_environment": {
+  "implementation": "CPython",
+  "platform": "Linux-6.18.44-fc-v378-x86_64-with-glibc2.39",
+  "python": "3.13.18 (main, Oct 26 2026, 14:08:19) [Clang 23.1.3 ]"
+ },
+ "executor_output_sha256": "4a7a58d2bb642fff77209654bcb3f6621e3af1a8e05c43a24a2208ff2047a614",
+ "key_sha256": "9c4be9d0c38d759c317062ccdba83d842bcae91d4ed3afe0bad9d2d671bafa3a",
+ "missing_cases": [],
+ "note": "A failed check may not be re-scored. If the custodian shows that an expectation contradicts the frozen written specification, the run is INCONCLUSIVE and a new sealed control set is required; it never becomes PASS.",
+ "r11_status": "PASS",
+ "r12_admissible": false,
+ "schema": "investment_os_r11_receipt_v1",
+ "summary": {
+  "CRITICAL": {
+   "passed": 60,
+   "total": 60
+  },
+  "MAJOR": {
+   "passed": 75,
+   "total": 75
+  },
+  "MINOR": {
+   "passed": 0,
+   "total": 0
+  }
+ },
+ "system_live": false,
+ "thresholds": {
+  "CRITICAL_required_pass_rate": 1.0,
+  "MAJOR_required_pass_rate": 1.0,
+  "MINOR_max_failures": 2
+ }
+}

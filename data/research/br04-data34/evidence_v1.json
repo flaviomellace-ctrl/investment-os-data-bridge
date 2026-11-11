@@ -1,0 +1,374 @@
+{
+ "entities": {
+  "ADBE": {
+   "commitments": {
+    "inventory_complete": false,
+    "items": []
+   },
+   "leverage": {
+    "depreciation_amortization": {
+     "source": "SEC companyfacts us-gaap, accession 0000796343-26-000003 (snapshot SEC-RECON-20261111, retrieved 2026-11-11)",
+     "value": 818000000.0
+    }
+   }
+  },
+  "AMP": {
+   "commitments": {
+    "inventory_complete": false,
+    "items": [
+     {
+      "already_in_debt": false,
+      "amount": 276000000.0,
+      "category": "OPERATING_LEASE_LIABILITY",
+      "data_as_of": "2025-12-31",
+      "definition": "us-gaap:OperatingLeaseLiability, as filed",
+      "material": true,
+      "source": "SEC companyfacts us-gaap, accession 0000820027-26-000011 (snapshot SEC-RECON-20261111, retrieved 2026-11-11)",
+      "status": "PRESENT"
+     }
+    ]
+   },
+   "leverage": {
+    "depreciation_amortization": {
+     "source": "SEC companyfacts us-gaap, accession 0000820027-26-000011 (snapshot SEC-RECON-20261111, retrieved 2026-11-11)",
+     "value": 151000000.0
+    }
+   }
+  },
+  "ANET": {
+   "commitments": {
+    "inventory_complete": false,
+    "items": [
+     {
+      "already_in_debt": false,
+      "amount": 6300000000.0,
+      "category": "PURCHASE_OBLIGATIONS_NEXT_12M",
+      "data_as_of": "2025-12-31",
+      "definition": "us-gaap:PurchaseObligationDueInNextTwelveMonths, as filed",
+      "material": true,
+      "source": "SEC companyfacts us-gaap, accession 0001596532-26-000013 (snapshot SEC-RECON-20261111, retrieved 2026-11-11)",
+      "status": "PRESENT"
+     }
+    ]
+   },
+   "leverage": {
+    "depreciation_amortization": {
+     "source": "SEC companyfacts us-gaap, accession 0001596532-26-000013 (snapshot SEC-RECON-20261111, retrieved 2026-11-11)",
+     "value": 72600000
+    }
+   }
+  },
+  "CCI": {
+   "data_conflicts": [
+    {
+     "candidate_value": 215000000.0,
+     "field": "annual_revenue",
+     "note": "candidate equals contract-revenue tag; consolidated Revenues is larger; margin ratios are on the partial base",
+     "primary_value": 4264000000.0,
+     "source": "SEC EDGAR XBRL frames us-gaap/Revenues/USD/CY2025, retrieved 2026-11-11T21:50:07Z (snapshot SEC-FRAMES-20261111)",
+     "status": "OPEN",
+     "unit": "USD"
+    }
+   ]
+  },
+  "CHTR": {
+   "commitments": {
+    "inventory_complete": false,
+    "items": [
+     {
+      "already_in_debt": false,
+      "amount": 1442000000.0,
+      "category": "OPERATING_LEASE_LIABILITY",
+      "data_as_of": "2025-12-31",
+      "definition": "us-gaap:OperatingLeaseLiability, as filed",
+      "material": true,
+      "source": "SEC companyfacts us-gaap, accession 0001091667-26-000017 (snapshot SEC-RECON-20261111, retrieved 2026-11-11)",
+      "status": "PRESENT"
+     }
+    ]
+   }
+  },
+  "CMCSA": {
+   "commitments": {
+    "inventory_complete": false,
+    "items": [
+     {
+      "already_in_debt": false,
+      "amount": 6097000000.0,
+      "category": "OPERATING_LEASE_LIABILITY",
+      "data_as_of": "2025-12-31",
+      "definition": "us-gaap:OperatingLeaseLiability, as filed",
+      "material": true,
+      "source": "SEC companyfacts us-gaap, accession 0001628280-26-004994 (snapshot SEC-RECON-20261111, retrieved 2026-11-11)",
+      "status": "PRESENT"
+     }
+    ]
+   },
+   "leverage": {
+    "depreciation_amortization": {
+     "source": "SEC companyfacts us-gaap, accession 0001628280-26-004994 (snapshot SEC-RECON-20261111, retrieved 2026-11-11)",
+     "value": 16210000000.0
+    }
+   }
+  },
+  "CNC": {
+   "data_conflicts": [
+    {
+     "candidate_value": 174581000000.0,
+     "field": "annual_revenue",
+     "note": "candidate equals contract-revenue tag; consolidated Revenues is larger; margin ratios are on the partial base",
+     "primary_value": 194777000000.0,
+     "source": "SEC EDGAR XBRL frames us-gaap/Revenues/USD/CY2025, retrieved 2026-11-11T21:50:07Z (snapshot SEC-FRAMES-20261111)",
+     "status": "OPEN",
+     "unit": "USD"
+    }
+   ]
+  },
+  "CVX": {
+   "data_conflicts": [
+    {
+     "candidate_value": 184432000000.0,
+     "field": "annual_revenue",
+     "note": "candidate equals contract-revenue tag; consolidated Revenues is larger; margin ratios are on the partial base",
+     "primary_value": 189031000000.0,
+     "source": "SEC EDGAR XBRL frames us-gaap/Revenues/USD/CY2025, retrieved 2026-11-11T21:50:07Z (snapshot SEC-FRAMES-20261111)",
+     "status": "OPEN",
+     "unit": "USD"
+    }
+   ]
+  },
+  "DOC": {
+   "data_conflicts": [
+    {
+     "candidate_value": 604000000.0,
+     "field": "annual_revenue",
+     "note": "candidate equals contract-revenue tag; consolidated Revenues is larger; margin ratios are on the partial base",
+     "primary_value": 2823000000.0,
+     "source": "SEC EDGAR XBRL frames us-gaap/Revenues/USD/CY2025, retrieved 2026-11-11T21:50:07Z (snapshot SEC-FRAMES-20261111)",
+     "status": "OPEN",
+     "unit": "USD"
+    }
+   ]
+  },
+  "DVN": {
+   "data_conflicts": [
+    {
+     "candidate_value": 16786000000.0,
+     "field": "annual_revenue",
+     "note": "candidate equals contract-revenue tag; consolidated Revenues is larger; margin ratios are on the partial base",
+     "primary_value": 17188000000.0,
+     "source": "SEC EDGAR XBRL frames us-gaap/Revenues/USD/CY2025, retrieved 2026-11-11T21:50:07Z (snapshot SEC-FRAMES-20261111)",
+     "status": "OPEN",
+     "unit": "USD"
+    }
+   ]
+  },
+  "ESS": {
+   "data_conflicts": [
+    {
+     "candidate_value": 9000000.0,
+     "field": "annual_revenue",
+     "note": "candidate equals contract-revenue tag; consolidated Revenues is larger; margin ratios are on the partial base",
+     "primary_value": 1887000000.0,
+     "source": "SEC EDGAR XBRL frames us-gaap/Revenues/USD/CY2025, retrieved 2026-11-11T21:50:07Z (snapshot SEC-FRAMES-20261111)",
+     "status": "OPEN",
+     "unit": "USD"
+    }
+   ]
+  },
+  "EXR": {
+   "data_conflicts": [
+    {
+     "candidate_value": 129000000.0,
+     "field": "annual_revenue",
+     "note": "candidate equals contract-revenue tag; consolidated Revenues is larger; margin ratios are on the partial base",
+     "primary_value": 3378000000.0,
+     "source": "SEC EDGAR XBRL frames us-gaap/Revenues/USD/CY2025, retrieved 2026-11-11T21:50:07Z (snapshot SEC-FRAMES-20261111)",
+     "status": "OPEN",
+     "unit": "USD"
+    }
+   ]
+  },
+  "FIX": {
+   "commitments": {
+    "inventory_complete": false,
+    "items": [
+     {
+      "already_in_debt": false,
+      "amount": 338132000,
+      "category": "OPERATING_LEASE_LIABILITY",
+      "data_as_of": "2025-12-31",
+      "definition": "us-gaap:OperatingLeaseLiability, as filed",
+      "material": true,
+      "source": "SEC companyfacts us-gaap, accession 0001104659-26-017530 (snapshot SEC-RECON-20261111, retrieved 2026-11-11)",
+      "status": "PRESENT"
+     }
+    ]
+   },
+   "leverage": {
+    "depreciation_amortization": {
+     "source": "SEC companyfacts us-gaap, accession 0001104659-26-017530 (snapshot SEC-RECON-20261111, retrieved 2026-11-11)",
+     "value": 62400000
+    }
+   }
+  },
+  "FOX": {
+   "data_conflicts": [
+    {
+     "candidate_value": 1727000000.0,
+     "field": "annual_net_income",
+     "note": "candidate uses ProfitLoss including noncontrolling interests",
+     "primary_value": 1685000000.0,
+     "source": "SEC companyfacts, accession 0001628280-26-053960 (snapshot SEC-RECON-20261111)",
+     "status": "OPEN",
+     "unit": "USD"
+    }
+   ]
+  },
+  "GM": {
+   "data_conflicts": [
+    {
+     "candidate_value": 167971000000.0,
+     "field": "annual_revenue",
+     "note": "candidate equals contract-revenue tag; consolidated Revenues is larger; margin ratios are on the partial base",
+     "primary_value": 185019000000.0,
+     "source": "SEC EDGAR XBRL frames us-gaap/Revenues/USD/CY2025, retrieved 2026-11-11T21:50:07Z (snapshot SEC-FRAMES-20261111)",
+     "status": "OPEN",
+     "unit": "USD"
+    }
+   ]
+  },
+  "HAS": {
+   "data_conflicts": [
+    {
+     "candidate_value": 4701000000.0,
+     "field": "annual_revenue",
+     "note": "candidate equals contract-revenue tag; consolidated Revenues is larger; margin ratios are on the partial base",
+     "primary_value": 5366000000.0,
+     "source": "SEC EDGAR XBRL frames us-gaap/Revenues/USD/CY2025, retrieved 2026-11-11T21:50:07Z (snapshot SEC-FRAMES-20261111)",
+     "status": "OPEN",
+     "unit": "USD"
+    }
+   ]
+  },
+  "MGM": {
+   "commitments": {
+    "inventory_complete": false,
+    "items": [
+     {
+      "already_in_debt": false,
+      "amount": 25068747000,
+      "category": "OPERATING_LEASE_LIABILITY",
+      "data_as_of": "2025-12-31",
+      "definition": "us-gaap:OperatingLeaseLiability, as filed",
+      "material": true,
+      "source": "SEC companyfacts us-gaap, accession 0000789570-26-000018 (snapshot SEC-RECON-20261111, retrieved 2026-11-11)",
+      "status": "PRESENT"
+     }
+    ]
+   },
+   "leverage": {
+    "depreciation_amortization": {
+     "source": "SEC companyfacts us-gaap, accession 0000789570-26-000018 (snapshot SEC-RECON-20261111, retrieved 2026-11-11)",
+     "value": 1017794000
+    }
+   }
+  },
+  "NEM": {
+   "commitments": {
+    "inventory_complete": false,
+    "items": [
+     {
+      "already_in_debt": false,
+      "amount": 109000000.0,
+      "category": "OPERATING_LEASE_LIABILITY",
+      "data_as_of": "2025-12-31",
+      "definition": "us-gaap:OperatingLeaseLiability, as filed",
+      "material": true,
+      "source": "SEC companyfacts us-gaap, accession 0001164727-26-000010 (snapshot SEC-RECON-20261111, retrieved 2026-11-11)",
+      "status": "PRESENT"
+     }
+    ]
+   },
+   "leverage": {
+    "depreciation_amortization": {
+     "source": "SEC companyfacts us-gaap, accession 0001164727-26-000010 (snapshot SEC-RECON-20261111, retrieved 2026-11-11)",
+     "value": 2521000000.0
+    }
+   }
+  },
+  "NTRS": {
+   "data_conflicts": [
+    {
+     "candidate_value": 5018000000.0,
+     "field": "annual_revenue",
+     "note": "candidate equals contract-revenue tag; consolidated Revenues is larger; margin ratios are on the partial base",
+     "primary_value": 8086000000.0,
+     "source": "SEC EDGAR XBRL frames us-gaap/Revenues/USD/CY2025, retrieved 2026-11-11T21:50:07Z (snapshot SEC-FRAMES-20261111)",
+     "status": "OPEN",
+     "unit": "USD"
+    }
+   ]
+  },
+  "RSG": {
+   "data_conflicts": [
+    {
+     "candidate_value": 16591000000.0,
+     "field": "annual_revenue",
+     "note": "candidate equals contract-revenue tag; consolidated Revenues is larger; margin ratios are on the partial base",
+     "primary_value": 19027000000.0,
+     "source": "SEC EDGAR XBRL frames us-gaap/Revenues/USD/CY2025, retrieved 2026-11-11T21:50:07Z (snapshot SEC-FRAMES-20261111)",
+     "status": "OPEN",
+     "unit": "USD"
+    }
+   ]
+  },
+  "SBAC": {
+   "data_conflicts": [
+    {
+     "candidate_value": 244000000.0,
+     "field": "annual_revenue",
+     "note": "candidate equals contract-revenue tag; consolidated Revenues is larger; margin ratios are on the partial base",
+     "primary_value": 2815000000.0,
+     "source": "SEC EDGAR XBRL frames us-gaap/Revenues/USD/CY2025, retrieved 2026-11-11T21:50:07Z (snapshot SEC-FRAMES-20261111)",
+     "status": "OPEN",
+     "unit": "USD"
+    }
+   ]
+  },
+  "SYF": {
+   "commitments": {
+    "inventory_complete": false,
+    "items": []
+   },
+   "leverage": {
+    "depreciation_amortization": {
+     "source": "SEC companyfacts us-gaap, accession 0001601712-26-000006 (snapshot SEC-RECON-20261111, retrieved 2026-11-11)",
+     "value": 514000000.0
+    }
+   }
+  },
+  "TROW": {
+   "commitments": {
+    "inventory_complete": false,
+    "items": []
+   }
+  },
+  "UDR": {
+   "data_conflicts": [
+    {
+     "candidate_value": 11000000.0,
+     "field": "annual_revenue",
+     "note": "candidate equals contract-revenue tag; consolidated Revenues is larger; margin ratios are on the partial base",
+     "primary_value": 1712000000.0,
+     "source": "SEC EDGAR XBRL frames us-gaap/Revenues/USD/CY2025, retrieved 2026-11-11T21:50:07Z (snapshot SEC-FRAMES-20261111)",
+     "status": "OPEN",
+     "unit": "USD"
+    }
+   ]
+  }
+ },
+ "evidence_set_id": "DATA34-EVIDENCE-V1-PRIMARY-QUANTITATIVE",
+ "note": "Solo fatti quantitativi da fonte primaria e conflitti di dato. Nessun giudizio documentale (BR-09, qualit\u00e0 della cassa, completezza degli impegni, clearance): restano NOT_REVIEWED.",
+ "schema": "v42_integrated_evidence_v1"
+}

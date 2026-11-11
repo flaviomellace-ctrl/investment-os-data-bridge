@@ -1,0 +1,227 @@
+{
+ "schema": "sec_frames_universe_reconciliation_v1",
+ "snapshot_id": "SEC-FRAMES-20261111",
+ "source": "SEC EDGAR XBRL frames API (primary, as-filed)",
+ "endpoints": [
+  "https://data.sec.gov/api/xbrl/frames/us-gaap/Revenues/USD/CY2025.json",
+  "https://data.sec.gov/api/xbrl/frames/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax/USD/CY2025.json",
+  "https://data.sec.gov/api/xbrl/frames/us-gaap/OperatingLeaseLiability/USD/CY2025Q4I.json"
+ ],
+ "retrieved_utc": "2026-11-11T21:50:07Z",
+ "unit": "USD (valori in milioni, arrotondati)",
+ "period": "CY2025 / 2025-12-31",
+ "scope": "378 CIK distinti del candidato con esercizio chiuso a dicembre 2025; 125 righe con altro esercizio o senza CIK non coperte",
+ "revenue": {
+  "with_sec_revenues_tag_and_candidate_value": 179,
+  "match_within_1pct": 164,
+  "no_sec_revenues_tag": 189,
+  "differences": [
+   {
+    "ticker": "JPM",
+    "cik": 19617,
+    "candidate_revenue_musd": null,
+    "sec_revenues_musd": 182447,
+    "sec_contract_revenue_musd": null,
+    "classification": "CANDIDATE_MISSING_SEC_REVENUES_PRESENT"
+   },
+   {
+    "ticker": "CVX",
+    "cik": 93410,
+    "candidate_revenue_musd": 184432,
+    "sec_revenues_musd": 189031,
+    "sec_contract_revenue_musd": 184432,
+    "classification": "PARTIAL_REVENUE_TAG"
+   },
+   {
+    "ticker": "COF",
+    "cik": 927628,
+    "candidate_revenue_musd": null,
+    "sec_revenues_musd": 53434,
+    "sec_contract_revenue_musd": 8062,
+    "classification": "CANDIDATE_MISSING_SEC_REVENUES_PRESENT"
+   },
+   {
+    "ticker": "BNY",
+    "cik": 1390777,
+    "candidate_revenue_musd": null,
+    "sec_revenues_musd": 20080,
+    "sec_contract_revenue_musd": null,
+    "classification": "CANDIDATE_MISSING_SEC_REVENUES_PRESENT"
+   },
+   {
+    "ticker": "USB",
+    "cik": 36104,
+    "candidate_revenue_musd": null,
+    "sec_revenues_musd": 28656,
+    "sec_contract_revenue_musd": null,
+    "classification": "CANDIDATE_MISSING_SEC_REVENUES_PRESENT"
+   },
+   {
+    "ticker": "GM",
+    "cik": 1467858,
+    "candidate_revenue_musd": 167971,
+    "sec_revenues_musd": 185019,
+    "sec_contract_revenue_musd": 167971,
+    "classification": "PARTIAL_REVENUE_TAG"
+   },
+   {
+    "ticker": "FIX",
+    "cik": 1035983,
+    "candidate_revenue_musd": 9102,
+    "sec_revenues_musd": 1831,
+    "sec_contract_revenue_musd": null,
+    "classification": "TO_VERIFY"
+   },
+   {
+    "ticker": "SRE",
+    "cik": 1032208,
+    "candidate_revenue_musd": null,
+    "sec_revenues_musd": 13702,
+    "sec_contract_revenue_musd": 12418,
+    "classification": "CANDIDATE_MISSING_SEC_REVENUES_PRESENT"
+   },
+   {
+    "ticker": "DVN",
+    "cik": 1090012,
+    "candidate_revenue_musd": 16786,
+    "sec_revenues_musd": 17188,
+    "sec_contract_revenue_musd": 16786,
+    "classification": "PARTIAL_REVENUE_TAG"
+   },
+   {
+    "ticker": "RSG",
+    "cik": 1060391,
+    "candidate_revenue_musd": 16591,
+    "sec_revenues_musd": 19027,
+    "sec_contract_revenue_musd": 16591,
+    "classification": "PARTIAL_REVENUE_TAG"
+   },
+   {
+    "ticker": "EME",
+    "cik": 105634,
+    "candidate_revenue_musd": null,
+    "sec_revenues_musd": 16986,
+    "sec_contract_revenue_musd": null,
+    "classification": "CANDIDATE_MISSING_SEC_REVENUES_PRESENT"
+   },
+   {
+    "ticker": "CCI",
+    "cik": 1051470,
+    "candidate_revenue_musd": 215,
+    "sec_revenues_musd": 4264,
+    "sec_contract_revenue_musd": 215,
+    "classification": "PARTIAL_REVENUE_TAG"
+   },
+   {
+    "ticker": "CNC",
+    "cik": 1071739,
+    "candidate_revenue_musd": 174581,
+    "sec_revenues_musd": 194777,
+    "sec_contract_revenue_musd": 174581,
+    "classification": "PARTIAL_REVENUE_TAG"
+   },
+   {
+    "ticker": "NTRS",
+    "cik": 73124,
+    "candidate_revenue_musd": 5018,
+    "sec_revenues_musd": 8086,
+    "sec_contract_revenue_musd": 5018,
+    "classification": "PARTIAL_REVENUE_TAG"
+   },
+   {
+    "ticker": "EXR",
+    "cik": 1289490,
+    "candidate_revenue_musd": 129,
+    "sec_revenues_musd": 3378,
+    "sec_contract_revenue_musd": 129,
+    "classification": "PARTIAL_REVENUE_TAG"
+   },
+   {
+    "ticker": "AEE",
+    "cik": 1002910,
+    "candidate_revenue_musd": null,
+    "sec_revenues_musd": 8799,
+    "sec_contract_revenue_musd": null,
+    "classification": "CANDIDATE_MISSING_SEC_REVENUES_PRESENT"
+   },
+   {
+    "ticker": "CFG",
+    "cik": 759944,
+    "candidate_revenue_musd": null,
+    "sec_revenues_musd": 8247,
+    "sec_contract_revenue_musd": 1635,
+    "classification": "CANDIDATE_MISSING_SEC_REVENUES_PRESENT"
+   },
+   {
+    "ticker": "ARES",
+    "cik": 1176948,
+    "candidate_revenue_musd": 5601,
+    "sec_revenues_musd": 4756,
+    "sec_contract_revenue_musd": 5601,
+    "classification": "TO_VERIFY"
+   },
+   {
+    "ticker": "DOW",
+    "cik": 1751788,
+    "candidate_revenue_musd": null,
+    "sec_revenues_musd": 39968,
+    "sec_contract_revenue_musd": null,
+    "classification": "CANDIDATE_MISSING_SEC_REVENUES_PRESENT"
+   },
+   {
+    "ticker": "SBAC",
+    "cik": 1034054,
+    "candidate_revenue_musd": 244,
+    "sec_revenues_musd": 2815,
+    "sec_contract_revenue_musd": 244,
+    "classification": "PARTIAL_REVENUE_TAG"
+   },
+   {
+    "ticker": "KEY",
+    "cik": 91576,
+    "candidate_revenue_musd": null,
+    "sec_revenues_musd": 7513,
+    "sec_contract_revenue_musd": 1749,
+    "classification": "CANDIDATE_MISSING_SEC_REVENUES_PRESENT"
+   },
+   {
+    "ticker": "ESS",
+    "cik": 920522,
+    "candidate_revenue_musd": 9,
+    "sec_revenues_musd": 1887,
+    "sec_contract_revenue_musd": 9,
+    "classification": "PARTIAL_REVENUE_TAG"
+   },
+   {
+    "ticker": "HAS",
+    "cik": 46080,
+    "candidate_revenue_musd": 4701,
+    "sec_revenues_musd": 5366,
+    "sec_contract_revenue_musd": 4701,
+    "classification": "PARTIAL_REVENUE_TAG"
+   },
+   {
+    "ticker": "DOC",
+    "cik": 765880,
+    "candidate_revenue_musd": 604,
+    "sec_revenues_musd": 2823,
+    "sec_contract_revenue_musd": 604,
+    "classification": "PARTIAL_REVENUE_TAG"
+   },
+   {
+    "ticker": "UDR",
+    "cik": 74208,
+    "candidate_revenue_musd": 11,
+    "sec_revenues_musd": 1712,
+    "sec_contract_revenue_musd": 11,
+    "classification": "PARTIAL_REVENUE_TAG"
+   }
+  ]
+ },
+ "operating_lease": {
+  "candidate_missing_and_sec_present": 256,
+  "sum_musd": 353796,
+  "note": "elenco per CIK non archiviato in questo snapshot; rieseguibile dall'endpoint"
+ },
+ "caveat": "I frame scelgono un solo fatto per CIK: le differenze classificate TO_VERIFY vanno controllate sul filing. Non modifica alcun dato congelato."
+}
