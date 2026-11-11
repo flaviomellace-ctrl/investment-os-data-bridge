@@ -1,0 +1,52 @@
+{
+ "candidate_sha256": "e7f69c5c8d54c232687f4e63ee1056994ce6960031af04096f92600843688f51",
+ "data33_implementation_commit": "25a945f525a308d68f70b6db91481ed562d77aff",
+ "engine_sha256": "cbdb4e24173638d8377422f13094020090b2253fa1566a7e06374da32348ed6e",
+ "files": {
+  "README.md": "674f0199293ee25a4e6c51bfad16c8cad6fadddeff195bc2e6ada2769d966dc6",
+  "data/DATA33_RESEARCH_NOT_PROMOTED.csv": "e7f69c5c8d54c232687f4e63ee1056994ce6960031af04096f92600843688f51",
+  "docs/V4_2_ENGINE_MANIFEST.json": "2b61b9f9d4b2318b4b1f57b87d6a605afc871fe1b546aaba9a434425a626626e",
+  "docs/evidence/economic_registry_verified.json": "9428786994c547e739f7e4742f9c02ebcb392bc3706c3a81af7d787c0a16ba96",
+  "expected/integrated_summary.json": "c8122b698647a6aaa823b0ed199ca84456a59a3c04ca446267e4e473a3403a0f",
+  "reproduce.sh": "918d2cfc088faee8a8b50d8a1e8aaff7a88ec3d931506b0670902453de56ce38",
+  "requirements.txt": "14dfd262ff5532f94b0c456b6c560ab5babf6e82e351d67eef899c105ac46875",
+  "src/br04_data09_preflight.py": "aa75f344a658e3c8057c837b2451f2509097f9fa104887fed51159e55a867ad8",
+  "src/cash_quality_commitments_v42.py": "1d76a9a260793614edb5964b02eaed71b8b0ce6307fdb257d16773b9adb1ef3a",
+  "src/inflection_lane_v42.py": "c45dbb85558919358a727c0dbe3d657d9cd9a41ea6987a51289374af69b55c3a",
+  "src/investment_os/v4_1_frozen/v4_scoring.py": "91ce6231e8070a6fea10d2f025d3d60256ee418ff5ddeedd0215198171c13fc9",
+  "src/investment_os/v4_2/v4_scoring.py": "cbdb4e24173638d8377422f13094020090b2253fa1566a7e06374da32348ed6e",
+  "src/marketplace_classifier_v42.py": "c4031e77f9baf8347b7c07f82decb8bf0e6b2209bae3d9f21c06c7a61b92d170",
+  "src/r10d_real_overlays.py": "8fce85539061767c2ca1f3013aef459e38c2fafcba0b5fd32c45510e8fe8b77a",
+  "src/r11/r11_run.py": "b9a2192b1a6065327e92c55962e27c6ddcacc4b2b57472930172a77e9c7ebab4",
+  "src/v42_integrated_pipeline.py": "597ff38acf1738ba63f0d8f730a517cc683413ead62706d0c33dec05aeec6750",
+  "tests/test_cash_quality_commitments_v42.py": "9c91bdafb5062782d52fd3ae01887e278954e734fd6f79e4c33b0ef2b10808e9",
+  "tests/test_inflection_lane_v42.py": "b933c2d4fec7a9c3c774b618ad48bf2d9fe64d8ea63f2236c010249c275183f6",
+  "tests/test_marketplace_classifier_v42.py": "d49adb5a9f330c87cbfb970ec8a334785a9100835db1b60da79829a9ea89e579",
+  "tests/test_sector_variants_v42.py": "24d2e6e67d73db8c3ac92754c4a7b3a3891f5b24b0ab527150ec2bc38ed45fda",
+  "tests/test_v42_integrated_pipeline.py": "ea4df032e37c72612827df14b9844306aa9062b48f7ceaf8711cffd68f1a4bb1",
+  "tests/test_v4_2_engine_integration.py": "453f1c3ff931c7907903ac967546db5776f71a308002b704df8a29377e7a67b2",
+  "tests/v4_1_frozen/test_v4.py": "4c095a89db80b8206760f8f7c4cc817abfa1b72a14743b58f51c9c0aa38101b1",
+  "verify_manifest.py": "b988c107f1355ce87fe1388fda64acdd2086ff00cb5271042483af56165f1547"
+ },
+ "frozen_at": "2026-11-11",
+ "integrated_run_sha256": "dac545494b9bdf2f6b0a2ad4feeea025079844ba573e500c1c6b336969beddce",
+ "integration_branch": "claude/v42-integrated-freeze-r11 (locale, non pubblicato: accesso push non disponibile)",
+ "note": "Il manifest storico docs/V4_2_ENGINE_MANIFEST.json descrive il solo freeze sintetico; questo manifest descrive l'integrazione su DATA33.",
+ "pipeline_version": "V4.2-INTEGRATED-1.0",
+ "python_tested": [
+  "3.12.3",
+  "3.13.18"
+ ],
+ "reproduce_command": "bash reproduce.sh",
+ "research_branch": "research/br04-data09-current-base",
+ "research_branch_head": "3f1b2e187bd8fb47a92efed6b7fa941730e792fd",
+ "schema": "investment_os_v4_2_integrated_freeze_manifest_v1",
+ "source_repository": "flaviomellace-ctrl/investment-os-data-bridge",
+ "status": {
+  "buy_add_allowed": false,
+  "historical_approvals_transferred": false,
+  "r11": "NOT_EXECUTED",
+  "r12": "NOT_ADMITTED",
+  "system_live": false
+ }
+}
