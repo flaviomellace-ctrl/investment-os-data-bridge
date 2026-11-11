@@ -1,0 +1,16 @@
+{
+  "schema": "br04_data12_engine_compatibility_v1",
+  "candidate_sha256": "6c444950cc89d955231a3fd8dc34cd6f34921734ab3e124ccc81aefd74d7bca9",
+  "engine_md5": "68f626974592915d6c2a8e6583d6c77b",
+  "rows_processed": 504,
+  "exceptions": 0,
+  "confidence_counts": {
+    "PROVISIONAL": 502,
+    "HIGH": 2
+  },
+  "ios_computable_rows": 310,
+  "prior_approvals_inherited": false,
+  "candidate_promoted": false,
+  "economic_clearance": false,
+  "buy_add_allowed": false
+}

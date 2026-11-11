@@ -1,0 +1,494 @@
+{
+  "schema": "historical_shares_source_v1",
+  "receipt_sha256": "668849c6473189cbdfde48b0818cd301a10a5d1272a2979e9241320e860ecc86",
+  "s1_sha256": "e108b517924ceced165d356874b5e0a4598ec9a103d452f034ff4431ab34f9e0",
+  "observations": [
+    {
+      "ticker": "IP",
+      "field": "fy_minus_1_diluted_shares",
+      "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+      "unit": "shares",
+      "fact": {
+        "start": "2024-01-01",
+        "end": "2024-12-31",
+        "val": 354200000,
+        "accn": "0000051434-25-000013",
+        "fy": 2024,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-02-21"
+      },
+      "companyfacts_sha256": "cf67a703e8b724e484e37109a20dac6c11705d2a7ec62c22f00ec42b5ab53107",
+      "companyfacts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000051434.json",
+      "corroborating_facts": [
+        {
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "val": 354200000,
+          "accn": "0000051434-25-000013",
+          "fy": 2024,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2025-02-21"
+        },
+        {
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "val": 354200000,
+          "accn": "0000051434-26-000055",
+          "fy": 2025,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2026-02-27",
+          "frame": "CY2024"
+        }
+      ],
+      "primary_sha256": "0368e6d41532c2d0cfbe6f8cc767eb8376caad9037037ae66e958783bf507c30",
+      "instance_sha256": "21f61d00e22508c3509ffbf4e1cfd279ebc74e0a973d422de0a9c7adedb3ce24",
+      "comparative_accession": "0000051434-26-000055",
+      "inline_id": "f-534",
+      "inline_scale": "6",
+      "table_text": "In millions, except per share amounts202520242023Earnings (loss) from continuing operations $(2,838)$725$313Weighted average common shares outstanding505.7347.2346.9Effect of dilutive securities (a)Restricted performance share plan\u20147.02.2Weighted average common shares outstanding \u2013 assuming dilution505.7354.2349.1Basic earnings (loss) per share from continuing operations$(5.61)$2.09$0.90Diluted earnings (loss) per share from continuing operations$(5.61)$2.05$0.89",
+      "table_sha256": "7b59d2f10e025263dfa2357556e68ffb8ce3ff5b3a9d353b48544c2c0981ce2b",
+      "status": "ORIGINAL_ACCESSION_COMPANYFACTS_AND_CURRENT_INLINE_VERIFIED"
+    },
+    {
+      "ticker": "IP",
+      "field": "fy_minus_2_diluted_shares",
+      "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+      "unit": "shares",
+      "fact": {
+        "start": "2023-01-01",
+        "end": "2023-12-31",
+        "val": 349100000,
+        "accn": "0000051434-24-000024",
+        "fy": 2023,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2024-02-16"
+      },
+      "companyfacts_sha256": "cf67a703e8b724e484e37109a20dac6c11705d2a7ec62c22f00ec42b5ab53107",
+      "companyfacts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000051434.json",
+      "corroborating_facts": [
+        {
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "val": 349100000,
+          "accn": "0000051434-24-000024",
+          "fy": 2023,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2024-02-16"
+        },
+        {
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "val": 349100000,
+          "accn": "0000051434-25-000013",
+          "fy": 2024,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2025-02-21"
+        },
+        {
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "val": 349100000,
+          "accn": "0000051434-26-000055",
+          "fy": 2025,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2026-02-27",
+          "frame": "CY2023"
+        }
+      ],
+      "primary_sha256": "0368e6d41532c2d0cfbe6f8cc767eb8376caad9037037ae66e958783bf507c30",
+      "instance_sha256": "21f61d00e22508c3509ffbf4e1cfd279ebc74e0a973d422de0a9c7adedb3ce24",
+      "comparative_accession": "0000051434-26-000055",
+      "inline_id": "f-535",
+      "inline_scale": "6",
+      "table_text": "In millions, except per share amounts202520242023Earnings (loss) from continuing operations $(2,838)$725$313Weighted average common shares outstanding505.7347.2346.9Effect of dilutive securities (a)Restricted performance share plan\u20147.02.2Weighted average common shares outstanding \u2013 assuming dilution505.7354.2349.1Basic earnings (loss) per share from continuing operations$(5.61)$2.09$0.90Diluted earnings (loss) per share from continuing operations$(5.61)$2.05$0.89",
+      "table_sha256": "7b59d2f10e025263dfa2357556e68ffb8ce3ff5b3a9d353b48544c2c0981ce2b",
+      "status": "ORIGINAL_ACCESSION_COMPANYFACTS_AND_CURRENT_INLINE_VERIFIED"
+    },
+    {
+      "ticker": "IP",
+      "field": "fy_minus_3_diluted_shares",
+      "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+      "unit": "shares",
+      "fact": {
+        "start": "2022-01-01",
+        "end": "2022-12-31",
+        "val": 367000000,
+        "accn": "0000051434-23-000013",
+        "fy": 2022,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2023-02-17"
+      },
+      "companyfacts_sha256": "cf67a703e8b724e484e37109a20dac6c11705d2a7ec62c22f00ec42b5ab53107",
+      "companyfacts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000051434.json",
+      "corroborating_facts": [
+        {
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "val": 367000000,
+          "accn": "0000051434-23-000013",
+          "fy": 2022,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2023-02-17"
+        },
+        {
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "val": 367000000,
+          "accn": "0000051434-24-000024",
+          "fy": 2023,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2024-02-16"
+        },
+        {
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "val": 367000000,
+          "accn": "0000051434-25-000013",
+          "fy": 2024,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2025-02-21",
+          "frame": "CY2022"
+        }
+      ],
+      "status": "ORIGINAL_ACCESSION_COMPANYFACTS_AND_LATER_FILINGS_AGREE"
+    },
+    {
+      "ticker": "MET",
+      "field": "fy_minus_1_diluted_shares",
+      "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+      "unit": "shares",
+      "fact": {
+        "start": "2024-01-01",
+        "end": "2024-12-31",
+        "val": 711100000,
+        "accn": "0001099219-25-000044",
+        "fy": 2024,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-02-21"
+      },
+      "companyfacts_sha256": "3d3ca7d2045976f17ab65b760b6f07fddce93dd0da15c32588fc736fac7b1cc8",
+      "companyfacts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001099219.json",
+      "corroborating_facts": [
+        {
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "val": 711100000,
+          "accn": "0001099219-25-000044",
+          "fy": 2024,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2025-02-21"
+        },
+        {
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "val": 711100000,
+          "accn": "0001099219-26-000013",
+          "fy": 2025,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2026-02-19",
+          "frame": "CY2024"
+        }
+      ],
+      "primary_sha256": "f289e04ec404625df12e74a4501af641a8a2e405a34409ed841392a49d6d5138",
+      "instance_sha256": "c8b1f2c98270ef998a030ecfc158ae8d4d097dfbed71c658c31c98579ba27a9a",
+      "comparative_accession": "0001099219-26-000013",
+      "inline_id": "f-9101",
+      "inline_scale": "6",
+      "table_text": "Years Ended December 31,202520242023(In millions, except per share data)Weighted Average Shares:Weighted average common stock outstanding - basic668.9 706.4 757.7 Incremental common shares from assumed exercise or issuance of stock-based awards4.4 4.7 4.6 Weighted average common stock outstanding - diluted673.3 711.1 762.3 Net Income (Loss):Net income (loss)$3,403 $4,444 $1,602 Less: Net income (loss) attributable to noncontrolling interests24 18 24 Less: Preferred stock dividends194 200 198 Preferred stock redemption premium12 \u2014 \u2014 Net income (loss) available to MetLife, Inc.\u2019s common shareholders$3,173 $4,226 $1,380 Basic$4.74 $5.98 $1.82 Diluted$4.71 $5.94 $1.81",
+      "table_sha256": "db272d5cd05a3340d9b442b8403de24d57a4af263561eba34e188fcccffbb116",
+      "status": "ORIGINAL_ACCESSION_COMPANYFACTS_AND_CURRENT_INLINE_VERIFIED"
+    },
+    {
+      "ticker": "MET",
+      "field": "fy_minus_2_diluted_shares",
+      "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+      "unit": "shares",
+      "fact": {
+        "start": "2023-01-01",
+        "end": "2023-12-31",
+        "val": 762300000,
+        "accn": "0001099219-24-000035",
+        "fy": 2023,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2024-02-16"
+      },
+      "companyfacts_sha256": "3d3ca7d2045976f17ab65b760b6f07fddce93dd0da15c32588fc736fac7b1cc8",
+      "companyfacts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001099219.json",
+      "corroborating_facts": [
+        {
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "val": 762300000,
+          "accn": "0001099219-24-000035",
+          "fy": 2023,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2024-02-16"
+        },
+        {
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "val": 762300000,
+          "accn": "0001099219-25-000044",
+          "fy": 2024,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2025-02-21"
+        },
+        {
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "val": 762300000,
+          "accn": "0001099219-26-000013",
+          "fy": 2025,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2026-02-19",
+          "frame": "CY2023"
+        }
+      ],
+      "primary_sha256": "f289e04ec404625df12e74a4501af641a8a2e405a34409ed841392a49d6d5138",
+      "instance_sha256": "c8b1f2c98270ef998a030ecfc158ae8d4d097dfbed71c658c31c98579ba27a9a",
+      "comparative_accession": "0001099219-26-000013",
+      "inline_id": "f-9102",
+      "inline_scale": "6",
+      "table_text": "Years Ended December 31,202520242023(In millions, except per share data)Weighted Average Shares:Weighted average common stock outstanding - basic668.9 706.4 757.7 Incremental common shares from assumed exercise or issuance of stock-based awards4.4 4.7 4.6 Weighted average common stock outstanding - diluted673.3 711.1 762.3 Net Income (Loss):Net income (loss)$3,403 $4,444 $1,602 Less: Net income (loss) attributable to noncontrolling interests24 18 24 Less: Preferred stock dividends194 200 198 Preferred stock redemption premium12 \u2014 \u2014 Net income (loss) available to MetLife, Inc.\u2019s common shareholders$3,173 $4,226 $1,380 Basic$4.74 $5.98 $1.82 Diluted$4.71 $5.94 $1.81",
+      "table_sha256": "db272d5cd05a3340d9b442b8403de24d57a4af263561eba34e188fcccffbb116",
+      "status": "ORIGINAL_ACCESSION_COMPANYFACTS_AND_CURRENT_INLINE_VERIFIED"
+    },
+    {
+      "ticker": "MET",
+      "field": "fy_minus_3_diluted_shares",
+      "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+      "unit": "shares",
+      "fact": {
+        "start": "2022-01-01",
+        "end": "2022-12-31",
+        "val": 808900000,
+        "accn": "0001099219-23-000045",
+        "fy": 2022,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2023-02-23"
+      },
+      "companyfacts_sha256": "3d3ca7d2045976f17ab65b760b6f07fddce93dd0da15c32588fc736fac7b1cc8",
+      "companyfacts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001099219.json",
+      "corroborating_facts": [
+        {
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "val": 808900000,
+          "accn": "0001099219-23-000045",
+          "fy": 2022,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2023-02-23"
+        },
+        {
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "val": 808900000,
+          "accn": "0001099219-24-000035",
+          "fy": 2023,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2024-02-16"
+        },
+        {
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "val": 808900000,
+          "accn": "0001099219-25-000044",
+          "fy": 2024,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2025-02-21",
+          "frame": "CY2022"
+        }
+      ],
+      "status": "ORIGINAL_ACCESSION_COMPANYFACTS_AND_LATER_FILINGS_AGREE"
+    },
+    {
+      "ticker": "CVX",
+      "field": "fy_minus_1_diluted_shares",
+      "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+      "unit": "shares",
+      "fact": {
+        "start": "2024-01-01",
+        "end": "2024-12-31",
+        "val": 1817000000,
+        "accn": "0000093410-25-000009",
+        "fy": 2024,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-02-21"
+      },
+      "companyfacts_sha256": "c09b160603412cb45acf1bb9bf3732e531dedfb548afa0e275fd8aefd7ab397e",
+      "companyfacts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000093410.json",
+      "corroborating_facts": [
+        {
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "val": 1817000000,
+          "accn": "0000093410-25-000009",
+          "fy": 2024,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2025-02-21"
+        },
+        {
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "val": 1817000000,
+          "accn": "0000093410-26-000078",
+          "fy": 2025,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2026-02-24",
+          "frame": "CY2024"
+        }
+      ],
+      "primary_sha256": "4731f02b5688823678b8978c66513f0f36341afaf25e49cd133db05fc7676ad8",
+      "instance_sha256": "383742ba0900c6bad8fbea17085f2854a2264ca1d3673de71654c94b76ddbe98",
+      "comparative_accession": "0000093410-26-000078",
+      "inline_id": "f-1149",
+      "inline_scale": "6",
+      "table_text": "Year ended December 31202520242023Basic EPS CalculationEarnings available to common stockholders - Basic*$12,299 $17,661 $21,369 Weighted-average number of common shares outstanding1,849 1,810 1,873 Add: Deferred awards held as stock units\u2014 \u2014 \u2014 Total weighted-average number of common shares outstanding1,849 1,810 1,873 Earnings per share of common stock - Basic$6.65 $9.76 $11.41 Diluted EPS CalculationEarnings available to common stockholders - Diluted*$12,299 $17,661 $21,369 Weighted-average number of common shares outstanding1,849 1,810 1,873 Add: Deferred awards held as stock units\u2014 \u2014 \u2014 Add: Dilutive effect of employee stock-based awards7 7 7 Total weighted-average number of common shares outstanding1,856 1,817 1,880 Earnings per share of common stock - Diluted$6.63 $9.72 $11.36 * There was no effect of dividend equivalents paid on stock units or dilutive impact of employee stock-based awards on earnings.",
+      "table_sha256": "ca78146ac6b0fe823ecaf9c26ffa1c68efd628c3ecd5e328f72e3963f87544e6",
+      "status": "ORIGINAL_ACCESSION_COMPANYFACTS_AND_CURRENT_INLINE_VERIFIED"
+    },
+    {
+      "ticker": "CVX",
+      "field": "fy_minus_2_diluted_shares",
+      "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+      "unit": "shares",
+      "fact": {
+        "start": "2023-01-01",
+        "end": "2023-12-31",
+        "val": 1880000000,
+        "accn": "0000093410-24-000013",
+        "fy": 2023,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2024-02-26"
+      },
+      "companyfacts_sha256": "c09b160603412cb45acf1bb9bf3732e531dedfb548afa0e275fd8aefd7ab397e",
+      "companyfacts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000093410.json",
+      "corroborating_facts": [
+        {
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "val": 1880000000,
+          "accn": "0000093410-24-000013",
+          "fy": 2023,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2024-02-26"
+        },
+        {
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "val": 1880000000,
+          "accn": "0000093410-25-000009",
+          "fy": 2024,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2025-02-21"
+        },
+        {
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "val": 1880000000,
+          "accn": "0000093410-26-000078",
+          "fy": 2025,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2026-02-24",
+          "frame": "CY2023"
+        }
+      ],
+      "primary_sha256": "4731f02b5688823678b8978c66513f0f36341afaf25e49cd133db05fc7676ad8",
+      "instance_sha256": "383742ba0900c6bad8fbea17085f2854a2264ca1d3673de71654c94b76ddbe98",
+      "comparative_accession": "0000093410-26-000078",
+      "inline_id": "f-1150",
+      "inline_scale": "6",
+      "table_text": "Year ended December 31202520242023Basic EPS CalculationEarnings available to common stockholders - Basic*$12,299 $17,661 $21,369 Weighted-average number of common shares outstanding1,849 1,810 1,873 Add: Deferred awards held as stock units\u2014 \u2014 \u2014 Total weighted-average number of common shares outstanding1,849 1,810 1,873 Earnings per share of common stock - Basic$6.65 $9.76 $11.41 Diluted EPS CalculationEarnings available to common stockholders - Diluted*$12,299 $17,661 $21,369 Weighted-average number of common shares outstanding1,849 1,810 1,873 Add: Deferred awards held as stock units\u2014 \u2014 \u2014 Add: Dilutive effect of employee stock-based awards7 7 7 Total weighted-average number of common shares outstanding1,856 1,817 1,880 Earnings per share of common stock - Diluted$6.63 $9.72 $11.36 * There was no effect of dividend equivalents paid on stock units or dilutive impact of employee stock-based awards on earnings.",
+      "table_sha256": "ca78146ac6b0fe823ecaf9c26ffa1c68efd628c3ecd5e328f72e3963f87544e6",
+      "status": "ORIGINAL_ACCESSION_COMPANYFACTS_AND_CURRENT_INLINE_VERIFIED"
+    },
+    {
+      "ticker": "CVX",
+      "field": "fy_minus_3_diluted_shares",
+      "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+      "unit": "shares",
+      "fact": {
+        "start": "2022-01-01",
+        "end": "2022-12-31",
+        "val": 1940000000,
+        "accn": "0000093410-23-000009",
+        "fy": 2022,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2023-02-23"
+      },
+      "companyfacts_sha256": "c09b160603412cb45acf1bb9bf3732e531dedfb548afa0e275fd8aefd7ab397e",
+      "companyfacts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000093410.json",
+      "corroborating_facts": [
+        {
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "val": 1940000000,
+          "accn": "0000093410-23-000009",
+          "fy": 2022,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2023-02-23"
+        },
+        {
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "val": 1940000000,
+          "accn": "0000093410-24-000013",
+          "fy": 2023,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2024-02-26"
+        },
+        {
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "val": 1940000000,
+          "accn": "0000093410-25-000009",
+          "fy": 2024,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2025-02-21",
+          "frame": "CY2022"
+        }
+      ],
+      "status": "ORIGINAL_ACCESSION_COMPANYFACTS_AND_LATER_FILINGS_AGREE"
+    }
+  ],
+  "fresh_sec_fetch": false,
+  "limitations": [
+    "FY2022 verified through archived SEC Companyfacts at original and later accessions; original FY2022 inline document not in this archive",
+    "Share counts are not organic-growth measures; IP row-basis review remains open"
+  ],
+  "economic_clearance": false,
+  "buy_add_allowed": false
+}

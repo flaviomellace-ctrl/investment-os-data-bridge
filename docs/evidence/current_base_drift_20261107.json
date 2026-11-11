@@ -1,0 +1,44 @@
+{
+  "old_sha256": "91b0f052957e6a0a34768cfb48838bafe9d2f7f589c3ad439f95c7178e6125e2",
+  "new_sha256": "ef47d7bd3300efb0797de784d598d6caa3999869a36771ade4477ab3aa58d3ae",
+  "old_rows": 504,
+  "new_rows": 504,
+  "removed": [],
+  "added": [],
+  "changed_fields": {
+    "market_price": 501,
+    "market_cap": 501,
+    "market_data_retrieved_at_utc": 502,
+    "market_data_source": 1,
+    "market_data_source_symbol": 1,
+    "market_data_as_of_status": 1,
+    "market_data_status": 1
+  },
+  "examples": [
+    [
+      "KVUE",
+      "market_data_source",
+      "NASDAQ_PUBLIC_SCREENER",
+      ""
+    ],
+    [
+      "KVUE",
+      "market_data_source_symbol",
+      "KVUE",
+      ""
+    ],
+    [
+      "KVUE",
+      "market_data_as_of_status",
+      "RETRIEVAL_TIME_ONLY",
+      ""
+    ],
+    [
+      "KVUE",
+      "market_data_status",
+      "PRESENT",
+      "MISSING"
+    ]
+  ],
+  "release_allowed": false
+}

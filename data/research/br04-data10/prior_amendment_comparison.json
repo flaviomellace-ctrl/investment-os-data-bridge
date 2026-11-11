@@ -1,0 +1,312 @@
+[
+  {
+    "ticker": "MCD",
+    "field": "annual_diluted_shares",
+    "current": "716.4",
+    "prior_documented": "716400000.0",
+    "rule": "MCD_CAPTION_UNIT_NORMALIZATION",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "MCD",
+    "field": "prior_diluted_shares",
+    "current": "721.9",
+    "prior_documented": "721900000.0",
+    "rule": "MCD_CAPTION_UNIT_NORMALIZATION",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "MCD",
+    "field": "fy_minus_1_diluted_shares",
+    "current": "721.9",
+    "prior_documented": "721900000.0",
+    "rule": "MCD_CAPTION_UNIT_NORMALIZATION",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "MCD",
+    "field": "fy_minus_2_diluted_shares",
+    "current": "732.3",
+    "prior_documented": "732300000.0",
+    "rule": "MCD_CAPTION_UNIT_NORMALIZATION",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "MCD",
+    "field": "diluted_shares_yoy",
+    "current": "-0.0076187837650644",
+    "prior_documented": "-0.007618783765064419",
+    "rule": "RECOMPUTE_FROM_FINAL_INPUTS",
+    "same_annual_filing": true,
+    "classification": "NUMERICALLY_EQUIVALENT_FORMATTING",
+    "applied": false
+  },
+  {
+    "ticker": "MCD",
+    "field": "share_change",
+    "current": "-0.0076187837650644",
+    "prior_documented": "-0.007618783765064419",
+    "rule": "MIRROR_FINAL_YOY",
+    "same_annual_filing": true,
+    "classification": "NUMERICALLY_EQUIVALENT_FORMATTING",
+    "applied": false
+  },
+  {
+    "ticker": "MCD",
+    "field": "fcf_per_share_cagr3",
+    "current": "109.6582252978612",
+    "prior_documented": "0.10658225297861201",
+    "rule": "RECOMPUTE_FROM_FINAL_INPUTS",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "CEG",
+    "field": "annual_revenue",
+    "current": "",
+    "prior_documented": "25533000000.0",
+    "rule": "TOTAL_REVENUE_POLICY",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "CEG",
+    "field": "annual_revenue_tag",
+    "current": "",
+    "prior_documented": "Revenues",
+    "rule": "TOTAL_REVENUE_CONCEPT",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "CEG",
+    "field": "operating_margin",
+    "current": "",
+    "prior_documented": "0.12086319664747582",
+    "rule": "RECOMPUTE_REVENUE_DEPENDENCY",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "CEG",
+    "field": "net_margin",
+    "current": "",
+    "prior_documented": "0.0908236399953002",
+    "rule": "RECOMPUTE_REVENUE_DEPENDENCY",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "CEG",
+    "field": "fcf_margin",
+    "current": "",
+    "prior_documented": "0.050444522774448754",
+    "rule": "RECOMPUTE_REVENUE_DEPENDENCY",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "CEG",
+    "field": "sbc_to_revenue",
+    "current": "",
+    "prior_documented": "0.015078525829318921",
+    "rule": "RECOMPUTE_REVENUE_DEPENDENCY",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "CEG",
+    "field": "revenue_yoy",
+    "current": "",
+    "prior_documented": "0.08337576374745415",
+    "rule": "RECOMPUTE_REVENUE_DEPENDENCY",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "CEG",
+    "field": "revenue_cagr3",
+    "current": "",
+    "prior_documented": "0.01469039149633189",
+    "rule": "RECOMPUTE_REVENUE_DEPENDENCY",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "CEG",
+    "field": "annual_operating_margin_history",
+    "current": "",
+    "prior_documented": "0.12086319664747582",
+    "rule": "RECOMPUTE_REVENUE_DEPENDENCY",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "CEG",
+    "field": "fy_minus_2_operating_margin_history",
+    "current": "0.0646119271209567",
+    "prior_documented": "0.06461192712095674",
+    "rule": "RECOMPUTE_REVENUE_DEPENDENCY",
+    "same_annual_filing": true,
+    "classification": "NUMERICALLY_EQUIVALENT_FORMATTING",
+    "applied": false
+  },
+  {
+    "ticker": "CEG",
+    "field": "fy_minus_3_operating_margin_history",
+    "current": "0.020253682487725",
+    "prior_documented": "0.02025368248772504",
+    "rule": "RECOMPUTE_REVENUE_DEPENDENCY",
+    "same_annual_filing": true,
+    "classification": "NUMERICALLY_EQUIVALENT_FORMATTING",
+    "applied": false
+  },
+  {
+    "ticker": "CEG",
+    "field": "operating_margin_std_4y",
+    "current": "0.0694478353428707",
+    "prior_documented": "0.06162546461026414",
+    "rule": "RECOMPUTE_REVENUE_DEPENDENCY_POPULATION_STD_AVAILABLE_YEARS",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "CEG",
+    "field": "operating_margin_range_4y",
+    "current": "0.1644034797661785",
+    "prior_documented": "0.16440347976617856",
+    "rule": "RECOMPUTE_REVENUE_DEPENDENCY",
+    "same_annual_filing": true,
+    "classification": "NUMERICALLY_EQUIVALENT_FORMATTING",
+    "applied": false
+  },
+  {
+    "ticker": "WELL",
+    "field": "annual_revenue",
+    "current": "8452996000.0",
+    "prior_documented": "10838034000.0",
+    "rule": "TOTAL_REVENUE_POLICY",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "WELL",
+    "field": "annual_revenue_tag",
+    "current": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "prior_documented": "Revenues",
+    "rule": "TOTAL_REVENUE_CONCEPT",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "WELL",
+    "field": "prior_revenue",
+    "current": "6027149000.0",
+    "prior_documented": "7991118000.0",
+    "rule": "TOTAL_REVENUE_POLICY",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "WELL",
+    "field": "fy_minus_1_revenue",
+    "current": "6027149000.0",
+    "prior_documented": "7991118000.0",
+    "rule": "TOTAL_REVENUE_POLICY",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "WELL",
+    "field": "fy_minus_1_revenue_tag",
+    "current": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "prior_documented": "Revenues",
+    "rule": "TOTAL_REVENUE_CONCEPT",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "WELL",
+    "field": "fy_minus_2_revenue",
+    "current": "4753804000.0",
+    "prior_documented": "6637995000.0",
+    "rule": "TOTAL_REVENUE_POLICY",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "WELL",
+    "field": "fy_minus_2_revenue_tag",
+    "current": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "prior_documented": "Revenues",
+    "rule": "TOTAL_REVENUE_CONCEPT",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "WELL",
+    "field": "net_margin",
+    "current": "0.1137865201876352",
+    "prior_documented": "0.08874644608053453",
+    "rule": "RECOMPUTE_REVENUE_DEPENDENCY",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "WELL",
+    "field": "sbc_to_revenue",
+    "current": "0.184163342795856",
+    "prior_documented": "0.14363601369030582",
+    "rule": "RECOMPUTE_REVENUE_DEPENDENCY",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "WELL",
+    "field": "revenue_yoy",
+    "current": "0.4024866483307447",
+    "prior_documented": "0.3562600377068641",
+    "rule": "RECOMPUTE_REVENUE_DEPENDENCY",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "WELL",
+    "field": "revenue_cagr3",
+    "current": "0.1298544238246859",
+    "prior_documented": "0.2274461242850525",
+    "rule": "RECOMPUTE_REVENUE_DEPENDENCY",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  }
+]

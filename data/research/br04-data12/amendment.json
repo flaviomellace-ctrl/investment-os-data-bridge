@@ -1,0 +1,298 @@
+{
+  "schema": "br04_data12_revenue_amendment_v1",
+  "input_sha256": "c856d8af683e1b4ca8d21ba3c8258b7a19714301964209f9176893728a33b486",
+  "candidate_sha256": "6c444950cc89d955231a3fd8dc34cd6f34921734ab3e124ccc81aefd74d7bca9",
+  "proof_sha256": "0a143694130f1a2a9d6592a42350023ecf205b9e4d3aafe19d9ab61771b1b676",
+  "policy": "CONSOLIDATED_TOTAL_REVENUE_CEG_WELL_ONLY",
+  "changes": [
+    {
+      "ticker": "WELL",
+      "field": "annual_revenue",
+      "before": "8452996000.0",
+      "after": "10838034000.0"
+    },
+    {
+      "ticker": "WELL",
+      "field": "annual_revenue_tag",
+      "before": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "after": "Revenues"
+    },
+    {
+      "ticker": "WELL",
+      "field": "prior_revenue",
+      "before": "6027149000.0",
+      "after": "7991118000.0"
+    },
+    {
+      "ticker": "WELL",
+      "field": "revenue_yoy",
+      "before": "0.4024866483307447",
+      "after": "0.3562600377068641"
+    },
+    {
+      "ticker": "WELL",
+      "field": "net_margin",
+      "before": "0.1137865201876352",
+      "after": "0.08874644608053453"
+    },
+    {
+      "ticker": "WELL",
+      "field": "fy_minus_1_revenue",
+      "before": "6027149000.0",
+      "after": "7991118000.0"
+    },
+    {
+      "ticker": "WELL",
+      "field": "fy_minus_1_revenue_tag",
+      "before": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "after": "Revenues"
+    },
+    {
+      "ticker": "WELL",
+      "field": "fy_minus_2_revenue",
+      "before": "4753804000.0",
+      "after": "6637995000.0"
+    },
+    {
+      "ticker": "WELL",
+      "field": "fy_minus_2_revenue_tag",
+      "before": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "after": "Revenues"
+    },
+    {
+      "ticker": "WELL",
+      "field": "sbc_to_revenue",
+      "before": "0.184163342795856",
+      "after": "0.14363601369030582"
+    },
+    {
+      "ticker": "WELL",
+      "field": "revenue_cagr3",
+      "before": "0.1298544238246859",
+      "after": "0.2274461242850525"
+    },
+    {
+      "ticker": "CEG",
+      "field": "annual_revenue",
+      "before": "",
+      "after": "25533000000.0"
+    },
+    {
+      "ticker": "CEG",
+      "field": "annual_revenue_tag",
+      "before": "",
+      "after": "Revenues"
+    },
+    {
+      "ticker": "CEG",
+      "field": "annual_revenue_date",
+      "before": "",
+      "after": "20251231.0"
+    },
+    {
+      "ticker": "CEG",
+      "field": "revenue_yoy",
+      "before": "",
+      "after": "0.08337576374745415"
+    },
+    {
+      "ticker": "CEG",
+      "field": "operating_margin",
+      "before": "",
+      "after": "0.12086319664747582"
+    },
+    {
+      "ticker": "CEG",
+      "field": "net_margin",
+      "before": "",
+      "after": "0.0908236399953002"
+    },
+    {
+      "ticker": "CEG",
+      "field": "fcf_margin",
+      "before": "",
+      "after": "0.050444522774448754"
+    },
+    {
+      "ticker": "CEG",
+      "field": "core_metric_coverage_pct",
+      "before": "83.3",
+      "after": "100.0"
+    },
+    {
+      "ticker": "CEG",
+      "field": "extended_metric_coverage_pct",
+      "before": "87.5",
+      "after": "100.0"
+    },
+    {
+      "ticker": "CEG",
+      "field": "data_quality_flags",
+      "before": "MISSING_REVENUE",
+      "after": "OK"
+    },
+    {
+      "ticker": "CEG",
+      "field": "data_status",
+      "before": "PARTIAL",
+      "after": "PRESENT"
+    },
+    {
+      "ticker": "CEG",
+      "field": "revenue_cagr3",
+      "before": "",
+      "after": "0.01469039149633189"
+    },
+    {
+      "ticker": "CEG",
+      "field": "annual_operating_margin_history",
+      "before": "",
+      "after": "0.12086319664747582"
+    },
+    {
+      "ticker": "CEG",
+      "field": "operating_margin_std_4y",
+      "before": "0.0694478353428707",
+      "after": "0.06162546461026414"
+    }
+  ],
+  "changed_cells": 25,
+  "unchanged_other_rows": 502,
+  "br04_fields_preserved": true,
+  "field_provenance": [
+    {
+      "ticker": "CEG",
+      "field": "annual_revenue",
+      "source_accession": "0001868275-26-000032",
+      "source_file": "raw/CIK0001868275_companyfacts.json",
+      "source_sha256": "a8687375ee9f368b8d024f1541f8aafbb4f082c1f0b27dfea8abf79fa7e16a08",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "concept": "Revenues",
+      "policy": "CONSOLIDATED_TOTAL_REVENUE",
+      "basis": "LATEST_COMPARATIVE_AVAILABLE_BY_ANNUAL_FILING_CUTOFF",
+      "row_level_historical_accession_preserved": true
+    },
+    {
+      "ticker": "CEG",
+      "field": "prior_revenue",
+      "source_accession": "0001868275-26-000032",
+      "source_file": "raw/CIK0001868275_companyfacts.json",
+      "source_sha256": "a8687375ee9f368b8d024f1541f8aafbb4f082c1f0b27dfea8abf79fa7e16a08",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "concept": "Revenues",
+      "policy": "CONSOLIDATED_TOTAL_REVENUE",
+      "basis": "LATEST_COMPARATIVE_AVAILABLE_BY_ANNUAL_FILING_CUTOFF",
+      "row_level_historical_accession_preserved": true
+    },
+    {
+      "ticker": "CEG",
+      "field": "fy_minus_1_revenue",
+      "source_accession": "0001868275-26-000032",
+      "source_file": "raw/CIK0001868275_companyfacts.json",
+      "source_sha256": "a8687375ee9f368b8d024f1541f8aafbb4f082c1f0b27dfea8abf79fa7e16a08",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "concept": "Revenues",
+      "policy": "CONSOLIDATED_TOTAL_REVENUE",
+      "basis": "LATEST_COMPARATIVE_AVAILABLE_BY_ANNUAL_FILING_CUTOFF",
+      "row_level_historical_accession_preserved": true
+    },
+    {
+      "ticker": "CEG",
+      "field": "fy_minus_2_revenue",
+      "source_accession": "0001868275-26-000032",
+      "source_file": "raw/CIK0001868275_companyfacts.json",
+      "source_sha256": "a8687375ee9f368b8d024f1541f8aafbb4f082c1f0b27dfea8abf79fa7e16a08",
+      "period_start": "2023-01-01",
+      "period_end": "2023-12-31",
+      "concept": "Revenues",
+      "policy": "CONSOLIDATED_TOTAL_REVENUE",
+      "basis": "LATEST_COMPARATIVE_AVAILABLE_BY_ANNUAL_FILING_CUTOFF",
+      "row_level_historical_accession_preserved": true
+    },
+    {
+      "ticker": "CEG",
+      "field": "fy_minus_3_revenue",
+      "source_accession": "0001868275-25-000023",
+      "source_file": "raw/CIK0001868275_companyfacts.json",
+      "source_sha256": "a8687375ee9f368b8d024f1541f8aafbb4f082c1f0b27dfea8abf79fa7e16a08",
+      "period_start": "2022-01-01",
+      "period_end": "2022-12-31",
+      "concept": "Revenues",
+      "policy": "CONSOLIDATED_TOTAL_REVENUE",
+      "basis": "LATEST_COMPARATIVE_AVAILABLE_BY_ANNUAL_FILING_CUTOFF",
+      "row_level_historical_accession_preserved": true
+    },
+    {
+      "ticker": "WELL",
+      "field": "annual_revenue",
+      "source_accession": "0000766704-26-000010",
+      "source_file": "raw/CIK0000766704_companyfacts.json",
+      "source_sha256": "cad053413d5a741d34e5fcc74da09bb64b8f35e75c397b45c9244852924b428f",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "concept": "Revenues",
+      "policy": "CONSOLIDATED_TOTAL_REVENUE",
+      "basis": "LATEST_COMPARATIVE_AVAILABLE_BY_ANNUAL_FILING_CUTOFF",
+      "row_level_historical_accession_preserved": true
+    },
+    {
+      "ticker": "WELL",
+      "field": "prior_revenue",
+      "source_accession": "0000766704-26-000010",
+      "source_file": "raw/CIK0000766704_companyfacts.json",
+      "source_sha256": "cad053413d5a741d34e5fcc74da09bb64b8f35e75c397b45c9244852924b428f",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "concept": "Revenues",
+      "policy": "CONSOLIDATED_TOTAL_REVENUE",
+      "basis": "LATEST_COMPARATIVE_AVAILABLE_BY_ANNUAL_FILING_CUTOFF",
+      "row_level_historical_accession_preserved": true
+    },
+    {
+      "ticker": "WELL",
+      "field": "fy_minus_1_revenue",
+      "source_accession": "0000766704-26-000010",
+      "source_file": "raw/CIK0000766704_companyfacts.json",
+      "source_sha256": "cad053413d5a741d34e5fcc74da09bb64b8f35e75c397b45c9244852924b428f",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "concept": "Revenues",
+      "policy": "CONSOLIDATED_TOTAL_REVENUE",
+      "basis": "LATEST_COMPARATIVE_AVAILABLE_BY_ANNUAL_FILING_CUTOFF",
+      "row_level_historical_accession_preserved": true
+    },
+    {
+      "ticker": "WELL",
+      "field": "fy_minus_2_revenue",
+      "source_accession": "0000766704-26-000010",
+      "source_file": "raw/CIK0000766704_companyfacts.json",
+      "source_sha256": "cad053413d5a741d34e5fcc74da09bb64b8f35e75c397b45c9244852924b428f",
+      "period_start": "2023-01-01",
+      "period_end": "2023-12-31",
+      "concept": "Revenues",
+      "policy": "CONSOLIDATED_TOTAL_REVENUE",
+      "basis": "LATEST_COMPARATIVE_AVAILABLE_BY_ANNUAL_FILING_CUTOFF",
+      "row_level_historical_accession_preserved": true
+    },
+    {
+      "ticker": "WELL",
+      "field": "fy_minus_3_revenue",
+      "source_accession": "0000766704-25-000009",
+      "source_file": "raw/CIK0000766704_companyfacts.json",
+      "source_sha256": "cad053413d5a741d34e5fcc74da09bb64b8f35e75c397b45c9244852924b428f",
+      "period_start": "2022-01-01",
+      "period_end": "2022-12-31",
+      "concept": "Revenues",
+      "policy": "CONSOLIDATED_TOTAL_REVENUE",
+      "basis": "LATEST_COMPARATIVE_AVAILABLE_BY_ANNUAL_FILING_CUTOFF",
+      "row_level_historical_accession_preserved": true
+    }
+  ],
+  "prior_approvals_inherited": false,
+  "candidate_promoted": false,
+  "economic_clearance": false,
+  "buy_add_allowed": false
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "ticker": "MCD",
+    "field": "diluted_shares_yoy",
+    "current": "-0.0076187837650644",
+    "prior_documented": "-0.007618783765064419",
+    "rule": "RECOMPUTE_FROM_FINAL_INPUTS",
+    "same_annual_filing": true,
+    "classification": "NUMERICALLY_EQUIVALENT_FORMATTING",
+    "applied": false
+  },
+  {
+    "ticker": "MCD",
+    "field": "share_change",
+    "current": "-0.0076187837650644",
+    "prior_documented": "-0.007618783765064419",
+    "rule": "MIRROR_FINAL_YOY",
+    "same_annual_filing": true,
+    "classification": "NUMERICALLY_EQUIVALENT_FORMATTING",
+    "applied": false
+  },
+  {
+    "ticker": "CEG",
+    "field": "sbc_to_revenue",
+    "current": "",
+    "prior_documented": "0.015078525829318921",
+    "rule": "RECOMPUTE_REVENUE_DEPENDENCY",
+    "same_annual_filing": true,
+    "classification": "SUBSTANTIVE_REVIEW_REQUIRED",
+    "applied": false
+  },
+  {
+    "ticker": "CEG",
+    "field": "fy_minus_2_operating_margin_history",
+    "current": "0.0646119271209567",
+    "prior_documented": "0.06461192712095674",
+    "rule": "RECOMPUTE_REVENUE_DEPENDENCY",
+    "same_annual_filing": true,
+    "classification": "NUMERICALLY_EQUIVALENT_FORMATTING",
+    "applied": false
+  },
+  {
+    "ticker": "CEG",
+    "field": "fy_minus_3_operating_margin_history",
+    "current": "0.020253682487725",
+    "prior_documented": "0.02025368248772504",
+    "rule": "RECOMPUTE_REVENUE_DEPENDENCY",
+    "same_annual_filing": true,
+    "classification": "NUMERICALLY_EQUIVALENT_FORMATTING",
+    "applied": false
+  },
+  {
+    "ticker": "CEG",
+    "field": "operating_margin_range_4y",
+    "current": "0.1644034797661785",
+    "prior_documented": "0.16440347976617856",
+    "rule": "RECOMPUTE_REVENUE_DEPENDENCY",
+    "same_annual_filing": true,
+    "classification": "NUMERICALLY_EQUIVALENT_FORMATTING",
+    "applied": false
+  }
+]

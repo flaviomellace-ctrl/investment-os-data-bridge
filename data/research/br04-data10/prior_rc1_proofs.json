@@ -1,0 +1,419 @@
+[
+  {
+    "caption_required": "In millions, except per share data",
+    "table_text": "In millions, except per share dataYears ended December 31, 202520242023REVENUESRevenues from franchised restaurants$16,548 $15,715 $15,437 Sales by Company-owned and operated restaurants9,690 9,782 9,742 Other revenues647 423 316 Total revenues26,885 25,920 25,494 OPERATING COSTS AND EXPENSESFranchised restaurants-occupancy expenses2,618 2,536 2,475 Company-owned and operated restaurant expensesFood & paper3,006 2,995 3,039 Payroll & employee benefits2,905 2,959 2,886 Occupancy & other operating expenses2,358 2,381 2,299 Other restaurant expenses564 339 232 Selling, general & administrative expensesDepreciation and amortization457 447 382 Other2,583 2,412 2,435 Other operating (income) expense, net2 139 99 Total operating costs and expenses14,492 14,208 13,847 Operating income12,393 11,712 11,647 Interest expense-net of capitalized interest of $29, $22 and $141,582 1,506 1,361 Nonoperating (income) expense, net(87)(139)(236)Income before provision for income taxes10,897 10,345 10,522 Provision for income taxes2,334 2,121 2,053 Net income$8,563 $8,223 $8,469 Earnings per common share\u2013basic$12.00 $11.45 $11.63 Earnings per common share\u2013diluted$11.95 $11.39 $11.56 Dividends declared per common share$7.17 $6.78 $6.23 Weighted-average shares outstanding\u2013basic713.4 718.3 727.9 Weighted-average shares outstanding\u2013diluted716.4 721.9 732.3",
+    "table_text_sha256": "4921378ec58f6b3835d354ad615774cef3ec575aa23f103753145892bd83d2fa",
+    "inline_scale": "0",
+    "fact": {
+      "id": "f-113",
+      "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+      "value": "716.4",
+      "decimals": "1",
+      "unit_ref": "shares",
+      "context_ref": "c-1",
+      "start": "2025-01-01",
+      "end": "2025-12-31",
+      "cik": 63908,
+      "accession": "0000063908-26-000035"
+    },
+    "rule": "EXPLICIT_TABLE_MILLIONS_TO_SHARE_UNITS",
+    "multiplier": 1000000,
+    "field": "annual_diluted_shares",
+    "ticker": "MCD"
+  },
+  {
+    "caption_required": "In millions, except per share data",
+    "table_text": "In millions, except per share dataYears ended December 31, 202520242023REVENUESRevenues from franchised restaurants$16,548 $15,715 $15,437 Sales by Company-owned and operated restaurants9,690 9,782 9,742 Other revenues647 423 316 Total revenues26,885 25,920 25,494 OPERATING COSTS AND EXPENSESFranchised restaurants-occupancy expenses2,618 2,536 2,475 Company-owned and operated restaurant expensesFood & paper3,006 2,995 3,039 Payroll & employee benefits2,905 2,959 2,886 Occupancy & other operating expenses2,358 2,381 2,299 Other restaurant expenses564 339 232 Selling, general & administrative expensesDepreciation and amortization457 447 382 Other2,583 2,412 2,435 Other operating (income) expense, net2 139 99 Total operating costs and expenses14,492 14,208 13,847 Operating income12,393 11,712 11,647 Interest expense-net of capitalized interest of $29, $22 and $141,582 1,506 1,361 Nonoperating (income) expense, net(87)(139)(236)Income before provision for income taxes10,897 10,345 10,522 Provision for income taxes2,334 2,121 2,053 Net income$8,563 $8,223 $8,469 Earnings per common share\u2013basic$12.00 $11.45 $11.63 Earnings per common share\u2013diluted$11.95 $11.39 $11.56 Dividends declared per common share$7.17 $6.78 $6.23 Weighted-average shares outstanding\u2013basic713.4 718.3 727.9 Weighted-average shares outstanding\u2013diluted716.4 721.9 732.3",
+    "table_text_sha256": "4921378ec58f6b3835d354ad615774cef3ec575aa23f103753145892bd83d2fa",
+    "inline_scale": "0",
+    "fact": {
+      "id": "f-114",
+      "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+      "value": "721.9",
+      "decimals": "1",
+      "unit_ref": "shares",
+      "context_ref": "c-4",
+      "start": "2024-01-01",
+      "end": "2024-12-31",
+      "cik": 63908,
+      "accession": "0000063908-26-000035"
+    },
+    "rule": "EXPLICIT_TABLE_MILLIONS_TO_SHARE_UNITS",
+    "multiplier": 1000000,
+    "field": "prior_diluted_shares",
+    "ticker": "MCD"
+  },
+  {
+    "caption_required": "In millions, except per share data",
+    "table_text": "In millions, except per share dataYears ended December 31, 202520242023REVENUESRevenues from franchised restaurants$16,548 $15,715 $15,437 Sales by Company-owned and operated restaurants9,690 9,782 9,742 Other revenues647 423 316 Total revenues26,885 25,920 25,494 OPERATING COSTS AND EXPENSESFranchised restaurants-occupancy expenses2,618 2,536 2,475 Company-owned and operated restaurant expensesFood & paper3,006 2,995 3,039 Payroll & employee benefits2,905 2,959 2,886 Occupancy & other operating expenses2,358 2,381 2,299 Other restaurant expenses564 339 232 Selling, general & administrative expensesDepreciation and amortization457 447 382 Other2,583 2,412 2,435 Other operating (income) expense, net2 139 99 Total operating costs and expenses14,492 14,208 13,847 Operating income12,393 11,712 11,647 Interest expense-net of capitalized interest of $29, $22 and $141,582 1,506 1,361 Nonoperating (income) expense, net(87)(139)(236)Income before provision for income taxes10,897 10,345 10,522 Provision for income taxes2,334 2,121 2,053 Net income$8,563 $8,223 $8,469 Earnings per common share\u2013basic$12.00 $11.45 $11.63 Earnings per common share\u2013diluted$11.95 $11.39 $11.56 Dividends declared per common share$7.17 $6.78 $6.23 Weighted-average shares outstanding\u2013basic713.4 718.3 727.9 Weighted-average shares outstanding\u2013diluted716.4 721.9 732.3",
+    "table_text_sha256": "4921378ec58f6b3835d354ad615774cef3ec575aa23f103753145892bd83d2fa",
+    "inline_scale": "0",
+    "fact": {
+      "id": "f-114",
+      "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+      "value": "721.9",
+      "decimals": "1",
+      "unit_ref": "shares",
+      "context_ref": "c-4",
+      "start": "2024-01-01",
+      "end": "2024-12-31",
+      "cik": 63908,
+      "accession": "0000063908-26-000035"
+    },
+    "rule": "EXPLICIT_TABLE_MILLIONS_TO_SHARE_UNITS",
+    "multiplier": 1000000,
+    "field": "fy_minus_1_diluted_shares",
+    "ticker": "MCD"
+  },
+  {
+    "caption_required": "In millions, except per share data",
+    "table_text": "In millions, except per share dataYears ended December 31, 202520242023REVENUESRevenues from franchised restaurants$16,548 $15,715 $15,437 Sales by Company-owned and operated restaurants9,690 9,782 9,742 Other revenues647 423 316 Total revenues26,885 25,920 25,494 OPERATING COSTS AND EXPENSESFranchised restaurants-occupancy expenses2,618 2,536 2,475 Company-owned and operated restaurant expensesFood & paper3,006 2,995 3,039 Payroll & employee benefits2,905 2,959 2,886 Occupancy & other operating expenses2,358 2,381 2,299 Other restaurant expenses564 339 232 Selling, general & administrative expensesDepreciation and amortization457 447 382 Other2,583 2,412 2,435 Other operating (income) expense, net2 139 99 Total operating costs and expenses14,492 14,208 13,847 Operating income12,393 11,712 11,647 Interest expense-net of capitalized interest of $29, $22 and $141,582 1,506 1,361 Nonoperating (income) expense, net(87)(139)(236)Income before provision for income taxes10,897 10,345 10,522 Provision for income taxes2,334 2,121 2,053 Net income$8,563 $8,223 $8,469 Earnings per common share\u2013basic$12.00 $11.45 $11.63 Earnings per common share\u2013diluted$11.95 $11.39 $11.56 Dividends declared per common share$7.17 $6.78 $6.23 Weighted-average shares outstanding\u2013basic713.4 718.3 727.9 Weighted-average shares outstanding\u2013diluted716.4 721.9 732.3",
+    "table_text_sha256": "4921378ec58f6b3835d354ad615774cef3ec575aa23f103753145892bd83d2fa",
+    "inline_scale": "0",
+    "fact": {
+      "id": "f-115",
+      "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+      "value": "732.3",
+      "decimals": "1",
+      "unit_ref": "shares",
+      "context_ref": "c-5",
+      "start": "2023-01-01",
+      "end": "2023-12-31",
+      "cik": 63908,
+      "accession": "0000063908-26-000035"
+    },
+    "rule": "EXPLICIT_TABLE_MILLIONS_TO_SHARE_UNITS",
+    "multiplier": 1000000,
+    "field": "fy_minus_2_diluted_shares",
+    "ticker": "MCD"
+  },
+  {
+    "caption_required": "In millions, except per share data",
+    "table_text": "In millions, except per share dataYears ended December 31, 202420232022REVENUESRevenues from franchised restaurants$15,715 $15,437 $14,106 Sales by Company-owned and operated restaurants9,782 9,742 8,748 Other revenues423 316 328 Total revenues25,920 25,494 23,183 OPERATING COSTS AND EXPENSESFranchised restaurants-occupancy expenses2,536 2,475 2,350 Company-owned and operated restaurant expensesFood & paper2,995 3,039 2,737 Payroll & employee benefits2,959 2,886 2,617 Occupancy & other operating expenses2,381 2,299 2,026 Other restaurant expenses339 232 245 Selling, general & administrative expensesDepreciation and amortization447 382 370 Other2,412 2,435 2,492 Other operating (income) expense, net139 99 974 Total operating costs and expenses14,208 13,847 13,812 Operating income11,712 11,647 9,371 Interest expense-net of capitalized interest of $22, $14 and $91,506 1,361 1,207 Nonoperating (income) expense, net(139)(236)339 Income before provision for income taxes10,345 10,522 7,825 Provision for income taxes2,121 2,053 1,648 Net income$8,223 $8,469 $6,177 Earnings per common share\u2013basic$11.45 $11.63 $8.39 Earnings per common share\u2013diluted$11.39 $11.56 $8.33 Dividends declared per common share$6.78 $6.23 $5.66 Weighted-average shares outstanding\u2013basic718.3 727.9 736.5 Weighted-average shares outstanding\u2013diluted721.9 732.3 741.3",
+    "table_text_sha256": "4bfae3e527013dde9008f361ac5ac49c47680f3262633049951b6f0cb741eef1",
+    "inline_scale": "0",
+    "fact": {
+      "id": "f-112",
+      "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+      "value": "741.3",
+      "decimals": "1",
+      "unit_ref": "shares",
+      "context_ref": "c-5",
+      "start": "2022-01-01",
+      "end": "2022-12-31",
+      "cik": 63908,
+      "accession": "0000063908-25-000012"
+    },
+    "rule": "EXPLICIT_TABLE_MILLIONS_TO_SHARE_UNITS",
+    "multiplier": 1000000,
+    "field": "fy_minus_3_diluted_shares",
+    "ticker": "MCD"
+  },
+  {
+    "ticker": "CEG",
+    "rule": "CONSOLIDATED_TOTAL_REVENUES_POINT_IN_TIME",
+    "source_fact": {
+      "start": "2025-01-01",
+      "end": "2025-12-31",
+      "val": 25533000000,
+      "accn": "0001868275-26-000032",
+      "fy": 2025,
+      "fp": "FY",
+      "form": "10-K",
+      "filed": "2026-02-24",
+      "frame": "CY2025",
+      "source_file": "raw/CIK0001868275_companyfacts.json",
+      "source_sha256": "a8687375ee9f368b8d024f1541f8aafbb4f082c1f0b27dfea8abf79fa7e16a08",
+      "concept": "Revenues"
+    },
+    "primary": {
+      "caption_required": "Total Consolidated Results",
+      "table_text": "2025Revenues from contracts with customersOther revenues(a)Total Operating revenuesTotal Purchased power and fuel expensesTotal RNFMid-Atlantic$6,461 $26 $6,487 $(3,076)$3,411 Midwest5,288 516 5,804 (2,102)3,702 New York2,389 (199)2,190 (590)1,600 ERCOT1,296 608 1,904 (767)1,137 Other Power Regions 4,865 718 5,583 (4,764)819 Total Reportable Segments20,299 1,669 21,968 (11,299)10,669 Other(b)2,364 1,201 3,565 (3,382)183 Total Consolidated Results$22,663 $2,870 $25,533 $(14,681)$10,852 2024Mid-Atlantic$5,429 $93 $5,522 $(2,442)$3,080 Midwest3,848 957 4,805 (1,603)3,202 New York1,937 113 2,050 (597)1,453 ERCOT1,053 497 1,550 (503)1,047 Other Power Regions4,749 757 5,506 (4,238)1,268 Total Reportable Segments17,016 2,417 19,433 (9,383)10,050 Other(b)1,948 2,187 4,135 (2,036)2,099 Total Consolidated Results$18,964 $4,604 $23,568 $(11,419)$12,149",
+      "table_text_sha256": "5ec36632493346d86a1c8b57afd942a54a11764f6f028d7694c6262001f018d9",
+      "inline_scale": "6",
+      "fact": {
+        "id": "f-886",
+        "concept": "Revenues",
+        "value": "25533000000",
+        "decimals": "-6",
+        "unit_ref": "usd",
+        "context_ref": "c-1",
+        "start": "2025-01-01",
+        "end": "2025-12-31",
+        "cik": 1868275,
+        "accession": "0001868275-26-000032"
+      }
+    }
+  },
+  {
+    "ticker": "CEG",
+    "rule": "CONSOLIDATED_TOTAL_REVENUES_POINT_IN_TIME",
+    "source_fact": {
+      "start": "2024-01-01",
+      "end": "2024-12-31",
+      "val": 23568000000,
+      "accn": "0001868275-26-000032",
+      "fy": 2025,
+      "fp": "FY",
+      "form": "10-K",
+      "filed": "2026-02-24",
+      "frame": "CY2024",
+      "source_file": "raw/CIK0001868275_companyfacts.json",
+      "source_sha256": "a8687375ee9f368b8d024f1541f8aafbb4f082c1f0b27dfea8abf79fa7e16a08",
+      "concept": "Revenues"
+    },
+    "primary": {
+      "caption_required": "Total Consolidated Results",
+      "table_text": "2025Revenues from contracts with customersOther revenues(a)Total Operating revenuesTotal Purchased power and fuel expensesTotal RNFMid-Atlantic$6,461 $26 $6,487 $(3,076)$3,411 Midwest5,288 516 5,804 (2,102)3,702 New York2,389 (199)2,190 (590)1,600 ERCOT1,296 608 1,904 (767)1,137 Other Power Regions 4,865 718 5,583 (4,764)819 Total Reportable Segments20,299 1,669 21,968 (11,299)10,669 Other(b)2,364 1,201 3,565 (3,382)183 Total Consolidated Results$22,663 $2,870 $25,533 $(14,681)$10,852 2024Mid-Atlantic$5,429 $93 $5,522 $(2,442)$3,080 Midwest3,848 957 4,805 (1,603)3,202 New York1,937 113 2,050 (597)1,453 ERCOT1,053 497 1,550 (503)1,047 Other Power Regions4,749 757 5,506 (4,238)1,268 Total Reportable Segments17,016 2,417 19,433 (9,383)10,050 Other(b)1,948 2,187 4,135 (2,036)2,099 Total Consolidated Results$18,964 $4,604 $23,568 $(11,419)$12,149",
+      "table_text_sha256": "5ec36632493346d86a1c8b57afd942a54a11764f6f028d7694c6262001f018d9",
+      "inline_scale": "6",
+      "fact": {
+        "id": "f-926",
+        "concept": "Revenues",
+        "value": "23568000000",
+        "decimals": "-6",
+        "unit_ref": "usd",
+        "context_ref": "c-5",
+        "start": "2024-01-01",
+        "end": "2024-12-31",
+        "cik": 1868275,
+        "accession": "0001868275-26-000032"
+      }
+    }
+  },
+  {
+    "ticker": "CEG",
+    "rule": "CONSOLIDATED_TOTAL_REVENUES_POINT_IN_TIME",
+    "source_fact": {
+      "start": "2023-01-01",
+      "end": "2023-12-31",
+      "val": 24918000000,
+      "accn": "0001868275-26-000032",
+      "fy": 2025,
+      "fp": "FY",
+      "form": "10-K",
+      "filed": "2026-02-24",
+      "frame": "CY2023",
+      "source_file": "raw/CIK0001868275_companyfacts.json",
+      "source_sha256": "a8687375ee9f368b8d024f1541f8aafbb4f082c1f0b27dfea8abf79fa7e16a08",
+      "concept": "Revenues"
+    },
+    "primary": {
+      "caption_required": "Total Consolidated Results",
+      "table_text": "2023Mid-Atlantic$5,453 $(315)$5,138 $(2,214)$2,924 Midwest4,846 (188)4,658 (1,403)3,255 New York1,910 111 2,021 (770)1,251 ERCOT1,232 114 1,346 (764)582 Other Power Regions4,956 895 5,851 (4,611)1,240 Total Reportable Segments18,397 617 19,014 (9,762)9,252 Other(b)2,444 3,460 5,904 (6,239)(335)Total Consolidated Results$20,841 $4,077 $24,918 $(16,001)$8,917",
+      "table_text_sha256": "62788cc7768d5baa746aec7a90115ebdbc6e019509b88893c42ad8a02254eecc",
+      "inline_scale": "6",
+      "fact": {
+        "id": "f-966",
+        "concept": "Revenues",
+        "value": "24918000000",
+        "decimals": "-6",
+        "unit_ref": "usd",
+        "context_ref": "c-6",
+        "start": "2023-01-01",
+        "end": "2023-12-31",
+        "cik": 1868275,
+        "accession": "0001868275-26-000032"
+      }
+    }
+  },
+  {
+    "ticker": "CEG",
+    "rule": "CONSOLIDATED_TOTAL_REVENUES_POINT_IN_TIME",
+    "source_fact": {
+      "start": "2022-01-01",
+      "end": "2022-12-31",
+      "val": 24440000000,
+      "accn": "0001868275-25-000023",
+      "fy": 2024,
+      "fp": "FY",
+      "form": "10-K",
+      "filed": "2025-02-18",
+      "frame": "CY2022",
+      "source_file": "raw/CIK0001868275_companyfacts.json",
+      "source_sha256": "a8687375ee9f368b8d024f1541f8aafbb4f082c1f0b27dfea8abf79fa7e16a08",
+      "concept": "Revenues"
+    }
+  },
+  {
+    "ticker": "WELL",
+    "rule": "CONSOLIDATED_TOTAL_REVENUES_POINT_IN_TIME",
+    "source_fact": {
+      "start": "2025-01-01",
+      "end": "2025-12-31",
+      "val": 10838034000,
+      "accn": "0000766704-26-000010",
+      "fy": 2025,
+      "fp": "FY",
+      "form": "10-K",
+      "filed": "2026-02-12",
+      "frame": "CY2025",
+      "source_file": "raw/CIK0000766704_companyfacts.json",
+      "source_sha256": "cad053413d5a741d34e5fcc74da09bb64b8f35e75c397b45c9244852924b428f",
+      "concept": "Revenues"
+    },
+    "primary": {
+      "caption_required": "Total revenues",
+      "table_text": "Year Ended December 31, 202520242023Revenues:Resident fees and services$8,452,996 $6,027,149 $4,753,804 Rental income1,967,935 1,570,278 1,556,073 Interest income246,205 256,191 168,354 Other income170,898 137,500 159,764 Total revenues10,838,034 7,991,118 6,637,995 Expenses:Property operating expenses6,488,081 4,830,211 3,947,776 Depreciation and amortization2,084,868 1,632,093 1,401,101 Interest expense651,955 574,261 607,846 General and administrative expenses1,748,435 235,491 179,091 Loss (gain) on derivatives and financial instruments, net22,407 (27,887)(2,120)Loss (gain) on extinguishment of debt, net9,245 2,130 7 Provision for loan losses, net(9,416)10,125 9,809 Impairment of assets121,283 92,793 36,097 Other expenses201,201 117,459 108,341 Total expenses11,318,059 7,466,676 6,287,948 Income (loss) from continuing operations before income taxes and other items(480,025)524,442 350,047 Income tax (expense) benefit7,116 (2,700)(6,364)Income (loss) from unconsolidated entities(14,297)(496)(53,442)Gain (loss) on real estate dispositions and acquisitions of controlling interests, net1,449,043 451,611 67,898 Income (loss) from continuing operations961,837 972,857 358,139 Net income961,837 972,857 358,139 Less: Net income (loss) attributable to noncontrolling interests(1)24,992 21,177 18,045 Net income (loss) attributable to common stockholders$936,845 $951,680 $340,094 Weighted average number of common shares outstanding:Basic665,639 602,975 515,629 Diluted679,521 608,750 518,701 Earnings per share:Basic:Income (loss) from continuing operations$1.44 $1.61 $0.69 Net income (loss) attributable to common stockholders$1.41 $1.58 $0.66 Diluted:Income (loss) from continuing operations$1.42 $1.60 $0.69 Net income (loss) attributable to common stockholders(2)$1.39 $1.57 $0.66",
+      "table_text_sha256": "180596a8f2027dd1099fe3e799a9f8a2ebca29764565e937974512c3076deff9",
+      "inline_scale": "3",
+      "fact": {
+        "id": "f-140",
+        "concept": "Revenues",
+        "value": "10838034000",
+        "decimals": "-3",
+        "unit_ref": "usd",
+        "context_ref": "c-1",
+        "start": "2025-01-01",
+        "end": "2025-12-31",
+        "cik": 766704,
+        "accession": "0000766704-26-000010"
+      }
+    }
+  },
+  {
+    "ticker": "WELL",
+    "rule": "CONSOLIDATED_TOTAL_REVENUES_POINT_IN_TIME",
+    "source_fact": {
+      "start": "2024-01-01",
+      "end": "2024-12-31",
+      "val": 7991118000,
+      "accn": "0000766704-26-000010",
+      "fy": 2025,
+      "fp": "FY",
+      "form": "10-K",
+      "filed": "2026-02-12",
+      "frame": "CY2024",
+      "source_file": "raw/CIK0000766704_companyfacts.json",
+      "source_sha256": "cad053413d5a741d34e5fcc74da09bb64b8f35e75c397b45c9244852924b428f",
+      "concept": "Revenues"
+    },
+    "primary": {
+      "caption_required": "Total revenues",
+      "table_text": "Year Ended December 31, 202520242023Revenues:Resident fees and services$8,452,996 $6,027,149 $4,753,804 Rental income1,967,935 1,570,278 1,556,073 Interest income246,205 256,191 168,354 Other income170,898 137,500 159,764 Total revenues10,838,034 7,991,118 6,637,995 Expenses:Property operating expenses6,488,081 4,830,211 3,947,776 Depreciation and amortization2,084,868 1,632,093 1,401,101 Interest expense651,955 574,261 607,846 General and administrative expenses1,748,435 235,491 179,091 Loss (gain) on derivatives and financial instruments, net22,407 (27,887)(2,120)Loss (gain) on extinguishment of debt, net9,245 2,130 7 Provision for loan losses, net(9,416)10,125 9,809 Impairment of assets121,283 92,793 36,097 Other expenses201,201 117,459 108,341 Total expenses11,318,059 7,466,676 6,287,948 Income (loss) from continuing operations before income taxes and other items(480,025)524,442 350,047 Income tax (expense) benefit7,116 (2,700)(6,364)Income (loss) from unconsolidated entities(14,297)(496)(53,442)Gain (loss) on real estate dispositions and acquisitions of controlling interests, net1,449,043 451,611 67,898 Income (loss) from continuing operations961,837 972,857 358,139 Net income961,837 972,857 358,139 Less: Net income (loss) attributable to noncontrolling interests(1)24,992 21,177 18,045 Net income (loss) attributable to common stockholders$936,845 $951,680 $340,094 Weighted average number of common shares outstanding:Basic665,639 602,975 515,629 Diluted679,521 608,750 518,701 Earnings per share:Basic:Income (loss) from continuing operations$1.44 $1.61 $0.69 Net income (loss) attributable to common stockholders$1.41 $1.58 $0.66 Diluted:Income (loss) from continuing operations$1.42 $1.60 $0.69 Net income (loss) attributable to common stockholders(2)$1.39 $1.57 $0.66",
+      "table_text_sha256": "180596a8f2027dd1099fe3e799a9f8a2ebca29764565e937974512c3076deff9",
+      "inline_scale": "3",
+      "fact": {
+        "id": "f-141",
+        "concept": "Revenues",
+        "value": "7991118000",
+        "decimals": "-3",
+        "unit_ref": "usd",
+        "context_ref": "c-9",
+        "start": "2024-01-01",
+        "end": "2024-12-31",
+        "cik": 766704,
+        "accession": "0000766704-26-000010"
+      }
+    }
+  },
+  {
+    "ticker": "WELL",
+    "rule": "CONSOLIDATED_TOTAL_REVENUES_POINT_IN_TIME",
+    "source_fact": {
+      "start": "2023-01-01",
+      "end": "2023-12-31",
+      "val": 6637995000,
+      "accn": "0000766704-26-000010",
+      "fy": 2025,
+      "fp": "FY",
+      "form": "10-K",
+      "filed": "2026-02-12",
+      "frame": "CY2023",
+      "source_file": "raw/CIK0000766704_companyfacts.json",
+      "source_sha256": "cad053413d5a741d34e5fcc74da09bb64b8f35e75c397b45c9244852924b428f",
+      "concept": "Revenues"
+    },
+    "primary": {
+      "caption_required": "Total revenues",
+      "table_text": "Year Ended December 31, 202520242023Revenues:Resident fees and services$8,452,996 $6,027,149 $4,753,804 Rental income1,967,935 1,570,278 1,556,073 Interest income246,205 256,191 168,354 Other income170,898 137,500 159,764 Total revenues10,838,034 7,991,118 6,637,995 Expenses:Property operating expenses6,488,081 4,830,211 3,947,776 Depreciation and amortization2,084,868 1,632,093 1,401,101 Interest expense651,955 574,261 607,846 General and administrative expenses1,748,435 235,491 179,091 Loss (gain) on derivatives and financial instruments, net22,407 (27,887)(2,120)Loss (gain) on extinguishment of debt, net9,245 2,130 7 Provision for loan losses, net(9,416)10,125 9,809 Impairment of assets121,283 92,793 36,097 Other expenses201,201 117,459 108,341 Total expenses11,318,059 7,466,676 6,287,948 Income (loss) from continuing operations before income taxes and other items(480,025)524,442 350,047 Income tax (expense) benefit7,116 (2,700)(6,364)Income (loss) from unconsolidated entities(14,297)(496)(53,442)Gain (loss) on real estate dispositions and acquisitions of controlling interests, net1,449,043 451,611 67,898 Income (loss) from continuing operations961,837 972,857 358,139 Net income961,837 972,857 358,139 Less: Net income (loss) attributable to noncontrolling interests(1)24,992 21,177 18,045 Net income (loss) attributable to common stockholders$936,845 $951,680 $340,094 Weighted average number of common shares outstanding:Basic665,639 602,975 515,629 Diluted679,521 608,750 518,701 Earnings per share:Basic:Income (loss) from continuing operations$1.44 $1.61 $0.69 Net income (loss) attributable to common stockholders$1.41 $1.58 $0.66 Diluted:Income (loss) from continuing operations$1.42 $1.60 $0.69 Net income (loss) attributable to common stockholders(2)$1.39 $1.57 $0.66",
+      "table_text_sha256": "180596a8f2027dd1099fe3e799a9f8a2ebca29764565e937974512c3076deff9",
+      "inline_scale": "3",
+      "fact": {
+        "id": "f-142",
+        "concept": "Revenues",
+        "value": "6637995000",
+        "decimals": "-3",
+        "unit_ref": "usd",
+        "context_ref": "c-10",
+        "start": "2023-01-01",
+        "end": "2023-12-31",
+        "cik": 766704,
+        "accession": "0000766704-26-000010"
+      }
+    }
+  },
+  {
+    "ticker": "WELL",
+    "rule": "CONSOLIDATED_TOTAL_REVENUES_POINT_IN_TIME",
+    "source_fact": {
+      "start": "2022-01-01",
+      "end": "2022-12-31",
+      "val": 5860615000,
+      "accn": "0000766704-25-000009",
+      "fy": 2024,
+      "fp": "FY",
+      "form": "10-K",
+      "filed": "2025-02-12",
+      "frame": "CY2022",
+      "source_file": "raw/CIK0000766704_companyfacts.json",
+      "source_sha256": "cad053413d5a741d34e5fcc74da09bb64b8f35e75c397b45c9244852924b428f",
+      "concept": "Revenues"
+    }
+  },
+  {
+    "caption_required": "Stock-based compensation costs, net of amounts capitalized",
+    "table_text": "For the Years Ended December 31,Components of Stock-based Compensation Plan Costs 202520242023(In millions)Restricted stock units $35 $32 $39 Restricted stock4 7 5 401(k) savings plan39 41 38 EDCP & DCPD7 6 1 Total stock based compensation costs $85 $86 $83 Stock-based compensation costs, net of amounts capitalized$39 $43 $44",
+    "table_text_sha256": "f1716ade452aa890d637c7871e59884a15311c51dc229a4e39dc5fb0bd8c2548",
+    "inline_scale": "6",
+    "fact": {
+      "id": "f-2116",
+      "concept": "EmployeeServiceShareBasedCompensationAllocationOfRecognizedPeriodCostsCapitalizedAmount",
+      "value": "39000000",
+      "decimals": "-6",
+      "unit_ref": "usd",
+      "context_ref": "c-1",
+      "start": "2025-01-01",
+      "end": "2025-12-31",
+      "cik": 1031296,
+      "accession": "0001031296-26-000046"
+    },
+    "ticker": "FE",
+    "rule": "CAPTION_CONFIRMS_NET_REPORTED_COST_NO_NUMERIC_CHANGE"
+  },
+  {
+    "ticker": "PH",
+    "rule": "ROUNDED_REPORTED_YOY_NOT_EXACT_ZERO",
+    "facts": [
+      {
+        "id": "f-847",
+        "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+        "value": "130200000",
+        "decimals": "-5",
+        "unit_ref": "shares",
+        "context_ref": "c-1",
+        "start": "2024-07-01",
+        "end": "2025-06-30",
+        "cik": 76334,
+        "accession": "0000076334-25-000035"
+      },
+      {
+        "id": "f-848",
+        "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+        "value": "130200000",
+        "decimals": "-5",
+        "unit_ref": "shares",
+        "context_ref": "c-4",
+        "start": "2023-07-01",
+        "end": "2024-06-30",
+        "cik": 76334,
+        "accession": "0000076334-25-000035"
+      }
+    ],
+    "true_yoy_bound_under_nearest_rounding": [
+      -0.0007677543186180857,
+      0.0007683442182098155
+    ],
+    "bound_assumption": "XBRL decimals interpreted as nearest rounding; not exact underlying counts"
+  }
+]

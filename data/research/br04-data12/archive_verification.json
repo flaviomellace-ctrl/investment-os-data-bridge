@@ -1,0 +1,75 @@
+{
+  "schema": "br04_data12_archive_verification_v1",
+  "receipt_sha256": "668849c6473189cbdfde48b0818cd301a10a5d1272a2979e9241320e860ecc86",
+  "proof_sha256": "0a143694130f1a2a9d6592a42350023ecf205b9e4d3aafe19d9ab61771b1b676",
+  "observations": [
+    {
+      "ticker": "CEG",
+      "year": "2025",
+      "revenue": 25533000000,
+      "source_accession": "0001868275-26-000032",
+      "primary_table_verified": true,
+      "companyfacts_verified": true
+    },
+    {
+      "ticker": "CEG",
+      "year": "2024",
+      "revenue": 23568000000,
+      "source_accession": "0001868275-26-000032",
+      "primary_table_verified": true,
+      "companyfacts_verified": true
+    },
+    {
+      "ticker": "CEG",
+      "year": "2023",
+      "revenue": 24918000000,
+      "source_accession": "0001868275-26-000032",
+      "primary_table_verified": true,
+      "companyfacts_verified": true
+    },
+    {
+      "ticker": "CEG",
+      "year": "2022",
+      "revenue": 24440000000,
+      "source_accession": "0001868275-25-000023",
+      "primary_table_verified": false,
+      "companyfacts_verified": true
+    },
+    {
+      "ticker": "WELL",
+      "year": "2025",
+      "revenue": 10838034000,
+      "source_accession": "0000766704-26-000010",
+      "primary_table_verified": true,
+      "companyfacts_verified": true
+    },
+    {
+      "ticker": "WELL",
+      "year": "2024",
+      "revenue": 7991118000,
+      "source_accession": "0000766704-26-000010",
+      "primary_table_verified": true,
+      "companyfacts_verified": true
+    },
+    {
+      "ticker": "WELL",
+      "year": "2023",
+      "revenue": 6637995000,
+      "source_accession": "0000766704-26-000010",
+      "primary_table_verified": true,
+      "companyfacts_verified": true
+    },
+    {
+      "ticker": "WELL",
+      "year": "2022",
+      "revenue": 5860615000,
+      "source_accession": "0000766704-25-000009",
+      "primary_table_verified": false,
+      "companyfacts_verified": true
+    }
+  ],
+  "fresh_sec_fetch": false,
+  "candidate_promoted": false,
+  "economic_clearance": false,
+  "buy_add_allowed": false
+}

@@ -1,0 +1,298 @@
+{
+  "records": [
+    {
+      "ticker": "AES",
+      "url": "https://www.sec.gov/Archives/edgar/data/874761/000087476126000063/aes-20251231.htm",
+      "sha256": "35596b61853c7164054274c12965af42493cf18607a2aa690e7fc1132217b546",
+      "applied_value": 14000000,
+      "matches": [
+        {
+          "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+          "context": "c-1",
+          "excerpt": "The Company has three other share-based award programs. The Company has recorded expense of $14 million, $12 million, and $2 million for 2025, 2024, and 2023, respectively, related to these programs."
+        }
+      ],
+      "disposition": "REJECT_AWARD_SUBSET"
+    },
+    {
+      "ticker": "ARES",
+      "url": "https://www.sec.gov/Archives/edgar/data/1176948/000162828026011413/ares-20251231.htm",
+      "sha256": "cdd686944539eb4acde366f1e764039f44390db61f56ea15fc698e51cfeeb168",
+      "applied_value": 740549000,
+      "matches": [
+        {
+          "tag": "us-gaap:ShareBasedCompensation",
+          "context": "c-122",
+          "excerpt": "Year ended December 31, 202520242023Cash flows from operating activities Net income$1,088,358 $1,110,735 $1,160,092 Adjustments to reconcile net income to net cash provided by (used in) operating activities: Equity compensation expense740,549 352,851 255,965 Depreciation and amortization243,149 158,578 231,712 Net realized and unrealized gains on investments(315,369)(21,463)(90,737)Changes in value of contingent earnout arrangements349,706 \u2014 \u2014 Investments purchased(220,846)(580,744)(507,932)Proceeds from sale of investments324,434 683,638 206,163 Other non-cash amounts923 11,755 74 Adjustments to reconcile net income to net cash provided by (used in) operating activities allocable to non-controlling interests in Consolidated Funds: Net realized and unrealized gains on investments(551,076)(313,963)(262,700)Investments purchased(8,284,076)(5,927,444)(8,847,856)Proceeds from sale of investments9,830,928 7,569,165 8,149,617 Other non-cash amounts(212,962)(48,963)(101,465)Cash flows due to changes in operating assets and liabilities: Net carried interest and incentive fees receivable(37,802)(188,174)(48,858)Due to/from affiliates184,751 223,498 (220,421)Other assets(228,410)(252,644)21,532 Accrued compensation and benefits132,401 (7,096)20,383 Accounts payable, accrued expenses and other liabilities91,962 148,384 27,864 Cash flows due to changes in operating assets and liabilities allocable to redeemable and non-controlling interest in Consolidated Funds: Change in cash and cash equivalents held at Consolidated Funds268,401 (77,978)(424,870)Net cash relinquished with deconsolidation of Consolidated Funds(151,500)(46,205)(623)Change in other assets and receivables held at Consolidated Funds42,359 (49,774)(20,247)Change in other liabilities and payables held at Consolidated Funds(28,921)46,998 219,046 Net cash provided by (used in) operating activities3,266,959 2,791,154 (233,261)Cash flows from investing activities Purchase of furniture, equipment and leasehold improvements, net of disposals(72,178)(91,509)(67,183)Acquisitions, net of cash acquired(1,731,461)(67,895)(43,896)Net cash used in investing activities(1,803,639)(159,404)(111,079)Cash flows from financing activities Net proceeds from issuance of Series B mandatory convertible preferred stock\u2014 1,458,771 \u2014 Net proceeds from issuance of Class A common stock\u2014 407,124 \u2014 Proceeds from Credit Facility2,860,000 1,210,000 1,410,000 Proceeds from issuance of senior notes\u2014 736,010 499,010 Repayments of Credit Faci"
+        },
+        {
+          "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+          "context": "c-1",
+          "excerpt": "Equity-based compensation expense, net of forfeitures, recorded by the Company is presented in the following table:Year ended December 31, 202520242023Unvested awards$730,448 $352,851 $255,965 AOG Unit awards10,101 \u2014 \u2014 Total equity-based compensation expense$740,549 $352,851 $255,965"
+        },
+        {
+          "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+          "context": "c-741",
+          "excerpt": "Year ended December 31,202520242023Total consolidated expenses$4,708,766 $2,938,691 $2,797,858 Performance related compensation-unrealized(594,661)(36,823)(206,923)Expenses of Consolidated Funds added in consolidation(106,639)(69,320)(93,167)Expenses of Consolidated Funds eliminated in consolidation53,928 48,441 50,108 Administrative fees(1)(93,613)(70,363)(62,773)OMG expenses(835,805)(641,287)(561,737)Acquisition and merger-related expense(65,363)(57,360)(12,000)Equity compensation expense(740,549)(352,851)(255,790)Acquisition-related compensation expense(2)(105,202)(38,150)(7,334)Placement fee adjustment3,891 (5,715)5,819 Depreciation and amortization expense(241,925)(157,341)(233,185)Expense of non-controlling interests in consolidated subsidiaries20,278 1,201 (19,877)Total consolidation adjustments and reconciling items(2,705,660)(1,379,568)(1,396,859)Total segment expenses$2,003,106 $1,559,123 $1,400,999"
+        },
+        {
+          "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+          "context": "c-753",
+          "excerpt": "Year ended December 31,202520242023Income before taxes$1,286,893 $1,275,352 $1,333,063 Adjustments:Depreciation and amortization expense241,925 157,341 233,185 Equity compensation expense740,549 352,851 255,419 Acquisition-related compensation expense(1)105,202 38,150 7,334 Acquisition, merger and transaction-related expense65,363 57,360 12,000 Placement fee adjustment(3,891)5,715 (5,819)OMG expense, net797,082 616,517 539,126 Other (income) expense, net303,200 (12,172)976 Income before taxes of non-controlling interests in consolidated subsidiaries(15,112)(22,267)(17,249)Income before taxes of non-controlling interests in Consolidated Funds, net of eliminations(260,032)(302,846)(278,119)Total performance income\u2014unrealized(762,534)(109,533)(305,370)Total performance related compensation\u2014unrealized594,661 36,823 206,923 Total net investment income\u2014unrealized(440,696)(5,613)(178,481)Realized income2,652,610 2,087,678 1,802,988 Total performance income\u2014realized(526,284)(430,179)(415,899)Total performance related compensation\u2014realized357,273 281,301 282,406 Total net investment loss\u2014realized99,902 43,867 32,298 Fee related earnings$2,583,501 $1,982,667 $1,701,793"
+        },
+        {
+          "tag": "us-gaap:ShareBasedCompensation",
+          "context": "c-805",
+          "excerpt": "Year ended December 31, 2025 Consolidated Company Entities ConsolidatedFundsEliminationsConsolidatedCash flows from operating activities Net income$834,454 $413,681 $(159,777)$1,088,358 Adjustments to reconcile net income to net cash provided by operating activities: Equity compensation expense740,549 \u2014 \u2014 740,549 Depreciation and amortization243,149 \u2014 \u2014 243,149 Net realized and unrealized gains on investments(438,992)\u2014 123,623 (315,369)Changes in value of contingent earnout arrangements349,706 \u2014 \u2014 349,706 Investments purchased(349,387)\u2014 128,541 (220,846)Proceeds from sale of investments474,211 \u2014 (149,777)324,434 Other non-cash amounts923 \u2014 \u2014 923 Adjustments to reconcile net income to net cash provided by operating activities allocable to non-controlling interests in Consolidated Funds: Net realized and unrealized gains on investments\u2014 (554,513)3,437 (551,076)Investments purchased\u2014 (8,284,076)\u2014 (8,284,076)Proceeds from sale of investments\u2014 9,830,928 \u2014 9,830,928 Other non-cash amounts\u2014 (212,962)\u2014 (212,962)Cash flows due to changes in operating assets and liabilities: Net carried interest and incentive fees receivable(76,075)\u2014 38,273 (37,802)Due to/from affiliates338,727 \u2014 (153,976)184,751 Other assets(228,410)\u2014 \u2014 (228,410)Accrued compensation and benefits132,401 \u2014 \u2014 132,401 Accounts payable, accrued expenses and other liabilities91,832 \u2014 130 91,962 Cash flows due to changes in operating assets and liabilities allocable to non-controlling interest in Consolidated Funds: Change in cash and cash equivalents held at Consolidated Funds\u2014 \u2014 268,401 268,401 Net cash relinquished with deconsolidation of Consolidated Funds\u2014 (151,500)\u2014 (151,500)Change in other assets and receivables held at Consolidated Funds\u2014 (163,403)205,762 42,359 Change in other liabilities and payables held at Consolidated Funds\u2014 (28,801)(120)(28,921)Net cash provided by operating activities2,113,088 849,354 304,517 3,266,959 Cash flows from investing activities Purchase of furniture, equipment and leasehold improvements, net of disposals(72,178)\u2014 \u2014 (72,178)Acquisitions, net of cash acquired(1,731,461)\u2014 \u2014 (1,731,461)Net cash used in investing activities(1,803,639)\u2014 \u2014 (1,803,639)Cash flows from financing activities Proceeds from Credit Facility2,860,000 \u2014 \u2014 2,860,000 Repayments of Credit Facility(1,480,000)\u2014 \u2014 (1,480,000)Dividends and distributions (1,756,688)\u2014 \u2014 (1,756,688)Taxes paid related to net share settlement of equity awards(436,869)\u2014 \u2014 (436,869)Other financing activities1,914 \u2014 \u2014 1,914 All"
+        },
+        {
+          "tag": "us-gaap:ShareBasedCompensation",
+          "context": "c-122",
+          "excerpt": "Year ended December 31, 2025 Consolidated Company Entities ConsolidatedFundsEliminationsConsolidatedCash flows from operating activities Net income$834,454 $413,681 $(159,777)$1,088,358 Adjustments to reconcile net income to net cash provided by operating activities: Equity compensation expense740,549 \u2014 \u2014 740,549 Depreciation and amortization243,149 \u2014 \u2014 243,149 Net realized and unrealized gains on investments(438,992)\u2014 123,623 (315,369)Changes in value of contingent earnout arrangements349,706 \u2014 \u2014 349,706 Investments purchased(349,387)\u2014 128,541 (220,846)Proceeds from sale of investments474,211 \u2014 (149,777)324,434 Other non-cash amounts923 \u2014 \u2014 923 Adjustments to reconcile net income to net cash provided by operating activities allocable to non-controlling interests in Consolidated Funds: Net realized and unrealized gains on investments\u2014 (554,513)3,437 (551,076)Investments purchased\u2014 (8,284,076)\u2014 (8,284,076)Proceeds from sale of investments\u2014 9,830,928 \u2014 9,830,928 Other non-cash amounts\u2014 (212,962)\u2014 (212,962)Cash flows due to changes in operating assets and liabilities: Net carried interest and incentive fees receivable(76,075)\u2014 38,273 (37,802)Due to/from affiliates338,727 \u2014 (153,976)184,751 Other assets(228,410)\u2014 \u2014 (228,410)Accrued compensation and benefits132,401 \u2014 \u2014 132,401 Accounts payable, accrued expenses and other liabilities91,832 \u2014 130 91,962 Cash flows due to changes in operating assets and liabilities allocable to non-controlling interest in Consolidated Funds: Change in cash and cash equivalents held at Consolidated Funds\u2014 \u2014 268,401 268,401 Net cash relinquished with deconsolidation of Consolidated Funds\u2014 (151,500)\u2014 (151,500)Change in other assets and receivables held at Consolidated Funds\u2014 (163,403)205,762 42,359 Change in other liabilities and payables held at Consolidated Funds\u2014 (28,801)(120)(28,921)Net cash provided by operating activities2,113,088 849,354 304,517 3,266,959 Cash flows from investing activities Purchase of furniture, equipment and leasehold improvements, net of disposals(72,178)\u2014 \u2014 (72,178)Acquisitions, net of cash acquired(1,731,461)\u2014 \u2014 (1,731,461)Net cash used in investing activities(1,803,639)\u2014 \u2014 (1,803,639)Cash flows from financing activities Proceeds from Credit Facility2,860,000 \u2014 \u2014 2,860,000 Repayments of Credit Facility(1,480,000)\u2014 \u2014 (1,480,000)Dividends and distributions (1,756,688)\u2014 \u2014 (1,756,688)Taxes paid related to net share settlement of equity awards(436,869)\u2014 \u2014 (436,869)Other financing activities1,914 \u2014 \u2014 1,914 All"
+        }
+      ],
+      "disposition": "PRIMARY_SCOPE_REVIEWED_NOT_ECONOMIC_CLEARANCE"
+    },
+    {
+      "ticker": "CI",
+      "url": "https://www.sec.gov/Archives/edgar/data/1739940/000173994026000006/ci-20251231.htm",
+      "sha256": "4d1f0eb9dbfbc9ae98c8c918f24df9cd40b77a589a2d4b9c9378ffff1c9c0fd3",
+      "applied_value": 291000000,
+      "matches": [
+        {
+          "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+          "context": "c-1",
+          "excerpt": "The Company records tax benefits in Shareholders' net income during the vesting period based on the amount of expense being recognized. The difference between tax benefits based on the expense and the actual tax benefit realized are also recorded in income tax expense when stock options are exercised, or when restricted stock and SPSs vest.For the Years Ended December 31,(In millions)202520242023Total compensation cost for shared-based awards$291 $308 $286 Tax benefits recognized$69 $94 $92"
+        }
+      ],
+      "disposition": "PRIMARY_SCOPE_REVIEWED_NOT_ECONOMIC_CLEARANCE"
+    },
+    {
+      "ticker": "CMI",
+      "url": "https://www.sec.gov/Archives/edgar/data/26172/000002617226000009/cmi-20251231.htm",
+      "sha256": "741e3f709e2691fbd1b6398f0e6cd086959389ccee3221f69cf1388aff0dd10c",
+      "applied_value": 93000000,
+      "matches": [
+        {
+          "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+          "context": "c-1",
+          "excerpt": "Employee compensation expense (net of estimated forfeitures) related to our share-based plans for the years ended December 31, 2025, 2024 and 2023, was approximately $93 million, $100 million and $79 million, respectively. The excess tax benefit associated with our employee share-based plans for the years ended December 31, 2025, 2024 and 2023, was $15 million, $23 million and $7 million, respectively. The total unrecognized compensation expense (net of estimated forfeitures) related to nonvested awards for our employee share-based plans was approximately $87 million at December 31, 2025, and is expected to be recognized over a weighted-average period of approximately two years. Cash received from share-based payment arrangements for the years ended December 31, 2025, 2024 and 2023, was $69 million, $133 million and $48 million, respectively."
+        }
+      ],
+      "disposition": "PRIMARY_SCOPE_REVIEWED_NOT_ECONOMIC_CLEARANCE"
+    },
+    {
+      "ticker": "D",
+      "url": "https://www.sec.gov/Archives/edgar/data/715957/000119312526063120/d-20251231.htm",
+      "sha256": "68d2513cf27dbba3ba5a8c54da1c6a9812976d6b1cbe308bbdfd16bf28e68a46",
+      "applied_value": 46000000,
+      "matches": [
+        {
+          "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+          "context": "C_3d4abf14-8456-4280-bfa2-9a0e85525726",
+          "excerpt": "Dominion Energy measures and recognizes compensation expense relating to share-based payment transactions over the vesting period based on the fair value of the equity or liability instruments issued. Dominion Energy\u2019s results for the years ended December 31, 2025, 2024 and 2023 include $46 million, $53 million and $44 million, respectively, of compensation costs and $10 million, $12 million and $10 million, respectively, of income tax benefits related to Dominion Energy\u2019s stock-based compensation arrangements. Stock-based compensation cost is reported in other operations and maintenance expense in Dominion Energy\u2019s Consolidated Statements of Income. Excess Tax Benefits are classified as a financing cash flow."
+        }
+      ],
+      "disposition": "PRIMARY_SCOPE_REVIEWED_NOT_ECONOMIC_CLEARANCE"
+    },
+    {
+      "ticker": "DAL",
+      "url": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000013/dal-20251231.htm",
+      "sha256": "79bb1b267f9b122ffa821c7e9ec09920e460e079e2187bcabfb14bfd07ad109b",
+      "applied_value": 313000000,
+      "matches": [
+        {
+          "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+          "context": "c-1",
+          "excerpt": "We make long-term incentive awards annually to eligible employees under the Plan. Generally, awards vest over time, subject to the employee's continued employment. Equity compensation expense, including awards payable in common stock or cash, is recognized in salaries and related costs over the employee's requisite service period (generally, the vesting period of the award) and totaled $313 million, $236 million and $180 million for the years ended December 31, 2025, 2024 and 2023, respectively. We record expense on a straight-line basis for awards with installment vesting. As of December 31, 2025, unrecognized costs related to unvested shares totaled $112 million. We expect substantially all unvested awards to vest and recognize forfeitures as they occur."
+        }
+      ],
+      "disposition": "PRIMARY_SCOPE_REVIEWED_NOT_ECONOMIC_CLEARANCE"
+    },
+    {
+      "ticker": "GE",
+      "url": "https://www.sec.gov/Archives/edgar/data/40545/000004054526000008/ge-20251231.htm",
+      "sha256": "067ee70130e70b6e749206cf3dc10a41498a2e3eb4d48aee99399801c6559356",
+      "applied_value": 325000000,
+      "matches": [
+        {
+          "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+          "context": "c-1",
+          "excerpt": "202520242023Compensation expense (after-tax)(a)$325 $286 $192 Cash received from stock options exercised428 1,492 565 Intrinsic value of stock options exercised and RSU/PSU/Performance shares vested853 1,754 561"
+        }
+      ],
+      "disposition": "REJECT_AFTER_TAX"
+    },
+    {
+      "ticker": "GL",
+      "url": "https://www.sec.gov/Archives/edgar/data/320335/000032033526000090/gl-20251231.htm",
+      "sha256": "70faa88d4e5e0b0bd244f0757097de7fad7feb580786258f5c7b20668084d424",
+      "applied_value": 53355000,
+      "matches": [
+        {
+          "tag": "us-gaap:ShareBasedCompensation",
+          "context": "c-1",
+          "excerpt": "Year Ended December 31,202520242023Stock-based compensation not involving cash$53,355 $40,118 $30,736 Commitments for low-income housing interests234,753 35,000 \u2014 Exchanges of fixed maturity investments288,491 105,595 50,936 Net unsettled security trades408 2,334 3,833 Noncash tax credits\u2014 \u2014 1,083"
+        },
+        {
+          "tag": "us-gaap:ShareBasedCompensation",
+          "context": "c-1",
+          "excerpt": "A summary of stock compensation activity for each of the three years ended December 31, 2025 is presented below:202520242023Stock-based compensation expense recognized(1)$53,355 $40,118 $30,736 Tax benefit recognized10,829 7,085 11,178 (1)No stock-based compensation expense was capitalized in any period in accordance with applicable GAAP."
+        },
+        {
+          "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+          "context": "c-1",
+          "excerpt": "Year Ended December 31, 2025LifeHealthInvestmentConsolidatedRevenue:Premium$3,363,470 $1,526,750 $\u2014 $4,890,220 Net investment income\u2014 \u2014 1,130,198 1,130,198 Segment revenue3,363,470 1,526,750 1,130,198 6,020,418 Realized gains (losses)(27,788)Other income1,688 Total consolidated revenue $5,994,318 Expenses:Policy obligations(1)1,924,929 931,141 22,415 2,878,485 Required interest on reserves (845,875)(113,832)969,390 9,683 Amortization of acquisition costs 386,450 59,897 \u2014 446,347 Commissions174,029 173,490 \u2014 347,519 Premium taxes68,132 29,825 \u2014 97,957 Non-deferred acquisition costs146,444 56,101 \u2014 202,545 Segment profit or (loss) $1,509,361 $390,128 $138,393 2,037,882 Insurance administrative expenses:Salaries137,015 Other employee costs41,609 Information technology costs82,573 Legal costs22,510 Other administrative costs71,888 Parent expense14,182 Stock-based compensation expense53,355 Interest expense141,221 Legal proceedings17,053 Other expenses2,183 Annuity(7,782) Total expenses4,558,343 Income before income taxes per Consolidated Statement of Operations $1,435,975"
+        },
+        {
+          "tag": "us-gaap:ShareBasedCompensation",
+          "context": "c-968",
+          "excerpt": "Globe Life Inc. (PARENT COMPANY)SCHEDULE II. CONDENSED FINANCIAL INFORMATION OF REGISTRANT (continued)Notes to Condensed Financial Statements(Dollar amounts in thousands) Note A\u2014Dividends from Subsidiaries Cash dividends paid to Globe Life from the subsidiaries were as follows:Year Ended December 31,202520242023Dividends from subsidiaries$815,741 $692,690 $459,535 Note B\u2014Supplemental Disclosures of Cash Flow Information The following table summarizes non-cash transactions, which are not reflected on the Consolidated Statements of Cash Flows: Year Ended December 31, 202520242023Stock-based compensation not involving cash$53,355 $40,118 $30,736 Investment in subsidiaries640,065 \u2014 \u2014 Dividends from subsidiaries640,065 \u2014 \u2014 The following table summarizes certain amounts paid (received) during the period: Year Ended December 31, 202520242023Interest paid$150,019 $114,459 $104,493 Income taxes paid (received)(21,033)(13,126)(10,408) Note C\u2014Preferred Stock As of December 31, 2025, Globe Life had 351 thousand shares of Cumulative Preferred Stock, Series A, issued and outstanding, of which 280 thousand shares were 6.50% Cumulative Preferred Stock, Series A, and 71 thousand shares were 7.15% Cumulative Preferred Stock, Series A (collectively, the \u201cSeries A Preferred Stock\u201d). All issued and outstanding shares of Series A Preferred Stock were held by wholly-owned insurance subsidiaries. In the event of liquidation, the holders of the Series A Preferred Stock at the time outstanding would be entitled to receive a liquidating distribution out of the assets legally available to stockholders in the amount of $1 thousand per share or $351 million in the aggregate, plus any accrued and unpaid dividends, before any distribution is made to holders of Globe Life common stock. Holders of Series A Preferred Stock do not have any voting rights nor have rights to convert such shares into shares of any other class of Globe Life capital stock. See accompanying Report of Independent Registered Public Accounting Firm."
+        }
+      ],
+      "disposition": "PRIMARY_SCOPE_REVIEWED_NOT_ECONOMIC_CLEARANCE"
+    },
+    {
+      "ticker": "HIG",
+      "url": "https://www.sec.gov/Archives/edgar/data/874766/000087476626000012/hig-20251231.htm",
+      "sha256": "90fbde148bd42299762574574747e85b0e5d642f80cb1dcb8dae6c66d368c30a",
+      "applied_value": 141000000,
+      "matches": [
+        {
+          "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+          "context": "c-1",
+          "excerpt": "For the years ended December 31,202520242023Stock-based compensation plans expense$141 $133 $125 Income tax benefit(22)(21)(22)Excess tax benefit on awards vested, exercised and expired(16)(21)(12)Total stock-based compensation plans expense, net of tax$103 $91 $91"
+        }
+      ],
+      "disposition": "PRIMARY_SCOPE_REVIEWED_NOT_ECONOMIC_CLEARANCE"
+    },
+    {
+      "ticker": "LUV",
+      "url": "https://www.sec.gov/Archives/edgar/data/92380/000009238026000004/luv-20251231.htm",
+      "sha256": "5059e4faf451ce1b242c13bebba5212cca1692981031ac844a6ecf745288d120",
+      "applied_value": 99000000,
+      "matches": [
+        {
+          "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+          "context": "c-1",
+          "excerpt": "The Company accounts for share-based compensation utilizing fair value, which is determined on the date of grant for all instruments. The Consolidated Statement of Income for the years ended December 31, 2025, 2024, and 2023, reflects share-based compensation expense of $99 million, $45 million, and $86 million, respectively. The total tax impact recognized in earnings from share-based compensation arrangements for the years ended December 31, 2025, 2024, and 2023, was not material. As of December 31, 2025, there was $100 million of total unrecognized compensation cost related to share-based compensation arrangements, which is expected to be recognized over a weighted-average period of 1.9 years. The Company expects substantially all unvested shares associated with time-based restricted stock unit awards to vest."
+        }
+      ],
+      "disposition": "PRIMARY_SCOPE_REVIEWED_NOT_ECONOMIC_CLEARANCE"
+    },
+    {
+      "ticker": "MTB",
+      "url": "https://www.sec.gov/Archives/edgar/data/36270/000003627026000010/mtb-20251231.htm",
+      "sha256": "1107561691c0290012f89fcd20dd2e82595ec81cd4f254bd78cc10122c1b6811",
+      "applied_value": 136000000,
+      "matches": [
+        {
+          "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+          "context": "c-1",
+          "excerpt": "(Dollars in millions)202520242023Stock-based compensation expense (a)$136 $116 $118 Income tax benefits recognized30 25 24 Cash received from exercised stock options19 138 32 Fair value of stock-based awards granted143 141 124 Intrinsic value of vested restricted stock and restricted stock units and exercised stock options114 134 96"
+        }
+      ],
+      "disposition": "PRIMARY_SCOPE_REVIEWED_NOT_ECONOMIC_CLEARANCE"
+    },
+    {
+      "ticker": "NEE",
+      "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330826000015/nee-20251231.htm",
+      "sha256": "cf9ffcf356efec767141a62e61c36fe65613501ce1c68dbd453d212139f8d401",
+      "applied_value": 185000000,
+      "matches": [
+        {
+          "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+          "context": "c-1",
+          "excerpt": "\u2013 Net income for the years ended December 31, 2025, 2024 and 2023 includes approximately $185 million, $138 million and $139 million, respectively, of compensation costs and $33 million, $29 million and $26 million, respectively, of income tax benefits related to stock-based compensation arrangements. Compensation cost capitalized for the years ended December 31, 2025, 2024 and 2023 was not material. As of December 31, 2025, there were approximately $196 million of unrecognized compensation costs related to nonvested/nonexercisable stock-based compensation arrangements. These costs are expected to be recognized over a weighted-average period of 1.9 years."
+        }
+      ],
+      "disposition": "PRIMARY_SCOPE_REVIEWED_NOT_ECONOMIC_CLEARANCE"
+    },
+    {
+      "ticker": "NSC",
+      "url": "https://www.sec.gov/Archives/edgar/data/702165/000162828026006268/nsc-20251231.htm",
+      "sha256": "25252cefd0cc3860834a826a457bbb423fe4398e4b257cdc0494d3c8b20c6a53",
+      "applied_value": 63000000,
+      "matches": [
+        {
+          "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+          "context": "c-1",
+          "excerpt": "We account for our grants of stock options, RSUs, PSUs, and dividend equivalent payments in accordance with FASB ASC 718, \u201cCompensation - Stock Compensation.\u201d Accordingly, all awards result in charges to net income while dividend equivalent payments, which are all related to equity classified awards, are charged to retained income. Compensation cost for the awards is recognized on a straight-line basis over the requisite service period for the entire award. Related compensation costs and tax benefits during the years were: 202520242023 ($ in millions)Stock-based compensation expense$63 $40 $40 Total tax benefit16 11 15 Stock Options Option exercise prices will be at least the higher of (i) the average of the high and low prices at which Common Stock is traded on the grant date, or (ii) the closing price of Common Stock on the grant date. All options are subject to a vesting period of at least one year, and the term of the option will not exceed ten years. Holders of the options granted under the LTIP who remain actively employed receive cash dividend equivalent payments for three or four years in an amount equal to the regular quarterly dividends paid on Common Stock.For all years prior to 2024, options granted under the LTIP and the TSOP may not be exercised prior to the fourth and third anniversaries of the date of grant, respectively, or if the optionee retires or dies before that anniversary date, may not be exercised before the later of one year after the grant date or the date of the optionee\u2019s retirement or death. Beginning in 2024, a prorated portion of the total LTIP award will vest on the first anniversary of the grant date continuing annually through the fourth anniversary of the grant date. The fair value of each option awarded was measured on the date of grant using the Black-Scholes valuation model. Expected volatility is based on implied volatility from traded options on, and historical volatility of, Common Stock. Historical data is used to estimate option exercises and employee terminations within the valuation model. Historical exercise data is used to estimate the average expected option term. The average risk-free interest rate is based on the U.S. Treasury yield curve in effect at the time of grant. A dividend yield of zero was used for the LTIP options during the vesting period. For 2025, 2024, and 2023, a dividend yield of 2.10%, 2.25%, and 2.24%, respectively, was used for the vested period during the remaining expected option term "
+        }
+      ],
+      "disposition": "PRIMARY_SCOPE_REVIEWED_NOT_ECONOMIC_CLEARANCE"
+    },
+    {
+      "ticker": "NWS",
+      "url": "https://www.sec.gov/Archives/edgar/data/1564708/000156470826000175/nws-20260630.htm",
+      "sha256": "f41ad8f07e948d949b657e611c188802247ab1508e2b7e1ab82a36e9b1ac6306",
+      "applied_value": 77000000,
+      "matches": [
+        {
+          "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+          "context": "c-1",
+          "excerpt": "The following table summarizes the Company\u2019s equity-based compensation expense reported in the Statements of Operations:For the fiscal years ended June 30,202620252024(in millions)Total equity compensation expense$77 $84 $91"
+        }
+      ],
+      "disposition": "PRIMARY_SCOPE_REVIEWED_NOT_ECONOMIC_CLEARANCE"
+    },
+    {
+      "ticker": "OXY",
+      "url": "https://www.sec.gov/Archives/edgar/data/797468/000162828026009059/oxy-20251231.htm",
+      "sha256": "66f76fa6c19de57e6063d5b32f1b66e38f67205746b3764d8311356a93df8d8b",
+      "applied_value": 234000000,
+      "matches": [
+        {
+          "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+          "context": "c-1",
+          "excerpt": "The Company incurred expenses of $234 million, $213 million and $203 million related to stock-based incentive plans in the years ended December 31, 2025, 2024 and 2023, respectively. The income tax benefit associated with this expense was $49 million, $45 million and $43 million in the years ended December 31, 2025, 2024 and 2023, respectively."
+        }
+      ],
+      "disposition": "PRIMARY_SCOPE_REVIEWED_NOT_ECONOMIC_CLEARANCE"
+    },
+    {
+      "ticker": "PRU",
+      "url": "https://www.sec.gov/Archives/edgar/data/1137774/000113777426000048/pru-20251231.htm",
+      "sha256": "d0b949e5b3eba0f53aecb518f61f0a5f634afe1f2458aa6d28fd058d0d8bef7c",
+      "applied_value": 257000000,
+      "matches": [
+        {
+          "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+          "context": "c-1",
+          "excerpt": "202520242023Omnibus Incentive Plan:TotalCompensation CostRecognized (1)Income TaxBenefitTotalCompensation CostRecognized (1)Income TaxBenefitTotalCompensation CostRecognized (1)Income TaxBenefit (in millions)Employee stock options$0 $0 $0 $0 $0 $0 Employee restricted stock units200 46 200 47 200 47 Employee performance shares and performance units57 13 114 27 54 12 Total$257 $59 $314 $74 $254 $59"
+        }
+      ],
+      "disposition": "PRIMARY_SCOPE_REVIEWED_NOT_ECONOMIC_CLEARANCE"
+    },
+    {
+      "ticker": "T",
+      "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271726000120/t-20251231.htm",
+      "sha256": "7908ba0b1d0caad63d954694ff7c9745c5e1b91ee810bed4fc86769e6bb3fc7e",
+      "applied_value": 536000000,
+      "matches": [
+        {
+          "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+          "context": "c-1",
+          "excerpt": "Our consolidated statements of income include the share-based compensation cost recognized for the plans described above as \u201cSelling, general and administrative\u201d expense. Those expenses, as well as the associated tax benefits, are reflected in the table below:202520242023Performance stock units$152 $127 $79 Restricted stock and stock units384 378 400 Total$536 $505 $479 Income tax benefit$130 $123 $118"
+        }
+      ],
+      "disposition": "PRIMARY_SCOPE_REVIEWED_NOT_ECONOMIC_CLEARANCE"
+    },
+    {
+      "ticker": "UAL",
+      "url": "https://www.sec.gov/Archives/edgar/data/100517/000010051726000023/ual-20251231.htm",
+      "sha256": "93a091fbe148cd99b23e67160201164f6d0c99f623e7c0161f4a0ebce1f0370a",
+      "applied_value": 148000000,
+      "matches": [
+        {
+          "tag": "us-gaap:AllocatedShareBasedCompensationExpense",
+          "context": "c-1",
+          "excerpt": "The following table provides information related to UAL's share-based compensation plan cost for the years ended December 31 (in millions):Compensation cost202520242023RSUs$147 $141 $78 Stock options 1 1 2 Total$148 $142 $80"
+        }
+      ],
+      "disposition": "PRIMARY_SCOPE_REVIEWED_NOT_ECONOMIC_CLEARANCE"
+    }
+  ],
+  "candidate_promoted": false,
+  "economic_clearance": false
+}

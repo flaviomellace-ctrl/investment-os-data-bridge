@@ -1,0 +1,5823 @@
+[
+  {
+    "ticker": "NVDA",
+    "annual_adsh": "0001045810-26-000021",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AAPL",
+    "annual_adsh": "0000320193-25-000079",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MSFT",
+    "annual_adsh": "0001193125-26-323660",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AMZN",
+    "annual_adsh": "0001018724-26-000004",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "GOOGL",
+    "annual_adsh": "0001652044-26-000018",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AVGO",
+    "annual_adsh": "0001730168-25-000121",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "GOOG",
+    "annual_adsh": "0001652044-26-000018",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "META",
+    "annual_adsh": "0001628280-26-003942",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MU",
+    "annual_adsh": "0000723125-25-000028",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TSLA",
+    "annual_adsh": "0001628280-26-003952",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AMD",
+    "annual_adsh": "0000002488-26-000018",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "BRK.B",
+    "annual_adsh": "0001193125-26-083899",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "LLY",
+    "annual_adsh": "0000059478-26-000013",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "JPM",
+    "annual_adsh": "0001628280-26-008131",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE",
+      "BANK_FUNDING_PERIMETER_UNRESOLVED"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "XOM",
+    "annual_adsh": "",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_OPERATING_CASH_FLOW",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "V",
+    "annual_adsh": "0001403161-25-000089",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "JNJ",
+    "annual_adsh": "0000200406-26-000016",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "INTC",
+    "annual_adsh": "0000050863-26-000011",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "WMT",
+    "annual_adsh": "0000104169-26-000055",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ABBV",
+    "annual_adsh": "0001551152-26-000008",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PLTR",
+    "annual_adsh": "0001321655-26-000011",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MA",
+    "annual_adsh": "0001141391-26-000013",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CSCO",
+    "annual_adsh": "0000858877-26-000132",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "COST",
+    "annual_adsh": "0000909832-25-000101",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CVX",
+    "annual_adsh": "0000093410-26-000078",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES",
+      "STRICT_DEBT_PERIMETER_UNRESOLVED"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AMAT",
+    "annual_adsh": "0001628280-25-056742",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "LRCX",
+    "annual_adsh": "0000707549-26-000037",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CAT",
+    "annual_adsh": "0000018230-26-000008",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MRK",
+    "annual_adsh": "0000310158-26-000063",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "BAC",
+    "annual_adsh": "0000070858-26-000157",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PG",
+    "annual_adsh": "0000080424-26-000103",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PANW",
+    "annual_adsh": "0001327567-26-000023",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "KO",
+    "annual_adsh": "0001628280-26-010047",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "UNH",
+    "annual_adsh": "0000731766-26-000062",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "GE",
+    "annual_adsh": "0000040545-26-000008",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PM",
+    "annual_adsh": "0001628280-26-005939",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "NFLX",
+    "annual_adsh": "0001065280-26-000034",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "HD",
+    "annual_adsh": "0001628280-26-019436",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CRWD",
+    "annual_adsh": "0001535527-26-000010",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "GEV",
+    "annual_adsh": "0001996810-26-000015",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "GS",
+    "annual_adsh": "0000886982-26-000091",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TXN",
+    "annual_adsh": "0000097476-26-000059",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "KLAC",
+    "annual_adsh": "0000319201-26-000027",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "WFC",
+    "annual_adsh": "0000072971-26-000133",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "RTX",
+    "annual_adsh": "0000101829-26-000006",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ORCL",
+    "annual_adsh": "0001193125-26-277521",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TMO",
+    "annual_adsh": "0000097745-26-000018",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MRVL",
+    "annual_adsh": "0001835632-26-000011",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "SNDK",
+    "annual_adsh": "0001628280-26-057406",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MS",
+    "annual_adsh": "0000895421-26-000086",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ANET",
+    "annual_adsh": "0001596532-26-000013",
+    "screen_has_open_items": true,
+    "reasons": [
+      "ECONOMIC_CASE_REMAINS_BLOCKED"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AMGN",
+    "annual_adsh": "0000318154-26-000010",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "LIN",
+    "annual_adsh": "0001628280-26-011430",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "C",
+    "annual_adsh": "0000831001-26-000011",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "APH",
+    "annual_adsh": "0001104659-26-013549",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "IBM",
+    "annual_adsh": "0000051143-26-000010",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ADI",
+    "annual_adsh": "0000006281-25-000153",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CRM",
+    "annual_adsh": "0001108524-26-000060",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "GILD",
+    "annual_adsh": "0000882095-26-000006",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "QCOM",
+    "annual_adsh": "0000804328-25-000085",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DIS",
+    "annual_adsh": "0001744489-25-000155",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "STX",
+    "annual_adsh": "0001137789-26-000159",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DELL",
+    "annual_adsh": "0001571996-26-000008",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "VZ",
+    "annual_adsh": "0000732712-26-000007",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ABT",
+    "annual_adsh": "0001628280-26-010185",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PEP",
+    "annual_adsh": "0000077476-26-000007",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ETN",
+    "annual_adsh": "0001551182-26-000007",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MCD",
+    "annual_adsh": "0000063908-26-000035",
+    "screen_has_open_items": true,
+    "reasons": [
+      "DOCUMENTED_SHARE_UNIT_CORRECTION_NOT_REAPPLIED"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "UNP",
+    "annual_adsh": "0000100885-26-000037",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "WELL",
+    "annual_adsh": "0000766704-26-000010",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "PRIOR_REVENUE_POLICY_REQUIRES_RECONCILIATION"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AXP",
+    "annual_adsh": "0000004962-26-000080",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "NEE",
+    "annual_adsh": "0000753308-26-000015",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PFE",
+    "annual_adsh": "0000078003-26-000026",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "COP",
+    "annual_adsh": "0001163165-26-000009",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "SCHW",
+    "annual_adsh": "0000316709-26-000009",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DE",
+    "annual_adsh": "0001104659-25-122321",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "BLK",
+    "annual_adsh": "0001193125-26-071966",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TJX",
+    "annual_adsh": "0000109198-26-000008",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "T",
+    "annual_adsh": "0000732717-26-000120",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "BA",
+    "annual_adsh": "0001628280-26-004357",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ISRG",
+    "annual_adsh": "0001035267-26-000010",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "UBER",
+    "annual_adsh": "0001543151-26-000015",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "NOW",
+    "annual_adsh": "0001373715-26-000007",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "WDC",
+    "annual_adsh": "0001628280-26-057139",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DHR",
+    "annual_adsh": "0000313616-26-000062",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "VRTX",
+    "annual_adsh": "0000875320-26-000056",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ACN",
+    "annual_adsh": "0001467373-25-000217",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MPC",
+    "annual_adsh": "0001510295-26-000009",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PGR",
+    "annual_adsh": "0000080661-26-000086",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "VLO",
+    "annual_adsh": "0001628280-26-011499",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "GLW",
+    "annual_adsh": "0000024741-26-000124",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "NEM",
+    "annual_adsh": "0001164727-26-000010",
+    "screen_has_open_items": true,
+    "reasons": [
+      "ECONOMIC_CASE_REMAINS_BLOCKED",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "SPGI",
+    "annual_adsh": "0000064040-26-000013",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PLD",
+    "annual_adsh": "0001193125-26-051453",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "COF",
+    "annual_adsh": "0000927628-26-000024",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_REVENUE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PH",
+    "annual_adsh": "0000076334-26-000105",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "BMY",
+    "annual_adsh": "0000014272-26-000004",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "BKNG",
+    "annual_adsh": "0001075531-26-000009",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "FTNT",
+    "annual_adsh": "0001262039-26-000007",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MO",
+    "annual_adsh": "0000764180-26-000017",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CB",
+    "annual_adsh": "0000896159-26-000005",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MDT",
+    "annual_adsh": "0001628280-26-044354",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PSX",
+    "annual_adsh": "0001534701-26-000006",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CVS",
+    "annual_adsh": "0000064803-26-000010",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MCK",
+    "annual_adsh": "0000927653-26-000069",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ADP",
+    "annual_adsh": "0000008670-26-000030",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PWR",
+    "annual_adsh": "0001050915-26-000006",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "FCX",
+    "annual_adsh": "0000831259-26-000012",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TT",
+    "annual_adsh": "0001628280-26-005731",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "LOW",
+    "annual_adsh": "0000060667-26-000029",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "LMT",
+    "annual_adsh": "0001628280-26-004195",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "SBUX",
+    "annual_adsh": "0000829224-25-000114",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "EQIX",
+    "annual_adsh": "0001101239-26-000032",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CME",
+    "annual_adsh": "0001156375-26-000009",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "SO",
+    "annual_adsh": "0000092122-26-000006",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DDOG",
+    "annual_adsh": "0001628280-26-008819",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CEG",
+    "annual_adsh": "0001868275-26-000032",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE",
+      "PRIOR_REVENUE_POLICY_REQUIRES_RECONCILIATION"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "LITE",
+    "annual_adsh": "0001628280-26-057358",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "SNPS",
+    "annual_adsh": "0000883241-25-000028",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CDNS",
+    "annual_adsh": "0000813672-26-000016",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "HPE",
+    "annual_adsh": "0001645590-25-000130",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "SYK",
+    "annual_adsh": "0000310764-26-000010",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "BNY",
+    "annual_adsh": "0001390777-26-000033",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ADBE",
+    "annual_adsh": "0000796343-26-000003",
+    "screen_has_open_items": true,
+    "reasons": [
+      "ECONOMIC_CASE_REMAINS_BLOCKED",
+      "ROSCA_UNRESOLVED"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "JCI",
+    "annual_adsh": "0000833444-25-000097",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_OPERATING_CASH_FLOW",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "VRT",
+    "annual_adsh": "0001674101-26-000008",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DUK",
+    "annual_adsh": "0001326160-26-000014",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "EMR",
+    "annual_adsh": "0000032604-25-000087",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "HWM",
+    "annual_adsh": "0000004281-26-000012",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ELV",
+    "annual_adsh": "0001156039-26-000013",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "WMB",
+    "annual_adsh": "0000107263-26-000006",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "USB",
+    "annual_adsh": "0000036104-26-000011",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE",
+      "BANK_FUNDING_PERIMETER_UNRESOLVED"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ICE",
+    "annual_adsh": "0001571949-26-000004",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PNC",
+    "annual_adsh": "0000713676-26-000020",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CSX",
+    "annual_adsh": "0000277948-26-000006",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "HOOD",
+    "annual_adsh": "0001783879-26-000023",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "BX",
+    "annual_adsh": "0001193125-26-082531",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AMT",
+    "annual_adsh": "0001053507-26-000035",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "GD",
+    "annual_adsh": "0000040533-26-000006",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MRSH",
+    "annual_adsh": "0000062709-26-000022",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MRNA",
+    "annual_adsh": "0001682852-26-000033",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "INTU",
+    "annual_adsh": "0000896878-26-000037",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "BE",
+    "annual_adsh": "0001628280-26-006516",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MMM",
+    "annual_adsh": "0000066740-26-000014",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MAR",
+    "annual_adsh": "0001048286-26-000007",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "EOG",
+    "annual_adsh": "0000821189-26-000054",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "WM",
+    "annual_adsh": "0001104659-26-012049",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MDLZ",
+    "annual_adsh": "0001628280-26-005345",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TRV",
+    "annual_adsh": "0000086312-26-000065",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "APP",
+    "annual_adsh": "0001751008-26-000010",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CI",
+    "annual_adsh": "0001739940-26-000006",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DASH",
+    "annual_adsh": "0001792789-26-000013",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MSI",
+    "annual_adsh": "0000068505-26-000010",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "HLT",
+    "annual_adsh": "0001585689-26-000007",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "REGN",
+    "annual_adsh": "0000872589-26-000008",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CMCSA",
+    "annual_adsh": "0001628280-26-004994",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "ECONOMIC_CASE_REMAINS_BLOCKED",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "SHW",
+    "annual_adsh": "0000089800-26-000008",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "SLB",
+    "annual_adsh": "0001193125-26-021017",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "GM",
+    "annual_adsh": "0001467858-26-000013",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "ECONOMIC_CASE_REMAINS_BLOCKED",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CMI",
+    "annual_adsh": "0000026172-26-000009",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TMUS",
+    "annual_adsh": "0001283699-26-000010",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "NSC",
+    "annual_adsh": "0001628280-26-006268",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ROST",
+    "annual_adsh": "0000745732-26-000006",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ECL",
+    "annual_adsh": "0001104659-26-018357",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "UPS",
+    "annual_adsh": "0001628280-26-008432",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CL",
+    "annual_adsh": "0000021665-26-000006",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "RCL",
+    "annual_adsh": "0000884887-26-000007",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ORLY",
+    "annual_adsh": "0000898173-26-000009",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TGT",
+    "annual_adsh": "0000027419-26-000016",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CTAS",
+    "annual_adsh": "0000723254-26-000028",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ABNB",
+    "annual_adsh": "0001559720-26-000004",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MCO",
+    "annual_adsh": "0001628280-26-009136",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ITW",
+    "annual_adsh": "0000049826-26-000008",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MPWR",
+    "annual_adsh": "0001437749-26-006113",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AEP",
+    "annual_adsh": "0000004904-26-000013",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "HCA",
+    "annual_adsh": "0001193125-26-044769",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "HON",
+    "annual_adsh": "0000773840-26-000013",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "URI",
+    "annual_adsh": "0001067701-26-000007",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "KEYS",
+    "annual_adsh": "0001601046-25-000127",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "SPG",
+    "annual_adsh": "0001104659-26-019419",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "NOC",
+    "annual_adsh": "0001133421-26-000003",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "FDX",
+    "annual_adsh": "0001048911-26-000105",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "KMI",
+    "annual_adsh": "0001506307-26-000011",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CIEN",
+    "annual_adsh": "0001628280-25-056698",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TEL",
+    "annual_adsh": "0001104659-25-109150",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TER",
+    "annual_adsh": "0001193125-26-059002",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "KKR",
+    "annual_adsh": "0001404912-26-000007",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DLR",
+    "annual_adsh": "0001104659-26-015365",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "APD",
+    "annual_adsh": "0000002969-25-000055",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_OPERATING_CASH_FLOW"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MNST",
+    "annual_adsh": "0001104659-26-020831",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "BSX",
+    "annual_adsh": "0000885725-26-000010",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "COR",
+    "annual_adsh": "0001140859-25-000131",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TRGP",
+    "annual_adsh": "0001193125-26-059296",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "COHR",
+    "annual_adsh": "0000820318-26-000020",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TDG",
+    "annual_adsh": "0001260221-25-000081",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "FIX",
+    "annual_adsh": "0001104659-26-017530",
+    "screen_has_open_items": true,
+    "reasons": [
+      "ECONOMIC_CASE_REMAINS_BLOCKED"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AJG",
+    "annual_adsh": "0001628280-26-008662",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "FAST",
+    "annual_adsh": "0000815556-26-000009",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AON",
+    "annual_adsh": "0001628280-26-008116",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ALL",
+    "annual_adsh": "0000899051-26-000031",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "NXPI",
+    "annual_adsh": "0001413447-26-000008",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AME",
+    "annual_adsh": "0001037868-26-000016",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PCAR",
+    "annual_adsh": "0001193125-26-057025",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "OKE",
+    "annual_adsh": "0001039684-26-000006",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "NUE",
+    "annual_adsh": "0001193125-26-071575",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "BKR",
+    "annual_adsh": "0001701605-26-000007",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TFC",
+    "annual_adsh": "0000092230-26-000030",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "APO",
+    "annual_adsh": "0001858681-26-000013",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "GWW",
+    "annual_adsh": "0000277135-26-000011",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CAH",
+    "annual_adsh": "0000721371-26-000038",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "D",
+    "annual_adsh": "0001193125-26-063120",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CRH",
+    "annual_adsh": "0001628280-26-009043",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "SRE",
+    "annual_adsh": "0001032208-26-000010",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DVN",
+    "annual_adsh": "0001193125-26-056485",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MET",
+    "annual_adsh": "0001099219-26-000013",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES",
+      "INSURANCE_FUNDING_PERIMETER_UNRESOLVED"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "HUM",
+    "annual_adsh": "0000049071-26-000009",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "P",
+    "annual_adsh": "0001474432-26-000027",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "O",
+    "annual_adsh": "0000726728-26-000011",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AFL",
+    "annual_adsh": "0001628280-26-011402",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "VST",
+    "annual_adsh": "0001692819-26-000006",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "HONA",
+    "annual_adsh": "",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_OPERATING_CASH_FLOW",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "BDX",
+    "annual_adsh": "0000010795-25-000099",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_OPERATING_CASH_FLOW",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ADSK",
+    "annual_adsh": "0000769397-26-000015",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "EW",
+    "annual_adsh": "0001099800-26-000009",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "VYLR",
+    "annual_adsh": "",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_OPERATING_CASH_FLOW",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DAL",
+    "annual_adsh": "0000027904-26-000013",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PSA",
+    "annual_adsh": "0001628280-26-007696",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "A",
+    "annual_adsh": "0001090872-25-000087",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ROK",
+    "annual_adsh": "0001024478-25-000116",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "WAB",
+    "annual_adsh": "0001628280-26-008067",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ETR",
+    "annual_adsh": "0000065984-26-000174",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "STT",
+    "annual_adsh": "0000093751-26-000124",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC",
+      "BANK_FUNDING_PERIMETER_UNRESOLVED"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AZO",
+    "annual_adsh": "0001104659-25-102611",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "F",
+    "annual_adsh": "0000037996-26-000015",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PYPL",
+    "annual_adsh": "0001633917-26-000024",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "NTAP",
+    "annual_adsh": "0001193125-26-259683",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "XEL",
+    "annual_adsh": "0000072903-26-000009",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "FITB",
+    "annual_adsh": "0000035527-26-000124",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CARR",
+    "annual_adsh": "0001783180-26-000008",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CVNA",
+    "annual_adsh": "0001690820-26-000009",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "EBAY",
+    "annual_adsh": "0001065088-26-000027",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TWLO",
+    "annual_adsh": "0001447669-26-000021",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "GRMN",
+    "annual_adsh": "0001193125-26-056028",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "LHX",
+    "annual_adsh": "0000202058-26-000015",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "VEEV",
+    "annual_adsh": "0001393052-26-000014",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "FLEX",
+    "annual_adsh": "0000866374-26-000012",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AMP",
+    "annual_adsh": "0000820027-26-000011",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "ECONOMIC_CASE_REMAINS_BLOCKED",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "VMRK",
+    "annual_adsh": "0001193125-26-051433",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "OXY",
+    "annual_adsh": "0001628280-26-009059",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "KDP",
+    "annual_adsh": "0001418135-26-000016",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "EXC",
+    "annual_adsh": "0001109357-26-000018",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "WAT",
+    "annual_adsh": "0001193125-26-062604",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "IQV",
+    "annual_adsh": "0001628280-26-008322",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "FERG",
+    "annual_adsh": "",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_OPERATING_CASH_FLOW",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_REVENUE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "RSG",
+    "annual_adsh": "0001060391-26-000094",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "VTR",
+    "annual_adsh": "0000740260-26-000006",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ILMN",
+    "annual_adsh": "0001110803-26-000024",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "XYZ",
+    "annual_adsh": "0001628280-26-012254",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "NKE",
+    "annual_adsh": "0000320187-26-000088",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "NDAQ",
+    "annual_adsh": "0001628280-26-007703",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MSCI",
+    "annual_adsh": "0001408198-26-000011",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MCHP",
+    "annual_adsh": "0000827054-26-000016",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "IDXX",
+    "annual_adsh": "0000874716-26-000038",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AIG",
+    "annual_adsh": "0000005272-26-000023",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "COIN",
+    "annual_adsh": "0001679788-26-000015",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CMG",
+    "annual_adsh": "0001058090-26-000009",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "IBKR",
+    "annual_adsh": "0001381197-26-000062",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "YUM",
+    "annual_adsh": "0001041061-26-000084",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "FANG",
+    "annual_adsh": "0001539838-26-000010",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ED",
+    "annual_adsh": "0001047862-26-000031",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PRU",
+    "annual_adsh": "0001137774-26-000048",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ADM",
+    "annual_adsh": "0000007084-26-000011",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TTWO",
+    "annual_adsh": "0001628280-26-037434",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "SYY",
+    "annual_adsh": "0000096021-26-000033",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "WDAY",
+    "annual_adsh": "0001327811-26-000014",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CBRE",
+    "annual_adsh": "0001138118-26-000005",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PEG",
+    "annual_adsh": "0001193125-26-077446",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ROP",
+    "annual_adsh": "0000882835-26-000009",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "KR",
+    "annual_adsh": "0001104659-26-037723",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "UAL",
+    "annual_adsh": "0000100517-26-000023",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "HIG",
+    "annual_adsh": "0000874766-26-000012",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "EME",
+    "annual_adsh": "0000105634-26-000025",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AXON",
+    "annual_adsh": "0001628280-26-011360",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DHI",
+    "annual_adsh": "0000882184-25-000081",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "IRM",
+    "annual_adsh": "0001020569-26-000013",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "KVUE",
+    "annual_adsh": "0001944048-26-000030",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ODFL",
+    "annual_adsh": "0001193125-26-067161",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CCI",
+    "annual_adsh": "0001051470-26-000016",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "WEC",
+    "annual_adsh": "0000783325-26-000018",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CCL",
+    "annual_adsh": "0000815097-26-000007",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "BIIB",
+    "annual_adsh": "0000875045-26-000013",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "RMD",
+    "annual_adsh": "0000943819-26-000047",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PAYX",
+    "annual_adsh": "0001193125-26-307785",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "EQT",
+    "annual_adsh": "0000033213-26-000018",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "KMB",
+    "annual_adsh": "0001628280-26-007567",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ACGL",
+    "annual_adsh": "0000947484-26-000017",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CNC",
+    "annual_adsh": "0001071739-26-000049",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "STLD",
+    "annual_adsh": "0001104659-26-021395",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "JBL",
+    "annual_adsh": "0001628280-25-045293",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CBOE",
+    "annual_adsh": "0001628280-26-010013",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "VMC",
+    "annual_adsh": "0001628280-26-009546",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DXCM",
+    "annual_adsh": "0001093557-26-000027",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "EXPE",
+    "annual_adsh": "0001324424-26-000008",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MTB",
+    "annual_adsh": "0000036270-26-000010",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MTD",
+    "annual_adsh": "0001037646-26-000011",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "HBAN",
+    "annual_adsh": "0000049196-26-000015",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ZTS",
+    "annual_adsh": "0001555280-26-000011",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "NTRS",
+    "annual_adsh": "0000073124-26-000016",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ON",
+    "annual_adsh": "0001097864-26-000006",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "GEHC",
+    "annual_adsh": "0001932393-26-000007",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_OPERATING_CASH_FLOW",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PCG",
+    "annual_adsh": "0001004980-26-000009",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MLM",
+    "annual_adsh": "0001193125-26-059193",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "WSM",
+    "annual_adsh": "0000719955-26-000059",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "EXR",
+    "annual_adsh": "0001289490-26-000011",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TDY",
+    "annual_adsh": "0001094285-26-000017",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AEE",
+    "annual_adsh": "0001002910-26-000009",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DG",
+    "annual_adsh": "0001104659-26-032325",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "HPQ",
+    "annual_adsh": "0000047217-25-000071",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "RJF",
+    "annual_adsh": "0000720005-25-000093",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "WTW",
+    "annual_adsh": "0001193125-26-069307",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ATO",
+    "annual_adsh": "0000731802-25-000056",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "HAL",
+    "annual_adsh": "0000045012-26-000015",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "FFIV",
+    "annual_adsh": "0001048695-25-000157",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "IR",
+    "annual_adsh": "0001628280-26-008617",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "LYV",
+    "annual_adsh": "0001335258-26-000009",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CFG",
+    "annual_adsh": "0000759944-26-000028",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CTSH",
+    "annual_adsh": "0001058290-26-000008",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "Q",
+    "annual_adsh": "0002058873-26-000010",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DTE",
+    "annual_adsh": "0000936340-26-000054",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ARES",
+    "annual_adsh": "0001628280-26-011413",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CPAY",
+    "annual_adsh": "0001175454-26-000018",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "WST",
+    "annual_adsh": "0000105770-26-000010",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PPL",
+    "annual_adsh": "0000922224-26-000008",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DGX",
+    "annual_adsh": "0001022079-26-000015",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AWK",
+    "annual_adsh": "0001410636-26-000034",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DOV",
+    "annual_adsh": "0000029905-26-000009",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_OPERATING_CASH_FLOW"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "EXPD",
+    "annual_adsh": "0001193125-26-071569",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CNP",
+    "annual_adsh": "0001130310-26-000008",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "LH",
+    "annual_adsh": "0000920148-26-000111",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "VICI",
+    "annual_adsh": "0001705696-26-000034",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "HUBB",
+    "annual_adsh": "0001628280-26-007500",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "OTIS",
+    "annual_adsh": "0001781335-26-000011",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CINF",
+    "annual_adsh": "0000020286-26-000008",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ES",
+    "annual_adsh": "0001628280-26-008461",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "VRSN",
+    "annual_adsh": "0001014473-26-000006",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "FISV",
+    "annual_adsh": "0000798354-26-000009",
+    "screen_has_open_items": true,
+    "reasons": [
+      "ECONOMIC_CASE_REMAINS_BLOCKED"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ULTA",
+    "annual_adsh": "0001104659-26-035243",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "EL",
+    "annual_adsh": "0001001250-26-000041",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CASY",
+    "annual_adsh": "0000726958-26-000046",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "XYL",
+    "annual_adsh": "0001524472-26-000012",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "HSY",
+    "annual_adsh": "0001628280-26-008586",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "VLTO",
+    "annual_adsh": "0001967680-26-000011",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "SMCI",
+    "annual_adsh": "0001375365-26-000022",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "SYF",
+    "annual_adsh": "0001601712-26-000006",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "FE",
+    "annual_adsh": "0001031296-26-000046",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "RDDT",
+    "annual_adsh": "0001713445-26-000022",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "VRSK",
+    "annual_adsh": "0001437749-26-004452",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CHD",
+    "annual_adsh": "0001193125-26-048139",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PPG",
+    "annual_adsh": "0000079879-26-000046",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "RF",
+    "annual_adsh": "0001281761-26-000019",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TPR",
+    "annual_adsh": "0001116132-26-000018",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CPRT",
+    "annual_adsh": "0001193125-26-405731",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "NRG",
+    "annual_adsh": "0001013871-26-000004",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DLTR",
+    "annual_adsh": "0000935703-26-000025",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_OPERATING_CASH_FLOW",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TROW",
+    "annual_adsh": "0001628280-26-008002",
+    "screen_has_open_items": true,
+    "reasons": [
+      "ECONOMIC_CASE_REMAINS_BLOCKED",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DRI",
+    "annual_adsh": "0000940944-26-000025",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_OPERATING_CASH_FLOW"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "SW",
+    "annual_adsh": "0001628280-26-012555",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_OPERATING_CASH_FLOW",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "IFF",
+    "annual_adsh": "0000051253-26-000006",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "EIX",
+    "annual_adsh": "0000827052-26-000012",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TPL",
+    "annual_adsh": "0001811074-26-000018",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "STE",
+    "annual_adsh": "0001628280-26-039136",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PHM",
+    "annual_adsh": "0000822416-26-000007",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "OMC",
+    "annual_adsh": "0000029989-26-000006",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PTC",
+    "annual_adsh": "0001193125-25-291326",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PFG",
+    "annual_adsh": "0001104659-26-017031",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CMS",
+    "annual_adsh": "0000811156-26-000004",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DOW",
+    "annual_adsh": "0001751788-26-000018",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PKG",
+    "annual_adsh": "0001193125-26-074129",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "LUV",
+    "annual_adsh": "0000092380-26-000004",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "EXE",
+    "annual_adsh": "0000895126-26-000011",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "VTRS",
+    "annual_adsh": "0001792044-26-000013",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "NI",
+    "annual_adsh": "0001111711-26-000027",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "SBAC",
+    "annual_adsh": "0001034054-26-000002",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "KHC",
+    "annual_adsh": "0001637459-26-000009",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_REVENUE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AMCR",
+    "annual_adsh": "0001748790-26-000022",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "INCY",
+    "annual_adsh": "0000879169-26-000010",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "FSLR",
+    "annual_adsh": "0001274494-26-000021",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "BR",
+    "annual_adsh": "0001628280-26-052243",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "SNA",
+    "annual_adsh": "0000091440-26-000045",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "EVRG",
+    "annual_adsh": "0001711269-26-000017",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ZBRA",
+    "annual_adsh": "0001628280-26-007668",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "STZ",
+    "annual_adsh": "0000016918-26-000011",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "GPN",
+    "annual_adsh": "0001123360-26-000008",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "KEY",
+    "annual_adsh": "0001628280-26-010546",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "BRO",
+    "annual_adsh": "0001193125-26-046984",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TSCO",
+    "annual_adsh": "0000916365-26-000014",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DD",
+    "annual_adsh": "0001666700-26-000013",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_OPERATING_CASH_FLOW"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CDW",
+    "annual_adsh": "0001402057-26-000011",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "FIS",
+    "annual_adsh": "0001136893-26-000013",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_OPERATING_CASH_FLOW"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "L",
+    "annual_adsh": "0000060086-26-000008",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "GPC",
+    "annual_adsh": "0000040987-26-000003",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "FTV",
+    "annual_adsh": "0001659166-26-000007",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ESS",
+    "annual_adsh": "0000920522-26-000003",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "SWKS",
+    "annual_adsh": "0000004127-25-000085",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "NDSN",
+    "annual_adsh": "0000072331-25-000144",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "IEX",
+    "annual_adsh": "0000832101-26-000003",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "GIS",
+    "annual_adsh": "0001628280-26-046466",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "RVTY",
+    "annual_adsh": "0000031791-26-000012",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "BBY",
+    "annual_adsh": "0000764478-26-000009",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "EFX",
+    "annual_adsh": "0000033185-26-000010",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "JBHT",
+    "annual_adsh": "0001437749-26-005294",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "IP",
+    "annual_adsh": "0000051434-26-000055",
+    "screen_has_open_items": true,
+    "reasons": [
+      "ROW_BASIS_REVENUE_MISSING",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ZBH",
+    "annual_adsh": "0001193125-26-059853",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "LNT",
+    "annual_adsh": "0000352541-26-000007",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CF",
+    "annual_adsh": "0001324404-26-000007",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CHRW",
+    "annual_adsh": "0001043277-26-000009",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "J",
+    "annual_adsh": "0001628280-25-053316",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_REVENUE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "WRB",
+    "annual_adsh": "0000011544-26-000005",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "APA",
+    "annual_adsh": "0001841666-26-000015",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "BG",
+    "annual_adsh": "0001628280-26-009842",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "BALL",
+    "annual_adsh": "0001104659-26-017410",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "LYB",
+    "annual_adsh": "0001489393-26-000012",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AKAM",
+    "annual_adsh": "0001086222-26-000022",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "HST",
+    "annual_adsh": "0001070750-26-000054",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "LDOS",
+    "annual_adsh": "0001336920-26-000030",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TSN",
+    "annual_adsh": "0000100493-25-000095",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "NVR",
+    "annual_adsh": "0000906163-26-000018",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "KIM",
+    "annual_adsh": "0001193125-26-060760",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "LEN",
+    "annual_adsh": "0001628280-26-003870",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CRL",
+    "annual_adsh": "0001100682-26-000022",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "FICO",
+    "annual_adsh": "0000814547-25-000030",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "INVH",
+    "annual_adsh": "0001687229-26-000016",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TRMB",
+    "annual_adsh": "0000864749-26-000015",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "RL",
+    "annual_adsh": "0001628280-26-037074",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "FDXF",
+    "annual_adsh": "0001628280-26-053359",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "WY",
+    "annual_adsh": "0001193125-26-051422",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MAA",
+    "annual_adsh": "0001193125-26-041208",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MAS",
+    "annual_adsh": "0000062996-26-000005",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AIZ",
+    "annual_adsh": "0001267238-26-000010",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "SWK",
+    "annual_adsh": "0000093556-26-000009",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "GDDY",
+    "annual_adsh": "0001609711-26-000010",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "HAS",
+    "annual_adsh": "0000046080-26-000011",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "GNRC",
+    "annual_adsh": "0001437749-26-004568",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "IVZ",
+    "annual_adsh": "0000914208-26-000079",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "EG",
+    "annual_adsh": "0001095073-26-000006",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ECHO",
+    "annual_adsh": "0001104659-26-021817",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DOC",
+    "annual_adsh": "0001628280-26-005044",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TXT",
+    "annual_adsh": "0000217346-26-000006",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AVY",
+    "annual_adsh": "0000008818-26-000015",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "SJM",
+    "annual_adsh": "0000091419-26-000050",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_REVENUE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ALLE",
+    "annual_adsh": "0001579241-26-000007",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "GL",
+    "annual_adsh": "0000320335-26-000090",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "BAX",
+    "annual_adsh": "0001628280-26-007733",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "SOLV",
+    "annual_adsh": "0001964738-26-000007",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TYL",
+    "annual_adsh": "0000860731-26-000016",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "GEN",
+    "annual_adsh": "0000849399-26-000017",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "FOXA",
+    "annual_adsh": "0001628280-26-053960",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CSGP",
+    "annual_adsh": "0001057352-26-000020",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PNW",
+    "annual_adsh": "0000764622-26-000011",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ALB",
+    "annual_adsh": "0000915913-26-000018",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "IT",
+    "annual_adsh": "0000749251-26-000112",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "REG",
+    "annual_adsh": "0001193125-26-051668",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CHTR",
+    "annual_adsh": "0001091667-26-000017",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MKC",
+    "annual_adsh": "0000063754-26-000037",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TECH",
+    "annual_adsh": "0001104659-26-100322",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "LII",
+    "annual_adsh": "0001069202-26-000028",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DECK",
+    "annual_adsh": "0001628280-26-037664",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AES",
+    "annual_adsh": "0000874761-26-000063",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "NWSA",
+    "annual_adsh": "0001564708-26-000175",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_OPERATING_CASH_FLOW",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "JKHY",
+    "annual_adsh": "0000779152-26-000067",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "COO",
+    "annual_adsh": "0001628280-25-055615",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "TKO",
+    "annual_adsh": "0001193125-26-071651",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "HII",
+    "annual_adsh": "0001501585-26-000006",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DPZ",
+    "annual_adsh": "0001193125-26-062321",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "FDS",
+    "annual_adsh": "0001628280-25-045769",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CLX",
+    "annual_adsh": "0000021076-26-000034",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "UDR",
+    "annual_adsh": "0000074208-26-000013",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "LULU",
+    "annual_adsh": "0001397187-26-000020",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "CPT",
+    "annual_adsh": "0001628280-26-007697",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "BXP",
+    "annual_adsh": "0001037540-26-000006",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ALGN",
+    "annual_adsh": "0001097149-26-000014",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ROL",
+    "annual_adsh": "0000084839-26-000008",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PODD",
+    "annual_adsh": "0001145197-26-000028",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "BEN",
+    "annual_adsh": "0000038777-25-000238",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "APTV",
+    "annual_adsh": "0001521332-26-000009",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "LVS",
+    "annual_adsh": "0001300514-26-000013",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "UHS",
+    "annual_adsh": "0001193125-26-071676",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "PNR",
+    "annual_adsh": "0000077360-26-000007",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "FRT",
+    "annual_adsh": "0000034903-26-000017",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "HSIC",
+    "annual_adsh": "0001000228-26-000013",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "FOX",
+    "annual_adsh": "0001628280-26-053960",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "ECONOMIC_CASE_REMAINS_BLOCKED",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "NCLH",
+    "annual_adsh": "0001104659-26-022067",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ARE",
+    "annual_adsh": "0001035443-26-000013",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_REVENUE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "AOS",
+    "annual_adsh": "0000091142-26-000008",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "DVA",
+    "annual_adsh": "0000927066-26-000012",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MOS",
+    "annual_adsh": "0001285785-26-000017",
+    "screen_has_open_items": false,
+    "reasons": [],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "ERIE",
+    "annual_adsh": "0001628280-26-010666",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "HRL",
+    "annual_adsh": "0000048465-25-000059",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "WYNN",
+    "annual_adsh": "0001174922-26-000013",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_REVENUE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "MGM",
+    "annual_adsh": "0000789570-26-000018",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "SKYD",
+    "annual_adsh": "0002041610-26-000011",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "BF.B",
+    "annual_adsh": "0000014693-26-000024",
+    "screen_has_open_items": true,
+    "reasons": [
+      "LEVERAGE_INDETERMINATE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "NWS",
+    "annual_adsh": "0001564708-26-000175",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_OPERATING_CASH_FLOW",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  },
+  {
+    "ticker": "2602335D",
+    "annual_adsh": "",
+    "screen_has_open_items": true,
+    "reasons": [
+      "MISSING_ANNUAL_OPERATING_CASH_FLOW",
+      "MISSING_ANNUAL_CAPEX",
+      "MISSING_ANNUAL_SBC",
+      "MISSING_ANNUAL_REVENUE",
+      "MISSING_ANNUAL_DILUTED_SHARES",
+      "MISSING_PRIOR_DILUTED_SHARES",
+      "MISSING_FY_MINUS_3_DILUTED_SHARES"
+    ],
+    "economic_clearance": false,
+    "buy_add_allowed": false,
+    "system_live": false
+  }
+]

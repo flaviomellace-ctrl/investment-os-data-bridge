@@ -654,11 +654,26 @@ def source_validation(
 
 
 def main() -> int:
+    global CURRENT
     parser = argparse.ArgumentParser()
     parser.add_argument("--s1-run-id", default=None)
+    parser.add_argument("--research-data09", action="store_true", help="Explicit primary-document research extension; never promotion eligible")
+    parser.add_argument("--historical-base", action="store_true", help="DATA09 replay only; does not validate current canonical")
     args = parser.parse_args()
+    if args.historical_base:
+        if not args.research_data09:raise SystemExit("Historical base requires DATA09 research")
+        from br04_historical_base import restore
+        CURRENT = restore(ROOT)
 
-    s1_run_id, run_dir, s1 = locate_s1_run(args.s1_run_id)
+    research = None
+    if args.research_data09:
+        if args.s1_run_id:
+            raise SystemExit("Select either immutable S1 or DATA09 research")
+        import br04_data09_regression as data09
+        research = data09.prepare(ROOT)
+        s1_run_id, run_dir, s1 = data09.SOURCE_RUN, research["source"], research["metadata"]
+    else:
+        s1_run_id, run_dir, s1 = locate_s1_run(args.s1_run_id)
 
     candidate_path = run_dir / "candidate" / "sp500_fundamentals.csv"
     t00_path = run_dir / "evidence" / "br04_t00bis_report.json"
@@ -666,6 +681,11 @@ def main() -> int:
     custom_path = run_dir / "audit" / "br04_custom_lines_audit.csv"
     status_path = run_dir / "candidate" / "status_candidate.md"
     report_path = run_dir / "evidence" / "br04_regression.json"
+
+    if research:
+        candidate_path = research["candidate"]
+        status_path = research["status"]
+        report_path = research["research"] / "research_regression.json"
 
     required_paths = [
         CURRENT,
@@ -707,6 +727,12 @@ def main() -> int:
     cand_fields, candidate_rows = read_csv_dicts(candidate_path)
     _, components_rows = read_csv_dicts(components_path)
     _, custom_rows = read_csv_dicts(custom_path)
+    if research:
+        components_rows = research["components"]
+        custom_rows = research["custom"]
+
+    def is_verified_primary(row):
+        return bool(research and data09.component_identity(row) in research["primary_keys"])
 
     if len(base_matrix) != 504 or len(cand_matrix) != 504:
         raise SystemExit("S2_BLOCK: universo diverso da 504 righe")
@@ -1074,7 +1100,7 @@ def main() -> int:
     quarters_keys = list(s1.get("sec_quarters") or [])
     source = source_validation(
         candidate_rows=candidate_rows,
-        components_rows=components_rows,
+        components_rows=[r for r in components_rows if not is_verified_primary(r)],
         quarters_keys=quarters_keys,
     )
 
@@ -1095,6 +1121,10 @@ def main() -> int:
         if not adsh or not tag or value is None:
             continue
         checked += 1
+        if is_verified_primary(r):
+            # Exact pinned facts, filing, period, units and aggregate validated
+            # by data09.prepare; not represented as SEC FSDS NUM observations.
+            continue
         vals = source["good_num_values"].get(
             (adsh, tag, version, ddate, qtrs, uom),
             set(),
@@ -1414,6 +1444,14 @@ def main() -> int:
     checked = len(td_component_rows)
     failures = 0
     for r in td_component_rows:
+        if is_verified_primary(r):
+            # Primary sources have no PRE line number. Independently require
+            # the same filing, BS face, tag AND taxonomy version in SEC PRE.
+            versions = source["face_versions"].get(
+                (norm(r.get("adsh")), "BS", norm(r.get("tag"))), set())
+            if norm(r.get("fsds_version")) not in versions:
+                failures += 1
+            continue
         key = (
             norm(r.get("adsh")),
             norm(r.get("stmt")),
@@ -1871,6 +1909,7 @@ def main() -> int:
         "s2_run_id": norm(__import__("os").environ.get("GITHUB_RUN_ID")),
         "s1_run_id": s1_run_id,
         "base_canonical_sha256": base_sha,
+        "base_scope": "HISTORICAL_REPLAY" if args.historical_base else "CURRENT_CANONICAL",
         "candidate_sha256": candidate_sha,
         "candidate_rows": len(candidate_rows),
         "base_columns": len(base_header),
@@ -1895,6 +1934,18 @@ def main() -> int:
         ],
     }
 
+    if research:
+        report.update(schema="br04_data09_research_regression_v1", phase="S2_RESEARCH",
+                      original_fsds_contract_approval=False, candidate_promoted=False,
+                      buy_add_allowed=False, primary_source_validation={
+                          "evidence_sha256": research["audit"]["primary_evidence_sha256"],
+                          "primary_fact_links": research["audit"]["fact_links"],
+                          "retained_fsds_components": research["retained_fsds_components"],
+                          "superseded_fsds_components": research["superseded_fsds_components"],
+                          "source_s1_candidate_sha256": data09.rebase.INPUT_SHA,
+                          "T11_extension": "Hash-pinned primary XBRL fact validation",
+                          "T24_extension": "Independent PRE face membership including taxonomy version",
+                      })
     bridge.write_json_atomic(report_path, report)
 
     # Re-check after writing evidence.
@@ -1918,3 +1969,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

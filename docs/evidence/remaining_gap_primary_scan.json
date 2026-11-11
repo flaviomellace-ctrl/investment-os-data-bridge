@@ -1,0 +1,244 @@
+{
+  "schema": "archived_remaining_gap_source_scan_v1",
+  "input_scope": "S1 missing observations excluding corrected CEG; DATA09-15 amendments do not fill these fields",
+  "receipt_sha256": "668849c6473189cbdfde48b0818cd301a10a5d1272a2979e9241320e860ecc86",
+  "observations": [
+    {
+      "ticker": "FE",
+      "accession": "0001031296-26-000046",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "EmployeeServiceShareBasedCompensationAllocationOfRecognizedPeriodCostsCapitalizedAmount",
+          "value": "39000000",
+          "start": [
+            "2025-01-01"
+          ],
+          "id": "f-2116",
+          "unit": "usd",
+          "status": "INLINE_VALUE_AND_TABLE_VERIFIED",
+          "table_text": "For the Years Ended December 31,Components of Stock-based Compensation Plan Costs 202520242023(In millions)Restricted stock units $35 $32 $39 Restricted stock4 7 5 401(k) savings plan39 41 38 EDCP & DCPD7 6 1 Total stock based compensation costs $85 $86 $83 Stock-based compensation costs, net of amounts capitalized$39 $43 $44",
+          "table_sha256": "f1716ade452aa890d637c7871e59884a15311c51dc229a4e39dc5fb0bd8c2548",
+          "inline_scale": "6",
+          "primary_sha256": "0650dedafeba0b0bdd3f3ab575c237a293066840f6c7be0b121b57ed6ac128f0"
+        }
+      ],
+      "source_sha256": "6bc940d924195c43f04c61e95888db58dfbf51651f504b45357b98415b09fa85",
+      "candidate_modified": false,
+      "status": "SOURCE_EVIDENCE_ONLY_NOT_APPLIED"
+    },
+    {
+      "ticker": "WELL",
+      "accession": "0000766704-26-000010",
+      "field": "annual_capex",
+      "facts": [],
+      "source_sha256": "4aee80ad6bc251261296b134774371bf1ecbb8d4831c135ab283eba779d9f057",
+      "candidate_modified": false,
+      "status": "NO_ALLOWLIST_FACT_FOUND"
+    },
+    {
+      "ticker": "IP",
+      "accession": "0000051434-26-000055",
+      "field": "annual_sbc",
+      "facts": [],
+      "source_sha256": "21f61d00e22508c3509ffbf4e1cfd279ebc74e0a973d422de0a9c7adedb3ce24",
+      "candidate_modified": false,
+      "status": "NO_ALLOWLIST_FACT_FOUND"
+    },
+    {
+      "ticker": "IP",
+      "accession": "0000051434-26-000055",
+      "field": "annual_diluted_shares",
+      "facts": [
+        {
+          "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+          "value": "505700000",
+          "start": [
+            "2025-01-01"
+          ],
+          "id": "f-533",
+          "unit": "shares",
+          "status": "INLINE_VALUE_AND_TABLE_VERIFIED",
+          "table_text": "In millions, except per share amounts202520242023Earnings (loss) from continuing operations $(2,838)$725$313Weighted average common shares outstanding505.7347.2346.9Effect of dilutive securities (a)Restricted performance share plan\u20147.02.2Weighted average common shares outstanding \u2013 assuming dilution505.7354.2349.1Basic earnings (loss) per share from continuing operations$(5.61)$2.09$0.90Diluted earnings (loss) per share from continuing operations$(5.61)$2.05$0.89",
+          "table_sha256": "7b59d2f10e025263dfa2357556e68ffb8ce3ff5b3a9d353b48544c2c0981ce2b",
+          "inline_scale": "6",
+          "primary_sha256": "0368e6d41532c2d0cfbe6f8cc767eb8376caad9037037ae66e958783bf507c30"
+        }
+      ],
+      "source_sha256": "21f61d00e22508c3509ffbf4e1cfd279ebc74e0a973d422de0a9c7adedb3ce24",
+      "candidate_modified": false,
+      "status": "SOURCE_EVIDENCE_ONLY_NOT_APPLIED"
+    },
+    {
+      "ticker": "MET",
+      "accession": "0001099219-26-000013",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "value": "131000000",
+          "start": [
+            "2025-01-01"
+          ],
+          "id": "f-7820",
+          "unit": "usd",
+          "status": "INLINE_VALUE_AND_TABLE_VERIFIED",
+          "table_text": "Years Ended December 31,202520242023(In millions)Stock Options and Unit Options (1)$2 $7 $7 Performance Shares and Performance Units (2)53 87 98 Restricted Stock Units and Restricted Units76 74 66 Total compensation expense$131 $168 $171 Income tax benefit$28 $35 $36",
+          "table_sha256": "6839a08729db799632d40d266397c7eced57bd8cf9ae4c6fa978c1ce3dc1d847",
+          "inline_scale": "6",
+          "primary_sha256": "f289e04ec404625df12e74a4501af641a8a2e405a34409ed841392a49d6d5138"
+        }
+      ],
+      "source_sha256": "c8b1f2c98270ef998a030ecfc158ae8d4d097dfbed71c658c31c98579ba27a9a",
+      "candidate_modified": false,
+      "status": "SOURCE_EVIDENCE_ONLY_NOT_APPLIED"
+    },
+    {
+      "ticker": "MET",
+      "accession": "0001099219-26-000013",
+      "field": "annual_capex",
+      "facts": [],
+      "source_sha256": "c8b1f2c98270ef998a030ecfc158ae8d4d097dfbed71c658c31c98579ba27a9a",
+      "candidate_modified": false,
+      "status": "NO_ALLOWLIST_FACT_FOUND"
+    },
+    {
+      "ticker": "MET",
+      "accession": "0001099219-26-000013",
+      "field": "annual_diluted_shares",
+      "facts": [
+        {
+          "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+          "value": "673300000",
+          "start": [
+            "2025-01-01"
+          ],
+          "id": "f-9100",
+          "unit": "shares",
+          "status": "INLINE_VALUE_AND_TABLE_VERIFIED",
+          "table_text": "Years Ended December 31,202520242023(In millions, except per share data)Weighted Average Shares:Weighted average common stock outstanding - basic668.9 706.4 757.7 Incremental common shares from assumed exercise or issuance of stock-based awards4.4 4.7 4.6 Weighted average common stock outstanding - diluted673.3 711.1 762.3 Net Income (Loss):Net income (loss)$3,403 $4,444 $1,602 Less: Net income (loss) attributable to noncontrolling interests24 18 24 Less: Preferred stock dividends194 200 198 Preferred stock redemption premium12 \u2014 \u2014 Net income (loss) available to MetLife, Inc.\u2019s common shareholders$3,173 $4,226 $1,380 Basic$4.74 $5.98 $1.82 Diluted$4.71 $5.94 $1.81",
+          "table_sha256": "db272d5cd05a3340d9b442b8403de24d57a4af263561eba34e188fcccffbb116",
+          "inline_scale": "6",
+          "primary_sha256": "f289e04ec404625df12e74a4501af641a8a2e405a34409ed841392a49d6d5138"
+        }
+      ],
+      "source_sha256": "c8b1f2c98270ef998a030ecfc158ae8d4d097dfbed71c658c31c98579ba27a9a",
+      "candidate_modified": false,
+      "status": "SOURCE_EVIDENCE_ONLY_NOT_APPLIED"
+    },
+    {
+      "ticker": "JPM",
+      "accession": "0001628280-26-008131",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "ShareBasedCompensation",
+          "value": "3614000000",
+          "start": [
+            "2025-01-01"
+          ],
+          "id": "f-3871",
+          "unit": "usd",
+          "status": "INLINE_VALUE_AND_TABLE_VERIFIED",
+          "table_text": "Year ended December 31, (in millions)202520242023Cost of prior grants of RSUs, PSUs and SARs that are amortized over their applicable vesting periods$1,541 $1,622 $1,510 Accrual of estimated costs of share-based awards to be granted in future periods, predominantly those to full-career eligible employees2,073 1,882 1,607 Total noncash compensation expense related to employee share-based incentive plans$3,614 $3,504 $3,117",
+          "table_sha256": "e254d0e30fc6f31304926e78a95d686c74f7161c2c3fb26002a954d7a8ed4690",
+          "inline_scale": "6",
+          "primary_sha256": "c92ca3fb1db48edf5843a8a721a78cdca4ad21091d8efaf6165dc57dfe688a81"
+        }
+      ],
+      "source_sha256": "9fe211a6d6f7ec3af368f81c820868b54d7ea02ca2fe9776e72d7a41e2472126",
+      "candidate_modified": false,
+      "status": "SOURCE_EVIDENCE_ONLY_NOT_APPLIED"
+    },
+    {
+      "ticker": "JPM",
+      "accession": "0001628280-26-008131",
+      "field": "annual_capex",
+      "facts": [],
+      "source_sha256": "9fe211a6d6f7ec3af368f81c820868b54d7ea02ca2fe9776e72d7a41e2472126",
+      "candidate_modified": false,
+      "status": "NO_ALLOWLIST_FACT_FOUND"
+    },
+    {
+      "ticker": "CVX",
+      "accession": "0000093410-26-000078",
+      "field": "annual_sbc",
+      "facts": [],
+      "source_sha256": "383742ba0900c6bad8fbea17085f2854a2264ca1d3673de71654c94b76ddbe98",
+      "candidate_modified": false,
+      "status": "NO_ALLOWLIST_FACT_FOUND"
+    },
+    {
+      "ticker": "CVX",
+      "accession": "0000093410-26-000078",
+      "field": "annual_diluted_shares",
+      "facts": [
+        {
+          "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+          "value": "1856000000",
+          "start": [
+            "2025-01-01"
+          ],
+          "id": "f-1148",
+          "unit": "shares",
+          "status": "INLINE_VALUE_AND_TABLE_VERIFIED",
+          "table_text": "Year ended December 31202520242023Basic EPS CalculationEarnings available to common stockholders - Basic*$12,299 $17,661 $21,369 Weighted-average number of common shares outstanding1,849 1,810 1,873 Add: Deferred awards held as stock units\u2014 \u2014 \u2014 Total weighted-average number of common shares outstanding1,849 1,810 1,873 Earnings per share of common stock - Basic$6.65 $9.76 $11.41 Diluted EPS CalculationEarnings available to common stockholders - Diluted*$12,299 $17,661 $21,369 Weighted-average number of common shares outstanding1,849 1,810 1,873 Add: Deferred awards held as stock units\u2014 \u2014 \u2014 Add: Dilutive effect of employee stock-based awards7 7 7 Total weighted-average number of common shares outstanding1,856 1,817 1,880 Earnings per share of common stock - Diluted$6.63 $9.72 $11.36 * There was no effect of dividend equivalents paid on stock units or dilutive impact of employee stock-based awards on earnings.",
+          "table_sha256": "ca78146ac6b0fe823ecaf9c26ffa1c68efd628c3ecd5e328f72e3963f87544e6",
+          "inline_scale": "6",
+          "primary_sha256": "4731f02b5688823678b8978c66513f0f36341afaf25e49cd133db05fc7676ad8"
+        }
+      ],
+      "source_sha256": "383742ba0900c6bad8fbea17085f2854a2264ca1d3673de71654c94b76ddbe98",
+      "candidate_modified": false,
+      "status": "SOURCE_EVIDENCE_ONLY_NOT_APPLIED"
+    },
+    {
+      "ticker": "USB",
+      "accession": "0000036104-26-000011",
+      "field": "annual_sbc",
+      "facts": [
+        {
+          "concept": "AllocatedShareBasedCompensationExpense",
+          "value": "235000000",
+          "start": [
+            "2025-01-01"
+          ],
+          "id": "f-3189",
+          "unit": "usd",
+          "status": "INLINE_ID_UNRESOLVED"
+        }
+      ],
+      "source_sha256": "be4faaba337c204fa7f007eb51d161a7e6d09273faa9f29222ee2946563ac2da",
+      "candidate_modified": false,
+      "status": "SOURCE_EVIDENCE_ONLY_NOT_APPLIED"
+    },
+    {
+      "ticker": "USB",
+      "accession": "0000036104-26-000011",
+      "field": "annual_capex",
+      "facts": [],
+      "source_sha256": "be4faaba337c204fa7f007eb51d161a7e6d09273faa9f29222ee2946563ac2da",
+      "candidate_modified": false,
+      "status": "NO_ALLOWLIST_FACT_FOUND"
+    },
+    {
+      "ticker": "STT",
+      "accession": "0000093751-26-000124",
+      "field": "annual_sbc",
+      "facts": [],
+      "source_sha256": "47080e7e18628a45e330f5cb318f98f61053aa14dd558a2311082628f978d1c1",
+      "candidate_modified": false,
+      "status": "NO_ALLOWLIST_FACT_FOUND"
+    }
+  ],
+  "candidate_modified": false,
+  "economic_clearance": false,
+  "buy_add_allowed": false,
+  "limitations": [
+    "No fresh SEC acquisition",
+    "FE requires explicit net-of-capitalization policy",
+    "USB inline fact id unresolved",
+    "Share recovery requires recomputing dependent metrics and descriptive coverage before application",
+    "No-match means no fact in this finite concept list, not zero"
+  ]
+}
