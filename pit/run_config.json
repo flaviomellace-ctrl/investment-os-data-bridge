@@ -1,0 +1,1 @@
+{"as_of": "99991231", "universe": "data/current/sp500_universe.csv", "stages": "bridge,br0102,br03", "compare_to_current": true, "label": "fidelity-check-current"}
