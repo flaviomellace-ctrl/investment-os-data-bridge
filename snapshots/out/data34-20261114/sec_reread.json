@@ -1,0 +1,19 @@
+{
+ "schema": "sec_reread_snapshot_v1",
+ "source": "SEC XBRL companyfacts API",
+ "endpoint": "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json",
+ "period": "fiscal year of each row's annual accession",
+ "unit": "USD",
+ "currency": "USD",
+ "delay": "as published by SEC at retrieval time",
+ "retrieved_utc": "2026-11-14T14:13:22Z",
+ "input": "snapshots/sec_reread_input_data34.csv",
+ "input_sha256": "031d74b1704b2b08658c35aa3d3d8d289c5356a2abded477aa797f03727852dd",
+ "rows": 504,
+ "counts": {
+  "ok": 499,
+  "no_id": 5,
+  "error": 0
+ },
+ "output_sha256": "3d4446e3cbc1e3dd6f84f1eb8e042de5177685629b3024b56583c72287651142"
+}
