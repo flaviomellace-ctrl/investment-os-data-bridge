@@ -6,7 +6,7 @@ import pandas as pd
 a = pd.read_csv(sys.argv[1], dtype=str).fillna("")
 b = pd.read_csv(sys.argv[2], dtype=str).fillna("")
 skip = lambda c: c.startswith("market_") or c in ("weight", "sec_quarters_used")
-cols = [c for c in a.columns if c in b.columns and not skip(c)]
+cols = [c for c in a.columns if c in b.columns and not skip(c) and c != "ticker"]
 A, B = a.set_index("ticker"), b.set_index("ticker")
 common = [t for t in A.index if t in B.index]
 
