@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Point-in-time S&P 500 universe (research only).
 
-Starts from the current constituent table and undoes every documented change with an
-effective date AFTER the as-of date (added -> removed, removed -> re-added).
-Source: Wikipedia "List of S&P 500 companies" (current table + selected changes table).
-Known limits are written to the report: the changes table is not guaranteed complete,
-and re-added companies have no CIK here (resolved later from SEC filings filed <= as-of).
+Primary method (v2): reads the constituent table from the Wikipedia page REVISION that was
+live at the as-of date (MediaWiki revisions API, newest revision with timestamp <= as-of
+23:59:59Z). No future information enters: the revision itself is point-in-time.
+Fallback (v1): current table with documented changes undone, when a changes table exists.
+Known limits are written to the report: Wikipedia may lag index changes by some days.
 """
 from __future__ import annotations
 
@@ -27,6 +27,56 @@ def flatten(df: pd.DataFrame) -> pd.DataFrame:
     if isinstance(df.columns, pd.MultiIndex):
         df.columns = [" ".join(dict.fromkeys(str(x) for x in c if "Unnamed" not in str(x))).strip() for c in df.columns]
     return df
+
+
+API = "https://en.wikipedia.org/w/api.php"
+UA = {"User-Agent": "InvestmentOS-research/1.0 (personal research)"}
+
+
+def main_revision(as_of: int, out: Path) -> dict:
+    ts = f"{str(as_of)[:4]}-{str(as_of)[4:6]}-{str(as_of)[6:8]}T23:59:59Z"
+    q = requests.get(API, headers=UA, timeout=60, params=dict(action="query", prop="revisions", titles="List of S&P 500 companies",
+                     rvlimit=1, rvstart=ts, rvdir="older", rvprop="ids|timestamp", format="json", redirects=1))
+    q.raise_for_status()
+    page = next(iter(q.json()["query"]["pages"].values()))
+    rev = page["revisions"][0]
+    if rev["timestamp"] > ts:
+        raise SystemExit("PIT_UNIVERSE_BLOCK: revision newer than as-of")
+    h = requests.get("https://en.wikipedia.org/w/index.php", headers=UA, timeout=90, params=dict(title="List of S&P 500 companies", oldid=rev["revid"]))
+    h.raise_for_status()
+    tables = [flatten(t) for t in pd.read_html(io.StringIO(h.text))]
+    low = lambda t: [str(c).lower() for c in t.columns]
+    cur = next(t for t in tables if any(c.startswith("symbol") for c in low(t)) and any(c.startswith("security") for c in low(t)))
+    sym = next(c for c in cur.columns if c.lower().startswith("symbol"))
+    sec = next(c for c in cur.columns if c.lower().startswith("security"))
+    sector = next((c for c in cur.columns if "sector" in c.lower()), None)
+    cikc = next((c for c in cur.columns if c.upper() == "CIK"), None)
+    recs = []
+    for _, x in cur.iterrows():
+        t = norm(x[sym])
+        if not t or t == "NAN":
+            continue
+        cik = ""
+        if cikc and pd.notna(x[cikc]):
+            try:
+                cik = str(int(float(x[cikc]))).zfill(10)
+            except Exception:
+                cik = ""
+        recs.append(dict(ticker=t, ticker_sec=t.replace(".", "-"), name=str(x[sec]), sector=str(x[sector]) if sector else "", weight="",
+                         identifier="", isin="", asset_class="", cik=cik, sec_title=str(x[sec]), origin=f"wikipedia_rev_{rev['revid']}"))
+    df = pd.DataFrame(recs).drop_duplicates("ticker").sort_values("ticker")
+    if not 480 <= len(df) <= 520:
+        raise SystemExit(f"PIT_UNIVERSE_BLOCK: implausible member count {len(df)} in revision {rev['revid']}")
+    out.parent.mkdir(parents=True, exist_ok=True)
+    df.to_csv(out, index=False)
+    rep = dict(schema="pit_universe_v2", method="wikipedia_revision_at_as_of", as_of=as_of, source=h.url, revision_id=rev["revid"],
+               revision_timestamp=rev["timestamp"], source_sha256=hashlib.sha256(h.content).hexdigest(),
+               retrieved_utc=datetime.utcnow().isoformat(timespec="seconds") + "Z", members=len(df),
+               members_without_cik=int((df["cik"] == "").sum()),
+               limits="Membership as recorded by Wikipedia editors at the revision timestamp; may lag official index changes by days.")
+    out.with_suffix(".json").write_text(json.dumps(rep, indent=1))
+    print("PIT_UNIVERSE=" + json.dumps({k: rep[k] for k in ("as_of", "members", "revision_id", "revision_timestamp", "members_without_cik")}))
+    return rep
 
 
 def main(as_of: int, out: Path) -> dict:
@@ -99,4 +149,4 @@ def main(as_of: int, out: Path) -> dict:
 
 
 if __name__ == "__main__":
-    main(int(sys.argv[1]), Path(sys.argv[2]))
+    main_revision(int(sys.argv[1]), Path(sys.argv[2]))
