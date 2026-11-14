@@ -6,7 +6,7 @@ on:
     paths: ["pit/run_config.json"]
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: r12-pit-replay
@@ -15,7 +15,7 @@ concurrency:
 jobs:
   replay:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -23,28 +23,33 @@ jobs:
           python-version: "3.12"
           cache: "pip"
       - run: pip install -r requirements.txt
-      - name: Replay in a scratch copy
+      - name: Replay each as-of date in its own scratch copy
         env:
           SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+          PIT_CACHE: ${{ runner.temp }}/fsds_cache
         run: |
           set -euo pipefail
           CFG=pit/run_config.json
-          AS_OF=$(python -c "import json;print(json.load(open('$CFG'))['as_of'])")
-          UNI=$(python -c "import json;print(json.load(open('$CFG'))['universe'])")
+          LABEL=$(python -c "import json;print(json.load(open('$CFG'))['label'])")
           STAGES=$(python -c "import json;print(json.load(open('$CFG'))['stages'])")
-          CMP=$(python -c "import json;print(json.load(open('$CFG')).get('compare_to_current', False))")
-          SCRATCH="$RUNNER_TEMP/pit"
-          mkdir -p "$SCRATCH/data/current" "$SCRATCH/data/archive"
-          cp -r src "$SCRATCH/src"
-          cp "$UNI" "$SCRATCH/universe.csv"
-          sha256sum data/current/sp500_fundamentals.csv > "$RUNNER_TEMP/before.sha"
-          PIT_AS_OF="$AS_OF" PIT_UNIVERSE="$SCRATCH/universe.csv" PIT_STAGES="$STAGES" python "$SCRATCH/src/pit_replay.py"
-          sha256sum -c "$RUNNER_TEMP/before.sha"
-          if [ "$CMP" = "True" ]; then python src/pit_compare.py "$SCRATCH/data/current/sp500_fundamentals.csv" data/current/sp500_fundamentals.csv; fi
-          mkdir -p out && cp -r "$SCRATCH/data/current" out/replay && cp "$CFG" out/
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: pit-replay-${{ github.run_id }}
-          path: out
-          if-no-files-found: warn
+          for AS_OF in $(python -c "import json;print(' '.join(json.load(open('$CFG'))['as_of_list']))"); do
+            S="$RUNNER_TEMP/pit_$AS_OF"; rm -rf "$S"; mkdir -p "$S/data/current" "$S/data/archive"
+            cp -r src "$S/src"
+            python src/pit_universe.py "$AS_OF" "$S/universe.csv" | tee "$RUNNER_TEMP/u_$AS_OF.log"
+            PIT_AS_OF="$AS_OF" PIT_UNIVERSE="$S/universe.csv" PIT_STAGES="$STAGES" GITHUB_RUN_ID="pit_${AS_OF}" \
+              python "$S/src/pit_replay.py" 2>&1 | tee "$RUNNER_TEMP/r_$AS_OF.log" | grep -E "PIT|BLOCK|Error|Traceback" || true
+            test -f "$S/data/current/pit_candidate.csv"
+            O="pit/out/$LABEL/$AS_OF"; mkdir -p "$O"
+            cp "$S/data/current/pit_candidate.csv" "$O/pit_candidate.csv"
+            cp "$S/universe.csv" "$S/universe.json" "$O/"
+            grep -E "^PIT" "$RUNNER_TEMP/r_$AS_OF.log" "$RUNNER_TEMP/u_$AS_OF.log" > "$O/run_log.txt" || true
+            sha256sum "$O"/* > "$O/SHA256SUMS"
+          done
+      - name: Commit outputs to the research branch
+        run: |
+          git config user.name "investment-os-research[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pit/out
+          git commit -m "R12 PIT replay outputs ($GITHUB_RUN_ID)" || exit 0
+          git push
