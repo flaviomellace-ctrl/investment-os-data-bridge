@@ -34,8 +34,14 @@ def main(as_of: int, out: Path) -> dict:
     r.raise_for_status()
     raw = r.content
     tables = pd.read_html(io.StringIO(r.text))
-    cur = flatten(tables[0])
-    chg = flatten(tables[1])
+    tables = [flatten(t) for t in tables]
+    low = lambda t: [str(c).lower() for c in t.columns]
+    cur = next(t for t in tables if any(c.startswith("symbol") for c in low(t)) and any(c.startswith("security") for c in low(t)))
+    cands = [t for t in tables if any("added" in c for c in low(t)) and any("removed" in c for c in low(t))]
+    if not cands:
+        raise SystemExit("PIT_UNIVERSE_BLOCK: changes table not found; tables=" + json.dumps([list(map(str, t.columns))[:8] for t in tables]))
+    chg = cands[0]
+    print("PIT_UNIVERSE_COLUMNS=" + json.dumps(dict(current=list(map(str, cur.columns)), changes=list(map(str, chg.columns)))))
     sym = next(c for c in cur.columns if c.lower().startswith("symbol"))
     sec = next(c for c in cur.columns if c.lower().startswith("security"))
     sector = next((c for c in cur.columns if "sector" in c.lower()), None)
@@ -44,11 +50,14 @@ def main(as_of: int, out: Path) -> dict:
     for _, x in cur.iterrows():
         members[norm(x[sym])] = dict(name=str(x[sec]), sector=str(x[sector]) if sector else "",
                                      cik=str(int(x[cikc])).zfill(10) if cikc and pd.notna(x[cikc]) else "", origin="current")
-    dcol = next(c for c in chg.columns if "date" in c.lower())
-    at = next(c for c in chg.columns if c.lower().startswith("added") and "ticker" in c.lower())
-    asec = next(c for c in chg.columns if c.lower().startswith("added") and "security" in c.lower())
-    rt = next(c for c in chg.columns if c.lower().startswith("removed") and "ticker" in c.lower())
-    rsec = next(c for c in chg.columns if c.lower().startswith("removed") and "security" in c.lower())
+    cols = list(chg.columns)
+    dcol = next((c for c in cols if "date" in str(c).lower()), cols[0])
+    pick = lambda side, kind, alt: next((c for c in cols if side in str(c).lower() and kind in str(c).lower()),
+                                        next((c for c in cols if side in str(c).lower() and alt in str(c).lower()), None))
+    at, asec = pick("added", "ticker", "symbol"), pick("added", "security", "name")
+    rt, rsec = pick("removed", "ticker", "symbol"), pick("removed", "security", "name")
+    if not (at and rt):
+        raise SystemExit("PIT_UNIVERSE_BLOCK: ticker columns not identified: " + json.dumps(list(map(str, cols))))
     undone, unparsed, conflicts = 0, 0, []
     rows = []
     for _, x in chg.iterrows():
@@ -71,7 +80,7 @@ def main(as_of: int, out: Path) -> dict:
             if rm in members:
                 conflicts.append(f"{d}:removed {rm} already present")
             else:
-                members[rm] = dict(name=str(x[rsec]) if pd.notna(x[rsec]) else rm, sector="", cik="", origin=f"readded_{d}")
+                members[rm] = dict(name=str(x[rsec]) if rsec and pd.notna(x[rsec]) else rm, sector="", cik="", origin=f"readded_{d}")
         undone += 1
     df = pd.DataFrame([dict(ticker=t, ticker_sec=t.replace(".", "-"), name=v["name"], sector=v["sector"], weight="",
                             identifier="", isin="", asset_class="", cik=v["cik"], sec_title=v["name"], origin=v["origin"])
