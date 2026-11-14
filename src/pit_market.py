@@ -55,11 +55,13 @@ def price_at(symbol: str, as_of: int, key: str):
     end = datetime.strptime(str(as_of), "%Y%m%d")
     url = "https://financialmodelingprep.com/stable/historical-price-eod/non-split-adjusted"
     params = dict(symbol=symbol, apikey=key, **{"from": (end - timedelta(days=12)).strftime("%Y-%m-%d"), "to": end.strftime("%Y-%m-%d")})
-    for attempt in range(3):
+    err = "fmp_rate_limited"
+    for attempt in range(6):
         try:
+            time.sleep(0.25)
             r = requests.get(url, params=params, timeout=45)
             if r.status_code == 429:
-                time.sleep(3 + attempt * 3)
+                time.sleep(5 + attempt * 10)
                 continue
             r.raise_for_status()
             data = r.json()
