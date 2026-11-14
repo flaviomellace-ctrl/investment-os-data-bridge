@@ -1,0 +1,40 @@
+name: SEC re-read snapshot (research only)
+
+on:
+  push:
+    branches: ["claude/v42-integrated-freeze-r11"]
+    paths: ["snapshots/sec_reread_config.json"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sec-reread-snapshot
+  cancel-in-progress: false
+
+jobs:
+  reread:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+      - run: pip install -r requirements.txt
+      - name: Read revenue and lease facts from SEC companyfacts
+        env:
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+        run: |
+          set -euo pipefail
+          LABEL=$(python -c "import json;print(json.load(open('snapshots/sec_reread_config.json'))['label'])")
+          INPUT=$(python -c "import json;print(json.load(open('snapshots/sec_reread_config.json'))['input'])")
+          python src/sec_reread_snapshot.py "$INPUT" "snapshots/out/$LABEL/sec_reread.csv"
+      - name: Commit snapshot
+        run: |
+          git config user.name "investment-os-research[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add snapshots/out
+          git commit -m "SEC re-read snapshot ($GITHUB_RUN_ID)" || exit 0
+          git push

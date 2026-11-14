@@ -57,6 +57,11 @@ SEC_MIN_SECONDS_BETWEEN_REQUESTS = 0.35
 ANNUAL_FORMS = {"10-K", "20-F", "40-F"}
 QUARTERLY_FORMS = {"10-Q"}
 
+REVENUE_CONTRACT_ONLY_TAGS = {
+    "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "RevenueFromContractWithCustomerIncludingAssessedTax",
+}
+
 FLOW_METRICS = {
     "revenue": [
         "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -513,6 +518,17 @@ def _pick_tag_values(df: pd.DataFrame, adsh: str, tags: list[str], qtrs: int, uo
     x = x.sort_values(["tag_priority", "ddate_num"], ascending=[True, False])
     # Prefer the first candidate tag that exists; then current/prior dates within that same tag.
     best_tag = x.iloc[0]["tag"]
+    # Technical fix (2026-11-14): us-gaap:Revenues is total revenue and is a superset of
+    # RevenueFromContractWithCustomer*. When the same filing reports both for the latest period and
+    # the total is larger, the contract-only tag understates revenue (lessors, insurers, banks,
+    # utilities with non-ASC-606 revenue). In that case read the total. No formula or threshold changes.
+    if best_tag in REVENUE_CONTRACT_ONLY_TAGS and "Revenues" in tags:
+        latest = x["ddate_num"].max()
+        at = x[x["ddate_num"].eq(latest)]
+        tot = at[at["tag"].eq("Revenues")]["value_num"]
+        sub = at[at["tag"].eq(best_tag)]["value_num"]
+        if len(tot) and len(sub) and float(tot.iloc[0]) > float(sub.iloc[0]):
+            best_tag = "Revenues"
     y = x[x["tag"].eq(best_tag)].sort_values("ddate_num", ascending=False)
     dates = list(dict.fromkeys(y["ddate_num"].dropna().astype(int).tolist()))
     current_date = dates[0] if dates else None
