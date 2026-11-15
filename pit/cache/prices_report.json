@@ -1,0 +1,18 @@
+{
+ "retrieved_utc": "2026-11-15T03:16:23Z",
+ "source": "FMP stable/historical-price-eod/non-split-adjusted",
+ "unit": "price per share, listing currency",
+ "breaker_tripped": true,
+ "dates": {
+  "20231114": {
+   "symbols": 503,
+   "cached": 0,
+   "missing": 503
+  },
+  "20241114": {
+   "symbols": 503,
+   "cached": 0,
+   "missing": 503
+  }
+ }
+}
