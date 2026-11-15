@@ -1,0 +1,38 @@
+name: R12 PIT price cache (research only)
+
+on:
+  push:
+    branches: ["claude/r12-pit-replay"]
+    paths: ["pit/prices_trigger.json"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: r12-pit-replay
+  cancel-in-progress: false
+
+jobs:
+  prices:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+      - run: pip install -r requirements.txt
+      - name: Fetch unadjusted closes into the cache
+        env:
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+        run: python src/pit_prices.py
+      - name: Commit cache
+        if: always()
+        run: |
+          git config user.name "investment-os-research[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pit/cache || true
+          git commit -m "R12 PIT price cache ($GITHUB_RUN_ID)" || exit 0
+          git pull --rebase -q origin claude/r12-pit-replay && git push

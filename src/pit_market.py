@@ -52,29 +52,63 @@ def cover_shares(d: bridge.Downloader, cik: str, as_of: int):
 
 
 def price_at(symbol: str, as_of: int, key: str):
+    """Unadjusted close on the last session <= as_of. Reads the committed price cache first;
+    calls FMP only for symbols not cached, and stops calling it after repeated rate limits."""
+    cache = _cache(as_of)
+    if symbol in cache:
+        c = cache[symbol]
+        return float(c[0]), c[1], ""
+    if _STATE["off"]:
+        return None, None, "fmp_rate_limited_breaker"
     end = datetime.strptime(str(as_of), "%Y%m%d")
     url = "https://financialmodelingprep.com/stable/historical-price-eod/non-split-adjusted"
     params = dict(symbol=symbol, apikey=key, **{"from": (end - timedelta(days=12)).strftime("%Y-%m-%d"), "to": end.strftime("%Y-%m-%d")})
     err = "fmp_rate_limited"
-    for attempt in range(6):
+    for attempt in range(3):
         try:
             time.sleep(0.25)
             r = requests.get(url, params=params, timeout=45)
             if r.status_code == 429:
-                time.sleep(5 + attempt * 10)
+                time.sleep(4 + attempt * 8)
                 continue
             r.raise_for_status()
             data = r.json()
             rows = [x for x in (data if isinstance(data, list) else []) if int(x["date"].replace("-", "")) <= as_of]
+            _STATE["limited"] = 0
             if not rows:
                 return None, None, "no_price_rows"
             x = max(rows, key=lambda z: z["date"])
             close = x.get("adjClose") if x.get("close") is None else x.get("close")
+            cache[symbol] = [float(close), x["date"]]
             return float(close), x["date"], ""
         except Exception as e:
             err = f"fmp_error:{type(e).__name__}"
             time.sleep(1.5)
+    if err == "fmp_rate_limited":
+        _STATE["limited"] += 1
+        if _STATE["limited"] >= 3:
+            _STATE["off"] = True
+            print("PIT_MARKET_BREAKER=FMP rate limit persists; remaining symbols left MISSING for this run", flush=True)
     return None, None, err
+
+
+_STATE = {"limited": 0, "off": False}
+_CACHES: dict = {}
+CACHE_DIR = Path(__file__).resolve().parents[1] / "pit" / "cache"
+
+
+def _cache(as_of: int) -> dict:
+    if as_of not in _CACHES:
+        f = Path(os.environ.get("PIT_PRICE_CACHE_DIR", CACHE_DIR)) / f"prices_{as_of}.json"
+        _CACHES[as_of] = json.loads(f.read_text()) if f.exists() else {}
+    return _CACHES[as_of]
+
+
+def save_cache(as_of: int) -> Path:
+    d = Path(os.environ.get("PIT_PRICE_CACHE_DIR", CACHE_DIR)); d.mkdir(parents=True, exist_ok=True)
+    f = d / f"prices_{as_of}.json"
+    f.write_text(json.dumps(_cache(as_of), indent=0, sort_keys=True))
+    return f
 
 
 def main() -> int:
