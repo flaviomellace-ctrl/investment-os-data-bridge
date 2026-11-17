@@ -1,0 +1,14 @@
+# Lista d attesa, coda di approfondimento e da_non_puntare (RADAR_WATCHLIST.json)
+SYF
+CMCSA
+AMP
+ADBE
+CHTR
+MGM
+TROW
+NEM
+FIX
+ANET
+KO
+JNJ
+TMO

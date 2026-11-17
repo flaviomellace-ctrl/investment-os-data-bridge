@@ -1,0 +1,38 @@
+name: Watchlist Prices
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [claude/watchlist-prices]
+    paths: [src/watchlist_prices.py, data/watchlist_tickers.txt, .github/workflows/watchlist-prices.yml]
+  schedule:
+    # Dopo la chiusura USA (21:00 UTC in inverno, 20:00 UTC in estate) e di nuovo al mattino europeo.
+    - cron: "12 21 * * 1-5"
+    - cron: "41 4 * * 2-6"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: watchlist-prices
+  cancel-in-progress: false
+
+jobs:
+  prices:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install "requests>=2.32,<3"
+      - run: python src/watchlist_prices.py
+      - name: Commit
+        run: |
+          git config user.name "investment-os-data-bridge[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/current/watchlist_prices.csv data/current/watchlist_history.csv
+          if git diff --cached --quiet; then echo "Nessuna modifica."; exit 0; fi
+          git commit -m "data: watchlist prices $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
