@@ -1,0 +1,13 @@
+{
+ "schema": "pit_universe_v2",
+ "method": "wikipedia_revision_at_as_of",
+ "as_of": 20231114,
+ "source": "https://en.wikipedia.org/w/index.php?title=List+of+S%26P+500+companies&oldid=1185035217",
+ "revision_id": 1185035217,
+ "revision_timestamp": "2023-11-14T04:02:52Z",
+ "source_sha256": "e77c6c6b96f734223b546fa49e3da68845e20dc1ec923198ee3b68b6b0f4a50b",
+ "retrieved_utc": "2026-11-17T06:24:41Z",
+ "members": 503,
+ "members_without_cik": 0,
+ "limits": "Membership as recorded by Wikipedia editors at the revision timestamp; may lag official index changes by days."
+}
