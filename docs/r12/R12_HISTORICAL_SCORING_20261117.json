@@ -1,0 +1,222 @@
+{
+ "schema": "r12_historical_scoring_v1",
+ "criteria": "docs/r12/R12_HISTORICAL_CRITERIA_FROZEN.md",
+ "executor_report_sha256": "dc6f96f0c0cd5a7366ea1c9e418232a7e069960238adad2fadcb3ae9b56e01cf",
+ "outcomes_source": "Yahoo Finance adjclose read through the owner browser on 2026-11-17; window as-of close to last close before 2025-11-15 / 2026-11-14",
+ "outcomes_raw_sha256": "cbde2f45652347375037f2aa29b53e0c8fe70ed6fae63548a5c26dd9377be7c6",
+ "C1": "PASS (executor: no filing after as-of; prices dated as-of from cache; deterministic; 0 buy_add_allowed)",
+ "C2": "PASS (IOS calculable 25.65% and 27.44%, threshold 25%)",
+ "M1": {
+  "queue_share_le_minus50": 0.15,
+  "universe_share_le_minus50": 0.0303,
+  "PASS": false
+ },
+ "M2": {
+  "queue_median": 41.69,
+  "universe_median": 22.59,
+  "gap_pp": 19.1,
+  "PASS": true
+ },
+ "informative": {
+  "lane_V_median": 48.52,
+  "lane_I_median": 19.02,
+  "n_V": 14,
+  "n_I": 6,
+  "per_date": {
+   "20231114": {
+    "queue_median": 49.58,
+    "universe_median": 28.15,
+    "n_universe": 475,
+    "missing": 28
+   },
+   "20241114": {
+    "queue_median": 8.785,
+    "universe_median": 17.75,
+    "n_universe": 481,
+    "missing": 22
+   }
+  }
+ },
+ "queue_rows": [
+  [
+   "20231114",
+   "ZION",
+   "V",
+   54.62
+  ],
+  [
+   "20231114",
+   "MA",
+   "V",
+   38.83
+  ],
+  [
+   "20231114",
+   "STLD",
+   "V",
+   44.54
+  ],
+  [
+   "20231114",
+   "CF",
+   "V",
+   11.59
+  ],
+  [
+   "20231114",
+   "RF",
+   "V",
+   71.83
+  ],
+  [
+   "20231114",
+   "ABBV",
+   "V",
+   80.56
+  ],
+  [
+   "20231114",
+   "FITB",
+   "V",
+   71.87
+  ],
+  [
+   "20231114",
+   "EXPD",
+   "I",
+   19.88
+  ],
+  [
+   "20231114",
+   "LRCX",
+   "I",
+   117.73
+  ],
+  [
+   "20231114",
+   "VRTX",
+   "I",
+   18.16
+  ],
+  [
+   "20241114",
+   "MA",
+   "V",
+   28.61
+  ],
+  [
+   "20241114",
+   "DECK",
+   "V",
+   -50.91
+  ],
+  [
+   "20241114",
+   "CF",
+   "V",
+   52.49
+  ],
+  [
+   "20241114",
+   "CMG",
+   "V",
+   -41.11
+  ],
+  [
+   "20241114",
+   "LRCX",
+   "V",
+   206.68
+  ],
+  [
+   "20241114",
+   "MOS",
+   "V",
+   -11.04
+  ],
+  [
+   "20241114",
+   "CAH",
+   "V",
+   137.31
+  ],
+  [
+   "20241114",
+   "BLDR",
+   "I",
+   -66.51
+  ],
+  [
+   "20241114",
+   "LULU",
+   "I",
+   -68.01
+  ],
+  [
+   "20241114",
+   "MPWR",
+   "I",
+   144.81
+  ]
+ ],
+ "missing": {
+  "20231114": [
+   "ANSS",
+   "AVB",
+   "BK",
+   "CTLT",
+   "CDAY",
+   "CMA",
+   "CTRA",
+   "DFS",
+   "EA",
+   "EQR",
+   "FI",
+   "FLT",
+   "PEAK",
+   "HES",
+   "HOLX",
+   "IPG",
+   "JNPR",
+   "K",
+   "KVUE",
+   "MRO",
+   "MMC",
+   "PARA",
+   "PXD",
+   "QRVO",
+   "SEE",
+   "WBA",
+   "WBD",
+   "WRK"
+  ],
+  "20241114": [
+   "ANSS",
+   "AVB",
+   "BK",
+   "CTLT",
+   "CTRA",
+   "DFS",
+   "EA",
+   "EQR",
+   "FI",
+   "HES",
+   "HOLX",
+   "IPG",
+   "JNPR",
+   "K",
+   "KVUE",
+   "MRO",
+   "MMC",
+   "PARA",
+   "QRVO",
+   "WBA",
+   "WBD",
+   "DAY"
+  ]
+ },
+ "excluded": {
+  "PARA": "merger share event recorded by Yahoo as a split; return not usable (CONFLICTING)"
+ },
+ "queue_n_with_return": 20
+}
