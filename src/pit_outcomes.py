@@ -39,6 +39,21 @@ def yahoo(sym, a, b):
     return None, "yahoo_fail"
 
 
+def stooq(sym, a, b):
+    try:
+        r = requests.get("https://stooq.com/q/d/l/", params=dict(s=sym.lower() + ".us", d1=str(a - 15), d2=str(b), i="d"), headers=H, timeout=15)
+        if r.status_code != 200 or not r.text.startswith("Date"):
+            return None, f"stooq_{r.status_code}"
+        rows = []
+        for line in r.text.strip().splitlines()[1:]:
+            f = line.split(",")
+            if len(f) >= 5 and f[4]:
+                rows.append((f[0].replace("-", ""), float(f[4])))
+        return (rows or None), "stooq"
+    except Exception as e:
+        return None, f"stooq_{type(e).__name__}"
+
+
 def fmp(sym, a, b, key):
     if not key:
         return None, "no_fmp_key"
@@ -59,9 +74,10 @@ def main():
     out = {}
     probe_y, _ = yahoo("AAPL", 20241114, 20241120)
     probe_f, fsrc = fmp("AAPL", 20241114, 20241120, key)
-    use_y, use_f = bool(probe_y), bool(probe_f)
-    print("PIT_OUTCOMES_PROBE=" + json.dumps(dict(yahoo=use_y, fmp=use_f, fmp_status=fsrc)), flush=True)
-    if not (use_y or use_f):
+    probe_s, ssrc = stooq("AAPL", 20241101, 20241120)
+    use_y, use_f, use_s = bool(probe_y), bool(probe_f), bool(probe_s)
+    print("PIT_OUTCOMES_PROBE=" + json.dumps(dict(yahoo=use_y, fmp=use_f, fmp_status=fsrc, stooq=use_s, stooq_status=ssrc, stooq_sample=(probe_s or [])[-2:])), flush=True)
+    if not (use_y or use_f or use_s):
         raise SystemExit("PIT_OUTCOMES_BLOCK: neither Yahoo nor FMP reachable from CI")
     for a, b in PAIRS.items():
         u = pd.read_csv(ROOT / "pit" / "out" / "r12-historical-v1" / str(a) / "universe.csv", dtype=str, keep_default_na=False)
@@ -70,6 +86,8 @@ def main():
             series, src = yahoo(sym, a, b) if use_y else (None, "yahoo_skipped")
             if not series and use_f:
                 series, src = fmp(sym, a, b, key)
+            if not series and use_s:
+                series, src = stooq(sym, a, b)
             time.sleep(0.3)
             if not series:
                 res[sym] = dict(status="MISSING", source=src); continue
