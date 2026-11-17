@@ -139,5 +139,20 @@
    },
    "sha256": "e8b1d070b6e4ed7c7b40638f5a1ae2172a5a6ab477b9ddac3708e752e5beb89b"
   }
- }
+ },
+ "additions": [
+  {
+   "date": "2026-11-17",
+   "as_of": [
+    "20211115",
+    "20221115"
+   ],
+   "raw": "pit/cache/yahoo_raw_r12bis_20261117.txt",
+   "method": "same as above; two-step fallback (short window for the close, monthly series for split events) where the long-range request returned no rows; tickers renamed after the as-of read under the new symbol and stored under the as-of symbol (ABC>COR, ANTM>ELV, BLL>BALL, FB>META, FBHS>FBIN, FLT>CPAY, GPS>GAP, PEAK>DOC, PKI>RVTY, RE>EG, WLTW>WTW, NLOK>GEN)",
+   "missing_2021": "ABMD ATVI ANSS AVB BK CTLT CDAY CERN CTXS CMA CTRA DFS DISCA DISCK DISH DRE EA EQR FRC HBI HES HOLX INFO IPG JNPR KSU K LEG MRO MMC NLSN PBCT PXD QRVO SEE SIVB TWTR VIAC WBA WRK XLNX",
+   "missing_2022": "ABMD ATVI ANSS AVB BK CTLT CDAY CMA CTRA DFS DISH EA EQR FRC HES HOLX IPG JNPR K MRO MMC PXD QRVO SEE SBNY SIVB WBA WBD WRK PARA",
+   "caveat": "missing prices are mostly non-survivors (acquired, failed: SIVB FRC SBNY) plus symbols whose Yahoo history was reset by a 2026 corporate event (AVB EQR EA BK MMC SEE); these names cannot enter the queue: survivorship bias in favour of the queue, reported with the results",
+   "transcription_check": "sha256 prefix of each line computed in the browser and on the transcribed file: 61bdb47666d15f11 (2021), c6270bd1f41904f3 (2022), identical"
+  }
+ ]
 }
