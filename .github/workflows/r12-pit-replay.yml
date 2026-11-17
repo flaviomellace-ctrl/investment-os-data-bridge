@@ -36,6 +36,7 @@ jobs:
           for AS_OF in $(python -c "import json;print(' '.join(json.load(open('$CFG'))['as_of_list']))"); do
             S="$RUNNER_TEMP/pit_$AS_OF"; rm -rf "$S"; mkdir -p "$S/data/current" "$S/data/archive"
             cp -r src "$S/src"
+            mkdir -p "$S/pit" && cp -r pit/cache "$S/pit/cache"
             python src/pit_universe.py "$AS_OF" "$S/universe.csv" | tee "$RUNNER_TEMP/u_$AS_OF.log"
             PIT_AS_OF="$AS_OF" PIT_UNIVERSE="$S/universe.csv" PIT_STAGES="$STAGES" GITHUB_RUN_ID="pit_${AS_OF}" \
               python "$S/src/pit_replay.py" 2>&1 | tee "$RUNNER_TEMP/r_$AS_OF.log" | grep -E "PIT|BLOCK|Error|Traceback" || true

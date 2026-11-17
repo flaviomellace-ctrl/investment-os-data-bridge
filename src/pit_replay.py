@@ -135,6 +135,9 @@ if "br04" in STAGES:
     rc = probe_br04_t00bis.main()
     if rc:
         raise SystemExit(f"PIT_BLOCK: T00bis rc={rc}")
+    # The S1 builder copies the T00bis report into its own run folder; under one shared run id
+    # source and destination coincide (SameFileError). Give the builder its own run id.
+    os.environ["GITHUB_RUN_ID"] = "pit_" + str(AS_OF) + "_s1"
     import build_br04_candidate
     rc = build_br04_candidate.main()
     if rc:
