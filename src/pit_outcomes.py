@@ -26,7 +26,7 @@ def yahoo(sym, a, b):
         try:
             r = requests.get(f"https://{host}.finance.yahoo.com/v8/finance/chart/{sym}",
                              params=dict(period1=ts(a) - 12 * 86400, period2=ts(b) + 2 * 86400, interval="1d", events="div,split"),
-                             headers=H, timeout=30)
+                             headers=H, timeout=10)
             if r.status_code == 429:
                 time.sleep(5); continue
             if r.status_code != 200:
@@ -57,12 +57,18 @@ def fmp(sym, a, b, key):
 def main():
     key = os.environ.get("FMP_API_KEY", "")
     out = {}
+    probe_y, _ = yahoo("AAPL", 20241114, 20241120)
+    probe_f, fsrc = fmp("AAPL", 20241114, 20241120, key)
+    use_y, use_f = bool(probe_y), bool(probe_f)
+    print("PIT_OUTCOMES_PROBE=" + json.dumps(dict(yahoo=use_y, fmp=use_f, fmp_status=fsrc)), flush=True)
+    if not (use_y or use_f):
+        raise SystemExit("PIT_OUTCOMES_BLOCK: neither Yahoo nor FMP reachable from CI")
     for a, b in PAIRS.items():
         u = pd.read_csv(ROOT / "pit" / "out" / "r12-historical-v1" / str(a) / "universe.csv", dtype=str, keep_default_na=False)
         res = {}
         for sym in u["ticker_sec"]:
-            series, src = yahoo(sym, a, b)
-            if not series:
+            series, src = yahoo(sym, a, b) if use_y else (None, "yahoo_skipped")
+            if not series and use_f:
                 series, src = fmp(sym, a, b, key)
             time.sleep(0.3)
             if not series:
