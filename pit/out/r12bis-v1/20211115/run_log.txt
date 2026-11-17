@@ -1,0 +1,6 @@
+/home/runner/work/_temp/r_20211115.log:PIT: ciks resolved from filings {"resolved": 0, "unresolved": []}
+/home/runner/work/_temp/r_20211115.log:PIT: submissions visible 27432/29181 (filed <= 20211115)
+/home/runner/work/_temp/r_20211115.log:PIT: submissions visible 104175/105924 (filed <= 20211115)
+/home/runner/work/_temp/r_20211115.log:PIT_MARKET={"as_of": 20211115, "rows": 505, "PRESENT": 427, "no_price": 36, "no_shares": 27, "MISSING": 63, "CONFLICTING": 15}
+/home/runner/work/_temp/r_20211115.log:PIT_REPLAY={"as_of": 20211115, "stages": ["bridge", "br0102", "br03", "market", "br04"], "rows": 505, "fundamentals_sha256": "ee533d7d4aa2882b8c2b118218429238c09c8bc1f992ca586f1ce33385a8357a"}
+/home/runner/work/_temp/u_20211115.log:PIT_UNIVERSE={"as_of": 20211115, "members": 505, "revision_id": 1055408880, "revision_timestamp": "2021-11-15T18:24:34Z", "members_without_cik": 0}
