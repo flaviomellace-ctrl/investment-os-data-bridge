@@ -1,0 +1,752 @@
+{
+  "dates": {
+    "20231114": {
+      "buy_add_allowed_rows_field": 0,
+      "buy_add_allowed_true_counted": 0,
+      "candidate_csv": "inputs/PIT_20231114.csv",
+      "candidate_sha256": "8860838e62f0ea83f79aaded4d7f7011e2861a42e210deab2e7ef7a1a066c04a",
+      "deep_dive_queue": [
+        {
+          "entity_key": "ZION",
+          "queue_rank": 1,
+          "selection_lane": "V"
+        },
+        {
+          "entity_key": "MA",
+          "queue_rank": 2,
+          "selection_lane": "V"
+        },
+        {
+          "entity_key": "STLD",
+          "queue_rank": 3,
+          "selection_lane": "V"
+        },
+        {
+          "entity_key": "CF",
+          "queue_rank": 4,
+          "selection_lane": "V"
+        },
+        {
+          "entity_key": "RF",
+          "queue_rank": 5,
+          "selection_lane": "V"
+        },
+        {
+          "entity_key": "ABBV",
+          "queue_rank": 6,
+          "selection_lane": "V"
+        },
+        {
+          "entity_key": "FITB",
+          "queue_rank": 7,
+          "selection_lane": "V"
+        },
+        {
+          "entity_key": "EXPD",
+          "queue_rank": 8,
+          "selection_lane": "I"
+        },
+        {
+          "entity_key": "LRCX",
+          "queue_rank": 9,
+          "selection_lane": "I"
+        },
+        {
+          "entity_key": "VRTX",
+          "queue_rank": 10,
+          "selection_lane": "I"
+        }
+      ],
+      "deterministic_byte_identical": true,
+      "engine_version": "V4.2-PRE-FREEZE-1.0",
+      "integrated_run_sha256": {
+        "run1": "e5524d2ebf82dea037bfd87e2036a9b050a668d65f2e62c03b4f29bdc9e8d8e9",
+        "run2": "e5524d2ebf82dea037bfd87e2036a9b050a668d65f2e62c03b4f29bdc9e8d8e9"
+      },
+      "integrated_summary_sha256": {
+        "run1": "9bbfd4e33bcc895dc4a7d47ff180f91f64e8378a78a8eb1548d4541cecc1047b",
+        "run2": "9bbfd4e33bcc895dc4a7d47ff180f91f64e8378a78a8eb1548d4541cecc1047b"
+      },
+      "ios_gate_counts": {
+        "AFFO MISSING: FFO e capex di manutenzione non separati": 9,
+        "BQS<60": 213,
+        "CALCULABLE": 129,
+        "SBC MISSING/CONFLICTING": 23,
+        "book value / ROE / crescita sostenibile MISSING": 2,
+        "capex MISSING/CONFLICTING": 16,
+        "cassa operativa MISSING/CONFLICTING": 2,
+        "combined ratio MISSING: sottoscrizione non valutabile": 12,
+        "coverage<70": 10,
+        "guarded growth inputs MISSING/CONFLICTING": 27,
+        "market cap MISSING/CONFLICTING": 19,
+        "share_change MISSING/CONFLICTING": 41
+      },
+      "ios_not_null": 129,
+      "ios_not_null_pct": 25.65,
+      "pipeline_version": "V4.2-INTEGRATED-1.1",
+      "rows_field": 503,
+      "rows_in_results": 503,
+      "run_logs": {
+        "run1": {
+          "exception_or_warning_lines": [],
+          "exit_code": 0,
+          "stdout_stderr_lines": 1
+        },
+        "run2": {
+          "exception_or_warning_lines": [],
+          "exit_code": 0,
+          "stdout_stderr_lines": 1
+        }
+      },
+      "system_live": false,
+      "temporal_check": {
+        "filed_columns": {
+          "annual_filed": {
+            "count_eq_D": 3,
+            "count_gt_D": 0,
+            "exceeds_D": false,
+            "max": "20231114",
+            "non_empty": 473,
+            "present": true,
+            "raw_format_note": "values stored as YYYYMMDD or YYYYMMDD.0; normalized to YYYYMMDD"
+          },
+          "fy_minus_1_filed": {
+            "count_eq_D": 0,
+            "count_gt_D": 0,
+            "exceeds_D": false,
+            "max": "20221115",
+            "non_empty": 500,
+            "present": true,
+            "raw_format_note": "values stored as YYYYMMDD or YYYYMMDD.0; normalized to YYYYMMDD"
+          },
+          "fy_minus_2_filed": {
+            "count_eq_D": 0,
+            "count_gt_D": 0,
+            "exceeds_D": false,
+            "max": "20220224",
+            "non_empty": 497,
+            "present": true,
+            "raw_format_note": "values stored as YYYYMMDD or YYYYMMDD.0; normalized to YYYYMMDD"
+          },
+          "fy_minus_3_filed": {
+            "count_eq_D": 0,
+            "count_gt_D": 0,
+            "exceeds_D": false,
+            "max": "20201123",
+            "non_empty": 465,
+            "present": true,
+            "raw_format_note": "values stored as YYYYMMDD or YYYYMMDD.0; normalized to YYYYMMDD"
+          },
+          "latest_10q_filed": {
+            "count_eq_D": 0,
+            "count_gt_D": 0,
+            "exceeds_D": false,
+            "max": "20231113",
+            "non_empty": 503,
+            "present": true,
+            "raw_format_note": "values stored as YYYYMMDD or YYYYMMDD.0; normalized to YYYYMMDD"
+          }
+        },
+        "price_date_columns": "NONE_PRESENT (only market_price, no date column)",
+        "price_like_columns": [
+          "market_price"
+        ],
+        "supplementary_other_date_columns_max": {
+          "annual_assets_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "annual_buyback_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "annual_capex_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "annual_cash_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "annual_debt_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "annual_diluted_shares_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "annual_dividends_paid_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "annual_equity_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "annual_net_income_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "annual_operating_cash_flow_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "annual_operating_income_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "annual_revenue_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "annual_sbc_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "cash_and_equivalents_ddate": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "fy_minus_1_buyback_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "fy_minus_1_capex_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "fy_minus_1_diluted_shares_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "fy_minus_1_dividends_paid_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "fy_minus_1_equity_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "fy_minus_1_net_income_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "fy_minus_1_operating_cash_flow_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "fy_minus_1_operating_income_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "fy_minus_1_revenue_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "fy_minus_2_buyback_date": {
+            "count_gt_D": 0,
+            "max": "20210930"
+          },
+          "fy_minus_2_capex_date": {
+            "count_gt_D": 0,
+            "max": "20210930"
+          },
+          "fy_minus_2_diluted_shares_date": {
+            "count_gt_D": 0,
+            "max": "20210930"
+          },
+          "fy_minus_2_dividends_paid_date": {
+            "count_gt_D": 0,
+            "max": "20210930"
+          },
+          "fy_minus_2_equity_date": {
+            "count_gt_D": 0,
+            "max": "20210930"
+          },
+          "fy_minus_2_net_income_date": {
+            "count_gt_D": 0,
+            "max": "20210930"
+          },
+          "fy_minus_2_operating_cash_flow_date": {
+            "count_gt_D": 0,
+            "max": "20210930"
+          },
+          "fy_minus_2_operating_income_date": {
+            "count_gt_D": 0,
+            "max": "20210930"
+          },
+          "fy_minus_2_revenue_date": {
+            "count_gt_D": 0,
+            "max": "20210930"
+          },
+          "fy_minus_3_buyback_date": {
+            "count_gt_D": 0,
+            "max": "20200930"
+          },
+          "fy_minus_3_capex_date": {
+            "count_gt_D": 0,
+            "max": "20200930"
+          },
+          "fy_minus_3_diluted_shares_date": {
+            "count_gt_D": 0,
+            "max": "20200930"
+          },
+          "fy_minus_3_dividends_paid_date": {
+            "count_gt_D": 0,
+            "max": "20200930"
+          },
+          "fy_minus_3_equity_date": {
+            "count_gt_D": 0,
+            "max": "20200930"
+          },
+          "fy_minus_3_net_income_date": {
+            "count_gt_D": 0,
+            "max": "20200930"
+          },
+          "fy_minus_3_operating_cash_flow_date": {
+            "count_gt_D": 0,
+            "max": "20200930"
+          },
+          "fy_minus_3_operating_income_date": {
+            "count_gt_D": 0,
+            "max": "20200930"
+          },
+          "fy_minus_3_revenue_date": {
+            "count_gt_D": 0,
+            "max": "20200930"
+          },
+          "interest_expense_ddate": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "prior_capex_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "prior_diluted_shares_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "prior_net_income_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "prior_operating_cash_flow_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "prior_operating_income_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "prior_revenue_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "prior_sbc_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "short_term_investments_ddate": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "total_liabilities_and_equity_ddate": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          }
+        }
+      }
+    },
+    "20241114": {
+      "buy_add_allowed_rows_field": 0,
+      "buy_add_allowed_true_counted": 0,
+      "candidate_csv": "inputs/PIT_20241114.csv",
+      "candidate_sha256": "7ad5ad1cb241eb1aa7bd7b891ca39eb444729f8aa3bd6e25baffd579cd5ac124",
+      "deep_dive_queue": [
+        {
+          "entity_key": "MA",
+          "queue_rank": 1,
+          "selection_lane": "V"
+        },
+        {
+          "entity_key": "DECK",
+          "queue_rank": 2,
+          "selection_lane": "V"
+        },
+        {
+          "entity_key": "CF",
+          "queue_rank": 3,
+          "selection_lane": "V"
+        },
+        {
+          "entity_key": "CMG",
+          "queue_rank": 4,
+          "selection_lane": "V"
+        },
+        {
+          "entity_key": "LRCX",
+          "queue_rank": 5,
+          "selection_lane": "V"
+        },
+        {
+          "entity_key": "MOS",
+          "queue_rank": 6,
+          "selection_lane": "V"
+        },
+        {
+          "entity_key": "CAH",
+          "queue_rank": 7,
+          "selection_lane": "V"
+        },
+        {
+          "entity_key": "BLDR",
+          "queue_rank": 8,
+          "selection_lane": "I"
+        },
+        {
+          "entity_key": "LULU",
+          "queue_rank": 9,
+          "selection_lane": "I"
+        },
+        {
+          "entity_key": "MPWR",
+          "queue_rank": 10,
+          "selection_lane": "I"
+        }
+      ],
+      "deterministic_byte_identical": true,
+      "engine_version": "V4.2-PRE-FREEZE-1.0",
+      "integrated_run_sha256": {
+        "run1": "ce6863fc7ce1673e9aec886c9a280f81684cf7bf30e32a6ab86ac49098e38377",
+        "run2": "ce6863fc7ce1673e9aec886c9a280f81684cf7bf30e32a6ab86ac49098e38377"
+      },
+      "integrated_summary_sha256": {
+        "run1": "a0344f856e4b1a748052eb6d02838761fbdd0dae1b24f071cbae3d626433c1d5",
+        "run2": "a0344f856e4b1a748052eb6d02838761fbdd0dae1b24f071cbae3d626433c1d5"
+      },
+      "ios_gate_counts": {
+        "AFFO MISSING: FFO e capex di manutenzione non separati": 10,
+        "BQS<60": 176,
+        "CALCULABLE": 138,
+        "SBC MISSING/CONFLICTING": 31,
+        "book value / ROE / crescita sostenibile MISSING": 3,
+        "capex MISSING/CONFLICTING": 22,
+        "cassa operativa MISSING/CONFLICTING": 7,
+        "combined ratio MISSING: sottoscrizione non valutabile": 13,
+        "coverage<70": 10,
+        "guarded growth inputs MISSING/CONFLICTING": 27,
+        "market cap MISSING/CONFLICTING": 25,
+        "share_change MISSING/CONFLICTING": 41
+      },
+      "ios_not_null": 138,
+      "ios_not_null_pct": 27.44,
+      "pipeline_version": "V4.2-INTEGRATED-1.1",
+      "rows_field": 503,
+      "rows_in_results": 503,
+      "run_logs": {
+        "run1": {
+          "exception_or_warning_lines": [],
+          "exit_code": 0,
+          "stdout_stderr_lines": 1
+        },
+        "run2": {
+          "exception_or_warning_lines": [],
+          "exit_code": 0,
+          "stdout_stderr_lines": 1
+        }
+      },
+      "system_live": false,
+      "temporal_check": {
+        "filed_columns": {
+          "annual_filed": {
+            "count_eq_D": 2,
+            "count_gt_D": 0,
+            "exceeds_D": false,
+            "max": "20241114",
+            "non_empty": 473,
+            "present": true,
+            "raw_format_note": "values stored as YYYYMMDD or YYYYMMDD.0; normalized to YYYYMMDD"
+          },
+          "fy_minus_1_filed": {
+            "count_eq_D": 0,
+            "count_gt_D": 0,
+            "exceeds_D": false,
+            "max": "20231208",
+            "non_empty": 494,
+            "present": true,
+            "raw_format_note": "values stored as YYYYMMDD or YYYYMMDD.0; normalized to YYYYMMDD"
+          },
+          "fy_minus_2_filed": {
+            "count_eq_D": 0,
+            "count_gt_D": 0,
+            "exceeds_D": false,
+            "max": "20221129",
+            "non_empty": 494,
+            "present": true,
+            "raw_format_note": "values stored as YYYYMMDD or YYYYMMDD.0; normalized to YYYYMMDD"
+          },
+          "fy_minus_3_filed": {
+            "count_eq_D": 0,
+            "count_gt_D": 0,
+            "exceeds_D": false,
+            "max": "20220224",
+            "non_empty": 466,
+            "present": true,
+            "raw_format_note": "values stored as YYYYMMDD or YYYYMMDD.0; normalized to YYYYMMDD"
+          },
+          "latest_10q_filed": {
+            "count_eq_D": 0,
+            "count_gt_D": 0,
+            "exceeds_D": false,
+            "max": "20241112",
+            "non_empty": 501,
+            "present": true,
+            "raw_format_note": "values stored as YYYYMMDD or YYYYMMDD.0; normalized to YYYYMMDD"
+          }
+        },
+        "price_date_columns": "NONE_PRESENT (only market_price, no date column)",
+        "price_like_columns": [
+          "market_price"
+        ],
+        "supplementary_other_date_columns_max": {
+          "annual_assets_date": {
+            "count_gt_D": 0,
+            "max": "20240930"
+          },
+          "annual_buyback_date": {
+            "count_gt_D": 0,
+            "max": "20240930"
+          },
+          "annual_capex_date": {
+            "count_gt_D": 0,
+            "max": "20240930"
+          },
+          "annual_cash_date": {
+            "count_gt_D": 0,
+            "max": "20240930"
+          },
+          "annual_debt_date": {
+            "count_gt_D": 0,
+            "max": "20240930"
+          },
+          "annual_diluted_shares_date": {
+            "count_gt_D": 0,
+            "max": "20240930"
+          },
+          "annual_dividends_paid_date": {
+            "count_gt_D": 0,
+            "max": "20240930"
+          },
+          "annual_equity_date": {
+            "count_gt_D": 0,
+            "max": "20240930"
+          },
+          "annual_net_income_date": {
+            "count_gt_D": 0,
+            "max": "20240930"
+          },
+          "annual_operating_cash_flow_date": {
+            "count_gt_D": 0,
+            "max": "20240930"
+          },
+          "annual_operating_income_date": {
+            "count_gt_D": 0,
+            "max": "20240930"
+          },
+          "annual_revenue_date": {
+            "count_gt_D": 0,
+            "max": "20240930"
+          },
+          "annual_sbc_date": {
+            "count_gt_D": 0,
+            "max": "20240930"
+          },
+          "cash_and_equivalents_ddate": {
+            "count_gt_D": 0,
+            "max": "20240930"
+          },
+          "fy_minus_1_buyback_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "fy_minus_1_capex_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "fy_minus_1_diluted_shares_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "fy_minus_1_dividends_paid_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "fy_minus_1_equity_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "fy_minus_1_net_income_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "fy_minus_1_operating_cash_flow_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "fy_minus_1_operating_income_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "fy_minus_1_revenue_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "fy_minus_2_buyback_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "fy_minus_2_capex_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "fy_minus_2_diluted_shares_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "fy_minus_2_dividends_paid_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "fy_minus_2_equity_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "fy_minus_2_net_income_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "fy_minus_2_operating_cash_flow_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "fy_minus_2_operating_income_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "fy_minus_2_revenue_date": {
+            "count_gt_D": 0,
+            "max": "20220930"
+          },
+          "fy_minus_3_buyback_date": {
+            "count_gt_D": 0,
+            "max": "20210930"
+          },
+          "fy_minus_3_capex_date": {
+            "count_gt_D": 0,
+            "max": "20210930"
+          },
+          "fy_minus_3_diluted_shares_date": {
+            "count_gt_D": 0,
+            "max": "20210930"
+          },
+          "fy_minus_3_dividends_paid_date": {
+            "count_gt_D": 0,
+            "max": "20210930"
+          },
+          "fy_minus_3_equity_date": {
+            "count_gt_D": 0,
+            "max": "20210930"
+          },
+          "fy_minus_3_net_income_date": {
+            "count_gt_D": 0,
+            "max": "20210930"
+          },
+          "fy_minus_3_operating_cash_flow_date": {
+            "count_gt_D": 0,
+            "max": "20210930"
+          },
+          "fy_minus_3_operating_income_date": {
+            "count_gt_D": 0,
+            "max": "20210930"
+          },
+          "fy_minus_3_revenue_date": {
+            "count_gt_D": 0,
+            "max": "20210930"
+          },
+          "interest_expense_ddate": {
+            "count_gt_D": 0,
+            "max": "20240930"
+          },
+          "prior_capex_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "prior_diluted_shares_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "prior_net_income_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "prior_operating_cash_flow_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "prior_operating_income_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "prior_revenue_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "prior_sbc_date": {
+            "count_gt_D": 0,
+            "max": "20230930"
+          },
+          "short_term_investments_ddate": {
+            "count_gt_D": 0,
+            "max": "20240930"
+          },
+          "total_liabilities_and_equity_ddate": {
+            "count_gt_D": 0,
+            "max": "20240930"
+          }
+        }
+      }
+    }
+  },
+  "input_hash_check": {
+    "inputs/PIT_20231114.csv": {
+      "actual": "8860838e62f0ea83f79aaded4d7f7011e2861a42e210deab2e7ef7a1a066c04a",
+      "expected": "8860838e62f0ea83f79aaded4d7f7011e2861a42e210deab2e7ef7a1a066c04a",
+      "ok": true
+    },
+    "inputs/PIT_20241114.csv": {
+      "actual": "7ad5ad1cb241eb1aa7bd7b891ca39eb444729f8aa3bd6e25baffd579cd5ac124",
+      "expected": "7ad5ad1cb241eb1aa7bd7b891ca39eb444729f8aa3bd6e25baffd579cd5ac124",
+      "ok": true
+    },
+    "inputs/economic_registry_verified.json": {
+      "actual": "9428786994c547e739f7e4742f9c02ebcb392bc3706c3a81af7d787c0a16ba96",
+      "expected": "9428786994c547e739f7e4742f9c02ebcb392bc3706c3a81af7d787c0a16ba96",
+      "ok": true
+    },
+    "inputs/evidence_empty.json": {
+      "actual": "58be8ed3e4f2e241e991c91df441e9d101876a220aea16e25fa3c9ca26d6ca78",
+      "expected": "58be8ed3e4f2e241e991c91df441e9d101876a220aea16e25fa3c9ca26d6ca78",
+      "ok": true
+    },
+    "src/v42_integrated_pipeline.py": {
+      "actual": "3eb0138c266bc16eac571217904275d9c59f59d98ecc396e83a8716f22d2fad6",
+      "expected": "3eb0138c266bc16eac571217904275d9c59f59d98ecc396e83a8716f22d2fad6",
+      "ok": true
+    }
+  },
+  "input_hash_check_all_ok": true,
+  "pipeline_cli_changes": "none (CLI matched as specified)",
+  "schema": "r12_executor_report_v1"
+}
