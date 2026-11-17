@@ -17,7 +17,6 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent))
-import inflection_lane_v42 as lane  # noqa: E402
 import v42_integrated_pipeline as pipe  # noqa: E402
 
 VERSION = "V4.2-INTEGRATED-1.2-CANDIDATE-SHADOW"
@@ -61,18 +60,24 @@ def main(argv=None):
     argv = list(sys.argv[1:] if argv is None else argv)
     cand = argv[argv.index("--candidate") + 1]
     G = guard_table(cand)
-    orig = lane.merge_deep_dive_queue
     report = {"blocked": []}
+    orig_load = pipe.load_components
 
-    def guarded(lane_v, lane_i):
-        v = [r for r in lane_v if not blocked(r["entity_key"], "V", G)]
-        i = [r for r in lane_i if not blocked(r["entity_key"], "I", G)]
-        report["blocked"] = sorted({r["entity_key"] for r in lane_v[:30] if blocked(r["entity_key"], "V", G)} |
-                                   {r["entity_key"] for r in lane_i[:15] if blocked(r["entity_key"], "I", G)})
-        return orig(v, i)
+    def load_guarded(*a, **k):
+        comp = orig_load(*a, **k)
+        orig = comp["lane"].merge_deep_dive_queue
 
-    lane.merge_deep_dive_queue = guarded
-    pipe.lane.merge_deep_dive_queue = guarded
+        def guarded(lane_v, lane_i):
+            v = [r for r in lane_v if not blocked(r["entity_key"], "V", G)]
+            i = [r for r in lane_i if not blocked(r["entity_key"], "I", G)]
+            report["blocked"] = sorted({r["entity_key"] for r in lane_v[:30] if blocked(r["entity_key"], "V", G)} |
+                                       {r["entity_key"] for r in lane_i[:15] if blocked(r["entity_key"], "I", G)})
+            return orig(v, i)
+
+        comp["lane"].merge_deep_dive_queue = guarded
+        return comp
+
+    pipe.load_components = load_guarded
     rc = pipe.main(argv)
     out = Path(argv[argv.index("--out") + 1])
     import json
