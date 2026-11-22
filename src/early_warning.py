@@ -15,7 +15,8 @@ Soglie fisse v1.0 (non si cambiano senza approvazione):
 - RICAVI_GIU: ricavi TTM < -3% sul TTM precedente.
 - 8K_ROSSO: voce 4.02 (bilanci non più affidabili), 1.03 (fallimento), 4.01 (cambio revisore).
 - 8K_ATTENZIONE: voce 2.05 (ristrutturazione), 2.06 (svalutazioni), 5.02 (uscita/nomina dirigenti).
-- INSIDER_VENDITE: vendite sul mercato > 5 milioni USD e nessun acquisto in 90 giorni.
+- INSIDER_VENDITE: vendite discrezionali sul mercato (escluse quelle dichiarate in piani 10b5-1) > 5 milioni USD
+  e nessun acquisto in 90 giorni.
 - SHORT_SU: short interest +30% o più rispetto a circa un mese prima.
 
 I segnali sono campanelli: GIALLO -> INVESTIGARE. Non cambiano BQS, IOS, coda o soglie.
@@ -147,7 +148,7 @@ def ttm_yoy(qs):
 
 def form4(cik, sub):
     rec = (sub.get("filings") or {}).get("recent") or {}
-    buys = sells = 0.0
+    buys = sells = planned = 0.0
     n = 0
     for form, date, acc, doc in zip(rec.get("form", []), rec.get("filingDate", []),
                                     rec.get("accessionNumber", []), rec.get("primaryDocument", [])):
@@ -161,6 +162,7 @@ def form4(cik, sub):
         time.sleep(0.15)
         if not r:
             continue
+        plan = bool(re.search(r"<aff10b5One>\s*(1|true)\s*</aff10b5One>", r.text, re.I))
         for t in re.findall(r"<nonDerivativeTransaction>(.*?)</nonDerivativeTransaction>", r.text, re.S):
             code = re.search(r"<transactionCode>\s*(\w)\s*</transactionCode>", t)
             sh = re.search(r"<transactionShares>\s*<value>\s*([\d.]+)", t)
@@ -171,8 +173,11 @@ def form4(cik, sub):
             if code.group(1) == "P":
                 buys += val
             elif code.group(1) == "S":
-                sells += val
-    return n, buys, sells
+                if plan:
+                    planned += val
+                else:
+                    sells += val
+    return n, buys, sells, planned
 
 
 def eightk(sub):
@@ -248,10 +253,11 @@ def main() -> int:
                 flags.append("8K_ROSSO")
             elif any(i in allit for i in ("2.05", "2.06", "5.02")):
                 flags.append("8K_ATTENZIONE")
-            n4, b, s = form4(cik, sub) if sub else (0, 0.0, 0.0)
+            n4, b, s, pl = form4(cik, sub) if sub else (0, 0.0, 0.0, 0.0)
             row["form4_90d"] = n4
             row["insider_buys_90d_usd"] = f"{b:.0f}"
             row["insider_sales_90d_usd"] = f"{s:.0f}"
+            row["insider_planned_sales_90d_usd"] = f"{pl:.0f}"
             if s > 5e6 and b == 0:
                 flags.append("INSIDER_VENDITE")
             row["sec_status"] = "PRESENT" if facts else "MISSING"
@@ -271,7 +277,7 @@ def main() -> int:
         print(t, row["level"], row["flags"])
     fields = ["ticker", "level", "flags", "last_quarter_end", "rev_q_yoy_pct", "rev_ttm_yoy_pct",
               "opinc_q_yoy_pct", "opinc_ttm_yoy_pct", "ni_q_yoy_pct", "ni_ttm_yoy_pct", "eightk_30d",
-              "form4_90d", "insider_buys_90d_usd", "insider_sales_90d_usd", "short_date", "short_interest",
+              "form4_90d", "insider_buys_90d_usd", "insider_sales_90d_usd", "insider_planned_sales_90d_usd", "short_date", "short_interest",
               "days_to_cover", "short_change_pct", "tags", "sec_status", "cik"]
     OUT.mkdir(parents=True, exist_ok=True)
     with open(OUT / "early_warning.csv", "w", newline="") as f:
