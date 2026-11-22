@@ -1,14 +1,14 @@
-ticker,level,flags,last_quarter_end,rev_q_yoy_pct,rev_ttm_yoy_pct,opinc_q_yoy_pct,opinc_ttm_yoy_pct,ni_q_yoy_pct,ni_ttm_yoy_pct,eightk_30d,form4_90d,insider_buys_90d_usd,insider_sales_90d_usd,short_date,short_interest,days_to_cover,short_change_pct,tags,sec_status,cik
-SYF,VERDE,,2026-09-30,,,,,-17.2,-6.8,"2026-11-10:7.01,9.01",31,0,0,,,,,-/-/NetIncomeLoss,PRESENT,1601712
-CMCSA,GIALLO,TRIM_DETERIORO,2026-09-30,-6.1,-0.2,-3.9,-18.4,3.5,-49.9,,7,0,0,10/30/2026,89548904,2.6,29.1,RevenueFromContractWithCustomerExcludingAssessedTax/OperatingIncomeLoss/NetIncomeLoss,PRESENT,1166691
-AMP,VERDE,,2026-09-30,6.1,8.8,,,23.5,14.8,"2026-10-29:2.02,9.01",1,0,0,,,,,Revenues/-/NetIncomeLoss,PRESENT,820027
-ADBE,GIALLO,INSIDER_VENDITE,2026-08-28,12.9,12.0,8.3,10.3,3.1,4.7,,12,0,31344876,10/30/2026,16762913,4.2,-5.3,Revenues/OperatingIncomeLoss/NetIncomeLoss,PRESENT,796343
-CHTR,GIALLO,TRIM_DETERIORO 8K_ATTENZIONE,2026-09-30,9.1,1.0,-212.6,-53.9,-310.8,-72.9,"2026-11-06:2.02,9.01 ; 2026-10-27:5.02,7.01,9.01",9,0,0,10/30/2026,17865755,7.3,8.2,Revenues/OperatingIncomeLoss/NetIncomeLoss,PRESENT,1091667
-MGM,VERDE,,2026-09-30,-0.9,2.6,,28.9,,896.1,"2026-10-28:2.02,9.01 ; 2026-10-28:1.01,7.01,9.01",24,51740827,0,,,,,RevenueFromContractWithCustomerExcludingAssessedTax/OperatingIncomeLoss/NetIncomeLoss,PRESENT,789570
-TROW,VERDE,,2026-09-30,5.9,6.9,19.7,7.7,-5.2,5.1,"2026-11-10:8.01,9.01 ; 2026-10-29:2.02,9.01",11,0,1118203,10/30/2026,27221848,12.6,1.2,RevenueFromContractWithCustomerExcludingAssessedTax/OperatingIncomeLoss/NetIncomeLoss,PRESENT,1113169
-NEM,VERDE,,2026-09-30,15.2,23.7,,,35.1,28.6,,9,0,2380140,,,,,RevenueFromContractWithCustomerExcludingAssessedTax/-/NetIncomeLoss,PRESENT,1164727
-FIX,GIALLO,TRIM_DETERIORO RICAVI_GIU INSIDER_VENDITE,2026-09-30,53.7,-36.6,64.8,-11.2,67.7,94.8,"2026-11-17:8.01,9.01 ; 2026-11-05:8.01 ; 2026-10-28:7.01,9.01",1,0,25769923,,,,,Revenues/OperatingIncomeLoss/NetIncomeLoss,PRESENT,1035983
-ANET,GIALLO,INSIDER_VENDITE,2026-09-30,58.5,40.7,67.9,43.8,82.9,41.6,"2026-11-03:2.02,9.01",35,0,506872389,,,,,RevenueFromContractWithCustomerExcludingAssessedTax/OperatingIncomeLoss/NetIncomeLoss,PRESENT,1596532
-KO,GIALLO,INSIDER_VENDITE,2026-10-02,7.4,7.1,12.1,4.8,8.5,12.3,"2026-10-27:2.02,9.01",6,0,26607412,,,,,Revenues/OperatingIncomeLoss/NetIncomeLoss,PRESENT,21344
-JNJ,GIALLO,INSIDER_VENDITE,2015-03-29,5.9,7.8,,,-95.9,-35.9,,5,0,12947986,,,,,RevenueFromContractWithCustomerExcludingAssessedTax/OperatingIncomeLoss/NetIncomeLoss,PRESENT,200406
-TMO,GIALLO,8K_ATTENZIONE INSIDER_VENDITE,2026-09-26,9.1,8.3,16.6,12.8,6.5,7.6,2026-10-30:5.02,18,0,20172423,,,,,RevenueFromContractWithCustomerExcludingAssessedTax/OperatingIncomeLoss/NetIncomeLoss,PRESENT,97745
+ticker,level,flags,last_quarter_end,rev_q_yoy_pct,rev_ttm_yoy_pct,opinc_q_yoy_pct,opinc_ttm_yoy_pct,ni_q_yoy_pct,ni_ttm_yoy_pct,eightk_30d,form4_90d,insider_buys_90d_usd,insider_sales_90d_usd,insider_planned_sales_90d_usd,short_date,short_interest,days_to_cover,short_change_pct,tags,sec_status,cik
+SYF,VERDE,,2026-09-30,,,,,-17.2,-6.8,"2026-11-10:7.01,9.01",31,0,0,0,,,,,-/-/NetIncomeLoss,PRESENT,1601712
+CMCSA,GIALLO,TRIM_DETERIORO,2026-09-30,-6.1,-0.2,-3.9,-18.4,3.5,-49.9,,7,0,0,0,10/30/2026,89548904,2.6,29.1,RevenueFromContractWithCustomerExcludingAssessedTax/OperatingIncomeLoss/NetIncomeLoss,PRESENT,1166691
+AMP,VERDE,,2026-09-30,6.1,8.8,,,23.5,14.8,"2026-10-29:2.02,9.01",1,0,0,0,,,,,Revenues/-/NetIncomeLoss,PRESENT,820027
+ADBE,GIALLO,INSIDER_VENDITE,2026-08-28,12.9,12.0,8.3,10.3,3.1,4.7,,12,0,31344876,0,10/30/2026,16762913,4.2,-5.3,Revenues/OperatingIncomeLoss/NetIncomeLoss,PRESENT,796343
+CHTR,GIALLO,TRIM_DETERIORO 8K_ATTENZIONE,2026-09-30,9.1,1.0,-212.6,-53.9,-310.8,-72.9,"2026-11-06:2.02,9.01 ; 2026-10-27:5.02,7.01,9.01",9,0,0,0,10/30/2026,17865755,7.3,8.2,Revenues/OperatingIncomeLoss/NetIncomeLoss,PRESENT,1091667
+MGM,VERDE,,2026-09-30,-0.9,2.6,,28.9,,896.1,"2026-10-28:2.02,9.01 ; 2026-10-28:1.01,7.01,9.01",24,51740827,0,0,,,,,RevenueFromContractWithCustomerExcludingAssessedTax/OperatingIncomeLoss/NetIncomeLoss,PRESENT,789570
+TROW,VERDE,,2026-09-30,5.9,6.9,19.7,7.7,-5.2,5.1,"2026-11-10:8.01,9.01 ; 2026-10-29:2.02,9.01",11,0,1118203,0,10/30/2026,27221848,12.6,1.2,RevenueFromContractWithCustomerExcludingAssessedTax/OperatingIncomeLoss/NetIncomeLoss,PRESENT,1113169
+NEM,VERDE,,2026-09-30,15.2,23.7,,,35.1,28.6,,9,0,0,2380140,,,,,RevenueFromContractWithCustomerExcludingAssessedTax/-/NetIncomeLoss,PRESENT,1164727
+FIX,GIALLO,TRIM_DETERIORO RICAVI_GIU INSIDER_VENDITE,2026-09-30,53.7,-36.6,64.8,-11.2,67.7,94.8,"2026-11-17:8.01,9.01 ; 2026-11-05:8.01 ; 2026-10-28:7.01,9.01",1,0,25769923,0,,,,,Revenues/OperatingIncomeLoss/NetIncomeLoss,PRESENT,1035983
+ANET,VERDE,,2026-09-30,58.5,40.7,67.9,43.8,82.9,41.6,"2026-11-03:2.02,9.01",35,0,492213,506380176,,,,,RevenueFromContractWithCustomerExcludingAssessedTax/OperatingIncomeLoss/NetIncomeLoss,PRESENT,1596532
+KO,GIALLO,INSIDER_VENDITE,2026-10-02,7.4,7.1,12.1,4.8,8.5,12.3,"2026-10-27:2.02,9.01",6,0,26607412,0,,,,,Revenues/OperatingIncomeLoss/NetIncomeLoss,PRESENT,21344
+JNJ,GIALLO,INSIDER_VENDITE,2026-09-27,5.9,7.8,,,-95.9,-35.9,,5,0,12947986,0,,,,,RevenueFromContractWithCustomerExcludingAssessedTax/OperatingIncomeLoss/NetIncomeLoss,PRESENT,200406
+TMO,GIALLO,8K_ATTENZIONE,2026-09-26,9.1,8.3,16.6,12.8,6.5,7.6,2026-10-30:5.02,18,0,1999960,18172463,,,,,RevenueFromContractWithCustomerExcludingAssessedTax/OperatingIncomeLoss/NetIncomeLoss,PRESENT,97745
