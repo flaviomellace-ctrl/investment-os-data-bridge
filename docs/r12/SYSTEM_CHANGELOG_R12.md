@@ -7,3 +7,7 @@
 - 2026-11-22 R12-ter (2018, 2019), criteri v1: NON SUPERATO (M1, 1 crollo su 20).
 - 2026-11-22 Criteri R12 v2 (M1 statistico), approvati da Flavio in chat; file d498391c…
 - 2026-11-22 R12-quater (2014-2017), criteri v2: NON SUPERATO (M1 v2, p = 0,041).
+9bcf16370100cebd14d59be1737c8d857e605e33f6e6deb7826e56e8beabad3a  docs/CONSTITUTION_AMENDMENT_01_LIVE_LIMITATO.md
+- 2026-11-22 Regola 1.3 congelata e poi ritirata prima di qualunque dato 2010-2013 (nessun beneficio in-sample).
+- 2026-11-22 Emendamento 01 alla Costituzione: modalità LIVE-LIMITATO, approvato da Flavio (hash nella riga sopra).
+  IPS aggiornata a v1.1. Daily Sentinel aggiornato alle regole LIVE-LIMITATO.
