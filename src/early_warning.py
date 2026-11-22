@@ -18,6 +18,8 @@ Soglie fisse v1.0 (non si cambiano senza approvazione):
 - INSIDER_VENDITE: vendite discrezionali sul mercato (escluse quelle dichiarate in piani 10b5-1) > 5 milioni USD
   e nessun acquisto in 90 giorni.
 - SHORT_SU: short interest +30% o più rispetto a circa un mese prima.
+- STIME_GIU (v1.1, attivo appena l'archivio stime ha 30 giorni): consenso EPS dell'anno in corso o del prossimo
+  rivisto al ribasso di oltre il 5% in 30 giorni o di oltre il 10% in 90 giorni (data/current/estimate_revisions.csv).
 
 I segnali sono campanelli: GIALLO -> INVESTIGARE. Non cambiano BQS, IOS, coda o soglie.
 Dati mancanti restano vuoti con stato MISSING, mai zero.
@@ -215,7 +217,13 @@ def fmt(x, nd=1):
     return "" if x is None else f"{x:.{nd}f}"
 
 
+REVISIONS = {}
+
+
 def main() -> int:
+    rp = OUT / "estimate_revisions.csv"
+    if rp.exists():
+        REVISIONS.update({r["ticker"]: r for r in csv.DictReader(open(rp))})
     tickers = [t.strip().upper() for t in TICKERS.read_text().splitlines() if t.strip() and not t.startswith("#")]
     cmap = cik_map()
     rows = []
@@ -279,6 +287,13 @@ def main() -> int:
                 flags.append("SHORT_SU")
         else:
             row["short_date"] = row["short_interest"] = row["days_to_cover"] = row["short_change_pct"] = ""
+        rv = REVISIONS.get(t, {})
+        for k in ("fy0", "fy1"):
+            for lab, thr in (("30d", -5.0), ("90d", -10.0)):
+                v = rv.get(f"{k}_eps_rev_{lab}_pct", "")
+                if v not in ("", None) and float(v) < thr and "STIME_GIU" not in flags:
+                    flags.append("STIME_GIU")
+        row["eps_rev_30d_pct"] = rv.get("fy0_eps_rev_30d_pct", "")
         row["flags"] = " ".join(flags)
         row["level"] = "ROSSO" if "8K_ROSSO" in flags else ("GIALLO" if flags else "VERDE")
         rows.append(row)
@@ -286,7 +301,7 @@ def main() -> int:
     fields = ["ticker", "level", "flags", "last_quarter_end", "rev_q_yoy_pct", "rev_ttm_yoy_pct",
               "opinc_q_yoy_pct", "opinc_ttm_yoy_pct", "ni_q_yoy_pct", "ni_ttm_yoy_pct", "eightk_30d",
               "form4_90d", "insider_buys_90d_usd", "insider_sales_90d_usd", "insider_planned_sales_90d_usd", "short_date", "short_interest",
-              "days_to_cover", "short_change_pct", "tags", "sec_status", "cik"]
+              "days_to_cover", "short_change_pct", "eps_rev_30d_pct", "tags", "sec_status", "cik"]
     OUT.mkdir(parents=True, exist_ok=True)
     with open(OUT / "early_warning.csv", "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
@@ -294,7 +309,7 @@ def main() -> int:
         for r in rows:
             w.writerow({k: r.get(k, "") for k in fields})
     (OUT / "early_warning_status.json").write_text(json.dumps({
-        "version": "EARLY_WARNING v1.0",
+        "version": "EARLY_WARNING v1.1",
         "fetched_at_utc": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "sources": ["SEC companyfacts", "SEC submissions (8-K items, Form 4)", "api.nasdaq.com short-interest"],
         "n": len(rows), "flagged": sum(1 for r in rows if r["flags"])}, indent=1))
