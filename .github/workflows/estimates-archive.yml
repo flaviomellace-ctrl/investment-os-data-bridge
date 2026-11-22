@@ -2,6 +2,11 @@ name: Estimates archive
 
 on:
   workflow_dispatch:
+    inputs:
+      limit:
+        description: "Solo i primi N titoli (prova, nessun salvataggio)"
+        required: false
+        default: ""
   schedule:
     # Giorni feriali dopo la chiusura USA.
     - cron: "52 22 * * 1-5"
@@ -23,7 +28,9 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install "requests>=2.32,<3"
-      - run: python src/estimates_snapshot.py
+      - run: python -u src/estimates_snapshot.py
+        env:
+          EST_LIMIT: ${{ inputs.limit }}
       - name: Commit
         run: |
           git config user.name "investment-os-data-bridge[bot]"

@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import csv
 import datetime as dt
+import os
 import sys
 import time
 from pathlib import Path
@@ -39,15 +40,19 @@ FIELDS = ["ticker", "snapshot_date", "fy0_end", "fy0_eps", "fy0_n", "fy0_high", 
           "fy1_n", "q0_end", "q0_eps", "q0_n", "target_mean", "target_high", "target_low", "rating", "status"]
 
 
+LAST_ERR = {}
+
+
 def get(url):
-    for a in range(3):
+    for a in range(2):
         try:
-            r = S.get(url, timeout=25)
+            r = S.get(url, timeout=12)
             if r.status_code == 200:
                 return r.json()
-        except Exception:
-            pass
-        time.sleep(1.5 + 2 * a)
+            LAST_ERR["e"] = f"HTTP {r.status_code}"
+        except Exception as exc:
+            LAST_ERR["e"] = type(exc).__name__
+        time.sleep(1 + a)
     return None
 
 
@@ -104,13 +109,21 @@ def nearest(days_back):
 def main() -> int:
     tick = [r["ticker"].strip().upper() for r in csv.DictReader(open(UNIVERSE)) if r.get("ticker")]
     extra = [t.strip().upper() for t in EXTRA.read_text().splitlines() if t.strip() and not t.startswith("#")]
-    tick = list(dict.fromkeys(tick + extra))
+    tick = list(dict.fromkeys(extra + tick))
+    lim = int(os.getenv("EST_LIMIT", "0") or 0)
+    if lim:
+        tick = tick[:lim]
     rows = []
     for i, t in enumerate(tick):
         rows.append(snap(t))
         time.sleep(0.35)
-        if i % 50 == 0:
-            print(i, t, rows[-1]["status"])
+        if i % 25 == 0 or lim:
+            print(i, t, rows[-1]["status"], rows[-1].get("fy0_eps", ""), LAST_ERR.get("e", ""), flush=True)
+        if i == 30 and sum(1 for r in rows if r["status"] == "PRESENT") == 0:
+            print("Fonte non raggiungibile dopo 30 titoli: interrompo", LAST_ERR, flush=True)
+            return 1
+    if lim:
+        return 0
     ARCH.mkdir(parents=True, exist_ok=True)
     today = ARCH / f"{dt.date.today().isoformat()}.csv"
     if not today.exists():
