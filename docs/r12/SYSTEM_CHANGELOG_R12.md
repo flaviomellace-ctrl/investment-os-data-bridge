@@ -10,3 +10,4 @@
 - 2026-11-22 Regola 1.3 congelata e poi ritirata prima di qualunque dato 2010-2013 (nessun beneficio in-sample).
 - 2026-11-22 Emendamento 01 alla Costituzione: modalità LIVE-LIMITATO, approvato da Flavio (sha256 9bcf16370100cebd14d59be1737c8d857e605e33f6e6deb7826e56e8beabad3a).
   IPS aggiornata a v1.1. Daily Sentinel aggiornato alle regole LIVE-LIMITATO.
+- 2026-11-22 21:40 Pre-controllo filtro qualità tipo Piotroski su 98 posizioni (2014-2024): nessuna separazione (crolli 5,86 vs altri 5,59); nessuna regola congelata; date 2010-2013 intatte. R12 NON SUPERATO.
