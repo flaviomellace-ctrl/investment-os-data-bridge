@@ -42,7 +42,7 @@ jobs:
             PIT_AS_OF="$AS_OF" PIT_UNIVERSE="$S/universe.csv" PIT_STAGES="$STAGES" GITHUB_RUN_ID="pit_${AS_OF}" \
               python "$S/src/pit_replay.py" 2>&1 | tee "$RUNNER_TEMP/r_$AS_OF.log" | grep -E "PIT|BLOCK|Error|Traceback" || true
             grep -E "^PIT_BRIDGE2" "$RUNNER_TEMP/r_$AS_OF.log" || true
-            test -f "$S/data/current/pit_candidate.csv"
+            if [ ! -f "$S/data/current/pit_candidate.csv" ]; then tail -60 "$RUNNER_TEMP/r_$AS_OF.log"; exit 1; fi
             O="pit/out/$LABEL/$AS_OF"; mkdir -p "$O"
             cp "$S/data/current/pit_candidate.csv" "$O/pit_candidate.csv"
             cp "$S/universe.csv" "$S/universe.json" "$O/"
