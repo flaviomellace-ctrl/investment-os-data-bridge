@@ -47,3 +47,10 @@ Costituzione: proposta (messaggio delle 21:30), motivazione, approvazione umana,
   va disattivata da Flavio; nel frattempo la versione cloud ha un controllo anti-doppione.
 - claude/ARCHIVIO_INDICE.md: elenco dei documenti superati che le attività non leggono più. Cancellazione dal Project
   solo dopo copia nel repository e conferma di Flavio.
+
+## 5. Prima esecuzione in produzione (22/11/2026, run GitHub 45069111945)
+S&P 500, 504 società, confronto con l'aggiornamento del 16/11 (include anche i nuovi trimestrali 2026Q3, quindi non è
+solo effetto BRIDGE-2): azioni diluite presenti 371 → 485; ricavi 450 → 488; cassa operativa 487 → 499; FCF 405 → 424;
+copertura media delle metriche essenziali 92,6% → 98,1%. companyfacts: 498 società lette, 0 errori, 2.593 + 7.322 voci aggiunte.
+EARLY WARNING v1.0 prima esecuzione: 13 titoli, campanelli attivi su CMCSA, CHTR, JNJ (trimestrali), CHTR e TMO (8-K 5.02),
+ADBE, FIX, KO, JNJ (vendite insider discrezionali). Tutti da verificare su fonte primaria prima di qualunque uso.
