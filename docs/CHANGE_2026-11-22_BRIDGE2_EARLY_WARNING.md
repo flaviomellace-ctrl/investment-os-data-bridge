@@ -54,3 +54,16 @@ solo effetto BRIDGE-2): azioni diluite presenti 371 → 485; ricavi 450 → 488;
 copertura media delle metriche essenziali 92,6% → 98,1%. companyfacts: 498 società lette, 0 errori, 2.593 + 7.322 voci aggiunte.
 EARLY WARNING v1.0 prima esecuzione: 13 titoli, campanelli attivi su CMCSA, CHTR, JNJ (trimestrali), CHTR e TMO (8-K 5.02),
 ADBE, FIX, KO, JNJ (vendite insider discrezionali). Tutti da verificare su fonte primaria prima di qualunque uso.
+
+## 6. Strato dati "professionale" gratuito (22/11/2026, 23:00)
+- Archivio point-in-time delle stime degli analisti (src/estimates_snapshot.py, workflow estimates-archive.yml,
+  giorni feriali 23:52 Roma): ogni giorno la fotografia del consenso EPS (anno in corso, anno prossimo, trimestre),
+  numero di analisti, prezzo obiettivo medio e giudizi, per tutto l'S&P 500 più la lista d'attesa. Fonte: API pubblica
+  Nasdaq. File giornalieri in data/estimates/ (mai riscritti). È l'equivalente gratuito, costruito da oggi in avanti,
+  dello storico I/B/E/S che i professionisti comprano: lo storico passato non esiste, quello futuro sì.
+- EARLY WARNING v1.1: nuovo campanello STIME_GIU (consenso EPS -5% in 30 giorni o -10% in 90 giorni), attivo appena
+  l'archivio ha 30 giorni di profondità (fine dicembre 2026). Stesso uso: solo INVESTIGARE.
+- Controllo di salute (src/health_check.py, workflow health-check.yml, ogni giorno 07:47 Roma): se prezzi, dati
+  Il Margine, campanelli, stime o fondamentali sono vecchi apre una segnalazione su GitHub, che GitHub notifica
+  via email al proprietario del repository; la chiude da solo quando i dati tornano in regola.
+- Hash: src/estimates_snapshot.py e src/health_check.py nel commit; src/early_warning.py v1.1 f6be23a2626bc8e81dbaa853f952e7154a0a91206c366d43e1d7427ecff8eef0.
