@@ -13,10 +13,16 @@ for name in ("ALLE", "CL", "CVX", "GOOGL"):
 cik_rows = sub[sub["name"].str.contains("ALLEGION|COLGATE|CHEVRON CORP|ALPHABET", case=False, na=False) & sub["form"].eq("10-K")]
 out.append(cik_rows[["adsh", "name", "form", "period", "filed"]].to_string())
 adsh = set(cik_rows["adsh"])
-for chunk in pd.read_csv(zf.open("num.txt"), sep="\t", dtype=str, chunksize=500000):
-    m = chunk["adsh"].isin(adsh) & chunk["tag"].str.startswith(("WeightedAverageNumber", "RevenueFromContract", "Revenues"))
-    if m.any():
-        out.append(chunk.loc[m].to_string(max_colwidth=60))
+import csv as _csv
+for label, kw in (("DEFAULT", {}), ("QUOTE_NONE", {"quoting": _csv.QUOTE_NONE})):
+    n = 0; hits = []
+    for chunk in pd.read_csv(zf.open("num.txt"), sep="\t", dtype=str, chunksize=500000, **kw):
+        n += len(chunk)
+        m = chunk["adsh"].isin(adsh) & chunk["tag"].str.startswith(("WeightedAverageNumberOfDiluted", "WeightedAverageNumberOfShareOutstandingBasicAndDiluted")) & chunk["segments"].isna()
+        if m.any():
+            hits.append(chunk.loc[m, ["adsh", "tag", "ddate", "qtrs", "uom", "value"]].to_string())
+    out.append(f"### {label}: total num rows {n}")
+    out.extend(hits)
 os.makedirs("pit/out", exist_ok=True)
 open("pit/out/probe_fsds.txt", "w").write("\n".join(out))
 print("\n".join(out)[:30000])
