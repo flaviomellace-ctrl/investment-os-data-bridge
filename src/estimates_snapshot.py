@@ -113,15 +113,16 @@ def main() -> int:
     lim = int(os.getenv("EST_LIMIT", "0") or 0)
     if lim:
         tick = tick[:lim]
+    from concurrent.futures import ThreadPoolExecutor
     rows = []
-    for i, t in enumerate(tick):
-        rows.append(snap(t))
-        time.sleep(0.35)
-        if i % 25 == 0 or lim:
-            print(i, t, rows[-1]["status"], rows[-1].get("fy0_eps", ""), LAST_ERR.get("e", ""), flush=True)
-        if i == 30 and sum(1 for r in rows if r["status"] == "PRESENT") == 0:
-            print("Fonte non raggiungibile dopo 30 titoli: interrompo", LAST_ERR, flush=True)
-            return 1
+    with ThreadPoolExecutor(max_workers=4) as ex:
+        for i, row in enumerate(ex.map(snap, tick)):
+            rows.append(row)
+            if i % 25 == 0 or lim:
+                print(i, row["ticker"], row["status"], row.get("fy0_eps", ""), LAST_ERR.get("e", ""), flush=True)
+    if not any(r["status"] == "PRESENT" for r in rows):
+        print("Fonte non raggiungibile: nessuna stima", LAST_ERR, flush=True)
+        return 1
     if lim:
         return 0
     ARCH.mkdir(parents=True, exist_ok=True)
