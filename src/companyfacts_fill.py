@@ -47,6 +47,17 @@ def _facts(cik: str) -> dict:
     return r.json()
 
 
+def fsds_ddate(end: str) -> str:
+    """FSDS convention: ddate is the end date rounded to the nearest month end."""
+    import calendar
+    d = date.fromisoformat(end)
+    last = calendar.monthrange(d.year, d.month)[1]
+    if d.day >= 15:
+        return f"{d.year:04d}{d.month:02d}{last:02d}"
+    y, m = (d.year, d.month - 1) if d.month > 1 else (d.year - 1, 12)
+    return f"{y:04d}{m:02d}{calendar.monthrange(y, m)[1]:02d}"
+
+
 def augment(nums: pd.DataFrame, adsh_set: set[str], tags: list[str]) -> pd.DataFrame:
     tagset = set(tags)
     have = set()
@@ -72,7 +83,7 @@ def augment(nums: pd.DataFrame, adsh_set: set[str], tags: list[str]) -> pd.DataF
                         qtrs = str(int(round(days / 91.3)))
                     else:
                         qtrs = "0"
-                    ddate = v["end"].replace("-", "")
+                    ddate = fsds_ddate(v["end"])
                     key = (a, tag, ddate, qtrs, unit.lower())
                     if key in have:
                         continue
