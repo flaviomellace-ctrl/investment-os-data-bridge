@@ -1,0 +1,482 @@
+{
+ "C1_all_ok": true,
+ "dates": {
+  "20141114": {
+   "C1": {
+    "buy_add_true_entities": [],
+    "composite_date_values_checked_componentwise": 37,
+    "composite_rule": "valori YYYYMMDD+YYYYMMDD: ogni componente confrontata con D (max <= D)",
+    "date_columns_checked": 56,
+    "date_values_after_D": 0,
+    "date_values_checked": 23538,
+    "date_violations_sample": [],
+    "market_data_as_of_violations": 0,
+    "market_violations_sample": [],
+    "ok": true,
+    "output_rows_buy_add_allowed_true": 0,
+    "rows_with_market_price": 368,
+    "unparseable_date_values": 0,
+    "unparseable_sample": []
+   },
+   "buy_add_allowed_rows_reported": 0,
+   "candidate_csv": "inputs/PIT_20141114.csv",
+   "deep_dive_queue": [
+    {
+     "entity_key": "CAT",
+     "queue_rank": 1,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "WDC",
+     "queue_rank": 2,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "NOV",
+     "queue_rank": 3,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "PCAR",
+     "queue_rank": 4,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "BEN",
+     "queue_rank": 5,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "FITB",
+     "queue_rank": 6,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "STX",
+     "queue_rank": 7,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "FTI",
+     "queue_rank": 8,
+     "selection_lane": "I"
+    },
+    {
+     "entity_key": "GAS",
+     "queue_rank": 9,
+     "selection_lane": "I"
+    },
+    {
+     "entity_key": "PCLN",
+     "queue_rank": 10,
+     "selection_lane": "I"
+    }
+   ],
+   "input_candidate_sha256_in_output_matches": true,
+   "integrated_run_sha256": "0c7ea3dec22a5e94eeb510bf5a8f93d7284d2b39e7ed96f7f669be834af9a183",
+   "integrated_run_sha256_run2": "0c7ea3dec22a5e94eeb510bf5a8f93d7284d2b39e7ed96f7f669be834af9a183",
+   "integrated_summary_sha256": "3ca43ef0a5476ab211ca85cabebce2593c91ed113472a87a1f9c2d69dc650287",
+   "ios_gate_counts": {
+    "AFFO MISSING: FFO e capex di manutenzione non separati": 6,
+    "BQS<60": 202,
+    "CALCULABLE": 126,
+    "SBC MISSING/CONFLICTING": 9,
+    "book value / ROE / crescita sostenibile MISSING": 1,
+    "capex MISSING/CONFLICTING": 13,
+    "cassa operativa MISSING/CONFLICTING": 1,
+    "combined ratio MISSING: sottoscrizione non valutabile": 8,
+    "guarded growth inputs MISSING/CONFLICTING": 40,
+    "market cap MISSING/CONFLICTING": 91,
+    "share_change MISSING/CONFLICTING": 5
+   },
+   "ios_not_null_pct": 25.1,
+   "ios_not_null_rows": 126,
+   "pipeline_exit_codes": {
+    "run1": 0,
+    "run2": 0
+   },
+   "queue_size": 10,
+   "reproducibility": {
+    "byte_identical": {
+     "integrated_run.json": true,
+     "integrated_summary.json": true
+    },
+    "ok": true
+   },
+   "rows": 502,
+   "rows_in_results": 502,
+   "summary_self_reported_run_sha256_matches": true,
+   "system_live": false
+  },
+  "20151116": {
+   "C1": {
+    "buy_add_true_entities": [],
+    "composite_date_values_checked_componentwise": 46,
+    "composite_rule": "valori YYYYMMDD+YYYYMMDD: ogni componente confrontata con D (max <= D)",
+    "date_columns_checked": 56,
+    "date_values_after_D": 0,
+    "date_values_checked": 24152,
+    "date_violations_sample": [],
+    "market_data_as_of_violations": 0,
+    "market_violations_sample": [],
+    "ok": true,
+    "output_rows_buy_add_allowed_true": 0,
+    "rows_with_market_price": 385,
+    "unparseable_date_values": 0,
+    "unparseable_sample": []
+   },
+   "buy_add_allowed_rows_reported": 0,
+   "candidate_csv": "inputs/PIT_20151116.csv",
+   "deep_dive_queue": [
+    {
+     "entity_key": "EBAY",
+     "queue_rank": 1,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "NAVI",
+     "queue_rank": 2,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "MA",
+     "queue_rank": 3,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "FOSL",
+     "queue_rank": 4,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "TDC",
+     "queue_rank": 5,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "PNR",
+     "queue_rank": 6,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "GPS",
+     "queue_rank": 7,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "ECL",
+     "queue_rank": 8,
+     "selection_lane": "I"
+    },
+    {
+     "entity_key": "KORS",
+     "queue_rank": 9,
+     "selection_lane": "I"
+    },
+    {
+     "entity_key": "CBG",
+     "queue_rank": 10,
+     "selection_lane": "I"
+    }
+   ],
+   "input_candidate_sha256_in_output_matches": true,
+   "integrated_run_sha256": "eb651bac11c24dc911818b56fd64b0b61e1ce56f26f2656b28480434d37dbbca",
+   "integrated_run_sha256_run2": "eb651bac11c24dc911818b56fd64b0b61e1ce56f26f2656b28480434d37dbbca",
+   "integrated_summary_sha256": "a484c2d769b812bdb8675c2cdd3ea1cb2ef5c5f940a6a4fab503a99ea87dc2bc",
+   "ios_gate_counts": {
+    "AFFO MISSING: FFO e capex di manutenzione non separati": 7,
+    "BQS<60": 201,
+    "CALCULABLE": 152,
+    "SBC MISSING/CONFLICTING": 6,
+    "book value / ROE / crescita sostenibile MISSING": 1,
+    "capex MISSING/CONFLICTING": 10,
+    "combined ratio MISSING: sottoscrizione non valutabile": 10,
+    "coverage<70": 1,
+    "guarded growth inputs MISSING/CONFLICTING": 33,
+    "market cap MISSING/CONFLICTING": 80,
+    "share_change MISSING/CONFLICTING": 4
+   },
+   "ios_not_null_pct": 30.1,
+   "ios_not_null_rows": 152,
+   "pipeline_exit_codes": {
+    "run1": 0,
+    "run2": 0
+   },
+   "queue_size": 10,
+   "reproducibility": {
+    "byte_identical": {
+     "integrated_run.json": true,
+     "integrated_summary.json": true
+    },
+    "ok": true
+   },
+   "rows": 505,
+   "rows_in_results": 505,
+   "summary_self_reported_run_sha256_matches": true,
+   "system_live": false
+  },
+  "20161115": {
+   "C1": {
+    "buy_add_true_entities": [],
+    "composite_date_values_checked_componentwise": 50,
+    "composite_rule": "valori YYYYMMDD+YYYYMMDD: ogni componente confrontata con D (max <= D)",
+    "date_columns_checked": 56,
+    "date_values_after_D": 0,
+    "date_values_checked": 24048,
+    "date_violations_sample": [],
+    "market_data_as_of_violations": 0,
+    "market_violations_sample": [],
+    "ok": true,
+    "output_rows_buy_add_allowed_true": 0,
+    "rows_with_market_price": 407,
+    "unparseable_date_values": 0,
+    "unparseable_sample": []
+   },
+   "buy_add_allowed_rows_reported": 0,
+   "candidate_csv": "inputs/PIT_20161115.csv",
+   "deep_dive_queue": [
+    {
+     "entity_key": "KORS",
+     "queue_rank": 1,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "GILD",
+     "queue_rank": 2,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "NAVI",
+     "queue_rank": 3,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "MA",
+     "queue_rank": 4,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "URI",
+     "queue_rank": 5,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "ADS",
+     "queue_rank": 6,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "AXP",
+     "queue_rank": 7,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "LKQ",
+     "queue_rank": 8,
+     "selection_lane": "I"
+    },
+    {
+     "entity_key": "CBG",
+     "queue_rank": 9,
+     "selection_lane": "I"
+    },
+    {
+     "entity_key": "AET",
+     "queue_rank": 10,
+     "selection_lane": "I"
+    }
+   ],
+   "input_candidate_sha256_in_output_matches": true,
+   "integrated_run_sha256": "9fc4a626bc2af50f3e4e605f9e9e4df0ae3c803e139fcac32e706fe434564efe",
+   "integrated_run_sha256_run2": "9fc4a626bc2af50f3e4e605f9e9e4df0ae3c803e139fcac32e706fe434564efe",
+   "integrated_summary_sha256": "d03210384a83ed373d48391064efccaae75c234404fa9b780f8ac1741ca97672",
+   "ios_gate_counts": {
+    "AFFO MISSING: FFO e capex di manutenzione non separati": 9,
+    "BQS<60": 226,
+    "CALCULABLE": 146,
+    "SBC MISSING/CONFLICTING": 8,
+    "book value / ROE / crescita sostenibile MISSING": 4,
+    "capex MISSING/CONFLICTING": 10,
+    "combined ratio MISSING: sottoscrizione non valutabile": 11,
+    "coverage<70": 1,
+    "guarded growth inputs MISSING/CONFLICTING": 33,
+    "market cap MISSING/CONFLICTING": 54,
+    "share_change MISSING/CONFLICTING": 3
+   },
+   "ios_not_null_pct": 28.91,
+   "ios_not_null_rows": 146,
+   "pipeline_exit_codes": {
+    "run1": 0,
+    "run2": 0
+   },
+   "queue_size": 10,
+   "reproducibility": {
+    "byte_identical": {
+     "integrated_run.json": true,
+     "integrated_summary.json": true
+    },
+    "ok": true
+   },
+   "rows": 505,
+   "rows_in_results": 505,
+   "summary_self_reported_run_sha256_matches": true,
+   "system_live": false
+  },
+  "20171115": {
+   "C1": {
+    "buy_add_true_entities": [],
+    "composite_date_values_checked_componentwise": 49,
+    "composite_rule": "valori YYYYMMDD+YYYYMMDD: ogni componente confrontata con D (max <= D)",
+    "date_columns_checked": 56,
+    "date_values_after_D": 0,
+    "date_values_checked": 24056,
+    "date_violations_sample": [],
+    "market_data_as_of_violations": 0,
+    "market_violations_sample": [],
+    "ok": true,
+    "output_rows_buy_add_allowed_true": 0,
+    "rows_with_market_price": 424,
+    "unparseable_date_values": 0,
+    "unparseable_sample": []
+   },
+   "buy_add_allowed_rows_reported": 0,
+   "candidate_csv": "inputs/PIT_20171115.csv",
+   "deep_dive_queue": [
+    {
+     "entity_key": "GILD",
+     "queue_rank": 1,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "NAVI",
+     "queue_rank": 2,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "MA",
+     "queue_rank": 3,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "ADS",
+     "queue_rank": 4,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "CMCSA",
+     "queue_rank": 5,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "KORS",
+     "queue_rank": 6,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "URI",
+     "queue_rank": 7,
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "ULTA",
+     "queue_rank": 8,
+     "selection_lane": "I"
+    },
+    {
+     "entity_key": "SIG",
+     "queue_rank": 9,
+     "selection_lane": "I"
+    },
+    {
+     "entity_key": "AMT",
+     "queue_rank": 10,
+     "selection_lane": "I"
+    }
+   ],
+   "input_candidate_sha256_in_output_matches": true,
+   "integrated_run_sha256": "a3f876a0f809ee6c09dc65662308a37a49705ac70b15ead03677b45166f25788",
+   "integrated_run_sha256_run2": "a3f876a0f809ee6c09dc65662308a37a49705ac70b15ead03677b45166f25788",
+   "integrated_summary_sha256": "824550b7747b6501124da71b5a1935d803208cba825e752940d1029e56084a9f",
+   "ios_gate_counts": {
+    "AFFO MISSING: FFO e capex di manutenzione non separati": 9,
+    "BQS<60": 214,
+    "CALCULABLE": 157,
+    "SBC MISSING/CONFLICTING": 6,
+    "book value / ROE / crescita sostenibile MISSING": 2,
+    "capex MISSING/CONFLICTING": 11,
+    "combined ratio MISSING: sottoscrizione non valutabile": 10,
+    "coverage<70": 1,
+    "guarded growth inputs MISSING/CONFLICTING": 36,
+    "market cap MISSING/CONFLICTING": 58,
+    "share_change MISSING/CONFLICTING": 1
+   },
+   "ios_not_null_pct": 31.09,
+   "ios_not_null_rows": 157,
+   "pipeline_exit_codes": {
+    "run1": 0,
+    "run2": 0
+   },
+   "queue_size": 10,
+   "reproducibility": {
+    "byte_identical": {
+     "integrated_run.json": true,
+     "integrated_summary.json": true
+    },
+    "ok": true
+   },
+   "rows": 505,
+   "rows_in_results": 505,
+   "summary_self_reported_run_sha256_matches": true,
+   "system_live": false
+  }
+ },
+ "env": {
+  "PYTHONDONTWRITEBYTECODE": "1",
+  "network_used": false,
+  "python": "3.13.18"
+ },
+ "errors": [],
+ "input_sha256_verification": {
+  "all_ok": true,
+  "files": {
+   "inputs/PIT_20141114.csv": {
+    "actual": "3030e88e1177ef5ebf8477bff87924e036624631181156e603f9a537d9db6881",
+    "expected": "3030e88e1177ef5ebf8477bff87924e036624631181156e603f9a537d9db6881",
+    "ok": true
+   },
+   "inputs/PIT_20151116.csv": {
+    "actual": "851e22b784a68e6386337b630aff8b9e436b6604a3c2f6bb08c19e786c2a7fcf",
+    "expected": "851e22b784a68e6386337b630aff8b9e436b6604a3c2f6bb08c19e786c2a7fcf",
+    "ok": true
+   },
+   "inputs/PIT_20161115.csv": {
+    "actual": "48ecb6425cf5c78c0fb8011bbe386086a7973ef31c7a59fc4f9889ddf16664d3",
+    "expected": "48ecb6425cf5c78c0fb8011bbe386086a7973ef31c7a59fc4f9889ddf16664d3",
+    "ok": true
+   },
+   "inputs/PIT_20171115.csv": {
+    "actual": "674dc90d6d06d95f10301a66c693f87068347c05b2abc4f85bc8f2a494bc06e6",
+    "expected": "674dc90d6d06d95f10301a66c693f87068347c05b2abc4f85bc8f2a494bc06e6",
+    "ok": true
+   },
+   "inputs/economic_registry_verified.json": {
+    "actual": "9428786994c547e739f7e4742f9c02ebcb392bc3706c3a81af7d787c0a16ba96",
+    "expected": "9428786994c547e739f7e4742f9c02ebcb392bc3706c3a81af7d787c0a16ba96",
+    "ok": true
+   },
+   "inputs/evidence_empty.json": {
+    "actual": "58be8ed3e4f2e241e991c91df441e9d101876a220aea16e25fa3c9ca26d6ca78",
+    "expected": "58be8ed3e4f2e241e991c91df441e9d101876a220aea16e25fa3c9ca26d6ca78",
+    "ok": true
+   },
+   "src/v42_integrated_pipeline.py": {
+    "actual": "3eb0138c266bc16eac571217904275d9c59f59d98ecc396e83a8716f22d2fad6",
+    "expected": "3eb0138c266bc16eac571217904275d9c59f59d98ecc396e83a8716f22d2fad6",
+    "ok": true
+   }
+  }
+ },
+ "reproducibility_all_ok": true,
+ "src_inputs_unmodified_post_run": true,
+ "task": "R12-quater executor"
+}
