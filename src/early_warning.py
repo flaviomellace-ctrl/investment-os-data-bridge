@@ -111,7 +111,10 @@ def quarters(facts, tags):
                 continue
             for (s9, e9), (v9, _) in ytd9.items():
                 if s9 == s0 and 80 <= days(e9, e) <= 100:
-                    q[e] = v - v9
+                    d4 = v - v9
+                    # coerenza: il Q4 ricavato non può avere segno opposto a FY e 9 mesi concordi, né superare l'anno
+                    if not ((v > 0 and v9 > 0 and d4 <= 0) or (v < 0 and v9 < 0 and d4 >= 0) or abs(d4) > abs(v)):
+                        q[e] = d4
                     break
         series = sorted(q.items())
         if len(series) >= 5 and (best[0] is None or series[-1][0] > best[1][-1][0]):
@@ -239,8 +242,10 @@ def main() -> int:
             row["ni_q_yoy_pct"] = fmt(yoy_last(nq))
             row["ni_ttm_yoy_pct"] = fmt(ttm_yoy(nq))
             row["tags"] = f"{rt or '-'}/{ot or '-'}/{nt or '-'}"
-            prof_q = yoy_last(oq) if oq else yoy_last(nq)
-            prof_t = ttm_yoy(oq) if oq else ttm_yoy(nq)
+            fresh = lambda ser: bool(ser) and (TODAY - dt.date.fromisoformat(ser[-1][0])).days <= 200
+            base = oq if fresh(oq) else nq
+            prof_q = yoy_last(base)
+            prof_t = ttm_yoy(base)
             if (prof_q is not None and prof_q < -20) or (prof_t is not None and prof_t < -10):
                 flags.append("TRIM_DETERIORO")
             rv = ttm_yoy(rq)
