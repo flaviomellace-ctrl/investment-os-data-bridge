@@ -1,0 +1,8 @@
+/home/runner/work/_temp/r_20161115.log:PIT: ciks resolved from filings {"resolved": 0, "unresolved": []}
+/home/runner/work/_temp/r_20161115.log:PIT: submissions visible 25624/26941 (filed <= 20161115)
+/home/runner/work/_temp/r_20161115.log:PIT: submissions visible 118357/119674 (filed <= 20161115)
+/home/runner/work/_temp/r_20161115.log:PIT_MARKET_BREAKER=FMP rate limit persists; remaining symbols left MISSING for this run
+/home/runner/work/_temp/r_20161115.log:PIT_MARKET={"as_of": 20161115, "rows": 505, "PRESENT": 369, "no_price": 98, "no_shares": 24, "MISSING": 120, "CONFLICTING": 16}
+/home/runner/work/_temp/r_20161115.log:PIT_BRIDGE2={"ciks": 34, "http_errors": 0, "rows_added": 10361}
+/home/runner/work/_temp/r_20161115.log:PIT_REPLAY={"as_of": 20161115, "stages": ["bridge", "br0102", "br03", "market", "br04"], "rows": 505, "fundamentals_sha256": "48ecb6425cf5c78c0fb8011bbe386086a7973ef31c7a59fc4f9889ddf16664d3"}
+/home/runner/work/_temp/u_20161115.log:PIT_UNIVERSE={"as_of": 20161115, "members": 505, "revision_id": 749594329, "revision_timestamp": "2016-11-15T04:29:05Z", "members_without_cik": 0}
