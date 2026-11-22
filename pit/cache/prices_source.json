@@ -153,6 +153,17 @@
    "missing_2022": "ABMD ATVI ANSS AVB BK CTLT CDAY CMA CTRA DFS DISH EA EQR FRC HES HOLX IPG JNPR K MRO MMC PXD QRVO SEE SBNY SIVB WBA WBD WRK PARA",
    "caveat": "missing prices are mostly non-survivors (acquired, failed: SIVB FRC SBNY) plus symbols whose Yahoo history was reset by a 2026 corporate event (AVB EQR EA BK MMC SEE); these names cannot enter the queue: survivorship bias in favour of the queue, reported with the results",
    "transcription_check": "sha256 prefix of each line computed in the browser and on the transcribed file: 61bdb47666d15f11 (2021), c6270bd1f41904f3 (2022), identical"
+  },
+  {
+   "date": "2026-11-22",
+   "as_of": [
+    "20181115",
+    "20191115"
+   ],
+   "raw": "pit/cache/yahoo_raw_r12ter_20261122.txt",
+   "method": "same as 2026-11-17 addition (two-step: short window close + monthly split events); renamed symbols read under the new symbol: ABC>COR ANTM>ELV BLL>BALL FB>META FBHS>FBIN FLT>CPAY GPS>GAP PEAK>DOC HCP>DOC PKI>RVTY RE>EG WLTW>WTW NLOK>GEN SYMC>GEN ADS>BFH CTL>LUMN HRS>LHX JEC>J LB>BBWI HFC>DINO DWDP>DD KORS>CPRI TMK>GL UTX>RTX",
+   "transcription_check": "sha256 prefix browser = file: 899861c04a55a403 (2018), b66969c71fa74639 (2019)",
+   "caveat": "69 (2018) and 57 (2019) members without price, mostly acquired or delisted names: survivorship bias in favour of the queue"
   }
  ]
 }
