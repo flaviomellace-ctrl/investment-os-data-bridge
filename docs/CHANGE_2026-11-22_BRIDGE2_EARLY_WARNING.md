@@ -37,5 +37,13 @@ Costituzione: proposta (messaggio delle 21:30), motivazione, approvazione umana,
 - src/bridge.py d1bbf0d14d7217f4be5f793317c32f7e000918b0b40308510d80f2ada2fc7ded
 - src/companyfacts_fill.py f320e491c9b8b59c1588c3cfde9ec61ef8bd54bf4adf6888033d2ec20f9be879
 - src/run_bridge2.py ffe4ec35d971d9fa21854bb5950c1e7b1163ed6edd0bfd40b8e9e02f677e789b
-- src/early_warning.py bebcbb5b7c113a57ad5d43bc6798e74565da0294226e6c94d49f4d81af361af4
-- src/margine_data.py vedi commit (aggiornato dopo la prima esecuzione se necessario)
+- src/early_warning.py 0f70942d2e4b706819a6715678c60fb422609b2b9a64ff5fe9a5391bd8fe4eed (v1.0 definitiva: tag più recente, ultimo dato depositato, TTM solo su trimestri consecutivi, vendite insider in piani 10b5-1 separate)
+- src/margine_data.py b5df3966ce5442532c8c4955dc9c94c8316c50b07caaac739af4f45b94eb7765 (prima esecuzione 22/11/2026: 94/94 simboli PRESENT)
+
+## 4. Affidabilità e semplificazione (punti 1 e 5)
+- Daily Sentinel: un solo controllo serale feriale (22:24 Roma) invece di due, modello claude-sonnet-5-5 per la routine;
+  legge prezzi e campanelli dal repository pubblico (il connettore GitHub non era collegato alle attività pianificate).
+- Il Margine: nuova attività cloud (08:43 lunedì e giovedì) che non richiede il PC; la vecchia attività legata al PC (08:13)
+  va disattivata da Flavio; nel frattempo la versione cloud ha un controllo anti-doppione.
+- claude/ARCHIVIO_INDICE.md: elenco dei documenti superati che le attività non leggono più. Cancellazione dal Project
+  solo dopo copia nel repository e conferma di Flavio.
