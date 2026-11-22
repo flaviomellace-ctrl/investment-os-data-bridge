@@ -1,1 +1,1 @@
-{"label": "r12ter-bridge2-diag", "attempt": 4, "bridge2": true, "as_of_list": ["20211115", "20221115"], "stages": "bridge,br0102,br03,market,br04"}
+{"label": "r12ter-decisive", "attempt": 1, "bridge2": true, "as_of_list": ["20181115", "20191115"], "stages": "bridge,br0102,br03,market,br04"}
