@@ -1,0 +1,14 @@
+ticker,date,close,prev_close,change_pct,status,source,fetched_at_utc
+SYF,2026-11-20,67.76,68.94,-1.71,PRESENT,api.nasdaq.com historical,2026-11-22T20:40:15Z
+CMCSA,2026-11-20,24.9,24.86,0.16,PRESENT,api.nasdaq.com historical,2026-11-22T20:40:15Z
+AMP,2026-11-20,480.29,492.36,-2.45,PRESENT,api.nasdaq.com historical,2026-11-22T20:40:15Z
+ADBE,2026-11-20,217.71,221.68,-1.79,PRESENT,api.nasdaq.com historical,2026-11-22T20:40:15Z
+CHTR,2026-11-20,128.73,133.18,-3.34,PRESENT,api.nasdaq.com historical,2026-11-22T20:40:15Z
+MGM,2026-11-20,32.36,33.41,-3.14,PRESENT,api.nasdaq.com historical,2026-11-22T20:40:15Z
+TROW,2026-11-20,100.99,104.91,-3.74,PRESENT,api.nasdaq.com historical,2026-11-22T20:40:15Z
+NEM,2026-11-20,94.68,100.05,-5.37,PRESENT,api.nasdaq.com historical,2026-11-22T20:40:15Z
+FIX,2026-11-20,1042.47,1114.02,-6.42,PRESENT,api.nasdaq.com historical,2026-11-22T20:40:15Z
+ANET,2026-11-20,167.62,189.59,-11.59,PRESENT,api.nasdaq.com historical,2026-11-22T20:40:15Z
+KO,2026-11-20,96.99,96.09,0.94,PRESENT,api.nasdaq.com historical,2026-11-22T20:40:15Z
+JNJ,2026-11-20,270.47,267.14,1.25,PRESENT,api.nasdaq.com historical,2026-11-22T20:40:15Z
+TMO,2026-11-20,669.54,688.75,-2.79,PRESENT,api.nasdaq.com historical,2026-11-22T20:40:15Z
