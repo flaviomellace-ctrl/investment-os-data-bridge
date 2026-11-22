@@ -1,0 +1,11 @@
+{
+ "version": "EARLY_WARNING v1.0",
+ "fetched_at_utc": "2026-11-22T20:41:48Z",
+ "sources": [
+  "SEC companyfacts",
+  "SEC submissions (8-K items, Form 4)",
+  "api.nasdaq.com short-interest"
+ ],
+ "n": 13,
+ "flagged": 8
+}
