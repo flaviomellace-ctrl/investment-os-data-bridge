@@ -64,16 +64,26 @@ FLOW_METRICS = {
         "SalesRevenueNet",
         "SalesRevenueGoodsNet",
         "SalesRevenueServicesNet",
+        # BRIDGE-2 (R12-ter, 2026-11-22): standard US-GAAP synonym, appended last so it only fills gaps.
+        "RevenueFromContractWithCustomerIncludingAssessedTax",
     ],
     "net_income": ["NetIncomeLoss", "ProfitLoss"],
     "operating_income": ["OperatingIncomeLoss"],
-    "operating_cash_flow": ["NetCashProvidedByUsedInOperatingActivities"],
+    "operating_cash_flow": [
+        "NetCashProvidedByUsedInOperatingActivities",
+        # BRIDGE-2 (R12-ter, 2026-11-22): standard US-GAAP synonym, appended last so it only fills gaps.
+        "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+    ],
     "capex": [
         "PaymentsToAcquirePropertyPlantAndEquipment",
         "PaymentsForAdditionsToPropertyPlantAndEquipment",
         "PaymentsToAcquireProductiveAssets",
     ],
-    "diluted_shares": ["WeightedAverageNumberOfDilutedSharesOutstanding"],
+    "diluted_shares": [
+        "WeightedAverageNumberOfDilutedSharesOutstanding",
+        # BRIDGE-2 (R12-ter, 2026-11-22): filers without dilution report one combined weighted count.
+        "WeightedAverageNumberOfShareOutstandingBasicAndDiluted",
+    ],
 }
 
 INSTANT_METRICS = {

@@ -44,15 +44,15 @@ jobs:
           SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force_sec }}" = "true" ]; then
-            python src/bridge.py --mode auto --force-sec
+            python src/run_bridge2.py bridge --mode auto --force-sec
           else
-            python src/bridge.py --mode auto
+            python src/run_bridge2.py bridge --mode auto
           fi
 
       - name: Enrich BR-01 and BR-02
         env:
           SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
-        run: python src/enrich_br01_br02.py
+        run: python src/run_bridge2.py enrich_br01_br02
 
       - name: Enrich BR-03 capital return
         env:
