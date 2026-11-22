@@ -14,7 +14,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: data-commit
+  group: watchlist-prices
   cancel-in-progress: false
 
 jobs:

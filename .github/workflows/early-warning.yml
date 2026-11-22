@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: data-commit
+  group: early-warning
   cancel-in-progress: false
 
 jobs:
