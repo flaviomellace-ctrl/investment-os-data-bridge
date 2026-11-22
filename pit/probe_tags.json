@@ -1,0 +1,95 @@
+{
+"attempt": 1,
+"pairs": [
+{
+"ticker": "AKAM",
+"cik": "1086222",
+"adsh": "0001086222-21-000075",
+"which": "annual"
+},
+{
+"ticker": "AME",
+"cik": "1037868",
+"adsh": "0001037868-21-000007",
+"which": "annual"
+},
+{
+"ticker": "BBY",
+"cik": "764478",
+"adsh": "0000764478-21-000024",
+"which": "annual"
+},
+{
+"ticker": "TJX",
+"cik": "109198",
+"adsh": "0000109198-21-000006",
+"which": "annual"
+},
+{
+"ticker": "HCA",
+"cik": "860730",
+"adsh": "0001193125-21-048994",
+"which": "annual"
+},
+{
+"ticker": "ALLE",
+"cik": "1579241",
+"adsh": "0001579241-21-000020",
+"which": "annual"
+},
+{
+"ticker": "AMP",
+"cik": "820027",
+"adsh": "0000820027-21-000012",
+"which": "annual"
+},
+{
+"ticker": "BMY",
+"cik": "14272",
+"adsh": "0000014272-21-000066",
+"which": "annual"
+},
+{
+"ticker": "AMCR",
+"cik": "1748790",
+"adsh": "0001748790-21-000031",
+"which": "annual"
+},
+{
+"ticker": "CAG",
+"cik": "23217",
+"adsh": "0001564590-21-037738",
+"which": "annual"
+},
+{
+"ticker": "CL",
+"cik": "21665",
+"adsh": "0000021665-21-000007",
+"which": "annual"
+},
+{
+"ticker": "ABBV",
+"cik": "1551152",
+"adsh": "0001551152-18-000014",
+"which": "fy_minus_3"
+},
+{
+"ticker": "AMD",
+"cik": "2488",
+"adsh": "0000002488-18-000042",
+"which": "fy_minus_3"
+},
+{
+"ticker": "DVA",
+"cik": "927066",
+"adsh": "0000927066-18-000030",
+"which": "fy_minus_3"
+},
+{
+"ticker": "IBM",
+"cik": "51143",
+"adsh": "",
+"which": "fy_minus_3"
+}
+]
+}
