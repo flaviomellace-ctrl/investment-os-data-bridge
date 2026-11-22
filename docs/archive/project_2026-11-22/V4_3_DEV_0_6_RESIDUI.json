@@ -1,0 +1,103 @@
+{
+  "schema": "v43_residuals_after_dev_0_6_v1",
+  "stage": "DEVELOPMENT-0.6-AWAITING_RE_REVIEW-NOT_PROMOTED",
+  "accepted_0_3_zip_sha256": "6827a7e43274669938e0a8393c3eeb4ef04785be56be4e502e87f8d057551f0e",
+  "accepted_composed_sha256": "e7f23e878b166471ee6be280aad79ab1ebbd6477fd0919feef2fabdfb07d495a",
+  "open_residuals": [
+    {
+      "id": "R13",
+      "status": "OPEN_CONTRACT_REVISED_AFTER_REVIEW_PAYLOADS_AND_RE_REVIEW_PENDING",
+      "closes_when": "SEC payloads verified by workflow; complete VERIFIED composition; separate review ACCEPT; user approval. Non-screened rows, in-scope cells left UNVERIFIABLE and unit scale stay open even then."
+    },
+    {
+      "id": "R14",
+      "status": "OPEN_CONTRACT_REVISED_AFTER_REVIEW_PAYLOADS_AND_RE_REVIEW_PENDING",
+      "closes_when": "the 10 cells judged against the row filing by verified payloads; rule and precedence accepted by the reviewer; user approval"
+    },
+    {
+      "id": "R15",
+      "status": "OPEN_PRECISION_AND_CONCEPT_REVIEW",
+      "closes_when": "policy for rounded as-reported facts (PH); FE SBC expense read from the 10-K note"
+    },
+    {
+      "id": "R19",
+      "status": "OPEN_UNCONSUMED_LEVERAGE_FLAG",
+      "closes_when": "treatment decided in change control after impact analysis"
+    },
+    {
+      "id": "R20",
+      "status": "OPEN_CONTRACT_PROPOSED_SCOPE_WIDER_THAN_REPORTED_CONCEPT_CHOICE_OPEN",
+      "note": "17 rows with mixed revenue concepts (9 with numeric IOS, including CMCSA at queue rank 2) and 5 rows with empty FY-3 revenue",
+      "closes_when": "verified payloads; VERIFIED composition; concept-choice policy approved; separate review"
+    },
+    {
+      "id": "R21",
+      "status": "LEGACY_STAGE_LAYOUT_SELECTED_CURRENT_ALIGNMENT_PENDING",
+      "closes_when": "operational layout contract, tests and review"
+    },
+    {
+      "id": "R4/MET",
+      "status": "RESERVE_OPEN_TOTAL_DEBT_COMPOSITION_UNPROVEN",
+      "note": "point view ties to 14,467 - 22,032 = -7,565 mln and is the declared lower bound; short-term borrowings 355 mln outside it; junior subordinated 3,167 mln inclusion unknown",
+      "closes_when": "debt note of the 10-K read; module 04 reading"
+    }
+  ],
+  "unchanged_residuals": [
+    "R1",
+    "R2",
+    "R3",
+    "R5",
+    "R6",
+    "R7",
+    "R8",
+    "R9",
+    "R10",
+    "R11",
+    "R12",
+    "R16",
+    "R17",
+    "R18"
+  ],
+  "global_clearance": false,
+  "buy_add_allowed": false,
+  "system_live": false,
+  "candidate_promoted": false,
+  "v42_modified": false,
+  "project_100_percent": false,
+  "separate_review_0_5": {
+    "outcome": "REQUEST_CHANGES",
+    "scope": "compositor in VERIFIED mode and contract clauses R13, R14",
+    "findings": [
+      "M1",
+      "M2",
+      "M3",
+      "B1",
+      "B2",
+      "B3",
+      "B4"
+    ],
+    "reviewer_zip_0_5_sha256": "efbc4740dd2649a82bed2021ff11a5a66f02820a2dbaee865a3ac12c1cf134b3",
+    "matches_producer": true,
+    "accepted_as_is": [
+      "verify_manifest.py",
+      "contract pin",
+      "PENDING mode",
+      "ranking measurement",
+      "MET reconciliation",
+      "workflow text"
+    ],
+    "addressed_in": "0.6, see RISPOSTA_AL_REQUEST_CHANGES_0_5.md"
+  },
+  "candidate_0_6": {
+    "mode": "PENDING",
+    "is_candidate": false,
+    "identical_to_accepted_composed": true,
+    "cells_changed": 0,
+    "verified_payloads": false,
+    "required_payload_keys": 57,
+    "required_keys_missing": 57,
+    "separate_review": "PENDING_RE_REVIEW"
+  },
+  "contract_sha256": "029339b8d595d103e6863eb50c14dc4a05e78ac4c83dfe4cc72cc82276074d16",
+  "residuals_closed_in_dev_0_6": []
+}
