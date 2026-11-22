@@ -1,0 +1,145 @@
+{
+ "criteria_doc": "docs/r12/R12TER_FROZEN_2026-11-22.md",
+ "excluded": {
+  "BBT": "Yahoo symbol BBT does not carry BB&T history (as-of price 34.22/31.91 vs about 50/54 actual): CONFLICTING"
+ },
+ "20181115": {
+  "queue": [
+   [
+    "MA",
+    "V",
+    68.76
+   ],
+   [
+    "ADS",
+    "V",
+    -65.34
+   ],
+   [
+    "MU",
+    "V",
+    45.15
+   ],
+   [
+    "LRCX",
+    "V",
+    203.65
+   ],
+   [
+    "CME",
+    "V",
+    -8.53
+   ],
+   [
+    "IR",
+    "V",
+    76.99
+   ],
+   [
+    "URI",
+    "V",
+    74.91
+   ],
+   [
+    "REGN",
+    "I",
+    65.79
+   ],
+   [
+    "ADBE",
+    "I",
+    95.6
+   ],
+   [
+    "IPGP",
+    "I",
+    44.86
+   ]
+  ],
+  "queue_median": 67.28,
+  "universe_n": 435,
+  "universe_missing": 70,
+  "universe_median": 22.37,
+  "universe_share_le_m50": 0.0575
+ },
+ "20191115": {
+  "queue": [
+   [
+    "SYF",
+    "V",
+    43.15
+   ],
+   [
+    "MA",
+    "V",
+    30.03
+   ],
+   [
+    "URI",
+    "V",
+    148.99
+   ],
+   [
+    "ABBV",
+    "V",
+    45.8
+   ],
+   [
+    "AMP",
+    "V",
+    100.71
+   ],
+   [
+    "FITB",
+    "V",
+    61.08
+   ],
+   [
+    "IR",
+    "V",
+    78.38
+   ],
+   [
+    "ULTA",
+    "I",
+    63.11
+   ],
+   [
+    "FB",
+    "I",
+    78.14
+   ],
+   [
+    "ADBE",
+    "I",
+    121.76
+   ]
+  ],
+  "queue_median": 70.62,
+  "universe_n": 447,
+  "universe_missing": 58,
+  "universe_median": 36.6,
+  "universe_share_le_m50": 0.0045
+ },
+ "C2": {
+  "20181115": "157/505=31.09%",
+  "20191115": "195/505=38.61%",
+  "PASS": true
+ },
+ "C1": "PASS (executor: no filing or price after as-of, deterministic run1=run2, 0 buy_add_allowed)",
+ "M1": {
+  "queue_n": 20,
+  "queue_k_le_m50": 1,
+  "queue_share": 0.05,
+  "universe_share": 0.0306,
+  "PASS": false,
+  "binom_tail": 0.463
+ },
+ "M2": {
+  "queue_median": 67.28,
+  "universe_median": 30.02,
+  "gap_pp": 37.25,
+  "PASS": true
+ },
+ "VERDICT": "FAIL"
+}
