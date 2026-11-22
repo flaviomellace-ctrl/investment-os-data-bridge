@@ -1,0 +1,40 @@
+name: Early warning
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [src/early_warning.py, data/watchlist_tickers.txt, .github/workflows/early-warning.yml]
+  schedule:
+    # Prima del Daily Sentinel (22:24 Roma).
+    - cron: "33 20 * * 1-5"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-commit
+  cancel-in-progress: false
+
+jobs:
+  signals:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install "requests>=2.32,<3"
+      - name: Build signals
+        env:
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+        run: python src/early_warning.py
+      - name: Commit
+        run: |
+          git config user.name "investment-os-data-bridge[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/current/early_warning.csv data/current/early_warning_status.json
+          if git diff --cached --quiet; then echo "Nessuna modifica."; exit 0; fi
+          git commit -m "data: early warning $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done

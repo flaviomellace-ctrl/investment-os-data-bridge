@@ -1,0 +1,37 @@
+name: Il Margine data
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [src/margine_data.py, data/margine_symbols.txt, .github/workflows/margine-data.yml]
+  schedule:
+    # Prima dei numeri del lunedì e giovedì (08:13 Roma) e ogni mattina feriale per il Sentinel.
+    - cron: "37 5 * * 1-5"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-commit
+  cancel-in-progress: false
+
+jobs:
+  margine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install "requests>=2.32,<3"
+      - run: python src/margine_data.py
+      - name: Commit
+        run: |
+          git config user.name "investment-os-data-bridge[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/current/margine_DATA.txt data/current/margine_RET.txt data/current/margine_RISK.csv data/current/margine_status.json data/current/benchmark_prices.csv
+          if git diff --cached --quiet; then echo "Nessuna modifica."; exit 0; fi
+          git commit -m "data: Il Margine market data $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
