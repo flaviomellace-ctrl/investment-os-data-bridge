@@ -82,40 +82,52 @@ def days(a, b):
 
 
 def quarters(facts, tags):
-    """Serie trimestrale (end -> valore) dal primo tag disponibile, ricavando il Q4 da FY - 9 mesi."""
+    """Serie trimestrale (end -> valore) dal tag con il dato più recente; Q4 = FY - 9 mesi stessa partenza.
+    A parità di periodo vale il dato depositato per ultimo (eventuali riesposizioni)."""
     g = (facts.get("facts") or {}).get("us-gaap") or {}
+    best = (None, [])
     for tag in tags:
-        units = (g.get(tag) or {}).get("units") or {}
-        rows = units.get("USD") or []
-        if not rows:
-            continue
+        rows = ((g.get(tag) or {}).get("units") or {}).get("USD") or []
         q, fy, ytd9 = {}, {}, {}
         for x in rows:
             if x.get("form") not in ("10-Q", "10-K", "10-Q/A", "10-K/A") or "start" not in x:
                 continue
             d = days(x["start"], x["end"])
+            key, tgt = None, None
             if 80 <= d <= 100:
-                q[x["end"]] = x["val"]
+                key, tgt = x["end"], q
             elif 350 <= d <= 380:
-                fy[(x["start"], x["end"])] = x["val"]
+                key, tgt = (x["start"], x["end"]), fy
             elif 260 <= d <= 285:
-                ytd9[(x["start"], x["end"])] = x["val"]
-        for (s, e), v in fy.items():
+                key, tgt = (x["start"], x["end"]), ytd9
+            if tgt is None:
+                continue
+            if key not in tgt or x.get("filed", "") >= tgt[key][1]:
+                tgt[key] = (x["val"], x.get("filed", ""))
+        q = {k: v[0] for k, v in q.items()}
+        for (s0, e), (v, _) in fy.items():
             if e in q:
                 continue
-            for (s9, e9), v9 in ytd9.items():
-                if s9 == s and 80 <= days(e9, e) <= 100:
+            for (s9, e9), (v9, _) in ytd9.items():
+                if s9 == s0 and 80 <= days(e9, e) <= 100:
                     q[e] = v - v9
                     break
-        if len(q) >= 5:
-            return tag, sorted(q.items())
-    return None, []
+        series = sorted(q.items())
+        if len(series) >= 5 and (best[0] is None or series[-1][0] > best[1][-1][0]):
+            best = (tag, series)
+    return best
+
+
+def consecutive(qs):
+    return all(80 <= days(a[0], b[0]) <= 100 for a, b in zip(qs, qs[1:]))
 
 
 def yoy_last(qs):
     if len(qs) < 5:
         return None
     e, v = qs[-1]
+    if (TODAY - dt.date.fromisoformat(e)).days > 200:
+        return None
     for e0, v0 in reversed(qs[:-1]):
         if 350 <= days(e0, e) <= 380:
             return (v / v0 - 1) * 100 if v0 > 0 else None
@@ -126,7 +138,7 @@ def ttm_yoy(qs):
     if len(qs) < 8:
         return None
     last8 = qs[-8:]
-    if days(last8[0][0], last8[-1][0]) > 2 * 365 - 30 + 60:
+    if not consecutive(last8) or (TODAY - dt.date.fromisoformat(last8[-1][0])).days > 200:
         return None
     a = sum(v for _, v in last8[4:])
     b = sum(v for _, v in last8[:4])
