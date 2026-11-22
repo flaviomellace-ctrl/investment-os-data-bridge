@@ -1,0 +1,304 @@
+{
+ "criteria_doc": "docs/r12/R12_CRITERIA_V2_AND_R12QUATER_FROZEN_2026-11-22.md",
+ "per_date": {
+  "20141114": {
+   "queue": [
+    [
+     "CAT",
+     "V",
+     0.39,
+     ""
+    ],
+    [
+     "WDC",
+     "V",
+     -35.76,
+     ""
+    ],
+    [
+     "NOV",
+     "V",
+     -47.69,
+     ""
+    ],
+    [
+     "PCAR",
+     "V",
+     -3.86,
+     ""
+    ],
+    [
+     "BEN",
+     "V",
+     -28.38,
+     ""
+    ],
+    [
+     "FITB",
+     "V",
+     32.35,
+     ""
+    ],
+    [
+     "STX",
+     "V",
+     -32.28,
+     ""
+    ],
+    [
+     "FTI",
+     "I",
+     -36.97,
+     ""
+    ],
+    [
+     "GAS",
+     "I",
+     null,
+     "acquisition: AGL Resources acquired by Southern Company for USD 66 cash, closed 2016-07-01 -> excluded"
+    ],
+    [
+     "PCLN",
+     "I",
+     26.96,
+     ""
+    ]
+   ],
+   "universe_n": 367,
+   "universe_missing": 135,
+   "universe_share_le_m50": 0.0218,
+   "universe_median": 13.16,
+   "queue_median": -28.38
+  },
+  "20151116": {
+   "queue": [
+    [
+     "EBAY",
+     "V",
+     25.07,
+     ""
+    ],
+    [
+     "NAVI",
+     "V",
+     16.94,
+     ""
+    ],
+    [
+     "MA",
+     "V",
+     55.31,
+     ""
+    ],
+    [
+     "FOSL",
+     "V",
+     -76.08,
+     ""
+    ],
+    [
+     "TDC",
+     "V",
+     35.95,
+     ""
+    ],
+    [
+     "PNR",
+     "V",
+     28.58,
+     ""
+    ],
+    [
+     "GPS",
+     "V",
+     16.87,
+     ""
+    ],
+    [
+     "ECL",
+     "I",
+     15.83,
+     ""
+    ],
+    [
+     "KORS",
+     "I",
+     40.56,
+     ""
+    ],
+    [
+     "CBG",
+     "I",
+     22.86,
+     ""
+    ]
+   ],
+   "universe_n": 384,
+   "universe_missing": 121,
+   "universe_share_le_m50": 0.0156,
+   "universe_median": 31.73,
+   "queue_median": 23.96
+  },
+  "20161115": {
+   "queue": [
+    [
+     "KORS",
+     "V",
+     0.7,
+     ""
+    ],
+    [
+     "GILD",
+     "V",
+     -3.15,
+     ""
+    ],
+    [
+     "NAVI",
+     "V",
+     -19.87,
+     ""
+    ],
+    [
+     "MA",
+     "V",
+     98.38,
+     ""
+    ],
+    [
+     "URI",
+     "V",
+     25.88,
+     ""
+    ],
+    [
+     "ADS",
+     "V",
+     -4.0,
+     ""
+    ],
+    [
+     "AXP",
+     "V",
+     55.91,
+     ""
+    ],
+    [
+     "LKQ",
+     "I",
+     -15.5,
+     ""
+    ],
+    [
+     "CBG",
+     "I",
+     50.82,
+     ""
+    ],
+    [
+     "AET",
+     "I",
+     null,
+     "acquisition: Aetna acquired by CVS Health, closed 2018-11-28 -> excluded"
+    ]
+   ],
+   "universe_n": 406,
+   "universe_missing": 99,
+   "universe_share_le_m50": 0.0172,
+   "universe_median": 25.06,
+   "queue_median": 0.7
+  },
+  "20171115": {
+   "queue": [
+    [
+     "GILD",
+     "V",
+     -3.16,
+     ""
+    ],
+    [
+     "NAVI",
+     "V",
+     25.05,
+     ""
+    ],
+    [
+     "MA",
+     "V",
+     91.38,
+     ""
+    ],
+    [
+     "ADS",
+     "V",
+     -52.58,
+     ""
+    ],
+    [
+     "CMCSA",
+     "V",
+     24.89,
+     ""
+    ],
+    [
+     "KORS",
+     "V",
+     -33.42,
+     ""
+    ],
+    [
+     "URI",
+     "V",
+     7.64,
+     ""
+    ],
+    [
+     "ULTA",
+     "I",
+     23.16,
+     ""
+    ],
+    [
+     "SIG",
+     "I",
+     -74.51,
+     ""
+    ],
+    [
+     "AMT",
+     "I",
+     49.11,
+     ""
+    ]
+   ],
+   "universe_n": 424,
+   "universe_missing": 81,
+   "universe_share_le_m50": 0.0259,
+   "universe_median": 21.38,
+   "queue_median": 15.4
+  }
+ },
+ "C1": "PASS (executor report: no date after as-of, run1=run2 on all dates, 0 buy_add_allowed)",
+ "C2": {
+  "20141114": 25.1,
+  "20151116": 30.1,
+  "20161115": 28.91,
+  "20171115": 31.09,
+  "PASS": true
+ },
+ "M1_v2": {
+  "positions": 40,
+  "n_with_outcome_or_counted": 38,
+  "k_crashes": 3,
+  "expected_random": 0.77,
+  "p_value": 0.041,
+  "PASS": false
+ },
+ "M2": {
+  "queue_median": 16.35,
+  "universe_median": 22.44,
+  "gap_pp": -6.09,
+  "PASS": true
+ },
+ "VERDICT": "FAIL"
+}
