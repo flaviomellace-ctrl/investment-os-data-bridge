@@ -46,9 +46,10 @@ def main_revision(as_of: int, out: Path) -> dict:
     h.raise_for_status()
     tables = [flatten(t) for t in pd.read_html(io.StringIO(h.text))]
     low = lambda t: [str(c).lower() for c in t.columns]
-    cur = next(t for t in tables if any(c.startswith("symbol") for c in low(t)) and any(c.startswith("security") for c in low(t)))
-    sym = next(c for c in cur.columns if c.lower().startswith("symbol"))
-    sec = next(c for c in cur.columns if c.lower().startswith("security"))
+    # Older revisions label the columns "Ticker symbol" / "Security" (or "Company"): match by containment.
+    cur = next(t for t in tables if any("symbol" in c for c in low(t)) and any(("security" in c or "company" in c) for c in low(t)))
+    sym = next(c for c in cur.columns if "symbol" in c.lower())
+    sec = next(c for c in cur.columns if "security" in c.lower() or "company" in c.lower())
     sector = next((c for c in cur.columns if "sector" in c.lower()), None)
     cikc = next((c for c in cur.columns if c.upper() == "CIK"), None)
     recs = []
