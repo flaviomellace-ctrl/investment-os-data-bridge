@@ -42,7 +42,23 @@ def load_subs(zip_infos):
     sub = _load_subs(zip_infos)
     keep = pd.to_numeric(sub["filed"], errors="coerce") <= AS_OF
     print(f"PIT: submissions visible {int(keep.sum())}/{len(sub)} (filed <= {AS_OF})")
-    return sub[keep].copy()
+    sub = sub[keep].copy()
+    if BRIDGE2:
+        companyfacts_fill.remember_submissions(sub)
+    return sub
+
+
+# BRIDGE-2 (R12-ter candidate): additive fill from SEC companyfacts for the same selected filings. Off unless PIT_BRIDGE2=1.
+BRIDGE2 = os.environ.get("PIT_BRIDGE2") == "1"
+if BRIDGE2:
+    import companyfacts_fill
+    _scan = bridge.scan_relevant_nums
+
+    def scan_relevant_nums(zip_infos, adsh_set):
+        n = _scan(zip_infos, adsh_set)
+        return companyfacts_fill.augment(n, set(adsh_set), bridge.ALL_RELEVANT_TAGS)
+
+    bridge.scan_relevant_nums = scan_relevant_nums
 
 
 def download(d, url, path):
@@ -112,6 +128,14 @@ if "bridge" in STAGES:
     bridge.refresh("full", 4, True)
 if "br0102" in STAGES:
     import enrich_br01_br02
+    if BRIDGE2:
+        _scan2 = enrich_br01_br02.scan_nums
+
+        def scan_nums(zip_infos, adsh_set):
+            n = _scan2(zip_infos, adsh_set)
+            return companyfacts_fill.augment(n, set(adsh_set), enrich_br01_br02.RELEVANT_TAGS)
+
+        enrich_br01_br02.scan_nums = scan_nums
     rc = enrich_br01_br02.main()
     if rc:
         raise SystemExit(f"PIT_BLOCK: BR-01/02 rc={rc}")
@@ -146,6 +170,8 @@ if "br04" in STAGES:
     if not cand:
         raise SystemExit("PIT_BLOCK: BR-04 candidate not produced")
     shutil.copyfile(cand[-1], ROOT / "data" / "current" / "pit_candidate.csv")
+if BRIDGE2:
+    print("PIT_BRIDGE2=" + json.dumps(companyfacts_fill.STATS))
 out = ROOT / "data" / "current" / ("pit_candidate.csv" if "br04" in STAGES else "sp500_fundamentals.csv")
 print("PIT_REPLAY=" + json.dumps(dict(as_of=AS_OF, stages=STAGES, rows=int(len(pd.read_csv(out, low_memory=False))),
                                       fundamentals_sha256=hashlib.sha256(out.read_bytes()).hexdigest())))
