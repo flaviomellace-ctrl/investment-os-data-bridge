@@ -1,0 +1,506 @@
+ticker,ticker_sec,name,sector,weight,identifier,isin,asset_class,cik,sec_title,origin
+A,A,Agilent Technologies Inc,Health Care,,,,,0001090872,Agilent Technologies Inc,wikipedia_rev_925366750
+AAL,AAL,American Airlines Group,Industrials,,,,,0000006201,American Airlines Group,wikipedia_rev_925366750
+AAP,AAP,Advance Auto Parts,Consumer Discretionary,,,,,0001158449,Advance Auto Parts,wikipedia_rev_925366750
+AAPL,AAPL,Apple Inc.,Information Technology,,,,,0000320193,Apple Inc.,wikipedia_rev_925366750
+ABBV,ABBV,AbbVie Inc.,Health Care,,,,,0001551152,AbbVie Inc.,wikipedia_rev_925366750
+ABC,ABC,AmerisourceBergen Corp,Health Care,,,,,0001140859,AmerisourceBergen Corp,wikipedia_rev_925366750
+ABMD,ABMD,ABIOMED Inc,Health Care,,,,,0000815094,ABIOMED Inc,wikipedia_rev_925366750
+ABT,ABT,Abbott Laboratories,Health Care,,,,,0000001800,Abbott Laboratories,wikipedia_rev_925366750
+ACN,ACN,Accenture plc,Information Technology,,,,,0001467373,Accenture plc,wikipedia_rev_925366750
+ADBE,ADBE,Adobe Systems Inc,Information Technology,,,,,0000796343,Adobe Systems Inc,wikipedia_rev_925366750
+ADI,ADI,"Analog Devices, Inc.",Information Technology,,,,,0000006281,"Analog Devices, Inc.",wikipedia_rev_925366750
+ADM,ADM,Archer-Daniels-Midland Co,Consumer Staples,,,,,0000007084,Archer-Daniels-Midland Co,wikipedia_rev_925366750
+ADP,ADP,Automatic Data Processing,Information Technology,,,,,0000008670,Automatic Data Processing,wikipedia_rev_925366750
+ADS,ADS,Alliance Data Systems,Information Technology,,,,,0001101215,Alliance Data Systems,wikipedia_rev_925366750
+ADSK,ADSK,Autodesk Inc.,Information Technology,,,,,0000769397,Autodesk Inc.,wikipedia_rev_925366750
+AEE,AEE,Ameren Corp,Utilities,,,,,0001002910,Ameren Corp,wikipedia_rev_925366750
+AEP,AEP,American Electric Power,Utilities,,,,,0000004904,American Electric Power,wikipedia_rev_925366750
+AES,AES,AES Corp,Utilities,,,,,0000874761,AES Corp,wikipedia_rev_925366750
+AFL,AFL,AFLAC Inc,Financials,,,,,0000004977,AFLAC Inc,wikipedia_rev_925366750
+AGN,AGN,"Allergan, Plc",Health Care,,,,,0001578845,"Allergan, Plc",wikipedia_rev_925366750
+AIG,AIG,American International Group,Financials,,,,,0000005272,American International Group,wikipedia_rev_925366750
+AIV,AIV,Apartment Investment & Management,Real Estate,,,,,0000922864,Apartment Investment & Management,wikipedia_rev_925366750
+AIZ,AIZ,Assurant,Financials,,,,,0001267238,Assurant,wikipedia_rev_925366750
+AJG,AJG,Arthur J. Gallagher & Co.,Financials,,,,,0000354190,Arthur J. Gallagher & Co.,wikipedia_rev_925366750
+AKAM,AKAM,Akamai Technologies Inc,Information Technology,,,,,0001086222,Akamai Technologies Inc,wikipedia_rev_925366750
+ALB,ALB,Albemarle Corp,Materials,,,,,0000915913,Albemarle Corp,wikipedia_rev_925366750
+ALGN,ALGN,Align Technology,Health Care,,,,,0001097149,Align Technology,wikipedia_rev_925366750
+ALK,ALK,Alaska Air Group Inc,Industrials,,,,,0000766421,Alaska Air Group Inc,wikipedia_rev_925366750
+ALL,ALL,Allstate Corp,Financials,,,,,0000899051,Allstate Corp,wikipedia_rev_925366750
+ALLE,ALLE,Allegion,Industrials,,,,,0001579241,Allegion,wikipedia_rev_925366750
+ALXN,ALXN,Alexion Pharmaceuticals,Health Care,,,,,0000899866,Alexion Pharmaceuticals,wikipedia_rev_925366750
+AMAT,AMAT,Applied Materials Inc.,Information Technology,,,,,0000006951,Applied Materials Inc.,wikipedia_rev_925366750
+AMCR,AMCR,Amcor plc,Materials,,,,,0001748790,Amcor plc,wikipedia_rev_925366750
+AMD,AMD,Advanced Micro Devices Inc,Information Technology,,,,,0000002488,Advanced Micro Devices Inc,wikipedia_rev_925366750
+AME,AME,AMETEK Inc.,Industrials,,,,,0001037868,AMETEK Inc.,wikipedia_rev_925366750
+AMG,AMG,Affiliated Managers Group Inc,Financials,,,,,0001004434,Affiliated Managers Group Inc,wikipedia_rev_925366750
+AMGN,AMGN,Amgen Inc.,Health Care,,,,,0000318154,Amgen Inc.,wikipedia_rev_925366750
+AMP,AMP,Ameriprise Financial,Financials,,,,,0000820027,Ameriprise Financial,wikipedia_rev_925366750
+AMT,AMT,American Tower Corp.,Real Estate,,,,,0001053507,American Tower Corp.,wikipedia_rev_925366750
+AMZN,AMZN,Amazon.com Inc.,Consumer Discretionary,,,,,0001018724,Amazon.com Inc.,wikipedia_rev_925366750
+ANET,ANET,Arista Networks,Information Technology,,,,,0001596532,Arista Networks,wikipedia_rev_925366750
+ANSS,ANSS,ANSYS,Information Technology,,,,,0001013462,ANSYS,wikipedia_rev_925366750
+ANTM,ANTM,Anthem,Health Care,,,,,0001156039,Anthem,wikipedia_rev_925366750
+AON,AON,Aon plc,Financials,,,,,0000315293,Aon plc,wikipedia_rev_925366750
+AOS,AOS,A.O. Smith Corp,Industrials,,,,,0000091142,A.O. Smith Corp,wikipedia_rev_925366750
+APA,APA,Apache Corporation,Energy,,,,,0000006769,Apache Corporation,wikipedia_rev_925366750
+APD,APD,Air Products & Chemicals Inc,Materials,,,,,0000002969,Air Products & Chemicals Inc,wikipedia_rev_925366750
+APH,APH,Amphenol Corp,Information Technology,,,,,0000820313,Amphenol Corp,wikipedia_rev_925366750
+APTV,APTV,Aptiv Plc,Consumer Discretionary,,,,,0001521332,Aptiv Plc,wikipedia_rev_925366750
+ARE,ARE,Alexandria Real Estate Equities,Real Estate,,,,,0001035443,Alexandria Real Estate Equities,wikipedia_rev_925366750
+ARNC,ARNC,Arconic Inc.,Industrials,,,,,0000004281,Arconic Inc.,wikipedia_rev_925366750
+ATO,ATO,Atmos Energy Corp,Utilities,,,,,0000731802,Atmos Energy Corp,wikipedia_rev_925366750
+ATVI,ATVI,Activision Blizzard,Communication Services,,,,,0000718877,Activision Blizzard,wikipedia_rev_925366750
+AVB,AVB,"AvalonBay Communities, Inc.",Real Estate,,,,,0000915912,"AvalonBay Communities, Inc.",wikipedia_rev_925366750
+AVGO,AVGO,Broadcom Inc.,Information Technology,,,,,0001730168,Broadcom Inc.,wikipedia_rev_925366750
+AVY,AVY,Avery Dennison Corp,Materials,,,,,0000008818,Avery Dennison Corp,wikipedia_rev_925366750
+AWK,AWK,American Water Works Company Inc,Utilities,,,,,0001410636,American Water Works Company Inc,wikipedia_rev_925366750
+AXP,AXP,American Express Co,Financials,,,,,0000004962,American Express Co,wikipedia_rev_925366750
+AZO,AZO,AutoZone Inc,Consumer Discretionary,,,,,0000866787,AutoZone Inc,wikipedia_rev_925366750
+BA,BA,Boeing Company,Industrials,,,,,0000012927,Boeing Company,wikipedia_rev_925366750
+BAC,BAC,Bank of America Corp,Financials,,,,,0000070858,Bank of America Corp,wikipedia_rev_925366750
+BAX,BAX,Baxter International Inc.,Health Care,,,,,0000010456,Baxter International Inc.,wikipedia_rev_925366750
+BBT,BBT,BB&T Corporation,Financials,,,,,0000092230,BB&T Corporation,wikipedia_rev_925366750
+BBY,BBY,Best Buy Co. Inc.,Consumer Discretionary,,,,,0000764478,Best Buy Co. Inc.,wikipedia_rev_925366750
+BDX,BDX,Becton Dickinson,Health Care,,,,,0000010795,Becton Dickinson,wikipedia_rev_925366750
+BEN,BEN,Franklin Resources,Financials,,,,,0000038777,Franklin Resources,wikipedia_rev_925366750
+BF.B,BF-B,Brown-Forman Corp.,Consumer Staples,,,,,0000014693,Brown-Forman Corp.,wikipedia_rev_925366750
+BIIB,BIIB,Biogen Inc.,Health Care,,,,,0000875045,Biogen Inc.,wikipedia_rev_925366750
+BK,BK,The Bank of New York Mellon Corp.,Financials,,,,,0001390777,The Bank of New York Mellon Corp.,wikipedia_rev_925366750
+BKNG,BKNG,Booking Holdings Inc,Consumer Discretionary,,,,,0001075531,Booking Holdings Inc,wikipedia_rev_925366750
+BKR,BKR,Baker Hughes Co,Energy,,,,,0001701605,Baker Hughes Co,wikipedia_rev_925366750
+BLK,BLK,BlackRock,Financials,,,,,0001364742,BlackRock,wikipedia_rev_925366750
+BLL,BLL,Ball Corp,Materials,,,,,0000009389,Ball Corp,wikipedia_rev_925366750
+BMY,BMY,Bristol-Myers Squibb,Health Care,,,,,0000014272,Bristol-Myers Squibb,wikipedia_rev_925366750
+BR,BR,Broadridge Financial Solutions,Information Technology,,,,,0001383312,Broadridge Financial Solutions,wikipedia_rev_925366750
+BRK.B,BRK-B,Berkshire Hathaway,Financials,,,,,0001067983,Berkshire Hathaway,wikipedia_rev_925366750
+BSX,BSX,Boston Scientific,Health Care,,,,,0000885725,Boston Scientific,wikipedia_rev_925366750
+BWA,BWA,BorgWarner,Consumer Discretionary,,,,,0000908255,BorgWarner,wikipedia_rev_925366750
+BXP,BXP,Boston Properties,Real Estate,,,,,0001037540,Boston Properties,wikipedia_rev_925366750
+C,C,Citigroup Inc.,Financials,,,,,0000831001,Citigroup Inc.,wikipedia_rev_925366750
+CAG,CAG,Conagra Brands,Consumer Staples,,,,,0000023217,Conagra Brands,wikipedia_rev_925366750
+CAH,CAH,Cardinal Health Inc.,Health Care,,,,,0000721371,Cardinal Health Inc.,wikipedia_rev_925366750
+CAT,CAT,Caterpillar Inc.,Industrials,,,,,0000018230,Caterpillar Inc.,wikipedia_rev_925366750
+CB,CB,Chubb Limited,Financials,,,,,0000896159,Chubb Limited,wikipedia_rev_925366750
+CBOE,CBOE,Cboe Global Markets,Financials,,,,,0001374310,Cboe Global Markets,wikipedia_rev_925366750
+CBRE,CBRE,CBRE Group,Real Estate,,,,,0001138118,CBRE Group,wikipedia_rev_925366750
+CBS,CBS,CBS Corp.,Communication Services,,,,,0000813828,CBS Corp.,wikipedia_rev_925366750
+CCI,CCI,Crown Castle International Corp.,Real Estate,,,,,0001051470,Crown Castle International Corp.,wikipedia_rev_925366750
+CCL,CCL,Carnival Corp.,Consumer Discretionary,,,,,0000815097,Carnival Corp.,wikipedia_rev_925366750
+CDNS,CDNS,Cadence Design Systems,Information Technology,,,,,0000813672,Cadence Design Systems,wikipedia_rev_925366750
+CDW,CDW,CDW,Information Technology,,,,,0001402057,CDW,wikipedia_rev_925366750
+CE,CE,Celanese,Materials,,,,,0001306830,Celanese,wikipedia_rev_925366750
+CELG,CELG,Celgene Corp.,Health Care,,,,,0000816284,Celgene Corp.,wikipedia_rev_925366750
+CERN,CERN,Cerner,Health Care,,,,,0000804753,Cerner,wikipedia_rev_925366750
+CF,CF,CF Industries Holdings Inc,Materials,,,,,0001324404,CF Industries Holdings Inc,wikipedia_rev_925366750
+CFG,CFG,Citizens Financial Group,Financials,,,,,0000759944,Citizens Financial Group,wikipedia_rev_925366750
+CHD,CHD,Church & Dwight,Consumer Staples,,,,,0000313927,Church & Dwight,wikipedia_rev_925366750
+CHRW,CHRW,C. H. Robinson Worldwide,Industrials,,,,,0001043277,C. H. Robinson Worldwide,wikipedia_rev_925366750
+CHTR,CHTR,Charter Communications,Communication Services,,,,,0001091667,Charter Communications,wikipedia_rev_925366750
+CI,CI,CIGNA Corp.,Health Care,,,,,0000701221,CIGNA Corp.,wikipedia_rev_925366750
+CINF,CINF,Cincinnati Financial,Financials,,,,,0000020286,Cincinnati Financial,wikipedia_rev_925366750
+CL,CL,Colgate-Palmolive,Consumer Staples,,,,,0000021665,Colgate-Palmolive,wikipedia_rev_925366750
+CLX,CLX,The Clorox Company,Consumer Staples,,,,,0000021076,The Clorox Company,wikipedia_rev_925366750
+CMA,CMA,Comerica Inc.,Financials,,,,,0000028412,Comerica Inc.,wikipedia_rev_925366750
+CMCSA,CMCSA,Comcast Corp.,Communication Services,,,,,0001166691,Comcast Corp.,wikipedia_rev_925366750
+CME,CME,CME Group Inc.,Financials,,,,,0001156375,CME Group Inc.,wikipedia_rev_925366750
+CMG,CMG,Chipotle Mexican Grill,Consumer Discretionary,,,,,0001058090,Chipotle Mexican Grill,wikipedia_rev_925366750
+CMI,CMI,Cummins Inc.,Industrials,,,,,0000026172,Cummins Inc.,wikipedia_rev_925366750
+CMS,CMS,CMS Energy,Utilities,,,,,0000811156,CMS Energy,wikipedia_rev_925366750
+CNC,CNC,Centene Corporation,Health Care,,,,,0001071739,Centene Corporation,wikipedia_rev_925366750
+CNP,CNP,CenterPoint Energy,Utilities,,,,,0001130310,CenterPoint Energy,wikipedia_rev_925366750
+COF,COF,Capital One Financial,Financials,,,,,0000927628,Capital One Financial,wikipedia_rev_925366750
+COG,COG,Cabot Oil & Gas,Energy,,,,,0000858470,Cabot Oil & Gas,wikipedia_rev_925366750
+COO,COO,The Cooper Companies,Health Care,,,,,0000711404,The Cooper Companies,wikipedia_rev_925366750
+COP,COP,ConocoPhillips,Energy,,,,,0001163165,ConocoPhillips,wikipedia_rev_925366750
+COST,COST,Costco Wholesale Corp.,Consumer Staples,,,,,0000909832,Costco Wholesale Corp.,wikipedia_rev_925366750
+COTY,COTY,"Coty, Inc",Consumer Staples,,,,,0001024305,"Coty, Inc",wikipedia_rev_925366750
+CPB,CPB,Campbell Soup,Consumer Staples,,,,,0000016732,Campbell Soup,wikipedia_rev_925366750
+CPRI,CPRI,Capri Holdings,Consumer Discretionary,,,,,0001530721,Capri Holdings,wikipedia_rev_925366750
+CPRT,CPRT,Copart Inc,Industrials,,,,,0000900075,Copart Inc,wikipedia_rev_925366750
+CRM,CRM,Salesforce.com,Information Technology,,,,,0001108524,Salesforce.com,wikipedia_rev_925366750
+CSCO,CSCO,Cisco Systems,Information Technology,,,,,0000858877,Cisco Systems,wikipedia_rev_925366750
+CSX,CSX,CSX Corp.,Industrials,,,,,0000277948,CSX Corp.,wikipedia_rev_925366750
+CTAS,CTAS,Cintas Corporation,Industrials,,,,,0000723254,Cintas Corporation,wikipedia_rev_925366750
+CTL,CTL,CenturyLink Inc,Communication Services,,,,,0000018926,CenturyLink Inc,wikipedia_rev_925366750
+CTSH,CTSH,Cognizant Technology Solutions,Information Technology,,,,,0001058290,Cognizant Technology Solutions,wikipedia_rev_925366750
+CTVA,CTVA,Corteva,Materials,,,,,0001755672,Corteva,wikipedia_rev_925366750
+CTXS,CTXS,Citrix Systems,Information Technology,,,,,0000877890,Citrix Systems,wikipedia_rev_925366750
+CVS,CVS,CVS Health,Health Care,,,,,0000064803,CVS Health,wikipedia_rev_925366750
+CVX,CVX,Chevron Corp.,Energy,,,,,0000093410,Chevron Corp.,wikipedia_rev_925366750
+CXO,CXO,Concho Resources,Energy,,,,,0001358071,Concho Resources,wikipedia_rev_925366750
+D,D,Dominion Energy,Utilities,,,,,0000715957,Dominion Energy,wikipedia_rev_925366750
+DAL,DAL,Delta Air Lines Inc.,Industrials,,,,,0000027904,Delta Air Lines Inc.,wikipedia_rev_925366750
+DD,DD,DuPont de Nemours Inc,Materials,,,,,0001666700,DuPont de Nemours Inc,wikipedia_rev_925366750
+DE,DE,Deere & Co.,Industrials,,,,,0000315189,Deere & Co.,wikipedia_rev_925366750
+DFS,DFS,Discover Financial Services,Financials,,,,,0001393612,Discover Financial Services,wikipedia_rev_925366750
+DG,DG,Dollar General,Consumer Discretionary,,,,,0000029534,Dollar General,wikipedia_rev_925366750
+DGX,DGX,Quest Diagnostics,Health Care,,,,,0001022079,Quest Diagnostics,wikipedia_rev_925366750
+DHI,DHI,D. R. Horton,Consumer Discretionary,,,,,0000882184,D. R. Horton,wikipedia_rev_925366750
+DHR,DHR,Danaher Corp.,Health Care,,,,,0000313616,Danaher Corp.,wikipedia_rev_925366750
+DIS,DIS,The Walt Disney Company,Communication Services,,,,,0001001039,The Walt Disney Company,wikipedia_rev_925366750
+DISCA,DISCA,Discovery Inc. Class A,Communication Services,,,,,0001437107,Discovery Inc. Class A,wikipedia_rev_925366750
+DISCK,DISCK,Discovery Inc. Class C,Communication Services,,,,,0001437107,Discovery Inc. Class C,wikipedia_rev_925366750
+DISH,DISH,Dish Network,Communication Services,,,,,0001001082,Dish Network,wikipedia_rev_925366750
+DLR,DLR,Digital Realty Trust Inc,Real Estate,,,,,0001297996,Digital Realty Trust Inc,wikipedia_rev_925366750
+DLTR,DLTR,Dollar Tree,Consumer Discretionary,,,,,0000935703,Dollar Tree,wikipedia_rev_925366750
+DOV,DOV,Dover Corp.,Industrials,,,,,0000029905,Dover Corp.,wikipedia_rev_925366750
+DOW,DOW,Dow Inc.,Materials,,,,,0001751788,Dow Inc.,wikipedia_rev_925366750
+DRE,DRE,Duke Realty Corp,Real Estate,,,,,0000783280,Duke Realty Corp,wikipedia_rev_925366750
+DRI,DRI,Darden Restaurants,Consumer Discretionary,,,,,0000940944,Darden Restaurants,wikipedia_rev_925366750
+DTE,DTE,DTE Energy Co.,Utilities,,,,,0000936340,DTE Energy Co.,wikipedia_rev_925366750
+DUK,DUK,Duke Energy,Utilities,,,,,0001326160,Duke Energy,wikipedia_rev_925366750
+DVA,DVA,DaVita Inc.,Health Care,,,,,0000927066,DaVita Inc.,wikipedia_rev_925366750
+DVN,DVN,Devon Energy,Energy,,,,,0001090012,Devon Energy,wikipedia_rev_925366750
+DXC,DXC,DXC Technology,Information Technology,,,,,0001688568,DXC Technology,wikipedia_rev_925366750
+EA,EA,Electronic Arts,Communication Services,,,,,0000712515,Electronic Arts,wikipedia_rev_925366750
+EBAY,EBAY,eBay Inc.,Consumer Discretionary,,,,,0001065088,eBay Inc.,wikipedia_rev_925366750
+ECL,ECL,Ecolab Inc.,Materials,,,,,0000031462,Ecolab Inc.,wikipedia_rev_925366750
+ED,ED,Consolidated Edison,Utilities,,,,,0001047862,Consolidated Edison,wikipedia_rev_925366750
+EFX,EFX,Equifax Inc.,Industrials,,,,,0000033185,Equifax Inc.,wikipedia_rev_925366750
+EIX,EIX,Edison Int'l,Utilities,,,,,0000827052,Edison Int'l,wikipedia_rev_925366750
+EL,EL,Estee Lauder Cos.,Consumer Staples,,,,,0001001250,Estee Lauder Cos.,wikipedia_rev_925366750
+EMN,EMN,Eastman Chemical,Materials,,,,,0000915389,Eastman Chemical,wikipedia_rev_925366750
+EMR,EMR,Emerson Electric Company,Industrials,,,,,0000032604,Emerson Electric Company,wikipedia_rev_925366750
+EOG,EOG,EOG Resources,Energy,,,,,0000821189,EOG Resources,wikipedia_rev_925366750
+EQIX,EQIX,Equinix,Real Estate,,,,,0001101239,Equinix,wikipedia_rev_925366750
+EQR,EQR,Equity Residential,Real Estate,,,,,0000906107,Equity Residential,wikipedia_rev_925366750
+ES,ES,Eversource Energy,Utilities,,,,,0000072741,Eversource Energy,wikipedia_rev_925366750
+ESS,ESS,"Essex Property Trust, Inc.",Real Estate,,,,,0000920522,"Essex Property Trust, Inc.",wikipedia_rev_925366750
+ETFC,ETFC,E*Trade,Financials,,,,,0001015780,E*Trade,wikipedia_rev_925366750
+ETN,ETN,Eaton Corporation,Industrials,,,,,0001551182,Eaton Corporation,wikipedia_rev_925366750
+ETR,ETR,Entergy Corp.,Utilities,,,,,0000065984,Entergy Corp.,wikipedia_rev_925366750
+EVRG,EVRG,Evergy,Utilities,,,,,0001711269,Evergy,wikipedia_rev_925366750
+EW,EW,Edwards Lifesciences,Health Care,,,,,0001099800,Edwards Lifesciences,wikipedia_rev_925366750
+EXC,EXC,Exelon Corp.,Utilities,,,,,0001109357,Exelon Corp.,wikipedia_rev_925366750
+EXPD,EXPD,Expeditors,Industrials,,,,,0000746515,Expeditors,wikipedia_rev_925366750
+EXPE,EXPE,Expedia Group,Consumer Discretionary,,,,,0001324424,Expedia Group,wikipedia_rev_925366750
+EXR,EXR,Extra Space Storage,Real Estate,,,,,0001289490,Extra Space Storage,wikipedia_rev_925366750
+F,F,Ford Motor,Consumer Discretionary,,,,,0000037996,Ford Motor,wikipedia_rev_925366750
+FANG,FANG,Diamondback Energy,Energy,,,,,0001539838,Diamondback Energy,wikipedia_rev_925366750
+FAST,FAST,Fastenal Co,Industrials,,,,,0000815556,Fastenal Co,wikipedia_rev_925366750
+FB,FB,"Facebook, Inc.",Communication Services,,,,,0001326801,"Facebook, Inc.",wikipedia_rev_925366750
+FBHS,FBHS,Fortune Brands Home & Security,Industrials,,,,,0001519751,Fortune Brands Home & Security,wikipedia_rev_925366750
+FCX,FCX,Freeport-McMoRan Inc.,Materials,,,,,0000831259,Freeport-McMoRan Inc.,wikipedia_rev_925366750
+FDX,FDX,FedEx Corporation,Industrials,,,,,0001048911,FedEx Corporation,wikipedia_rev_925366750
+FE,FE,FirstEnergy Corp,Utilities,,,,,0001031296,FirstEnergy Corp,wikipedia_rev_925366750
+FFIV,FFIV,F5 Networks,Information Technology,,,,,0001048695,F5 Networks,wikipedia_rev_925366750
+FIS,FIS,Fidelity National Information Services,Information Technology,,,,,0001136893,Fidelity National Information Services,wikipedia_rev_925366750
+FISV,FISV,Fiserv Inc,Information Technology,,,,,0000798354,Fiserv Inc,wikipedia_rev_925366750
+FITB,FITB,Fifth Third Bancorp,Financials,,,,,0000035527,Fifth Third Bancorp,wikipedia_rev_925366750
+FLIR,FLIR,FLIR Systems,Information Technology,,,,,0000354908,FLIR Systems,wikipedia_rev_925366750
+FLS,FLS,Flowserve Corporation,Industrials,,,,,0000030625,Flowserve Corporation,wikipedia_rev_925366750
+FLT,FLT,FleetCor Technologies Inc,Information Technology,,,,,0001175454,FleetCor Technologies Inc,wikipedia_rev_925366750
+FMC,FMC,FMC Corporation,Materials,,,,,0000037785,FMC Corporation,wikipedia_rev_925366750
+FOX,FOX,Fox Corporation Class B,Communication Services,,,,,0001308161,Fox Corporation Class B,wikipedia_rev_925366750
+FOXA,FOXA,Fox Corporation Class A,Communication Services,,,,,0001308161,Fox Corporation Class A,wikipedia_rev_925366750
+FRC,FRC,First Republic Bank,Financials,,,,,0001132979,First Republic Bank,wikipedia_rev_925366750
+FRT,FRT,Federal Realty Investment Trust,Real Estate,,,,,0000034903,Federal Realty Investment Trust,wikipedia_rev_925366750
+FTI,FTI,TechnipFMC,Energy,,,,,0001681459,TechnipFMC,wikipedia_rev_925366750
+FTNT,FTNT,Fortinet,Information Technology,,,,,0001262039,Fortinet,wikipedia_rev_925366750
+FTV,FTV,Fortive Corp,Industrials,,,,,0001659166,Fortive Corp,wikipedia_rev_925366750
+GD,GD,General Dynamics,Industrials,,,,,0000040533,General Dynamics,wikipedia_rev_925366750
+GE,GE,General Electric,Industrials,,,,,0000040545,General Electric,wikipedia_rev_925366750
+GILD,GILD,Gilead Sciences,Health Care,,,,,0000882095,Gilead Sciences,wikipedia_rev_925366750
+GIS,GIS,General Mills,Consumer Staples,,,,,0000040704,General Mills,wikipedia_rev_925366750
+GL,GL,Globe Life Inc.,Financials,,,,,0000320335,Globe Life Inc.,wikipedia_rev_925366750
+GLW,GLW,Corning Inc.,Information Technology,,,,,0000024741,Corning Inc.,wikipedia_rev_925366750
+GM,GM,General Motors,Consumer Discretionary,,,,,0001467858,General Motors,wikipedia_rev_925366750
+GOOG,GOOG,Alphabet Inc Class C,Communication Services,,,,,0001652044,Alphabet Inc Class C,wikipedia_rev_925366750
+GOOGL,GOOGL,Alphabet Inc Class A,Communication Services,,,,,0001652044,Alphabet Inc Class A,wikipedia_rev_925366750
+GPC,GPC,Genuine Parts,Consumer Discretionary,,,,,0000040987,Genuine Parts,wikipedia_rev_925366750
+GPN,GPN,Global Payments Inc.,Information Technology,,,,,0001123360,Global Payments Inc.,wikipedia_rev_925366750
+GPS,GPS,Gap Inc.,Consumer Discretionary,,,,,0000039911,Gap Inc.,wikipedia_rev_925366750
+GRMN,GRMN,Garmin Ltd.,Consumer Discretionary,,,,,0001121788,Garmin Ltd.,wikipedia_rev_925366750
+GS,GS,Goldman Sachs Group,Financials,,,,,0000886982,Goldman Sachs Group,wikipedia_rev_925366750
+GWW,GWW,Grainger (W.W.) Inc.,Industrials,,,,,0000277135,Grainger (W.W.) Inc.,wikipedia_rev_925366750
+HAL,HAL,Halliburton Co.,Energy,,,,,0000045012,Halliburton Co.,wikipedia_rev_925366750
+HAS,HAS,Hasbro Inc.,Consumer Discretionary,,,,,0000046080,Hasbro Inc.,wikipedia_rev_925366750
+HBAN,HBAN,Huntington Bancshares,Financials,,,,,0000049196,Huntington Bancshares,wikipedia_rev_925366750
+HBI,HBI,Hanesbrands Inc,Consumer Discretionary,,,,,0001359841,Hanesbrands Inc,wikipedia_rev_925366750
+HCA,HCA,HCA Healthcare,Health Care,,,,,0000860730,HCA Healthcare,wikipedia_rev_925366750
+HD,HD,Home Depot,Consumer Discretionary,,,,,0000354950,Home Depot,wikipedia_rev_925366750
+HES,HES,Hess Corporation,Energy,,,,,0000004447,Hess Corporation,wikipedia_rev_925366750
+HFC,HFC,HollyFrontier Corp,Energy,,,,,0000048039,HollyFrontier Corp,wikipedia_rev_925366750
+HIG,HIG,Hartford Financial Svc.Gp.,Financials,,,,,0000874766,Hartford Financial Svc.Gp.,wikipedia_rev_925366750
+HII,HII,Huntington Ingalls Industries,Industrials,,,,,0001501585,Huntington Ingalls Industries,wikipedia_rev_925366750
+HLT,HLT,Hilton Worldwide Holdings Inc,Consumer Discretionary,,,,,0001585689,Hilton Worldwide Holdings Inc,wikipedia_rev_925366750
+HOG,HOG,Harley-Davidson,Consumer Discretionary,,,,,0000793952,Harley-Davidson,wikipedia_rev_925366750
+HOLX,HOLX,Hologic,Health Care,,,,,0000859737,Hologic,wikipedia_rev_925366750
+HON,HON,Honeywell Int'l Inc.,Industrials,,,,,0000773840,Honeywell Int'l Inc.,wikipedia_rev_925366750
+HP,HP,Helmerich & Payne,Energy,,,,,0000046765,Helmerich & Payne,wikipedia_rev_925366750
+HPE,HPE,Hewlett Packard Enterprise,Information Technology,,,,,0001645590,Hewlett Packard Enterprise,wikipedia_rev_925366750
+HPQ,HPQ,HP Inc.,Information Technology,,,,,0000047217,HP Inc.,wikipedia_rev_925366750
+HRB,HRB,Block H&R,Consumer Discretionary,,,,,0000012659,Block H&R,wikipedia_rev_925366750
+HRL,HRL,Hormel Foods Corp.,Consumer Staples,,,,,0000048465,Hormel Foods Corp.,wikipedia_rev_925366750
+HSIC,HSIC,Henry Schein,Health Care,,,,,0001000228,Henry Schein,wikipedia_rev_925366750
+HST,HST,Host Hotels & Resorts,Real Estate,,,,,0001070750,Host Hotels & Resorts,wikipedia_rev_925366750
+HSY,HSY,The Hershey Company,Consumer Staples,,,,,0000047111,The Hershey Company,wikipedia_rev_925366750
+HUM,HUM,Humana Inc.,Health Care,,,,,0000049071,Humana Inc.,wikipedia_rev_925366750
+IBM,IBM,International Business Machines,Information Technology,,,,,0000051143,International Business Machines,wikipedia_rev_925366750
+ICE,ICE,Intercontinental Exchange,Financials,,,,,0001571949,Intercontinental Exchange,wikipedia_rev_925366750
+IDXX,IDXX,IDEXX Laboratories,Health Care,,,,,0000874716,IDEXX Laboratories,wikipedia_rev_925366750
+IEX,IEX,IDEX Corporation,Industrials,,,,,0000832101,IDEX Corporation,wikipedia_rev_925366750
+IFF,IFF,Intl Flavors & Fragrances,Materials,,,,,0000051253,Intl Flavors & Fragrances,wikipedia_rev_925366750
+ILMN,ILMN,Illumina Inc,Health Care,,,,,0001110803,Illumina Inc,wikipedia_rev_925366750
+INCY,INCY,Incyte,Health Care,,,,,0000879169,Incyte,wikipedia_rev_925366750
+INFO,INFO,IHS Markit Ltd.,Industrials,,,,,0001598014,IHS Markit Ltd.,wikipedia_rev_925366750
+INTC,INTC,Intel Corp.,Information Technology,,,,,0000050863,Intel Corp.,wikipedia_rev_925366750
+INTU,INTU,Intuit Inc.,Information Technology,,,,,0000896878,Intuit Inc.,wikipedia_rev_925366750
+IP,IP,International Paper,Materials,,,,,0000051434,International Paper,wikipedia_rev_925366750
+IPG,IPG,Interpublic Group,Communication Services,,,,,0000051644,Interpublic Group,wikipedia_rev_925366750
+IPGP,IPGP,IPG Photonics Corp.,Information Technology,,,,,0001111928,IPG Photonics Corp.,wikipedia_rev_925366750
+IQV,IQV,IQVIA Holdings Inc.,Health Care,,,,,0001478242,IQVIA Holdings Inc.,wikipedia_rev_925366750
+IR,IR,Ingersoll-Rand PLC,Industrials,,,,,0001466258,Ingersoll-Rand PLC,wikipedia_rev_925366750
+IRM,IRM,Iron Mountain Incorporated,Real Estate,,,,,0001020569,Iron Mountain Incorporated,wikipedia_rev_925366750
+ISRG,ISRG,Intuitive Surgical Inc.,Health Care,,,,,0001035267,Intuitive Surgical Inc.,wikipedia_rev_925366750
+IT,IT,Gartner Inc,Information Technology,,,,,0000749251,Gartner Inc,wikipedia_rev_925366750
+ITW,ITW,Illinois Tool Works,Industrials,,,,,0000049826,Illinois Tool Works,wikipedia_rev_925366750
+IVZ,IVZ,Invesco Ltd.,Financials,,,,,0000914208,Invesco Ltd.,wikipedia_rev_925366750
+JBHT,JBHT,J. B. Hunt Transport Services,Industrials,,,,,0000728535,J. B. Hunt Transport Services,wikipedia_rev_925366750
+JCI,JCI,Johnson Controls International,Industrials,,,,,0000833444,Johnson Controls International,wikipedia_rev_925366750
+JEC,JEC,Jacobs Engineering Group,Industrials,,,,,0000052988,Jacobs Engineering Group,wikipedia_rev_925366750
+JKHY,JKHY,Jack Henry & Associates,Information Technology,,,,,0000779152,Jack Henry & Associates,wikipedia_rev_925366750
+JNJ,JNJ,Johnson & Johnson,Health Care,,,,,0000200406,Johnson & Johnson,wikipedia_rev_925366750
+JNPR,JNPR,Juniper Networks,Information Technology,,,,,0001043604,Juniper Networks,wikipedia_rev_925366750
+JPM,JPM,JPMorgan Chase & Co.,Financials,,,,,0000019617,JPMorgan Chase & Co.,wikipedia_rev_925366750
+JWN,JWN,Nordstrom,Consumer Discretionary,,,,,0000072333,Nordstrom,wikipedia_rev_925366750
+K,K,Kellogg Co.,Consumer Staples,,,,,0000055067,Kellogg Co.,wikipedia_rev_925366750
+KEY,KEY,KeyCorp,Financials,,,,,0000091576,KeyCorp,wikipedia_rev_925366750
+KEYS,KEYS,Keysight Technologies,Information Technology,,,,,0001601046,Keysight Technologies,wikipedia_rev_925366750
+KHC,KHC,Kraft Heinz Co,Consumer Staples,,,,,0001637459,Kraft Heinz Co,wikipedia_rev_925366750
+KIM,KIM,Kimco Realty,Real Estate,,,,,0000879101,Kimco Realty,wikipedia_rev_925366750
+KLAC,KLAC,KLA Corporation,Information Technology,,,,,0000319201,KLA Corporation,wikipedia_rev_925366750
+KMB,KMB,Kimberly-Clark,Consumer Staples,,,,,0000055785,Kimberly-Clark,wikipedia_rev_925366750
+KMI,KMI,Kinder Morgan,Energy,,,,,0001506307,Kinder Morgan,wikipedia_rev_925366750
+KMX,KMX,Carmax Inc,Consumer Discretionary,,,,,0001170010,Carmax Inc,wikipedia_rev_925366750
+KO,KO,Coca-Cola Company,Consumer Staples,,,,,0000021344,Coca-Cola Company,wikipedia_rev_925366750
+KR,KR,Kroger Co.,Consumer Staples,,,,,0000056873,Kroger Co.,wikipedia_rev_925366750
+KSS,KSS,Kohl's Corp.,Consumer Discretionary,,,,,0000885639,Kohl's Corp.,wikipedia_rev_925366750
+KSU,KSU,Kansas City Southern,Industrials,,,,,0000054480,Kansas City Southern,wikipedia_rev_925366750
+L,L,Loews Corp.,Financials,,,,,0000060086,Loews Corp.,wikipedia_rev_925366750
+LB,LB,L Brands Inc.,Consumer Discretionary,,,,,0000701985,L Brands Inc.,wikipedia_rev_925366750
+LDOS,LDOS,Leidos Holdings,Information Technology,,,,,0001336920,Leidos Holdings,wikipedia_rev_925366750
+LEG,LEG,Leggett & Platt,Consumer Discretionary,,,,,0000058492,Leggett & Platt,wikipedia_rev_925366750
+LEN,LEN,Lennar Corp.,Consumer Discretionary,,,,,0000920760,Lennar Corp.,wikipedia_rev_925366750
+LH,LH,Laboratory Corp. of America Holding,Health Care,,,,,0000920148,Laboratory Corp. of America Holding,wikipedia_rev_925366750
+LHX,LHX,L3Harris Technologies,Industrials,,,,,0000202058,L3Harris Technologies,wikipedia_rev_925366750
+LIN,LIN,Linde plc,Materials,,,,,0001707925,Linde plc,wikipedia_rev_925366750
+LKQ,LKQ,LKQ Corporation,Consumer Discretionary,,,,,0001065696,LKQ Corporation,wikipedia_rev_925366750
+LLY,LLY,Lilly (Eli) & Co.,Health Care,,,,,0000059478,Lilly (Eli) & Co.,wikipedia_rev_925366750
+LMT,LMT,Lockheed Martin Corp.,Industrials,,,,,0000936468,Lockheed Martin Corp.,wikipedia_rev_925366750
+LNC,LNC,Lincoln National,Financials,,,,,0000059558,Lincoln National,wikipedia_rev_925366750
+LNT,LNT,Alliant Energy Corp,Utilities,,,,,0000352541,Alliant Energy Corp,wikipedia_rev_925366750
+LOW,LOW,Lowe's Cos.,Consumer Discretionary,,,,,0000060667,Lowe's Cos.,wikipedia_rev_925366750
+LRCX,LRCX,Lam Research,Information Technology,,,,,0000707549,Lam Research,wikipedia_rev_925366750
+LUV,LUV,Southwest Airlines,Industrials,,,,,0000092380,Southwest Airlines,wikipedia_rev_925366750
+LVS,LVS,Las Vegas Sands Corp,Consumer Discretionary,,,,,0001300514,Las Vegas Sands Corp,wikipedia_rev_925366750
+LW,LW,Lamb Weston Holdings Inc,Consumer Staples,,,,,0001679273,Lamb Weston Holdings Inc,wikipedia_rev_925366750
+LYB,LYB,LyondellBasell,Materials,,,,,0001489393,LyondellBasell,wikipedia_rev_925366750
+M,M,Macy's Inc.,Consumer Discretionary,,,,,0000794367,Macy's Inc.,wikipedia_rev_925366750
+MA,MA,Mastercard Inc.,Information Technology,,,,,0001141391,Mastercard Inc.,wikipedia_rev_925366750
+MAA,MAA,Mid-America Apartments,Real Estate,,,,,0000912595,Mid-America Apartments,wikipedia_rev_925366750
+MAC,MAC,Macerich,Real Estate,,,,,0000912242,Macerich,wikipedia_rev_925366750
+MAR,MAR,Marriott Int'l.,Consumer Discretionary,,,,,0001048286,Marriott Int'l.,wikipedia_rev_925366750
+MAS,MAS,Masco Corp.,Industrials,,,,,0000062996,Masco Corp.,wikipedia_rev_925366750
+MCD,MCD,McDonald's Corp.,Consumer Discretionary,,,,,0000063908,McDonald's Corp.,wikipedia_rev_925366750
+MCHP,MCHP,Microchip Technology,Information Technology,,,,,0000827054,Microchip Technology,wikipedia_rev_925366750
+MCK,MCK,McKesson Corp.,Health Care,,,,,0000927653,McKesson Corp.,wikipedia_rev_925366750
+MCO,MCO,Moody's Corp,Financials,,,,,0001059556,Moody's Corp,wikipedia_rev_925366750
+MDLZ,MDLZ,Mondelez International,Consumer Staples,,,,,0001103982,Mondelez International,wikipedia_rev_925366750
+MDT,MDT,Medtronic plc,Health Care,,,,,0001613103,Medtronic plc,wikipedia_rev_925366750
+MET,MET,MetLife Inc.,Financials,,,,,0001099219,MetLife Inc.,wikipedia_rev_925366750
+MGM,MGM,MGM Resorts International,Consumer Discretionary,,,,,0000789570,MGM Resorts International,wikipedia_rev_925366750
+MHK,MHK,Mohawk Industries,Consumer Discretionary,,,,,0000851968,Mohawk Industries,wikipedia_rev_925366750
+MKC,MKC,McCormick & Co.,Consumer Staples,,,,,0000063754,McCormick & Co.,wikipedia_rev_925366750
+MKTX,MKTX,MarketAxess,Financials,,,,,0001278021,MarketAxess,wikipedia_rev_925366750
+MLM,MLM,Martin Marietta Materials,Materials,,,,,0000916076,Martin Marietta Materials,wikipedia_rev_925366750
+MMC,MMC,Marsh & McLennan,Financials,,,,,0000062709,Marsh & McLennan,wikipedia_rev_925366750
+MMM,MMM,3M Company,Industrials,,,,,0000066740,3M Company,wikipedia_rev_925366750
+MNST,MNST,Monster Beverage,Consumer Staples,,,,,0000865752,Monster Beverage,wikipedia_rev_925366750
+MO,MO,Altria Group Inc,Consumer Staples,,,,,0000764180,Altria Group Inc,wikipedia_rev_925366750
+MOS,MOS,The Mosaic Company,Materials,,,,,0001285785,The Mosaic Company,wikipedia_rev_925366750
+MPC,MPC,Marathon Petroleum,Energy,,,,,0001510295,Marathon Petroleum,wikipedia_rev_925366750
+MRK,MRK,Merck & Co.,Health Care,,,,,0000310158,Merck & Co.,wikipedia_rev_925366750
+MRO,MRO,Marathon Oil Corp.,Energy,,,,,0000101778,Marathon Oil Corp.,wikipedia_rev_925366750
+MS,MS,Morgan Stanley,Financials,,,,,0000895421,Morgan Stanley,wikipedia_rev_925366750
+MSCI,MSCI,MSCI Inc,Financials,,,,,0001408198,MSCI Inc,wikipedia_rev_925366750
+MSFT,MSFT,Microsoft Corp.,Information Technology,,,,,0000789019,Microsoft Corp.,wikipedia_rev_925366750
+MSI,MSI,Motorola Solutions Inc.,Information Technology,,,,,0000068505,Motorola Solutions Inc.,wikipedia_rev_925366750
+MTB,MTB,M&T Bank Corp.,Financials,,,,,0000036270,M&T Bank Corp.,wikipedia_rev_925366750
+MTD,MTD,Mettler Toledo,Health Care,,,,,0001037646,Mettler Toledo,wikipedia_rev_925366750
+MU,MU,Micron Technology,Information Technology,,,,,0000723125,Micron Technology,wikipedia_rev_925366750
+MXIM,MXIM,Maxim Integrated Products Inc,Information Technology,,,,,0000743316,Maxim Integrated Products Inc,wikipedia_rev_925366750
+MYL,MYL,Mylan N.V.,Health Care,,,,,0001623613,Mylan N.V.,wikipedia_rev_925366750
+NBL,NBL,Noble Energy Inc,Energy,,,,,0000072207,Noble Energy Inc,wikipedia_rev_925366750
+NCLH,NCLH,Norwegian Cruise Line Holdings,Consumer Discretionary,,,,,0001513761,Norwegian Cruise Line Holdings,wikipedia_rev_925366750
+NDAQ,NDAQ,"Nasdaq, Inc.",Financials,,,,,0001120193,"Nasdaq, Inc.",wikipedia_rev_925366750
+NEE,NEE,NextEra Energy,Utilities,,,,,0000753308,NextEra Energy,wikipedia_rev_925366750
+NEM,NEM,Newmont Goldcorp,Materials,,,,,0001164727,Newmont Goldcorp,wikipedia_rev_925366750
+NFLX,NFLX,Netflix Inc.,Communication Services,,,,,0001065280,Netflix Inc.,wikipedia_rev_925366750
+NI,NI,NiSource Inc.,Utilities,,,,,0001111711,NiSource Inc.,wikipedia_rev_925366750
+NKE,NKE,Nike,Consumer Discretionary,,,,,0000320187,Nike,wikipedia_rev_925366750
+NLOK,NLOK,NortonLifeLock,Information Technology,,,,,0000849399,NortonLifeLock,wikipedia_rev_925366750
+NLSN,NLSN,Nielsen Holdings,Industrials,,,,,0001492633,Nielsen Holdings,wikipedia_rev_925366750
+NOC,NOC,Northrop Grumman,Industrials,,,,,0001133421,Northrop Grumman,wikipedia_rev_925366750
+NOV,NOV,National Oilwell Varco Inc.,Energy,,,,,0001021860,National Oilwell Varco Inc.,wikipedia_rev_925366750
+NRG,NRG,NRG Energy,Utilities,,,,,0001013871,NRG Energy,wikipedia_rev_925366750
+NSC,NSC,Norfolk Southern Corp.,Industrials,,,,,0000702165,Norfolk Southern Corp.,wikipedia_rev_925366750
+NTAP,NTAP,NetApp,Information Technology,,,,,0001002047,NetApp,wikipedia_rev_925366750
+NTRS,NTRS,Northern Trust Corp.,Financials,,,,,0000073124,Northern Trust Corp.,wikipedia_rev_925366750
+NUE,NUE,Nucor Corp.,Materials,,,,,0000073309,Nucor Corp.,wikipedia_rev_925366750
+NVDA,NVDA,Nvidia Corporation,Information Technology,,,,,0001045810,Nvidia Corporation,wikipedia_rev_925366750
+NVR,NVR,NVR Inc,Consumer Discretionary,,,,,0000906163,NVR Inc,wikipedia_rev_925366750
+NWL,NWL,Newell Brands,Consumer Discretionary,,,,,0000814453,Newell Brands,wikipedia_rev_925366750
+NWS,NWS,News Corp. Class B,Communication Services,,,,,0001564708,News Corp. Class B,wikipedia_rev_925366750
+NWSA,NWSA,News Corp. Class A,Communication Services,,,,,0001564708,News Corp. Class A,wikipedia_rev_925366750
+O,O,Realty Income Corporation,Real Estate,,,,,0000726728,Realty Income Corporation,wikipedia_rev_925366750
+OKE,OKE,ONEOK,Energy,,,,,0001039684,ONEOK,wikipedia_rev_925366750
+OMC,OMC,Omnicom Group,Communication Services,,,,,0000029989,Omnicom Group,wikipedia_rev_925366750
+ORCL,ORCL,Oracle Corp.,Information Technology,,,,,0001341439,Oracle Corp.,wikipedia_rev_925366750
+ORLY,ORLY,O'Reilly Automotive,Consumer Discretionary,,,,,0000898173,O'Reilly Automotive,wikipedia_rev_925366750
+OXY,OXY,Occidental Petroleum,Energy,,,,,0000797468,Occidental Petroleum,wikipedia_rev_925366750
+PAYX,PAYX,Paychex Inc.,Information Technology,,,,,0000723531,Paychex Inc.,wikipedia_rev_925366750
+PBCT,PBCT,People's United Financial,Financials,,,,,0001378946,People's United Financial,wikipedia_rev_925366750
+PCAR,PCAR,PACCAR Inc.,Industrials,,,,,0000075362,PACCAR Inc.,wikipedia_rev_925366750
+PEAK,PEAK,Healthpeak Properties,Real Estate,,,,,0000765880,Healthpeak Properties,wikipedia_rev_925366750
+PEG,PEG,Public Serv. Enterprise Inc.,Utilities,,,,,0000788784,Public Serv. Enterprise Inc.,wikipedia_rev_925366750
+PEP,PEP,PepsiCo Inc.,Consumer Staples,,,,,0000077476,PepsiCo Inc.,wikipedia_rev_925366750
+PFE,PFE,Pfizer Inc.,Health Care,,,,,0000078003,Pfizer Inc.,wikipedia_rev_925366750
+PFG,PFG,Principal Financial Group,Financials,,,,,0001126328,Principal Financial Group,wikipedia_rev_925366750
+PG,PG,Procter & Gamble,Consumer Staples,,,,,0000080424,Procter & Gamble,wikipedia_rev_925366750
+PGR,PGR,Progressive Corp.,Financials,,,,,0000080661,Progressive Corp.,wikipedia_rev_925366750
+PH,PH,Parker-Hannifin,Industrials,,,,,0000076334,Parker-Hannifin,wikipedia_rev_925366750
+PHM,PHM,Pulte Homes Inc.,Consumer Discretionary,,,,,0000822416,Pulte Homes Inc.,wikipedia_rev_925366750
+PKG,PKG,Packaging Corporation of America,Materials,,,,,0000075677,Packaging Corporation of America,wikipedia_rev_925366750
+PKI,PKI,PerkinElmer,Health Care,,,,,0000031791,PerkinElmer,wikipedia_rev_925366750
+PLD,PLD,Prologis,Real Estate,,,,,0001045609,Prologis,wikipedia_rev_925366750
+PM,PM,Philip Morris International,Consumer Staples,,,,,0001413329,Philip Morris International,wikipedia_rev_925366750
+PNC,PNC,PNC Financial Services,Financials,,,,,0000713676,PNC Financial Services,wikipedia_rev_925366750
+PNR,PNR,Pentair plc,Industrials,,,,,0000077360,Pentair plc,wikipedia_rev_925366750
+PNW,PNW,Pinnacle West Capital,Utilities,,,,,0000764622,Pinnacle West Capital,wikipedia_rev_925366750
+PPG,PPG,PPG Industries,Materials,,,,,0000079879,PPG Industries,wikipedia_rev_925366750
+PPL,PPL,PPL Corp.,Utilities,,,,,0000922224,PPL Corp.,wikipedia_rev_925366750
+PRGO,PRGO,Perrigo,Health Care,,,,,0001585364,Perrigo,wikipedia_rev_925366750
+PRU,PRU,Prudential Financial,Financials,,,,,0001137774,Prudential Financial,wikipedia_rev_925366750
+PSA,PSA,Public Storage,Real Estate,,,,,0001393311,Public Storage,wikipedia_rev_925366750
+PSX,PSX,Phillips 66,Energy,,,,,0001534701,Phillips 66,wikipedia_rev_925366750
+PVH,PVH,PVH Corp.,Consumer Discretionary,,,,,0000078239,PVH Corp.,wikipedia_rev_925366750
+PWR,PWR,Quanta Services Inc.,Industrials,,,,,0001050915,Quanta Services Inc.,wikipedia_rev_925366750
+PXD,PXD,Pioneer Natural Resources,Energy,,,,,0001038357,Pioneer Natural Resources,wikipedia_rev_925366750
+PYPL,PYPL,PayPal,Information Technology,,,,,0001633917,PayPal,wikipedia_rev_925366750
+QCOM,QCOM,QUALCOMM Inc.,Information Technology,,,,,0000804328,QUALCOMM Inc.,wikipedia_rev_925366750
+QRVO,QRVO,Qorvo,Information Technology,,,,,0001604778,Qorvo,wikipedia_rev_925366750
+RCL,RCL,Royal Caribbean Cruises Ltd,Consumer Discretionary,,,,,0000884887,Royal Caribbean Cruises Ltd,wikipedia_rev_925366750
+RE,RE,Everest Re Group Ltd.,Financials,,,,,0001095073,Everest Re Group Ltd.,wikipedia_rev_925366750
+REG,REG,Regency Centers Corporation,Real Estate,,,,,0000910606,Regency Centers Corporation,wikipedia_rev_925366750
+REGN,REGN,Regeneron Pharmaceuticals,Health Care,,,,,0000872589,Regeneron Pharmaceuticals,wikipedia_rev_925366750
+RF,RF,Regions Financial Corp.,Financials,,,,,0001281761,Regions Financial Corp.,wikipedia_rev_925366750
+RHI,RHI,Robert Half International,Industrials,,,,,0000315213,Robert Half International,wikipedia_rev_925366750
+RJF,RJF,Raymond James Financial Inc.,Financials,,,,,0000720005,Raymond James Financial Inc.,wikipedia_rev_925366750
+RL,RL,Ralph Lauren Corporation,Consumer Discretionary,,,,,0001037038,Ralph Lauren Corporation,wikipedia_rev_925366750
+RMD,RMD,ResMed,Health Care,,,,,0000943819,ResMed,wikipedia_rev_925366750
+ROK,ROK,Rockwell Automation Inc.,Industrials,,,,,0001024478,Rockwell Automation Inc.,wikipedia_rev_925366750
+ROL,ROL,Rollins Inc.,Industrials,,,,,0000084839,Rollins Inc.,wikipedia_rev_925366750
+ROP,ROP,Roper Technologies,Industrials,,,,,0000882835,Roper Technologies,wikipedia_rev_925366750
+ROST,ROST,Ross Stores,Consumer Discretionary,,,,,0000745732,Ross Stores,wikipedia_rev_925366750
+RSG,RSG,Republic Services Inc,Industrials,,,,,0001060391,Republic Services Inc,wikipedia_rev_925366750
+RTN,RTN,Raytheon Co.,Industrials,,,,,0001047122,Raytheon Co.,wikipedia_rev_925366750
+SBAC,SBAC,SBA Communications,Real Estate,,,,,0001034054,SBA Communications,wikipedia_rev_925366750
+SBUX,SBUX,Starbucks Corp.,Consumer Discretionary,,,,,0000829224,Starbucks Corp.,wikipedia_rev_925366750
+SCHW,SCHW,Charles Schwab Corporation,Financials,,,,,0000316709,Charles Schwab Corporation,wikipedia_rev_925366750
+SEE,SEE,Sealed Air,Materials,,,,,0001012100,Sealed Air,wikipedia_rev_925366750
+SHW,SHW,Sherwin-Williams,Materials,,,,,0000089800,Sherwin-Williams,wikipedia_rev_925366750
+SIVB,SIVB,SVB Financial,Financials,,,,,0000719739,SVB Financial,wikipedia_rev_925366750
+SJM,SJM,JM Smucker,Consumer Staples,,,,,0000091419,JM Smucker,wikipedia_rev_925366750
+SLB,SLB,Schlumberger Ltd.,Energy,,,,,0000087347,Schlumberger Ltd.,wikipedia_rev_925366750
+SLG,SLG,SL Green Realty,Real Estate,,,,,0001040971,SL Green Realty,wikipedia_rev_925366750
+SNA,SNA,Snap-on,Industrials,,,,,0000091440,Snap-on,wikipedia_rev_925366750
+SNPS,SNPS,Synopsys Inc.,Information Technology,,,,,0000883241,Synopsys Inc.,wikipedia_rev_925366750
+SO,SO,Southern Co.,Utilities,,,,,0000092122,Southern Co.,wikipedia_rev_925366750
+SPG,SPG,Simon Property Group Inc,Real Estate,,,,,0001063761,Simon Property Group Inc,wikipedia_rev_925366750
+SPGI,SPGI,"S&P Global, Inc.",Financials,,,,,0000064040,"S&P Global, Inc.",wikipedia_rev_925366750
+SRE,SRE,Sempra Energy,Utilities,,,,,0001032208,Sempra Energy,wikipedia_rev_925366750
+STI,STI,SunTrust Banks,Financials,,,,,0000750556,SunTrust Banks,wikipedia_rev_925366750
+STT,STT,State Street Corp.,Financials,,,,,0000093751,State Street Corp.,wikipedia_rev_925366750
+STX,STX,Seagate Technology,Information Technology,,,,,0001137789,Seagate Technology,wikipedia_rev_925366750
+STZ,STZ,Constellation Brands,Consumer Staples,,,,,0000016918,Constellation Brands,wikipedia_rev_925366750
+SWK,SWK,Stanley Black & Decker,Industrials,,,,,0000093556,Stanley Black & Decker,wikipedia_rev_925366750
+SWKS,SWKS,Skyworks Solutions,Information Technology,,,,,0000004127,Skyworks Solutions,wikipedia_rev_925366750
+SYF,SYF,Synchrony Financial,Financials,,,,,0001601712,Synchrony Financial,wikipedia_rev_925366750
+SYK,SYK,Stryker Corp.,Health Care,,,,,0000310764,Stryker Corp.,wikipedia_rev_925366750
+SYY,SYY,Sysco Corp.,Consumer Staples,,,,,0000096021,Sysco Corp.,wikipedia_rev_925366750
+T,T,AT&T Inc.,Communication Services,,,,,0000732717,AT&T Inc.,wikipedia_rev_925366750
+TAP,TAP,Molson Coors Brewing Company,Consumer Staples,,,,,0000024545,Molson Coors Brewing Company,wikipedia_rev_925366750
+TDG,TDG,TransDigm Group,Industrials,,,,,0001260221,TransDigm Group,wikipedia_rev_925366750
+TEL,TEL,TE Connectivity Ltd.,Information Technology,,,,,0001385157,TE Connectivity Ltd.,wikipedia_rev_925366750
+TFX,TFX,Teleflex,Health Care,,,,,0000096943,Teleflex,wikipedia_rev_925366750
+TGT,TGT,Target Corp.,Consumer Discretionary,,,,,0000027419,Target Corp.,wikipedia_rev_925366750
+TIF,TIF,Tiffany & Co.,Consumer Discretionary,,,,,0000098246,Tiffany & Co.,wikipedia_rev_925366750
+TJX,TJX,TJX Companies Inc.,Consumer Discretionary,,,,,0000109198,TJX Companies Inc.,wikipedia_rev_925366750
+TMO,TMO,Thermo Fisher Scientific,Health Care,,,,,0000097745,Thermo Fisher Scientific,wikipedia_rev_925366750
+TMUS,TMUS,T-Mobile US,Communication Services,,,,,0001283699,T-Mobile US,wikipedia_rev_925366750
+TPR,TPR,"Tapestry, Inc.",Consumer Discretionary,,,,,0001116132,"Tapestry, Inc.",wikipedia_rev_925366750
+TRIP,TRIP,TripAdvisor,Communication Services,,,,,0001526520,TripAdvisor,wikipedia_rev_925366750
+TROW,TROW,T. Rowe Price Group,Financials,,,,,0001113169,T. Rowe Price Group,wikipedia_rev_925366750
+TRV,TRV,The Travelers Companies Inc.,Financials,,,,,0000086312,The Travelers Companies Inc.,wikipedia_rev_925366750
+TSCO,TSCO,Tractor Supply Company,Consumer Discretionary,,,,,0000916365,Tractor Supply Company,wikipedia_rev_925366750
+TSN,TSN,Tyson Foods,Consumer Staples,,,,,0000100493,Tyson Foods,wikipedia_rev_925366750
+TTWO,TTWO,Take-Two Interactive,Communication Services,,,,,0000946581,Take-Two Interactive,wikipedia_rev_925366750
+TWTR,TWTR,"Twitter, Inc.",Communication Services,,,,,0001418091,"Twitter, Inc.",wikipedia_rev_925366750
+TXN,TXN,Texas Instruments,Information Technology,,,,,0000097476,Texas Instruments,wikipedia_rev_925366750
+TXT,TXT,Textron Inc.,Industrials,,,,,0000217346,Textron Inc.,wikipedia_rev_925366750
+UA,UA,Under Armour Class C,Consumer Discretionary,,,,,0001336917,Under Armour Class C,wikipedia_rev_925366750
+UAA,UAA,Under Armour Class A,Consumer Discretionary,,,,,0001336917,Under Armour Class A,wikipedia_rev_925366750
+UAL,UAL,United Airlines Holdings,Industrials,,,,,0000100517,United Airlines Holdings,wikipedia_rev_925366750
+UDR,UDR,"UDR, Inc.",Real Estate,,,,,0000074208,"UDR, Inc.",wikipedia_rev_925366750
+UHS,UHS,"Universal Health Services, Inc.",Health Care,,,,,0000352915,"Universal Health Services, Inc.",wikipedia_rev_925366750
+ULTA,ULTA,Ulta Beauty,Consumer Discretionary,,,,,0001403568,Ulta Beauty,wikipedia_rev_925366750
+UNH,UNH,United Health Group Inc.,Health Care,,,,,0000731766,United Health Group Inc.,wikipedia_rev_925366750
+UNM,UNM,Unum Group,Financials,,,,,0000005513,Unum Group,wikipedia_rev_925366750
+UNP,UNP,Union Pacific Corp,Industrials,,,,,0000100885,Union Pacific Corp,wikipedia_rev_925366750
+UPS,UPS,United Parcel Service,Industrials,,,,,0001090727,United Parcel Service,wikipedia_rev_925366750
+URI,URI,"United Rentals, Inc.",Industrials,,,,,0001067701,"United Rentals, Inc.",wikipedia_rev_925366750
+USB,USB,U.S. Bancorp,Financials,,,,,0000036104,U.S. Bancorp,wikipedia_rev_925366750
+UTX,UTX,United Technologies,Industrials,,,,,0000101829,United Technologies,wikipedia_rev_925366750
+V,V,Visa Inc.,Information Technology,,,,,0001403161,Visa Inc.,wikipedia_rev_925366750
+VAR,VAR,Varian Medical Systems,Health Care,,,,,0000203527,Varian Medical Systems,wikipedia_rev_925366750
+VFC,VFC,V.F. Corp.,Consumer Discretionary,,,,,0000103379,V.F. Corp.,wikipedia_rev_925366750
+VIAB,VIAB,Viacom Inc.,Communication Services,,,,,0001339947,Viacom Inc.,wikipedia_rev_925366750
+VLO,VLO,Valero Energy,Energy,,,,,0001035002,Valero Energy,wikipedia_rev_925366750
+VMC,VMC,Vulcan Materials,Materials,,,,,0001396009,Vulcan Materials,wikipedia_rev_925366750
+VNO,VNO,Vornado Realty Trust,Real Estate,,,,,0000899689,Vornado Realty Trust,wikipedia_rev_925366750
+VRSK,VRSK,Verisk Analytics,Industrials,,,,,0001442145,Verisk Analytics,wikipedia_rev_925366750
+VRSN,VRSN,Verisign Inc.,Information Technology,,,,,0001014473,Verisign Inc.,wikipedia_rev_925366750
+VRTX,VRTX,Vertex Pharmaceuticals Inc,Health Care,,,,,0000875320,Vertex Pharmaceuticals Inc,wikipedia_rev_925366750
+VTR,VTR,Ventas Inc,Real Estate,,,,,0000740260,Ventas Inc,wikipedia_rev_925366750
+VZ,VZ,Verizon Communications,Communication Services,,,,,0000732712,Verizon Communications,wikipedia_rev_925366750
+WAB,WAB,Wabtec Corporation,Industrials,,,,,0000943452,Wabtec Corporation,wikipedia_rev_925366750
+WAT,WAT,Waters Corporation,Health Care,,,,,0001000697,Waters Corporation,wikipedia_rev_925366750
+WBA,WBA,Walgreens Boots Alliance,Consumer Staples,,,,,0001618921,Walgreens Boots Alliance,wikipedia_rev_925366750
+WCG,WCG,WellCare,Health Care,,,,,0001279363,WellCare,wikipedia_rev_925366750
+WDC,WDC,Western Digital,Information Technology,,,,,0000106040,Western Digital,wikipedia_rev_925366750
+WEC,WEC,Wec Energy Group Inc,Utilities,,,,,0000783325,Wec Energy Group Inc,wikipedia_rev_925366750
+WELL,WELL,Welltower Inc.,Real Estate,,,,,0000766704,Welltower Inc.,wikipedia_rev_925366750
+WFC,WFC,Wells Fargo,Financials,,,,,0000072971,Wells Fargo,wikipedia_rev_925366750
+WHR,WHR,Whirlpool Corp.,Consumer Discretionary,,,,,0000106640,Whirlpool Corp.,wikipedia_rev_925366750
+WLTW,WLTW,Willis Towers Watson,Financials,,,,,0001140536,Willis Towers Watson,wikipedia_rev_925366750
+WM,WM,Waste Management Inc.,Industrials,,,,,0000823768,Waste Management Inc.,wikipedia_rev_925366750
+WMB,WMB,Williams Cos.,Energy,,,,,0000107263,Williams Cos.,wikipedia_rev_925366750
+WMT,WMT,Walmart,Consumer Staples,,,,,0000104169,Walmart,wikipedia_rev_925366750
+WRK,WRK,WestRock,Materials,,,,,0001636023,WestRock,wikipedia_rev_925366750
+WU,WU,Western Union Co,Information Technology,,,,,0001365135,Western Union Co,wikipedia_rev_925366750
+WY,WY,Weyerhaeuser,Real Estate,,,,,0000106535,Weyerhaeuser,wikipedia_rev_925366750
+WYNN,WYNN,Wynn Resorts Ltd,Consumer Discretionary,,,,,0001174922,Wynn Resorts Ltd,wikipedia_rev_925366750
+XEC,XEC,Cimarex Energy,Energy,,,,,0001168054,Cimarex Energy,wikipedia_rev_925366750
+XEL,XEL,Xcel Energy Inc,Utilities,,,,,0000072903,Xcel Energy Inc,wikipedia_rev_925366750
+XLNX,XLNX,Xilinx,Information Technology,,,,,0000743988,Xilinx,wikipedia_rev_925366750
+XOM,XOM,Exxon Mobil Corp.,Energy,,,,,0000034088,Exxon Mobil Corp.,wikipedia_rev_925366750
+XRAY,XRAY,Dentsply Sirona,Health Care,,,,,0000818479,Dentsply Sirona,wikipedia_rev_925366750
+XRX,XRX,Xerox,Information Technology,,,,,0000108772,Xerox,wikipedia_rev_925366750
+XYL,XYL,Xylem Inc.,Industrials,,,,,0001524472,Xylem Inc.,wikipedia_rev_925366750
+YUM,YUM,Yum! Brands Inc,Consumer Discretionary,,,,,0001041061,Yum! Brands Inc,wikipedia_rev_925366750
+ZBH,ZBH,Zimmer Biomet Holdings,Health Care,,,,,0001136869,Zimmer Biomet Holdings,wikipedia_rev_925366750
+ZION,ZION,Zions Bancorp,Financials,,,,,0000109380,Zions Bancorp,wikipedia_rev_925366750
+ZTS,ZTS,Zoetis,Health Care,,,,,0001555280,Zoetis,wikipedia_rev_925366750
