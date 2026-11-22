@@ -1,0 +1,40 @@
+name: Health check
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Ogni mattina alle 07:47 Roma: se un dato è vecchio apre una segnalazione (GitHub la notifica via email al proprietario).
+    - cron: "47 6 * * *"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - id: hc
+        run: python src/health_check.py
+        continue-on-error: true
+      - name: Open or update alert issue
+        if: steps.hc.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          n=$(gh issue list --state open --label salute-dati --json number --jq '.[0].number' || true)
+          gh label create salute-dati --color B60205 --description "Dati automatici non aggiornati" 2>/dev/null || true
+          if [ -n "$n" ]; then gh issue comment "$n" --body-file health_report.md;
+          else gh issue create --title "Salute dati: aggiornamento mancante $(date -u +%Y-%m-%d)" --label salute-dati --body-file health_report.md; fi
+      - name: Close alert issue when healthy
+        if: steps.hc.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for n in $(gh issue list --state open --label salute-dati --json number --jq '.[].number'); do
+            gh issue close "$n" --comment "Dati di nuovo in regola."; done
