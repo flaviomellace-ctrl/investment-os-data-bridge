@@ -2,6 +2,11 @@ name: Early warning
 
 on:
   workflow_dispatch:
+    inputs:
+      debug:
+        description: "Ticker da stampare in dettaglio (separati da virgola)"
+        required: false
+        default: ""
   push:
     branches: [main]
     paths: [src/early_warning.py, data/watchlist_tickers.txt, .github/workflows/early-warning.yml]
@@ -29,6 +34,7 @@ jobs:
       - name: Build signals
         env:
           SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+          EW_DEBUG: ${{ inputs.debug }}
         run: python src/early_warning.py
       - name: Commit
         run: |

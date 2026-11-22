@@ -228,7 +228,10 @@ def main() -> int:
             rt, rq = quarters(facts, REV_TAGS)
             ot, oq = quarters(facts, OPI_TAGS)
             nt, nq = quarters(facts, NI_TAGS)
-            row["last_quarter_end"] = (oq or nq or rq or [("", 0)])[-1][0]
+            row["last_quarter_end"] = max([x[-1][0] for x in (rq, oq, nq) if x] or [""])
+            if t in os.getenv("EW_DEBUG", "").split(","):
+                for name, ser in (("rev", rq), ("opi", oq), ("ni", nq)):
+                    print("DEBUG", t, name, ser[-9:])
             row["rev_q_yoy_pct"] = fmt(yoy_last(rq))
             row["rev_ttm_yoy_pct"] = fmt(ttm_yoy(rq))
             row["opinc_q_yoy_pct"] = fmt(yoy_last(oq))
