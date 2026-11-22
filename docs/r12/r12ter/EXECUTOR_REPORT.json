@@ -1,0 +1,322 @@
+{
+ "schema": "r12ter_executor_report_v1",
+ "test": "R12-ter storico",
+ "scope": "solo ricerca/validazione; nessun ordine; nessun accesso internet; nessun dato successivo alle date",
+ "python": "Python 3.13.18",
+ "env": {
+  "PYTHONDONTWRITEBYTECODE": "1"
+ },
+ "input_hashes": {
+  "all_ok": true,
+  "files": {
+   "src/v42_integrated_pipeline.py": {
+    "expected": "3eb0138c266bc16eac571217904275d9c59f59d98ecc396e83a8716f22d2fad6",
+    "actual": "3eb0138c266bc16eac571217904275d9c59f59d98ecc396e83a8716f22d2fad6",
+    "ok": true
+   },
+   "inputs/PIT_20181115.csv": {
+    "expected": "632409b7ab99e7680e66d3cb87e61f26c87a7e5644700474d7831b0965b7e1ea",
+    "actual": "632409b7ab99e7680e66d3cb87e61f26c87a7e5644700474d7831b0965b7e1ea",
+    "ok": true
+   },
+   "inputs/PIT_20191115.csv": {
+    "expected": "ad17fb76203cd68403d709a4decf4ffe6feb9f851bfd66fa4a8853b40f6b6152",
+    "actual": "ad17fb76203cd68403d709a4decf4ffe6feb9f851bfd66fa4a8853b40f6b6152",
+    "ok": true
+   },
+   "inputs/economic_registry_verified.json": {
+    "expected": "9428786994c547e739f7e4742f9c02ebcb392bc3706c3a81af7d787c0a16ba96",
+    "actual": "9428786994c547e739f7e4742f9c02ebcb392bc3706c3a81af7d787c0a16ba96",
+    "ok": true
+   },
+   "inputs/evidence_empty.json": {
+    "expected": "58be8ed3e4f2e241e991c91df441e9d101876a220aea16e25fa3c9ca26d6ca78",
+    "actual": "58be8ed3e4f2e241e991c91df441e9d101876a220aea16e25fa3c9ca26d6ca78",
+    "ok": true
+   }
+  },
+  "recheck_after_runs": "OK (sha256sum -c ripetuto dopo le esecuzioni)"
+ },
+ "unpinned_src_note": "INPUT_SHA256SUMS copre solo src/v42_integrated_pipeline.py; la pipeline verifica internamente gli hash dei 5 componenti congelati (engine, adapter, classifier, lane, cash) e li riporta in component_sha256. Presente src/investment_os/v4_2/__pycache__/v4_scoring.cpython-313.pyc preesistente: mtime registrato diverso dal sorgente, quindi non caricato; bytecode comunque equivalente alla compilazione del sorgente. Nessun file .pyc scritto.",
+ "dates": {
+  "20181115": {
+   "command": "python3 src/v42_integrated_pipeline.py --candidate inputs/PIT_20181115.csv --evidence inputs/evidence_empty.json --registry inputs/economic_registry_verified.json --expect-candidate-sha256 632409b7ab99e7680e66d3cb87e61f26c87a7e5644700474d7831b0965b7e1ea --out out/20181115/runN",
+   "exit_codes": {
+    "run1": 0,
+    "run2": 0
+   },
+   "stdout_logs": [
+    "logs/stdout_20181115_run1.log",
+    "logs/stdout_20181115_run2.log"
+   ],
+   "stderr_empty": true,
+   "pipeline_version": "V4.2-INTEGRATED-1.1",
+   "engine_version": "V4.2-PRE-FREEZE-1.0",
+   "system_live": false,
+   "component_sha256": {
+    "adapter": "aa75f344a658e3c8057c837b2451f2509097f9fa104887fed51159e55a867ad8",
+    "cash": "1d76a9a260793614edb5964b02eaed71b8b0ce6307fdb257d16773b9adb1ef3a",
+    "classifier": "c4031e77f9baf8347b7c07f82decb8bf0e6b2209bae3d9f21c06c7a61b92d170",
+    "engine": "cbdb4e24173638d8377422f13094020090b2253fa1566a7e06374da32348ed6e",
+    "lane": "c45dbb85558919358a727c0dbe3d657d9cd9a41ea6987a51289374af69b55c3a"
+   },
+   "inputs": {
+    "candidate_sha256": "632409b7ab99e7680e66d3cb87e61f26c87a7e5644700474d7831b0965b7e1ea",
+    "evidence_sha256": "58be8ed3e4f2e241e991c91df441e9d101876a220aea16e25fa3c9ca26d6ca78",
+    "registry_sha256": "9428786994c547e739f7e4742f9c02ebcb392bc3706c3a81af7d787c0a16ba96"
+   },
+   "deep_dive_queue": [
+    {
+     "entity_key": "MA",
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "ADS",
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "MU",
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "LRCX",
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "CME",
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "IR",
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "URI",
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "REGN",
+     "selection_lane": "I"
+    },
+    {
+     "entity_key": "ADBE",
+     "selection_lane": "I"
+    },
+    {
+     "entity_key": "IPGP",
+     "selection_lane": "I"
+    }
+   ],
+   "queue_size": 10,
+   "rows": 505,
+   "ios_gate_counts": {
+    "AFFO MISSING: FFO e capex di manutenzione non separati": 9,
+    "BQS<60": 226,
+    "CALCULABLE": 157,
+    "SBC MISSING/CONFLICTING": 4,
+    "book value / ROE / crescita sostenibile MISSING": 2,
+    "capex MISSING/CONFLICTING": 9,
+    "cassa operativa MISSING/CONFLICTING": 1,
+    "combined ratio MISSING: sottoscrizione non valutabile": 13,
+    "guarded growth inputs MISSING/CONFLICTING": 35,
+    "market cap MISSING/CONFLICTING": 47,
+    "share_change MISSING/CONFLICTING": 2
+   },
+   "ios_non_null": 157,
+   "ios_non_null_pct": 31.09,
+   "results_len": 505,
+   "buy_add_allowed_rows": 0,
+   "integrated_run_sha256": "3a5a9553fdc2db2f968f892c3c82b1d75b06a4151e45bd979bdb03e54cbce141",
+   "integrated_summary_sha256": "60bd0a00532b46cad4b0ecb941814759b4cf2fe555aec7a24a9991fb21133d78",
+   "reproducibility": {
+    "integrated_run_identical": true,
+    "integrated_summary_identical": true,
+    "stdout_identical": true,
+    "result": "REPRODUCIBLE"
+   },
+   "c1": {
+    "filed_columns_checked": [
+     "annual_filed",
+     "latest_10q_filed",
+     "fy_minus_1_filed",
+     "fy_minus_2_filed",
+     "fy_minus_3_filed"
+    ],
+    "filed_max_by_column": {
+     "annual_filed": "20181115",
+     "latest_10q_filed": "20181115",
+     "fy_minus_1_filed": "20171115",
+     "fy_minus_2_filed": "20161122",
+     "fy_minus_3_filed": "20151124"
+    },
+    "filed_values_equal_to_D": {
+     "annual_filed": 1,
+     "latest_10q_filed": 1,
+     "fy_minus_1_filed": 0,
+     "fy_minus_2_filed": 0,
+     "fy_minus_3_filed": 0
+    },
+    "filed_violations": [],
+    "price_date_rule_note": "nessuna colonna contiene sia 'price' sia 'date'; colonna prezzo = market_price, data prezzo controllata = market_data_as_of (formato YYYY-MM-DD)",
+    "price_columns": [
+     "market_price"
+    ],
+    "price_date_columns_checked": [
+     "market_data_as_of"
+    ],
+    "rows_with_price": 437,
+    "rows_with_price_but_no_date": [],
+    "max_price_date": "20181115",
+    "price_dates_equal_to_D": 437,
+    "price_date_violations": [],
+    "supplementary_check": "51 colonne *_date/*_ddate: nessun valore successivo a D",
+    "buy_add_allowed_fields_in_output": 505,
+    "buy_add_allowed_true_rows": [],
+    "result": "PASS"
+   }
+  },
+  "20191115": {
+   "command": "python3 src/v42_integrated_pipeline.py --candidate inputs/PIT_20191115.csv --evidence inputs/evidence_empty.json --registry inputs/economic_registry_verified.json --expect-candidate-sha256 ad17fb76203cd68403d709a4decf4ffe6feb9f851bfd66fa4a8853b40f6b6152 --out out/20191115/runN",
+   "exit_codes": {
+    "run1": 0,
+    "run2": 0
+   },
+   "stdout_logs": [
+    "logs/stdout_20191115_run1.log",
+    "logs/stdout_20191115_run2.log"
+   ],
+   "stderr_empty": true,
+   "pipeline_version": "V4.2-INTEGRATED-1.1",
+   "engine_version": "V4.2-PRE-FREEZE-1.0",
+   "system_live": false,
+   "component_sha256": {
+    "adapter": "aa75f344a658e3c8057c837b2451f2509097f9fa104887fed51159e55a867ad8",
+    "cash": "1d76a9a260793614edb5964b02eaed71b8b0ce6307fdb257d16773b9adb1ef3a",
+    "classifier": "c4031e77f9baf8347b7c07f82decb8bf0e6b2209bae3d9f21c06c7a61b92d170",
+    "engine": "cbdb4e24173638d8377422f13094020090b2253fa1566a7e06374da32348ed6e",
+    "lane": "c45dbb85558919358a727c0dbe3d657d9cd9a41ea6987a51289374af69b55c3a"
+   },
+   "inputs": {
+    "candidate_sha256": "ad17fb76203cd68403d709a4decf4ffe6feb9f851bfd66fa4a8853b40f6b6152",
+    "evidence_sha256": "58be8ed3e4f2e241e991c91df441e9d101876a220aea16e25fa3c9ca26d6ca78",
+    "registry_sha256": "9428786994c547e739f7e4742f9c02ebcb392bc3706c3a81af7d787c0a16ba96"
+   },
+   "deep_dive_queue": [
+    {
+     "entity_key": "SYF",
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "MA",
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "URI",
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "ABBV",
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "AMP",
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "FITB",
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "IR",
+     "selection_lane": "V"
+    },
+    {
+     "entity_key": "ULTA",
+     "selection_lane": "I"
+    },
+    {
+     "entity_key": "FB",
+     "selection_lane": "I"
+    },
+    {
+     "entity_key": "ADBE",
+     "selection_lane": "I"
+    }
+   ],
+   "queue_size": 10,
+   "rows": 505,
+   "ios_gate_counts": {
+    "AFFO MISSING: FFO e capex di manutenzione non separati": 13,
+    "BQS<60": 182,
+    "CALCULABLE": 195,
+    "SBC MISSING/CONFLICTING": 6,
+    "capex MISSING/CONFLICTING": 12,
+    "cassa operativa MISSING/CONFLICTING": 1,
+    "combined ratio MISSING: sottoscrizione non valutabile": 8,
+    "coverage<70": 1,
+    "guarded growth inputs MISSING/CONFLICTING": 34,
+    "market cap MISSING/CONFLICTING": 50,
+    "share_change MISSING/CONFLICTING": 3
+   },
+   "ios_non_null": 195,
+   "ios_non_null_pct": 38.61,
+   "results_len": 505,
+   "buy_add_allowed_rows": 0,
+   "integrated_run_sha256": "4cac03acfb258a3d8f8e7d6671b81a7f138288d3287c5b6513abe5fad6e82311",
+   "integrated_summary_sha256": "6f2dd8d27a228a71d6c7c85e5108a7249e5095a4013cc519f85a827b40849bf5",
+   "reproducibility": {
+    "integrated_run_identical": true,
+    "integrated_summary_identical": true,
+    "stdout_identical": true,
+    "result": "REPRODUCIBLE"
+   },
+   "c1": {
+    "filed_columns_checked": [
+     "annual_filed",
+     "latest_10q_filed",
+     "fy_minus_1_filed",
+     "fy_minus_2_filed",
+     "fy_minus_3_filed"
+    ],
+    "filed_max_by_column": {
+     "annual_filed": "20191115",
+     "latest_10q_filed": "20191114",
+     "fy_minus_1_filed": "20181121",
+     "fy_minus_2_filed": "20171122",
+     "fy_minus_3_filed": "20161123"
+    },
+    "filed_values_equal_to_D": {
+     "annual_filed": 3,
+     "latest_10q_filed": 0,
+     "fy_minus_1_filed": 0,
+     "fy_minus_2_filed": 0,
+     "fy_minus_3_filed": 0
+    },
+    "filed_violations": [],
+    "price_date_rule_note": "nessuna colonna contiene sia 'price' sia 'date'; colonna prezzo = market_price, data prezzo controllata = market_data_as_of (formato YYYY-MM-DD)",
+    "price_columns": [
+     "market_price"
+    ],
+    "price_date_columns_checked": [
+     "market_data_as_of"
+    ],
+    "rows_with_price": 448,
+    "rows_with_price_but_no_date": [],
+    "max_price_date": "20191115",
+    "price_dates_equal_to_D": 448,
+    "price_date_violations": [],
+    "supplementary_check": "51 colonne *_date/*_ddate: nessun valore successivo a D",
+    "buy_add_allowed_fields_in_output": 505,
+    "buy_add_allowed_true_rows": [],
+    "result": "PASS"
+   }
+  }
+ },
+ "errors": [],
+ "overall": {
+  "input_hashes": "OK",
+  "reproducibility": "REPRODUCIBLE",
+  "c1": "PASS",
+  "errors": 0
+ }
+}
