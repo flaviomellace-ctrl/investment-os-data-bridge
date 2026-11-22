@@ -164,6 +164,19 @@
    "method": "same as 2026-11-17 addition (two-step: short window close + monthly split events); renamed symbols read under the new symbol: ABC>COR ANTM>ELV BLL>BALL FB>META FBHS>FBIN FLT>CPAY GPS>GAP PEAK>DOC HCP>DOC PKI>RVTY RE>EG WLTW>WTW NLOK>GEN SYMC>GEN ADS>BFH CTL>LUMN HRS>LHX JEC>J LB>BBWI HFC>DINO DWDP>DD KORS>CPRI TMK>GL UTX>RTX",
    "transcription_check": "sha256 prefix browser = file: 899861c04a55a403 (2018), b66969c71fa74639 (2019)",
    "caveat": "69 (2018) and 57 (2019) members without price, mostly acquired or delisted names: survivorship bias in favour of the queue"
+  },
+  {
+   "date": "2026-11-22",
+   "as_of": [
+    "20141114",
+    "20151116",
+    "20161115",
+    "20171115"
+   ],
+   "raw": "pit/cache/yahoo_raw_r12quater_20261122.txt",
+   "method": "same two-step method; renamed symbols read under the new symbol (incl. WLP>ELV, PCLN>BKNG, DPS>KDP, CBG>CBRE, HCN>WELL, DLPH>APTV, COG>CTRA); name check of Yahoo security name against the Wikipedia name",
+   "excluded": "BBT (symbol now Beacon Financial), DD before 2017 (series restated after the DowDuPont merger, price inconsistent), TSO ANDV GMCR WYN (no continuity under the mapped symbol)",
+   "transcription_check": "sha256 prefix browser = file: f164dcf8947af8b1 (2014), aa47692cd82fe423 (2015), 7687a8bfb9db0b4e (2016), 5576f65ad5e729f4 (2017)"
   }
  ]
 }
