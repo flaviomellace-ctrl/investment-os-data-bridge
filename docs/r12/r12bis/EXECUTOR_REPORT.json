@@ -1,0 +1,423 @@
+{
+ "schema": "r12bis_executor_report_v1",
+ "workdir": "/home/claude/r12exec_bis",
+ "python": "CPython 3.13.18",
+ "env": {
+  "PYTHONDONTWRITEBYTECODE": "1"
+ },
+ "input_hash_check": {
+  "command": "sha256sum -c INPUT_SHA256SUMS",
+  "all_ok": true,
+  "files": {
+   "src/v42_integrated_pipeline.py": {
+    "sha256": "3eb0138c266bc16eac571217904275d9c59f59d98ecc396e83a8716f22d2fad6",
+    "verified": true
+   },
+   "src/v42_pipeline_v12_guard.py": {
+    "sha256": "038aab6791711d83e75adad0c85e59211e74f0f808739369e80ad40b68525c93",
+    "verified": true
+   },
+   "inputs/PIT_20211115.csv": {
+    "sha256": "ee533d7d4aa2882b8c2b118218429238c09c8bc1f992ca586f1ce33385a8357a",
+    "verified": true
+   },
+   "inputs/PIT_20221115.csv": {
+    "sha256": "15231379ca842dee706799cff048bf7701cab87cfd0f84dc5b3682edb8a8c9ce",
+    "verified": true
+   },
+   "inputs/economic_registry_verified.json": {
+    "sha256": "9428786994c547e739f7e4742f9c02ebcb392bc3706c3a81af7d787c0a16ba96",
+    "verified": true
+   },
+   "inputs/evidence_empty.json": {
+    "sha256": "58be8ed3e4f2e241e991c91df441e9d101876a220aea16e25fa3c9ca26d6ca78",
+    "verified": true
+   }
+  }
+ },
+ "src_inputs_unmodified_after_runs": true,
+ "dates": {
+  "20211115": {
+   "v11": {
+    "exit_codes": [
+     0,
+     0
+    ],
+    "pipeline_version_in_output": "V4.2-INTEGRATED-1.1",
+    "deep_dive_queue": [
+     {
+      "entity_key": "MA",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "RMD",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "PHM",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "CVS",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "HII",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "KR",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "AZO",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "VRTX",
+      "selection_lane": "I"
+     },
+     {
+      "entity_key": "MPWR",
+      "selection_lane": "I"
+     },
+     {
+      "entity_key": "TSCO",
+      "selection_lane": "I"
+     }
+    ],
+    "rows": 505,
+    "summary_rows": 505,
+    "ios_gate_counts": {
+     "AFFO MISSING: FFO e capex di manutenzione non separati": 6,
+     "BQS<60": 226,
+     "CALCULABLE": 101,
+     "SBC MISSING/CONFLICTING": 19,
+     "book value / ROE / crescita sostenibile MISSING": 1,
+     "capex MISSING/CONFLICTING": 11,
+     "cassa operativa MISSING/CONFLICTING": 4,
+     "combined ratio MISSING: sottoscrizione non valutabile": 10,
+     "coverage<70": 8,
+     "guarded growth inputs MISSING/CONFLICTING": 41,
+     "market cap MISSING/CONFLICTING": 32,
+     "share_change MISSING/CONFLICTING": 46
+    },
+    "integrated_run_sha256": "c9d8a46b5e50660ba4cbf65f4421ab0d1101b2d84d3ef2c37fe562badbf68087",
+    "summary_integrated_run_sha256_matches": true,
+    "ios_non_null": {
+     "count": 101,
+     "total": 505,
+     "field": "results[].ios"
+    },
+    "byte_identical_files": {
+     "integrated_run.json": {
+      "run1": "c9d8a46b5e50660ba4cbf65f4421ab0d1101b2d84d3ef2c37fe562badbf68087",
+      "run2": "c9d8a46b5e50660ba4cbf65f4421ab0d1101b2d84d3ef2c37fe562badbf68087",
+      "identical": true
+     },
+     "integrated_summary.json": {
+      "run1": "a45ea40a605f1c6eade67ac0e3b1b4d24e2dc51441d9ae745cc15c97acfa38db",
+      "run2": "a45ea40a605f1c6eade67ac0e3b1b4d24e2dc51441d9ae745cc15c97acfa38db",
+      "identical": true
+     }
+    },
+    "reproducible": true
+   },
+   "v12": {
+    "exit_codes": [
+     0,
+     0
+    ],
+    "pipeline_version_in_output": "V4.2-INTEGRATED-1.1",
+    "deep_dive_queue": [
+     {
+      "entity_key": "RMD",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "PHM",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "CVS",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "HII",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "KR",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "AZO",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "VRTX",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "MPWR",
+      "selection_lane": "I"
+     },
+     {
+      "entity_key": "TSCO",
+      "selection_lane": "I"
+     },
+     {
+      "entity_key": "FTNT",
+      "selection_lane": "I"
+     }
+    ],
+    "rows": 505,
+    "summary_rows": 505,
+    "ios_gate_counts": {
+     "AFFO MISSING: FFO e capex di manutenzione non separati": 6,
+     "BQS<60": 226,
+     "CALCULABLE": 101,
+     "SBC MISSING/CONFLICTING": 19,
+     "book value / ROE / crescita sostenibile MISSING": 1,
+     "capex MISSING/CONFLICTING": 11,
+     "cassa operativa MISSING/CONFLICTING": 4,
+     "combined ratio MISSING: sottoscrizione non valutabile": 10,
+     "coverage<70": 8,
+     "guarded growth inputs MISSING/CONFLICTING": 41,
+     "market cap MISSING/CONFLICTING": 32,
+     "share_change MISSING/CONFLICTING": 46
+    },
+    "integrated_run_sha256": "edd6814b243e1c52505a7c78e1ead5aa423179f8a454764e0bdea4155415a236",
+    "summary_integrated_run_sha256_matches": true,
+    "ios_non_null": {
+     "count": 101,
+     "total": 505,
+     "field": "results[].ios"
+    },
+    "byte_identical_files": {
+     "integrated_run.json": {
+      "run1": "edd6814b243e1c52505a7c78e1ead5aa423179f8a454764e0bdea4155415a236",
+      "run2": "edd6814b243e1c52505a7c78e1ead5aa423179f8a454764e0bdea4155415a236",
+      "identical": true
+     },
+     "integrated_summary.json": {
+      "run1": "10862d71fbe40e04b0d7c9d28caf397824f3202648a62092be5c3b1293ef9fec",
+      "run2": "10862d71fbe40e04b0d7c9d28caf397824f3202648a62092be5c3b1293ef9fec",
+      "identical": true
+     },
+     "v12_guard_report.json": {
+      "run1": "4db5080039d5c293fe2520f14f137a862be06c12c6cc28228ee0b065f4ad76da",
+      "run2": "4db5080039d5c293fe2520f14f137a862be06c12c6cc28228ee0b065f4ad76da",
+      "identical": true
+     }
+    },
+    "reproducible": true,
+    "blocked_near_top": [
+     "ALGN",
+     "BIIB",
+     "MA",
+     "MHK",
+     "MLM",
+     "PHM",
+     "PNC",
+     "VIAC",
+     "VMC"
+    ]
+   },
+   "v12_integrated_run_identical_to_v11": false
+  },
+  "20221115": {
+   "v11": {
+    "exit_codes": [
+     0,
+     0
+    ],
+    "pipeline_version_in_output": "V4.2-INTEGRATED-1.1",
+    "deep_dive_queue": [
+     {
+      "entity_key": "FTNT",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "JPM",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "MA",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "CF",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "REGN",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "GS",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "USB",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "META",
+      "selection_lane": "I"
+     },
+     {
+      "entity_key": "WAB",
+      "selection_lane": "I"
+     },
+     {
+      "entity_key": "TER",
+      "selection_lane": "I"
+     }
+    ],
+    "rows": 503,
+    "summary_rows": 503,
+    "ios_gate_counts": {
+     "AFFO MISSING: FFO e capex di manutenzione non separati": 8,
+     "BQS<60": 193,
+     "CALCULABLE": 125,
+     "SBC MISSING/CONFLICTING": 18,
+     "book value / ROE / crescita sostenibile MISSING": 3,
+     "capex MISSING/CONFLICTING": 17,
+     "cassa operativa MISSING/CONFLICTING": 3,
+     "combined ratio MISSING: sottoscrizione non valutabile": 16,
+     "coverage<70": 14,
+     "guarded growth inputs MISSING/CONFLICTING": 33,
+     "market cap MISSING/CONFLICTING": 27,
+     "share_change MISSING/CONFLICTING": 46
+    },
+    "integrated_run_sha256": "2a2a5091836fb54a91c973a72e6f3b967d58d07313247f3f99d02bd78faca862",
+    "summary_integrated_run_sha256_matches": true,
+    "ios_non_null": {
+     "count": 125,
+     "total": 503,
+     "field": "results[].ios"
+    },
+    "byte_identical_files": {
+     "integrated_run.json": {
+      "run1": "2a2a5091836fb54a91c973a72e6f3b967d58d07313247f3f99d02bd78faca862",
+      "run2": "2a2a5091836fb54a91c973a72e6f3b967d58d07313247f3f99d02bd78faca862",
+      "identical": true
+     },
+     "integrated_summary.json": {
+      "run1": "24eec9e1ac772e5865eed476f5c7a637ecf1c4780e1d907117848f7206b35717",
+      "run2": "24eec9e1ac772e5865eed476f5c7a637ecf1c4780e1d907117848f7206b35717",
+      "identical": true
+     }
+    },
+    "reproducible": true
+   },
+   "v12": {
+    "exit_codes": [
+     0,
+     0
+    ],
+    "pipeline_version_in_output": "V4.2-INTEGRATED-1.1",
+    "deep_dive_queue": [
+     {
+      "entity_key": "FTNT",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "JPM",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "MA",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "CF",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "REGN",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "GS",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "USB",
+      "selection_lane": "V"
+     },
+     {
+      "entity_key": "META",
+      "selection_lane": "I"
+     },
+     {
+      "entity_key": "WAB",
+      "selection_lane": "I"
+     },
+     {
+      "entity_key": "TER",
+      "selection_lane": "I"
+     }
+    ],
+    "rows": 503,
+    "summary_rows": 503,
+    "ios_gate_counts": {
+     "AFFO MISSING: FFO e capex di manutenzione non separati": 8,
+     "BQS<60": 193,
+     "CALCULABLE": 125,
+     "SBC MISSING/CONFLICTING": 18,
+     "book value / ROE / crescita sostenibile MISSING": 3,
+     "capex MISSING/CONFLICTING": 17,
+     "cassa operativa MISSING/CONFLICTING": 3,
+     "combined ratio MISSING: sottoscrizione non valutabile": 16,
+     "coverage<70": 14,
+     "guarded growth inputs MISSING/CONFLICTING": 33,
+     "market cap MISSING/CONFLICTING": 27,
+     "share_change MISSING/CONFLICTING": 46
+    },
+    "integrated_run_sha256": "2a2a5091836fb54a91c973a72e6f3b967d58d07313247f3f99d02bd78faca862",
+    "summary_integrated_run_sha256_matches": true,
+    "ios_non_null": {
+     "count": 125,
+     "total": 503,
+     "field": "results[].ios"
+    },
+    "byte_identical_files": {
+     "integrated_run.json": {
+      "run1": "2a2a5091836fb54a91c973a72e6f3b967d58d07313247f3f99d02bd78faca862",
+      "run2": "2a2a5091836fb54a91c973a72e6f3b967d58d07313247f3f99d02bd78faca862",
+      "identical": true
+     },
+     "integrated_summary.json": {
+      "run1": "24eec9e1ac772e5865eed476f5c7a637ecf1c4780e1d907117848f7206b35717",
+      "run2": "24eec9e1ac772e5865eed476f5c7a637ecf1c4780e1d907117848f7206b35717",
+      "identical": true
+     },
+     "v12_guard_report.json": {
+      "run1": "b9bd4ea75ec52f051a5095897b298308bd4163f2ed4ef92a6d612ea8661aa6c2",
+      "run2": "b9bd4ea75ec52f051a5095897b298308bd4163f2ed4ef92a6d612ea8661aa6c2",
+      "identical": true
+     }
+    },
+    "reproducible": true,
+    "blocked_near_top": [
+     "C",
+     "KLAC",
+     "LUMN",
+     "PFE",
+     "VRTX"
+    ]
+   },
+   "v12_integrated_run_identical_to_v11": true
+  }
+ },
+ "errors": [],
+ "notes": [
+  "v12 integrated_run.json/integrated_summary.json carry pipeline_version V4.2-INTEGRATED-1.1 (written by the frozen base pipeline); the v12 version string appears only in v12_guard_report.json.",
+  "20221115: v12 integrated_run.json is byte-identical to v11; blocked_near_top names are in the top-30 Lane V / top-15 Lane I window but none was in the v11 final queue, so the queue is unchanged.",
+  "Run logs (stdout) were moved out of the workdir to the session scratchpad; a log-file naming slip overwrote 2021 logs with 2022 logs, outputs in out/ are unaffected.",
+  "PYTHONDONTWRITEBYTECODE=1 used so no __pycache__ was written under src; src/ and inputs/ sha256 re-checked after all runs: unchanged."
+ ],
+ "overall_reproducible": true
+}
