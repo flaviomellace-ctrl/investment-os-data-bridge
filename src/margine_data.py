@@ -11,6 +11,10 @@ Scrive in data/current/:
 - margine_RISK.csv  per i titoli del radar: volte in perdita / 5% peggiore / caso tipico / 5% migliore
                     a 5, 21, 126, 252 sedute; calo massimo a 5 anni
 - margine_status.json  esito per simbolo, ora di aggiornamento
+- margine_EXT.js      blocco /*EXT-START*/ var EXT_DATA / EXT_RET /*EXT-END*/ con i simboli di
+                      data/margine_universe.txt (solo osservatorio; stesso formato di DATA e RET,
+                      40 punti presi dalla serie giornaliera, una sola chiamata per simbolo)
+- margine_ext_status.json  esito per simbolo dell'universo esteso
 
 Un simbolo che fallisce resta MISSING: nessun numero inventato.
 """
@@ -20,7 +24,9 @@ import calendar
 import datetime as dt
 import json
 import sys
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import requests
@@ -29,12 +35,21 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "current"
 SYMS = ROOT / "data" / "margine_symbols.txt"
 RADAR = ROOT / "data" / "watchlist_tickers.txt"
+UNIVERSE = ROOT / "data" / "margine_universe.txt"
+WORKERS = 4
 HOSTS = ["https://query1.finance.yahoo.com", "https://query2.finance.yahoo.com"]
 HDR = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                      "(KHTML, like Gecko) Chrome/124.0 Safari/537.36",
        "Accept": "application/json,text/plain,*/*"}
-S = requests.Session()
-S.headers.update(HDR)
+_TL = threading.local()
+
+
+def _session():
+    s = getattr(_TL, "s", None)
+    if s is None:
+        s = _TL.s = requests.Session()
+        s.headers.update(HDR)
+    return s
 
 
 def chart(sym: str, rng: str, interval: str):
@@ -42,7 +57,7 @@ def chart(sym: str, rng: str, interval: str):
     for attempt in range(4):
         host = HOSTS[attempt % 2]
         try:
-            r = S.get(f"{host}/v8/finance/chart/{requests.utils.quote(sym)}",
+            r = _session().get(f"{host}/v8/finance/chart/{requests.utils.quote(sym)}",
                       params={"range": rng, "interval": interval}, timeout=30)
             if r.status_code == 200:
                 res = (r.json().get("chart") or {}).get("result") or []
@@ -101,7 +116,7 @@ def g2(sym, R):
     n = 40
     Sx = [P[round(k * (len(P) - 1) / (n - 1))] for k in range(n)]
     base = Sx[0][1]
-    name = (m.get("longName") or m.get("shortName") or sym).replace("|", " ").replace("~", " ")
+    name = (m.get("longName") or m.get("shortName") or sym).replace("|", " ").replace("~", " ").replace("`", "'")
     chg = m.get("regularMarketChangePercent")
     return "|".join(str(x) for x in [
         sym, name, m.get("currency", ""), m.get("regularMarketPrice", ""),
@@ -202,7 +217,49 @@ def main() -> int:
     (OUT / "benchmark_prices.csv").write_text("symbol,date,close_adj,currency,status\n" + "\n".join(bench) + "\n")
     ok = sum(1 for v in status.values() if v == "PRESENT")
     print(f"PRESENT {ok}/{len(status)}")
+    try:
+        extended(set(syms) | set(radar))
+    except Exception as exc:  # l'universo esteso non deve mai bloccare i dati della newsletter
+        print("EXT errore:", exc)
     return 0 if ok else 1
+
+
+def _ext_one(s):
+    Rd, e1 = chart(s, "5y", "1d")
+    if not Rd or len(series(Rd)) < 40:
+        time.sleep(0.3)
+        return s, None, None, f"MISSING ({e1 or 'serie corta'})"
+    rline, day_chg, _ = g3(s, Rd)
+    d = g2(s, Rd).split("|")
+    if d[4] == "":
+        d[4] = day_chg
+    time.sleep(0.3)
+    return s, "|".join(d), rline, "PRESENT"
+
+
+def extended(skip: set) -> None:
+    """Universo esteso per l'osservatorio: S&P 500, Europa, mondo (data/margine_universe.txt)."""
+    if not UNIVERSE.exists():
+        return
+    uni, seen = [], set()
+    for x in UNIVERSE.read_text().splitlines():
+        x = x.strip()
+        if x and not x.startswith("#") and x not in skip and x not in seen:
+            seen.add(x)
+            uni.append(x)
+    with ThreadPoolExecutor(WORKERS) as ex:
+        res = list(ex.map(_ext_one, uni))
+    data = [r[1] for r in res if r[1]]
+    ret = [r[2] for r in res if r[2]]
+    blob = "\n".join(data + ["~"] + ret)
+    assert "`" not in blob and "*/" not in blob
+    (OUT / "margine_EXT.js").write_text(
+        "/*EXT-START*/var EXT_DATA=`" + "\n".join(data) + "`,EXT_RET=`" + "\n".join(ret) + "`;/*EXT-END*/\n")
+    st = {r[0]: r[3] for r in res}
+    (OUT / "margine_ext_status.json").write_text(json.dumps({
+        "fetched_at_utc": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "present": len(data), "total": len(uni), "status": st}, indent=1, ensure_ascii=False))
+    print(f"EXT PRESENT {len(data)}/{len(uni)}")
 
 
 if __name__ == "__main__":
