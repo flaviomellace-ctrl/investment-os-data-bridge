@@ -1,10 +1,10 @@
 # Investment OS Data Bridge — stato
 
-Aggiornato: **2026-11-22T21:00:28+00:00**
+Aggiornato: **2026-11-23T15:57:14+00:00**
 
 - Righe universo equity-like: **504**
 - Ticker con CIK SEC mappato: **99.8%**
-- Società con filing annuale individuato: **99.0%**
+- Società con filing annuale individuato: **100.0%**
 - Società con >=90% core metric coverage: **93.8%**
 - Ultimo SEC Financial Statement Data Set disponibile: **2026Q3**
 - Fondamentali costruiti usando trimestri: **2025Q4, 2026Q1, 2026Q2, 2026Q3**
