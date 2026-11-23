@@ -153,7 +153,8 @@ def main() -> int:
             print(s, status[s])
             continue
         rline, day_chg, Pd = g3(s, Rd)
-        if s in syms:
+        # anche i titoli del radar entrano in DATA/RET, cosi sono cercabili nell'osservatorio
+        if s in syms or s in radar:
             Rw, e2 = chart(s, "5y", "1wk")
             if Rw and len(series(Rw)) >= 40:
                 d = g2(s, Rw).split("|")
