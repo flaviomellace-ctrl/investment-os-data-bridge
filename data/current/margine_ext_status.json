@@ -1,6 +1,6 @@
 {
- "fetched_at_utc": "2026-11-24T16:26:04Z",
- "present": 1109,
+ "fetched_at_utc": "2026-11-25T16:06:37Z",
+ "present": 1110,
  "total": 1118,
  "status": {
   "AVGO": "PRESENT",
@@ -225,7 +225,7 @@
   "ROP": "PRESENT",
   "HUM": "PRESENT",
   "MSCI": "PRESENT",
-  "VYLR": "MISSING (serie corta)",
+  "VYLR": "PRESENT",
   "GRMN": "PRESENT",
   "VMRK": "PRESENT",
   "WAT": "PRESENT",
