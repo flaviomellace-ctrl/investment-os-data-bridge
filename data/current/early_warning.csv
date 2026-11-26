@@ -7,8 +7,8 @@ CHTR,GIALLO,TRIM_DETERIORO 8K_ATTENZIONE,2026-09-30,9.1,1.0,-212.6,-53.9,-310.8,
 MGM,VERDE,,2026-09-30,-0.9,2.6,,28.9,,,"2026-10-28:2.02,9.01 ; 2026-10-28:1.01,7.01,9.01",25,51740827,685938,0,,,,,,RevenueFromContractWithCustomerExcludingAssessedTax/OperatingIncomeLoss/NetIncomeLoss,PRESENT,789570
 TROW,VERDE,,2026-09-30,5.9,6.9,19.7,7.7,-5.2,5.1,"2026-11-10:8.01,9.01 ; 2026-10-29:2.02,9.01",10,0,0,0,11/13/2026,29067292,15.2,14.0,,RevenueFromContractWithCustomerExcludingAssessedTax/OperatingIncomeLoss/NetIncomeLoss,PRESENT,1113169
 NEM,VERDE,,2026-09-30,15.2,23.7,,,35.1,28.6,,8,0,0,2380140,,,,,,RevenueFromContractWithCustomerExcludingAssessedTax/-/NetIncomeLoss,PRESENT,1164727
-FIX,GIALLO,INSIDER_VENDITE,2026-09-30,53.7,,64.8,,67.7,94.8,"2026-11-17:8.01,9.01 ; 2026-11-05:8.01 ; 2026-10-28:7.01,9.01",1,0,25769923,0,,,,,,Revenues/OperatingIncomeLoss/NetIncomeLoss,PRESENT,1035983
-ANET,VERDE,,2026-09-30,58.5,40.7,67.9,43.8,82.9,41.6,"2026-11-03:2.02,9.01",35,0,492213,505641357,,,,,,RevenueFromContractWithCustomerExcludingAssessedTax/OperatingIncomeLoss/NetIncomeLoss,PRESENT,1596532
+FIX,VERDE,,2026-09-30,53.7,,64.8,,67.7,94.8,"2026-11-17:8.01,9.01 ; 2026-11-05:8.01 ; 2026-10-28:7.01,9.01",0,0,0,0,,,,,,Revenues/OperatingIncomeLoss/NetIncomeLoss,PRESENT,1035983
+ANET,VERDE,,2026-09-30,58.5,40.7,67.9,43.8,82.9,41.6,"2026-11-03:2.02,9.01",35,0,492213,503919244,,,,,,RevenueFromContractWithCustomerExcludingAssessedTax/OperatingIncomeLoss/NetIncomeLoss,PRESENT,1596532
 KO,GIALLO,8K_ATTENZIONE INSIDER_VENDITE,2026-10-02,7.4,7.1,12.1,4.8,8.5,12.3,"2026-11-23:5.02,9.01 ; 2026-10-27:2.02,9.01",5,0,16480959,0,,,,,,Revenues/OperatingIncomeLoss/NetIncomeLoss,PRESENT,21344
 JNJ,GIALLO,TRIM_DETERIORO INSIDER_VENDITE,2026-09-27,5.9,7.8,,,-95.9,-35.9,,5,0,12947986,0,,,,,,RevenueFromContractWithCustomerExcludingAssessedTax/OperatingIncomeLoss/NetIncomeLoss,PRESENT,200406
 TMO,GIALLO,8K_ATTENZIONE,2026-09-26,9.1,8.3,16.6,12.8,6.5,7.6,2026-10-30:5.02,15,0,1999960,5438201,,,,,,RevenueFromContractWithCustomerExcludingAssessedTax/OperatingIncomeLoss/NetIncomeLoss,PRESENT,97745
